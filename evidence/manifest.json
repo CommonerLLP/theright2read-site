@@ -1,0 +1,12 @@
+{
+  "note": "Registry of published charts. Add a slug here + a charts/<slug>.json to publish a chart. Order = index-page order.",
+  "charts": [
+    { "slug": "state-acts",       "renderer": "lookup", "title": "Does your State's library Act pay for libraries?" },
+    { "slug": "national-decline", "renderer": "svg",    "title": "The inflated figure" },
+    { "slug": "delhi-hollowing",  "renderer": "svg",    "title": "Kept on the books, hollowed inside" },
+    { "slug": "oscillation",      "renderer": "svg",    "title": "Recurrence without enactment" },
+    { "slug": "substitution",     "renderer": "svg",    "title": "The substitution" },
+    { "slug": "cess",             "renderer": "svg",    "title": "The cess, drained" },
+    { "slug": "silence",          "renderer": "canvas", "title": "The silence" }
+  ]
+}

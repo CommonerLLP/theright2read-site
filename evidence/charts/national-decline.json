@@ -1,0 +1,14 @@
+{
+  "slug": "national-decline",
+  "renderer": "svg",
+  "type": "substitution",
+  "title": "The inflated figure",
+  "subtitle": "₹4.77, falling — while the quoted figure barely moves",
+  "source": "RTR-WP-001, A Consolidated Real Per-Capita Series for Public Library Expenditure in India, 2014-15 to 2024-25.",
+  "caption": "India's per-capita public-library expenditure, 2018-19 (the series peak) to 2024-25. The <b>nominal</b> figure — state MH 2205-105 spending divided by the fixed Census 2011 population, the number usually quoted — barely falls. Once RRRLF Central transfers are added, the total is deflated to constant 2011-12 rupees, and the Technical Group's actual annual population projections replace the fixed 2011 Census count, the <b>real, consolidated</b> figure tells a sharper story: a 42% fall from its own peak, to ₹4.77 — this campaign's headline number.",
+  "config": {"maxV": 13, "unit": "per person, per year", "leftLabel": "2018-19 (PEAK)", "rightLabel": "2024-25", "valPrefix": "₹", "valDecimals": 2},
+  "data": [
+    {"label":"Nominal (as published)","from":11.64,"fromP":"2018-19","to":9.51,"toP":"2024-25","role":"rise","note":"State MH 2205-105 spending ÷ the fixed Census 2011 population — the figure usually quoted. Looks almost stable."},
+    {"label":"Real (consolidated)","from":8.17,"fromP":"2018-19","to":4.77,"toP":"2024-25","role":"loss","note":"State MH 2205-105 + RRRLF Central transfers, deflated to constant 2011-12 rupees, divided by the Technical Group's actual annual population projections. Falls 42% from its own peak."}
+  ]
+}

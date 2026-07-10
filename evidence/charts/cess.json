@@ -1,0 +1,22 @@
+{
+  "slug": "cess",
+  "renderer": "svg",
+  "type": "cess",
+  "title": "The cess, drained",
+  "subtitle": "Every working library cess falls before 1993",
+  "source": "Bare-act reads, RTR-WP-008.",
+  "caption": "The nineteen State Public Libraries Acts by year of enactment and funding instrument, read from the bare-act texts. Only six carry an operative cess — and all six sit inside the 1948–1993 “cess era.” Only one Act, <b>Kerala's</b> (1989, ringed in blue), written on the back of a mass library movement, builds in mandatory representation for Scheduled Castes, Scheduled Tribes and women.",
+  "config": {
+    "tierText": {"2":"operative cess","1":"nominal (no rate, or renamed a “fee”)","0":"no cess"},
+    "starNote": "Only Act to mandate SC/ST + women representation."
+  },
+  "data": [
+    {"yr":1948,"c":"Tamil Nadu","t":2},{"yr":1960,"c":"Andhra Pradesh","t":2},{"yr":1960,"c":"Telangana","t":2},
+    {"yr":1965,"c":"Karnataka","t":2},{"yr":1967,"c":"Maharashtra","t":0},{"yr":1979,"c":"West Bengal","t":0},
+    {"yr":1988,"c":"Manipur","t":0},{"yr":1989,"c":"Kerala","t":2,"star":true},{"yr":1989,"c":"Haryana","t":1},
+    {"yr":1993,"c":"Goa","t":2},{"yr":1993,"c":"Mizoram","t":0},{"yr":2001,"c":"Gujarat","t":0},
+    {"yr":2001,"c":"Odisha","t":0},{"yr":2005,"c":"Uttarakhand","t":1},{"yr":2006,"c":"Uttar Pradesh","t":0},
+    {"yr":2006,"c":"Rajasthan","t":0},{"yr":2008,"c":"Chhattisgarh","t":0},{"yr":2008,"c":"Bihar","t":0},
+    {"yr":2009,"c":"Arunachal Pradesh","t":0}
+  ]
+}

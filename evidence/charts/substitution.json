@@ -1,0 +1,15 @@
+{
+  "slug": "substitution",
+  "renderer": "svg",
+  "type": "substitution",
+  "title": "The substitution",
+  "subtitle": "How the public library became a “user”",
+  "source": "Term-drift counts, RTR-WP-008.",
+  "caption": "Word frequency (occurrences per 10,000 words) in the ILA proceedings, from the terms' verified anchor readings. <b>Public library</b> (red) falls from its planning-era peak of 26.8 (1950s–60s) to 4.1 by 2000–08; <b>user</b> climbs from 13.0 (1970–85) to 47.1 (2000–08); <b>digital</b> rises from near-absence to 41.7 (2009–19), the one term still climbing at the end of the series. (<i>Information</i> runs off the top of this scale, peaking at 136.)",
+  "config": {"maxV": 50},
+  "data": [
+    {"label":"public library","from":26.8,"fromP":"1950–69 peak","to":4.1,"toP":"2000–08","role":"loss","note":"A public claim on knowledge, collapsing."},
+    {"label":"user","from":13.0,"fromP":"1970–85","to":47.1,"toP":"2000–08","role":"rise","note":"The reader, recoded as a function of a system."},
+    {"label":"digital","from":0.6,"fromP":"pre-2000","to":41.7,"toP":"2009–19","role":"rise2","note":"A connection offered where a commons was owed. Still rising at the end of the series."}
+  ]
+}

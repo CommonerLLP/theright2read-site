@@ -1,0 +1,14 @@
+{
+  "slug": "delhi-hollowing",
+  "renderer": "svg",
+  "type": "substitution",
+  "title": "Kept on the books, hollowed inside",
+  "subtitle": "Delhi Public Library: staffing and circulation, 2010-11/2018-19 to 2023-24",
+  "source": "RTR-WP-006, city-libraries working paper — Delhi Public Library annual reports, 2010-11 to 2023-24.",
+  "caption": "Delhi Public Library's buildings, board, and collection persist while the service inside them thins. <b>Staff vacancy</b> climbed from 8.5% (2018-19, the best recent low point) to 49.6% (2023-24) — DPL's own annual report says day-to-day tasks are carried out by contract staff for want of sanctioned posts. <b>Circulation</b>, indexed to its 2010-11 level, has fallen to under a quarter: physical loans dropped from 1,169,734 (2010-11) to 274,751 (2023-24). For scale: Toronto Public Library discloses 9.33 borrowings per resident per year; Delhi's is about 0.014 — a gap the paper reads as a disclosure-and-intensity benchmark, not a moral ranking.",
+  "config": {"maxV": 100, "unit": "%", "leftLabel": "2010-11 / 2018-19", "rightLabel": "2023-24", "valSuffix": "%", "valDecimals": 1},
+  "data": [
+    {"label":"Staff vacancy rate","from":8.5,"fromP":"2018-19","to":49.6,"toP":"2023-24","role":"loss","note":"24 vacant posts (2018-19) to 136 (2023-24), of 274 sanctioned. DPL's own annual report: day-to-day tasks run on contract staff for want of sanctioned posts."},
+    {"label":"Circulation (index)","from":100.0,"fromP":"2010-11","to":23.49,"toP":"2023-24","role":"rise2","note":"Physical loans/issues, indexed to 2010-11 = 100: 1,169,734 (2010-11) to 274,751 (2023-24) — a real decline, not just a missing-branches problem."}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "silence",
+  "renderer": "canvas",
+  "type": "silence",
+  "title": "The silence",
+  "subtitle": "Two grids of ten thousand words each",
+  "source": "Term-drift counts, RTR-WP-008.",
+  "caption": "Each grid is 10,000 squares — ten thousand words of the profession's own proceedings. In any such stretch the word <b>user</b> lights about 47 squares (its 2000–08 rate); the word <b>caste</b> never lights even one, staying at or below 0.45 per 10,000 across all forty volumes, and falling to 0.23 in the most recent block. That near-silence, running straight through the rupture of 1991, is not a gap in the record. It is the record's deepest finding.",
+  "data": [
+    {"term":"user","rate":"47.1","litCount":47,"color":"accent","fade":1},
+    {"term":"caste","rate":"≤0.45","litCount":0.45,"color":"ink","fade":0.5}
+  ]
+}

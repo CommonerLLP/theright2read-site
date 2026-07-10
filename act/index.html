@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Act — write to your CM — Right to Read</title>
+<meta name="description" content="Pick the state you vote in and we will hand you a ready-to-send letter to your Chief Minister demanding free public libraries. Libraries are a State subject." />
+
+<script src="/assets/theme.js?v=101"></script>
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=2">
+<meta name="theme-color" content="#BD3341">
+
+<link rel="canonical" href="https://theright2read.org/act/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Right to Read" />
+<meta property="og:url" content="https://theright2read.org/act/" />
+<meta property="og:title" content="Act — write to your CM" />
+<meta property="og:description" content="Pick your state, get a ready letter demanding free public libraries." />
+<meta property="og:image" content="https://theright2read.org/assets/og-image.png?v=2" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=PT+Mono&family=Inter+Tight:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="/assets/tokens.css?v=101">
+<link rel="stylesheet" href="/assets/campaign.css?v=101">
+<link rel="stylesheet" href="/assets/home.css?v=101">
+<style>
+  /* step 1 = pick your state; the letter is revealed only after a choice */
+  .act-step { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: 1px; text-transform: uppercase; color: var(--accent); margin: var(--sp-5) 0 var(--sp-2); }
+  /* Step 1 fields: State + Constituency share a row (a constituency sits inside a State); Name gets its own row. */
+  .act-fields { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-4); max-width:640px; margin-top: var(--sp-2); }
+  .act-name { max-width:310px; margin-top: var(--sp-4); }
+  .act-fields label, .act-name label { display:block; font-family: var(--font-mono); font-size: var(--t-eyebrow); text-transform:uppercase; letter-spacing:.6px; color: var(--text-muted); margin-bottom: var(--sp-2); }
+  .act-fields select, .act-fields input, .act-name input { width:100%; padding:.7rem .8rem; font-family: var(--font-ui); font-size:1.05rem; background: var(--bg); color: var(--text); border:1px solid var(--rule); border-radius: var(--radius); }
+  .act-fields select:focus, .act-fields input:focus, .act-name input:focus { outline:2px solid var(--accent); }
+  @media (max-width:480px){ .act-fields { grid-template-columns:1fr; } }
+  /* first-reveal cue — tells the citizen the letter appeared below (esp. on a phone, below the fold) */
+  .reveal-cue { font-family: var(--font-mono); font-size: var(--t-eyebrow); text-transform:uppercase; letter-spacing:.6px; color: var(--accent); margin-top: var(--sp-4); }
+  #letter-reveal[hidden] { display:none; }
+  .contact-list { list-style:none; margin: var(--sp-4) 0 0; padding:0; display:grid; gap: var(--sp-4); max-width:640px; }
+  .contact-list li { border-top:1px solid var(--rule); padding-top: var(--sp-2); }
+  .contact-role { display:block; font-family: var(--font-mono); font-size: var(--t-eyebrow); text-transform:uppercase; letter-spacing:.6px; color: var(--text-muted); margin-bottom: var(--sp-2); }
+  a.rtr-mail { font-family: var(--font-ui); font-size:1.1rem; font-weight:600; color: var(--accent); text-decoration:none; word-break:break-word; }
+  a.rtr-mail.rtr-mail-on:hover { text-decoration:underline; }
+  .contact-fineprint { font-family: var(--font-serif); font-size:.8rem; font-style:italic; color: var(--text-muted); margin-top: var(--sp-4); }
+  /* Action buttons: equal width so the row reads as one clean set (wraps on narrow screens). */
+  .cta .btn-row .btn { flex: 1 1 0; min-width: 8.5rem; text-align: center; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page">
+
+  <header class="masthead">
+    <a class="brand-logo" href="/" aria-label="Right to Read — home"><img src="/assets/rtr-logo.svg?v=101" alt="Right to Read — free libraries for all" width="759" height="647"></a>
+    <span class="spacer"></span>
+    <button class="theme-toggle" onclick="RTRTheme.toggle()"><span data-theme-label>☀</span> theme</button>
+  </header>
+  <div class="flag"></div>
+  <nav class="nav-row" aria-label="Primary">
+    <a href="/">Demands</a>
+    <a href="/status-quo/">Status Quo</a>
+    <a href="/history/">History</a>
+    <a href="/act/" aria-current="page">Act</a>
+  </nav>
+
+  <main id="main">
+    <div class="kicker">Act</div>
+    <h1 class="title">Write to your CM</h1>
+    <hr class="tick">
+    <p class="standfirst">The one part that has ever changed anything is people asking — in numbers, on the record. Pick the state you vote in; we'll hand you a ready letter.</p>
+
+    <section class="sec cta" id="write" style="border-top:0;padding-top:0">
+      <div class="act-step">Step 1 — You &amp; where you vote</div>
+      <div class="act-fields">
+        <div><label for="mp-state">Your state</label><select id="mp-state"><option value="">— Choose your state —</option></select></div>
+        <div><label for="mp-constituency">Constituency (optional)</label><input id="mp-constituency" type="text" list="ac-list" autocomplete="off" placeholder="Pick a state first" disabled /><datalist id="ac-list"></datalist></div>
+      </div>
+      <div class="act-name">
+        <label for="mp-name">Your name (optional)</label>
+        <input id="mp-name" type="text" placeholder="e.g. Priya Kumar" />
+      </div>
+      <p class="reveal-cue" id="reveal-cue" hidden>↓ Your letter is ready below — finish your details, then send it.</p>
+
+      <div id="letter-reveal" hidden>
+        <div class="act-step">Step 2 — Send it</div>
+        <div class="cta-note" id="cta-note">Pick your State above and we'll route this to the right place — your CM's office, directly.</div>
+        <div class="btn-row">
+          <a id="cta-mailto" class="btn" href="#" hidden>Email the CM</a>
+          <a id="cta-portal" class="btn" href="#" target="_blank" rel="noopener" hidden>CM grievance portal</a>
+          <a id="cta-x" class="btn" href="#" target="_blank" rel="noopener" hidden>Tag CM on X</a>
+          <a id="cta-insta" class="btn" href="#" target="_blank" rel="noopener" hidden>Tag CM on Insta</a>
+          <button id="cta-copy" class="btn" type="button">Copy text</button>
+        </div>
+        <pre id="letter-pre"></pre>
+        <details class="cta-howto" style="margin-top:var(--sp-5)">
+          <summary>How to send +</summary>
+          <ol style="margin-top:var(--sp-4)">
+            <li><strong>Straight to your CM.</strong> The send button routes to your State's own official channel — its grievance portal where the State runs one, or CPGRAMS for the Union Territories the Centre administers directly. Public libraries are a <strong>State subject</strong>, so it stays with the State wherever it can.</li>
+            <li><strong>On a portal?</strong> Hit <strong>Copy text</strong>, open the portal, and paste the letter into the grievance form.</li>
+            <li><strong>No online portal?</strong> Print the letter and <strong>post it to your CM's office</strong> — for those States the address is printed at the top of the letter itself.</li>
+            <li><strong>Make it public.</strong> <strong>Tag your CM on X or Instagram</strong> — a public ask carries further than a private one.</li>
+            <li>Sent? Now tell a friend.</li>
+          </ol>
+        </details>
+
+        <div class="share">
+          <div class="eyebrow">Tell a friend</div>
+          <div class="share-row">
+            <a href="https://wa.me/?text=I%20just%20wrote%20to%20my%20CM%20demanding%20free%20public%20libraries.%20Add%20your%20voice%3A%20https%3A%2F%2Ftheright2read.org%2Fact%2F" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/share/url?url=https%3A%2F%2Ftheright2read.org%2Fact%2F&text=I%20just%20wrote%20to%20my%20CM%20demanding%20free%20public%20libraries.%20Add%20your%20voice." target="_blank" rel="noopener">Telegram</a>
+            <button id="share-native" hidden type="button">Share…</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="eyebrow">After you've written</div>
+      <h2>Don't stop at the letter.</h2>
+      <p class="lede">A letter is the start, not the finish. The library question is won in wards and neighbourhoods — by people who go and look, raise the alarm, and refuse to look away. Six things you can do this week:</p>
+      <div class="demands-grid">
+        <div class="demand"><div class="n">01 · Audit</div><h3>Walk in</h3><p>Walk into your nearest public library this week. Sit in it. See who is there and who is not, what books it has, whether it charges. Tell three friends what you saw.</p></div>
+        <div class="demand"><div class="n">02 · Raise the alarm</div><h3>Ask the budget</h3><p>File an RTI for your state's library budget. Most states won't have a clean answer — that silence is itself the answer. Publish what you find.</p></div>
+        <div class="demand"><div class="n">03 · Audit</div><h3>Map your ward</h3><p>Is there a public reading room in your ward? Is it on a map? Does it even have a sign? Map the infrastructure the State has forgotten.</p></div>
+        <div class="demand"><div class="n">04 · Build</div><h3>Fund a library</h3><p>The Free Libraries Network supports community libraries across India, most of them hand-to-mouth. ₹1,000 a month keeps a child reading for a year.</p></div>
+        <div class="demand"><div class="n">05 · Build</div><h3>Donate books</h3><p>Not old textbooks. Picture books in the local language, fiction, comics — books that look like the children who will read them.</p></div>
+        <div class="demand"><div class="n">06 · Build</div><h3>Teach a session</h3><p>Once a week, in your neighbourhood. Not a curriculum, not a coaching class. Just reading — out loud, in any language, with anyone who wants to listen.</p></div>
+      </div>
+      <p class="callout">Every audit you publish, every RTI you file, every child you read with is a demand the State cannot file away. <strong>Write the letter. Then go further.</strong></p>
+    </section>
+
+    <section class="sec" id="join">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Join the Campaign!</h2>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-role">Get involved</span>
+          <a class="rtr-mail" data-u="jaibhim" data-d="gro.daer2thgireht" href="#">jaibhim <span aria-hidden="true">[at]</span> theright2read <span aria-hidden="true">[dot]</span> org</a>
+        </li>
+        <li>
+          <span class="contact-role">Press &amp; media</span>
+          <a class="rtr-mail" data-u="media" data-d="gro.daer2thgireht" href="#">media <span aria-hidden="true">[at]</span> theright2read <span aria-hidden="true">[dot]</span> org</a>
+        </li>
+        <li>
+          <span class="contact-role">Report shut, fee-charging, or discriminatory libraries</span>
+          <a class="rtr-mail" data-u="grievances" data-d="gro.daer2thgireht" href="#">grievances <span aria-hidden="true">[at]</span> theright2read <span aria-hidden="true">[dot]</span> org</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <div class="channels">
+    <div class="channels-eyebrow">Join the campaign</div>
+    <div class="channels-row" data-channels></div>
+  </div>
+
+  <footer class="colophon">
+    <span>Last updated June 2026</span>
+    <a class="how-made" href="/colophon/">How this is made</a>
+    <a class="github-link" href="https://github.com/CommonerLLP/theright2read" target="_blank" rel="noopener" aria-label="Source code and licences"><svg class="github-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.67 0 8.2c0 3.62 2.29 6.69 5.47 7.77.4.08.55-.18.55-.4 0-.19-.01-.84-.01-1.53-2.01.38-2.53-.5-2.69-.96-.09-.24-.48-.96-.82-1.16-.28-.16-.68-.56-.01-.57.63-.01 1.08.59 1.23.83.72 1.24 1.87.89 2.33.68.07-.53.28-.89.51-1.09-1.78-.21-3.64-.91-3.64-4.04 0-.89.31-1.62.82-2.19-.08-.21-.36-1.04.08-2.16 0 0 .67-.22 2.2.84A7.4 7.4 0 0 1 8 3.95c.68 0 1.36.09 2 .28 1.53-1.06 2.2-.84 2.2-.84.44 1.12.16 1.95.08 2.16.51.57.82 1.3.82 2.19 0 3.14-1.87 3.83-3.65 4.04.29.25.54.76.54 1.54 0 1.11-.01 2-.01 2.27 0 .22.15.48.55.4A8.09 8.09 0 0 0 16 8.2C16 3.67 12.42 0 8 0Z"/></svg>Contribute</a>
+  </footer>
+</div>
+
+<script src="/assets/data.js?v=101"></script>
+<script src="/assets/helpers.js?v=101"></script>
+<script src="/assets/constituencies.js?v=101"></script>
+<script src="/assets/main.js?v=101"></script>
+<script src="/assets/contact.js?v=101"></script>
+<script src="/assets/core/domain.js?v=101"></script>
+<script src="/assets/core/ports.js?v=101"></script>
+<script src="/assets/core/footer.js?v=101"></script>
+<script>
+  // progressive disclosure: reveal the letter only once a state is chosen
+  (function () {
+    var sel = document.getElementById("mp-state"), rev = document.getElementById("letter-reveal"), cue = document.getElementById("reveal-cue");
+    function upd() { var on = !!sel.value; if (rev) rev.hidden = !on; if (cue) cue.hidden = !on; }
+    // Reveal the letter when a state is chosen, but do NOT auto-scroll: Constituency + Name
+    // now sit in Step 1 above the reveal, so scrolling to it would skip past them (the letter
+    // sits right below and updates live as they finish the fields).
+    if (sel) { upd(); sel.addEventListener("change", upd); }
+    if (navigator.share) { var n = document.getElementById("share-native"); if (n) { n.hidden = false;
+      n.addEventListener("click", function () { navigator.share({ title: "Right to Read", text: "I just wrote to my CM demanding free public libraries. Add your voice.", url: "https://theright2read.org/act/" }).catch(function(){}); }); } }
+  })();
+</script>
+</body>
+</html>

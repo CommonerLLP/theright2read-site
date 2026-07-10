@@ -1,0 +1,20 @@
+{
+  "slug": "oscillation",
+  "renderer": "svg",
+  "type": "oscillation",
+  "title": "Recurrence without enactment",
+  "subtitle": "Eighty-nine years of the public-library obligation",
+  "source": "ILA proceedings; the CSL Compendium; the Rajya Sabha record. RTR-WP-008.",
+  "caption": "Each marker is a documented event, 1936–2025, placed on the tier of the State's answer: a <b>demand</b> at the top, then, further down, a <b>deferral</b> (shelved), a <b>refusal</b> (declined), or an <b>inversion</b> (reversed — the 1993 fee). The dashed rule is the outcome the whole sequence sought — <b>a binding central library Act</b> — and no marker ever lands on it; the further a marker sits below it, the deeper the betrayal. Events are evenly spaced so the sequence stays legible; the year on each point is the true date.",
+  "data": [
+    {"yr":1936,"kind":"deferral","t":"Bombay Public Libraries Bill No. XXIV introduced — and not further considered."},
+    {"yr":1939,"kind":"refusal","t":"Library Development Committee, Bombay: a library cess weighed and declined; only permissive legislation proposed."},
+    {"yr":1944,"kind":"demand","t":"ILA, 6th conference: the Act must be central, mandatory, tax-funded and free. “The Government of the country must finance the scheme.”"},
+    {"yr":1957,"kind":"demand","t":"Sinha Advisory Committee: free access “the right of every citizen … as his fundamental right,” funded by a cess — then deferred “gradually within a period of twenty years.”"},
+    {"yr":1966,"kind":"demand","t":"Fourth Plan Working Group: Rs 30.99 crore, a Directorate of Libraries in every State, and a Draft Bill prepared for consideration."},
+    {"yr":1986,"kind":"deferral","t":"National Policy on Library & Information Systems drafted — and never laid before Parliament."},
+    {"yr":1993,"kind":"inversion","t":"Obligation inverted: libraries “may charge Re. 1 to Rs. 10 as nominal membership fee.” Declared a “State subject.”"},
+    {"yr":2011,"kind":"refusal","t":"The profession asks whether it must “wait till someone files a PIL in the Supreme Court.”"},
+    {"yr":2025,"kind":"refusal","t":"Rajya Sabha: “The subject ‘Libraries’ comes under State list. No such data is maintained. … There is no such plan.”"}
+  ]
+}

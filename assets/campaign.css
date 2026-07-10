@@ -1,0 +1,282 @@
+/* ============================================================================
+   RTR campaign components — shared, low-maintenance UI built on tokens.css.
+   Used by the website AND the web Briefs. Mobile-first (P1 phone/tablet → P2
+   desktop). Theme-agnostic: everything reads semantic role tokens, so light/dark
+   just work. Add a page/brief by composing these classes — don't re-style.
+   Load order: tokens.css → campaign.css → page-specific.css
+   ============================================================================ */
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html, body { margin: 0; max-width: 100%; overflow-x: hidden; }
+img, svg { max-width: 100%; height: auto; }
+
+/* skip-link — defined once; visually hidden until focused (a11y) */
+.skip-link { position: absolute; left: -9999px; }
+.skip-link:focus { position: static; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-size: var(--t-body);
+  line-height: 1.62;
+  transition: background .25s var(--ease), color .25s var(--ease);
+}
+.wrap { width: 100%; padding: var(--sp-5) var(--sp-4) var(--sp-8); }
+@media (min-width: 760px) { .wrap { max-width: var(--maxw-read); margin-inline: auto; padding: var(--sp-7) var(--sp-5) var(--sp-8); } }
+
+/* .page — THE standard site shell. Every page composes this one width. */
+.page { width: 100%; max-width: var(--maxw-page); margin-inline: auto; padding: 0 var(--sp-4) var(--sp-8); }
+@media (min-width: 760px) { .page { padding: 0 var(--sp-5) var(--sp-8); } }
+
+a { color: var(--accent-2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+/* in-prose links carry an underline so they're not signalled by colour alone (WCAG 1.4.1) */
+.standfirst a, .lede a, .callout a, .quote a, main p a, main li a,
+.meta a, .colophon a, .colophon-line a, .bib-list a, .src a, .src-note a,
+.cta-howto a, .longer a { text-decoration: underline; }
+strong { font-weight: 700; }
+.accent { color: var(--accent); }
+
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.05; color: var(--text); }
+h2 { font-size: var(--t-h2); margin: var(--sp-7) 0 var(--sp-3); padding-top: var(--sp-3); border-top: 1px solid var(--rule); }
+h3 { font-size: var(--t-h3); margin: var(--sp-5) 0 var(--sp-2); }
+p  { margin: 0 0 var(--sp-4); }
+
+/* --- flag rule (red over blue) --- */
+.flag { margin: var(--sp-3) 0; }
+.flag::before, .flag::after { content: ""; display: block; width: 100%; }
+.flag::before { border-top: 4px solid var(--accent); }
+.flag::after  { border-top: 4px solid var(--accent-2); margin-top: 12px; }
+
+/* --- masthead: centred campaign logo + tagline, theme toggle pinned top-right --- */
+.masthead { position: relative; display: flex; flex-direction: column; align-items: center; gap: var(--sp-1); padding: var(--sp-3) 0 var(--sp-2); text-align: center; }
+.masthead .spacer { display: none; }
+.masthead .theme-toggle { position: absolute; top: var(--sp-4); right: 0; }
+.masthead::after { content: "Public Libraries for All"; font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); }
+.masthead .mark { width: 40px; height: 40px; color: var(--text); flex: none; }   /* legacy inline-SVG mark (unused) */
+
+/* --- primary nav (shared; centred) — defined ONCE here, no per-page copies --- */
+.nav-row { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--sp-2) var(--sp-5); margin: var(--sp-2) 0 var(--sp-4);
+  font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .5px; text-transform: uppercase; }
+.nav-row a { color: var(--text-muted); text-decoration: none; display: inline-block; padding: 1rem 0; line-height: 1; }   /* ≥44px tap target */
+.nav-row a:hover, .nav-row a[aria-current="page"] { color: var(--accent); }
+.wordmark { line-height: 1.05; }
+.wordmark .rtr { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.25rem, 5vw, 1.6rem); color: var(--accent); letter-spacing: -.5px; }
+.wordmark .rtr .dot { color: var(--text); }
+.wordmark .tag { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: 1px; text-transform: uppercase; color: var(--accent); margin-top: 2px; }
+.masthead .spacer { flex: 1; }
+
+/* --- campaign logo (the WP/Brief lockup; wordmark is built into the art) ---
+   Light: sits on the white page exactly as in the papers (knockout letters read
+   white). Dark: the ink crowd would vanish on near-black, so the logo gets a
+   small light plate to stay legible + on-brand. */
+/* dark mode uses a dark-variant logo (theme.js swaps the src) — no plate needed */
+.brand-logo { display: inline-flex; flex: none; line-height: 0; }
+.brand-logo img { display: block; height: 130px; width: auto; }   /* mobile-first: compact so the hook sits near the top */
+@media (min-width: 760px) { .brand-logo img { height: 240px; } }
+
+/* --- theme toggle --- */
+.theme-toggle {
+  font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .5px;
+  background: transparent; color: var(--text-muted); border: 1px solid var(--rule);
+  border-radius: var(--radius); padding: .4rem .7rem; cursor: pointer; line-height: 1;
+  display: inline-flex; align-items: center; gap: .3rem; min-height: 44px;   /* ≥44px tap target */
+}
+.theme-toggle:hover { color: var(--text); border-color: var(--text-muted); }
+
+/* --- kicker / title / standfirst --- */
+.kicker { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: 1px; text-transform: uppercase; color: var(--accent); margin: var(--sp-5) 0 var(--sp-2); }
+.title { font-family: var(--font-display); font-weight: 700; font-size: var(--t-h1); line-height: .98; text-transform: uppercase; margin: 0 0 var(--sp-3); }
+.tick { width: 64px; border: 0; border-top: 3px solid var(--text); margin: 0 0 var(--sp-3); }
+.standfirst { font-size: clamp(1.05rem, 1rem + .9vw, 1.3rem); line-height: 1.5; margin: 0 0 var(--sp-5); }
+
+/* --- key-message box --- */
+.keymsg { border: 2px solid var(--text); background: var(--surface); padding: var(--sp-5); margin: 0 0 var(--sp-6); }
+.keymsg h2 { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: 1.4px; text-transform: uppercase; color: var(--accent); margin: 0 0 var(--sp-3); border: 0; padding: 0; }
+.keymsg ol { margin: 0; padding-left: 1.2rem; }
+.keymsg li { margin: 0 0 var(--sp-3); line-height: 1.5; }
+.keymsg li strong { font-family: var(--font-display); }
+
+/* --- big-number callouts (stack on phone, row on desktop) --- */
+.bignums { display: flex; flex-direction: column; gap: var(--sp-4); margin: var(--sp-5) 0 var(--sp-6); }
+.bignum { border-left: 4px solid var(--accent); padding-left: var(--sp-3); }
+.bignum .n { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.9rem, 1.4rem + 4vw, 2.6rem); line-height: 1; }
+.bignum .l { font-size: .85rem; color: var(--text-muted); margin-top: var(--sp-2); line-height: 1.35; }
+@media (min-width: 620px) { .bignums { flex-direction: row; } .bignum { flex: 1; } }
+
+/* --- buttons — THE one button system (used site-wide incl. games) --- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem;
+  font-family: var(--font-display); font-weight: 700; text-transform: uppercase; letter-spacing: .5px; font-size: 1rem; line-height: 1;
+  padding: .75rem 1.2rem; border-radius: var(--radius); border: 2px solid var(--accent); color: var(--accent); background: transparent; cursor: pointer; }
+.btn:hover { background: var(--accent); color: var(--on-accent); text-decoration: none; }
+.btn-accent { background: var(--accent); color: var(--on-accent); }
+.btn-accent:hover { filter: brightness(1.08); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+/* [hidden] must beat .btn's display:inline-flex — else hidden buttons (mailto on portal
+   states, Tag-Insta on states with no handle) keep rendering with a dead href. */
+.btn[hidden] { display: none; }
+.btn-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-3); margin: var(--sp-5) 0 0; }
+
+/* --- card / surface --- */
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: var(--sp-5); }
+
+/* --- demands grid (the seven standards) — shared by /demands/ + home --- */
+.demands-grid { display: grid; grid-template-columns: 1fr; gap: var(--sp-4); margin: var(--sp-5) 0; }
+@media (min-width: 620px) { .demands-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 980px) { .demands-grid { grid-template-columns: 1fr 1fr 1fr; } }
+.demand { border: 1px solid var(--rule); border-top: 3px solid var(--accent); border-radius: var(--radius); background: var(--surface); padding: var(--sp-5); }
+.demand .n { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: 1px; color: var(--accent); }
+.demand h3 { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; font-size: var(--t-h3); margin: var(--sp-1) 0 var(--sp-2); }
+.demand p { font-size: .9rem; line-height: 1.45; color: var(--text-soft); margin: 0; }
+
+/* --- emphatic callout (shared) --- */
+.callout { border-left: 4px solid var(--accent); padding-left: var(--sp-4); margin: var(--sp-5) 0; font-size: 1.08rem; line-height: 1.5; }
+.callout strong { color: var(--accent); }
+
+/* --- generic section + eyebrow + lede (shared) --- */
+.sec { padding: var(--sp-7) 0; border-top: 1px solid var(--rule); }
+.sec:first-of-type { border-top: 0; }
+.eyebrow, .sec-eyebrow { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: 1.2px; text-transform: uppercase; color: var(--accent); margin-bottom: var(--sp-2); }
+/* every eyebrow/kicker gets the // marker, once, here — never hand-typed */
+.eyebrow::before, .sec-eyebrow::before, .kicker::before { content: "// "; }
+
+/* --- share row (shared) — buttons share content, not just a link --- */
+.share { padding: var(--sp-6) 0; border-top: 1px solid var(--rule); }
+.share .eyebrow { margin-bottom: var(--sp-3); }
+.share-row { display: flex; flex-wrap: wrap; gap: var(--sp-3); }
+.share-row a, .share-row button { display: inline-flex; align-items: center; gap: .4rem; font-family: var(--font-mono); font-size: .8rem; cursor: pointer;
+  border: 1px solid var(--rule); border-radius: var(--radius); padding: .55rem .85rem; color: var(--text); background: transparent; }
+.share-row a:hover, .share-row button:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+/* --- call-to-action band (shared) --- */
+.cta-band { border: 2px solid var(--accent); border-radius: var(--radius); padding: var(--sp-5); margin: var(--sp-6) 0; }
+.cta-band h2 { border: 0; padding: 0; margin: 0 0 var(--sp-2); text-transform: uppercase; }
+.cta-band .lede { margin-bottom: var(--sp-4); }
+.sec h2 { border: 0; padding: 0; margin: 0 0 var(--sp-3); text-transform: uppercase; }
+.lede { font-size: clamp(1.05rem, 1rem + .6vw, 1.25rem); line-height: 1.5; color: var(--text-soft); margin: 0 0 var(--sp-4); }
+.src { font-family: var(--font-mono); font-size: var(--t-eyebrow); color: var(--text-muted); margin-top: var(--sp-4); }
+/* on-ramp link from a narrative chart into the /evidence/ tool */
+.chart-more { margin-top: var(--sp-5); font-family: var(--font-mono); font-size: .8rem; letter-spacing: .3px; }
+.chart-more a { color: var(--accent); text-decoration: none; }
+.chart-more a:hover { text-decoration: underline; }
+
+/* --- quotes (voices) --- */
+.quote-grid { display: grid; grid-template-columns: 1fr; gap: var(--sp-5); margin: var(--sp-5) 0; }
+@media (min-width: 720px) { .quote-grid { grid-template-columns: 1fr 1fr; } }
+.quote { border-left: 4px solid var(--accent); padding-left: var(--sp-4); margin: 0; }
+.quote .text { font-family: var(--font-serif); font-style: italic; font-size: 1.1rem; line-height: 1.45; color: var(--text); }
+.quote .attr { font-family: var(--font-mono); font-size: var(--t-eyebrow); text-transform: uppercase; letter-spacing: .5px; color: var(--text-muted); margin-top: var(--sp-2); }
+
+/* --- pantheon illustration (cream stage in dark so it never goes red-on-black) --- */
+.pantheon { text-align: center; padding: var(--sp-7) 0; }
+.pantheon img { border-radius: var(--radius); max-width: 100%; box-sizing: border-box; }
+.pantheon-credit { font-size: .75rem; color: var(--text-muted); margin-top: var(--sp-3); }
+:root[data-theme="dark"] .pantheon img { background: var(--rtr-cream); padding: var(--sp-5); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pantheon img { background: var(--rtr-cream); padding: var(--sp-5); } }
+
+/* --- collapsible sources / bibliography --- */
+.bib-collapse { margin: var(--sp-6) 0; border-top: 1px solid var(--rule); padding-top: var(--sp-4); }
+.bib-head { font-family: var(--font-mono); font-size: var(--t-eyebrow); text-transform: uppercase; letter-spacing: .8px; color: var(--accent); cursor: pointer; }
+.bib-list { list-style: none; padding: 0; margin: var(--sp-4) 0; }
+.bib-list li { margin-bottom: var(--sp-3); font-size: .82rem; line-height: 1.5; }
+.bib-label { font-family: var(--font-ui); font-weight: 600; color: var(--text); display: block; }
+.bib-cite { color: var(--text-muted); }
+.bib-notes { font-size: .8rem; color: var(--text-muted); line-height: 1.5; margin-top: var(--sp-4); }
+.bib-notes .bib-label { display: inline; margin-right: .4rem; }
+
+/* --- closing peroration --- */
+.closing { padding: var(--sp-8) 0 var(--sp-6); border-top: 2px solid var(--accent); container-type: inline-size; }
+/* one row, sized to fill the container width (caps at 1280); wraps on phones */
+.closing h2 { font-size: clamp(1.2rem, 7.5cqi, 5rem); text-transform: uppercase; border: 0; padding: 0; margin: 0; line-height: 1.05; }
+.closing h2 .red { color: var(--accent); }
+.closing .meta { font-size: .9rem; color: var(--text-muted); line-height: 1.5; margin-top: var(--sp-5); }
+.closing .meta .head { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; color: var(--text); margin-bottom: var(--sp-2); }
+.salute { margin-top: var(--sp-4); font-family: var(--font-ui); color: var(--accent); }
+.salute-sep { color: var(--text-muted); margin: 0 .4rem; }
+.colophon-line { margin-top: var(--sp-7); padding-top: var(--sp-3); border-top: 1px solid var(--rule); font-size: .8rem; color: var(--text-muted); line-height: 1.45;
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: .4rem 1rem; }
+/* repo / Contribute link — defined HERE (every campaign page loads campaign.css;
+   none load styles.css, where the old copy lived, so the icon+text used to touch). */
+.github-link { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
+  color: var(--text-muted); text-decoration: underline; }
+.github-link:hover { color: var(--accent); }
+.github-icon { width: 14px; height: 14px; fill: currentColor; flex: 0 0 auto; vertical-align: -2px; }
+
+/* --- site footer: follow channels (the flag rule, closed at the foot) --- */
+/* red-over-blue rule echoes the masthead — bookending the page in the flag. */
+.channels { margin-top: var(--sp-8); padding-top: var(--sp-5); padding-bottom: var(--sp-5); text-align: center;
+  border-top: 2px solid var(--accent); box-shadow: 0 2px 0 0 var(--accent-2); }
+.channels-eyebrow { font-family: var(--font-mono); font-size: var(--t-eyebrow);
+  letter-spacing: .8px; text-transform: uppercase; color: var(--accent); margin-bottom: var(--sp-3); }
+.channels-row { display: flex; flex-wrap: wrap; gap: var(--sp-1) var(--sp-2); align-items: center; justify-content: center; }
+/* logos only — accessible name comes from aria-label, not visible text */
+.channel { display: inline-flex; align-items: center; justify-content: center;
+  padding: 11px; border-radius: 6px; color: var(--text-muted); transition: color .15s ease; }   /* 22px icon + 11px pad each side = 44px hit area */
+.channel svg { width: 22px; height: 22px; fill: currentColor; flex: none; display: block; }
+.channel:hover, .channel:focus-visible { color: var(--accent); }
+.channels-note { margin-top: var(--sp-3); font-family: var(--font-mono);
+  font-size: var(--t-eyebrow); letter-spacing: .4px; color: var(--text-muted); }
+/* when channels precede the legal line, drop the line's own top divider */
+.channels + .colophon-line, .channels + .colophon { border-top: none; margin-top: var(--sp-4); padding-top: 0; }
+/* ending: the manifesto crescendo drops straight into the footer band — kill the dead gap */
+.closing + .channels, .share + .channels { margin-top: var(--sp-5); }
+.channels { margin-top: var(--sp-7); }
+
+/* --- footer / colophon --- */
+.colophon { margin-top: var(--sp-7); padding-top: var(--sp-3); border-top: 1px solid var(--rule); font-size: .8rem; color: var(--text-muted); line-height: 1.45;
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: .4rem 1rem; }
+:is(.colophon, .colophon-line) > span:first-child { grid-column: 1; justify-self: start; }
+:is(.colophon, .colophon-line) > .how-made { grid-column: 2; justify-self: center; color: var(--text-muted); text-decoration: underline; white-space: nowrap; }
+:is(.colophon, .colophon-line) > .github-link { grid-column: 3; justify-self: end; }
+@media (max-width: 560px) { :is(.colophon, .colophon-line) { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: .3rem; }
+  :is(.colophon, .colophon-line) > span:first-child, :is(.colophon, .colophon-line) > .how-made, :is(.colophon, .colophon-line) > .github-link { grid-column: 1; justify-self: center; } }
+.colophon .label { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .8px; text-transform: uppercase; color: var(--accent); }
+
+/* --- publications (/writing) + reading room (/library): the catalogue ---
+   Shared pieces. The signature is the accession card: a left flag-rule and a
+   mono "accession line" (RTR-WP-001 · date · version · status) that reads like a
+   library catalogue stamp — the code IS the structure, so it earns the styling. */
+.pub-kicker { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .6px; text-transform: uppercase; color: var(--accent); }
+.pub-title { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; font-size: var(--t-h3); line-height: 1.08; margin: var(--sp-2) 0; border: 0; padding: 0; }
+.pub-title .pub-sub { display: block; font-weight: 500; text-transform: none; font-size: .68em; color: var(--text-soft); margin-top: var(--sp-1); letter-spacing: 0; }
+.pub-standfirst { margin: 0 0 var(--sp-3); color: var(--text-soft); font-size: .98rem; line-height: 1.5; }
+
+/* feature card — the interactive analysis, set apart from the paper shelf */
+.pub-feature { display: block; color: var(--text); background: var(--surface-2); border: 1px solid var(--rule); border-top: 3px solid var(--accent); border-radius: var(--radius); padding: var(--sp-5); margin: var(--sp-5) 0 var(--sp-6); }
+.pub-feature:hover { border-color: var(--accent); text-decoration: none; }
+
+.pub-shelf-head { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); border-top: 1px solid var(--rule); padding-top: var(--sp-3); margin: var(--sp-6) 0 var(--sp-4); }
+.pub-shelf { display: grid; gap: var(--sp-4); }
+
+/* the accession card */
+.pub-card { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent-2); border-radius: var(--radius); padding: var(--sp-5); }
+.pub-accession { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .4px; color: var(--text-muted); margin-top: var(--sp-2); padding-top: var(--sp-2); border-top: 1px dotted var(--rule); }
+.pub-actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-3); }
+.pub-act { display: inline-block; font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .4px; text-transform: uppercase; color: var(--on-accent, #fff); background: var(--accent); border-radius: var(--radius); padding: .55rem .9rem; }
+.pub-act:hover { text-decoration: none; filter: brightness(1.05); }
+.pub-act-soft { color: var(--accent); background: transparent; border: 1px solid var(--rule); }
+.pub-act-soft:hover { border-color: var(--accent); filter: none; }
+.pub-empty { font-size: .9rem; color: var(--text-muted); border-left: 3px solid var(--rule); padding-left: var(--sp-3); }
+.pub-crosslink { margin-top: var(--sp-6); padding-top: var(--sp-4); border-top: 1px solid var(--rule); font-size: .92rem; color: var(--text-muted); }
+
+/* reading room — shelves of Zotero collections */
+.lib-shelves { display: grid; gap: var(--sp-6); }
+.lib-shelf { border-top: 1px solid var(--rule); padding-top: var(--sp-4); }
+.lib-shelf-label { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; font-size: var(--t-h3); margin: 0; border: 0; padding: 0; }
+.lib-shelf-blurb { margin: var(--sp-1) 0 var(--sp-3); color: var(--text-muted); font-size: .92rem; }
+.lib-items { list-style: none; margin: 0; padding: 0; }
+.lib-item { border-bottom: 1px dotted var(--rule); }
+.lib-item a, .lib-item { display: block; color: var(--text); padding: var(--sp-2) 0; }
+.lib-item a:hover { text-decoration: none; }
+.lib-item a:hover .lib-item-title { color: var(--accent); }
+.lib-item-title { display: block; font-size: .98rem; line-height: 1.35; }
+.lib-item-by { display: block; font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .3px; color: var(--text-muted); margin-top: 2px; }
+.lib-more { display: inline-block; font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .5px; text-transform: uppercase; color: var(--accent); margin-top: var(--sp-3); }
+
+/* reading-room view toggle (by type / by year / by tag) */
+.lib-views { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-bottom: var(--sp-5); }
+.lib-view-btn { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .5px; text-transform: uppercase; color: var(--text-muted); background: transparent; border: 1px solid var(--rule); border-radius: var(--radius); padding: .5rem .9rem; cursor: pointer; display: inline-flex; align-items: center; min-height: 44px; }   /* ≥44px tap target */
+.lib-view-btn:hover { border-color: var(--accent); color: var(--accent); }
+.lib-view-btn[aria-pressed="true"] { color: var(--on-accent, #fff); background: var(--accent); border-color: var(--accent); }

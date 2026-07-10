@@ -1,0 +1,73 @@
+/* ============================================================================
+   RTR legacy bridge — themes the original styles.css pages (inequality, the
+   grammar essay, the Quarto-adjacent chrome) with the v2 design tokens, and
+   adds LIGHT + DARK for free. The old design was fully variable-driven; we
+   remap those variables to the theme-aware semantic tokens, so every legacy
+   page inherits the v2 palette + dark mode WITHOUT a per-page rewrite.
+   Also carries the v2 masthead components (so legacy pages get the campaign
+   logo + nav + theme toggle) self-contained — campaign.css is NOT loaded here
+   (it would collide with styles.css on body/h2/a).
+   Load order on a legacy page: tokens.css → styles.css → legacy-bridge.css
+   Full per-page layout redesigns are tracked for v2.1.
+   ============================================================================ */
+
+/* ---- remap the old design variables onto v2 semantic tokens (theme-aware) ---- */
+:root {
+  --cream:      var(--surface-2);
+  --cream-deep: var(--surface);
+  --ink:        var(--text);
+  --ink-soft:   var(--text-soft);
+  --red:        var(--accent);
+  --red-deep:   var(--rtr-red-2);
+  --blue:       var(--accent-2);
+  --f-slab:     var(--font-serif);
+  --f-mono:     var(--font-mono);
+}
+
+/* old body bg was a hardcoded near-black; make the page itself theme-aware */
+body { background: var(--bg) !important; color: var(--text); transition: background .25s var(--ease), color .25s var(--ease); }
+
+/* constrain legacy content to the SAME shell width as v2 pages, and convert the
+   old full-bleed section bands into plain ruled sections (matches the v2 look). */
+.pamphlet { background: transparent !important; max-width: var(--maxw-page); margin-inline: auto; padding: 0 var(--sp-4); }
+@media (min-width: 760px) { .pamphlet { padding: 0 var(--sp-5); } }
+.pamphlet .section { background: transparent !important; border-bottom: 0 !important; border-top: 1px solid var(--rule); padding: var(--sp-7) 0; }
+.pamphlet .section:first-of-type { border-top: 0; }
+.pamphlet .grain { display: none; }   /* old texture overlay — drop on v2 */
+
+/* timeline scrubber: kill the old red/grey rgba era-band tints (leftover),
+   keep eras separated by rules + labels; make dots theme-aware. */
+.pamphlet .tl-era-pre, .pamphlet .tl-era-col, .pamphlet .tl-era-ref,
+.pamphlet .tl-era-ind, .pamphlet .tl-era-rec { background: transparent !important; }
+.pamphlet .tl-era { border-right-color: var(--rule) !important; }
+.pamphlet .tl-era-label { color: var(--text-muted); }
+.pamphlet .tl-dot { background: var(--bg); border-color: var(--text-muted); }
+.pamphlet .tl-dot.active { background: var(--accent); border-color: var(--accent); }
+
+/* pantheon (the anti-caste lineage) — moved here from home; cream stage in dark */
+.pantheon { text-align: center; padding: var(--sp-7) 0; }
+.pantheon img { border-radius: var(--radius); box-sizing: border-box; max-width: 100%; }
+.pantheon-credit { font-size: .75rem; color: var(--text-muted); margin-top: var(--sp-3); }
+:root[data-theme="dark"] .pantheon img { background: var(--rtr-cream); padding: var(--sp-5); border-radius: var(--radius); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pantheon img { background: var(--rtr-cream); padding: var(--sp-5); border-radius: var(--radius); } }
+
+/* ---- v2 masthead components (self-contained; mirror campaign.css on tokens) ---- */
+.skip-link { position: absolute; left: -9999px; } .skip-link:focus { position: static; }
+.v2-masthead { position: relative; display: flex; flex-direction: column; align-items: center; gap: var(--sp-2); padding: var(--sp-5) var(--sp-4) var(--sp-3); max-width: var(--maxw-page); margin-inline: auto; text-align: center; }
+.v2-masthead .spacer { display: none; }
+.v2-masthead .theme-toggle { position: absolute; top: var(--sp-4); right: var(--sp-4); }
+.v2-masthead::after { content: "Public Libraries for All"; font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); }
+.brand-logo { display: inline-flex; flex: none; line-height: 0; }
+.brand-logo img { display: block; height: 96px; width: auto; }
+@media (min-width: 760px) { .brand-logo img { height: 132px; } }
+.theme-toggle { font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .5px; background: transparent;
+  color: var(--text-muted); border: 1px solid var(--rule); border-radius: var(--radius); padding: .4rem .6rem; cursor: pointer; line-height: 1; }
+.theme-toggle:hover { color: var(--text); border-color: var(--text-muted); }
+.v2-flag { max-width: var(--maxw-page); margin: var(--sp-3) auto 0; padding: 0 var(--sp-4); }
+.v2-flag::before, .v2-flag::after { content: ""; display: block; width: 100%; }
+.v2-flag::before { border-top: 2px solid var(--accent); }
+.v2-flag::after  { border-top: 2px solid var(--accent-2); margin-top: 2px; }
+.v2-nav { display: flex; flex-wrap: wrap; gap: var(--sp-4); max-width: var(--maxw-page); margin: var(--sp-3) auto; padding: 0 var(--sp-4);
+  font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .5px; text-transform: uppercase; }
+.v2-nav a { color: var(--text-muted); text-decoration: none; }
+.v2-nav a:hover, .v2-nav a[aria-current="page"] { color: var(--accent); }

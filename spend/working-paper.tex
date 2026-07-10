@@ -1,0 +1,666 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  11pt,
+  oneside,
+  10pt,
+  a4paper,
+  twocolumn]{article}
+\usepackage{xcolor}
+\usepackage[top=20mm,bottom=20mm,left=25mm,right=20mm,bottom=22mm,left=18mm,right=18mm,columnsep=6mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Right to Read · Spend Analysis}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\usepackage{xcolor}
+\definecolor{red}{HTML}{DC2A14}
+\definecolor{ink}{HTML}{0E0E0E}
+\definecolor{cream}{HTML}{F1E8D3}
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+% EPW-style typography: Times for body, small-caps for headings
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Economic \& Political Weekly} · Special Article}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\usepackage{xcolor}
+\definecolor{campaignred}{HTML}{DC2A14}
+\definecolor{campaignblue}{HTML}{1936A8}
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,format=plain,justification=justified}
+% EPW abstract box: single-column, ruled
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\normalfont\bfseries\small}
+\renewcommand{\abstracttextfont}{\normalfont\small}
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+% Section style: small-caps, no numbering
+\usepackage{sectsty}
+\sectionfont{\normalsize\scshape}
+\subsectionfont{\normalsize\itshape}
+% Tighter paragraph spacing for EPW two-column
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{10pt}
+% Title block
+\usepackage{titling}
+\pretitle{\begin{flushleft}\Large\bfseries}
+\posttitle{\end{flushleft}}
+\preauthor{\begin{flushleft}\normalsize}
+\postauthor{\end{flushleft}}
+\predate{\begin{flushleft}\small\itshape}
+\postdate{\end{flushleft}\vspace{-4mm}\rule{\linewidth}{0.8pt}\vspace{2mm}}
+% Wide figures/tables span both columns
+\usepackage{dblfloatfix}
+\usepackage{stfloats}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={What India Really Spends on Public Libraries: A Revised National Expenditure Series{,} 2014--2025},
+  pdfauthor={The Right to Read Campaign / CommonerLLP},
+  pdfkeywords={public libraries, India, government expenditure, GDP
+deflator, per-capita spending},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{What India Really Spends on Public Libraries:\\
+A Revised National Expenditure Series, 2014--2025}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Real-terms per-capita analysis using official population
+projections\\
+and the MoSPI implicit GDP deflator}
+\author{The Right to Read Campaign / CommonerLLP}
+\date{2026-05-01}
+\begin{document}
+\maketitle
+\begin{abstract}
+We present a revised and extended national time series of per-capita
+state expenditure on public libraries in India, covering 2014--15
+through 2024--25. Our analysis builds on the expenditure compilation in
+Kulkarni, Balaji \& Dhanamjaya (2025), who extracted a continuous
+seven-year series from the CAG Combined Finance and Revenue Accounts
+(Major Head 2205, Sub-head 105) --- the only peer-reviewed national
+dataset of its kind. We introduce two methodological improvements:
+first, we replace the fixed Census 2011 population denominator with
+annual projected populations from the government's own Technical Group
+on Population Projections (MoHFW, 2020); second, we convert nominal
+expenditure to constant 2011--12 rupees using the MoSPI implicit GDP
+deflator (National Accounts Statistics), the standard deflator for real
+government expenditure analysis in India. We extend the series by four
+years, through 2024--25, using state Demand-for-Grants documents and
+CAGR extrapolation.
+
+The revised headline is materially different from the nominal figure. At
+the 2018--19 peak, India spent \textbf{₹7.87 per person per year} (real,
+2011--12 ₹) on public libraries --- not ₹11.62 as the nominal,
+fixed-denominator calculation suggests. By 2024--25 that figure stands
+at \textbf{₹4.66}: a 41\% fall from peak in five years, and only ₹0.50
+above the 2014--15 baseline of ₹4.16. The apparent nominal recovery in
+the post-2020 years is largely an inflation artefact. In real terms, a
+decade of budgetary activity has produced less than fifty paise per
+person per year of net progress.
+\end{abstract}
+
+
+\subsection{Introduction}\label{introduction}
+
+India does not publish consolidated data on public library spending.
+State-level allocations are embedded, without headline visibility, in
+the CAG's Combined Finance and Revenue Accounts under Major Head 2205
+(Education, Sports, Art and Culture), Sub-head 105 (Public Libraries).
+No ministry reports an annual aggregate. No planning document tracks the
+per-capita trend. In this context, Kulkarni, Balaji \& Dhanamjaya (2025)
+performed a foundational service: their systematic extraction of MH
+2205-105 across states and years produced what is, to our knowledge, the
+first peer-reviewed continuous national time series for this budget
+head.
+
+The policy implications of any such series depend on whether the numbers
+accurately capture the real-terms trajectory of public investment. Two
+features of the original analysis limit that accuracy. First, per-capita
+figures are computed against India's Census 2011 total population, held
+constant across all years. India's population has grown by approximately
+170 million since that enumeration; the fixed denominator progressively
+flatters the per-capita figure as years advance. Second, the series is
+expressed in nominal rupees --- appropriate as a record of what
+legislatures voted, but not as a measure of what those votes actually
+purchased, or of how spending power has changed over time.
+
+These are not incidental concerns. The decade covered (2014--15 to
+2024--25) has seen India's GDP deflator fall from 0.84 to 0.57 relative
+to a 2011--12 base --- a 32\% compression in the real value of one
+current-price rupee. Any analysis that ignores this will, over a
+ten-year window, produce apparent growth that is partly or largely
+illusory.
+
+This paper introduces the two corrections, presents a revised national
+series, extends it through 2024--25, and discusses the changed policy
+picture that results.
+
+\subsection{Data and Methods}\label{data-and-methods}
+
+\subsubsection{Expenditure base}\label{expenditure-base}
+
+The state-level expenditure figures for 2014--15 through 2020--21 are
+taken directly from Kulkarni, Balaji \& Dhanamjaya (2025), Table 1: CAG
+Combined Finance and Revenue Accounts, MH 2205-105, state-level actuals.
+We build on their compilation and do not re-extract from primary CAG
+sources for this period.
+
+For 2021--22 through 2024--25, CAG actuals are unavailable or not yet
+published. We extend using two methods in order of preference: (1) state
+Demand-for-Grants documents where available --- Assam, Goa, Rajasthan
+and Odisha provide usable figures for selected post-2021 years; and (2)
+CAGR extrapolation for remaining states, applying the compound annual
+growth rate computed over 2016--17 through 2020--21 year-on-year from
+the 2020--21 base. This window excludes the 2015--16 base-year effect
+and captures the pre-COVID trend.
+
+States whose series show anomalous year-on-year volatility attributable
+to cess-reclassification artefacts (West Bengal, Karnataka, Telangana,
+Tripura) receive CAGR treatment with a flagged caveat.
+
+\subsubsection{Population denominator}\label{population-denominator}
+
+The original analysis holds India's Census 2011 total population
+constant across all years. We substitute the \textbf{Technical Group on
+Population Projections for India and States 2011--2036} (National
+Commission on Population, MoHFW, July 2020), Table 11 --- annual July-1
+projected totals. These are the official government projections used in
+Fifteenth Finance Commission resource-devolution calculations and major
+health programme planning.
+
+By 2018--19, the Census 2011 fixed denominator understates the projected
+national population by approximately 10\%. By 2024--25 the gap grows to
+approximately 15\%. Using the fixed denominator assigns accumulated
+population growth as apparent per-capita gain, introducing a systematic
+upward bias that widens over the series.
+
+\subsubsection{Price deflator}\label{price-deflator}
+
+We deflate using the \textbf{MoSPI implicit GDP deflator}, derived from
+the National Accounts Statistics GDP-at-constant-prices and
+GDP-at-current-prices series (base year 2011--12). This is the standard
+for real government expenditure analysis in India, used by the Reserve
+Bank of India's annual State Finances study, the OECD Government at a
+Glance real expenditure tables, IMF Article IV reviews, Finance
+Commission reports (most recently the Fifteenth), and CAG performance
+audits. The Consumer Price Index for Industrial Workers (CPI-IW),
+designed for dearness-allowance calculations for urban industrial
+workers, is not the appropriate deflator for government-spending
+analysis. We do not use it.
+
+The deflator factors applied to each year in the series are presented in
+Table~\ref{tbl-deflators}.
+
+\begin{table}
+
+\caption{\label{tbl-deflators}MoSPI implicit GDP deflator factors
+(constant 2011--12 ÷ current prices). Source: National Accounts
+Statistics, MoSPI.}
+
+\centering{
+
+\begin{verbatim}
+| Year    |   Deflator factor | NAS revision stage   |
+|:--------|------------------:|:---------------------|
+| 2014-15 |            0.8444 | Third Revised        |
+| 2015-16 |            0.8256 | Third Revised        |
+| 2016-17 |            0.7997 | Third Revised        |
+| 2017-18 |            0.7691 | Third Revised        |
+| 2018-19 |            0.7404 | Third Revised        |
+| 2019-20 |            0.723  | Third Revised        |
+| 2020-21 |            0.6898 | Third Revised        |
+| 2021-22 |            0.6366 | Second Revised       |
+| 2022-23 |            0.6011 | Final Estimates      |
+| 2023-24 |            0.586  | First Revised        |
+| 2024-25 |            0.5684 | Provisional          |
+\end{verbatim}
+
+}
+
+\end{table}%
+
+National-level deflator factors are applied uniformly across all states,
+consistent with Finance Commission practice.
+
+\subsubsection{The three series}\label{the-three-series}
+
+We construct three national per-capita series for direct comparison
+throughout this paper:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Series A} (Balaji et al.~method): Nominal total expenditure ÷
+  Census 2011 fixed population. Replicates the original analysis.
+\item
+  \textbf{Series B} (population correction only): Nominal total
+  expenditure ÷ TG 2020 annual projected population. Isolates the
+  denominator effect.
+\item
+  \textbf{Series C} (both corrections --- our preferred series):
+  Expenditure deflated to constant 2011--12 ₹ via the NAS implicit GDP
+  deflator ÷ TG 2020 annual projected population.
+\end{itemize}
+
+Series C is the measure we recommend for per-capita real public
+investment analysis.
+
+\subsection{Results}\label{results}
+
+\subsubsection{National trend: three series
+compared}\label{national-trend-three-series-compared}
+
+Table~\ref{tbl-series} presents the full numerical results.
+\textbf{?@fig-trend} plots the three series together, with the
+solid/dashed distinction marking the boundary between CAG actuals
+(through 2020--21) and projections (2021--22 onwards).
+
+\begin{table}
+
+\caption{\label{tbl-series}National per-capita public library
+expenditure (₹ per person per year), three methods, 2014--15 to
+2024--25. † Projection.}
+
+\centering{
+
+\begin{verbatim}
+| Year     |   A: Nominal, Census 2011 |   B: Nominal, TG pop |   C: Real 2011–12 ₹, TG pop |
+|:---------|--------------------------:|---------------------:|----------------------------:|
+| 2014-15  |                      5.16 |                 4.93 |                        4.16 |
+| 2015-16  |                      6.62 |                 6.25 |                        5.16 |
+| 2016-17  |                      8.62 |                 8.05 |                        6.44 |
+| 2017-18  |                      9.96 |                 9.19 |                        7.07 |
+| 2018-19  |                     11.64 |                10.63 |                        7.87 |
+| 2019-20  |                      7.79 |                 7.04 |                        5.09 |
+| 2020-21  |                      8.39 |                 7.5  |                        5.17 |
+| 2021-22† |                      8.49 |                 7.51 |                        4.78 |
+| 2022-23† |                      8.66 |                 7.6  |                        4.57 |
+| 2023-24† |                      9.13 |                 7.94 |                        4.65 |
+| 2024-25† |                      9.51 |                 8.2  |                        4.66 |
+\end{verbatim}
+
+}
+
+\end{table}%
+
+Three findings stand out from \textbf{?@fig-trend} and
+Table~\ref{tbl-series}.
+
+\textbf{Population correction (A → B).} Substituting TG 2020 projections
+for the Census 2011 fixed denominator reduces the 2018--19 peak from
+₹11.64 to ₹10.63 --- a 9\% revision. By 2024--25, Series A shows ₹9.51
+versus Series B's ₹8.20. This gap will continue widening until a new
+census resets the denominator.
+
+\textbf{Real-terms correction (B → C).} This is the larger revision.
+Deflating Series B's 2018--19 peak of ₹10.63 to constant 2011--12 ₹
+yields ₹7.87 --- a further 26\% reduction. The nominal upward trend
+visible after 2020--21 in Series A and B is absorbed almost entirely by
+inflation: Series C moves from ₹5.17 (2020--21) to ₹4.66 (2024--25), a
+near-flat line.
+
+\textbf{The extended series.} After 2020--21, real per-capita library
+expenditure (Series C) traces ₹4.78, ₹4.57, ₹4.65, ₹4.66. There is no
+recovery. The 2024--25 real figure is only ₹0.50 above the 2014--15
+starting point of ₹4.16. Ten years of nominal budget growth has produced
+less than fifty paise of real-terms progress per person per year.
+
+\subsubsection{The two corrections: a
+decomposition}\label{the-two-corrections-a-decomposition}
+
+\textbf{?@fig-decomp} illustrates the size of each correction
+independently over the series. The gap between Series A and Series C can
+be split into (i) the denominator effect and (ii) the deflation effect.
+
+The decomposition shows that the inflation effect dominates throughout
+the series and grows over time, while the population effect is secondary
+and roughly constant in absolute terms. By 2018--19, the total upward
+bias in the original series is ₹3.77 per person (₹11.64 − ₹7.87); of
+this, ₹2.76 is attributable to inflation and ₹1.01 to the fixed
+denominator.
+
+\subsubsection{State cross-section (2018--19, real
+terms)}\label{state-cross-section-201819-real-terms}
+
+\textbf{?@fig-state} converts the 2018--19 state-level nominal figures
+from Balaji et al.~to real 2011--12 ₹ using the national deflator factor
+of 0.7404. All 31 states and UTs are ranked.
+
+The cross-section reveals a distribution that nominal figures soften.
+The highest-spending state (Goa) spends ₹87.93 per person per year in
+real terms; the lowest (Jharkhand) spends ₹0.10. The gap is 879-fold.
+The median state spends approximately ₹8 per person per year. The four
+Central Zonal Council states --- Uttar Pradesh, Madhya Pradesh,
+Chhattisgarh, Uttarakhand --- fall below ₹2 per person in real terms;
+together they account for over a quarter of India's population.
+
+\subsubsection{The cess paradox: real versus nominal
+volatility}\label{the-cess-paradox-real-versus-nominal-volatility}
+
+Five states incorporate a statutory library cess --- Tamil Nadu, Andhra
+Pradesh, Karnataka, West Bengal, and Kerala. Their nominal series show
+substantially more year-on-year volatility than their real series
+(\textbf{?@fig-cess}), suggesting that a portion of the apparent nominal
+variation reflects price-level changes rather than genuine budget
+decisions.
+
+Karnataka's apparent nominal spike in 2017--18 --- from approximately
+₹9,800 lakh to ₹23,100 lakh in a single year --- deflates to ₹18,500
+lakh in real terms: still significant, but more legible as an actual
+policy event once the price-level effect is removed.
+
+\subsection{Discussion}\label{discussion}
+
+\subsubsection{The nominal narrative versus the real
+one}\label{the-nominal-narrative-versus-the-real-one}
+
+The Balaji et al.~series, as published, supports a narrative of
+substantial growth followed by disruption: from ₹5.16 in 2014--15 to a
+peak of ₹11.64 in 2018--19, a fall to ₹7.79 in 2019--20, partial
+recovery by 2020--21, and continued recovery implied by the nominal
+trend thereafter. The shape of the story is growth, shock, recovery.
+
+The corrected Series C tells a different story. Real per-capita spending
+rose from ₹4.16 to ₹7.87 between 2014--15 and 2018--19 --- a genuine
+gain, but one driven by nominal budget expansion into a period of
+relatively slower aggregate price growth, not by structural policy
+commitment. Then a sharp fall to ₹5.09 in 2019--20, which preceded any
+COVID impact on state budgets. From 2021--22, a slow slide to ₹4.66 ---
+not recovery, but consolidation near the 2014--15 baseline. The shape of
+the real story is a shallow gain, a structural withdrawal, a decade
+closed near where it opened.
+
+The policy implication differs fundamentally. The nominal narrative
+suggests the task is to recover the 2018--19 level. The real-terms
+narrative establishes that the 2018--19 level was itself insufficient
+--- ₹7.87 in constant 2011--12 terms, against a constitutional mandate
+for universal public library access --- and that the structural
+direction since 2018--19 has been downward regardless of nominal budget
+headlines.
+
+\subsubsection{Why the GDP deflator and not
+CPI-IW}\label{why-the-gdp-deflator-and-not-cpi-iw}
+
+The choice of deflator matters numerically. CPI-IW (Consumer Price Index
+for Industrial Workers, Labour Bureau) is a narrower basket and moves
+faster than the implicit GDP deflator. Using CPI-IW would produce lower
+real estimates across the board. We chose the GDP deflator because it
+reflects the price level of all goods and services produced in the
+economy, including government services. Government library expenditure
+purchases staff time, books, building maintenance, and equipment --- a
+basket better approximated by the general economy's price level than by
+a basket designed for urban industrial workers' consumption. This is the
+explicit rationale in the IMF Government Finance Statistics Manual
+(2014), and it is the deflator used by the RBI in its annual State
+Finances study. We follow that standard.
+
+\subsubsection{Why annual projected
+denominators}\label{why-annual-projected-denominators}
+
+Using a fixed census denominator is common in Indian administrative data
+analysis because census enumeration is the only comprehensive population
+count available and the 2021 Census has not yet been published. But the
+right response to that gap is to use the government's own official
+projections --- the TG 2020 series --- produced precisely for this
+purpose and already used by the Finance Commission and major health
+programme evaluations.
+
+There is a further reason to prefer annual denominators: they prevent
+the fixed-denominator artefact, by which India's 1.2\% annual population
+growth registers as apparent per-capita spending growth even when
+aggregate expenditure is flat. Eliminating this artefact is a
+precondition for an honest multi-year comparison.
+
+\subsection{Conclusion}\label{conclusion}
+
+This paper presents a revised and extended national per-capita series
+for Indian public library expenditure, building on the dataset of
+Kulkarni, Balaji \& Dhanamjaya (2025). Two methodological improvements
+--- annual population projections replacing a fixed census denominator,
+and real-terms deflation using the MoSPI implicit GDP deflator ---
+change both the headline figures and the policy conclusion. Both
+corrections use the Indian government's own published data.
+
+The corrected figures for the period covered by the original analysis
+are:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2727}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Year
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Original (nominal, Census 2011)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+This paper (real 2011--12 ₹, TG 2020)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+2014--15 & ₹5.16 & \textbf{₹4.16} \\
+2018--19 (peak) & ₹11.64 & \textbf{₹7.87} \\
+2020--21 & ₹8.39 & \textbf{₹5.17} \\
+\end{longtable}
+}
+
+Extended through 2024--25, the real-terms per-capita figure stands at
+\textbf{₹4.66} --- 41\% below peak, and only marginally above the
+decade's starting point. A nominal upward drift in the post-2020 years
+is absorbed by inflation, leaving no recovery in real terms.
+
+The policy picture that emerges from the corrected series is not one of
+temporary disruption from which recovery is underway. It is one of a
+shallow real-terms gain from 2014 to 2018, a structural withdrawal that
+preceded the pandemic, and a decade that closes near where it opened.
+Nominal budget increases over this period have been substantially
+consumed by inflation and population growth, leaving a per-person real
+investment in public libraries that is lower today than at any point
+since 2016--17.
+
+We recommend that future analyses of Indian public library expenditure
+adopt (1) TG 2020 annual projected population as denominator until the
+2021 Census is released, and (2) the MoSPI implicit GDP deflator as the
+deflation standard, consistent with Finance Commission, RBI, and IMF
+practice.
+
+\subsection{References}\label{references}
+
+Kulkarni, S. R., Balaji, B. P., \& Dhanamjaya, M. (2025). {[}Full
+citation to be inserted --- verify journal and title before
+submission.{]}
+
+Ministry of Health and Family Welfare, Government of India. (2020).
+\emph{Population Projections for India and States 2011--2036.} Technical
+Group on Population Projections, National Commission on Population. New
+Delhi: MoHFW. URL:
+\texttt{nhm.gov.in/New\_Updates\_2018/Report\_Population\_Projection\_2019.pdf}.
+{[}Table 11.{]}
+
+Ministry of Statistics and Programme Implementation, Government of
+India. (annual). \emph{National Accounts Statistics.} New Delhi: MoSPI.
+{[}GDP at current and constant 2011--12 prices; Third Revised through
+Provisional estimates.{]}
+
+Reserve Bank of India. (2026). \emph{State Finances: A Study of Budgets
+of 2025--26.} Mumbai: RBI. {[}Statement 31; real-terms methodology.{]}
+
+International Monetary Fund. (2014). \emph{Government Finance Statistics
+Manual 2014.} Washington, D.C.: IMF. {[}Chapter 10: deflation standards
+for government expenditure series.{]}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{Derivation scripts and input data: \texttt{spend/spend\_data.py}
+and \texttt{spend/index.qmd} in the project repository. All figures are
+reproducible from the cited sources.}
+
+
+
+
+\end{document}

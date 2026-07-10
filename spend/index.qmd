@@ -1,0 +1,180 @@
+---
+title: "What India spends on libraries"
+subtitle: "A decade of per-capita expenditure analysis (2014–2025)"
+author: "The Right to Read Campaign"
+date: "2026-05-13"
+format:
+  html:
+    page-layout: full
+    include-after-body:
+      text: |
+        <script>
+        // Custom interactive logic if needed
+        </script>
+---
+
+```{python}
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+from spend_data import *
+
+# Pamphlet palette
+C_INK   = '#0e0e0e'
+C_CREAM = '#f1e8d3'
+C_RED   = '#dc2a14'
+C_BLUE  = '#1936a8'
+
+plt.rcParams.update({
+    'font.family': 'sans-serif',
+    'axes.edgecolor': C_INK,
+    'axes.labelcolor': C_INK,
+    'xtick.color': C_INK,
+    'ytick.color': C_INK,
+    'text.color': C_INK,
+    'figure.facecolor': C_CREAM,
+    'axes.facecolor': 'white'
+})
+```
+
+::: {.strip}
+Right to Read · The Data [Per Capita Public Library Spend · 2014–2025]{.accent}
+:::
+
+# WHAT INDIA SPENDS ON [PUBLIC LIBRARIES.]{.red}
+
+Kulkarni, Balaji & Dhanamjaya (2025) put the number at **₹11.62 per Indian per year** (nominal) for 2018-19 — the highest point on record. We re-ran their analysis with the government's own annual population projections (TG 2020) and the MoSPI implicit GDP deflator (NAS, base 2011-12). After those two corrections, and after extrapolating state-level CAG accounts through 2024-25, the real story is this:
+
+::: {.killer}
+::: {}
+[India · 2024-25 · real terms (2011-12 ₹)]{.label}
+[₹4.66]{.figure}
+:::
+::: {.sub}
+per Indian, per year, on every public library in the country. Less than a local bus ticket. Less than what the State spends on a single one of its statue commissions. Lower than 2014-15.
+:::
+:::
+
+## Section 1 · the arc
+
+Between 2014-15 and 2018-19, state expenditure on public libraries (budget head MH 2205-105) nearly doubled in nominal terms. Adjusted with the MoSPI implicit GDP deflator (base 2011-12), the real-terms gain was modest but real: from **₹4.16** to **₹7.87** per Indian per year. From 2019-20 onwards, the line bends down — and according to the trend in the underlying CAG accounts, it has not bent back up. **By 2024-25, almost all the post-2014 real-terms gain has retreated.**
+
+```{python}
+#| label: fig-national-trend
+#| fig-cap: "National per capita expenditure on public libraries. Solid = CAG Actuals. Dashed = Extrapolation."
+
+fig, ax = plt.subplots(figsize=(10, 5))
+
+# Plot A, B, C
+ax.plot(years_all[:LAST_ACTUAL_IDX+1], nat_A[:LAST_ACTUAL_IDX+1], color=C_INK, lw=2, label='Nominal (Balaji method)')
+ax.plot(years_all[LAST_ACTUAL_IDX:], nat_A[LAST_ACTUAL_IDX:], color=C_INK, lw=2, ls='--')
+
+ax.plot(years_all[:LAST_ACTUAL_IDX+1], nat_B[:LAST_ACTUAL_IDX+1], color=C_BLUE, lw=2, label='Nominal (TG population)')
+ax.plot(years_all[LAST_ACTUAL_IDX:], nat_B[LAST_ACTUAL_IDX:], color=C_BLUE, lw=2, ls='--')
+
+ax.plot(years_all[:LAST_ACTUAL_IDX+1], nat_C[:LAST_ACTUAL_IDX+1], color=C_RED, lw=3, label='Real (2011-12 ₹)')
+ax.plot(years_all[LAST_ACTUAL_IDX:], nat_C[LAST_ACTUAL_IDX:], color=C_RED, lw=3, ls='--')
+
+ax.set_ylabel('₹ per person per year')
+ax.set_ylim(0, 13)
+ax.legend(loc='lower center', bbox_to_anchor=(0.5, -0.25), ncol=3, frameon=False)
+ax.grid(axis='y', alpha=0.1, color=C_INK)
+plt.tight_layout()
+plt.show()
+```
+
+## Section 2 · the spread
+
+31 states and UTs across nearly four orders of magnitude. Jharkhand at one end. Goa at the other. The bottom half clusters near zero; the top is stretched thin. Read the strip below before the regional breakdown — and the two phenomena that distort everything that follows.
+
+```{python}
+#| label: fig-state-bubble
+#| fig-cap: "31 Indian states by per-capita library expenditure 2018-19. Bubble size = Population."
+
+# Simplified version for now
+sorted_indices = np.argsort(state_vals_nominal)
+labels = [state_labels[i] for i in sorted_indices]
+vals = [state_vals_nominal[i] * DEFLATOR_2018_19 for i in sorted_indices]
+pops = [STATE_POP_MN.get(state_labels[i], 1) for i in sorted_indices]
+
+fig, ax = plt.subplots(figsize=(12, 4))
+colors = []
+for v in vals:
+    if v < 2: colors.append('#c53030')
+    elif v < 5: colors.append('#ed8936')
+    elif v < 15: colors.append('#ecc94b')
+    elif v < 40: colors.append('#68d391')
+    else: colors.append('#2f855a')
+
+scatter = ax.scatter(vals, [1]*len(vals), s=[p*10 for p in pops], c=colors, alpha=0.7, edgecolors=C_INK)
+ax.set_xscale('log')
+ax.set_xticks([0.1, 1, 10, 100])
+ax.get_xaxis().set_major_formatter(plt.ScalarFormatter())
+ax.set_yticks([])
+ax.set_xlabel('Real ₹ per person (2018-19)')
+ax.set_title('31 States + UTs · Bubble = Population')
+
+# Add some labels
+highlight_states = ["UP", "Bihar", "Goa", "Karnataka", "Maharashtra"]
+# ... mapping to labels ...
+
+plt.tight_layout()
+plt.show()
+```
+
+### The Cess Paradox
+
+Five states wrote library *cess* into their Public Libraries Acts — a small statutory levy, ring-fenced for libraries outside the annual budget. **Tamil Nadu's line is steady. The other four are not.**
+
+```{python}
+#| label: fig-cess-sparks
+#| fig-cap: "Expenditure volatility in cess states."
+
+cess_data = [
+    ("Tamil Nadu",   [7886, 8199, 9755,10750,12249,13604,13094]),
+    ("Andhra Pradesh",[4144, 4241, 7460,10126,12874,12989,10486]),
+    ("Karnataka",    [10107,9779,11161,11950,23055,12039, 7321]),
+    ("West Bengal",  [ 483,  491,17518,17743,19005,  421,14855]),
+    ("Kerala",       [1683, 5417, 4849, 8379, 8637, 3397, 2591]),
+]
+
+fig, axes = plt.subplots(5, 1, figsize=(6, 8), sharex=True)
+for i, (name, vals) in enumerate(cess_data):
+    ax = axes[i]
+    ax.plot(years_balaji, vals, marker='o', color=C_RED if (max(vals)/min(vals) > 5) else C_INK)
+    ax.set_title(name, loc='left', fontsize=10, fontweight='bold')
+    ax.set_yticks([])
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+
+plt.tight_layout()
+plt.show()
+```
+
+## Section 3 · THE STATE'S OWN MAP.
+
+In 1956, Nehru proposed grouping the reorganised states into Zonal Councils. **These are the State's own regional categories.** Read the library line against them and the picture sharpens.
+
+### CENTRAL ZONAL COUNCIL
+Every single state spends less than **₹2 per Indian per year** on public libraries. Over a quarter of India lives here.
+
+- **Uttar Pradesh**: ₹0.70
+- **Madhya Pradesh**: ₹0.81
+- **Chhattisgarh**: ₹0.93
+- **Uttarakhand**: ₹1.33
+
+## Section 6 · the legal architecture
+
+Spending is downstream of legislation. India has had three generations of state library legislation — and 76 years into the Republic, a fourth group: **16 states, ~700 million people, no library law at all.**
+
+### Sources & Methodology
+
+All real-terms per-capita figures on this page are deflated using the **MoSPI implicit GDP deflator** (base 2011-12).
+
+1. Kulkarni, Balaji & Dhanamjaya (2025)
+2. MoHFW Technical Group (2020)
+3. Open Budgets India
+4. MoSPI National Accounts Statistics
+
+[Download this analysis as a PDF →](spend_analysis.pdf){.print-btn}

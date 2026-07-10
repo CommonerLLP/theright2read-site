@@ -1,0 +1,34 @@
+/* ============================================================================
+   RTR /status-quo/ — page-specific bits only. The shell (.page), header
+   (.kicker/.title/.tick/.standfirst), sections (.sec/.eyebrow/.lede/.src),
+   share row, skip-link and colophon all live in campaign.css. This file owns
+   ONLY the token-themed CSS bar charts (no chart library — they re-colour
+   light/dark for free and stay crisp at any zoom).
+   Load order: tokens.css → campaign.css → status-quo.css
+   ============================================================================ */
+
+/* --- token-themed bar chart (state-by-state) --- */
+.chart { display: flex; flex-direction: column; gap: 6px; margin: var(--sp-4) 0; }
+.bar-row { display: grid; grid-template-columns: 9rem 1fr 4.2rem; align-items: center; gap: var(--sp-3); }
+/* narrow phones: stack the state name above a full-width bar so bars aren't squeezed */
+@media (max-width: 460px) {
+  .bar-row { grid-template-columns: 1fr auto; gap: var(--sp-1) var(--sp-2); }
+  .bar-name { grid-column: 1 / -1; }
+}
+.bar-name { font-family: var(--font-ui); font-size: .82rem; line-height: 1.15; }
+.bar-track { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); height: 18px; overflow: hidden; }
+.bar-fill { height: 100%; background: var(--accent-2); min-width: 2px; }
+.bar-row.hi .bar-fill { background: var(--accent); }
+.bar-row.india .bar-fill { background: var(--accent); }
+.bar-val { font-family: var(--font-display); font-weight: 700; font-size: .9rem; text-align: right; white-space: nowrap; }
+
+/* --- comparison bars (libraries vs vanity) --- */
+.cmp { display: flex; flex-direction: column; gap: var(--sp-4); margin: var(--sp-4) 0; }
+.cmp-name { font-family: var(--font-ui); font-size: .9rem; margin-bottom: var(--sp-2); }
+.cmp-track { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); height: 26px; overflow: hidden; }
+.cmp-fill { height: 100%; background: var(--accent-2); min-width: 3px; }
+.cmp-row.lib .cmp-fill { background: var(--accent); }
+.cmp-amt { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; margin-top: var(--sp-2); }
+.mult { display: flex; flex-direction: column; gap: var(--sp-2); margin-top: var(--sp-4); }
+.mult div { font-size: .95rem; }
+.mult .tag { font-family: var(--font-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .6px; color: var(--text-muted); margin-right: .4rem; }

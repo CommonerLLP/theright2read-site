@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Right to Read — free public libraries for all of India</title>
+<meta name="description" content="India spends just ₹4.77 per Indian, per year on every public library combined. We demand that every state legislate free, tax-funded, anti-caste public libraries. Built on the People's National Library Policy 2024." />
+
+<!-- no-flash theme: set data-theme before paint -->
+<script src="assets/theme.js?v=101"></script>
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=2">
+<link rel="shortcut icon" href="assets/favicon.ico?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=2">
+<meta name="theme-color" content="#BD3341">
+
+<link rel="canonical" href="https://theright2read.org/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Right to Read" />
+<meta property="og:url" content="https://theright2read.org/" />
+<meta property="og:title" content="Right to Read — free public libraries for all of India" />
+<meta property="og:description" content="India spends ₹4.77 per person a year on public libraries. We demand every state legislate free, tax-funded, anti-caste libraries. Educate. Agitate. Organise." />
+<meta property="og:locale" content="en_IN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Right to Read — free public libraries for all of India" />
+<meta name="twitter:description" content="India spends ₹4.77 per person a year on public libraries. We demand better." />
+<meta property="og:image" content="https://theright2read.org/assets/og-image.png?v=2" />
+<meta property="og:image:secure_url" content="https://theright2read.org/assets/og-image.png?v=2" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="838" />
+<meta property="og:image:alt" content="Right to Read — free public libraries for all of India." />
+<meta name="twitter:image" content="https://theright2read.org/assets/og-image.png?v=2" />
+
+<!-- FOSS type (OFL): Oswald display, Source Serif 4 reading, PT Mono eyebrows, Inter Tight UI -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=PT+Mono&family=Inter+Tight:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/tokens.css?v=101">
+<link rel="stylesheet" href="assets/campaign.css?v=101">
+<link rel="stylesheet" href="assets/home.css?v=101">
+<link rel="stylesheet" href="assets/play.css?v=101">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- sticky ACT bar -->
+<div class="actbar" role="region" aria-label="Act now">
+  <a href="act/"><span class="bang">ACT!</span> Write to your CM — now <span class="arrow">→</span></a>
+</div>
+
+<div class="page">
+
+  <header class="masthead">
+    <a class="brand-logo" href="/" aria-label="Right to Read — home"><img src="/assets/rtr-logo.svg?v=101" alt="Right to Read — free libraries for all" width="759" height="647"></a>
+    <span class="spacer"></span>
+    <button class="theme-toggle" onclick="RTRTheme.toggle()"><span data-theme-label>☀</span> theme</button>
+  </header>
+  <div class="flag"></div>
+  <nav class="nav-row" aria-label="Primary">
+    <a href="/" aria-current="page">Demands</a>
+    <a href="/status-quo/">Status Quo</a>
+    <a href="/history/">History</a>
+    <a href="/act/">Act</a>
+  </nav>
+
+  <main id="main">
+
+  <!-- 1 · RECOGNISE — the hook -->
+  <section class="hero">
+    <p class="hero-eyebrow">Per person · per year · India spends</p>
+    <div class="hero-num">₹4.77</div>
+    <p class="hero-sub">on your public library. That's the whole budget.</p>
+    <h1 class="hero-ask">Where is our right to <span class="red">read?</span></h1>
+    <a class="btn btn-accent hero-cta" href="act/">Demand better →</a>
+  </section>
+
+  <!-- 2 · FEEL — a 60-second game, baked into the funnel -->
+  <section class="sec">
+    <div class="eyebrow">First, see it for yourself</div>
+    <h2>What did we build?</h2>
+    <p class="lede">India had the money. It funded <strong>one</strong> of these. Pick which — by round four you'll have learned the pattern. The pattern is the strategy.</p>
+    <div id="dgame-app" class="game-app">
+      <div class="game-screen" data-screen="intro">
+        <div class="game-intro">
+          <div class="game-tag">6 rounds · India's real choices</div>
+          <p>Each round, India had a real budget and funded one item. The others were also real, also possible, also the same money. Pick what India built.</p>
+          <button id="dgame-start" class="btn btn-accent" type="button">Start →</button>
+        </div>
+      </div>
+      <div class="game-screen" data-screen="round" hidden>
+        <div class="game-meta">
+          <div><span class="game-tag">Round</span> <span id="dgame-round">1</span> / 6</div>
+          <div><span class="game-tag">Pattern score</span> <span id="dgame-score">0</span></div>
+        </div>
+        <div class="dgame-prompt" id="dgame-prompt">—</div>
+        <div class="dgame-options" id="dgame-options"></div>
+        <div class="game-feedback dgame-feedback" id="dgame-feedback" aria-live="polite" hidden></div>
+      </div>
+      <div class="game-screen" data-screen="end" hidden>
+        <div class="game-tag">You learned the pattern</div>
+        <div class="dgame-final" id="dgame-final">—</div>
+        <div class="dgame-final-text"><p>The diversion is not a distraction <em>from</em> the strategy. It <strong>is</strong> the strategy.</p></div>
+        <div class="game-end-actions">
+          <button id="dgame-replay" class="btn" type="button">Play again</button>
+          <a href="act/" class="btn btn-accent">Now act →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · THE STAKES — what India loses -->
+  <section class="sec">
+    <div class="eyebrow">What zero libraries costs us</div>
+    <h2>What India loses.</h2>
+    <p class="lede">A country without public libraries isn't just missing buildings. It forecloses on its own society, culture and economy — quietly, every year.</p>
+    <div class="demands-grid">
+      <div class="demand"><div class="n">Society</div><h3>The only level desk</h3><p>The public library is the one space where caste, class and gender are meant to meet as equals — and the only desk a first-generation learner with no books at home can call theirs. Without it, that desk does not exist.</p></div>
+      <div class="demand"><div class="n">Culture</div><h3>A reading public, lost</h3><p>A reading life in India's own languages — built by Phule, Periyar and the Kerala library movement — is left to wither. The generation raised on cheap, widely shared books now has nowhere to find them.</p></div>
+      <div class="demand"><div class="n">Knowledge economy</div><h3>WhatsApp universities fill the vacuum</h3><p>Every knowledge economy runs on public libraries — shared, trusted, curated. India built almost none. Into that vacuum rushed the <strong>WhatsApp university</strong>: forwarded rumour, fake news, misinformation swarms. A people without libraries doesn't stop learning — it learns from whoever shouts loudest.</p></div>
+    </div>
+    <p class="callout">And where there are no public libraries, young people <strong>pay</strong>. Crores cram for government jobs in cramped private reading rooms — for exams that are postponed for years; whose papers <strong>leak</strong> when they are finally held; whose results are then <strong>stayed by the courts</strong>. No free library to study in. No job at the end. A generation charged rent to wait.</p>
+  </section>
+
+  <!-- 4 · THE DEMAND — centre stage -->
+  <section class="sec" id="demands">
+    <div class="eyebrow">The campaign</div>
+    <h2>What we demand.</h2>
+    <p class="callout">A public library is not charity. It is how a republic builds <strong>maitri</strong> — fellowship — with solidarity, mass education, R&amp;D and innovation; and, in Ambedkar's phrase, <strong>constitutional morality</strong> itself.</p>
+    <p class="lede">Every state in India must <strong>legislate a guaranteed public library system</strong> — tax-funded, free to all, with no discrimination by caste, class, gender, sexuality, ability, religion or language. Seven minimum standards:</p>
+    <div class="demands-grid">
+      <div class="demand"><div class="n">01</div><h3>Free</h3><p>No fees, no subscription, no membership cost. Ever.</p></div>
+      <div class="demand"><div class="n">02</div><h3>Anti-caste</h3><p>No discrimination on caste, class, gender, sexuality, ability, religion, language.</p></div>
+      <div class="demand"><div class="n">03</div><h3>Universal access</h3><p>Provisions for persons with disabilities. Hours that fit working lives.</p></div>
+      <div class="demand"><div class="n">04</div><h3>Internet</h3><p>Free, fast, private, uncensored Wi-Fi and devices for all members.</p></div>
+      <div class="demand"><div class="n">05</div><h3>Local</h3><p>Collections in the languages of the community. Books that look back at the reader.</p></div>
+      <div class="demand"><div class="n">06</div><h3>Private</h3><p>What you read is your business. No surveillance. No data sold.</p></div>
+      <div class="demand"><div class="n">07</div><h3>Funded</h3><p>Public money. Per-capita allocations tied to standards. Audited.</p></div>
+    </div>
+  </section>
+
+  <!-- ACT — the call to action -->
+  <section class="sec">
+    <div class="cta-band">
+      <div class="eyebrow">The only part that changes anything</div>
+      <h2>Make the demand.</h2>
+      <p class="lede">The State has deferred this for seventy-five years. The one thing that has ever moved it is people asking — in numbers, on the record.</p>
+      <a class="btn btn-accent" href="act/">Write to your CM →</a>
+    </div>
+  </section>
+
+  <!-- 5 · GO DEEPER — secondary -->
+  <section class="sec">
+    <div class="eyebrow">Go deeper</div>
+    <div class="teasers">
+      <a class="teaser" href="history/"><div class="tz">History</div><div class="tt">How reading was refused</div><div class="tg">Our past →</div></a>
+      <a class="teaser" href="status-quo/"><div class="tz">Status quo</div><div class="tt">What India spends</div><div class="tg">Our present →</div></a>
+      <a class="teaser" href="writing/"><div class="tz">Writing</div><div class="tt">Papers &amp; briefs</div><div class="tg">Read →</div></a>
+      <a class="teaser" href="library/"><div class="tz">Reading room</div><div class="tt">The sources</div><div class="tg">Browse →</div></a>
+    </div>
+  </section>
+
+  <section class="share">
+      <div class="eyebrow">Share the demand</div>
+      <div class="share-row">
+        <a href="https://wa.me/?text=%E2%82%B94.77%20per%20person%20a%20year%20%E2%80%94%20that%27s%20all%20India%20spends%20on%20every%20public%20library%20combined.%20Where%20is%20our%20right%20to%20read%3F%20https%3A//theright2read.org/" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://t.me/share/url?url=https%3A//theright2read.org/&text=%E2%82%B94.77%20per%20person%20a%20year%20%E2%80%94%20that%27s%20all%20India%20spends%20on%20every%20public%20library%20combined.%20Where%20is%20our%20right%20to%20read%3F" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://twitter.com/intent/tweet?text=%E2%82%B94.77%20per%20person%20a%20year%20%E2%80%94%20that%27s%20all%20India%20spends%20on%20every%20public%20library%20combined.%20Where%20is%20our%20right%20to%20read%3F&url=https%3A//theright2read.org/" target="_blank" rel="noopener">X</a>
+      </div>
+    </section>
+
+  <!-- CLOSING -->
+  <section class="closing">
+    <h2>EDUCATE. AGITATE. <span class="red">ORGANISE.</span></h2>
+    <div class="meta">
+      <div class="head">Right to Read</div>
+      A people's campaign, independent of any political party. Built on the People's National Library Policy 2024.<br>
+      Read the policy: <a href="https://www.fln.org.in" target="_blank" rel="noopener">fln.org.in</a>
+      <div class="salute"><span lang="hi">जय भीम</span><span class="salute-sep" aria-hidden="true">·</span><span lang="ta">வாழ்க பெரியார்</span></div>
+    </div>
+  </section>
+
+  <div class="channels">
+    <div class="channels-eyebrow">Join the campaign</div>
+    <div class="channels-row" data-channels></div>
+  </div>
+
+  <footer class="colophon">
+    <span>Last updated June 2026</span>
+    <a class="how-made" href="/colophon/">How this is made</a>
+    <a class="github-link" href="https://github.com/CommonerLLP/theright2read" target="_blank" rel="noopener" aria-label="Source code and licences"><svg class="github-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.67 0 8.2c0 3.62 2.29 6.69 5.47 7.77.4.08.55-.18.55-.4 0-.19-.01-.84-.01-1.53-2.01.38-2.53-.5-2.69-.96-.09-.24-.48-.96-.82-1.16-.28-.16-.68-.56-.01-.57.63-.01 1.08.59 1.23.83.72 1.24 1.87.89 2.33.68.07-.53.28-.89.51-1.09-1.78-.21-3.64-.91-3.64-4.04 0-.89.31-1.62.82-2.19-.08-.21-.36-1.04.08-2.16 0 0 .67-.22 2.2.84A7.4 7.4 0 0 1 8 3.95c.68 0 1.36.09 2 .28 1.53-1.06 2.2-.84 2.2-.84.44 1.12.16 1.95.08 2.16.51.57.82 1.3.82 2.19 0 3.14-1.87 3.83-3.65 4.04.29.25.54.76.54 1.54 0 1.11-.01 2-.01 2.27 0 .22.15.48.55.4A8.09 8.09 0 0 0 16 8.2C16 3.67 12.42 0 8 0Z"/></svg>Contribute</a>
+  </footer>
+
+  </main>
+</div>
+
+<script src="assets/data.js?v=101"></script>
+<script src="assets/helpers.js?v=101"></script>
+<script src="assets/games.js?v=101"></script>
+<script src="assets/core/domain.js?v=101"></script>
+<script src="assets/core/ports.js?v=101"></script>
+<script src="assets/core/footer.js?v=101"></script>
+<script>
+  /* reveal the sticky ACT bar only after the reader is into the page */
+  (function(){var bar=document.querySelector(".actbar");if(!bar)return;function on(){bar.classList.toggle("show",window.scrollY>600);}window.addEventListener("scroll",on,{passive:true});on();})();
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* ============================================================================
+   RTR interactive timeline — a design-system component on tokens.css.
+   Styles the .tl-* DOM that main.js renderInteractiveTimeline() generates into
+   #timeline. Light + dark for free (all colours are semantic tokens). Used by
+   /inequality/. Load: tokens.css → campaign.css → timeline.css
+   ============================================================================ */
+.timeline-interactive { margin-top: var(--sp-6); padding-top: var(--sp-5); border-top: 2px solid var(--rule); }
+
+/* rail — Prev/Next are the primary controls; this rail is a legible progress
+   indicator. Dots are evenly spaced (equal-gap, non-overlapping) and the rail
+   scrolls sideways when the events outrun the viewport (29 dots never fit 360). */
+.tl-rail { position: relative; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;
+  padding-bottom: 4px; margin-bottom: var(--sp-5); scrollbar-width: thin; }
+.tl-track { position: relative; height: 92px; }
+
+/* era bands — the editorial spine, tinted + labelled, both themes */
+.tl-eras { position: absolute; top: 0; left: 0; right: 0; height: 30px; }
+.tl-era { position: absolute; top: 0; height: 30px; border-radius: 2px; overflow: hidden;
+  border-left: 2px solid var(--rule); }
+.tl-era-ref { background: color-mix(in srgb, var(--accent) 14%, transparent);   border-left-color: color-mix(in srgb, var(--accent) 55%, transparent); }
+.tl-era-ind { background: color-mix(in srgb, var(--accent-2) 15%, transparent); border-left-color: color-mix(in srgb, var(--accent-2) 55%, transparent); }
+.tl-era-rec { background: color-mix(in srgb, var(--text-muted) 18%, transparent); border-left-color: color-mix(in srgb, var(--text-muted) 55%, transparent); }
+.tl-era-label { display: block; padding: 4px 8px; font-family: var(--font-mono); font-size: 9.5px;
+  font-weight: 700; letter-spacing: .4px; text-transform: uppercase; color: var(--text-soft);
+  line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* scrubber dots — even-spaced (px left set inline), centred on the line */
+.tl-line { position: absolute; top: 52px; left: 20px; right: 20px; height: 3px; background: var(--rule); }
+.tl-dot { position: absolute; top: 39px; transform: translateX(-50%); width: 26px; height: 26px; border-radius: 50%;
+  background: var(--bg); border: 3px solid var(--text-muted); cursor: pointer; padding: 0; transition: background .15s, transform .15s, border-color .15s; }
+.tl-dot:hover, .tl-dot:focus { background: var(--accent); border-color: var(--accent); transform: translateX(-50%) scale(1.15); }
+.tl-dot:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.tl-dot.active { background: var(--accent); border-color: var(--accent); transform: translateX(-50%) scale(1.25); z-index: 2; }
+.tl-dot-year { position: absolute; top: 70px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono);
+  font-size: 11px; font-weight: 700; letter-spacing: .3px; color: var(--text-muted); white-space: nowrap; opacity: 0; transition: opacity .15s; pointer-events: none; }
+.tl-dot:hover .tl-dot-year, .tl-dot.active .tl-dot-year, .tl-dot:focus .tl-dot-year { opacity: 1; }
+.tl-dot.active .tl-dot-year { color: var(--accent); }
+/* keep the end labels inside the rail so "1848" / "2026" never clip */
+.tl-track .tl-dot:first-of-type .tl-dot-year { left: 0; transform: none; text-align: left; }
+.tl-track .tl-dot:last-of-type  .tl-dot-year { left: auto; right: 0; transform: none; text-align: right; }
+
+/* detail panel */
+.tl-detail { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius);
+  padding: var(--sp-6); min-height: 360px; margin-bottom: var(--sp-5); display: flex; flex-direction: column; }
+.tl-body { flex: 1; font-family: var(--font-serif); font-size: clamp(15px, 1.3vw, 18px); line-height: 1.55; color: var(--text); margin: 0; }
+.tl-meta { display: flex; align-items: baseline; gap: var(--sp-4); flex-wrap: wrap; margin-bottom: var(--sp-3); }
+.tl-year { font-family: var(--font-display); font-size: clamp(48px, 6vw, 84px); font-weight: 700; color: var(--accent); letter-spacing: -2px; line-height: 1; font-variant-numeric: tabular-nums; }
+.tl-era-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); padding: var(--sp-1) 10px; border: 1px solid var(--rule); }
+.tl-title { font-family: var(--font-display); font-size: clamp(24px, 3.5vw, 40px); font-weight: 700; letter-spacing: -.5px; line-height: 1.05; text-transform: uppercase; color: var(--text); margin: 0 0 var(--sp-4); text-wrap: balance; }
+
+/* controls — Prev/Next are primary; [Prev] [n/29] [Next] on one row, Play below.
+   A 3-column grid keeps Prev/Next adjacent and never wraps into an L at 360. */
+.tl-controls { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: var(--sp-2) var(--sp-3); }
+.tl-prev, .tl-next, .tl-play { font-family: var(--font-display); font-weight: 700; font-size: .85rem; letter-spacing: .5px;
+  text-transform: uppercase; background: transparent; color: var(--accent); border: 2px solid var(--accent);
+  padding: .6rem 1rem; min-height: 44px; border-radius: var(--radius); cursor: pointer; }   /* ≥44px tap target */
+.tl-prev { justify-self: start; } .tl-next { justify-self: end; }
+.tl-play { grid-column: 1 / -1; justify-self: center; margin-top: var(--sp-2); }
+.tl-prev:hover, .tl-next:hover, .tl-play:hover, .tl-prev:focus, .tl-next:focus, .tl-play:focus { background: var(--accent); color: var(--on-accent); }
+.tl-prev:focus-visible, .tl-next:focus-visible, .tl-play:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.tl-progress { font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: var(--text-muted); letter-spacing: 1px; justify-self: center; text-align: center; }
+.tl-cur { color: var(--accent); }
+
+@media (max-width: 700px) {
+  .tl-detail { padding: var(--sp-5); min-height: 320px; }
+}
+@media print {
+  .tl-eras, .tl-rail, .tl-controls { display: none !important; }
+  .tl-detail { border: none !important; padding: 0 !important; min-height: 0 !important; }
+}
