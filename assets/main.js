@@ -797,6 +797,16 @@ if (MP_LETTER_PRESENT) Object.keys(STATE_DATA)
   stateSel.appendChild(opt);
 });
 const nameInput = $("#mp-name");
+const citySel = $("#mp-city");
+const wardInput = $("#mp-ward");
+const townInput = $("#mp-town");
+const voterCheck = $("#mp-voter");
+if (MP_LETTER_PRESENT && citySel && typeof RTR_LOCAL_BODY !== "undefined")
+  Object.keys(RTR_LOCAL_BODY).sort().forEach((name) => {
+    const opt = document.createElement("option");
+    opt.value = name; opt.textContent = name;
+    citySel.appendChild(opt);
+  });
 const constInput = $("#mp-constituency");
 const letterPre = $("#letter-pre");
 const mailtoLink = $("#cta-mailto");
@@ -886,6 +896,25 @@ function buildLetter() {
     ? `To: ${cmTitle}\n${stateContact.address}`
     : `To: ${cmTitle}`;
 
+  // Tier 3 (local body): a named ward councillor only where sevent4 has verified,
+  // normalized data (see assets/local-body.js); everywhere else a generic ask, on
+  // the same "no unverified contacts shipped" principle as JURISDICTION_CONTACTS.
+  const city = citySel ? citySel.value : "";
+  const ward = wardInput ? wardInput.value : "";
+  const wardData = (city && ward && typeof RTR_LOCAL_BODY !== "undefined" && RTR_LOCAL_BODY[city])
+    ? RTR_LOCAL_BODY[city].find((w) => w.ward === ward) : null;
+  const localBodyCc = wardData
+    ? `         The Ward Councillor, ${wardData.councillor}${wardData.party ? " (" + wardData.party + ")" : ""}, ${ward}, ${city}`
+    : "         Your local ward councillor / gram panchayat member";
+
+  // Signature block: Name / Constituency / Ward / City-town, State / Date / optional voter line.
+  const town = townInput ? townInput.value : "";
+  const cityTownLine = town ? `${town}, ${stateLabel}` : stateLabel;
+  const wardLine = ward ? `${ward}\n` : "";
+  const voterLine = (voterCheck && voterCheck.checked)
+    ? `\nRegistered voter, ${constituency}` : "";
+  const todayStr = new Date().toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" });
+
   return `${toBlock}
 
 Subject: Fund and free the public libraries of ${stateLabel}
@@ -906,9 +935,12 @@ The library is not a favour. It is a right.
 
 Yours,
 ${name}
-${constituency}, ${stateLabel}
+${constituency}
+${wardLine}${cityTownLine}
+${todayStr}${voterLine}
 
-Copy to: The MLA, ${constituency}`;
+Copy to: The MLA, ${constituency}
+${localBodyCc}`;
 }
 
 function syncLetter() {
@@ -991,6 +1023,17 @@ function populateConstituencies(state) {
     return '<option value="' + n.replace(/"/g, "&quot;") + '"></option>';
   }).join("");
 }
+// Populate the ward typeahead for the chosen city (only the cities in
+// RTR_LOCAL_BODY have real councillor data — see scripts/build_local_body.py
+// for coverage rationale; every other city stays a generic ask in the letter).
+function populateWards(city) {
+  const dl = document.getElementById("ward-list");
+  if (!dl) return;
+  const list = (typeof RTR_LOCAL_BODY !== "undefined" && RTR_LOCAL_BODY[city]) || [];
+  dl.innerHTML = list.map(function (w) {
+    return '<option value="' + w.ward.replace(/"/g, "&quot;") + '"></option>';
+  }).join("");
+}
 if (MP_LETTER_PRESENT) {
   nameInput.addEventListener("input", syncLetter);
   stateSel.addEventListener("change", function () {
@@ -1002,6 +1045,17 @@ if (MP_LETTER_PRESENT) {
     syncLetter();
   });
   constInput.addEventListener("input", syncLetter);
+  if (citySel) citySel.addEventListener("change", function () {
+    populateWards(citySel.value);
+    wardInput.value = ""; // a ward belongs to a city — drop a stale pick
+    var hasCity = !!citySel.value;
+    wardInput.disabled = !hasCity;
+    wardInput.placeholder = hasCity ? "start typing…" : "Pick a city first";
+    syncLetter();
+  });
+  if (wardInput) wardInput.addEventListener("input", syncLetter);
+  if (townInput) townInput.addEventListener("input", syncLetter);
+  if (voterCheck) voterCheck.addEventListener("change", syncLetter);
   syncLetter();
 }
 

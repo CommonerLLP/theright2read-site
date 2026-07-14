@@ -39,6 +39,10 @@
   .act-fields label, .act-name label { display:block; font-family: var(--font-mono); font-size: var(--t-eyebrow); text-transform:uppercase; letter-spacing:.6px; color: var(--text-muted); margin-bottom: var(--sp-2); }
   .act-fields select, .act-fields input, .act-name input { width:100%; padding:.7rem .8rem; font-family: var(--font-ui); font-size:1.05rem; background: var(--bg); color: var(--text); border:1px solid var(--rule); border-radius: var(--radius); }
   .act-fields select:focus, .act-fields input:focus, .act-name input:focus { outline:2px solid var(--accent); }
+  .act-fields select:disabled, .act-fields input:disabled { opacity:.55; cursor:not-allowed; }
+  .act-checkbox { display:flex; align-items:center; }
+  .act-checkbox label { display:flex; align-items:center; gap:.5rem; font-family: var(--font-ui); font-size:.92rem; color: var(--text); cursor:pointer; margin-top: var(--sp-5); }
+  .act-checkbox input { width:auto; }
   @media (max-width:480px){ .act-fields { grid-template-columns:1fr; } }
   /* first-reveal cue — tells the citizen the letter appeared below (esp. on a phone, below the fold) */
   .reveal-cue { font-family: var(--font-mono); font-size: var(--t-eyebrow); text-transform:uppercase; letter-spacing:.6px; color: var(--accent); margin-top: var(--sp-4); }
@@ -81,10 +85,16 @@
       <div class="act-fields">
         <div><label for="mp-state">Your state</label><select id="mp-state"><option value="">— Choose your state —</option></select></div>
         <div><label for="mp-constituency">Constituency (optional)</label><input id="mp-constituency" type="text" list="ac-list" autocomplete="off" placeholder="Pick a state first" disabled /><datalist id="ac-list"></datalist></div>
+        <div><label for="mp-city">City (optional — for your ward councillor)</label><select id="mp-city"><option value="">— Not one of these / skip —</option></select></div>
+        <div><label for="mp-ward">Your ward (optional)</label><input id="mp-ward" type="text" list="ward-list" autocomplete="off" placeholder="Pick a city first" disabled /><datalist id="ward-list"></datalist></div>
       </div>
       <div class="act-name">
         <label for="mp-name">Your name (optional)</label>
         <input id="mp-name" type="text" placeholder="e.g. Priya Kumar" />
+      </div>
+      <div class="act-fields">
+        <div><label for="mp-town">City/town (optional, for your signature)</label><input id="mp-town" type="text" placeholder="e.g. Kochi" /></div>
+        <div class="act-checkbox"><label><input id="mp-voter" type="checkbox" /> I am a registered voter in this constituency</label></div>
       </div>
       <p class="reveal-cue" id="reveal-cue" hidden>↓ Your letter is ready below — finish your details, then send it.</p>
 
@@ -168,6 +178,7 @@
 </div>
 
 <script src="/assets/data.js?v=103"></script>
+<script src="/assets/local-body.js?v=103"></script>
 <script src="/assets/helpers.js?v=103"></script>
 <script src="/assets/constituencies.js?v=103"></script>
 <script src="/assets/main.js?v=103"></script>
