@@ -88,7 +88,7 @@ window.RTR_PUBLICATIONS = [
     "subtitle": "Eighty Years of the Indian Library Association and the Changing Public of the Library, 1942–2019",
     "standfirst": "Three primary archives — eighty years of Indian Library Association proceedings, the central government's library-committee reports, and the state Public Libraries Acts (1948–2009) — read as one drift: how the library's reader became a user, and how that drift kept caste unsayable.",
     "date": "2026-06",
-    "version": "v0.1.2",
+    "version": "v0.1.3",
     "status": "Draft",
     "subjects": [
       "Library and Information Science",
@@ -97,7 +97,7 @@ window.RTR_PUBLICATIONS = [
       "Public Policy"
     ],
     "pdf": "/papers/RTR-WP-008.pdf",
-    "citation": "Right To Read Campaign (2026). From Reader to User: Eighty Years of the Indian Library Association and the Changing Public of the Library, 1942–2019. Right to Read Working Papers, RTR-WP-008 (v0.1.2). https://theright2read.org/papers/RTR-WP-008.pdf"
+    "citation": "Right To Read Campaign (2026). From Reader to User: Eighty Years of the Indian Library Association and the Changing Public of the Library, 1942–2019. Right to Read Working Papers, RTR-WP-008 (v0.1.3). https://theright2read.org/papers/RTR-WP-008.pdf"
   },
   {
     "kind": "brief",
