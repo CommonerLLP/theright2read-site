@@ -163,12 +163,6 @@ window.RTR_LOCAL_BODY = {
       "phone": "9445467121 / 9444109216"
     },
     {
-      "ward": "Ward 122 · TEYNAMPET",
-      "councillor": "Vacant place",
-      "party": "",
-      "phone": ""
-    },
-    {
       "ward": "Ward 123 · TEYNAMPET",
       "councillor": "M. Saraswathi",
       "party": "",
@@ -319,12 +313,6 @@ window.RTR_LOCAL_BODY = {
       "phone": "9445467145 / 9884458965"
     },
     {
-      "ward": "Ward 146 · VALASARAVAKKAM",
-      "councillor": "Vacant place",
-      "party": "",
-      "phone": ""
-    },
-    {
       "ward": "Ward 147 · VALASARAVAKKAM",
       "councillor": "Mrs. Ramani Madhavan",
       "party": "",
@@ -443,12 +431,6 @@ window.RTR_LOCAL_BODY = {
       "councillor": "Devi Jesudoss",
       "party": "",
       "phone": "9445467164 / 9884456411"
-    },
-    {
-      "ward": "Ward 165 · ALANDUR",
-      "councillor": "Vacant place",
-      "party": "",
-      "phone": ""
     },
     {
       "ward": "Ward 166 · ALANDUR",
@@ -599,12 +581,6 @@ window.RTR_LOCAL_BODY = {
       "councillor": "S. Sameena",
       "party": "",
       "phone": "9445467188 / 9884834463"
-    },
-    {
-      "ward": "Ward 189 · PERUNGUDI",
-      "councillor": "Not listed on official roster",
-      "party": "",
-      "phone": ""
     },
     {
       "ward": "Ward 19 · MANALI",
@@ -877,12 +853,6 @@ window.RTR_LOCAL_BODY = {
       "phone": "9445467049 / 9444125005"
     },
     {
-      "ward": "Ward 5 · THIRUVOTTIYUR",
-      "councillor": "Not listed on official roster",
-      "party": "",
-      "phone": ""
-    },
-    {
       "ward": "Ward 50 · ROYAPURAM",
       "councillor": "R. Suresh Kumar",
       "party": "",
@@ -935,12 +905,6 @@ window.RTR_LOCAL_BODY = {
       "councillor": "Rajeshwari Sridhar",
       "party": "",
       "phone": "9445467058 / 9445812403"
-    },
-    {
-      "ward": "Ward 59 · ROYAPURAM",
-      "councillor": "Vacant place",
-      "party": "",
-      "phone": ""
     },
     {
       "ward": "Ward 6 · THIRUVOTTIYUR",
