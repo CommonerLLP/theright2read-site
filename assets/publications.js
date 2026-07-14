@@ -8,9 +8,9 @@ window.RTR_PUBLICATIONS = [
     "kicker": "PUBLIC FINANCE · MEASUREMENT · LIBRARIES",
     "title": "A Consolidated Real Per-Capita Series for Public Library Expenditure in India",
     "subtitle": "A Measurement Note in the Public-Finance Tradition, 2014–15 to 2024–25",
-    "standfirst": "What India spends, per person, per year, in real terms, on its public libraries — a consolidated state-plus-Centre series, 2014–15 to 2024–25.",
+    "standfirst": "What India spends, per person, per year, in real terms, on its public libraries: a consolidated state-plus-Centre series, 2014–15 to 2024–25.",
     "date": "2026-06",
-    "version": "v0.1.0",
+    "version": "v0.1.1",
     "status": "Draft",
     "subjects": [
       "Economics",
@@ -18,7 +18,7 @@ window.RTR_PUBLICATIONS = [
       "Public Policy"
     ],
     "pdf": "/papers/RTR-WP-001.pdf",
-    "citation": "Right To Read Campaign (2026). A Consolidated Real Per-Capita Series for Public Library Expenditure in India: A Measurement Note in the Public-Finance Tradition, 2014–15 to 2024–25. Right to Read Working Papers, RTR-WP-001 (v0.1.0). https://theright2read.org/papers/RTR-WP-001.pdf"
+    "citation": "Right To Read Campaign (2026). A Consolidated Real Per-Capita Series for Public Library Expenditure in India: A Measurement Note in the Public-Finance Tradition, 2014–15 to 2024–25. Right to Read Working Papers, RTR-WP-001 (v0.1.1). https://theright2read.org/papers/RTR-WP-001.pdf"
   },
   {
     "kind": "paper",
@@ -46,9 +46,9 @@ window.RTR_PUBLICATIONS = [
     "kicker": "CENTRALLY SPONSORED SCHEMES · THE PARLIAMENTARY RECORD",
     "title": "The Grammar of Refusal",
     "subtitle": "Four Mechanisms of Institutional Contraction in India's Library Sector",
-    "standfirst": "How a Centrally Sponsored Scheme was unmade by procedure — four mechanisms of institutional contraction, read from the parliamentary record, 2015–2026.",
+    "standfirst": "How a Centrally Sponsored Scheme was unmade by procedure: four mechanisms of institutional contraction, read from the parliamentary record, 2015–2026.",
     "date": "2026-06",
-    "version": "v0.1.0",
+    "version": "v0.1.1",
     "status": "Draft",
     "subjects": [
       "Political Science",
@@ -57,7 +57,7 @@ window.RTR_PUBLICATIONS = [
       "Contemporary History"
     ],
     "pdf": "/papers/RTR-WP-003.pdf",
-    "citation": "Right To Read Campaign (2026). The Grammar of Refusal: Four Mechanisms of Institutional Contraction in India's Library Sector. Right to Read Working Papers, RTR-WP-003 (v0.1.0). https://theright2read.org/papers/RTR-WP-003.pdf"
+    "citation": "Right To Read Campaign (2026). The Grammar of Refusal: Four Mechanisms of Institutional Contraction in India's Library Sector. Right to Read Working Papers, RTR-WP-003 (v0.1.1). https://theright2read.org/papers/RTR-WP-003.pdf"
   },
   {
     "kind": "paper",
