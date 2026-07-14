@@ -233,6 +233,14 @@
       s.appendChild(txt(years[n - 1], X(n - 1), H - 3, muted, 7.5, "end", 400, "0", MONO));
       return s;
     }
+    // a lookup leads with the SELECT: one short framing line up top; the full
+    // argument (chart.caption) renders below the card, not above the control
+    if (chart.config && chart.config.intro) {
+      var intro = doc.createElement("p");
+      intro.style.cssText = "font-family:var(--font-serif);font-size:.92rem;line-height:1.5;color:var(--text-muted);margin:0 0 .85rem";
+      intro.innerHTML = chart.config.intro;
+      host.appendChild(intro);
+    }
     var ctl = doc.createElement("div");
     ctl.style.cssText = "display:flex;flex-wrap:wrap;gap:.5rem .7rem;align-items:center;margin-bottom:1rem";
     var lab = doc.createElement("label"); lab.setAttribute("for", slug + "-sel"); lab.textContent = "Your State";
@@ -248,6 +256,15 @@
     var card = doc.createElement("div"); card.setAttribute("aria-live", "polite");
     card.style.cssText = "background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:var(--radius);padding:1rem 1.05rem";
     host.appendChild(card);
+    // the full caption argument sits between the card and the ranked bars — it
+    // explains the bars the reader is about to hit (app.js suppresses its own
+    // figcaption for the lookup renderer)
+    if (chart.caption) {
+      var capP = doc.createElement("p");
+      capP.style.cssText = "font-family:var(--font-serif);font-size:.92rem;line-height:1.5;color:var(--text-muted);margin:.95rem 0 0";
+      capP.innerHTML = chart.caption;
+      host.appendChild(capP);
+    }
     var cmpWrap = doc.createElement("div"); cmpWrap.style.cssText = "margin-top:1.15rem";
     host.appendChild(cmpWrap);
     function draw(i) {

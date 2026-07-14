@@ -93,7 +93,9 @@
       pad.appendChild(el("h1", { class: "fig-title" }, chart.title || slug));   // single H1 per chart page
       var canvasHost = el("div", { class: "chart-host" });
       pad.appendChild(canvasHost);
-      if (chart.caption) pad.appendChild(el("figcaption", null, chart.caption));
+      // lookup places its own caption (after the card, before the ranked bars)
+      // so the SELECT leads the page; every other renderer keeps it here
+      if (chart.caption && chart.renderer !== "lookup") pad.appendChild(el("figcaption", null, chart.caption));
       if (chart.source) pad.appendChild(el("p", { class: "fig-src" }, "Source: " + chart.source));
       pad.appendChild(el("p", { class: "fig-cite" }, "Cite as: The Right to Read, “" + (chart.title || slug) + "”, theright2read.org/evidence/#/c/" + slug + " (2026). Reuse noncommercial, with credit."));
       pad.appendChild(el("p", { class: "embed-cite" }, "theright2read.org/evidence · #/c/" + slug));
