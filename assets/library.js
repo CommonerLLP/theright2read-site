@@ -14,152 +14,268 @@ window.RTR_LIBRARY = {
           "title": "The Arunachal Pradesh Public Libraries Act, 2009",
           "creator": "",
           "year": "2009",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/EZKATCBC"
+          "tags": [
+            "arunachal pradesh",
+            "library legislation",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/EZKATCBC",
+          "added": "2026-06-28T21:59:21Z"
         },
         {
           "type": "statute",
           "title": "The Chhattisgarh Public Libraries Act, 2008",
           "creator": "",
           "year": "2008",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/E6DV5SCB"
+          "tags": [
+            "chhattisgarh",
+            "library legislation",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/E6DV5SCB",
+          "added": "2026-06-28T21:59:14Z"
         },
         {
           "type": "statute",
           "title": "The Bihar Public Library and Information Centre Act, 2008",
           "creator": "",
           "year": "2008",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/XK8TFBRR"
+          "tags": [
+            "bihar",
+            "library legislation",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/XK8TFBRR",
+          "added": "2026-06-28T21:59:17Z"
         },
         {
           "type": "statute",
           "title": "The Rajasthan Public Libraries Act, 2006",
           "creator": "",
           "year": "2006",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/MFTP7F85"
+          "tags": [
+            "library legislation",
+            "public libraries",
+            "rajasthan",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/MFTP7F85",
+          "added": "2026-06-28T21:59:08Z"
         },
         {
           "type": "statute",
           "title": "The Uttar Pradesh Public Libraries Act, 2006",
           "creator": "",
           "year": "2006",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/NBPW5539"
+          "tags": [
+            "library legislation",
+            "public libraries",
+            "state legislation",
+            "uttar pradesh"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/NBPW5539",
+          "added": "2026-06-28T21:59:11Z"
         },
         {
           "type": "statute",
           "title": "The Uttarakhand Public Library Act, 2005",
           "creator": "",
           "year": "2005",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/DF9VKSQF"
-        },
-        {
-          "type": "statute",
-          "title": "The Gujarat Public Libraries Act, 2001",
-          "creator": "",
-          "year": "2001",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/DZHSP4DG"
+          "tags": [
+            "library legislation",
+            "public libraries",
+            "state legislation",
+            "uttarakhand"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/DF9VKSQF",
+          "added": "2026-06-28T21:59:13Z"
         },
         {
           "type": "statute",
           "title": "The Orissa Public Libraries Act, 2001",
           "creator": "",
           "year": "2001",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/NHK75G9W"
+          "tags": [
+            "library legislation",
+            "orissa",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/NHK75G9W",
+          "added": "2026-06-28T21:59:18Z"
+        },
+        {
+          "type": "statute",
+          "title": "The Gujarat Public Libraries Act, 2001",
+          "creator": "",
+          "year": "2001",
+          "tags": [
+            "gujarat",
+            "library legislation",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/DZHSP4DG",
+          "added": "2026-06-28T21:59:07Z"
         },
         {
           "type": "statute",
           "title": "The Goa Public Libraries Act, 1993",
           "creator": "",
           "year": "1993",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/4KV4NM49"
+          "tags": [
+            "goa",
+            "library legislation",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/4KV4NM49",
+          "added": "2026-06-28T21:59:05Z"
         },
         {
           "type": "statute",
           "title": "The Mizoram Public Libraries Act, 1993",
           "creator": "",
           "year": "1993",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/5N3TBPM4"
+          "tags": [
+            "library legislation",
+            "mizoram",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/5N3TBPM4",
+          "added": "2026-06-28T21:59:20Z"
         },
         {
           "type": "statute",
           "title": "The Kerala Public Libraries (Kerala Granthasala Sanghom) Act, 1989",
           "creator": "",
           "year": "1989",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/99EW3PA9"
+          "tags": [
+            "kerala",
+            "library legislation",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/99EW3PA9",
+          "added": "2026-06-28T21:59:02Z"
         },
         {
           "type": "statute",
           "title": "The Haryana Public Libraries Act, 1989",
           "creator": "",
           "year": "1989",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/T98SFKWE"
+          "tags": [
+            "haryana",
+            "library legislation",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/T98SFKWE",
+          "added": "2026-06-28T21:59:10Z"
         },
         {
           "type": "statute",
           "title": "The Manipur Public Libraries Act, 1988",
           "creator": "",
           "year": "1988",
-          "tags": [],
-          "url": "https://web.archive.org/web/20250328144310id_/http://rrrlf.gov.in/Docs/ActsRules/manipur.pdf"
+          "tags": [
+            "library legislation",
+            "manipur",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://web.archive.org/web/20250328144310id_/http://rrrlf.gov.in/Docs/ActsRules/manipur.pdf",
+          "added": "2026-06-28T21:13:40Z"
         },
         {
           "type": "statute",
           "title": "The West Bengal Public Libraries Act, 1979",
           "creator": "",
           "year": "1979",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/A4H85JFJ"
+          "tags": [
+            "West Bengal",
+            "library legislation",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/A4H85JFJ",
+          "added": "2026-06-28T21:59:15Z"
         },
         {
           "type": "statute",
           "title": "The Maharashtra Public Libraries Act, 1967",
           "creator": "",
           "year": "1967",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/FEZCHU6E"
+          "tags": [
+            "Maharashtra Public Libraries Act",
+            "library legislation",
+            "maharashtra",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/FEZCHU6E",
+          "added": "2026-06-28T21:59:03Z"
         },
         {
           "type": "statute",
           "title": "The Karnataka Public Libraries Act, 1965",
           "creator": "",
           "year": "1965",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/2SBJRJ6H"
+          "tags": [
+            "karnataka",
+            "library legislation",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/2SBJRJ6H",
+          "added": "2026-06-28T21:58:59Z"
         },
         {
           "type": "statute",
           "title": "The Andhra Pradesh Public Libraries Act, 1960",
           "creator": "",
           "year": "1960",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/RCP8P792"
+          "tags": [
+            "andhra pradesh",
+            "library legislation",
+            "public libraries",
+            "state legislation"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/RCP8P792",
+          "added": "2026-06-28T21:58:57Z"
         },
         {
           "type": "statute",
           "title": "The Telangana Public Libraries Act, 1960 (Telangana Adaptation Order, 2015)",
           "creator": "",
           "year": "1960",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/TBP6QSE7"
+          "tags": [
+            "library legislation",
+            "public libraries",
+            "state legislation",
+            "telangana"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/TBP6QSE7",
+          "added": "2026-06-28T21:58:58Z"
         },
         {
           "type": "statute",
           "title": "The Madras Public Libraries Act, 1948",
           "creator": "",
           "year": "1948",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/QWKR4WHW"
+          "tags": [
+            "library legislation",
+            "madras",
+            "public libraries",
+            "state legislation",
+            "tamil nadu"
+          ],
+          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/QWKR4WHW",
+          "added": "2026-06-28T21:58:55Z"
         }
       ]
     },
@@ -174,24 +290,41 @@ window.RTR_LIBRARY = {
           "title": "Toward reforms: Revisiting public library legislation in Indian states",
           "creator": "Kulkarni et al.",
           "year": "2025",
-          "tags": [],
-          "url": "https://journals.sagepub.com/doi/10.1177/03400352251378763"
+          "tags": [
+            "india",
+            "library legislation",
+            "library policy"
+          ],
+          "url": "https://journals.sagepub.com/doi/10.1177/03400352251378763",
+          "added": "2025-10-25T10:14:38Z"
         },
         {
           "type": "journalArticle",
           "title": "What is the per capita expenditure on public libraries in India? An empirical analysis",
           "creator": "Kulkarni et al.",
           "year": "2025",
-          "tags": [],
-          "url": "https://www.zotero.org/groups/5932050/rights2reads/items/3D2483TW"
+          "tags": [
+            "evidence",
+            "india",
+            "library funding",
+            "public finance"
+          ],
+          "url": "https://www.researchgate.net/publication/395255472_What_is_the_per_capita_expenditure_on_public_libraries_in_India_An_empirical_analysis",
+          "added": "2025-10-25T11:29:42Z"
         },
         {
           "type": "journalArticle",
           "title": "The Returns to Public Library Investment",
           "creator": "Gilpin et al.",
           "year": "2024",
-          "tags": [],
-          "url": "https://pubs.aeaweb.org/doi/10.1257/pol.20210300"
+          "tags": [
+            "economics",
+            "evidence",
+            "library funding",
+            "usa"
+          ],
+          "url": "https://pubs.aeaweb.org/doi/10.1257/pol.20210300",
+          "added": "2025-05-05T19:34:12Z"
         }
       ]
     }
