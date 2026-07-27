@@ -9,8 +9,8 @@ window.RTR_PUBLICATIONS = [
     "title": "A Consolidated Real Per-Capita Series for Public Library Expenditure in India",
     "subtitle": "A Measurement Note in the Public-Finance Tradition, 2014–15 to 2024–25",
     "standfirst": "What India spends, per person, per year, in real terms, on its public libraries: a consolidated state-plus-Centre series, 2014–15 to 2024–25.",
-    "date": "2026-06",
-    "version": "v0.1.1",
+    "date": "2026-07",
+    "version": "v3.0.0",
     "status": "Draft",
     "subjects": [
       "Economics",
@@ -18,7 +18,7 @@ window.RTR_PUBLICATIONS = [
       "Public Policy"
     ],
     "pdf": "/papers/RTR-WP-001.pdf",
-    "citation": "Right To Read Campaign (2026). A Consolidated Real Per-Capita Series for Public Library Expenditure in India: A Measurement Note in the Public-Finance Tradition, 2014–15 to 2024–25. Right to Read Working Papers, RTR-WP-001 (v0.1.1). https://theright2read.org/papers/RTR-WP-001.pdf"
+    "citation": "Right To Read Campaign (2026). A Consolidated Real Per-Capita Series for Public Library Expenditure in India: A Measurement Note in the Public-Finance Tradition, 2014–15 to 2024–25. Right to Read Working Papers, RTR-WP-001 (v3.0.0). https://theright2read.org/papers/RTR-WP-001.pdf"
   },
   {
     "kind": "paper",

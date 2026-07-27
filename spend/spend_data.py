@@ -12,13 +12,26 @@ years_all     = years_balaji + years_ext
 
 # ── National Trends ──────────────────────────────────────────────────────────
 
+# v3.0 (2026-07-27): the FULL series is now audited actuals. 2014-15→2020-21 from
+# CAG Combined Finance & Revenue Accounts (all-India matrix, via KBD). 2021-22→2024-25
+# rebuilt from per-State CAG Finance Accounts Vol-II + State budget Detailed Estimates —
+# 31 States/UTs each read from the source document (~250 verified per-state cells;
+# provenance: notes/research/library-fiscal-2026-07-08/master_per_state_series.json).
+# The v2 CAGR projection for 2021-24 is RETIRED — it was wrong in both directions
+# (overstated 2023-24, understated the Tamil-Nadu-driven 2024-25 surge).
 # A: Nominal total / Census 2011 India population (fixed) — Balaji's method
-nat_A = [5.16, 6.62, 8.62, 9.96, 11.64, 7.79, 8.39,  8.49, 8.66, 9.13, 9.51]
+nat_A = [5.16, 6.62, 8.62, 9.96, 11.64, 7.79, 8.39,  7.14, 8.21, 8.00, 9.99]
 # B: Nominal total / TG 2020 projected India population (annual July 1)
-nat_B = [4.93, 6.25, 8.05, 9.19, 10.63, 7.04, 7.50,  7.51, 7.60, 7.94, 8.20]
+nat_B = [4.93, 6.25, 8.05, 9.19, 10.63, 7.04, 7.50,  6.32, 7.20, 6.95, 8.61]
 # C: Real (NAS GDP deflator, 2011-12 base) total / TG 2020 projected population
-nat_C = [4.16, 5.16, 6.44, 7.07,  7.87, 5.09, 5.17,  4.78, 4.57, 4.65, 4.66]
-LAST_ACTUAL_IDX = 6  # 2020-21 — last CAG actual
+nat_C = [4.16, 5.16, 6.44, 7.07,  7.87, 5.09, 5.17,  4.02, 4.33, 4.07, 4.89]
+LAST_ACTUAL_IDX = 10  # ALL years are audited actuals now (no projection)
+# Last year covered by the self-validated CFRA all-India matrix (2020-21). Years
+# after this are read per-State from CAG Finance Accounts + budget Detailed
+# Estimates — still actuals, but assembled rather than self-validating, so the
+# capital table and figure mark them (* / dashed). Distinct from LAST_ACTUAL_IDX,
+# which is the actual-vs-projection boundary and no longer splits anything.
+LAST_CFRA_IDX = 6
 
 # ── Deflator ──────────────────────────────────────────────────────────────────
 
@@ -27,19 +40,21 @@ DEFLATOR_FACTOR = [0.8444, 0.8256, 0.7997, 0.7691, 0.7404,
                    0.7230, 0.6898, 0.6366, 0.6011, 0.5860, 0.5684]
 DEFLATOR_2018_19 = 0.7404
 
+# NAS revision vintage each factor was read at, per year.
+DEFLATOR_REVISION_STAGE = ["Third Revised"] * 7 + [
+    "Second Revised", "Final Estimates", "First Revised", "Provisional"]
+
 # ── RRRLF (Central public-library transfers) ─────────────────────────────────
 # Total GoI grant disbursed to Raja Rammohun Roy Library Foundation, ₹ crore.
 # Primary source: RRRLF Annual Reports 44th–51st (2015-16 → 2022-23), extracted
 # in budget-crawler/notes/rrrlf-audit-2011-2023.md.
 # 2014-15: data gap (43rd AR state-level annexures in scanned-image form; OCR
 # extraction of GIA-General + NML lines did not yield clean values).
-# 2023-24, 2024-25: projection — held flat at the 2022-23 disbursement level
-# (₹27.07 cr). Supported by (i) the post-COVID stabilisation in 2021-22 and
-# 2022-23, both at ~₹27 cr, and (ii) the Parliamentary Standing Committee
-# 310th Report (Feb 2022) recording ₹27.07 cr allocated to RRRLF for FY
-# 2021-22, indicating the MoC line item has been held at this level.
+# 2023-24: ACTUAL ₹48.58 cr — grants received per the RRRLF 52nd Annual Report
+# (C&AG-audited accounts; a rebound from the 2022-23 trough, incl. a new Global
+# Library head). 2024-25: held flat at ₹27.07 cr — the 53rd AR is not yet published.
 RRRLF_TOTAL_CR = [None, 57.40, 55.50, 76.70, 53.75, 43.15, 19.96,
-                  26.90, 27.07, 27.07, 27.07]
+                  26.90, 27.07, 48.58, 27.07]
 
 # India TG 2020 projected population, mid-year (millions). Source: MoHFW
 # Technical Group on Population Projections (2020), Table 11.
@@ -55,8 +70,23 @@ RRRLF_REAL_PC = [None if c is None else
 # 2014-15: state-only (RRRLF gap acknowledged).
 nat_C_consolidated = [round(c + (r or 0), 2) for c, r in zip(nat_C, RRRLF_REAL_PC)]
 
-# Index of last year with primary-source RRRLF disbursement (2022-23).
-LAST_RRRLF_ACTUAL_IDX = 8
+# Index of last year with primary-source RRRLF disbursement (2023-24, 52nd AR).
+LAST_RRRLF_ACTUAL_IDX = 9
+
+# ── Public-library CAPITAL expenditure (MH 4202-04-105), India-wide ──────────
+# "Expenditure during the year", ₹ crore, Union + all States + UTs.
+# 2014-15 → 2020-21: CAG Combined Finance & Revenue Accounts Vol III,
+#   Statement 95-B-4202 (self-validated: Σ state columns == printed grand total).
+# 2021-22 → 2024-25: per-State CAG Finance Accounts Vol-II (Statement 16), ALL 31
+#   States/UTs read from source + the Union from CGA Union Finance Accounts,
+#   Statement 10. Per-state provenance: master_per_state_series.json.
+cap_cr = [8.81, 12.25, 16.87, 33.42, 21.40, 13.45, 11.91, 68.87, 97.36, 254.07, 271.01]
+# Real per-capita capital (constant 2011-12 ₹) — SAME deflator + population as nat_C.
+nat_cap_real_pc = [round(cap_cr[i] * 1e7 * DEFLATOR_FACTOR[i] / (TG_POP_MN[i] * 1e6), 3)
+                   for i in range(len(cap_cr))]
+# Capital as a share of consolidated revenue (per cent), per year.
+cap_share_pct = [round(100 * nat_cap_real_pc[i] / nat_C_consolidated[i], 1)
+                 for i in range(len(cap_cr))]
 
 # ── State Cross-section (2018-19) ───────────────────────────────────────────
 # state_vals_nominal is also population-corrected nominal (Series B, feeding the
@@ -119,6 +149,18 @@ MOC_ZONE_META = {
     "S":  ("SOUTH",         "#a3c265", 20.42, 275, 20),
     "SC": ("SOUTH CENTRAL", "#68d391", 21.95, 399, 29),
     "W":  ("WEST",          "#2f855a", 25.49, 273, 20),
+}
+
+# ── Cess-panel states: total library expenditure, ₹ lakh nominal ─────────────
+# The five states whose Acts carry an operative library cess, 2014-15 → 2020-21.
+# Same CAG-derived Table-1 extraction as the national base (via KBD 2025); the
+# Tamil Nadu row is identical to TN_TOTAL_LAKH below, which cross-validates it.
+CESS_STATES_LAKH = {
+    "Tamil Nadu":     [7886, 8199, 9755, 10750, 12249, 13604, 13094],
+    "Andhra Pradesh": [4144, 4241, 7460, 10126, 12874, 12989, 10486],
+    "Karnataka":      [10107, 9779, 11161, 11950, 23055, 12039, 7321],
+    "West Bengal":    [483, 491, 17518, 17743, 19005, 421, 14855],
+    "Kerala":         [1683, 5417, 4849, 8379, 8637, 3397, 2591],
 }
 
 # ── Convergence Model: Tamil Nadu benchmark to 2035 ──────────────────────────
