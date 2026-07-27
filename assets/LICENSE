@@ -1,0 +1,20 @@
+# Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+<https://creativecommons.org/licenses/by-nc/4.0/>
+
+The derived datasets in this directory are released under CC BY-NC 4.0 — free to
+share and adapt with attribution to The Right to Read; commercial use requires a
+separate agreement.
+
+| File | Dataset |
+|---|---|
+| `data.js` | State library expenditure, historical timeline, legislation ledger |
+| `constituencies.js` | Assembly constituencies by state |
+| `local-body.js` | Ward and councillor data, derived from sevent4's public city layers |
+| `publications.js` | Working-paper registry |
+
+These are derived datasets. Cite the primary sources named on the site and in
+the papers for the underlying facts, not this repository.
+
+The JavaScript, CSS, and rendering code in this directory is MIT — see the
+`LICENSE` at the repository root.

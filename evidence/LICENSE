@@ -1,0 +1,24 @@
+# Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+<https://creativecommons.org/licenses/by-nc/4.0/>
+
+The charts, chart datasets (`charts/*.json`), and the state-Act lookup in this
+directory are released under CC BY-NC 4.0.
+
+You are free to share and adapt them — embed them, redraw them, translate them,
+build them into reports, teaching material, or campaign work — provided you
+credit The Right to Read, link to the licence, and indicate if changes were
+made. Commercial use requires a separate agreement.
+
+Every chart is embeddable:
+
+    <iframe src="https://theright2read.org/evidence/#/c/<slug>?embed=1"></iframe>
+
+Cite the primary source named on each chart for the underlying facts, not this
+repository.
+
+Exceptions: `vendor/echarts.min.js` is Apache Software Foundation code under
+Apache-2.0 and keeps its own licence. The rendering code in this directory
+(`app.js`, `render-*.js`, `echarts-theme.js`) is MIT — see the `LICENSE` at the
+repository root. The NonCommercial term covers the research outputs, not the
+tooling that draws them.
