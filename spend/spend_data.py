@@ -22,7 +22,7 @@ years_all     = years_balaji + years_ext
 # A: Nominal total / Census 2011 India population (fixed) — Balaji's method
 nat_A = [5.16, 6.62, 8.62, 9.96, 11.64, 7.79, 8.39,  7.14, 8.21, 8.00, 9.99]
 # B: Nominal total / TG 2020 projected India population (annual July 1)
-nat_B = [4.93, 6.25, 8.05, 9.19, 10.63, 7.04, 7.50,  6.32, 7.20, 6.95, 8.61]
+nat_B = [4.93, 6.25, 8.05, 9.19, 10.63, 7.04, 7.50,  6.32, 7.21, 6.95, 8.61]
 # C: Real (NAS GDP deflator, 2011-12 base) total / TG 2020 projected population
 nat_C = [4.16, 5.16, 6.44, 7.07,  7.87, 5.09, 5.17,  4.02, 4.33, 4.07, 4.89]
 LAST_ACTUAL_IDX = 10  # ALL years are audited actuals now (no projection)
@@ -47,13 +47,17 @@ DEFLATOR_REVISION_STAGE = ["Third Revised"] * 7 + [
 # ── RRRLF (Central public-library transfers) ─────────────────────────────────
 # Total GoI grant disbursed to Raja Rammohun Roy Library Foundation, ₹ crore.
 # Primary source: RRRLF Annual Reports 44th–51st (2015-16 → 2022-23), extracted
-# in budget-crawler/notes/rrrlf-audit-2011-2023.md.
-# 2014-15: data gap (43rd AR state-level annexures in scanned-image form; OCR
-# extraction of GIA-General + NML lines did not yield clean values).
+# in public-finance/notes/rrrlf-audit-2011-2023.md.
+# 2014-15: ₹58.15 cr, read from the 43rd Annual Report §12 "Finance" (p. 15):
+# total grant ₹3,579.08 lakh (Plan 3,137.36 + Non-Plan 441.72) + NE States
+# 600.00 + Tribal Sub-Plan 250.00 + NML Plan 924.00 + NML NE States 461.70
+# = ₹5,814.78 lakh. Same components as every other year. State matching
+# contributions (₹1,834.14 lakh) excluded — State money, not a Central
+# transfer. Source PDF: data/rrrlf/raw/.
 # 2023-24: ACTUAL ₹48.58 cr — grants received per the RRRLF 52nd Annual Report
 # (C&AG-audited accounts; a rebound from the 2022-23 trough, incl. a new Global
 # Library head). 2024-25: held flat at ₹27.07 cr — the 53rd AR is not yet published.
-RRRLF_TOTAL_CR = [None, 57.40, 55.50, 76.70, 53.75, 43.15, 19.96,
+RRRLF_TOTAL_CR = [58.15, 57.40, 55.50, 76.70, 53.75, 43.15, 19.96,
                   26.90, 27.07, 48.58, 27.07]
 
 # India TG 2020 projected population, mid-year (millions). Source: MoHFW
@@ -61,13 +65,12 @@ RRRLF_TOTAL_CR = [None, 57.40, 55.50, 76.70, 53.75, 43.15, 19.96,
 TG_POP_MN = [1268.9, 1283.6, 1298.4, 1313.1, 1327.6, 1341.7, 1355.3,
              1368.4, 1381.1, 1393.4, 1405.3]
 
-# Real per-capita RRRLF (2011-12 ₹/person/year). None for 2014-15 (data gap).
+# Real per-capita RRRLF (2011-12 ₹/person/year). Complete for all eleven years.
 RRRLF_REAL_PC = [None if c is None else
                  round(c * 1e7 / (p * 1e6) * d, 4)
                  for c, p, d in zip(RRRLF_TOTAL_CR, TG_POP_MN, DEFLATOR_FACTOR)]
 
 # Consolidated real per-capita (state MH 2205-105 + RRRLF Central transfers).
-# 2014-15: state-only (RRRLF gap acknowledged).
 nat_C_consolidated = [round(c + (r or 0), 2) for c, r in zip(nat_C, RRRLF_REAL_PC)]
 
 # Index of last year with primary-source RRRLF disbursement (2023-24, 52nd AR).

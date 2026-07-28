@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""export_series.py — emit the WP-001 replication TSVs from spend_data.py.
+"""export_series.py — emit the WP-001 replication CSVs from spend_data.py.
 
 spend_data.py is the single source of truth; every file written here is derived
 from it. Run this after any change to the data layer so the deposited archive
@@ -44,8 +44,8 @@ def rows_rrrlf():
     yield ["year", "rrrlf_total_cr_nominal", "rrrlf_real_pc_2011_12",
            "is_projection", "source"]
     for i, y in enumerate(d.years_all):
-        if d.RRRLF_TOTAL_CR[i] is None:
-            src, proj = "data_gap_43rd_AR_OCR_incomplete", "gap"
+        if i == 0:
+            src, proj = "RRRLF_AR_43rd", "no"
         elif i <= d.LAST_RRRLF_ACTUAL_IDX:
             src, proj = "RRRLF_AR_44th_to_52nd", "no"
         else:
@@ -82,18 +82,18 @@ def rows_cross_section():
 
 
 FILES = {
-    "series_national_state_only.tsv": rows_national,
-    "series_consolidated.tsv": rows_consolidated,
-    "series_rrrlf.tsv": rows_rrrlf,
-    "series_capital.tsv": rows_capital,
-    "series_deflator_factors.tsv": rows_deflator,
-    "series_cess_states_annual.tsv": rows_cess,
-    "series_state_cross_section_2018_19.tsv": rows_cross_section,
+    "series_national_state_only.csv": rows_national,
+    "series_consolidated.csv": rows_consolidated,
+    "series_rrrlf.csv": rows_rrrlf,
+    "series_capital.csv": rows_capital,
+    "series_deflator_factors.csv": rows_deflator,
+    "series_cess_states_annual.csv": rows_cess,
+    "series_state_cross_section_2018_19.csv": rows_cross_section,
 }
 
 
 def render(builder):
-    return "".join("\t".join(fmt(c) for c in row) + "\n" for row in builder())
+    return "".join(",".join(fmt(c) for c in row) + "\n" for row in builder())
 
 
 def main():
@@ -104,6 +104,11 @@ def main():
     # notes/ is gitignored, so OUT does not exist on a fresh checkout.
     if not args.check:
         OUT.mkdir(parents=True, exist_ok=True)
+        # Datasets moved from TSV to CSV. Leaving the old files behind would let
+        # --check pass while stale, differently-formatted copies sit alongside.
+        for old in OUT.glob("series_*.tsv"):
+            old.unlink()
+            print(f"removed obsolete {old.name}")
 
     stale = []
     for name, builder in FILES.items():

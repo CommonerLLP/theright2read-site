@@ -6,19 +6,18 @@ window.RTR_PUBLICATIONS = [
     "id": "RTR-WP-001",
     "number": "01",
     "kicker": "PUBLIC FINANCE · MEASUREMENT · LIBRARIES",
-    "title": "A Consolidated Real Per-Capita Series for Public Library Expenditure in India",
-    "subtitle": "A Measurement Note in the Public-Finance Tradition, 2014–15 to 2024–25",
-    "standfirst": "What India spends, per person, per year, in real terms, on its public libraries: a consolidated state-plus-Centre series, 2014–15 to 2024–25.",
+    "title": "The Critical CapEx India Won't Commit",
+    "subtitle": "Public Libraries in the Capital-Expenditure Decade, 2014–15 to 2024–25",
+    "standfirst": "India's entire public library provision, Union and States together, came to ₹1,508 crore in 2024–25, under ₹11 a person. A consolidated series built from audited accounts, 2014–15 to 2024–25.",
     "date": "2026-07",
-    "version": "v3.0.0",
+    "version": "v3.1.0",
     "status": "Draft",
     "subjects": [
-      "Economics",
-      "Public Finance",
-      "Public Policy"
+      "Public Policy",
+      "Public Finance"
     ],
     "pdf": "/papers/RTR-WP-001.pdf",
-    "citation": "Right To Read Campaign (2026). A Consolidated Real Per-Capita Series for Public Library Expenditure in India: A Measurement Note in the Public-Finance Tradition, 2014–15 to 2024–25. Right to Read Working Papers, RTR-WP-001 (v3.0.0). https://theright2read.org/papers/RTR-WP-001.pdf"
+    "citation": "Right To Read Campaign (2026). The Critical CapEx India Won't Commit: Public Libraries in the Capital-Expenditure Decade, 2014–15 to 2024–25. Right to Read Working Papers, RTR-WP-001 (v3.1.0). https://theright2read.org/papers/RTR-WP-001.pdf"
   },
   {
     "kind": "paper",
