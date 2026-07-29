@@ -40,6 +40,7 @@
 
   function card(p, D) {
     var title = esc(p.title) + (p.subtitle ? '<span class="pub-sub">' + esc(p.subtitle) + "</span>" : "");
+    if (p.page) title = '<a href="' + esc(p.page) + '">' + title + "</a>";
     return '<article class="pub-card">' +
       (p.kicker ? '<div class="pub-kicker">' + esc(p.kicker) + "</div>" : "") +
       '<h3 class="pub-title">' + title + "</h3>" +
