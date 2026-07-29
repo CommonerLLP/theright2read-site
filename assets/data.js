@@ -24,7 +24,7 @@ const CONSTANTS = {
 
   CENTRE_BUDGET:        4800000, // ₹ crore — Union Budget 2024-25 BE
   CENTRE_LIBRARIES:     195,     // ₹ crore — Centre's full library spend (CAG 2205-105 avg 2014-21)
-  CENTRE_ADS:           644,     // ₹ crore — Govt advertising FY 2024-25 actual
+  CENTRE_ADS:           644,     // ₹ crore — CBC govt advertising FY 2024-25 actual (₹643.63 cr, DAVP data via RS Q 08-08-2025)
   CORP_TAX_CUT:         145000,  // ₹ crore — revenue forgone from 2019 corporate tax cut, FY 2019-20
   STANDARD_DEDUCTION:   75000    // ₹ — Income tax standard deduction (FY 2024-25 New Regime)
 };
@@ -401,15 +401,15 @@ const DIVERSION_ROUNDS = [
   },
   {
     year: 2024,
-    budget: "₹3,000 crore",
-    prompt: "Across one fiscal year, the Centre spent <strong>~₹3,000 crore</strong> on government advertising — its own image. With the same money, India could have funded <strong>ONE</strong> of these. Which did it actually choose?",
+    budget: "₹644 crore",
+    prompt: "In 2024–25 the Centre spent <strong>₹644 crore</strong> on government advertising — its own image. With the same money, India could have funded <strong>ONE</strong> of these. Which did it actually choose?",
     options: [
-      { text: "Twice the country's entire annual public-library budget, Centre and States combined", cost: "~₹3,000 cr" },
-      { text: "Free school lunches for 30 million additional children", cost: "~₹3,000 cr" },
-      { text: "10,000 primary health sub-centres", cost: "~₹3,000 cr" },
-      { text: "Government advertising. Newspapers, TV, hoardings, jingles.", cost: "₹3,000 cr", correct: true }
+      { text: "Nearly half the country's entire annual public-library budget — every State, the Centre, and construction combined", cost: "~₹644 cr" },
+      { text: "Eleven years of the Union's entire grant to its own library foundation, the RRRLF — with ₹150 crore to spare", cost: "~₹644 cr" },
+      { text: "The National Mission on Libraries' full five-year outlay — nearly twice over", cost: "~₹644 cr" },
+      { text: "Government advertising. Newspapers, TV, hoardings, jingles.", cost: "₹644 cr", correct: true }
     ],
-    feedback: "<strong>India bought ad space.</strong> Newspapers, TV, hoardings, jingles. Around <strong>₹3,000 crore</strong> on the State's own publicity. That is roughly <strong>twice the country's entire public-library budget</strong>, Centre and States combined. The State spent more on telling you it was working than on the work.",
+    feedback: "<strong>India bought ad space.</strong> Newspapers, TV, hoardings, jingles. <strong>₹644 crore</strong> on the State's own publicity in one year — more than the Union granted its own library foundation, the RRRLF, across the past <strong>eleven years combined</strong> (about ₹495 crore). One year of telling you it works outweighs a decade of the work.",
     diversion: "Frames itself as 'public information.'"
   },
   {
