@@ -13,9 +13,9 @@
 const CONSTANTS = {
   STATUE_OF_UNITY_CR:   2989,    // ₹ crore — Statue of Unity construction cost (Govt. of Gujarat, 2018)
   // NB: these three are NOMINAL, state-level (KBD 2025) — NOT the campaign headline.
-  // The single per-person headline is ₹4.77 (consolidated state+Centre, real 2011-12 ₹, WP-001).
+  // The single per-person headline is ₹6.10 (consolidated state+Centre, revenue+capital, real 2011-12 ₹, WP-001 v3).
   // Do not surface these as "what India spends per person"; use HERO_PER_CAPITA_REAL below.
-  HERO_PER_CAPITA_REAL: 4.77,    // ₹ / person / year — CANONICAL headline (consolidated real, WP-001/005)
+  HERO_PER_CAPITA_REAL: 6.10,    // ₹ / person / year — CANONICAL headline (consolidated real incl. capital, WP-001 v3)
   NATIONAL_PER_CAPITA:  15.30,   // ₹ / person / year — nominal state-level average (yardstick only)
   CENTRE_PER_CAPITA:    2.07,    // ₹ / person / year — Centre's per-capita library spend (nominal, KBD 2025)
   COMBINED_PER_CAPITA:  11.62,   // ₹ / person / year — peak national combined, nominal (state + Centre)
@@ -252,7 +252,7 @@ const NML_STATES = new Set(['Arunachal Pradesh','Goa','Mizoram','Rajasthan','Tel
 
 // India vs World (₹ per capita per year, order-of-magnitude). Lives on /data/ subpage now.
 // Anchored at the top with rich-country comparators; India sits at the bottom
-// (₹4.77 = consolidated state-plus-Centre real headline, WP-001) so the bar rounds to zero.
+// (₹6.10 = consolidated state-plus-Centre real headline incl. capital, WP-001 v3) so the bar rounds to zero.
 // Sources: IMLS Public Libraries Survey (USA); CIPFA (UK); ALIA (Australia);
 // NAPLE Forum / Libraries.fi (Finland); Statistics Canada; Ministry of Culture
 // & Tourism (PRC); Kulkarni-Balaji-Dhanamjaya 2025 (India).
@@ -263,7 +263,7 @@ const WORLD = [
   { name: "UK",                 value: 1820, india: false },
   { name: "Canada",             value: 1700, india: false },
   { name: "China",              value: 250,  india: false },
-  { name: "India",              value: 4.77, india: true }
+  { name: "India",              value: 6.10, india: true }
 ];
 
 const STANDARDS = [
@@ -404,12 +404,12 @@ const DIVERSION_ROUNDS = [
     budget: "₹3,000 crore",
     prompt: "Across one fiscal year, the Centre spent <strong>~₹3,000 crore</strong> on government advertising — its own image. With the same money, India could have funded <strong>ONE</strong> of these. Which did it actually choose?",
     options: [
-      { text: "15× the entire annual public-library budget of every state combined", cost: "~₹3,000 cr" },
+      { text: "Twice the country's entire annual public-library budget, Centre and States combined", cost: "~₹3,000 cr" },
       { text: "Free school lunches for 30 million additional children", cost: "~₹3,000 cr" },
       { text: "10,000 primary health sub-centres", cost: "~₹3,000 cr" },
       { text: "Government advertising. Newspapers, TV, hoardings, jingles.", cost: "₹3,000 cr", correct: true }
     ],
-    feedback: "<strong>India bought ad space.</strong> Newspapers, TV, hoardings, jingles. Around <strong>₹3,000 crore</strong> on the State's own publicity. That is roughly <strong>15× the country's entire library budget</strong>. The State spent more on telling you it was working than on the work.",
+    feedback: "<strong>India bought ad space.</strong> Newspapers, TV, hoardings, jingles. Around <strong>₹3,000 crore</strong> on the State's own publicity. That is roughly <strong>twice the country's entire public-library budget</strong>, Centre and States combined. The State spent more on telling you it was working than on the work.",
     diversion: "Frames itself as 'public information.'"
   },
   {

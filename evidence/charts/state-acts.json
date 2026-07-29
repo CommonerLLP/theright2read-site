@@ -16,7 +16,7 @@
     },
     "spendYears": ["2014-15","2015-16","2016-17","2017-18","2018-19","2019-20","2020-21"],
     "spendLabel": "Per-capita library spend · ₹/person/yr · nominal",
-    "spendCaveat": "Nominal rupees — not inflation-adjusted. In real terms the line is lower and flatter; a flat nominal line is a fall in what a reader actually gets. (The campaign's real headline, ₹4.77, is the consolidated national figure in constant 2011-12 ₹; a per-State real series is not yet published.)"
+    "spendCaveat": "Nominal rupees — not inflation-adjusted. In real terms the line is lower and flatter; a flat nominal line is a fall in what a reader actually gets. (The campaign's real headline, ₹6.10, is the consolidated national figure in constant 2011-12 ₹, buildings included; a per-State real series is not yet published.)"
   },
   "data": [
     { "state": "Tamil Nadu",        "year": 1948, "cess": "operative", "rate": "10% surcharge on property tax (3 paise 1950 → 5 paise 1972 → 10 paise 1992). The one cess that durably raised real per-capita spend.", "spend": [10.93,11.36,13.52,14.90,16.98,18.86,18.15] },

@@ -398,7 +398,7 @@ $$("#actions-grid").innerHTML = ACTIONS.map((a) => `
 // ─── STATE SCANDAL PICKER (pamphlet only) ─────────────────────────
 // Replaces the old 31-row state-list + filters. Same data, but
 // now revealed one-state-at-a-time so the user gets a punchline.
-const NATIONAL_AVG = 15.30; // ₹/person/year — NOMINAL state-level average, yardstick for the per-state picker only. NOT the campaign headline (that is ₹4.77 consolidated real, WP-001).
+const NATIONAL_AVG = 15.30; // ₹/person/year — NOMINAL state-level average, yardstick for the per-state picker only. NOT the campaign headline (that is ₹6.10 consolidated real incl. capital, WP-001 v3).
 const BOOK_PRICE   = 250;   // ₹ — typical Indian-published paperback
 function rankStates() {
   return Object.keys(STATE_DATA)
