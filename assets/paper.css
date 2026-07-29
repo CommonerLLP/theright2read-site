@@ -1,0 +1,83 @@
+/* paper.css — full-text working-paper pages (/papers/RTR-WP-00N/).
+   Styles the Quarto-rendered body inside .paper-body. Mobile-first;
+   nothing may break at 360px. Colors ride the tokens so both themes work. */
+
+.paper-body { max-width: var(--maxw-read, 72ch); }
+
+.paper-body section { margin: 2rem 0; }
+
+.paper-body h1 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 2.5rem 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.paper-body h2 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  line-height: 1.25;
+  margin: 2rem 0 0.6rem;
+}
+
+.paper-body h3 { font-size: 1rem; margin: 1.5rem 0 0.5rem; }
+
+.paper-body p, .paper-body li {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.paper-body p { margin: 0 0 1rem; }
+
+.paper-body .header-section-number { color: var(--accent); margin-right: 0.4em; }
+
+/* figures */
+.paper-body figure, .paper-body .quarto-figure { margin: 1.5rem 0; }
+.paper-body img { max-width: 100%; height: auto; }
+.paper-body figcaption {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--text);
+  opacity: 0.75;
+  margin-top: 0.5rem;
+  line-height: 1.45;
+}
+
+/* tables — wide content scrolls inside its own box, never the page */
+.paper-body .table-scroll { overflow-x: auto; margin: 1.5rem 0; }
+.paper-body table {
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  min-width: 100%;
+}
+.paper-body caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 0.82rem;
+  opacity: 0.75;
+  padding-bottom: 0.5rem;
+  line-height: 1.45;
+}
+.paper-body th, .paper-body td {
+  padding: 0.35rem 0.75rem 0.35rem 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--rule);
+}
+.paper-body thead th { border-bottom: 2px solid var(--text); }
+.paper-body code { font-family: var(--font-mono); font-size: 0.85em; }
+
+/* footnotes + references */
+.paper-body .footnotes, .paper-body #refs {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.paper-body #refs > div { margin-bottom: 0.75rem; }
+.paper-body .footnote-back { margin-left: 0.3em; }
+
+.paper-body a { color: var(--accent); }
