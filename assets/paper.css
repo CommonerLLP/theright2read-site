@@ -2,7 +2,9 @@
    Styles the Quarto-rendered body inside .paper-body. Mobile-first;
    nothing may break at 360px. Colors ride the tokens so both themes work. */
 
-.paper-body { max-width: var(--maxw-read, 72ch); }
+/* one reading measure for the whole page — abstract, paper body, cite block
+   all share the same column, so the page never switches width mid-scroll */
+main .sec, main .standfirst, main .meta, .paper-body { max-width: var(--maxw-read, 720px); }
 
 .paper-body section { margin: 2rem 0; }
 
