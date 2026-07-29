@@ -19,7 +19,7 @@ window.RTR_PUBLICATIONS = [
     "pdf": "/papers/RTR-WP-001.pdf",
     "page": "/papers/RTR-WP-001/",
     "doi": "10.17605/OSF.IO/KCAGJ",
-    "citation": "Right To Read Campaign (2026). The Critical CapEx India Won't Commit: Public Libraries in the Capital-Expenditure Decade, 2014–15 to 2024–25. Right to Read Working Papers, RTR-WP-001 (v3.1.2). https://theright2read.org/papers/RTR-WP-001.pdf"
+    "citation": "The Right to Read Campaign. 2026. “The Critical CapEx India Won't Commit: Public Libraries in the Capital-Expenditure Decade, 2014–15 to 2024–25.” Right to Read Working Papers, RTR-WP-001 (v3.1.2). https://doi.org/10.17605/OSF.IO/KCAGJ."
   },
   {
     "kind": "paper",
@@ -40,7 +40,7 @@ window.RTR_PUBLICATIONS = [
     "pdf": "/papers/RTR-WP-002.pdf",
     "page": "/papers/RTR-WP-002/",
     "doi": "",
-    "citation": "Right To Read Campaign (2026). The Convergence Blueprint: A Tax-Funded National Public Library Network by 2035. Right to Read Working Papers, RTR-WP-002 (v0.1.0). https://theright2read.org/papers/RTR-WP-002.pdf"
+    "citation": "The Right to Read Campaign. 2026. “The Convergence Blueprint: A Tax-Funded National Public Library Network by 2035.” Right to Read Working Papers, RTR-WP-002 (v0.1.0). https://theright2read.org/papers/RTR-WP-002.pdf."
   },
   {
     "kind": "paper",
@@ -62,7 +62,7 @@ window.RTR_PUBLICATIONS = [
     "pdf": "/papers/RTR-WP-003.pdf",
     "page": "/papers/RTR-WP-003/",
     "doi": "",
-    "citation": "Right To Read Campaign (2026). The Grammar of Refusal: Four Mechanisms of Institutional Contraction in India's Library Sector. Right to Read Working Papers, RTR-WP-003 (v0.1.1). https://theright2read.org/papers/RTR-WP-003.pdf"
+    "citation": "The Right to Read Campaign. 2026. “The Grammar of Refusal: Four Mechanisms of Institutional Contraction in India's Library Sector.” Right to Read Working Papers, RTR-WP-003 (v0.1.1). https://theright2read.org/papers/RTR-WP-003.pdf."
   },
   {
     "kind": "paper",
@@ -84,7 +84,7 @@ window.RTR_PUBLICATIONS = [
     "pdf": "/papers/RTR-WP-006.pdf",
     "page": "/papers/RTR-WP-006/",
     "doi": "",
-    "citation": "Right To Read Campaign (2026). Whom Does the City Allow to Read?: Caste, Democracy, and the Public Library in the Indian City. Right to Read Working Papers, RTR-WP-006 (v4.0.0). https://theright2read.org/papers/RTR-WP-006.pdf"
+    "citation": "The Right to Read Campaign. 2026. “Whom Does the City Allow to Read? Caste, Democracy, and the Public Library in the Indian City.” Right to Read Working Papers, RTR-WP-006 (v4.0.0). https://theright2read.org/papers/RTR-WP-006.pdf."
   },
   {
     "kind": "paper",
@@ -106,7 +106,7 @@ window.RTR_PUBLICATIONS = [
     "pdf": "/papers/RTR-WP-008.pdf",
     "page": "/papers/RTR-WP-008/",
     "doi": "",
-    "citation": "Right To Read Campaign (2026). From Reader to User: Eighty Years of the Indian Library Association and the Changing Public of the Library, 1942–2019. Right to Read Working Papers, RTR-WP-008 (v0.1.3). https://theright2read.org/papers/RTR-WP-008.pdf"
+    "citation": "The Right to Read Campaign. 2026. “From Reader to User: Eighty Years of the Indian Library Association and the Changing Public of the Library, 1942–2019.” Right to Read Working Papers, RTR-WP-008 (v0.1.3). https://theright2read.org/papers/RTR-WP-008.pdf."
   },
   {
     "kind": "brief",
@@ -125,6 +125,6 @@ window.RTR_PUBLICATIONS = [
       "Public Policy"
     ],
     "pdf": "/papers/RTR-BR-001.pdf",
-    "citation": "The Right to Read Campaign (2026). The ₹10,000 Library: Gujarat's Public Libraries. Right to Read Briefs, RTR-BR-001. https://theright2read.org/papers/RTR-BR-001.pdf"
+    "citation": "The Right to Read Campaign. 2026. “The ₹10,000 Library: Gujarat's Public Libraries.” Right to Read Briefs, RTR-BR-001. https://theright2read.org/papers/RTR-BR-001.pdf."
   }
 ];
