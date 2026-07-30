@@ -10,130 +10,6 @@
   var calm = matchMedia('(prefers-reduced-motion: reduce)');
   function scrollBehavior() { return calm.matches ? 'auto' : 'smooth'; }
 
-  /* ---------- search ---------- */
-  var input = document.getElementById('doc-search');
-  var status = document.querySelector('[data-search-status]');
-  var supportsHighlight = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
-
-  var nodes = [];   // text nodes, in document order
-  var flat = '';    // their concatenated lowercase text
-  var starts = [];  // flat-string offset where each node begins
-
-  function buildIndex() {
-    var walker = document.createTreeWalker(doc, NodeFilter.SHOW_TEXT, {
-      acceptNode: function (n) {
-        return n.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
-      }
-    });
-    var parts = [], at = 0, n;
-    while ((n = walker.nextNode())) {
-      nodes.push(n);
-      starts.push(at);
-      parts.push(n.nodeValue.toLowerCase());
-      at += n.nodeValue.length;
-    }
-    flat = parts.join('');
-  }
-
-  function nodeAt(offset) {
-    var lo = 0, hi = starts.length - 1;
-    while (lo < hi) {
-      var mid = (lo + hi + 1) >> 1;
-      if (starts[mid] <= offset) lo = mid; else hi = mid - 1;
-    }
-    return lo;
-  }
-
-  var hits = [];      // Range objects
-  var current = -1;
-
-  function clearHighlights() {
-    if (supportsHighlight) {
-      CSS.highlights.delete('doc-search-hit');
-      CSS.highlights.delete('doc-search-current');
-    }
-    hits = [];
-    current = -1;
-  }
-
-  function search(qRaw) {
-    clearHighlights();
-    var q = qRaw.trim().toLowerCase();
-    if (!q.length) { status.textContent = ''; return; }
-    if (q.length < 2) {
-      status.textContent = 'Type two or more characters.';
-      return;
-    }
-    if (!flat) buildIndex();
-
-    var from = 0, idx, capped = false;
-    while ((idx = flat.indexOf(q, from)) !== -1) {
-      if (hits.length >= 500) { capped = true; break; }
-      var i = nodeAt(idx);
-      var startOffset = idx - starts[i];
-      // a match that straddles two text nodes is skipped; in running prose the
-      // cost is a rare miss, and stitching ranges across nodes is not worth it
-      if (startOffset + q.length <= nodes[i].nodeValue.length) {
-        var r = document.createRange();
-        r.setStart(nodes[i], startOffset);
-        r.setEnd(nodes[i], startOffset + q.length);
-        hits.push(r);
-      }
-      from = idx + q.length;
-    }
-
-    if (!hits.length) {
-      status.textContent = 'No matches for “' + qRaw.trim() + '”. Try a shorter word, '
-        + 'or browse the contents.';
-      return;
-    }
-    if (supportsHighlight) {
-      CSS.highlights.set('doc-search-hit', new Highlight(...hits));
-    }
-    // the scan stops at 500 ranges; saying "500 matches" would be a false count
-    status.textContent = (capped ? '500+ matches — narrow your search'
-                                 : hits.length + (hits.length === 1 ? ' match' : ' matches'))
-      + ' — press Enter to step through';
-    current = -1;
-  }
-
-  function step(dir) {
-    if (!hits.length) return;
-    current = (current + dir + hits.length) % hits.length;
-    var r = hits[current];
-    if (supportsHighlight) {
-      CSS.highlights.set('doc-search-current', new Highlight(r));
-    }
-    var el = r.startContainer.parentElement;
-    if (el) {
-      // the section may be skipped by content-visibility; scrolling forces layout
-      el.scrollIntoView({ block: 'center', behavior: scrollBehavior() });
-    }
-    status.textContent = 'Match ' + (current + 1) + ' of ' + hits.length +
-      ' — Enter for next, Esc to clear';
-  }
-
-  if (input && status) {
-    var timer;
-    input.addEventListener('input', function () {
-      clearTimeout(timer);
-      timer = setTimeout(function () { search(input.value); }, 180);
-    });
-    input.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        // on a phone the drawer and its scrim sit over the document; stepping to a
-        // match while they are open shows the reader nothing
-        setDrawer(false);
-        step(e.shiftKey ? -1 : 1);
-      } else if (e.key === 'Escape') {
-        input.value = '';
-        clearHighlights();
-        status.textContent = '';
-      }
-    });
-  }
-
   /* ---------- the contents drawer (below 1024px) ---------- */
   var index = document.getElementById('doc-index');
   var toggle = document.querySelector('.index-toggle');
@@ -146,7 +22,7 @@
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     if (scrim) scrim.hidden = !open;
     if (open) {
-      var first = index.querySelector('a, input');
+      var first = index.querySelector('a');
       if (first) first.focus();
     }
   }
@@ -156,15 +32,122 @@
       setDrawer(index.getAttribute('data-open') === null);
     });
   }
-  if (scrim) scrim.addEventListener('click', function () {
-    setDrawer(false);
-    if (toggle) toggle.focus();
-  });
-  // picking a section is the end of using the drawer
+  if (scrim) {
+    scrim.addEventListener('click', function () {
+      setDrawer(false);
+      if (toggle) toggle.focus();
+    });
+  }
   if (index) {
     index.addEventListener('click', function (e) {
       if (e.target.closest('a')) setDrawer(false);
     });
+  }
+
+  /* ---------- search across every section ----------
+     The document is now one page per section, so an in-page highlighter can only
+     ever see a thirtieth of it. A build-time index answers the whole document in
+     one small fetch, and each result deep-links to the sentence with a text
+     fragment rather than dumping the reader at a section top. */
+  var input = document.getElementById('doc-search');
+  var results = document.querySelector('[data-results]');
+  var status = document.querySelector('[data-search-status]');
+  var data = null, pending = null;
+
+  function loadIndex() {
+    if (!input) return Promise.resolve(null);
+    if (data) return Promise.resolve(data);
+    // share the in-flight request: returning a resolved null here meant a keystroke
+    // during the fetch never rendered anything
+    if (pending) return pending;
+    pending = fetch(input.getAttribute('data-search-index'))
+      .then(function (r) { return r.json(); })
+      .then(function (j) { data = j; pending = null; return j; })
+      .catch(function () {
+        pending = null;
+        if (status) status.textContent = 'Search is unavailable — use the contents.';
+        return null;
+      });
+    return pending;
+  }
+
+  function esc(t) {
+    return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function snippet(text, q) {
+    var at = text.toLowerCase().indexOf(q);
+    var from = Math.max(0, at - 60);
+    var raw = text.slice(from, at + q.length + 90);
+    var rel = raw.toLowerCase().indexOf(q);
+    return {
+      html: (from > 0 ? '\u2026' : '') + esc(raw.slice(0, rel))
+            + '<mark>' + esc(raw.substr(rel, q.length)) + '</mark>'
+            + esc(raw.slice(rel + q.length))
+            + (at + q.length + 90 < text.length ? '\u2026' : ''),
+      exact: raw.substr(rel, q.length)
+    };
+  }
+
+  function render(q) {
+    if (!results) return;
+    var scored = [];
+    for (var i = 0; i < data.length; i++) {
+      var lower = data[i].x.toLowerCase();
+      var n = 0, at = lower.indexOf(q);
+      while (at !== -1) { n++; at = lower.indexOf(q, at + q.length); }
+      if (n) scored.push({ e: data[i], n: n });
+    }
+    // the section that is *about* the term should lead, not the first one to mention it
+    scored.sort(function (a, b) { return b.n - a.n; });
+    var hits = [];
+    for (var k = 0; k < scored.length && hits.length < 40; k++) {
+      var e = scored[k].e;
+      var s = snippet(e.x, q);
+      var href = e.u + (e.u.indexOf('#') === -1 ? '#' : '')
+                 + ':~:text=' + encodeURIComponent(s.exact);
+      hits.push('<li><a href="' + href + '"><span class="r-sec">' + esc(e.t)
+                + '</span><span class="r-snip">' + s.html + '</span>'
+                + '<span class="r-count">' + scored[k].n + '</span></a></li>');
+    }
+    if (!hits.length) {
+      results.innerHTML = '<p class="r-none">No matches for \u201c' + esc(q)
+        + '\u201d. Try a shorter word, or use the contents.</p>';
+      if (status) status.textContent = 'No matches.';
+    } else {
+      results.innerHTML = '<ol>' + hits.join('') + '</ol>';
+      if (status) {
+        status.textContent = hits.length
+          + (hits.length === 1 ? ' section matches.' : ' sections match.');
+      }
+    }
+    results.hidden = false;
+  }
+
+  function search(raw) {
+    var q = raw.trim().toLowerCase();
+    if (!q.length) {
+      if (results) { results.hidden = true; results.innerHTML = ''; }
+      if (status) status.textContent = '';
+      return;
+    }
+    if (q.length < 2) {
+      if (status) status.textContent = 'Type two or more characters.';
+      return;
+    }
+    loadIndex().then(function () { if (data) render(q); });
+  }
+
+  if (input) {
+    var timer;
+    input.addEventListener('input', function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () { search(input.value); }, 180);
+    });
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { input.value = ''; search(''); }
+    });
+    input.addEventListener('focus', loadIndex, { once: true });
   }
 
   /* ---------- reach search from anywhere ---------- */
@@ -175,9 +158,22 @@
     var wants = (e.key === '/' && !typing) || ((e.ctrlKey || e.metaKey) && e.key === 'k');
     if (!wants) return;
     e.preventDefault();
+    setDrawer(false);
     input.focus();
     input.select();
   });
+
+  /* Old single-page links now live on their own pages. The map covers every
+     heading, not only section slugs, so /peopleslibrary/#early-beginnings (a former
+     h3) forwards too instead of leaving the reader on the introduction. */
+  if (location.pathname === '/peopleslibrary/' && location.hash.length > 1) {
+    var want = location.hash.slice(1);
+    if (!document.getElementById(want)) {
+      var mapEl = document.getElementById('legacy-anchors');
+      var map = mapEl ? JSON.parse(mapEl.textContent) : null;
+      if (map && map[want]) location.replace(map[want]);
+    }
+  }
 
   /* ---------- copyable heading anchors ---------- */
   doc.addEventListener('click', function (e) {
@@ -274,13 +270,18 @@
 
   /* ---------- reading progress + contents scroll-spy ---------- */
   var bar = document.querySelector('[data-progress]');
-  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  // only same-page anchors: the sidebar's section links point at other documents
+  var tocLinks = Array.prototype.slice.call(
+    document.querySelectorAll('.toc-list a[href^="#"]'));
   var targets = tocLinks.map(function (a) {
     return document.getElementById(a.getAttribute('href').slice(1));
   });
 
+  var cssProgress = window.CSS && CSS.supports
+                    && CSS.supports('animation-timeline', 'scroll()');
+
   function onScroll() {
-    if (bar) {
+    if (bar && !cssProgress) {
       var max = doc.offsetTop + doc.offsetHeight - window.innerHeight;
       var pct = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
       bar.style.width = (pct * 100).toFixed(1) + '%';
