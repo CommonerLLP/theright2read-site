@@ -123,6 +123,36 @@
     });
   }
 
+  /* ---------- the contents drawer (below 1024px) ---------- */
+  var index = document.getElementById('doc-index');
+  var toggle = document.querySelector('.index-toggle');
+  var scrim = document.querySelector('.doc-scrim');
+
+  function setDrawer(open) {
+    if (!index || !toggle) return;
+    if (open) index.setAttribute('data-open', '');
+    else index.removeAttribute('data-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (scrim) scrim.hidden = !open;
+    if (open) {
+      var first = index.querySelector('a, input');
+      if (first) first.focus();
+    }
+  }
+
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      setDrawer(index.getAttribute('data-open') === null);
+    });
+  }
+  if (scrim) scrim.addEventListener('click', function () { setDrawer(false); });
+  // picking a section is the end of using the drawer
+  if (index) {
+    index.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setDrawer(false);
+    });
+  }
+
   /* ---------- copyable heading anchors ---------- */
   doc.addEventListener('click', function (e) {
     var a = e.target.closest ? e.target.closest('.head-anchor') : null;
@@ -182,7 +212,12 @@
   });
 
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeCard();
+    if (e.key !== 'Escape') return;
+    closeCard();
+    if (index && index.getAttribute('data-open') !== null) {
+      setDrawer(false);
+      if (toggle) toggle.focus();
+    }
   });
 
   /* ---------- make room for the annotator's toolbar ----------
@@ -242,6 +277,10 @@
       for (var i = 0; i < targets.length; i++) {
         if (targets[i] && seen.has(targets[i].id)) { activeId = targets[i].id; break; }
       }
+      // sections here run for several screens, so most of the time no heading is
+      // inside the observer's band. Keep the last one rather than clearing, or the
+      // reader loses "you are here" for most of the document.
+      if (!activeId) return;
       tocLinks.forEach(function (a) {
         if (a.getAttribute('href').slice(1) === activeId) a.setAttribute('aria-current', 'true');
         else a.removeAttribute('aria-current');

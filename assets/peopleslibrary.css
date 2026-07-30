@@ -3,9 +3,15 @@
    navigation layer (contents, search, anchors, footnote cards, progress) and the
    Devanagari manifesto. Mobile-first; nothing may break at 360px. */
 
-/* ---------- reading column ---------- */
-.doc-note, .doc-tools, .doc-toc { max-width: var(--maxw-read, 720px); }
+/* campaign.css sets `overflow-x: hidden` on html+body, which makes body a scroll
+   container and silently disables `position: sticky` for every descendant. `clip`
+   blocks horizontal scrolling exactly the same way WITHOUT creating one, so the
+   index can stick. Scoped to this page — the rest of the site is untouched. */
+@supports (overflow-x: clip) {
+  html:has(.doc-layout), html:has(.doc-layout) body { overflow-x: clip; }
+}
 
+/* ---------- reading column ---------- */
 /* the document's own headings are sentence case — the site's uppercase .sec h2
    rule would shout 21 policy section titles */
 .doc-body h2, .doc-body h3 { text-transform: none; }
@@ -29,22 +35,111 @@
    skipped; contain-intrinsic-size keeps the scrollbar honest */
 .doc-body > section, .doc-body > div { content-visibility: auto; contain-intrinsic-size: auto 800px; }
 
-/* ---------- provenance panel ---------- */
-.doc-note {
-  background: var(--surface);
-  border-left: 3px solid var(--accent);
-  padding: var(--sp-4);
-  margin: var(--sp-5) 0;
-  font-family: var(--font-ui);
-  font-size: 0.9rem;
-  line-height: 1.55;
-}
-.doc-note p { margin: 0 0 var(--sp-3); }
-.doc-note p:last-child { margin-bottom: 0; }
-.doc-note-changes { color: var(--text-muted); }
+/* ---------- two-pane reader ----------
+   Index beside the text on a laptop, an off-canvas drawer on a phone. The whole
+   document stays in the DOM either way, so browser find and our own search both
+   see all 26,000 words. */
+.doc-layout { margin-top: var(--sp-5); }
 
-/* ---------- search ---------- */
-.doc-tools { margin: var(--sp-5) 0 var(--sp-3); }
+@media (min-width: 1024px) {
+  .doc-layout {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: var(--sp-6);
+  }
+  /* the aside must span the whole row, or the sticky inner stops travelling
+     as soon as the reader scrolls past the aside's own content height */
+  .doc-index { align-self: stretch; }
+  .doc-index-inner {
+    position: sticky;
+    top: var(--sp-4);
+    max-height: calc(100vh - 2 * var(--sp-4));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: var(--sp-2);
+  }
+  /* the right column holds hero + document; cap the column, not each child, so
+     the title, standfirst, meta and body all share one left edge and one measure */
+  .doc-main { max-width: var(--maxw-read, 720px); }
+  .doc-main .kicker, .doc-main .title, .doc-main .standfirst,
+  .doc-main .meta, .doc-body { max-width: none; }
+}
+
+@media (max-width: 1023px) {
+  .doc-main { max-width: var(--maxw-read, 720px); }
+}
+
+/* --- the drawer, below 1024px --- */
+@media (max-width: 1023px) {
+  :root.has-js .doc-index {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 45;
+    width: min(300px, 86vw);
+    background: var(--bg);
+    border-right: 2px solid var(--text);
+    box-shadow: var(--shadow);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: var(--sp-5) var(--sp-4);
+    transform: translateX(-102%);
+    visibility: hidden;
+  }
+  :root.has-js .doc-index[data-open] { transform: none; visibility: visible; }
+  @media (prefers-reduced-motion: no-preference) {
+    :root.has-js .doc-index { transition: transform 200ms var(--ease), visibility 200ms; }
+  }
+  .doc-scrim {
+    position: fixed;
+    inset: 0;
+    z-index: 44;
+    background: rgba(0, 0, 0, 0.45);
+  }
+  .doc-scrim[hidden] { display: none; }
+
+  /* no JavaScript: the index simply reads as a block above the text */
+  :root:not(.has-js) .doc-index {
+    border-bottom: 2px solid var(--text);
+    padding-bottom: var(--sp-4);
+    margin-bottom: var(--sp-5);
+  }
+}
+
+.index-toggle {
+  position: fixed;
+  left: var(--sp-4);
+  bottom: var(--sp-4);
+  z-index: 43;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.6rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: var(--t-eyebrow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--on-accent);
+  background: var(--text);
+  border: 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.index-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.index-toggle-icon {
+  width: 14px; height: 2px;
+  background: currentColor;
+  box-shadow: 0 4px 0 currentColor, 0 -4px 0 currentColor;
+}
+
+/* declared after the button's own display, so it actually wins */
+@media (min-width: 1024px) {
+  .index-toggle, .doc-scrim { display: none; }
+}
+/* the button does nothing without its handler */
+:root:not(.has-js) .index-toggle, :root:not(.has-js) .doc-scrim { display: none; }
+
+/* --- search, inside the index --- */
 .doc-search { display: block; }
 .doc-search-label {
   display: block;
@@ -60,7 +155,7 @@
   box-sizing: border-box;
   font-family: var(--font-ui);
   font-size: 1rem;              /* 16px min, or iOS zooms the page on focus */
-  padding: 0.6rem 0.7rem;
+  padding: 0.5rem 0.6rem;
   color: var(--text);
   background: var(--bg);
   border: 2px solid var(--rule);
@@ -69,48 +164,44 @@
 #doc-search:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
 .doc-search-status {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
   margin: var(--sp-2) 0 0;
-  min-height: 1.2em;            /* reserve the line so the page doesn't jump */
+  min-height: 1.1em;            /* reserve the line so the index doesn't jump */
 }
 ::highlight(doc-search-hit) { background: var(--rtr-cream); color: var(--rtr-ink); }
 ::highlight(doc-search-current) { background: var(--accent); color: var(--on-accent); }
 
-/* ---------- contents ---------- */
-.doc-toc {
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  margin: var(--sp-4) 0 var(--sp-6);
-}
-.doc-toc > summary {
-  cursor: pointer;
-  padding: var(--sp-3) var(--sp-4);
+/* --- the index list --- */
+.doc-index-head {
   font-family: var(--font-mono);
   font-size: var(--t-eyebrow);
   letter-spacing: 1px;
   text-transform: uppercase;
-  display: flex;
-  gap: var(--sp-3);
-  justify-content: space-between;
-  align-items: baseline;
+  color: var(--text-muted);
+  border-top: 1px solid var(--rule);
+  padding-top: var(--sp-3);
+  margin: var(--sp-4) 0 var(--sp-2);
 }
-.doc-toc > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
-.doc-toc-count { color: var(--text-muted); }
-.toc-list { list-style: none; margin: 0; padding: 0 var(--sp-4) var(--sp-4); }
+.toc-list { list-style: none; margin: 0; padding: 0; }
 .toc-list li { margin: 0; }
 .toc-list a {
   display: block;
   padding: 0.3rem 0;
   font-family: var(--font-ui);
-  font-size: 0.9rem;
-  line-height: 1.35;
+  font-size: 0.82rem;
+  line-height: 1.3;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
+  border-left: 2px solid transparent;
+  padding-left: var(--sp-2);
 }
 .toc-list a:hover, .toc-list a:focus-visible { text-decoration: underline; }
-.toc-h3 a { padding-left: var(--sp-4); font-size: 0.84rem; color: var(--text-muted); }
-.toc-list a[aria-current="true"] { color: var(--accent); font-weight: 700; }
+.toc-h3 a { padding-left: var(--sp-4); font-size: 0.76rem; color: var(--text-muted); }
+.toc-list a[aria-current="true"] {
+  border-left-color: var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+}
 
 /* ---------- heading tools ---------- */
 .head-tools {
@@ -127,6 +218,11 @@
   color: var(--text-muted);
   opacity: 0.55;
   padding: 0.15em 0.3em;
+}
+@media (hover: hover) {
+  .head-tools { opacity: 0; transition: opacity 120ms; }
+  h2:hover .head-tools, h3:hover .head-tools, h4:hover .head-tools,
+  h5:hover .head-tools, .head-tools:focus-within { opacity: 1; }
 }
 .head-comment { border: 1px solid var(--rule); border-radius: var(--radius); margin-left: 0.2em; }
 .head-anchor:hover, .head-anchor:focus-visible,
@@ -274,10 +370,11 @@
 
 /* ---------- print / offline ---------- */
 @media print {
-  .masthead, .nav-row, .flag, .doc-tools, .reading-progress,
-  .channels, .head-tools, .fn-card, .skip-link { display: none !important; }
-  .doc-toc { border: 0; }
-  .doc-toc > summary { display: none; }
+  .masthead, .nav-row, .flag, .reading-progress, .channels, .head-tools,
+  .fn-card, .skip-link, .index-toggle, .doc-scrim { display: none !important; }
+  .doc-index { position: static; transform: none; visibility: visible;
+               border: 0; box-shadow: none; width: auto; padding: 0; }
+  .doc-layout { display: block; }
   .doc-body > section, .doc-body > div { content-visibility: visible; }
   .doc-body h2 { break-after: avoid; }
   .doc-body p, .doc-body li { break-inside: avoid; }
