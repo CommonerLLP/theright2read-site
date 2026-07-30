@@ -61,7 +61,7 @@ p  { margin: 0 0 var(--sp-4); }
 .nav-row { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--sp-2) var(--sp-5); margin: var(--sp-2) 0 var(--sp-4);
   font-family: var(--font-mono); font-size: var(--t-eyebrow); letter-spacing: .5px; text-transform: uppercase; }
 .nav-row a { color: var(--text-muted); text-decoration: none; display: inline-block; padding: 1rem 0; line-height: 1; }   /* ≥44px tap target */
-.nav-row a:hover, .nav-row a[aria-current="page"] { color: var(--accent); }
+.nav-row a:hover, .nav-row a[aria-current] { color: var(--accent); }
 .wordmark { line-height: 1.05; }
 .wordmark .rtr { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.25rem, 5vw, 1.6rem); color: var(--accent); letter-spacing: -.5px; }
 .wordmark .rtr .dot { color: var(--text); }
