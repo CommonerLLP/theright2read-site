@@ -7,6 +7,9 @@
   var doc = document.getElementById('document');
   if (!doc) return;
 
+  var calm = matchMedia('(prefers-reduced-motion: reduce)');
+  function scrollBehavior() { return calm.matches ? 'auto' : 'smooth'; }
+
   /* ---------- search ---------- */
   var input = document.getElementById('doc-search');
   var status = document.querySelector('[data-search-status]');
@@ -56,14 +59,16 @@
   function search(qRaw) {
     clearHighlights();
     var q = qRaw.trim().toLowerCase();
+    if (!q.length) { status.textContent = ''; return; }
     if (q.length < 2) {
-      status.textContent = '';
+      status.textContent = 'Type two or more characters.';
       return;
     }
     if (!flat) buildIndex();
 
-    var from = 0, idx;
-    while ((idx = flat.indexOf(q, from)) !== -1 && hits.length < 500) {
+    var from = 0, idx, capped = false;
+    while ((idx = flat.indexOf(q, from)) !== -1) {
+      if (hits.length >= 500) { capped = true; break; }
       var i = nodeAt(idx);
       var startOffset = idx - starts[i];
       // a match that straddles two text nodes is skipped; in running prose the
@@ -84,8 +89,10 @@
     if (supportsHighlight) {
       CSS.highlights.set('doc-search-hit', new Highlight(...hits));
     }
-    status.textContent = hits.length + (hits.length === 1 ? ' match' : ' matches') +
-      ' — press Enter to step through';
+    // the scan stops at 500 ranges; saying "500 matches" would be a false count
+    status.textContent = (capped ? '500+ matches — narrow your search'
+                                 : hits.length + (hits.length === 1 ? ' match' : ' matches'))
+      + ' — press Enter to step through';
     current = -1;
   }
 
@@ -99,7 +106,7 @@
     var el = r.startContainer.parentElement;
     if (el) {
       // the section may be skipped by content-visibility; scrolling forces layout
-      el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      el.scrollIntoView({ block: 'center', behavior: scrollBehavior() });
     }
     status.textContent = 'Match ' + (current + 1) + ' of ' + hits.length +
       ' — Enter for next, Esc to clear';
@@ -114,6 +121,9 @@
     input.addEventListener('keydown', function (e) {
       if (e.key === 'Enter') {
         e.preventDefault();
+        // on a phone the drawer and its scrim sit over the document; stepping to a
+        // match while they are open shows the reader nothing
+        setDrawer(false);
         step(e.shiftKey ? -1 : 1);
       } else if (e.key === 'Escape') {
         input.value = '';
@@ -145,7 +155,10 @@
       setDrawer(index.getAttribute('data-open') === null);
     });
   }
-  if (scrim) scrim.addEventListener('click', function () { setDrawer(false); });
+  if (scrim) scrim.addEventListener('click', function () {
+    setDrawer(false);
+    if (toggle) toggle.focus();
+  });
   // picking a section is the end of using the drawer
   if (index) {
     index.addEventListener('click', function (e) {
@@ -179,12 +192,14 @@
   function showNote(num, noteEl, returnTo) {
     focusBack = returnTo;
     if (!card) {
-      card = document.createElement('aside');
+      // a div, not <aside>: overriding <aside>'s implicit complementary role with
+      // dialog is not an allowed role combination
+      card = document.createElement('div');
       card.className = 'fn-card';
       card.setAttribute('role', 'dialog');
-      card.setAttribute('aria-label', 'Footnote');
+      card.setAttribute('aria-labelledby', 'fn-card-num');
       card.innerHTML = '<button class="fn-card-close" aria-label="Close note">&times;</button>' +
-        '<div class="fn-card-num"></div><div class="fn-card-body"></div>';
+        '<div class="fn-card-num" id="fn-card-num"></div><div class="fn-card-body"></div>';
       card.querySelector('.fn-card-close').addEventListener('click', function () {
         closeCard();
         if (focusBack && focusBack.focus) focusBack.focus();
@@ -263,29 +278,41 @@
   window.addEventListener('scroll', function () {
     if (ticking) return;
     ticking = true;
-    requestAnimationFrame(function () { onScroll(); ticking = false; });
+    requestAnimationFrame(function () { onScroll(); syncSpy(); ticking = false; });
   }, { passive: true });
   onScroll();
+  syncSpy();
 
-  if ('IntersectionObserver' in window) {
-    var seen = new Set();
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) seen.add(en.target.id); else seen.delete(en.target.id);
-      });
-      var activeId = null;
-      for (var i = 0; i < targets.length; i++) {
-        if (targets[i] && seen.has(targets[i].id)) { activeId = targets[i].id; break; }
+  // Position-derived, not entry-derived: sections here run for several screens, so an
+  // IntersectionObserver band is empty most of the time and the reader loses their place.
+  var spyTargets = null;   // built on first use: this block is evaluated after the
+                           // first syncSpy() call, so eager assignment would throw
+  var lastActive = null;
+
+  function syncSpy() {
+    if (!spyTargets) {
+      spyTargets = targets.map(function (t, i) {
+        return t ? {el: t, link: tocLinks[i]} : null;
+      }).filter(Boolean);
+    }
+    if (!spyTargets.length) return;
+    var line = window.innerHeight * 0.25;   // the reader's eye, not the viewport top
+    var current = spyTargets[0];
+    for (var i = 0; i < spyTargets.length; i++) {
+      if (spyTargets[i].el.getBoundingClientRect().top <= line) current = spyTargets[i];
+      else break;
+    }
+    if (current === lastActive) return;
+    lastActive = current;
+    tocLinks.forEach(function (a) { a.removeAttribute('aria-current'); });
+    current.link.setAttribute('aria-current', 'true');
+    // a 104-row index scrolls internally; without this the active row is off-screen
+    var inner = document.querySelector('.doc-index-inner');
+    if (inner && inner.scrollHeight > inner.clientHeight) {
+      var lr = current.link.getBoundingClientRect(), ir = inner.getBoundingClientRect();
+      if (lr.top < ir.top || lr.bottom > ir.bottom) {
+        current.link.scrollIntoView({block: 'nearest', behavior: 'auto'});
       }
-      // sections here run for several screens, so most of the time no heading is
-      // inside the observer's band. Keep the last one rather than clearing, or the
-      // reader loses "you are here" for most of the document.
-      if (!activeId) return;
-      tocLinks.forEach(function (a) {
-        if (a.getAttribute('href').slice(1) === activeId) a.setAttribute('aria-current', 'true');
-        else a.removeAttribute('aria-current');
-      });
-    }, { rootMargin: '-10% 0px -75% 0px' });
-    targets.forEach(function (t) { if (t) io.observe(t); });
+    }
   }
 })();

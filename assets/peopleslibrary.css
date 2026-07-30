@@ -41,12 +41,32 @@
    see all 26,000 words. */
 .doc-layout { margin-top: var(--sp-5); }
 
+/* search must be visible without opening anything — it is the primary
+   affordance for 26,000 words, and on a phone it was hidden inside the drawer */
+.doc-searchbar { margin-bottom: var(--sp-4); }
+@media (max-width: 1023px) {
+  .doc-searchbar {
+    position: sticky;
+    top: 0;
+    z-index: 42;
+    background: var(--bg);
+    border-bottom: 1px solid var(--rule);
+    padding: var(--sp-3) 0;
+    margin-bottom: var(--sp-4);
+  }
+}
+
 @media (min-width: 1024px) {
   .doc-layout {
     display: grid;
     grid-template-columns: 200px minmax(0, 1fr);
-    gap: var(--sp-6);
+    grid-template-areas: "search main" "index main";
+    grid-template-rows: auto 1fr;
+    gap: 0 var(--sp-6);
   }
+  .doc-searchbar { grid-area: search; }
+  .doc-index { grid-area: index; }
+  .doc-main  { grid-area: main; }
   /* the aside must span the whole row, or the sticky inner stops travelling
      as soon as the reader scrolls past the aside's own content height */
   .doc-index { align-self: stretch; }
@@ -106,6 +126,7 @@
 }
 
 .index-toggle {
+  min-height: 44px;
   position: fixed;
   left: var(--sp-4);
   bottom: var(--sp-4);
@@ -139,16 +160,32 @@
 /* the button does nothing without its handler */
 :root:not(.has-js) .index-toggle, :root:not(.has-js) .doc-scrim { display: none; }
 
-/* --- search, inside the index --- */
+/* --- search --- */
+/* Available to screen readers, off the screen for everyone else. The sticky bar was
+   eating 36% of a 360x800 viewport on label + hint alone; both still reach AT via
+   <label for> and aria-describedby. */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
 .doc-search { display: block; }
-.doc-search-label {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: var(--t-eyebrow);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: var(--sp-2);
+@media (min-width: 1024px) {
+  /* room to spare beside the text, so the label can show */
+  .doc-search-label {
+    position: static !important;
+    width: auto; height: auto; margin: 0 0 var(--sp-2); clip-path: none;
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--t-eyebrow);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
 }
 #doc-search {
   width: 100%;
@@ -188,8 +225,10 @@
 .toc-list { list-style: none; margin: 0; padding: 0; }
 .toc-list li { margin: 0; }
 .toc-list a {
-  display: block;
-  padding: 0.3rem 0;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.35rem 0;
   font-family: var(--font-ui);
   font-size: 0.82rem;
   line-height: 1.3;
@@ -216,10 +255,14 @@
   margin-left: 0.5em;
 }
 .head-anchor, .head-comment {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
   text-decoration: none;
   color: var(--text-muted);
-  opacity: 0.55;
-  padding: 0.15em 0.3em;
+  padding: 0 0.35em;
 }
 @media (hover: hover) {
   .head-tools { opacity: 0; transition: opacity 120ms; }
@@ -261,11 +304,77 @@
   margin-bottom: var(--sp-2);
 }
 .rtr-note-body { display: block; }
+/* colour alone must not be the only cue for a link inside running text */
+.rtr-note a { text-decoration: underline; }
 .doc-note-annotate { border-top: 1px solid var(--rule); padding-top: var(--sp-3); }
 
 /* nested items use letters in the source: a) b) c) */
 .doc-body ol ol > li::marker { content: counter(list-item, lower-alpha) ") "; font-weight: 400; }
 .doc-body ol ol { margin-top: 0.5rem; }
+
+/* the manifesto opens the document and carries its argument; without this it is
+   typeset identically to "Executive Summary" */
+.doc-body h2.doc-manifesto {
+  font-size: clamp(1.6rem, 1.3rem + 1.8vw, 2.4rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  border-top-width: 4px;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+}
+.doc-body h2.doc-manifesto + h3 { color: var(--accent); }
+
+/* the notes block heading, previously CSS ::before and so invisible to AT */
+.notes-head {
+  font-family: var(--font-mono) !important;
+  font-size: var(--t-eyebrow) !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 0 var(--sp-3) !important;
+}
+.notes-head .head-tools { display: none; }
+
+/* index group labels — "Front matter / The policy / Appendices" */
+.toc-group {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: var(--sp-4) 0 var(--sp-1);
+}
+.toc-group:first-of-type { margin-top: var(--sp-2); }
+
+/* the hint is for AT and for keyboard users who focus the field */
+.doc-search-hint {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: var(--sp-2) 0 0;
+}
+.doc-searchbar:not(:focus-within) .doc-search-hint {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  margin: -1px;
+}
+.doc-totop {
+  margin-top: var(--sp-6);
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: var(--t-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.doc-totop a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+.doc-totop a:hover, .doc-totop a:focus-visible { text-decoration: underline; }
 
 /* ---------- pull quotes ---------- */
 .doc-body blockquote {
@@ -285,18 +394,34 @@
   margin-top: var(--sp-7);
   padding-top: var(--sp-4);
 }
-.doc-body .footnote::before {
-  content: "Notes";
-  display: block;
-  font-family: var(--font-mono);
-  font-size: var(--t-eyebrow);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: var(--sp-3);
+.doc-body sup[id^="fnref"] { line-height: 0; }
+.doc-body sup[id^="fnref"] a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 10px;          /* 44px tall hit area around a 16px glyph */
+  margin: -14px -6px;          /* pulled back so the layout does not move */
+  position: relative;
 }
-.doc-body sup[id^="fnref"] a { text-decoration: none; padding: 0 0.15em; }
+.doc-body sup[id^="fnref"] a::after {   /* keeps the target hittable over the padding */
+  content: ""; position: absolute; inset: 0;
+}
 .doc-body li:target, .doc-body sup:target { background: var(--surface-2); }
+
+/* the ↩︎ back-arrow ships as a 16x22 inline link: under the 24px WCAG 2.2 target
+   and hard against its neighbour. Grow it and give it clear space. */
+/* the notes list ships tighter than the 24px target needs vertically: note 11's
+   backref measured 24x28 but only 23.2px of clear space */
+.doc-body .footnote ol > li { line-height: 1.8; margin-bottom: 0.9rem; }
+
+.doc-body .footnote-backref {
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 1px 4px;
+  margin-left: 0.6em;
+  text-align: center;
+  text-decoration: none;
+}
 
 /* the note card: on a phone, jumping to the bottom of a 26,000-word page and
    back loses the reader's place, so the note comes to them */
@@ -340,7 +465,7 @@
 }
 
 /* ---------- reading progress ---------- */
-.reading-progress { height: 2px; background: var(--rule); margin: 0 0 var(--sp-2); }
+.reading-progress { height: 3px; background: var(--rule); margin: 0 0 var(--sp-2); }
 .reading-progress span { display: block; height: 100%; width: 0; background: var(--accent); }
 @media (prefers-reduced-motion: no-preference) {
   .reading-progress span { transition: width 120ms linear; }
