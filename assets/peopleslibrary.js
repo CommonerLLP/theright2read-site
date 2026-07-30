@@ -83,7 +83,8 @@
     }
 
     if (!hits.length) {
-      status.textContent = 'No matches.';
+      status.textContent = 'No matches for “' + qRaw.trim() + '”. Try a shorter word, '
+        + 'or browse the contents.';
       return;
     }
     if (supportsHighlight) {
@@ -165,6 +166,18 @@
       if (e.target.closest('a')) setDrawer(false);
     });
   }
+
+  /* ---------- reach search from anywhere ---------- */
+  document.addEventListener('keydown', function (e) {
+    if (!input) return;
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)
+                 || document.activeElement.isContentEditable;
+    var wants = (e.key === '/' && !typing) || ((e.ctrlKey || e.metaKey) && e.key === 'k');
+    if (!wants) return;
+    e.preventDefault();
+    input.focus();
+    input.select();
+  });
 
   /* ---------- copyable heading anchors ---------- */
   doc.addEventListener('click', function (e) {

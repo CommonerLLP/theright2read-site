@@ -107,7 +107,7 @@
   }
   :root.has-js .doc-index[data-open] { transform: none; visibility: visible; }
   @media (prefers-reduced-motion: no-preference) {
-    :root.has-js .doc-index { transition: transform 200ms var(--ease), visibility 200ms; }
+    :root.has-js .doc-index { transition: transform 200ms var(--ease); }
   }
   .doc-scrim {
     position: fixed;
@@ -467,6 +467,10 @@
 /* ---------- reading progress ---------- */
 .reading-progress { height: 3px; background: var(--rule); margin: 0 0 var(--sp-2); }
 .reading-progress span { display: block; height: 100%; width: 0; background: var(--accent); }
+@media (forced-colors: active) {
+  .reading-progress { border-bottom: 1px solid CanvasText; }
+  .reading-progress span { background: Highlight; forced-color-adjust: none; }
+}
 @media (prefers-reduced-motion: no-preference) {
   .reading-progress span { transition: width 120ms linear; }
 }
