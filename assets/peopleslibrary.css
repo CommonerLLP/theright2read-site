@@ -1,0 +1,271 @@
+/* peopleslibrary.css — /peopleslibrary/ only: the People's National Library
+   Policy 2024 read in full. Rides on paper.css for the prose; this file adds the
+   navigation layer (contents, search, anchors, footnote cards, progress) and the
+   Devanagari manifesto. Mobile-first; nothing may break at 360px. */
+
+/* ---------- reading column ---------- */
+.doc-note, .doc-tools, .doc-toc { max-width: var(--maxw-read, 720px); }
+
+/* the document's own headings are sentence case — the site's uppercase .sec h2
+   rule would shout 21 policy section titles */
+.doc-body h2, .doc-body h3 { text-transform: none; }
+.doc-body h2 {
+  font-family: var(--font-display);
+  font-size: var(--t-h2);
+  line-height: 1.15;
+  margin: 2.75rem 0 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--text);
+}
+.doc-body h3 { font-size: var(--t-h3); margin: 2rem 0 0.5rem; }
+.doc-body h4, .doc-body h5 {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 1.5rem 0 0.4rem;
+}
+
+/* a long page renders far faster on a budget phone if offscreen sections are
+   skipped; contain-intrinsic-size keeps the scrollbar honest */
+.doc-body > section, .doc-body > div { content-visibility: auto; contain-intrinsic-size: auto 800px; }
+
+/* ---------- provenance panel ---------- */
+.doc-note {
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  padding: var(--sp-4);
+  margin: var(--sp-5) 0;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.doc-note p { margin: 0 0 var(--sp-3); }
+.doc-note p:last-child { margin-bottom: 0; }
+.doc-note-changes { color: var(--text-muted); }
+
+/* ---------- search ---------- */
+.doc-tools { margin: var(--sp-5) 0 var(--sp-3); }
+.doc-search { display: block; }
+.doc-search-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--t-eyebrow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-2);
+}
+#doc-search {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-ui);
+  font-size: 1rem;              /* 16px min, or iOS zooms the page on focus */
+  padding: 0.6rem 0.7rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 2px solid var(--rule);
+  border-radius: var(--radius);
+}
+#doc-search:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+.doc-search-status {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: var(--sp-2) 0 0;
+  min-height: 1.2em;            /* reserve the line so the page doesn't jump */
+}
+::highlight(doc-search-hit) { background: var(--rtr-cream); color: var(--rtr-ink); }
+::highlight(doc-search-current) { background: var(--accent); color: var(--on-accent); }
+
+/* ---------- contents ---------- */
+.doc-toc {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  margin: var(--sp-4) 0 var(--sp-6);
+}
+.doc-toc > summary {
+  cursor: pointer;
+  padding: var(--sp-3) var(--sp-4);
+  font-family: var(--font-mono);
+  font-size: var(--t-eyebrow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  gap: var(--sp-3);
+  justify-content: space-between;
+  align-items: baseline;
+}
+.doc-toc > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.doc-toc-count { color: var(--text-muted); }
+.toc-list { list-style: none; margin: 0; padding: 0 var(--sp-4) var(--sp-4); }
+.toc-list li { margin: 0; }
+.toc-list a {
+  display: block;
+  padding: 0.3rem 0;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  line-height: 1.35;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.toc-list a:hover, .toc-list a:focus-visible { text-decoration: underline; }
+.toc-h3 a { padding-left: var(--sp-4); font-size: 0.84rem; color: var(--text-muted); }
+.toc-list a[aria-current="true"] { color: var(--accent); font-weight: 700; }
+
+/* ---------- heading tools ---------- */
+.head-tools {
+  font-family: var(--font-mono);
+  font-size: 0.65em;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+  margin-left: 0.5em;
+}
+.head-anchor, .head-comment {
+  text-decoration: none;
+  color: var(--text-muted);
+  opacity: 0.55;
+  padding: 0.15em 0.3em;
+}
+.head-comment { border: 1px solid var(--rule); border-radius: var(--radius); margin-left: 0.2em; }
+.head-anchor:hover, .head-anchor:focus-visible,
+.head-comment:hover, .head-comment:focus-visible { opacity: 1; color: var(--accent); }
+.head-anchor.copied::after { content: " copied"; color: var(--accent); }
+
+/* ---------- lists: FLN numbers its items "1)" not "1." ---------- */
+.doc-body > ol > li::marker,
+.doc-body section > ol > li::marker { content: counter(list-item) ") "; font-weight: 700; }
+.doc-body .footnote ol > li::marker { content: counter(list-item) ". "; font-weight: 400; }
+.doc-body ol, .doc-body ul { padding-left: 1.5rem; }
+.doc-body li { margin: 0 0 0.6rem; }
+
+/* ---------- our own notes inside someone else's document ----------
+   These must never be mistakable for the draft's text: different family, a
+   labelled rule, and the campaign's blue rather than the document's black. */
+.rtr-note {
+  display: block;
+  margin: 1.25rem 0;
+  padding: var(--sp-3) var(--sp-4);
+  border-left: 3px solid var(--accent-2);
+  background: var(--surface);
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+.rtr-note-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--t-eyebrow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin-bottom: var(--sp-2);
+}
+.rtr-note-body { display: block; }
+.doc-note-annotate { border-top: 1px solid var(--rule); padding-top: var(--sp-3); }
+
+/* nested items use letters in the source: a) b) c) */
+.doc-body ol ol > li::marker { content: counter(list-item, lower-alpha) ") "; font-weight: 400; }
+.doc-body ol ol { margin-top: 0.5rem; }
+
+/* ---------- pull quotes ---------- */
+.doc-body blockquote {
+  margin: 1.5rem 0;
+  padding-left: var(--sp-4);
+  border-left: 3px solid var(--accent);
+}
+.doc-body blockquote p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ---------- footnotes ---------- */
+.doc-body .footnote {
+  border-top: 2px solid var(--text);
+  margin-top: var(--sp-7);
+  padding-top: var(--sp-4);
+}
+.doc-body .footnote::before {
+  content: "Notes";
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--t-eyebrow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-3);
+}
+.doc-body sup[id^="fnref"] a { text-decoration: none; padding: 0 0.15em; }
+.doc-body li:target, .doc-body sup:target { background: var(--surface-2); }
+
+/* the note card: on a phone, jumping to the bottom of a 26,000-word page and
+   back loses the reader's place, so the note comes to them */
+.fn-card {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 40;
+  background: var(--bg);
+  border-top: 3px solid var(--accent);
+  box-shadow: var(--shadow);
+  padding: var(--sp-4);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-height: 45vh;
+  overflow-y: auto;
+}
+.fn-card[hidden] { display: none; }
+.fn-card-num {
+  font-family: var(--font-mono);
+  font-size: var(--t-eyebrow);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.fn-card-body { margin: var(--sp-2) 0 0; overflow-wrap: anywhere; }
+.fn-card-close {
+  position: absolute;
+  top: var(--sp-2); right: var(--sp-3);
+  background: none;
+  border: 0;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2em 0.4em;
+}
+.fn-card-close:focus-visible { outline: 2px solid var(--accent); }
+@media (min-width: 900px) {
+  .fn-card { left: auto; right: var(--sp-5); bottom: var(--sp-5); max-width: 380px; border-radius: var(--radius); border: 1px solid var(--rule); border-top: 3px solid var(--accent); }
+}
+
+/* ---------- reading progress ---------- */
+.reading-progress { height: 2px; background: var(--rule); margin: 0 0 var(--sp-2); }
+.reading-progress span { display: block; height: 100%; width: 0; background: var(--accent); }
+@media (prefers-reduced-motion: no-preference) {
+  .reading-progress span { transition: width 120ms linear; }
+}
+
+/* ---------- the Devanagari manifesto ---------- */
+.lang-hi p, .lang-hi li {
+  font-family: "Noto Serif Devanagari", "Nirmala UI", "Mangal", var(--font-serif);
+  line-height: 1.85;            /* Devanagari needs more room than Latin */
+}
+.lang-hi h2, .lang-hi h3 {
+  font-family: "Noto Sans Devanagari", "Nirmala UI", "Mangal", var(--font-ui);
+  line-height: 1.4;
+}
+
+/* ---------- print / offline ---------- */
+@media print {
+  .masthead, .nav-row, .flag, .doc-tools, .reading-progress,
+  .channels, .head-tools, .fn-card, .skip-link { display: none !important; }
+  .doc-toc { border: 0; }
+  .doc-toc > summary { display: none; }
+  .doc-body > section, .doc-body > div { content-visibility: visible; }
+  .doc-body h2 { break-after: avoid; }
+  .doc-body p, .doc-body li { break-inside: avoid; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.75em; word-break: break-all; }
+}

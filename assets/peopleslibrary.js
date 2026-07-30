@@ -1,0 +1,228 @@
+/* peopleslibrary.js — navigation for the full-text PNLP 2024 page.
+   Everything here is additive: with JavaScript off the document still reads, the
+   contents still jump, and footnotes still work as ordinary anchors. */
+(function () {
+  'use strict';
+
+  var doc = document.getElementById('document');
+  if (!doc) return;
+
+  /* ---------- search ---------- */
+  var input = document.getElementById('doc-search');
+  var status = document.querySelector('[data-search-status]');
+  var supportsHighlight = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+
+  var nodes = [];   // text nodes, in document order
+  var flat = '';    // their concatenated lowercase text
+  var starts = [];  // flat-string offset where each node begins
+
+  function buildIndex() {
+    var walker = document.createTreeWalker(doc, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        return n.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+    var parts = [], at = 0, n;
+    while ((n = walker.nextNode())) {
+      nodes.push(n);
+      starts.push(at);
+      parts.push(n.nodeValue.toLowerCase());
+      at += n.nodeValue.length;
+    }
+    flat = parts.join('');
+  }
+
+  function nodeAt(offset) {
+    var lo = 0, hi = starts.length - 1;
+    while (lo < hi) {
+      var mid = (lo + hi + 1) >> 1;
+      if (starts[mid] <= offset) lo = mid; else hi = mid - 1;
+    }
+    return lo;
+  }
+
+  var hits = [];      // Range objects
+  var current = -1;
+
+  function clearHighlights() {
+    if (supportsHighlight) {
+      CSS.highlights.delete('doc-search-hit');
+      CSS.highlights.delete('doc-search-current');
+    }
+    hits = [];
+    current = -1;
+  }
+
+  function search(qRaw) {
+    clearHighlights();
+    var q = qRaw.trim().toLowerCase();
+    if (q.length < 2) {
+      status.textContent = '';
+      return;
+    }
+    if (!flat) buildIndex();
+
+    var from = 0, idx;
+    while ((idx = flat.indexOf(q, from)) !== -1 && hits.length < 500) {
+      var i = nodeAt(idx);
+      var startOffset = idx - starts[i];
+      // a match that straddles two text nodes is skipped; in running prose the
+      // cost is a rare miss, and stitching ranges across nodes is not worth it
+      if (startOffset + q.length <= nodes[i].nodeValue.length) {
+        var r = document.createRange();
+        r.setStart(nodes[i], startOffset);
+        r.setEnd(nodes[i], startOffset + q.length);
+        hits.push(r);
+      }
+      from = idx + q.length;
+    }
+
+    if (!hits.length) {
+      status.textContent = 'No matches.';
+      return;
+    }
+    if (supportsHighlight) {
+      CSS.highlights.set('doc-search-hit', new Highlight(...hits));
+    }
+    status.textContent = hits.length + (hits.length === 1 ? ' match' : ' matches') +
+      ' — press Enter to step through';
+    current = -1;
+  }
+
+  function step(dir) {
+    if (!hits.length) return;
+    current = (current + dir + hits.length) % hits.length;
+    var r = hits[current];
+    if (supportsHighlight) {
+      CSS.highlights.set('doc-search-current', new Highlight(r));
+    }
+    var el = r.startContainer.parentElement;
+    if (el) {
+      // the section may be skipped by content-visibility; scrolling forces layout
+      el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }
+    status.textContent = 'Match ' + (current + 1) + ' of ' + hits.length +
+      ' — Enter for next, Esc to clear';
+  }
+
+  if (input && status) {
+    var timer;
+    input.addEventListener('input', function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () { search(input.value); }, 180);
+    });
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        step(e.shiftKey ? -1 : 1);
+      } else if (e.key === 'Escape') {
+        input.value = '';
+        clearHighlights();
+        status.textContent = '';
+      }
+    });
+  }
+
+  /* ---------- copyable heading anchors ---------- */
+  doc.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('.head-anchor') : null;
+    if (!a || !navigator.clipboard) return;
+    e.preventDefault();
+    var url = location.origin + location.pathname + a.getAttribute('href');
+    navigator.clipboard.writeText(url).then(function () {
+      history.replaceState(null, '', a.getAttribute('href'));
+      a.classList.add('copied');
+      setTimeout(function () { a.classList.remove('copied'); }, 1400);
+    });
+  });
+
+  /* ---------- footnote cards ---------- */
+  var card = null;
+  // the card is built once, so the marker to return focus to must live out here;
+  // closing over the first one sends every later reader back to footnote 1
+  var focusBack = null;
+
+  function closeCard() {
+    if (card) card.hidden = true;
+  }
+
+  function showNote(num, noteEl, returnTo) {
+    focusBack = returnTo;
+    if (!card) {
+      card = document.createElement('aside');
+      card.className = 'fn-card';
+      card.setAttribute('role', 'dialog');
+      card.setAttribute('aria-label', 'Footnote');
+      card.innerHTML = '<button class="fn-card-close" aria-label="Close note">&times;</button>' +
+        '<div class="fn-card-num"></div><div class="fn-card-body"></div>';
+      card.querySelector('.fn-card-close').addEventListener('click', function () {
+        closeCard();
+        if (focusBack && focusBack.focus) focusBack.focus();
+      });
+      document.body.appendChild(card);
+    }
+    card.querySelector('.fn-card-num').textContent = 'Note ' + num;
+    var body = noteEl.cloneNode(true);
+    var back = body.querySelector('.footnote-backref, a[class*="backref"]');
+    if (back) back.remove();
+    var slot = card.querySelector('.fn-card-body');
+    slot.replaceChildren.apply(slot, body.childNodes);
+    card.hidden = false;
+    card.querySelector('.fn-card-close').focus();
+  }
+
+  doc.addEventListener('click', function (e) {
+    var link = e.target.closest ? e.target.closest('sup[id^="fnref"] a') : null;
+    if (!link) return;
+    var id = (link.getAttribute('href') || '').replace(/^#/, '');
+    var note = id && document.getElementById(id);
+    if (!note) return;                     // fall through to the plain anchor jump
+    e.preventDefault();
+    showNote(link.textContent.trim(), note, link);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeCard();
+  });
+
+  /* ---------- reading progress + contents scroll-spy ---------- */
+  var bar = document.querySelector('[data-progress]');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = tocLinks.map(function (a) {
+    return document.getElementById(a.getAttribute('href').slice(1));
+  });
+
+  function onScroll() {
+    if (bar) {
+      var max = doc.offsetTop + doc.offsetHeight - window.innerHeight;
+      var pct = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+      bar.style.width = (pct * 100).toFixed(1) + '%';
+    }
+  }
+
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () { onScroll(); ticking = false; });
+  }, { passive: true });
+  onScroll();
+
+  if ('IntersectionObserver' in window) {
+    var seen = new Set();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) seen.add(en.target.id); else seen.delete(en.target.id);
+      });
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++) {
+        if (targets[i] && seen.has(targets[i].id)) { activeId = targets[i].id; break; }
+      }
+      tocLinks.forEach(function (a) {
+        if (a.getAttribute('href').slice(1) === activeId) a.setAttribute('aria-current', 'true');
+        else a.removeAttribute('aria-current');
+      });
+    }, { rootMargin: '-10% 0px -75% 0px' });
+    targets.forEach(function (t) { if (t) io.observe(t); });
+  }
+})();
