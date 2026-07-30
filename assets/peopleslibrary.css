@@ -579,28 +579,28 @@
    and hard against its neighbour. Grow it and give it clear space. */
 /* the notes list ships tighter than the 24px target needs vertically: note 11's
    backref measured 24x28 but only 23.2px of clear space */
-.doc-body .footnote ol > li { line-height: 1.8; margin-bottom: 0.9rem; }
-/* on a narrow screen the notes are long URLs that wrap tightly, leaving the
-   back-arrow under 24px of clear space */
-@media (max-width: 460px) {
-  .doc-body .footnote ol > li,
-  .doc-body .footnote ol > li p { line-height: 2.2; }
-}
+/* Each note IS a link, so it is a target in its own right, not an inline link
+   inside a sentence — it needs a line box of at least 24px (WCAG 2.5.8). */
+.doc-body .footnote ol > li { line-height: 1.9; margin-bottom: 1rem; }
+.doc-body .footnote ol > li p { line-height: 1.9; }
+/* axe measures an inline link's CONTENT box, which line-height never grows: these
+   sat at 22px on one line and only passed when they happened to wrap. Vertical
+   padding lifts the box to 28px and, unlike inline-block, keeps them wrapping. */
+.doc-body .footnote ol > li a:not(.footnote-backref) { padding-block: 3px; }
 
-/* 24px exactly, and no taller than the line box it sits in: an inline-block that
-   overflows its line reads to axe as overlapping the line above */
+/* The return link is its own paragraph with its own words, so ordinary paragraph
+   spacing keeps it clear of the note's link above it. */
+.doc-body .fn-return { margin: 0.75rem 0 0; }
 .doc-body .footnote-backref {
   display: inline-block;
-  box-sizing: border-box;
-  min-width: 24px;
-  height: 24px;
-  line-height: 24px;
-  padding: 0 6px;
-  margin-left: 0.6em;
-  vertical-align: middle;
-  text-align: center;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  padding-block: 6px;          /* content box comfortably past 24px */
   text-decoration: none;
 }
+.doc-body .footnote-backref:hover,
+.doc-body .footnote-backref:focus-visible { text-decoration: underline; }
 
 /* the note card: on a phone, jumping to the bottom of a 26,000-word page and
    back loses the reader's place, so the note comes to them */
