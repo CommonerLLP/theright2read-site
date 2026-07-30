@@ -11,6 +11,31 @@
   html:has(.doc-layout), html:has(.doc-layout) body { overflow-x: clip; }
 }
 
+/* ---------- landing an anchor where the reader can see it ----------
+   Headings shipped with scroll-margin-top: 0, so a contents click put the target
+   at viewport top — which on a phone is 65px UNDERNEATH the sticky search bar, and
+   on a laptop is slammed flush against the edge with no context above it. That is
+   the disorienting jump. */
+.doc-body [id], .doc-body :is(h1, h2, h3, h4, h5) { scroll-margin-top: 2rem; }
+@media (max-width: 1023px) {
+  /* clear the sticky search bar (65px) plus breathing room */
+  .doc-body [id], .doc-body :is(h1, h2, h3, h4, h5) { scroll-margin-top: 5.5rem; }
+}
+
+/* the jump is legible as movement rather than a teleport; scoped to this reader */
+@media (prefers-reduced-motion: no-preference) {
+  html:has(.doc-layout) { scroll-behavior: smooth; }
+}
+
+/* say where the reader landed — orientation, not decoration */
+.doc-body :target {
+  background: var(--surface-2);
+  box-shadow: -0.6rem 0 0 var(--surface-2), 0.6rem 0 0 var(--surface-2);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .doc-body :target { transition: background 400ms ease; }
+}
+
 /* ---------- reading column ---------- */
 /* the document's own headings are sentence case — the site's uppercase .sec h2
    rule would shout 21 policy section titles */
