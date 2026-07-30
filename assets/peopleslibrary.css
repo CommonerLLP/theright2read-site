@@ -692,15 +692,19 @@
 /* ---------- clearance for the annotator's toolbar ----------
    Its strip is fixed 33px from the right edge and 115px tall, so it overlaps the
    page box at any viewport under ~1026px (page caps at 960 and is centred).
-   Reserve 44px on the right — 33 for the strip, 11 of breathing room — and only
-   while `.annotator-present` is set by peopleslibrary.js. */
+   Reserve 44px on the right — 33 for the strip, 11 of breathing room.
+
+   Reserved unconditionally, not on a class the client sets when it mounts: the
+   embed ships on every page of this route, and waiting for it moved the whole
+   page — masthead, nav and text — 44px sideways about half a second after paint,
+   on every section the reader opened. */
 @media (max-width: 1025px) {
-  :root.annotator-present .page { padding-right: 44px; }
+  .page { padding-right: 44px; }
 }
 /* below 400px the asymmetry would eat too much line length, so trim the left
    gutter to keep the measure readable on a 360px phone */
 @media (max-width: 400px) {
-  :root.annotator-present .page { padding-left: 12px; }
+  .page { padding-left: 12px; }
 }
 
 /* ---------- print / offline ---------- */

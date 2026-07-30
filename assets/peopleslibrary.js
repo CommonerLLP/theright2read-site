@@ -244,30 +244,6 @@
     }
   });
 
-  /* ---------- make room for the annotator's toolbar ----------
-     Hypothes.is paints a fixed 33x115px control strip hard against the right
-     edge, inside its own shadow DOM (so it cannot be styled or moved from here).
-     At 360px that strip sits over the last of the reading column and on top of
-     the theme toggle. Flag it on <html> and let CSS reserve the gutter, so the
-     gutter disappears by itself if the annotation layer is ever removed. */
-  (function flagAnnotator() {
-    if (document.querySelector('hypothesis-sidebar')) {
-      document.documentElement.classList.add('annotator-present');
-      return;
-    }
-    var obs = new MutationObserver(function () {
-      if (document.querySelector('hypothesis-sidebar')) {
-        document.documentElement.classList.add('annotator-present');
-        obs.disconnect();
-      }
-    });
-    // No timeout: the embed is async and on a slow connection can arrive well
-    // after any deadline we would pick — and giving up early brings the overlap
-    // back on exactly the cheap-Android-on-patchy-data reader this is built for.
-    // Watching body's direct children only, so an idle observer costs nothing.
-    obs.observe(document.body, { childList: true });
-  })();
-
   /* ---------- reading progress + contents scroll-spy ---------- */
   var bar = document.querySelector('[data-progress]');
   // only same-page anchors: the sidebar's section links point at other documents
