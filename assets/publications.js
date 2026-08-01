@@ -30,7 +30,7 @@ window.RTR_PUBLICATIONS = [
     "subtitle": "A Tax-Funded National Public Library Network by 2035",
     "standfirst": "A state-government-led roadmap to a tax-funded national public library network by 2035 — about 0.20% of state revenue, to the Tamil Nadu standard.",
     "date": "2026-06",
-    "version": "v0.1.0",
+    "version": "v0.2.0",
     "status": "Draft",
     "subjects": [
       "Public Policy",
@@ -40,7 +40,7 @@ window.RTR_PUBLICATIONS = [
     "pdf": "/papers/RTR-WP-002.pdf",
     "page": "/papers/RTR-WP-002/",
     "doi": "",
-    "citation": "The Right to Read Campaign. 2026. “The Convergence Blueprint: A Tax-Funded National Public Library Network by 2035.” Right to Read Working Papers, RTR-WP-002 (v0.1.0). https://theright2read.org/papers/RTR-WP-002.pdf."
+    "citation": "The Right to Read Campaign. 2026. “The Convergence Blueprint: A Tax-Funded National Public Library Network by 2035.” Right to Read Working Papers, RTR-WP-002 (v0.2.0). https://theright2read.org/papers/RTR-WP-002.pdf."
   },
   {
     "kind": "paper",
@@ -88,25 +88,26 @@ window.RTR_PUBLICATIONS = [
   },
   {
     "kind": "paper",
-    "id": "RTR-WP-008",
-    "number": "08",
-    "kicker": "DISCOURSE · LIBRARIES · CASTE · HISTORY",
+    "id": "RTR-WP-008A",
+    "number": "08A",
+    "kicker": "DISCOURSE · PUBLIC STATISTICS · LIBRARIES · CASTE",
     "title": "From Reader to User",
-    "subtitle": "Eighty Years of the Indian Library Association and the Changing Public of the Library, 1942–2019",
-    "standfirst": "Three primary archives — eighty years of Indian Library Association proceedings, the central government's library-committee reports, and the state Public Libraries Acts (1948–2009) — read as one drift: how the library's reader became a user, and how that drift kept caste unsayable.",
-    "date": "2026-06",
-    "version": "v0.1.3",
+    "subtitle": "The Library Profession and the Statistical Disappearance of the Reader, 1942–2019",
+    "standfirst": "Professional discourse turned the reader into a user. National surveys turned the person into a facility count. Read together, the two changes show how India's public library lost its observed public.",
+    "date": "2026-07",
+    "version": "v0.2.0",
     "status": "Draft",
     "subjects": [
       "Library and Information Science",
       "South Asian Studies",
       "Sociology",
-      "Public Policy"
+      "Public Policy",
+      "Official Statistics"
     ],
-    "pdf": "/papers/RTR-WP-008.pdf",
-    "page": "/papers/RTR-WP-008/",
+    "pdf": "/papers/RTR-WP-008A.pdf",
+    "page": "/papers/RTR-WP-008A/",
     "doi": "",
-    "citation": "The Right to Read Campaign. 2026. “From Reader to User: Eighty Years of the Indian Library Association and the Changing Public of the Library, 1942–2019.” Right to Read Working Papers, RTR-WP-008 (v0.1.3). https://theright2read.org/papers/RTR-WP-008.pdf."
+    "citation": "The Right to Read Campaign. 2026. “From Reader to User: The Library Profession and the Statistical Disappearance of the Reader, 1942–2019.” Right to Read Working Papers, RTR-WP-008A (v0.2.0). https://theright2read.org/papers/RTR-WP-008A.pdf."
   },
   {
     "kind": "brief",
