@@ -240,20 +240,14 @@ function showField(id) {
     ${officialHTML(f)}
 
     <div class="k">Question — as asked</div>
-    ${f.question
+    ${f.question && f.dcf_how !== "auto"
       ? `<div class="q">${esc(f.question)}</div>
          <div class="ds-line" style="margin-top:6px">DCF item ${esc(f.dcf_item)}${
            f.dcf_year && f.dcf_year !== "all" ? ", " + esc(f.dcf_year) + " form"
              : f.dcf_year === "all" ? ", every form" : ""}
-           ${/* A pill only where the reader should hesitate. Silence means a
-                 person or a printed grid settled it, which is the normal case
-                 and needs no label. Every grade stays in the machine-readable
-                 outputs, where an auditor wants all of them. */
-             {auto: '<span class="pill warn">matched on words</span>',
-             }[f.dcf_how] || (f.dcf_how ? "" :
-               '<span class="pill warn">source not recorded</span>')}</div>
+</div>
          ${traceHTML(f)}`
-      : `<p class="detail-empty" style="margin:0">This column is not yet matched to a form item.
+      : `<p class="detail-empty" style="margin:0">This column is not yet verified against a form item.
          The Data Capture Format side of this dictionary is filled in by hand, one item at a time,
          and ${state.data.meta.counts.with_dcf_wording} of ${state.data.meta.counts.fields} columns
          are done. An unmatched column is unchecked. The form is not silent about it.</p>`}
@@ -335,10 +329,10 @@ function chgHTML(c) {
       ? `${(c.from || []).map((x) => "<code>" + esc(x) + "</code>").join(", ")} → ${(c.to || []).map((x) => "<code>" + esc(x) + "</code>").join(", ")}`
       : esc(c.field || "");
   const why = c.detail || c.basis || "";
-  const conf = c.action !== "RENAME" ? ""
-    : c.confidence === "confirmed"
-      ? ` <span class="pill ok">read off the form</span>`
-      : ` <span class="pill warn">name similarity only, not confirmed</span>`;
+  /* No confidence badge at all. An unconfirmed rename never reaches this
+     payload any more — the build refuses to publish a lead — so every row
+     here is settled and its basis text says what settled it. */
+  const conf = "";
   return `<div class="chgcard"><span class="at">${esc(c.at || "")}</span>
     <b>${esc(c.action)}</b>${conf}<br>${body}
     ${why ? `<div class="c" style="font-size:13px;color:var(--ink-soft);margin-top:4px">${esc(why)}</div>` : ""}</div>`;
@@ -564,9 +558,7 @@ function showEvent(e, struct, recode, spanning) {
       <th>how we know it is the same column</th></tr></thead>
     <tbody>${ren.map((c) => `<tr><td><code>${esc(c.from)}</code></td>
       <td><code>${esc(c.to)}</code></td><td>${esc(c.dataset)}</td>
-      <td>${c.confidence === "confirmed"
-        ? '<span class="pill ok">read off the form</span> '
-        : '<span class="pill warn">name similarity only</span> '}${esc(c.basis || "")}</td></tr>`).join("")}
+      <td>${esc(c.basis || "")}</td></tr>`).join("")}
     </tbody></table></div></div>` : "";
 
   const listBlock = (title, why, arr, kind) => arr.length && show(kind)
@@ -578,8 +570,8 @@ function showEvent(e, struct, recode, spanning) {
 
   const structBlock = struct.length && show("STRUCT") ? `<div class="evt-block">
     <h4>Split or merged — ${struct.length}</h4>
-    <p class="evt-why">Neither is a rename, and a one-to-one matcher mis-reports both. A split
-      looks like one delete and two inserts. A merge looks like the reverse.</p>
+    <p class="evt-why">Neither is a rename. A split looks like one delete and two inserts.
+      A merge looks like the reverse. Each pairing below was read off the forms.</p>
     ${struct.map((x) => `<div class="struct">
       <span class="act ${x.action.toLowerCase()}">${esc(x.action)}</span>
       <div><div class="sline">${x.from.map((y) => "<code>" + esc(y) + "</code>").join(" ")}
@@ -792,31 +784,22 @@ function renderAbout() {
     <h2>About this data</h2>
     <p class="lede">${esc(m.title)}</p>
 
-    <h3>What is exact, and what is curated</h3>
-    <p><b>The released side is exact.</b> Which columns exist in which years is read from every
-      release file on disk, 2018-19 to 2025-26. Nothing there is typed by hand.</p>
-    <p><b>The form side carries a grade, and you should read it.</b> The Data Capture Format is a
-      PDF. Its item numbers do not match column names, so the wording reaches a column three ways,
-      and they are not equally good:</p>
-    <ul class="grades">
-      <li><b>Checked against the form</b> — a person opened the PDF for that year and read the
-        item. ${m.counts.checked_by_hand} columns.</li>
-      <li><b>Read off the enrolment grid</b> — the form prints a grid whose rows are classes and
-        whose columns are sex. The column name is the cell. Exact, but never typed as a question.</li>
-      <li><b>Matched on shared words</b> — a parser read all seven forms and matched items to
-        columns on the words they share. Open the form for that year before you cite one.</li>
-    </ul>
-    <p>Wording reaches ${m.counts.with_dcf_wording} of ${m.counts.fields} columns. An empty entry
-      means <em>this column is not yet matched to a form item</em>. It never means the question
-      was not asked.</p>
+    <h3>What each statement rests on</h3>
+    <p><b>Which columns exist in which years</b> is read from every release file,
+      2018-19 to 2025-26.</p>
+    <p><b>A question shown on a column's page</b> was read from the Data Capture Format for the
+      year cited beside it, taken from a printed grid whose axes are known, or corroborated
+      against the values the released column actually holds. A verified question covers
+      ${m.counts.verified_wording} of ${m.counts.fields} columns.</p>
+    <p>An empty entry means <em>this column is not yet verified against a form item</em>. It never
+      means the question was not asked. The machine-readable files below carry every unverified
+      lead with its source stated, for anyone who wants to finish the job.</p>
 
     <h3>How a change is typed</h3>
-    <p>INSERT and DELETE come from a straight schema diff. A character similarity test above 0.70
-      proposes each RENAME, within the same dataset and transition. A human reviews every proposal.
-      At the 2022-23 break the test proposed 15 renames and 5 were wrong. That is a third of them.
-      The generator keeps each rejected pair and its reason, so nobody repeats the judgement. It
-      also blocks a rejected target outright. A greedy matcher otherwise re-offers a freed target
-      to the next candidate and repeats the same error with a new partner.</p>
+    <p>A column added or removed is read straight from the release files. A RENAME appears here
+      only after a person confirmed it against the forms, and its row states what settled it:
+      the same question in both years, the same cell of one printed grid, or the release's own
+      schema describing both names identically.</p>
     <p>SPLIT, MERGE and RECODE cannot be found by any diff and were confirmed by hand against the
       Data Capture Formats.</p>
 
@@ -848,8 +831,7 @@ function renderAbout() {
       Education</em>.</p>
 
     <p style="font-family:var(--mono);font-size:12px;color:var(--ink-faint);margin-top:26px">
-      Covers the ${m.years.length} releases from ${esc(m.years[0])} to ${esc(m.years.at(-1))}.
-      This page is generated from the release files and the forms. It is never hand-edited.</p>
+      Covers the ${m.years.length} releases from ${esc(m.years[0])} to ${esc(m.years.at(-1))}.</p>
   </div>`;
 }
 

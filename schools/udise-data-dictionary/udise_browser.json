@@ -15,6 +15,7 @@
   "counts": {
    "fields": 382,
    "with_dcf_wording": 224,
+   "verified_wording": 175,
    "with_official": 320,
    "checked_by_hand": 62,
    "dormant": 0,
