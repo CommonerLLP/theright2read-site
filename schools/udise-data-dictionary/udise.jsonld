@@ -3393,12 +3393,12 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Is Separate Room(s) Available for Computer/ICT lab?",
+   "definition": "Is Computer/ICT Lab available in school?",
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cComputer/ICT Lab available in school\u201d. Remarks: As per UDISE DCF"
    ],
-   "references": "DCF item 2.25(a)(iii)",
+   "references": "DCF item 2.25",
    "scopeNote": "1-Yes, 2-No",
    "note": [
     "ungated-dependency: DCF 2.11(b) asks about a librarian. No gate sits above it. A school can therefore report a librarian and no library. 5,845 schools do. 4,633 of them report no library, no book bank and no reading corner. A further 9,596 report an ICT lab with zero computers."

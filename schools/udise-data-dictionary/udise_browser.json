@@ -4534,21 +4534,25 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": "2.25(a)(iii)",
-   "question": "Is Separate Room(s) Available for Computer/ICT lab?",
+   "dcf_item": "2.25",
+   "question": "Is Computer/ICT Lab available in school?",
    "values": "1-Yes, 2-No",
    "dcf_year": "2025-26",
    "dcf_trace": {
+    "2024-25": {
+     "item": "2.26",
+     "line": "Is Computer/ICT Lab available in school? (1-Yes, 2-No)"
+    },
     "2025-26": {
-     "item": "2.25(a)(iii)",
-     "line": "(iii) Is Separate Room(s) Available for Computer/ICT lab? (1-Yes, 2-No)"
+     "item": "2.25",
+     "line": "Is Computer/ICT Lab available in school? (1-Yes, 2-No)"
     },
     "2026-27": {
-     "item": "2.25(a)(iii)",
-     "line": "(iii) Is Separate Room(s) Available for Computer/ICT lab? (1-Yes, 2-No)"
+     "item": "2.25",
+     "line": "Is Computer/ICT Lab available in school? (1-Yes, 2-No)"
     }
    },
-   "dcf_line": "(iii) Is Separate Room(s) Available for Computer/ICT lab? (1-Yes, 2-No)",
+   "dcf_line": "2.25 Is Computer/ICT Lab available in school? (1-Yes, 2-No)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
