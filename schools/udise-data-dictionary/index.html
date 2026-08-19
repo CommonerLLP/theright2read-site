@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UDISE+ field dictionary — what India's school census collected, asked, and shared</title>
+<meta name="description" content="A browsable guide to every column UDISE+ has released since 2018-19: what the form asked, what the codes mean, which years carry it, and what will silently break.">
+<script src="/assets/theme.js?v=96"></script>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1b0bd2b7">
+</head>
+<body>
+  <header id="appbar">
+    <a class="brand brand-logo" href="/" aria-label="Right to Read — home">
+      <img src="/assets/rtr-logo.svg?v=96" alt="Right to Read"><span class="lbl">Schools</span>
+    </a>
+    <div class="btns">
+      <a class="btn" href="/schools/">&larr; Schools</a>
+      <button class="btn" onclick="RTRTheme.toggle()" aria-label="Toggle light or dark theme"><span data-theme-label>☀</span> theme</button>
+    </div>
+  </header>
+
+  <header class="masthead">
+    <h1>UDISE+ field dictionary</h1>
+    <p class="sub">Every column India&rsquo;s school census releases. What the form asked. What the
+      codes mean. Which years carry it. What changed under a name that stayed the same.
+      <button class="why" id="why">why this exists ▾</button></p>
+    <div class="whybox" id="whybox" hidden>
+      <p>Almost every public number about Indian schooling starts in UDISE+. Its columns are not
+        stable. 79 stopped at the 2022-23 break. 33 changed name. One keeps its name and changes
+        meaning. A yes/no is often a type code with eight values.</p>
+      <p>This page is for anyone who must know whether a number means what it appears to mean.
+        A researcher building a panel. A journalist checking a claim. A parent reading a figure
+        about their own child&rsquo;s school. Every trap here carries the fix, not only the warning.</p>
+    </div>
+    <div class="meta-line" id="counts"></div>
+    <nav class="tabs">
+      <button class="tab active" data-tab="browse">Browse the columns</button>
+      <button class="tab" data-tab="changes">Changes over time</button>
+        <button class="tab" data-tab="traps">Traps &amp; recipes</button>
+      <button class="tab" data-tab="missing">Asked, never released</button>
+      <button class="tab" data-tab="about">About this data</button>
+    </nav>
+  </header>
+
+
+  <div class="searchbar" id="searchbar">
+    <input id="search" type="search" autocomplete="off"
+           placeholder="Search a column or a question — try library, boundary, pseudocode, librarian">
+  </div>
+
+  <main>
+    <div id="browse-view">
+      <div class="layout">
+        <section class="nav-pane" id="list"></section>
+        <section class="detail-pane" id="detail"></section>
+      </div>
+    </div>
+    <div id="changes-view" hidden></div>
+    <div id="traps-view" hidden></div>
+    <div id="missing-view" hidden></div>
+    <div id="about-view" hidden></div>
+  </main>
+
+  <footer class="colophon">
+    <div>
+      Source: <strong>Ministry of Education, Government of India</strong> &mdash; UDISE+ school-level
+      microdata releases 2018-19 to 2025-26, read against the Data Capture Format issued for each
+      year (<a href="#" data-tab="about">how this was made</a>). Built by The Right to Read as
+      public-interest education-data infrastructure. Verify against the Ministry&rsquo;s own release
+      before citing a column or a count.
+    </div>
+    <div class="downloads">
+      Formal vocabulary: <a href="vocab.html">SKOS concept scheme</a>
+      &nbsp;&middot;&nbsp; Machine-readable: <a href="udise.ttl">RDF / Turtle</a>
+      <a href="udise.jsonld">JSON-LD</a>
+      <a href="udise_fields.csv">CSV table</a>
+      <a href="udise_browser.json">Browser JSON</a>
+    </div>
+  </footer>
+<script>
+  document.getElementById("why").onclick = (e) => {
+    const b = document.getElementById("whybox");
+    b.hidden = !b.hidden;
+    e.target.textContent = b.hidden ? "why this exists \u25be" : "why this exists \u25b4";
+  };
+</script>
+<script src="app.js?v=1b0bd2b7"></script>
+</body>
+</html>
