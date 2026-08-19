@@ -496,3 +496,6 @@ button.cn { background: var(--panel); border: 1px solid var(--line);
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* release-key note --------------------------------------------------------- */
+.q-note { max-width: 74ch; color: var(--ink-soft); margin: 2px 0 0; }

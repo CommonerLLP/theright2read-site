@@ -262,21 +262,26 @@ function showField(id) {
 
     <div class="k">Released in</div><div class="tl">${tl}</div>
 
-    ${/* The question a human answered comes before the machine's description
-          of the column. A first-time reader speaks the form's language, not
-          smallint's. */""}
-    <div class="k">Question — as asked</div>
-    ${f.question && f.dcf_how !== "auto"
-      ? `<div class="q">${esc(f.question)}</div>
+    ${/* Three honest states, and the header matches the one that holds. A
+          verified question renders as the question. A key the release creates
+          says so, because no form asks it and that silence is the fact.
+          Anything else gets one plain line, not a lecture under a promising
+          header. */
+      f.release_key
+      ? `<div class="k">No form item — a key the release creates</div>
+         <p class="q-note">${esc(f.release_key)}</p>`
+      : f.question && f.dcf_how !== "auto"
+      ? `<div class="k">Question — as asked</div>
+         <div class="q">${esc(f.question)}</div>
          <div class="ds-line" style="margin-top:6px">DCF item ${esc(f.dcf_item)}${
            f.dcf_year && f.dcf_year !== "all" ? ", " + esc(f.dcf_year) + " form"
              : f.dcf_year === "all" ? ", every form" : ""}
 </div>
          ${traceHTML(f)}`
-      : `<p class="detail-empty" style="margin:0">This column is not yet verified against a form item.
-         The Data Capture Format side of this dictionary is filled in by hand, one item at a time,
-         and ${state.data.meta.counts.with_dcf_wording} of ${state.data.meta.counts.fields} columns
-         are done. An unmatched column is unchecked. The form is not silent about it.</p>`}
+      : `<div class="k">Question — as asked</div>
+         <p class="detail-empty" style="margin:0">Not yet verified against a form item.
+         ${state.data.meta.counts.verified_wording} of ${state.data.meta.counts.fields}
+         columns are. The unverified leads live in the machine-readable files.</p>`}
 
     ${officialHTML(f)}
 
@@ -346,7 +351,9 @@ function officialHTML(f) {
         <span class="era">${x.names_year
           ? "schema document for " + esc(x.names_year)
           : "schema document for the years before the 2022-23 break"}</span></div>
-      ${x.remarks ? `<div class="rem">${esc(x.remarks)}</div>` : ""}
+      ${/* a remark that repeats the description says nothing twice */
+        x.remarks && x.remarks.trim() !== (x.description || "").trim()
+          ? `<div class="rem">${esc(x.remarks)}</div>` : ""}
     </div>`).join("");
 }
 

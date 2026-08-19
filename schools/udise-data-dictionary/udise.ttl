@@ -1071,7 +1071,7 @@ udise:enrolment_data_1.item_desc a skos:Concept ;
     dct:provenance "Shared 2018-19 to 2021-22 as char, described as “Item Description”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"NOT_A_RENAME\", \"from\": \"item_desc\", \"candidate\": \"item_id\", \"similarity\": null, \"why\": \"a SPLIT, not a rename: item_desc became item_group AND item_id, two columns\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"item_desc\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
 
 udise:enrolment_data_1.item_group a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1083,7 +1083,7 @@ udise:enrolment_data_1.item_group a skos:Concept ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_group\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
 
 udise:enrolment_data_1.item_id a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1095,7 +1095,7 @@ udise:enrolment_data_1.item_id a skos:Concept ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_id\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
 
 udise:enrolment_data_1.pseudocode a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1725,7 +1725,7 @@ udise:enrolment_data_2.item_desc a skos:Concept ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"NOT_A_RENAME\", \"from\": \"item_desc\", \"candidate\": \"item_id\", \"similarity\": null, \"why\": \"a SPLIT, not a rename: item_desc became item_group AND item_id, two columns\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"item_desc\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"detail\": \"as enrolment_data_1\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en .
 
 udise:enrolment_data_2.item_group a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1738,7 +1738,7 @@ udise:enrolment_data_2.item_group a skos:Concept ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “item_group=8”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_group\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"detail\": \"as enrolment_data_1\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en .
 
 udise:enrolment_data_2.item_id a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1751,7 +1751,7 @@ udise:enrolment_data_2.item_id a skos:Concept ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Age id (2 to 22)”. Remarks: Age id (2 to 22)"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_id\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"detail\": \"as enrolment_data_1\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en .
 
 udise:enrolment_data_2.pseudocode a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -3325,7 +3325,7 @@ udise:profile_data_1.avg_instr_days a skos:Concept ;
     dct:references "DCF item 1.38" ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Avearge Instructional days in school”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"avg_instr_days\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"from\": [\"instr_days_pr\", \"instr_days_upr\", \"instr_days_sec\", \"instr_days_hsec\"], \"to\": [\"avg_instr_days\"], \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
 
 udise:profile_data_1.avg_school_hrs_student_hsec a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -3608,7 +3608,7 @@ udise:profile_data_1.instr_days_hsec a skos:Concept ;
     dct:references "DCF item 1.33(d)" ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Higher Secondary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"instr_days_hsec\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"from\": [\"instr_days_pr\", \"instr_days_upr\", \"instr_days_sec\", \"instr_days_hsec\"], \"to\": [\"avg_instr_days\"], \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
 
 udise:profile_data_1.instr_days_pr a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -3625,7 +3625,7 @@ udise:profile_data_1.instr_days_pr a skos:Concept ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Primary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"NOT_A_RENAME\", \"from\": \"instr_days_pr\", \"candidate\": \"avg_instr_days\", \"similarity\": null, \"why\": \"part of a MERGE, not a rename; see STRUCTURAL\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"instr_days_pr\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"from\": [\"instr_days_pr\", \"instr_days_upr\", \"instr_days_sec\", \"instr_days_hsec\"], \"to\": [\"avg_instr_days\"], \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
 
 udise:profile_data_1.instr_days_sec a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -3642,7 +3642,7 @@ udise:profile_data_1.instr_days_sec a skos:Concept ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Secondary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"NOT_A_RENAME\", \"from\": \"instr_days_sec\", \"candidate\": \"avg_instr_days\", \"similarity\": null, \"why\": \"part of a MERGE, not a rename; see STRUCTURAL\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"instr_days_sec\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"from\": [\"instr_days_pr\", \"instr_days_upr\", \"instr_days_sec\", \"instr_days_hsec\"], \"to\": [\"avg_instr_days\"], \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
 
 udise:profile_data_1.instr_days_up a skos:Concept ;
     skos:inScheme udise:scheme ;
