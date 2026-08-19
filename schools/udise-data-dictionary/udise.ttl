@@ -1920,7 +1920,7 @@ udise:facility_data.boundary_wall a skos:Concept ;
     skos:scopeNote "1-Pucca, 2-Pucca but broken, 3-Barbed wire fencing, 4-Hedges, 5-No boundary walls, 6-Others, 7-Partial, 8-Under Construction"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Type of boundary wall”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Type of boundary wall in school”"@en ;
-    skos:note "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."@en .
+    skos:note "type-code-as-binary: A column that looks like a yes/no carries more codes than yes and no. boundary_wall has eight types. electricity_availability, solar_panel and rain_water_harvesting each carry a third code, 'yes but not functional'. Read `= 1` as the affirmative and every other code silently becomes a negative. Read this column's own code list, shown above, before averaging anything."@en .
 
 udise:facility_data.building_status a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2142,7 +2142,7 @@ udise:facility_data.electricity_availability a skos:Concept ;
     skos:scopeNote "1-Yes, 2-No, 3-Yes but not Functional"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “electricity connection available in the School”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Electricity connection available in school”. Remarks: 1:Yes,2:No, 3:Yes, but not functional"@en ;
-    skos:note "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."@en .
+    skos:note "type-code-as-binary: A column that looks like a yes/no carries more codes than yes and no. boundary_wall has eight types. electricity_availability, solar_panel and rain_water_harvesting each carry a third code, 'yes but not functional'. Read `= 1` as the affirmative and every other code silently becomes a negative. Read this column's own code list, shown above, before averaging anything."@en .
 
 udise:facility_data.enrichment_activities a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2729,7 +2729,7 @@ udise:facility_data.rain_water_harvesting a skos:Concept ;
     skos:scopeNote "1-Yes, 2-No, 3-Yes but not functional"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “School have provision for rain water harvesting”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “School have provision for rain water harvesting”. Remarks: Yes=1, No=2"@en ;
-    skos:note "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."@en .
+    skos:note "type-code-as-binary: A column that looks like a yes/no carries more codes than yes and no. boundary_wall has eight types. electricity_availability, solar_panel and rain_water_harvesting each carry a third code, 'yes but not functional'. Read `= 1` as the affirmative and every other code silently becomes a negative. Read this column's own code list, shown above, before averaging anything."@en .
 
 udise:facility_data.reading_corner a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2802,7 +2802,7 @@ udise:facility_data.solar_panel a skos:Concept ;
     skos:scopeNote "1-Yes, 2-No, 3-Yes but not Functional"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Solar panel available in School”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Solar panel available in school”. Remarks: Yes=1, No=2"@en ;
-    skos:note "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."@en .
+    skos:note "type-code-as-binary: A column that looks like a yes/no carries more codes than yes and no. boundary_wall has eight types. electricity_availability, solar_panel and rain_water_harvesting each carry a third code, 'yes but not functional'. Read `= 1` as the affirmative and every other code silently becomes a negative. Read this column's own code list, shown above, before averaging anything."@en .
 
 udise:facility_data.spl_educator_yn a skos:Concept ;
     skos:inScheme udise:scheme ;

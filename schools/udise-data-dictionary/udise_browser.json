@@ -139,6 +139,7 @@
    "question": "Enrolment grid: boys enrolled in class 10",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -184,6 +185,7 @@
    "question": "Enrolment grid: girls enrolled in class 10",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -222,6 +224,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 10",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -265,6 +268,7 @@
    "question": "Enrolment grid: boys enrolled in class 11",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -310,6 +314,7 @@
    "question": "Enrolment grid: girls enrolled in class 11",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -348,6 +353,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 11",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -391,6 +397,7 @@
    "question": "Enrolment grid: boys enrolled in class 12",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -436,6 +443,7 @@
    "question": "Enrolment grid: girls enrolled in class 12",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -474,6 +482,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 12",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -517,6 +526,7 @@
    "question": "Enrolment grid: boys enrolled in class 1",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -562,6 +572,7 @@
    "question": "Enrolment grid: girls enrolled in class 1",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -600,6 +611,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 1",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -643,6 +655,7 @@
    "question": "Enrolment grid: boys enrolled in class 2",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -688,6 +701,7 @@
    "question": "Enrolment grid: girls enrolled in class 2",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -726,6 +740,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 2",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -769,6 +784,7 @@
    "question": "Enrolment grid: boys enrolled in class 3",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -814,6 +830,7 @@
    "question": "Enrolment grid: girls enrolled in class 3",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -852,6 +869,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 3",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -895,6 +913,7 @@
    "question": "Enrolment grid: boys enrolled in class 4",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -940,6 +959,7 @@
    "question": "Enrolment grid: girls enrolled in class 4",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -978,6 +998,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 4",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1021,6 +1042,7 @@
    "question": "Enrolment grid: boys enrolled in class 5",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1066,6 +1088,7 @@
    "question": "Enrolment grid: girls enrolled in class 5",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1104,6 +1127,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 5",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1147,6 +1171,7 @@
    "question": "Enrolment grid: boys enrolled in class 6",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1192,6 +1217,7 @@
    "question": "Enrolment grid: girls enrolled in class 6",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1230,6 +1256,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 6",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1273,6 +1300,7 @@
    "question": "Enrolment grid: boys enrolled in class 7",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1318,6 +1346,7 @@
    "question": "Enrolment grid: girls enrolled in class 7",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1356,6 +1385,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 7",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1399,6 +1429,7 @@
    "question": "Enrolment grid: boys enrolled in class 8",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1444,6 +1475,7 @@
    "question": "Enrolment grid: girls enrolled in class 8",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1482,6 +1514,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 8",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1525,6 +1558,7 @@
    "question": "Enrolment grid: boys enrolled in class 9",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1570,6 +1604,7 @@
    "question": "Enrolment grid: girls enrolled in class 9",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1608,6 +1643,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 9",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -1651,6 +1687,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -1696,6 +1733,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -1734,6 +1772,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -1773,6 +1812,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -1825,6 +1865,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -1859,6 +1900,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -1903,6 +1945,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -1950,6 +1993,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -2001,6 +2045,7 @@
    "question": "Enrolment grid: boys enrolled in class 10",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2038,6 +2083,7 @@
    "question": "Enrolment grid: girls enrolled in class 10",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2068,6 +2114,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 10",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2111,6 +2158,7 @@
    "question": "Enrolment grid: boys enrolled in class 11",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2148,6 +2196,7 @@
    "question": "Enrolment grid: girls enrolled in class 11",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2178,6 +2227,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 11",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2221,6 +2271,7 @@
    "question": "Enrolment grid: boys enrolled in class 12",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2258,6 +2309,7 @@
    "question": "Enrolment grid: girls enrolled in class 12",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2288,6 +2340,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 12",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2331,6 +2384,7 @@
    "question": "Enrolment grid: boys enrolled in class 1",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2368,6 +2422,7 @@
    "question": "Enrolment grid: girls enrolled in class 1",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2398,6 +2453,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 1",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2441,6 +2497,7 @@
    "question": "Enrolment grid: boys enrolled in class 2",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2478,6 +2535,7 @@
    "question": "Enrolment grid: girls enrolled in class 2",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2508,6 +2566,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 2",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2551,6 +2610,7 @@
    "question": "Enrolment grid: boys enrolled in class 3",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2588,6 +2648,7 @@
    "question": "Enrolment grid: girls enrolled in class 3",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2618,6 +2679,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 3",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2661,6 +2723,7 @@
    "question": "Enrolment grid: boys enrolled in class 4",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2698,6 +2761,7 @@
    "question": "Enrolment grid: girls enrolled in class 4",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2728,6 +2792,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 4",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2771,6 +2836,7 @@
    "question": "Enrolment grid: boys enrolled in class 5",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2808,6 +2874,7 @@
    "question": "Enrolment grid: girls enrolled in class 5",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2838,6 +2905,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 5",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2881,6 +2949,7 @@
    "question": "Enrolment grid: boys enrolled in class 6",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2918,6 +2987,7 @@
    "question": "Enrolment grid: girls enrolled in class 6",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2948,6 +3018,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 6",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -2991,6 +3062,7 @@
    "question": "Enrolment grid: boys enrolled in class 7",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -3028,6 +3100,7 @@
    "question": "Enrolment grid: girls enrolled in class 7",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -3058,6 +3131,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 7",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -3101,6 +3175,7 @@
    "question": "Enrolment grid: boys enrolled in class 8",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -3138,6 +3213,7 @@
    "question": "Enrolment grid: girls enrolled in class 8",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -3168,6 +3244,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 8",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -3211,6 +3288,7 @@
    "question": "Enrolment grid: boys enrolled in class 9",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -3248,6 +3326,7 @@
    "question": "Enrolment grid: girls enrolled in class 9",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -3278,6 +3357,7 @@
    "question": "Enrolment grid: transgender children enrolled in class 9",
    "values": "count of children",
    "dcf_year": "all",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "structural",
    "dormant_2025_26": false,
@@ -3321,6 +3401,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -3358,6 +3439,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -3388,6 +3470,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -3427,6 +3510,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -3469,6 +3553,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -3513,6 +3598,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -3557,6 +3643,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -3604,6 +3691,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -3645,6 +3733,32 @@
    "question": "Whether Hand-rails for ramp are available?",
    "values": "0, 1-Yes, 2-No, 9-Not applicable",
    "dcf_year": "2020-21",
+   "dcf_trace": {
+    "2020-21": {
+     "item": "2.15",
+     "line": "(a) If yes, whether Hand-rails for ramp is available ?(1-Yes, 2-No)"
+    },
+    "2021-22": {
+     "item": "2.15",
+     "line": "If 1-Yes, whether Hand-rails for ramp are available? (1-Yes, 2-No)"
+    },
+    "2022-23": {
+     "item": "2.15",
+     "line": "If 1-Yes, whether Hand-rails for ramp are available? (1-Yes, 2-No)"
+    },
+    "2024-25": {
+     "item": "2.15",
+     "line": "If 1-Yes, whether Hand-rails for ramp are available? (1-Yes,2-No)"
+    },
+    "2025-26": {
+     "item": "2.15",
+     "line": "If 1-Yes, whether Hand-rails for ramp are available? (1-Yes,2-No)"
+    },
+    "2026-27": {
+     "item": "2.15",
+     "line": "If 1-Yes, whether Hand-rails for ramp are available? (1-Yes,2-No)"
+    }
+   },
    "dcf_line": "(a) If yes, whether Hand-rails for ramp is available ?(1-Yes, 2-No)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -3690,6 +3804,36 @@
    "question": "Whether Ramp for disabled children to access school building exists?",
    "values": "1-Yes, 2-No",
    "dcf_year": "2018-19",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.15",
+     "line": "Whether ramp for disabled children to access school building exists ? (Yes=1, No=2)"
+    },
+    "2020-21": {
+     "item": "2.1.15",
+     "line": "Whether ramp for disabled children to access school building exists ?(1-Yes, 2-No)"
+    },
+    "2021-22": {
+     "item": "2.14",
+     "line": "Whether ramp for disabled children to access school building exists? (1-Yes, 2-No)"
+    },
+    "2022-23": {
+     "item": "2.14",
+     "line": "Whether ramp for disabled children to access school building exists? (1-Yes, 2-No)"
+    },
+    "2024-25": {
+     "item": "2.15",
+     "line": "Whether ramp for disabled children to access school building exists? (1-Yes,2-No)"
+    },
+    "2025-26": {
+     "item": "2.15",
+     "line": "Whether Ramp for disabled children to access school building exists? (1-Yes,2-No)"
+    },
+    "2026-27": {
+     "item": "2.15",
+     "line": "Whether Ramp for disabled children to access school building exists? (1-Yes,2-No)"
+    }
+   },
    "dcf_line": "2.15 Whether ramp for disabled children to access school building exists ? (Yes=1, No=2)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -3739,6 +3883,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -3775,6 +3920,7 @@
    "question": "Whether Boarding/Hostel facilities are available for the following Stage(s)/Level(s)?",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -3819,6 +3965,7 @@
    "question": "Whether Boarding/Hostel facilities are available for the following Stage(s)/Level(s)? \u2014 Primary",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -3863,6 +4010,7 @@
    "question": "Whether Boarding/Hostel facilities are available for the following Stage(s)/Level(s)?",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -3907,6 +4055,7 @@
    "question": "Whether Boarding/Hostel facilities are available for the following Stage(s)/Level(s)? \u2014 Primary",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -3954,6 +4103,36 @@
    "question": "Whether the school has Library facility/Book Bank/Reading Corner? \u2014 Book Bank",
    "values": "1-Yes, 2-No",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.12",
+     "line": "Whether the school have Library facility/Book Bank/Reading Corner?"
+    },
+    "2020-21": {
+     "item": "2.1.12",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner ?"
+    },
+    "2021-22": {
+     "item": "2.10(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2022-23": {
+     "item": "2.10(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2024-25": {
+     "item": "2.11(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2025-26": {
+     "item": "2.11(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2026-27": {
+     "item": "2.11(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    }
+   },
    "dcf_line": "2.11(a) Whether the school has Library facility/Book Bank/Reading Corner?",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -3999,6 +4178,36 @@
    "question": "Type of Boundary Wall",
    "values": "1-Pucca, 2-Pucca but broken, 3-Barbed wire fencing, 4-Hedges, 5-No boundary walls, 6-Others, 7-Partial, 8-Under Construction",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.3",
+     "line": "Type of boundary wall"
+    },
+    "2020-21": {
+     "item": "2.1.3",
+     "line": "Type of boundary wall :"
+    },
+    "2021-22": {
+     "item": "2.3",
+     "line": "Type of Boundary Wall:"
+    },
+    "2022-23": {
+     "item": "2.3",
+     "line": "Type of Boundary Wall:"
+    },
+    "2024-25": {
+     "item": "2.3",
+     "line": "Type of Boundary Wall:"
+    },
+    "2025-26": {
+     "item": "2.4",
+     "line": "Type of Boundary Wall:"
+    },
+    "2026-27": {
+     "item": "2.4",
+     "line": "Type of Boundary Wall:"
+    }
+   },
    "dcf_line": "2.4 Type of Boundary Wall:",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4054,6 +4263,36 @@
    "question": "Status of Present School Building?",
    "values": "1-Government, 2-Rent free, 3-Rented, 4-Govt school running in Panchayat/Municipal Building, 5-Dilapidated, 6-Under Construction, 7-No Building",
    "dcf_year": "2018-19",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.1",
+     "line": "Status of the school building?"
+    },
+    "2020-21": {
+     "item": "2.1.1",
+     "line": "Status of the school building ?"
+    },
+    "2021-22": {
+     "item": "2.1",
+     "line": "Status of School Building?"
+    },
+    "2022-23": {
+     "item": "2.1",
+     "line": "Status of Present School Building?"
+    },
+    "2024-25": {
+     "item": "2.1",
+     "line": "Status of Present School Building?"
+    },
+    "2025-26": {
+     "item": "2.1",
+     "line": "Status of Present School Building?"
+    },
+    "2026-27": {
+     "item": "2.1",
+     "line": "Status of Present School Building?"
+    }
+   },
    "dcf_line": "2.1 Status of the school building?",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4103,6 +4342,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -4146,6 +4386,16 @@
    "question": "Classrooms in good condition",
    "values": "count",
    "dcf_year": "2018-19",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.3(a)",
+     "line": "(c) Classrooms by condition"
+    },
+    "2020-21": {
+     "item": "2.3(a)",
+     "line": "(c) Class rooms by condition :"
+    }
+   },
    "dcf_line": "(c) Classrooms by condition",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4199,6 +4449,7 @@
    "question": "Classrooms needing major repair",
    "values": "count",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4244,6 +4495,7 @@
    "question": "Classrooms needing minor repair",
    "values": "count",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4285,6 +4537,16 @@
    "question": "Is Separate Room(s) Available for Computer/ICT lab?",
    "values": "1-Yes, 2-No",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2025-26": {
+     "item": "2.25(a)(iii)",
+     "line": "(iii) Is Separate Room(s) Available for Computer/ICT lab? (1-Yes, 2-No)"
+    },
+    "2026-27": {
+     "item": "2.25(a)(iii)",
+     "line": "(iii) Is Separate Room(s) Available for Computer/ICT lab? (1-Yes, 2-No)"
+    }
+   },
    "dcf_line": "(iii) Is Separate Room(s) Available for Computer/ICT lab? (1-Yes, 2-No)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4334,6 +4596,7 @@
    "question": "Does the school have the following laboratories? (For Higher Secondary sections only) \u2014 Computer Science",
    "values": "1-Yes, 2-No",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -4370,6 +4633,7 @@
    "question": "Details of Teaching Staffs (Including Head Master/Mistress/Principal/HoS) \u2014 cyber safety:",
    "values": "1-Yes, 2-No",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -4413,6 +4677,16 @@
    "question": "Number of desktops",
    "values": "count",
    "dcf_year": "2018-19",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.25(a)(ii)",
+     "line": "Number of Students"
+    },
+    "2021-22": {
+     "item": "2.25(a)(ii)",
+     "line": "Number of students"
+    }
+   },
    "dcf_line": "Number of Students",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4458,6 +4732,7 @@
    "question": "Number of digital boards",
    "values": "count",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4499,6 +4774,7 @@
    "question": "Whether drinking water is available in the school premises?",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -4548,6 +4824,7 @@
    "question": "Whether drinking water is available in the school premises?                                     (Yes=1, No=2) \u2014 Whether water purifier/RO is available in the school                     (Yes=1, No=2, Yes, but not functional=3)",
    "values": null,
    "dcf_year": "2018-19",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -4601,6 +4878,28 @@
    "question": "Access to DTH/TV channels",
    "values": "1-Yes, 2-No, 4-Not applicable",
    "dcf_year": "2021-22",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.27(d)",
+     "line": "(d) Access to DTH/TV channels"
+    },
+    "2022-23": {
+     "item": "2.27(d)",
+     "line": "(d) Access to DTH/TV channels"
+    },
+    "2024-25": {
+     "item": "2.27(d)",
+     "line": "(d) Access to DTH/TV channels"
+    },
+    "2025-26": {
+     "item": "2.27(d)",
+     "line": "(d) Access to DTH/TV channels"
+    },
+    "2026-27": {
+     "item": "2.27(d)",
+     "line": "(d) Access to DTH/TV channels"
+    }
+   },
    "dcf_line": "(d) Access to DTH/TV channels",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4654,6 +4953,32 @@
    "question": "Whether electricity connection is available in the school?",
    "values": "1-Yes, 2-No, 3-Yes but not Functional",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2020-21": {
+     "item": "2.1.11(a)",
+     "line": "Whether electricity connection is available in the school ?"
+    },
+    "2021-22": {
+     "item": "2.9(a)",
+     "line": "Whether electricity connection is available in the school?"
+    },
+    "2022-23": {
+     "item": "2.9(a)",
+     "line": "Whether electricity connection is available in the school?"
+    },
+    "2024-25": {
+     "item": "2.5(a)",
+     "line": "Whether electricity connection is available in the school?"
+    },
+    "2025-26": {
+     "item": "2.5(a)",
+     "line": "Whether electricity connection is available in the school?"
+    },
+    "2026-27": {
+     "item": "2.5(a)",
+     "line": "Whether electricity connection is available in the school?"
+    }
+   },
    "dcf_line": "2.5 (a) Whether electricity connection is available in the school?",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4702,6 +5027,7 @@
    "question": "Whether enrichment activities are conducted",
    "values": "1-Yes, 2-No",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4745,6 +5071,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -4790,6 +5117,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -4835,6 +5163,28 @@
    "question": "Does the school have furniture for students?",
    "values": "1-Yes, 2-No, 3-Partial",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.18",
+     "line": "Does the school have furniture for students?"
+    },
+    "2022-23": {
+     "item": "2.18",
+     "line": "Does the school have furniture for students?"
+    },
+    "2024-25": {
+     "item": "2.19",
+     "line": "Does the school have furniture for students?"
+    },
+    "2025-26": {
+     "item": "2.19",
+     "line": "Does the school have furniture for students?"
+    },
+    "2026-27": {
+     "item": "2.19",
+     "line": "Does the school have furniture for students?"
+    }
+   },
    "dcf_line": "2.19 Does the school have furniture for students?",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4876,6 +5226,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -4915,6 +5266,7 @@
    "question": "Hand pump functional",
    "values": "1-Yes, 2-No",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4954,6 +5306,32 @@
    "question": "Main Source of Drinking Water \u2014 hand pump",
    "values": "1-Yes, 2-No",
    "dcf_year": "2020-21",
+   "dcf_trace": {
+    "2020-21": {
+     "item": "2.9(a)",
+     "line": "If Yes, (a) Main Source of drinking water :"
+    },
+    "2021-22": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2024-25": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    }
+   },
    "dcf_line": "If Yes, (a) Main Source of drinking water :",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -4997,6 +5375,7 @@
    "question": "Handwash facility for meal",
    "values": "1-Yes, 2-No, 9-Not applicable",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5042,6 +5421,7 @@
    "question": "Handwash facility near the toilet",
    "values": "1-Yes, 2-No, 9-Not applicable",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5091,6 +5471,7 @@
    "question": "Does the school have the following laboratories? (For Higher Secondary sections only) \u2014 Home Science",
    "values": "1-Yes, 2-No",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -5130,6 +5511,7 @@
    "question": "Is ICT Lab available in the school?",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -5185,6 +5567,20 @@
    "question": "Is the ICT Lab available in the school under Samagra Siksha?",
    "values": "1-Yes, 2-No, 9-Not applicable",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2024-25": {
+     "item": "2.25(b)",
+     "line": "(b) Is the ICT Lab available in the school under Samagra Siksha? (1-Yes, 2-No)"
+    },
+    "2025-26": {
+     "item": "2.25(b)",
+     "line": "(b) Is the ICT Lab available in the school under Samagra Siksha? (1-Yes, 2-No)"
+    },
+    "2026-27": {
+     "item": "2.25(b)",
+     "line": "(b) Is the ICT Lab available in the school under Samagra Siksha? (1-Yes, 2-No)"
+    }
+   },
    "dcf_line": "(b) Is the ICT Lab available in the school under Samagra Siksha? (1-Yes, 2-No)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5241,6 +5637,28 @@
    "question": "Does the School have Internet Facility?",
    "values": "1-Yes, 2-No",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.23",
+     "line": "Does the School have Internet Facility? (1-Yes, 2-No)"
+    },
+    "2022-23": {
+     "item": "2.23",
+     "line": "Does the School have Internet Facility? (1-Yes, 2-No)"
+    },
+    "2024-25": {
+     "item": "2.25",
+     "line": "Does the School have Internet Facility? (1-Yes, 2-No)"
+    },
+    "2025-26": {
+     "item": "2.26",
+     "line": "Does the School have Internet Facility? (1-Yes, 2-No)"
+    },
+    "2026-27": {
+     "item": "2.26",
+     "line": "Does the School have Internet Facility? (1-Yes, 2-No)"
+    }
+   },
    "dcf_line": "2.26 Does the School have Internet Facility? (1-Yes, 2-No)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5279,6 +5697,36 @@
    "question": "Whether Kitchen Garden is available in school?",
    "values": "1-Yes, 2-No",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.17",
+     "line": "Whether Kitchen Garden is available in school? (Yes=1, No=2)"
+    },
+    "2020-21": {
+     "item": "2.1.17",
+     "line": "Whether Kitchen Garden is available in school ?(1-Yes, 2-No)"
+    },
+    "2021-22": {
+     "item": "2.16(a)",
+     "line": "Whether Kitchen Garden is available in school? (1-Yes, 2-No)"
+    },
+    "2022-23": {
+     "item": "2.16(a)",
+     "line": "Whether Kitchen Garden is available in school? (1-Yes, 2-No)"
+    },
+    "2024-25": {
+     "item": "2.17(a)",
+     "line": "Whether Kitchen Garden is available in school? (1-Yes, 2-No)"
+    },
+    "2025-26": {
+     "item": "2.17(a)",
+     "line": "Whether Kitchen Garden is available in school? (1-Yes,2-No)"
+    },
+    "2026-27": {
+     "item": "2.17(a)",
+     "line": "Whether Kitchen Garden is available in school? (1-Yes,2-No)"
+    }
+   },
    "dcf_line": "2.17(a) Whether Kitchen Garden is available in school? (1-Yes,2-No)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5323,6 +5771,36 @@
    "question": "Whether Land is available for expansion of school facilities?",
    "values": "1-Yes, 2-No",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.5",
+     "line": "Whether land is available for expansion of school facilities (Yes=1, No=2)"
+    },
+    "2020-21": {
+     "item": "2.1.5",
+     "line": "Whether land is available for expansion of school facilities : (1-Yes, 2-No)"
+    },
+    "2021-22": {
+     "item": "2.11",
+     "line": "Whether land is available for expansion of school facilities? (1-Yes, 2-No)"
+    },
+    "2022-23": {
+     "item": "2.11(a)",
+     "line": "Whether land is available for expansion of school facilities? (1-Yes, 2-No)"
+    },
+    "2024-25": {
+     "item": "2.12(a)",
+     "line": "Whether land is available for expansion of school facilities? (1-Yes, 2-No)"
+    },
+    "2025-26": {
+     "item": "2.12(b)",
+     "line": "(b) Whether Land is available for expansion of school facilities? (1-Yes, 2-No)"
+    },
+    "2026-27": {
+     "item": "2.12(b)",
+     "line": "(b) Whether Land is available for expansion of school facilities? (1-Yes, 2-No)"
+    }
+   },
    "dcf_line": "(b) Whether Land is available for expansion of school facilities? (1-Yes, 2-No)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5370,6 +5848,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -5413,6 +5892,7 @@
    "question": "Number of laptops",
    "values": "count",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5451,6 +5931,36 @@
    "question": "Does the school have a full-time librarian?",
    "values": "1-Yes, 2-No",
    "dcf_year": "2018-19",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.11(b)",
+     "line": "(a) Does the school have a full-time librarian? (Yes=1, No=2)"
+    },
+    "2020-21": {
+     "item": "2.11(b)",
+     "line": "(a) Does the school have a full-time librarian ?(1-Yes, 2-No)"
+    },
+    "2021-22": {
+     "item": "2.11(b)",
+     "line": "(b) Does the school have a full-time librarian? (1-Yes, 2-No)"
+    },
+    "2022-23": {
+     "item": "2.11(b)",
+     "line": "(b) Does the school have a full-time librarian? (1-Yes, 2-No)"
+    },
+    "2024-25": {
+     "item": "2.11(b)",
+     "line": "(b) Does the school have a full-time librarian? (1-Yes, 2-No)"
+    },
+    "2025-26": {
+     "item": "2.11(b)",
+     "line": "(b) Does the school have a full-time librarian? (1-Yes, 2-No)"
+    },
+    "2026-27": {
+     "item": "2.11(b)",
+     "line": "(b) Does the school have a full-time librarian? (1-Yes, 2-No)"
+    }
+   },
    "dcf_line": "(a) Does the school have a full-time librarian? (Yes=1, No=2)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5504,6 +6014,36 @@
    "question": "Whether the school has Library facility/Book Bank/Reading Corner? \u2014 Library",
    "values": "1-Yes, 2-No",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.12",
+     "line": "Whether the school have Library facility/Book Bank/Reading Corner?"
+    },
+    "2020-21": {
+     "item": "2.1.12",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner ?"
+    },
+    "2021-22": {
+     "item": "2.10(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2022-23": {
+     "item": "2.10(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2024-25": {
+     "item": "2.11(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2025-26": {
+     "item": "2.11(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2026-27": {
+     "item": "2.11(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    }
+   },
    "dcf_line": "2.11(a) Whether the school has Library facility/Book Bank/Reading Corner?",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5545,6 +6085,7 @@
    "question": "Does the school have the following laboratories? (For Higher Secondary sections only) \u2014 Math\u2019s Kit**",
    "values": "1-Yes, 2-No",
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -5588,6 +6129,28 @@
    "question": "Whether Health check-up of students was conducted",
    "values": "1-Yes, 2-No",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.13(a)",
+     "line": "Whether Health check-up of students was conducted"
+    },
+    "2022-23": {
+     "item": "2.13(a)",
+     "line": "Whether Health check-up of students was conducted"
+    },
+    "2024-25": {
+     "item": "2.14(a)",
+     "line": "Whether Health check-up of students was conducted"
+    },
+    "2025-26": {
+     "item": "2.14(a)",
+     "line": "Whether Health check-up of students was conducted"
+    },
+    "2026-27": {
+     "item": "2.14(a)",
+     "line": "Whether Health check-up of students was conducted"
+    }
+   },
    "dcf_line": "2.14 (a) Whether Health check-up of students was conducted",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5641,6 +6204,7 @@
    "question": "Type of School Building: \u2014 Total Number of Active* building blocks of the school",
    "values": null,
    "dcf_year": "2022-23",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -5694,6 +6258,20 @@
    "question": "Details of Rooms other than Classrooms (excluding toilets)",
    "values": "count",
    "dcf_year": "2024-25",
+   "dcf_trace": {
+    "2024-25": {
+     "item": "2.6",
+     "line": "Details of Rooms other than Classrooms (excluding toilets):"
+    },
+    "2025-26": {
+     "item": "2.6",
+     "line": "Details of Rooms other than Classrooms (excluding toilets):"
+    },
+    "2026-27": {
+     "item": "2.6",
+     "line": "Details of Rooms other than Classrooms (excluding toilets):"
+    }
+   },
    "dcf_line": "2.6 Details of Rooms other than Classrooms (excluding toilets):",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5743,6 +6321,7 @@
    "question": "Other source functional",
    "values": "1-Yes, 2-No",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5782,6 +6361,28 @@
    "question": "Main Source of Drinking Water \u2014 other source",
    "values": "1-Yes, 2-No",
    "dcf_year": "2021-22",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2024-25": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    }
+   },
    "dcf_line": "(a) Main Source of Drinking Water:",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5821,6 +6422,7 @@
    "question": "Packaged water functional",
    "values": "1-Yes, 2-No",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5860,6 +6462,24 @@
    "question": "Main Source of Drinking Water \u2014 packaged water",
    "values": "1-Yes, 2-No",
    "dcf_year": "2021-22",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    }
+   },
    "dcf_line": "(a) Main Source of Drinking Water:",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5899,6 +6519,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -5938,6 +6559,7 @@
    "question": "If no playground, whether adequate arrangements exist for outdoor games",
    "values": "0, 1-Yes, 2-No, 9-Not applicable",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -5971,6 +6593,36 @@
    "question": "Whether Playground facility is available in the School?",
    "values": "1-Yes, 2-No",
    "dcf_year": "2018-19",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.13",
+     "line": "Whether Playground facility is available? (Yes=1, No=2)"
+    },
+    "2020-21": {
+     "item": "2.1.13",
+     "line": "Whether Playground facility is available ?(1-Yes, 2-No)"
+    },
+    "2021-22": {
+     "item": "2.12",
+     "line": "Whether Playground facility is available in the School? (1-Yes, 2-No)"
+    },
+    "2022-23": {
+     "item": "2.12",
+     "line": "Whether Playground facility is available in the School? (1-Yes, 2-No)"
+    },
+    "2024-25": {
+     "item": "2.13",
+     "line": "Whether Playground facility is available in the School? (1-Yes, 2-No)"
+    },
+    "2025-26": {
+     "item": "2.13",
+     "line": "Whether Playground facility is available in the School? (1-Yes, 2-No)"
+    },
+    "2026-27": {
+     "item": "2.13",
+     "line": "Whether Playground facility is available in the School? (1-Yes, 2-No)"
+    }
+   },
    "dcf_line": "2.13 Whether Playground facility is available? (Yes=1, No=2)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6024,6 +6676,16 @@
    "question": "Number of printers",
    "values": "count",
    "dcf_year": "2018-19",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.25",
+     "line": "Number of Students"
+    },
+    "2021-22": {
+     "item": "2.25",
+     "line": "Number of students"
+    }
+   },
    "dcf_line": "Number of Students",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6069,6 +6731,28 @@
    "question": "Number of projectors",
    "values": "count",
    "dcf_year": "2021-22",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.25",
+     "line": "(f) Projector"
+    },
+    "2022-23": {
+     "item": "2.25",
+     "line": "(f) Projector"
+    },
+    "2024-25": {
+     "item": "2.25",
+     "line": "(f) Projector"
+    },
+    "2025-26": {
+     "item": "2.25",
+     "line": "(f) Projector"
+    },
+    "2026-27": {
+     "item": "2.25",
+     "line": "(f) Projector"
+    }
+   },
    "dcf_line": "(f) Projector",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6110,6 +6794,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -6157,6 +6842,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -6204,6 +6890,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -6240,6 +6927,7 @@
    "question": "Details of Teaching Staffs (Including Head Master/Mistress/Principal/HoS) \u2014 psycho-social aspects:",
    "values": "1-Yes, 2-No",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -6283,6 +6971,7 @@
    "question": "Type of School Building: \u2014 Total Number of Active* building blocks of the school",
    "values": null,
    "dcf_year": "2022-23",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -6328,6 +7017,28 @@
    "question": "Does the school have provision for rain water harvesting?",
    "values": "1-Yes, 2-No, 3-Yes but not functional",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.7",
+     "line": "Does the school have provision for rain water harvesting?"
+    },
+    "2022-23": {
+     "item": "2.7",
+     "line": "Does the school have provision for rain water harvesting?"
+    },
+    "2024-25": {
+     "item": "2.10",
+     "line": "Does the school has provision for rain water harvesting?"
+    },
+    "2025-26": {
+     "item": "2.10",
+     "line": "Does the school have provision for rain water harvesting?"
+    },
+    "2026-27": {
+     "item": "2.10",
+     "line": "Does the school have provision for rain water harvesting?"
+    }
+   },
    "dcf_line": "2.10 Does the school have provision for rain water harvesting?",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6379,6 +7090,36 @@
    "question": "Whether the school has Library facility/Book Bank/Reading Corner? \u2014 Reading Corner",
    "values": "1-Yes, 2-No",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.12",
+     "line": "Whether the school have Library facility/Book Bank/Reading Corner?"
+    },
+    "2020-21": {
+     "item": "2.1.12",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner ?"
+    },
+    "2021-22": {
+     "item": "2.10(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2022-23": {
+     "item": "2.10(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2024-25": {
+     "item": "2.11(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2025-26": {
+     "item": "2.11(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2026-27": {
+     "item": "2.11(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    }
+   },
    "dcf_line": "2.11(a) Whether the school has Library facility/Book Bank/Reading Corner?",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6424,6 +7165,7 @@
    "question": "Separate room for the Head Master / Head Teacher",
    "values": "1-Yes, 2-No",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6473,6 +7215,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -6512,6 +7255,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -6555,6 +7299,32 @@
    "question": "Whether Solar Panel is available in school?",
    "values": "1-Yes, 2-No, 3-Yes but not Functional",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "11.4",
+     "line": "Whether CCTV Cameras available in school ?"
+    },
+    "2021-22": {
+     "item": "2.5(b)",
+     "line": "(b) Whether solar panel is available in school?"
+    },
+    "2022-23": {
+     "item": "2.5(b)",
+     "line": "(b) Whether solar panel is available in school?"
+    },
+    "2024-25": {
+     "item": "2.5(b)",
+     "line": "(b) Whether solar panel is available in school?"
+    },
+    "2025-26": {
+     "item": "2.5(b)",
+     "line": "(b) Whether Solar Panel is available in school?"
+    },
+    "2026-27": {
+     "item": "2.5(b)",
+     "line": "(b) Whether Solar Panel is available in school?"
+    }
+   },
    "dcf_line": "(b) Whether Solar Panel is available in school?",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6606,6 +7376,7 @@
    "question": "Whether a special educator is available",
    "values": "1-Yes, 2-No, 3-Shared",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6650,6 +7421,7 @@
    "question": "Whether staff quarters are available",
    "values": "1-Yes, 2-No, 9-Not applicable",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6693,6 +7465,16 @@
    "question": "Number of tablets",
    "values": "count",
    "dcf_year": "2018-19",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.25",
+     "line": "Number of Students"
+    },
+    "2021-22": {
+     "item": "2.25",
+     "line": "Number of students"
+    }
+   },
    "dcf_line": "Number of Students",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6734,6 +7516,7 @@
    "question": "Tap water functional",
    "values": "1-Yes, 2-No",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6773,6 +7556,32 @@
    "question": "Main Source of Drinking Water \u2014 tap water",
    "values": "1-Yes, 2-No",
    "dcf_year": "2020-21",
+   "dcf_trace": {
+    "2020-21": {
+     "item": "2.9(a)",
+     "line": "If Yes, (a) Main Source of drinking water :"
+    },
+    "2021-22": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2024-25": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    }
+   },
    "dcf_line": "If Yes, (a) Main Source of drinking water :",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6812,6 +7621,7 @@
    "question": "Computer or Digital Equipment Status: \u2014 PCs with Integrated Teaching Learning Devices",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -6856,6 +7666,7 @@
    "question": "Whether an Atal Tinkering Lab is available",
    "values": "1-Yes, 2-No, 9-Not applicable",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6895,6 +7706,7 @@
    "question": "Does the School have Toilet(s)/Urinal(s)? \u2014 excluding CWSN friendly",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -6946,6 +7758,7 @@
    "question": "Boys' toilets, functional",
    "values": "count",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -6991,6 +7804,16 @@
    "question": "Does the School have Toilet(s)/Urinal(s)? \u2014 boys, total",
    "values": "count",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2025-26": {
+     "item": "2.7",
+     "line": "Does the School have Toilet(s)/Urinal(s)?"
+    },
+    "2026-27": {
+     "item": "2.7",
+     "line": "Does the School have Toilet(s)/Urinal(s)?"
+    }
+   },
    "dcf_line": "2.7 Does the School have Toilet(s)/Urinal(s)?",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -7036,6 +7859,20 @@
    "question": "Details of Classrooms available in the school (Laboratory rooms NOT to be included)",
    "values": "count",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2024-25": {
+     "item": "2.4(a)",
+     "line": "Details of Classrooms available in the school: (Laboratory rooms NOT to be included)"
+    },
+    "2025-26": {
+     "item": "2.3(a)",
+     "line": "Details of Classrooms available in the school: (Laboratory rooms NOT to be included)"
+    },
+    "2026-27": {
+     "item": "2.3(a)",
+     "line": "Details of Classrooms available in the school: (Laboratory, library and staff rooms etc. NOT to be"
+    }
+   },
    "dcf_line": "2.3(a) Details of Classrooms available in the school: (Laboratory rooms NOT to be included)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -7085,6 +7922,7 @@
    "question": "Does the School have Toilet(s)/Urinal(s)? \u2014 excluding CWSN friendly",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -7136,6 +7974,7 @@
    "question": "Girls' toilets, functional",
    "values": "count",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -7181,6 +8020,16 @@
    "question": "Does the School have Toilet(s)/Urinal(s)? \u2014 girls, total",
    "values": "count",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2025-26": {
+     "item": "2.7",
+     "line": "Does the School have Toilet(s)/Urinal(s)?"
+    },
+    "2026-27": {
+     "item": "2.7",
+     "line": "Does the School have Toilet(s)/Urinal(s)?"
+    }
+   },
    "dcf_line": "2.7 Does the School have Toilet(s)/Urinal(s)?",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -7226,6 +8075,7 @@
    "question": "Urinals for boys",
    "values": "count",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -7275,6 +8125,7 @@
    "question": "Does the School have Toilet(s)/Urinal(s)? \u2014 Whether incinerator is available in Girl\u2019s toilet?",
    "values": "1-Yes, 2-No, 3-Yes, but Not Functional",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -7329,6 +8180,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -7376,6 +8228,7 @@
    "question": "Protected well functional",
    "values": "1-Yes, 2-No",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -7415,6 +8268,24 @@
    "question": "Main Source of Drinking Water \u2014 protected well",
    "values": "1-Yes, 2-No",
    "dcf_year": "2021-22",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "Main Source of Drinking Water:"
+    }
+   },
    "dcf_line": "(a) Main Source of Drinking Water:",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -7454,6 +8325,32 @@
    "question": "Unprotected well functional",
    "values": "1-Yes, 2-No",
    "dcf_year": "2018-19",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.9",
+     "line": "Unprotected Well"
+    },
+    "2020-21": {
+     "item": "2.9",
+     "line": "Unprotected Well"
+    },
+    "2021-22": {
+     "item": "2.9",
+     "line": "Unprotected Well"
+    },
+    "2022-23": {
+     "item": "2.9",
+     "line": "Unprotected Well"
+    },
+    "2024-25": {
+     "item": "2.9",
+     "line": "Unprotected Well"
+    },
+    "2025-26": {
+     "item": "2.9",
+     "line": "Unprotected Well"
+    }
+   },
    "dcf_line": "Unprotected Well",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -7493,6 +8390,16 @@
    "question": "Main Source of Drinking Water \u2014 unprotected well",
    "values": "1-Yes, 2-No",
    "dcf_year": "2021-22",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    }
+   },
    "dcf_line": "(a) Main Source of Drinking Water:",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -7536,6 +8443,7 @@
    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -7589,6 +8497,7 @@
    "question": "Affiliation Board of the school for SECONDARY Sections:",
    "values": null,
    "dcf_year": "2024-25",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -7638,6 +8547,7 @@
    "question": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Total Children in Anganwadi Centre :        Boys :                                Girls :",
    "values": "1-Yes, 2-No",
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -7698,6 +8608,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -7732,6 +8643,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -7766,6 +8678,7 @@
    "question": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Total Children in Anganwadi Centre :        Boys :                                Girls :",
    "values": "1-Yes, 2-No",
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -7826,6 +8739,7 @@
    "question": "Whether Anganwadi Centre(s) is/are located inside the school premises?",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -7888,6 +8802,7 @@
    "question": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Is the Anganwadi Worker trained in early childhood education :",
    "values": "1-Yes, 2-No",
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -7917,6 +8832,7 @@
    "question": "Whether Anganwadi Centre(s) is/are located inside the school premises?",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -7975,6 +8891,7 @@
    "question": "Whether School is Approachable by All-Weather Roads?",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -8016,6 +8933,7 @@
    "question": "(a) Name of the Assembly Constituency :",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -8063,6 +8981,7 @@
    "question": "Number of instructional days (in previous academic year):",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -8115,6 +9034,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8144,6 +9064,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8173,6 +9094,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8202,6 +9124,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8231,6 +9154,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8260,6 +9184,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8289,6 +9214,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8318,6 +9244,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8347,6 +9274,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8386,6 +9314,7 @@
    "question": "Is CCE being implemented in school? : \u2014 Higher secondary :",
    "values": "1-Yes, 2-No",
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -8433,6 +9362,7 @@
    "question": "Is Continuous and Comprehensive Evaluation (CCE) being implemented in School? \u2014 Primary",
    "values": "1-Yes, 2-No",
    "dcf_year": "2022-23",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -8472,6 +9402,7 @@
    "question": "Is CCE being implemented in school? : \u2014 Secondary :",
    "values": "1-Yes, 2-No",
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -8511,6 +9442,7 @@
    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -8558,6 +9490,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8594,6 +9527,7 @@
    "question": "Is the School certified as Fit India School?",
    "values": "1-Yes, 2-No",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -8642,6 +9576,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -8683,6 +9618,7 @@
    "question": "Enrolment by Grade for Children with Special Needs (CWSN) By Type of Impairment:",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -8734,6 +9670,7 @@
    "question": "Name of the District :",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -8780,6 +9717,36 @@
    "question": "Year of Establishment of school",
    "values": "year",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "1.20",
+     "line": "Year of Establishment of School :"
+    },
+    "2020-21": {
+     "item": "1.20",
+     "line": "Year of Establishment of school :"
+    },
+    "2021-22": {
+     "item": "1.18",
+     "line": "Year of Establishment of school:"
+    },
+    "2022-23": {
+     "item": "1.19",
+     "line": "Year of Establishment of school:"
+    },
+    "2024-25": {
+     "item": "1.20",
+     "line": "Year of Establishment of school:"
+    },
+    "2025-26": {
+     "item": "1.23",
+     "line": "Year of Establishment of school:"
+    },
+    "2026-27": {
+     "item": "1.23",
+     "line": "Year of Establishment of school:"
+    }
+   },
    "dcf_line": "1.23 Year of Establishment of school:",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -8831,6 +9798,7 @@
    "question": "Lowest and Highest Classes in the School : \u2014 Lowest and Highest Class in School (e.g. 1 to 5) : to",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -8880,6 +9848,7 @@
    "question": "Number of instructional days (previous academic year) : \u2014 Higher Secondary",
    "values": null,
    "dcf_year": "2022-23",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -8932,6 +9901,7 @@
    "question": "Number of instructional days (previous academic year) : \u2014 Primary:",
    "values": null,
    "dcf_year": "2022-23",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -8984,6 +9954,7 @@
    "question": "Number of instructional days (previous academic year) : \u2014 Secondary:",
    "values": null,
    "dcf_year": "2022-23",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -9036,6 +10007,7 @@
    "question": "Number of instructional days (previous academic year) : \u2014 Upper Primary:",
    "values": null,
    "dcf_year": "2022-23",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -9072,6 +10044,7 @@
    "question": "Does the school provide any vocational courses under NSQF",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -9118,6 +10091,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -9147,6 +10121,7 @@
    "question": "Name of the UDISE+ Block:",
    "values": null,
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -9187,6 +10162,7 @@
    "question": "School Location Type : \u2014 Urban Local bodies (As per LGD):",
    "values": "1-RURAL, 2-URBAN",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -9232,6 +10208,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -9272,6 +10249,7 @@
    "question": "School Location Type : \u2014 Name of Gram Panchayat (As Per LGD):",
    "values": "1-RURAL, 2-URBAN",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -9317,6 +10295,7 @@
    "question": "School Location Type : \u2014 Ward Name (As Per LGD):",
    "values": "1-RURAL, 2-URBAN",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -9365,6 +10344,7 @@
    "question": "Lowest and Highest Classes in the School : \u2014 Lowest and Highest Class in School (e.g. 1 to 5) : to",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -9418,6 +10398,7 @@
    "question": "Management Code of School",
    "values": "1-Dept of Education, 2-Tribal Welfare, 3-Local Body, 4-Govt Aided, 5-Private Unaided (Recognised), 6-Other State Govt, 7-Partially Govt Aided, 8-Unrecognized, 89-Minority Affairs, 90-Social Welfare, 91-Ministry of Labour, 92-KVS, 93-NVS, 94-Sainik, 95-Railway, 96-Central Tibetan, 97-Madrasa Pvt Unaided, 98-Madarsa Unrecognized, 99-Madrasa Aided, 101-Other Central Govt/PSU, 102-Veda School",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -9472,6 +10453,7 @@
    "question": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -9525,6 +10507,7 @@
    "question": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -9578,6 +10561,7 @@
    "question": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -9631,6 +10615,7 @@
    "question": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -9684,6 +10669,36 @@
    "question": "Is this a minority managed school?",
    "values": "1-Yes, 2-No; then 1-Muslim, 2-Sikh, 3-Jain, 4-Christian, 5-Parsi, 6-Buddhist, 8-Linguistic Minority",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "1.26",
+     "line": "Is this a minority managed school? : (Yes=1, No=2)"
+    },
+    "2020-21": {
+     "item": "1.26",
+     "line": "Is this a minority managed school?(1-Yes, 2-No)"
+    },
+    "2021-22": {
+     "item": "1.25",
+     "line": "Is this a minority managed school? (1-Yes, 2-No)"
+    },
+    "2022-23": {
+     "item": "1.26",
+     "line": "Is this a minority managed school? (1-Yes, 2-No)"
+    },
+    "2024-25": {
+     "item": "1.26",
+     "line": "Is this a minority managed school? (1-Yes / 2-No)"
+    },
+    "2025-26": {
+     "item": "1.28",
+     "line": "Is this a minority managed school? (1-Yes / 2-No)"
+    },
+    "2026-27": {
+     "item": "1.28",
+     "line": "Is this a minority managed school? (1-Yes / 2-No)"
+    }
+   },
    "dcf_line": "1.28 Is this a minority managed school? (1-Yes / 2-No)",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -9734,6 +10749,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -9778,6 +10794,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -9807,6 +10824,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -9835,6 +10853,7 @@
    "question": "School Location Type : \u2014 Name of Gram Panchayat (As Per LGD):",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -9889,6 +10908,7 @@
    "question": "(a) Name of the Assembly Constituency : \u2014 Name of the Parliamentary Constituency:",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -9940,6 +10960,7 @@
    "question": "Pin Code :",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -9993,6 +11014,7 @@
    "question": "Lowest and Highest Classes in the School : \u2014 Whether Pre-Primary section (other than Anganwadis) attached to school?",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -10039,6 +11061,7 @@
    "question": "Does the school offer any pre-vocational exposure at Upper-Primary stage?",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -10088,6 +11111,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -10135,6 +11159,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -10179,6 +11204,7 @@
    "question": "Number of students attending Remedial Teaching/Extra Classes in current year:",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -10230,6 +11256,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -10267,6 +11294,7 @@
    "question": "Is this a Residential School? \u2014 Type of Residential school:",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -10313,6 +11341,7 @@
    "question": "Does the School take admission under Section 12 of the RTE Act (25% Quota of entry-level seats)? \u2014 set at ADMIN level, private unaided only",
    "values": "1-Yes, 2-No",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -10346,6 +11375,7 @@
    "question": "Is the School located in Rural or Urban Area:                        (Rural = 1, Urban = 2)",
    "values": null,
    "dcf_year": "2018-19",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -10387,6 +11417,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -10416,6 +11447,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -10449,6 +11481,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -10494,6 +11527,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -10539,6 +11573,7 @@
    "question": "Whether the school runs in shifts",
    "values": "1-Yes, 2-No",
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -10577,6 +11612,7 @@
    "question": "Whether School Management Committee (SMC) and School Management and Development \u2014 Number of SMDC meetings held during the last academic year",
    "values": null,
    "dcf_year": "2018-19",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -10613,6 +11649,7 @@
    "question": "(a) Whether the School Building Committee (SBC) has been constituted? \u2014 Whether the School has constituted its Parent-Teacher Association (PTA)?",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -10664,6 +11701,7 @@
    "question": "Enrolment By Grade for children with special needs",
    "values": null,
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -10717,6 +11755,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -10755,6 +11794,7 @@
    "question": "Does the school run any skill training center after school hours?",
    "values": null,
    "dcf_year": "2025-26",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -10804,6 +11844,7 @@
    "question": "Year of Establishment of school:",
    "values": null,
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -10851,6 +11892,7 @@
    "question": "Year of Recognition of the school : \u2014 Higher secondary :",
    "values": null,
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -10898,6 +11940,7 @@
    "question": "Year of Recognition of the school : \u2014 Primary :",
    "values": null,
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -10945,6 +11988,7 @@
    "question": "Year of Recognition of the school : \u2014 Secondary :",
    "values": null,
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -10992,6 +12036,7 @@
    "question": "Year of Recognition of the school : \u2014 Upper Primary :",
    "values": null,
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -11043,6 +12088,7 @@
    "question": "Details of visits to the school during the previous academic year : \u2014 No. of academic inspections :",
    "values": null,
    "dcf_year": "2018-19",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -11092,6 +12138,7 @@
    "question": "Whether Balavatika is started in the Co- located Anganwadi/school?",
    "values": "1-Yes, 2-No",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -11145,6 +12192,7 @@
    "question": "Details of visits to the school during the previous academic year : \u2014 No. of visits by Block Level Officers (BRC/BEO):",
    "values": null,
    "dcf_year": "2018-19",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -11198,6 +12246,7 @@
    "question": "Details of visits to the school during the previous academic year: \u2014 Number of visits by CRC Coordinator:",
    "values": null,
    "dcf_year": "2022-23",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -11243,6 +12292,7 @@
    "question": "Details of visits to the school during the previous academic year : \u2014 No of visits by District/State Level Officers:",
    "values": null,
    "dcf_year": "2018-19",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -11296,6 +12346,7 @@
    "question": "Availability of free text books, Teaching Learning Material (TLM), Play material (in current academic",
    "values": null,
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -11341,6 +12392,7 @@
    "question": "Availability of free text books, Teaching Learning Material (TLM), Play material (in current academic",
    "values": null,
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -11394,6 +12446,7 @@
    "question": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -11447,6 +12500,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11484,6 +12538,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11511,6 +12566,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11538,6 +12594,7 @@
    "question": "Whether any Out of School Children enrolled in the school are \u2014 Number of children ENROLLED for Special Training in PREVIOUS Academic year:",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -11587,6 +12644,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11634,6 +12692,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11678,6 +12737,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11709,6 +12769,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11740,6 +12801,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11771,6 +12833,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11802,6 +12865,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11833,6 +12897,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11864,6 +12929,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11895,6 +12961,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11926,6 +12993,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11957,6 +13025,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -11988,6 +13057,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12019,6 +13089,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12050,6 +13121,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12091,6 +13163,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12122,6 +13195,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12153,6 +13227,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12184,6 +13259,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12215,6 +13291,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12258,6 +13335,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12296,6 +13374,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12335,6 +13414,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12374,6 +13454,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12413,6 +13494,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12452,6 +13534,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12491,6 +13574,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12530,6 +13614,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12568,6 +13653,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12606,6 +13692,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12644,6 +13731,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12682,6 +13770,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12720,6 +13809,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12758,6 +13848,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12796,6 +13887,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12834,6 +13926,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12872,6 +13965,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12910,6 +14004,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12948,6 +14043,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -12986,6 +14082,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13024,6 +14121,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13062,6 +14160,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13100,6 +14199,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13138,6 +14238,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13177,6 +14278,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13206,6 +14308,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13235,6 +14338,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13274,6 +14378,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13313,6 +14418,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13352,6 +14458,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13391,6 +14498,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13430,6 +14538,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13469,6 +14578,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13508,6 +14618,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13547,6 +14658,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13586,6 +14698,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13625,6 +14738,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13664,6 +14778,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13703,6 +14818,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13742,6 +14858,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13781,6 +14898,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13820,6 +14938,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13859,6 +14978,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13898,6 +15018,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13941,6 +15062,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -13974,6 +15096,7 @@
    "question": "Whether School Management Committee (SMC) and School Management and Development \u2014 Number of SMDC meetings held during the last academic year",
    "values": null,
    "dcf_year": "2018-19",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -14025,6 +15148,7 @@
    "question": "Whether School Management Committee (SMC) and School Management and Development \u2014 Whether SMDC has prepared School Improvement Plan?                                                    (Yes=1, No=2)",
    "values": null,
    "dcf_year": "2018-19",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -14058,6 +15182,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14091,6 +15216,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14132,6 +15258,7 @@
    "question": "Availability of free text books, Teaching Learning Material (TLM), Play material (in current academic",
    "values": null,
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -14179,6 +15306,7 @@
    "question": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -14226,6 +15354,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14269,6 +15398,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14314,6 +15444,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14355,6 +15486,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14388,6 +15520,7 @@
    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -14441,6 +15574,7 @@
    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -14494,6 +15628,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14539,6 +15674,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14576,6 +15712,7 @@
    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -14621,6 +15758,7 @@
    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -14674,6 +15812,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14719,6 +15858,7 @@
    "question": "Subjects taught in school: \u2014 Curriculum followed by School in UPPER PRIMARY Section?",
    "values": "1-NCERT / 2-State / 3-Others",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -14772,6 +15912,7 @@
    "question": "Year of upgradation of the school (if applicable): \u2014 Upper Primary to Secondary:",
    "values": null,
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
    "dormant_2025_26": false,
@@ -14825,6 +15966,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14870,6 +16012,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14915,6 +16058,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14956,6 +16100,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -14999,6 +16144,7 @@
    "question": "Details of the Special Educator \u2014 Diploma/Degree in Special Education in :",
    "values": "1-Dedicated, 2-At block/cluster level, 3-No",
    "dcf_year": "2026-27",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -15040,6 +16186,7 @@
    "question": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Is the Anganwadi Worker trained in early childhood education :",
    "values": "1-Yes, 2-No",
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -15083,6 +16230,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15124,6 +16272,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15167,6 +16316,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15194,6 +16344,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15239,6 +16390,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15284,6 +16436,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15317,6 +16470,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15360,6 +16514,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15397,6 +16552,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15442,6 +16598,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15475,6 +16632,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15522,6 +16680,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15573,6 +16732,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15618,6 +16778,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15659,6 +16820,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15698,6 +16860,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15741,6 +16904,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15774,6 +16938,7 @@
    "question": "Teachers and Instructors Details by (Including Head Master/Mistress) \u2014 Whether received training in FLN-NISHTHA?",
    "values": "1-General, 2-SC, 3-ST, 4-OBC",
    "dcf_year": "2021-22",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -15813,6 +16978,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15852,6 +17018,36 @@
    "question": "Number of Teaching Staff In-position",
    "values": "count",
    "dcf_year": "2025-26",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "3.2",
+     "line": "Number of Teaching staff in Position"
+    },
+    "2020-21": {
+     "item": "3.2",
+     "line": "Number of Teaching Staff In-position"
+    },
+    "2021-22": {
+     "item": "3.2",
+     "line": "Number of Teaching Staff In-position:"
+    },
+    "2022-23": {
+     "item": "3.2",
+     "line": "Number of Teaching Staff In-position:"
+    },
+    "2024-25": {
+     "item": "3.2",
+     "line": "Teaching / Non-Teaching Staffs in-position"
+    },
+    "2025-26": {
+     "item": "3.2",
+     "line": "Total Teaching Staff in Position [(a)+(b)]"
+    },
+    "2026-27": {
+     "item": "3.2",
+     "line": "Total Teaching Staff in Position [(a)+(b)]"
+    }
+   },
    "dcf_line": "Total Teaching Staff in Position [(a)+(b)]",
    "dcf_how": "curated",
    "dormant_2025_26": false,
@@ -15896,6 +17092,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15940,6 +17137,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -15979,6 +17177,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -16018,6 +17217,7 @@
    "question": "Enrolment By Grade for children with special needs",
    "values": null,
    "dcf_year": "2020-21",
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -16061,6 +17261,7 @@
    "question": null,
    "values": null,
    "dcf_year": null,
+   "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": null,
    "dormant_2025_26": false,
@@ -16241,8 +17442,8 @@
     "rain_water_harvesting"
    ],
    "kind": "coding",
-   "what": "A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative.",
-   "cost": "We read boundary_wall = 1 as 'has a wall'. We reported that 50.0% of government schools fail the RTE norm. Only code 5 means no wall. The correct figure is 25.1%.",
+   "what": "A column that looks like a yes/no carries more codes than yes and no. boundary_wall has eight types. electricity_availability, solar_panel and rain_water_harvesting each carry a third code, 'yes but not functional'. Read `= 1` as the affirmative and every other code silently becomes a negative. Read this column's own code list, shown above, before averaging anything.",
+   "cost": "The worked example is boundary_wall. We read `= 1` as 'has a wall' and reported that 50.0% of government schools fail the RTE norm. Only code 5 means no wall. The correct figure is 25.1%.",
    "check": "Compare the count of distinct values in the data against the count of codes in that year's DCF.",
    "fix": "-- WRONG: counts every non-pucca barrier as a failure\navg(case when boundary_wall = 1 then 100.0 else 0 end)\n\n-- RIGHT: code 5 is the only 'no wall'; 1,2,3,4,7 all secure the building\navg(case when boundary_wall = 5 then 100.0 else 0 end)  -- share with NO wall\navg(case when boundary_wall in (1,2,3,4,7) then 100.0 else 0 end)  -- share secured"
   },

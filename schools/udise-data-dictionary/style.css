@@ -412,3 +412,11 @@ code.dead { color: var(--ink-faint); text-decoration: line-through; }
   border-radius: 2px; padding: .3rem .55rem; cursor: pointer; text-decoration: none;
 }
 #appbar .btn:hover { color: var(--accent); border-color: var(--accent); }
+
+/* per-form trace ---------------------------------------------------------- */
+.trace { margin-top: 8px; font-size: 12.5px; color: var(--ink-soft); }
+.trace .k2 { font-family: var(--mono); font-size: 11px; letter-spacing: .06em;
+             text-transform: uppercase; color: var(--ink-faint); margin-right: 4px; }
+.trace-drift { margin-top: 6px; border-left: 2px solid var(--chg); padding-left: 9px; }
+.trace-drift .tw { margin: 4px 0; }
+.trace-drift .yrs { font-family: var(--mono); font-size: 11px; color: var(--chg); display: block; }

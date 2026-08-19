@@ -3244,7 +3244,7 @@
    "references": "DCF item 2.4",
    "scopeNote": "1-Pucca, 2-Pucca but broken, 3-Barbed wire fencing, 4-Hedges, 5-No boundary walls, 6-Others, 7-Partial, 8-Under Construction",
    "note": [
-    "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
+    "type-code-as-binary: A column that looks like a yes/no carries more codes than yes and no. boundary_wall has eight types. electricity_availability, solar_panel and rain_water_harvesting each carry a third code, 'yes but not functional'. Read `= 1` as the affirmative and every other code silently becomes a negative. Read this column's own code list, shown above, before averaging anything."
    ]
   },
   {
@@ -3609,7 +3609,7 @@
    "references": "DCF item 2.5(a)",
    "scopeNote": "1-Yes, 2-No, 3-Yes but not Functional",
    "note": [
-    "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
+    "type-code-as-binary: A column that looks like a yes/no carries more codes than yes and no. boundary_wall has eight types. electricity_availability, solar_panel and rain_water_harvesting each carry a third code, 'yes but not functional'. Read `= 1` as the affirmative and every other code silently becomes a negative. Read this column's own code list, shown above, before averaging anything."
    ]
   },
   {
@@ -4543,7 +4543,7 @@
    "references": "DCF item 2.10",
    "scopeNote": "1-Yes, 2-No, 3-Yes but not functional",
    "note": [
-    "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
+    "type-code-as-binary: A column that looks like a yes/no carries more codes than yes and no. boundary_wall has eight types. electricity_availability, solar_panel and rain_water_harvesting each carry a third code, 'yes but not functional'. Read `= 1` as the affirmative and every other code silently becomes a negative. Read this column's own code list, shown above, before averaging anything."
    ]
   },
   {
@@ -4663,7 +4663,7 @@
    "references": "DCF item 2.5(b)",
    "scopeNote": "1-Yes, 2-No, 3-Yes but not Functional",
    "note": [
-    "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
+    "type-code-as-binary: A column that looks like a yes/no carries more codes than yes and no. boundary_wall has eight types. electricity_availability, solar_panel and rain_water_harvesting each carry a third code, 'yes but not functional'. Read `= 1` as the affirmative and every other code silently becomes a negative. Read this column's own code list, shown above, before averaging anything."
    ]
   },
   {

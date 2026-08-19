@@ -251,7 +251,8 @@ function showField(id) {
                  outputs, where an auditor wants all of them. */
              {auto: '<span class="pill warn">matched on words</span>',
              }[f.dcf_how] || (f.dcf_how ? "" :
-               '<span class="pill warn">source not recorded</span>')}</div>`
+               '<span class="pill warn">source not recorded</span>')}</div>
+         ${traceHTML(f)}`
       : `<p class="detail-empty" style="margin:0">This column is not yet matched to a form item.
          The Data Capture Format side of this dictionary is filled in by hand, one item at a time,
          and ${state.data.meta.counts.with_dcf_wording} of ${state.data.meta.counts.fields} columns
@@ -285,6 +286,30 @@ function valuesHTML(raw) {
    reader needs and it was not on this page at all. Where a column spans the
    2022-23 break the two schema documents can word it differently, so both are
    shown with the era each belongs to, rather than one silently winning. */
+/* The item number is a per-year address, and the wording itself can move.
+   The trace quotes the matched line from every form on disk, so a rewording
+   shows instead of being flattened. It is a text match and the label says so. */
+function traceHTML(f) {
+  const t = f.dcf_trace || {};
+  const years = Object.keys(t).sort();
+  if (years.length < 2) return "";
+  const norm = (x) => x.toLowerCase().replace(/\(1-.*$/, "").replace(/[^a-z ]+/g, " ")
+    .replace(/\s+/g, " ").trim();
+  const wordings = [...new Set(years.map((y) => norm(t[y].line)))];
+  const items = years.map((y) => `${esc(y)} <code>${esc(t[y].item)}</code>`).join(" · ");
+  let drift = "";
+  if (wordings.length > 1) {
+    const byW = {};
+    years.forEach((y) => { (byW[norm(t[y].line)] ||= []).push(y); });
+    drift = `<div class="trace-drift"><b>The wording moves between forms.</b>` +
+      Object.entries(byW).map(([, ys]) =>
+        `<div class="tw"><span class="yrs">${ys.map(esc).join(", ")}</span>
+         ${esc(t[ys[0]].line)}</div>`).join("") + `</div>`;
+  }
+  return `<div class="trace"><span class="k2">Item by form, traced by text:</span>
+    ${items}${drift}</div>`;
+}
+
 function officialHTML(f) {
   const o = f.official || [];
   if (!o.length) {
