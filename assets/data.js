@@ -39,7 +39,7 @@ window.CONSTANTS = CONSTANTS;
 // to within rounding. NOTE: spend/spend_data.py's ext_*_nominal / state_vals_
 // nominal arrays use the SAME Table-1 totals but a different (population-
 // corrected, TG2020-style) denominator — the two series legitimately diverge
-// by design; see memory/verified_facts.md 2026-07-06 entry before "fixing".
+// by design; verified 2026-07-06 in the internal fact ledger before "fixing".
 const YEARS = ['2014-15','2015-16','2016-17','2017-18','2018-19','2019-20','2020-21'];
 
 const STATE_DATA = {
@@ -126,7 +126,7 @@ const LEGISLATION = {
 
 // The six States that fund public libraries through a WORKING (operative) cess —
 // the funding model the /act/ letters hold up (Tamil Nadu 1948 is the parent,
-// Kerala the reform). Primary read: research/library-law/bare-acts-comparative-analysis.md
+// Kerala the reform). Primary read: the campaign's bare-act comparative ledger (internal).
 // (matches evidence/charts/state-acts.json cess="operative").
 const OPERATIVE_CESS = ["Tamil Nadu", "Andhra Pradesh", "Telangana", "Karnataka", "Kerala", "Goa"];
 

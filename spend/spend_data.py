@@ -16,7 +16,7 @@ years_all     = years_balaji + years_ext
 # CAG Combined Finance & Revenue Accounts (all-India matrix, via KBD). 2021-22→2024-25
 # rebuilt from per-State CAG Finance Accounts Vol-II + State budget Detailed Estimates —
 # 31 States/UTs each read from the source document (~250 verified per-state cells;
-# provenance: notes/research/library-fiscal-2026-07-08/master_per_state_series.json).
+# provenance: the internal per-state master series, assembled 2026-07-08).
 # The v2 CAGR projection for 2021-24 is RETIRED — it was wrong in both directions
 # (overstated 2023-24, understated the Tamil-Nadu-driven 2024-25 surge).
 # A: Nominal total / Census 2011 India population (fixed) — Balaji's method
@@ -113,7 +113,7 @@ state_vals_nominal = [0.14,0.36,0.94,0.98,1.09,1.22,1.26,1.48,1.49,1.79,3.33,4.3
 # TG2020-style population), not the as-published Census-2011-denominator figures.
 # assets/data.js STATE_DATA holds the as-published series instead (verified to
 # reproduce KBD 2025's own reported per-capita numbers) — the two legitimately
-# diverge by design; see memory/verified_facts.md 2026-07-06 entry.
+# diverge by design; verified 2026-07-06 in the internal fact ledger.
 
 ext_assam_nominal     = [3.99,3.42,3.72,5.20,4.71,4.70,4.92, 4.87,4.42,7.84,6.97]
 ext_goa_nominal       = [66.52,90.59,96.69,113.23,118.76,130.42,132.00, None,163.38,245.19,284.17]

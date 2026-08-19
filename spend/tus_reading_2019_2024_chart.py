@@ -2,7 +2,7 @@
 TUS 2019 vs 2024 reading-for-leisure (code 841) change — by caste, quintile, education.
 
 Data: notes/poc/tus/results_tus2019.tsv and results_tus2024.tsv
-Output: notes/research/fig-tus-reading-841-change.pdf (+ png)
+Output: fig-tus-reading-841-change.pdf (+ png), kept in the internal research tree
 """
 import pandas as pd
 import matplotlib.pyplot as plt

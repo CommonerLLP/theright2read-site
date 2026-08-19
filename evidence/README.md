@@ -7,7 +7,7 @@ into a page, a Substack post, or a brief by `<iframe>`. No proprietary SaaS, no
 trackers. Design follows the site v2 language via `../assets/tokens.css` (NO green —
 the green in `styles.css` is a game-signal colour only).
 
-Spec + decisions: `../notes/plans/charts-theright2read-org-sketch.md`.
+Spec + decisions: the campaign's internal chart plan (not in this repo).
 
 ## How it's served
 Subtree of `theright2read`, published on **GitHub Pages** at
@@ -40,7 +40,7 @@ For Substack (which won't iframe arbitrary domains): open the chart, click
      "title":"…", "subtitle":"…", "source":"…", "caption":"…", "data":[…] }
    ```
 2. Register it in `manifest.json` (slug + renderer + title).
-3. Numbers come from `../memory/verified_facts.md` / the Zotero corpus — auditable,
+3. Numbers come from the campaign's verified-fact ledger / the Zotero corpus — auditable,
    no live DB. Verify before shipping (repo rule).
 
 ## Two renderers, keyed off `renderer`

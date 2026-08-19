@@ -243,15 +243,15 @@ function showField(id) {
     ${f.question
       ? `<div class="q">${esc(f.question)}</div>
          <div class="ds-line" style="margin-top:6px">DCF item ${esc(f.dcf_item)}${
-           f.dcf_year && f.dcf_year !== "all"
-             ? ", read from the " + esc(f.dcf_year) + " form"
-             : f.dcf_year === "all" ? ", present in every form"
-             : ' <span class="pill warn">form year not recorded</span>'}
-           ${f.dcf_how === "auto"
-             ? '<span class="pill warn">matched on shared words</span>'
-             : f.dcf_how === "structural"
-               ? '<span class="pill ok">read off the enrolment grid</span>'
-               : '<span class="pill ok">checked against the form</span>'}</div>`
+           f.dcf_year && f.dcf_year !== "all" ? ", " + esc(f.dcf_year) + " form"
+             : f.dcf_year === "all" ? ", every form" : ""}
+           ${/* A pill only where the reader should hesitate. Silence means a
+                 person or a printed grid settled it, which is the normal case
+                 and needs no label. Every grade stays in the machine-readable
+                 outputs, where an auditor wants all of them. */
+             {auto: '<span class="pill warn">matched on words</span>',
+             }[f.dcf_how] || (f.dcf_how ? "" :
+               '<span class="pill warn">source not recorded</span>')}</div>`
       : `<p class="detail-empty" style="margin:0">This column is not yet matched to a form item.
          The Data Capture Format side of this dictionary is filled in by hand, one item at a time,
          and ${state.data.meta.counts.with_dcf_wording} of ${state.data.meta.counts.fields} columns
@@ -465,14 +465,6 @@ function renderChanges() {
       what moved.</p>
     <div class="evt-bars">${bars}</div>
     <div id="evt-detail"></div>
-    <div class="evt-foot">
-      <h3>Why five actions and not two</h3>
-      <p>A diff of two column lists reports only INSERT and DELETE. The other three are
-        inferred, and each was confirmed by hand against the Data Capture Format before it
-        appeared here. A rename proposed by the matcher and rejected on review is shown too,
-        under the boundary it was proposed at, because a rejected rename is the evidence that
-        the accepted ones were checked.</p>
-    </div>
   </div>`;
 
   $$(".evt-bar", $("#changes-view")).forEach((el) => {
@@ -502,7 +494,7 @@ function showEvent(e, struct, recode, spanning) {
     evtFilterBtn("Removed", "DELETE", del.length, f),
     evtFilterBtn("Split or merged", "STRUCT", struct.length, f),
     evtFilterBtn("Recoded", "RECODE", recode.length, f),
-    rej.length ? evtFilterBtn("Rejected on review", "REJ", rej.length, f) : "",
+    "",   // the refusals are in the data, not on the page
   ].join("");
 
   const show = (k) => f === "ALL" || f === k;
@@ -515,14 +507,14 @@ function showEvent(e, struct, recode, spanning) {
       Data Capture Format for both years and saw the same question. <b>Name similarity only</b>
       means the two names look alike and nothing else in the file looks closer — a lead, not a
       finding. At the 2022-23 break this test proposed 15 renames and 5 were wrong.</p>
-    <table><thead><tr><th>was</th><th>became</th><th>file</th>
+    <div class="tscroll"><table><thead><tr><th>was</th><th>became</th><th>file</th>
       <th>how we know it is the same column</th></tr></thead>
     <tbody>${ren.map((c) => `<tr><td><code>${esc(c.from)}</code></td>
       <td><code>${esc(c.to)}</code></td><td>${esc(c.dataset)}</td>
       <td>${c.confidence === "confirmed"
         ? '<span class="pill ok">read off the form</span> '
         : '<span class="pill warn">name similarity only</span> '}${esc(c.basis || "")}</td></tr>`).join("")}
-    </tbody></table></div>` : "";
+    </tbody></table></div></div>` : "";
 
   const listBlock = (title, why, arr, kind) => arr.length && show(kind)
     ? `<div class="evt-block"><h4>${title} — ${arr.length}</h4>
@@ -553,13 +545,11 @@ function showEvent(e, struct, recode, spanning) {
         <div class="sdetail">${esc(r.detail)} <span class="ds">${esc(r.dataset)}</span></div></div>
     </div>`).join("")}</div>` : "";
 
-  const rejBlock = rej.length && show("REJ") ? `<div class="evt-block">
-    <h4>Proposed renames rejected on review — ${rej.length}</h4>
-    <p class="evt-why">The matcher proposed these. A human read the form and refused them.
-      Rejecting one frees its target for the next candidate, which is how the merge above
-      was found.</p>
-    <table><tbody>${rej.map((c) => `<tr><td><code>${esc(c.from)}</code> →
-      <code>${esc(c.candidate)}</code></td><td>${esc(c.why)}</td></tr>`).join("")}</tbody></table></div>` : "";
+  // The seven refused rename candidates stay in udise_browser.json, where an
+  // auditor can read them, and out of the page. A reader wants what changed.
+  // How the ledger was typed is method, not a finding. The block also rendered
+  // two files as one duplicate row, because it dropped the dataset.
+  const rejBlock = "";
 
   const spanNote = spanning.length ? `<div class="evt-span">Still in force across this
     boundary: ${spanning.map((r) => `<code>${esc(r.field)}</code> recoded ${esc(r.from_year)}
@@ -704,21 +694,22 @@ function renderMissing() {
     Accountability: "Whether a school can account for its own books, computers and sports equipment.",
     Scheme: "A scheme's own schools cannot be identified in the census that monitors the scheme.",
   };
+  const n = state.data.never_released.length;
   const lede = `<p class="lede">Every other surface on this page starts from a column.
-    These sixteen questions produced none. The school answered them, every year, and no
+    These ${n} questions produced none. The school answered them, every year, and no
     public file carries the answer, so there is nothing to click and nothing to join.
     They are here because a dictionary that lists only what was released describes the
     release, not the instrument.</p>`;
   const body = ORDER.filter((g) => groups[g]).map((g) => `
     <h3>${esc(g)} <span class="pill">${groups[g].length}</span></h3>
     ${NOTE[g] ? `<p>${esc(NOTE[g])}</p>` : ""}
-    <table><thead><tr><th>DCF item</th><th>the question, verbatim</th><th>values</th>
+    <div class="tscroll"><table><thead><tr><th>DCF item</th><th>the question, verbatim</th><th>values</th>
       <th>asked</th><th>variable</th></tr></thead>
     <tbody>${groups[g].map((m) => `<tr>
       <td><code>${esc(m.dcf)}</code></td>
       <td>${esc(m.question)}${m.why_it_matters ? `<div class="why-m">${esc(m.why_it_matters)}</div>` : ""}</td>
       <td><code>${esc(m.values)}</code></td><td>${esc(m.asked)}</td>
-      <td><span class="pill warn">never shared</span></td></tr>`).join("")}</tbody></table>`).join("");
+      <td><span class="pill warn">never shared</span></td></tr>`).join("")}</tbody></table></div>`).join("");
 
   $("#missing-view").innerHTML = `<div class="wrap">
     ${lede}
@@ -733,10 +724,11 @@ function renderMissing() {
       unworkable once states fill it in. An item reaches the form a year before the pipeline behind
       it exists. UDISE+ has held back weak columns before. That is the right thing to do with a
       number nobody should quote.</p>
-    <p>No release note accounts for any of the sixteen here. They are also not a random sixteen.
+    <p>No release note accounts for any of the ${n} here. They are also not a random ${n}.
       How a school takes attendance. Whether it enrolled out-of-school children. Whether anyone
-      uses the library. Each answer would be quoted back at somebody. Both readings fit the record.
-      Only the release policy separates them, and that needs an RTI.</p>
+      uses the library. Whether a school employs anyone to run that library. Each answer would be
+      quoted back at somebody. Both readings fit the record. Only the release policy separates
+      them, and that needs an RTI.</p>
   </div>`;
 }
 

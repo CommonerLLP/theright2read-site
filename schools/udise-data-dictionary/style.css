@@ -146,7 +146,18 @@ a { color: var(--accent); }
 .filter { border: 1px solid var(--line); background: var(--panel); padding: 4px 11px; border-radius: 3px;
           font: inherit; font-size: 12.5px; cursor: pointer; color: var(--ink-soft); }
 .filter.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 8px 0 4px; }
+/* A table sat at width:100% of an 1100px wrap while prose stopped at 74ch, so
+   the two read as different columns and the spare width opened a gap between
+   the question and its values. Let the columns hug their content and cap the
+   table near the reading measure, so a table and a paragraph share an edge. */
+table { border-collapse: collapse; width: auto; max-width: min(100%, 92ch);
+        font-size: 13px; margin: 8px 0 4px; }
+table.wide { max-width: 100%; }
+/* A wide table must scroll inside its own box. The page overflowed 104px at
+   360px wide, which is the floor this site is built to. Measured with Brave at
+   360x900 on 2026-08-19; the overflow predates the table-measure change. */
+.tscroll { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.tscroll > table { min-width: 34rem; }
 th, td { text-align: left; padding: 5px 9px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
 th { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-faint); }
 td.n { text-align: right; font-family: var(--mono); }

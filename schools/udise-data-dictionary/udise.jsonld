@@ -742,7 +742,7 @@
    "historyNote": [
     "total_teacher -> total_tch: DCF item 3.2 'Number of Teaching Staff In-position' carries a grid whose right-hand column is headed 'Total Number of Teaching Staff'. The item and the heading are identical in the 2021-22 and 2022-23 forms. The Ministry's schema describes the pair as 'Total Number of Teacher' and then 'No. of teachers in school'. An earlier version of this entry said no form item stated the count. That was wrong, and Codex caught it: the search had used the phrasings 'total number of teachers' and 'teachers in position', and the form says 'Teaching Staff In-position'"
    ],
-   "definition": "Number of teaching staff in position"
+   "definition": "Number of Teaching Staff In-position"
   },
   {
    "@id": "udise:series.profile_data_1.psuedocode",
@@ -3210,7 +3210,7 @@
     "a person opened the form and read the item",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cBook bank available in school\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 2.12 in the 2018-19 form (register says 2.11(a))",
+   "references": "DCF item 2.11(a)",
    "scopeNote": "1-Yes, 2-No",
    "note": [
     "state-conventions: DCF 2.11(a) is one question with three rows. Karnataka government schools report 89.6% book bank. Rajasthan reports 17.6%."
@@ -3241,7 +3241,7 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cType of boundary wall\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cType of boundary wall in school\u201d"
    ],
-   "references": "DCF item 2.3 in the 2018-19 form (register says 2.4)",
+   "references": "DCF item 2.4",
    "scopeNote": "1-Pucca, 2-Pucca but broken, 3-Barbed wire fencing, 4-Hedges, 5-No boundary walls, 6-Others, 7-Partial, 8-Under Construction",
    "note": [
     "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
@@ -3606,7 +3606,7 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201celectricity connection available in the School\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cElectricity connection available in school\u201d. Remarks: 1:Yes,2:No, 3:Yes, but not functional"
    ],
-   "references": "DCF item 2.1 in the 2020-21 form (register says 2.5(a))",
+   "references": "DCF item 2.5(a)",
    "scopeNote": "1-Yes, 2-No, 3-Yes but not Functional",
    "note": [
     "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
@@ -3705,7 +3705,7 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of students for whom Furniture available\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of students for whom Furniture available in school\u201d"
    ],
-   "references": "DCF item 2.18 in the 2021-22 form (register says 2.19)",
+   "references": "DCF item 2.19",
    "scopeNote": "1-Yes, 2-No, 3-Partial"
   },
   {
@@ -3933,7 +3933,7 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Internet\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cInternet Availability in school\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 2.23 in the 2021-22 form (register says 2.26)",
+   "references": "DCF item 2.26",
    "scopeNote": "1-Yes, 2-No"
   },
   {
@@ -3953,7 +3953,7 @@
     "a person opened the form and read the item",
     "Shared 2025-26 as smallint, described as \u201cWhether Kitchen Garden is available in school\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 2.17 in the 2018-19 form (register says 2.17(a))",
+   "references": "DCF item 2.17(a)",
    "scopeNote": "1-Yes, 2-No"
   },
   {
@@ -3973,7 +3973,7 @@
     "a person opened the form and read the item",
     "Shared 2025-26 as smallint, described as \u201cWhether land is available for expansion of school facilities\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 2.5 in the 2018-19 form (register says 2.12(b))",
+   "references": "DCF item 2.12(b)",
    "scopeNote": "1-Yes, 2-No"
   },
   {
@@ -4071,7 +4071,7 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cLibrary Available in School\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cLibrary Available in school\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 2.12 in the 2018-19 form (register says 2.11(a))",
+   "references": "DCF item 2.11(a)",
    "scopeNote": "1-Yes, 2-No"
   },
   {
@@ -4116,13 +4116,13 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Whether medical check-ups of students were conducted",
+   "definition": "Whether Health check-up of students was conducted",
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cacademic year\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cMedical check-up of students conducted in last academic year in school\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 2.1 in the 2020-21 form (register says 2.16)",
+   "references": "DCF item 2.14(a)",
    "scopeNote": "1-Yes, 2-No"
   },
   {
@@ -4540,7 +4540,7 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have provision for rain water harvesting\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool have provision for rain water harvesting\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 2.7 in the 2021-22 form (register says 2.10)",
+   "references": "DCF item 2.10",
    "scopeNote": "1-Yes, 2-No, 3-Yes but not functional",
    "note": [
     "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
@@ -4566,7 +4566,7 @@
     "a person opened the form and read the item",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cReading corner available in school\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 2.12 in the 2018-19 form (register says 2.11(a))",
+   "references": "DCF item 2.11(a)",
    "scopeNote": "1-Yes, 2-No",
    "note": [
     "state-conventions: DCF 2.11(a) is one question with three rows. Karnataka government schools report 89.6% book bank. Rajasthan reports 17.6%."
@@ -4660,7 +4660,7 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cSolar panel available in School\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cSolar panel available in school\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 11.4 in the 2018-19 form (register says 2.5(b))",
+   "references": "DCF item 2.5(b)",
    "scopeNote": "1-Yes, 2-No, 3-Yes but not Functional",
    "note": [
     "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
@@ -4926,7 +4926,7 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Classrooms used for instructional purposes\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Classrooms used for instructional purpose in school\u201d"
    ],
-   "references": "DCF item 2.4(a) in the 2024-25 form (register says 2.3(a))",
+   "references": "DCF item 2.3(a)",
    "scopeNote": "count"
   },
   {
@@ -5838,12 +5838,12 @@
    "valid": [
     "2025-26"
    ],
-   "definition": "Year of establishment of the school",
+   "definition": "Year of Establishment of school",
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2025-26 as smallint, described as \u201cYear of Establishment of school\u201d"
    ],
-   "references": "DCF item 1.20 in the 2018-19 form (register says 1.x)",
+   "references": "DCF item 1.23",
    "scopeNote": "year"
   },
   {
@@ -6314,7 +6314,7 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cMinority managed school\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cIs this a minority managed school?\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 1.26 in the 2018-19 form (register says 1.28)",
+   "references": "DCF item 1.28",
    "scopeNote": "1-Yes, 2-No; then 1-Muslim, 2-Sikh, 3-Jain, 4-Christian, 5-Parsi, 6-Buddhist, 8-Linguistic Minority",
    "note": [
     "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
@@ -9554,12 +9554,12 @@
    "altLabel": [
     "total_teacher"
    ],
-   "definition": "Number of teaching staff in position",
+   "definition": "Number of Teaching Staff In-position",
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers in school\u201d"
    ],
-   "references": "DCF item 3.2 in the 2018-19 form (register says 3.1)",
+   "references": "DCF item 3.2",
    "scopeNote": "count"
   },
   {
