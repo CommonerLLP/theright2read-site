@@ -376,11 +376,39 @@ function showDetailEmpty(msg) {
       <div class="go"><code>${esc(e.field_id.split(".").pop())}</code> →</div>
     </div>`).join("");
   const q = (t) => `<a class="exq" data-q="${esc(t)}">${esc(t)}</a>`;
+  /* THE RELEASE COMES FIRST. A reader must learn what the portal hands them
+     before any column detail means anything: six files per year, zipped CSVs,
+     keyed on the pseudonymised school code. Column counts are computed from
+     the payload. The grain is a property of each file, measured 2026-08-19
+     against the 2025-26 release: four files carry one row per school; the two
+     enrolment files carry one row per school PER CATEGORY GRID, which is the
+     single most common thing a first-time reader gets wrong. */
+  const FILE_DESC = {
+    profile_data_1: ["identity, location, management, recognition", "one row per school"],
+    profile_data_2: ["grants, RTE, committees, incentives", "one row per school"],
+    facility_data: ["buildings, toilets, water, library, computers", "one row per school"],
+    teacher_data: ["teacher headcounts by qualification and caste", "one row per school"],
+    enrolment_data_1: ["enrolment by class, sex and social category", "several rows per school — one per category grid"],
+    enrolment_data_2: ["enrolment by age, medium and minority group", "several rows per school — one per category grid"],
+  };
+  const colsBy = {};
+  state.data.fields.forEach((f) => { colsBy[f.dataset] = (colsBy[f.dataset] || 0) + 1; });
+  const schema = Object.entries(FILE_DESC).map(([ds, [what, grain]]) => `
+    <tr><td><code>${ds}</code></td><td>${what}</td><td class="n">${colsBy[ds] || 0}</td>
+    <td>${grain}</td></tr>`).join("");
   $("#detail").innerHTML = `
     <div class="orient">
-      <h2>${esc(msg || "Pick a section, or search for a column")}</h2>
+      <h2>${esc(msg || "What the portal shares")}</h2>
       <p>UDISE+ is the school census every official number about Indian schooling starts
-        from. This is a guide to the columns it releases: what the form asked, what the
+        from. Its Data Sharing Portal releases <strong>six files per year</strong> —
+        zip archives of CSVs, one set per academic year since 2018-19. No file carries
+        the school's name or its 11-digit UDISE code. The key is a pseudonymised
+        <code>pseudocode</code>.</p>
+      <div class="tscroll"><table>
+        <thead><tr><th>file</th><th>holds</th><th class="n">columns</th><th>grain</th></tr></thead>
+        <tbody>${schema}</tbody>
+      </table></div>
+      <p>This dictionary documents every column in them: what the form asked, what the
         codes mean, which years carry the column, and what breaks if you join two years.
         Choose a section on the left, or search a subject like ${q("library")},
         ${q("librarian")}, ${q("boundary")}, ${q("rte")} or ${q("toilet")} to see every
