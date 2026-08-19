@@ -2496,7 +2496,7 @@ udise:facility_data.other_rooms a skos:Concept ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
     skos:definition "Details of Rooms other than Classrooms (excluding toilets)"@en ;
-    skos:editorialNote "Question: a person opened the form and read the item, from the 2024-25 Data Capture Format."@en ;
+    skos:editorialNote "Question: a person opened the form and read the item, from the 2023-24 Data Capture Format."@en ;
     dct:references "DCF item 2.6" ;
     skos:scopeNote "count"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Total number of rooms other than classrooms”"@en ;
@@ -5971,7 +5971,7 @@ udise:asked-01 a skos:Concept ;
     skos:inScheme udise:scheme ;
     skos:prefLabel "Number of Non-teaching/Administrative and Support staff(s) in-Position — Library Assistant"@en ;
     dct:references "DCF item 3.1(e)" ;
-    dct:temporal "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)" ;
+    dct:temporal "all nine rounds, 2018-19 to 2026-27 (2019-20 verified from Delhi's rendition of the round)" ;
     skos:scopeNote "count"@en ;
     dct:provenance "Never shared. The Ministry asked this of every school and released no column for it."@en ;
     dct:subject "Library"@en .
@@ -5980,7 +5980,7 @@ udise:asked-02 a skos:Concept ;
     skos:inScheme udise:scheme ;
     skos:prefLabel "Number of Non-teaching/Administrative and Support staff(s) in-Position — Accountant, UDC/Head Clerk, Peon/MTS, Laboratory Assistant, Library Assistant, LDC, Night Watchman"@en ;
     dct:references "DCF item 3.1(a)-(g)" ;
-    dct:temporal "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)" ;
+    dct:temporal "all nine rounds, 2018-19 to 2026-27 (2019-20 verified from Delhi's rendition of the round)" ;
     skos:scopeNote "count per type"@en ;
     dct:provenance "Never shared. The Ministry asked this of every school and released no column for it."@en ;
     dct:subject "Staff"@en .
@@ -5989,7 +5989,7 @@ udise:asked-03 a skos:Concept ;
     skos:inScheme udise:scheme ;
     skos:prefLabel "Does the school subscribe to newspapers/magazines?"@en ;
     dct:references "DCF item 2.11(c)" ;
-    dct:temporal "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)" ;
+    dct:temporal "all nine rounds, 2018-19 to 2026-27 (2019-20 verified from Delhi's rendition of the round)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
     dct:provenance "Never shared. The Ministry asked this of every school and released no column for it."@en ;
     dct:subject "Library"@en .
@@ -5998,7 +5998,7 @@ udise:asked-04 a skos:Concept ;
     skos:inScheme udise:scheme ;
     skos:prefLabel "Number of times Library books have been borrowed /read by children"@en ;
     dct:references "DCF item 2.11(d)" ;
-    dct:temporal "2021-22 to 2026-27 (absent from the held 2018-19 and 2020-21 forms; 2023-24 form not held)" ;
+    dct:temporal "2021-22 to 2026-27 (absent from the 2018-19, 2019-20 and 2020-21 forms)" ;
     skos:scopeNote "count"@en ;
     dct:provenance "Never shared. The Ministry asked this of every school and released no column for it."@en ;
     dct:subject "Library"@en .

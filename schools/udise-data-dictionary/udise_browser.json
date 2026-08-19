@@ -3878,6 +3878,10 @@
      "item": "2.15",
      "line": "If 1-Yes, whether Hand-rails for ramp are available? (1-Yes, 2-No)"
     },
+    "2023-24": {
+     "item": "2.15",
+     "line": "If 1-Yes, whether Hand-rails for ramp are available? (1-Yes, 2-No)"
+    },
     "2024-25": {
      "item": "2.15",
      "line": "If 1-Yes, whether Hand-rails for ramp are available? (1-Yes,2-No)"
@@ -3952,6 +3956,10 @@
     },
     "2022-23": {
      "item": "2.14",
+     "line": "Whether ramp for disabled children to access school building exists? (1-Yes, 2-No)"
+    },
+    "2023-24": {
+     "item": "2.15",
      "line": "Whether ramp for disabled children to access school building exists? (1-Yes, 2-No)"
     },
     "2024-25": {
@@ -4259,6 +4267,10 @@
      "item": "2.10(a)",
      "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
     },
+    "2023-24": {
+     "item": "2.11(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
     "2024-25": {
      "item": "2.11(a)",
      "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
@@ -4332,6 +4344,10 @@
      "line": "Type of Boundary Wall:"
     },
     "2022-23": {
+     "item": "2.3",
+     "line": "Type of Boundary Wall:"
+    },
+    "2023-24": {
      "item": "2.3",
      "line": "Type of Boundary Wall:"
     },
@@ -4418,6 +4434,10 @@
      "line": "Status of School Building?"
     },
     "2022-23": {
+     "item": "2.1",
+     "line": "Status of Present School Building?"
+    },
+    "2023-24": {
      "item": "2.1",
      "line": "Status of Present School Building?"
     },
@@ -4684,6 +4704,10 @@
    "release_key": null,
    "dcf_year": "2025-26",
    "dcf_trace": {
+    "2023-24": {
+     "item": "2.26",
+     "line": "Is Computer/ICT Lab available in school? (1-Yes, 2-No)"
+    },
     "2024-25": {
      "item": "2.26",
      "line": "Is Computer/ICT Lab available in school? (1-Yes, 2-No)"
@@ -5044,6 +5068,10 @@
      "item": "2.27(d)",
      "line": "(d) Access to DTH/TV channels"
     },
+    "2023-24": {
+     "item": "2.27(d)",
+     "line": "(d) Access to DTH/TV channels"
+    },
     "2024-25": {
      "item": "2.27(d)",
      "line": "(d) Access to DTH/TV channels"
@@ -5122,6 +5150,10 @@
     },
     "2022-23": {
      "item": "2.9(a)",
+     "line": "Whether electricity connection is available in the school?"
+    },
+    "2023-24": {
+     "item": "2.5(a)",
      "line": "Whether electricity connection is available in the school?"
     },
     "2024-25": {
@@ -5334,6 +5366,10 @@
      "item": "2.18",
      "line": "Does the school have furniture for students?"
     },
+    "2023-24": {
+     "item": "2.19",
+     "line": "Does the school have furniture for students?"
+    },
     "2024-25": {
      "item": "2.19",
      "line": "Does the school have furniture for students?"
@@ -5481,6 +5517,10 @@
      "line": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2023-24": {
      "item": "2.9(a)",
      "line": "(a) Main Source of Drinking Water:"
     },
@@ -5738,6 +5778,10 @@
    "release_key": null,
    "dcf_year": "2025-26",
    "dcf_trace": {
+    "2023-24": {
+     "item": "2.25(b)",
+     "line": "(b) Is the ICT Lab available in the school under Samagra Siksha? (1-Yes, 2-No)"
+    },
     "2024-25": {
      "item": "2.25(b)",
      "line": "(b) Is the ICT Lab available in the school under Samagra Siksha? (1-Yes, 2-No)"
@@ -5817,6 +5861,10 @@
      "item": "2.23",
      "line": "Does the School have Internet Facility? (1-Yes, 2-No)"
     },
+    "2023-24": {
+     "item": "2.25",
+     "line": "Does the School have Internet Facility? (1-Yes, 2-No)"
+    },
     "2024-25": {
      "item": "2.25",
      "line": "Does the School have Internet Facility? (1-Yes, 2-No)"
@@ -5884,6 +5932,10 @@
     },
     "2022-23": {
      "item": "2.16(a)",
+     "line": "Whether Kitchen Garden is available in school? (1-Yes, 2-No)"
+    },
+    "2023-24": {
+     "item": "2.17(a)",
      "line": "Whether Kitchen Garden is available in school? (1-Yes, 2-No)"
     },
     "2024-25": {
@@ -5959,6 +6011,10 @@
     },
     "2022-23": {
      "item": "2.11(a)",
+     "line": "Whether land is available for expansion of school facilities? (1-Yes, 2-No)"
+    },
+    "2023-24": {
+     "item": "2.12(a)",
      "line": "Whether land is available for expansion of school facilities? (1-Yes, 2-No)"
     },
     "2024-25": {
@@ -6124,6 +6180,10 @@
      "item": "2.11(b)",
      "line": "(b) Does the school have a full-time librarian? (1-Yes, 2-No)"
     },
+    "2023-24": {
+     "item": "2.11(b)",
+     "line": "(b) Does the school have a full-time librarian? (1-Yes, 2-No)"
+    },
     "2024-25": {
      "item": "2.11(b)",
      "line": "(b) Does the school have a full-time librarian? (1-Yes, 2-No)"
@@ -6206,6 +6266,10 @@
     },
     "2022-23": {
      "item": "2.10(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2023-24": {
+     "item": "2.11(a)",
      "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
     },
     "2024-25": {
@@ -6318,6 +6382,10 @@
     },
     "2022-23": {
      "item": "2.13(a)",
+     "line": "Whether Health check-up of students was conducted"
+    },
+    "2023-24": {
+     "item": "2.14(a)",
      "line": "Whether Health check-up of students was conducted"
     },
     "2024-25": {
@@ -6441,8 +6509,12 @@
    "question": "Details of Rooms other than Classrooms (excluding toilets)",
    "values": "count",
    "release_key": null,
-   "dcf_year": "2024-25",
+   "dcf_year": "2023-24",
    "dcf_trace": {
+    "2023-24": {
+     "item": "2.6",
+     "line": "Details of Rooms other than Classrooms (excluding toilets):"
+    },
     "2024-25": {
      "item": "2.6",
      "line": "Details of Rooms other than Classrooms (excluding toilets):"
@@ -6556,6 +6628,10 @@
      "item": "2.9(a)",
      "line": "(a) Main Source of Drinking Water:"
     },
+    "2023-24": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
     "2024-25": {
      "item": "2.9(a)",
      "line": "Main Source of Drinking Water:"
@@ -6656,6 +6732,10 @@
      "line": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2023-24": {
      "item": "2.9(a)",
      "line": "(a) Main Source of Drinking Water:"
     },
@@ -6801,6 +6881,10 @@
      "item": "2.12",
      "line": "Whether Playground facility is available in the School? (1-Yes, 2-No)"
     },
+    "2023-24": {
+     "item": "2.13",
+     "line": "Whether Playground facility is available in the School? (1-Yes, 2-No)"
+    },
     "2024-25": {
      "item": "2.13",
      "line": "Whether Playground facility is available in the School? (1-Yes, 2-No)"
@@ -6930,6 +7014,10 @@
      "line": "(f) Projector"
     },
     "2022-23": {
+     "item": "2.25",
+     "line": "(f) Projector"
+    },
+    "2023-24": {
      "item": "2.25",
      "line": "(f) Projector"
     },
@@ -7225,6 +7313,10 @@
      "item": "2.7",
      "line": "Does the school have provision for rain water harvesting?"
     },
+    "2023-24": {
+     "item": "2.10",
+     "line": "Does the school have provision for rain water harvesting?"
+    },
     "2024-25": {
      "item": "2.10",
      "line": "Does the school has provision for rain water harvesting?"
@@ -7305,6 +7397,10 @@
     },
     "2022-23": {
      "item": "2.10(a)",
+     "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
+    },
+    "2023-24": {
+     "item": "2.11(a)",
      "line": "Whether the school has Library facility/Book Bank/Reading Corner?"
     },
     "2024-25": {
@@ -7513,6 +7609,10 @@
      "line": "(b) Whether solar panel is available in school?"
     },
     "2022-23": {
+     "item": "2.5(b)",
+     "line": "(b) Whether solar panel is available in school?"
+    },
+    "2023-24": {
      "item": "2.5(b)",
      "line": "(b) Whether solar panel is available in school?"
     },
@@ -7775,6 +7875,10 @@
      "line": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2023-24": {
      "item": "2.9(a)",
      "line": "(a) Main Source of Drinking Water:"
     },
@@ -8075,6 +8179,10 @@
    "release_key": null,
    "dcf_year": "2025-26",
    "dcf_trace": {
+    "2023-24": {
+     "item": "2.4(a)",
+     "line": "Details of Classrooms available in the school: (Laboratory rooms NOT to be included)"
+    },
     "2024-25": {
      "item": "2.4(a)",
      "line": "Details of Classrooms available in the school: (Laboratory rooms NOT to be included)"
@@ -8500,6 +8608,10 @@
      "item": "2.9(a)",
      "line": "(a) Main Source of Drinking Water:"
     },
+    "2023-24": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
     "2025-26": {
      "item": "2.9(a)",
      "line": "Main Source of Drinking Water:"
@@ -8566,6 +8678,10 @@
      "item": "2.9",
      "line": "Unprotected Well"
     },
+    "2023-24": {
+     "item": "2.9",
+     "line": "Unprotected Well"
+    },
     "2024-25": {
      "item": "2.9",
      "line": "Unprotected Well"
@@ -8621,6 +8737,10 @@
      "line": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
+     "item": "2.9(a)",
+     "line": "(a) Main Source of Drinking Water:"
+    },
+    "2023-24": {
      "item": "2.9(a)",
      "line": "(a) Main Source of Drinking Water:"
     }
@@ -9999,6 +10119,10 @@
      "item": "1.19",
      "line": "Year of Establishment of school:"
     },
+    "2023-24": {
+     "item": "1.20",
+     "line": "Year of Establishment of school:"
+    },
     "2024-25": {
      "item": "1.20",
      "line": "Year of Establishment of school:"
@@ -10998,6 +11122,10 @@
     "2022-23": {
      "item": "1.26",
      "line": "Is this a minority managed school? (1-Yes, 2-No)"
+    },
+    "2023-24": {
+     "item": "1.28",
+     "line": "Is this a minority managed school? (1-Yes / 2-No)"
     },
     "2024-25": {
      "item": "1.26",
@@ -17500,6 +17628,10 @@
      "item": "3.2",
      "line": "Number of Teaching Staff In-position:"
     },
+    "2023-24": {
+     "item": "3.2",
+     "line": "Number of Teaching Staff In-position:"
+    },
     "2024-25": {
      "item": "3.2",
      "line": "Teaching / Non-Teaching Staffs in-position"
@@ -17754,7 +17886,7 @@
    "dcf": "3.1(e)",
    "question": "Number of Non-teaching/Administrative and Support staff(s) in-Position \u2014 Library Assistant",
    "values": "count",
-   "asked": "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)",
+   "asked": "all nine rounds, 2018-19 to 2026-27 (2019-20 verified from Delhi's rendition of the round)",
    "released": "never",
    "group": "Library",
    "why_it_matters": "the only item in the instrument that counts a person employed to run a school library. The release carries librarian_yn, a yes/no, and only for 2025-26. The count has been collected every year since 2018-19 and published in no year"
@@ -17763,7 +17895,7 @@
    "dcf": "3.1(a)-(g)",
    "question": "Number of Non-teaching/Administrative and Support staff(s) in-Position \u2014 Accountant, UDC/Head Clerk, Peon/MTS, Laboratory Assistant, Library Assistant, LDC, Night Watchman",
    "values": "count per type",
-   "asked": "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)",
+   "asked": "all nine rounds, 2018-19 to 2026-27 (2019-20 verified from Delhi's rendition of the round)",
    "released": "never",
    "group": "Staff",
    "why_it_matters": "the entire non-teaching establishment of every school in India, counted by type each year and released as nothing. The teaching grid printed below it on the same page, item 3.2, is released in full"
@@ -17772,7 +17904,7 @@
    "dcf": "2.11(c)",
    "question": "Does the school subscribe to newspapers/magazines?",
    "values": "1-Yes, 2-No",
-   "asked": "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)",
+   "asked": "all nine rounds, 2018-19 to 2026-27 (2019-20 verified from Delhi's rendition of the round)",
    "released": "never",
    "group": "Library"
   },
@@ -17780,7 +17912,7 @@
    "dcf": "2.11(d)",
    "question": "Number of times Library books have been borrowed /read by children",
    "values": "count",
-   "asked": "2021-22 to 2026-27 (absent from the held 2018-19 and 2020-21 forms; 2023-24 form not held)",
+   "asked": "2021-22 to 2026-27 (absent from the 2018-19, 2019-20 and 2020-21 forms)",
    "released": "never",
    "group": "Library",
    "why_it_matters": "the only item in UDISE+ that asks whether a library is USED rather than whether it exists"
