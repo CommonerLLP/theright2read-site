@@ -434,19 +434,22 @@ code.dead { color: var(--ink-faint); text-decoration: line-through; }
 
 /* 1. Touch targets. WCAG 2.5.5 asks 44px; every control had 20-41px. Padding
    carries the size so the visual weight barely moves. */
-.tab, .filter, #appbar .btn, .yearsel select, #search,
+.tab, .filter, .cn, #appbar .btn, .yearsel select, #search,
 .totop, .golink, .copy {
   min-height: 44px;
 }
 .tab { display: inline-flex; align-items: center; }
-.filter { display: inline-flex; align-items: center; }
-/* Controls that sit INSIDE a line of prose (.why, .exq, .cn) cannot take a
-   44px min-height: an atomic inline box that tall stretches its whole text
-   line, and every paragraph holding one showed a phantom blank line. Keep
-   them display:inline and grow the HIT AREA with padding cancelled by
-   negative margin — an inline box's vertical padding widens the target
-   without moving the line box. Same 44px effective target, no layout shift. */
-.why, .exq, .cn { display: inline; padding: 14px 4px; margin: -14px -2px; }
+.filter, .cn { display: inline-flex; align-items: center; }
+/* Controls that sit INSIDE a line of prose (.why, .exq) cannot take a 44px
+   min-height: an atomic inline box that tall stretches its whole text line,
+   and every paragraph holding one showed a phantom blank line. Keep them
+   display:inline and grow the HIT AREA with padding cancelled by negative
+   margin — an inline box's vertical padding widens the target without
+   moving the line box. Same 44px effective target, no layout shift.
+   .cn is NOT in this set: it renders only inside .colnames chip clouds,
+   where the negative margin made wrapped chip rows overlap. Bordered
+   chips in a wrapping cloud need real boxes, not inline hit-area tricks. */
+.why, .exq { display: inline; padding: 14px 4px; margin: -14px -2px; }
 
 /* 2. A keyboard user must SEE where they are. tokens.css accent, 2px offset,
    on the focused element only (focus-visible spares mouse users the ring). */
