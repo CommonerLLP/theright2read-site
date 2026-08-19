@@ -8,16 +8,17 @@
 <script src="/assets/theme.js?v=96"></script>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=PT+Mono&family=Inter+Tight:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/tokens.css?v=125">
-<link rel="stylesheet" href="../style.css?v=ebee65b1">
+<link rel="stylesheet" href="../style.css?v=41bf679b">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header id="appbar">
     <a class="brand brand-logo" href="/" aria-label="Right to Read — home">
       <img src="/assets/rtr-logo.svg?v=96" alt="Right to Read"><span class="lbl">Schools</span>
     </a>
     <div class="btns"><a class="btn" href="../">&larr; Dictionary</a></div>
   </header>
-  <main class="wrap" style="max-width:56rem;margin:0 auto;padding:1.5rem 1.15rem">
+  <main class="wrap" id="main">
     <h1>DDI-Codebook</h1>
     <p>One codebook per UDISE+ release year. Each is valid against the
       <a href="https://ddialliance.org/hubfs/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">DDI-Codebook 2.5 schema</a>, namespace <code>ddi:codebook:2_5</code>.</p>
@@ -29,20 +30,23 @@
     <p>Nine variables carry <code>undocCod</code>, which DDI defines as
       &ldquo;values whose meaning is unknown&rdquo;. Those are the codes the
       released column holds and no form defines.</p>
-    <table>
-      <thead><tr><th>year</th><th class="n">variables</th><th>file</th>
-        <th class="n">bytes</th></tr></thead>
+    <div class="tscroll" role="region" tabindex="0"
+      aria-label="One row per release year"><table class="full">
+      <caption class="visually-hidden">Release years with variable counts
+        and codebook files</caption>
+      <thead><tr><th scope="col">year</th><th scope="col" class="n">variables</th><th scope="col">file</th>
+        <th scope="col" class="n">bytes</th></tr></thead>
       <tbody>
-    <tr><td>2018-19</td><td class="n">245</td><td><a href="udise-2018-19.xml">udise-2018-19.xml</a></td><td class="n">124,035</td></tr>
-    <tr><td>2019-20</td><td class="n">245</td><td><a href="udise-2019-20.xml">udise-2019-20.xml</a></td><td class="n">125,914</td></tr>
-    <tr><td>2020-21</td><td class="n">245</td><td><a href="udise-2020-21.xml">udise-2020-21.xml</a></td><td class="n">125,914</td></tr>
-    <tr><td>2021-22</td><td class="n">246</td><td><a href="udise-2021-22.xml">udise-2021-22.xml</a></td><td class="n">127,176</td></tr>
-    <tr><td>2022-23</td><td class="n">221</td><td><a href="udise-2022-23.xml">udise-2022-23.xml</a></td><td class="n">113,633</td></tr>
-    <tr><td>2023-24</td><td class="n">221</td><td><a href="udise-2023-24.xml">udise-2023-24.xml</a></td><td class="n">113,633</td></tr>
-    <tr><td>2024-25</td><td class="n">221</td><td><a href="udise-2024-25.xml">udise-2024-25.xml</a></td><td class="n">113,633</td></tr>
-    <tr><td>2025-26</td><td class="n">270</td><td><a href="udise-2025-26.xml">udise-2025-26.xml</a></td><td class="n">141,572</td></tr>
+    <tr><td class="nw">2018-19</td><td class="n">245</td><td class="nw"><a href="udise-2018-19.xml">udise-2018-19.xml</a></td><td class="n">124,035</td></tr>
+    <tr><td class="nw">2019-20</td><td class="n">245</td><td class="nw"><a href="udise-2019-20.xml">udise-2019-20.xml</a></td><td class="n">125,914</td></tr>
+    <tr><td class="nw">2020-21</td><td class="n">245</td><td class="nw"><a href="udise-2020-21.xml">udise-2020-21.xml</a></td><td class="n">125,914</td></tr>
+    <tr><td class="nw">2021-22</td><td class="n">246</td><td class="nw"><a href="udise-2021-22.xml">udise-2021-22.xml</a></td><td class="n">127,176</td></tr>
+    <tr><td class="nw">2022-23</td><td class="n">221</td><td class="nw"><a href="udise-2022-23.xml">udise-2022-23.xml</a></td><td class="n">113,633</td></tr>
+    <tr><td class="nw">2023-24</td><td class="n">221</td><td class="nw"><a href="udise-2023-24.xml">udise-2023-24.xml</a></td><td class="n">113,633</td></tr>
+    <tr><td class="nw">2024-25</td><td class="n">221</td><td class="nw"><a href="udise-2024-25.xml">udise-2024-25.xml</a></td><td class="n">113,633</td></tr>
+    <tr><td class="nw">2025-26</td><td class="n">270</td><td class="nw"><a href="udise-2025-26.xml">udise-2025-26.xml</a></td><td class="n">141,572</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p>Compiled by The Right to Read from the Ministry's own published
       documents. The compilation is CC BY-NC 4.0. The underlying data is the
       Ministry's.</p>

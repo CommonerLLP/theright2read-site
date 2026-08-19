@@ -8,16 +8,17 @@
 <script src="/assets/theme.js?v=96"></script>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=PT+Mono&family=Inter+Tight:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/tokens.css?v=125">
-<link rel="stylesheet" href="../style.css?v=ebee65b1">
+<link rel="stylesheet" href="../style.css?v=41bf679b">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header id="appbar">
     <a class="brand brand-logo" href="/" aria-label="Right to Read — home">
       <img src="/assets/rtr-logo.svg?v=96" alt="Right to Read"><span class="lbl">Schools</span>
     </a>
     <div class="btns"><a class="btn" href="../">&larr; Dictionary</a></div>
   </header>
-  <main class="wrap" style="max-width:56rem;margin:0 auto;padding:1.5rem 1.15rem">
+  <main class="wrap" id="main">
     <h1>Year reconciliation</h1>
     <p>One file per release year. Each field carries three slots: what the
       Data Capture Format <strong>asked</strong> that year, what the Data
@@ -31,20 +32,24 @@
       <strong>no national 2019-20 form is on disk</strong> — the portal's own
       DCF list skips the year, so that year's questions are verified from
       Delhi's rendition of the round, without national item numbers.</p>
-    <div class="tscroll"><table>
-      <thead><tr><th>year</th><th class="n">fields</th>
-        <th class="n">asked, verified in that form</th>
-        <th class="n">code disagreements</th>
-        <th>diff from previous</th><th>file</th></tr></thead>
+    <div class="tscroll" role="region" tabindex="0"
+      aria-label="One row per release year"><table class="full">
+      <caption class="visually-hidden">Release years with field counts,
+        verification counts, code disagreements and the diff to the year
+        before</caption>
+      <thead><tr><th scope="col">year</th><th scope="col" class="n">fields</th>
+        <th scope="col" class="n">asked, verified in that form</th>
+        <th scope="col" class="n">code disagreements</th>
+        <th scope="col">diff from previous</th><th scope="col">file</th></tr></thead>
       <tbody>
-    <tr><td>2018-19</td><td class="n">245</td><td class="n">11</td><td class="n">5</td><td>first year</td><td><a href="udise-2018-19.json">udise-2018-19.json</a></td></tr>
-    <tr><td>2019-20</td><td class="n">245</td><td class="n">0</td><td class="n">8</td><td>+0 / −0 cols, 18 renamed, wording not comparable</td><td><a href="udise-2019-20.json">udise-2019-20.json</a></td></tr>
-    <tr><td>2020-21</td><td class="n">245</td><td class="n">9</td><td class="n">9</td><td>+0 / −0 cols, 0 renamed, wording not comparable</td><td><a href="udise-2020-21.json">udise-2020-21.json</a></td></tr>
-    <tr><td>2021-22</td><td class="n">246</td><td class="n">18</td><td class="n">9</td><td>+1 / −0 cols, 3 renamed, 17 reworded</td><td><a href="udise-2021-22.json">udise-2021-22.json</a></td></tr>
-    <tr><td>2022-23</td><td class="n">221</td><td class="n">25</td><td class="n">20</td><td>+54 / −79 cols, 12 renamed, 1 reworded</td><td><a href="udise-2022-23.json">udise-2022-23.json</a></td></tr>
-    <tr><td>2023-24</td><td class="n">221</td><td class="n">29</td><td class="n">19</td><td>+0 / −0 cols, 0 renamed, 1 reworded</td><td><a href="udise-2023-24.json">udise-2023-24.json</a></td></tr>
-    <tr><td>2024-25</td><td class="n">221</td><td class="n">26</td><td class="n">6</td><td>+0 / −0 cols, 0 renamed, 7 reworded</td><td><a href="udise-2024-25.json">udise-2024-25.json</a></td></tr>
-    <tr><td>2025-26</td><td class="n">270</td><td class="n">34</td><td class="n">11</td><td>+49 / −0 cols, 0 renamed, 6 reworded</td><td><a href="udise-2025-26.json">udise-2025-26.json</a></td></tr>
+    <tr><td class="nw">2018-19</td><td class="n">245</td><td class="n">11</td><td class="n">5</td><td>first year</td><td class="nw"><a href="udise-2018-19.json">udise-2018-19.json</a></td></tr>
+    <tr><td class="nw">2019-20</td><td class="n">245</td><td class="n">0</td><td class="n">8</td><td>+0 / −0 cols, 18 renamed, wording not comparable</td><td class="nw"><a href="udise-2019-20.json">udise-2019-20.json</a></td></tr>
+    <tr><td class="nw">2020-21</td><td class="n">245</td><td class="n">9</td><td class="n">9</td><td>+0 / −0 cols, 0 renamed, wording not comparable</td><td class="nw"><a href="udise-2020-21.json">udise-2020-21.json</a></td></tr>
+    <tr><td class="nw">2021-22</td><td class="n">246</td><td class="n">18</td><td class="n">9</td><td>+1 / −0 cols, 3 renamed, 17 reworded</td><td class="nw"><a href="udise-2021-22.json">udise-2021-22.json</a></td></tr>
+    <tr><td class="nw">2022-23</td><td class="n">221</td><td class="n">25</td><td class="n">20</td><td>+54 / −79 cols, 12 renamed, 1 reworded</td><td class="nw"><a href="udise-2022-23.json">udise-2022-23.json</a></td></tr>
+    <tr><td class="nw">2023-24</td><td class="n">221</td><td class="n">29</td><td class="n">19</td><td>+0 / −0 cols, 0 renamed, 1 reworded</td><td class="nw"><a href="udise-2023-24.json">udise-2023-24.json</a></td></tr>
+    <tr><td class="nw">2024-25</td><td class="n">221</td><td class="n">26</td><td class="n">6</td><td>+0 / −0 cols, 0 renamed, 7 reworded</td><td class="nw"><a href="udise-2024-25.json">udise-2024-25.json</a></td></tr>
+    <tr><td class="nw">2025-26</td><td class="n">270</td><td class="n">34</td><td class="n">11</td><td>+49 / −0 cols, 0 renamed, 6 reworded</td><td class="nw"><a href="udise-2025-26.json">udise-2025-26.json</a></td></tr>
       </tbody>
     </table></div>
     <p>Compiled by The Right to Read from the Ministry's own published
