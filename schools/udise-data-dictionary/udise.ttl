@@ -2013,7 +2013,7 @@ udise:facility_data.comp_ict_lab_yn a skos:Concept ;
     skos:scopeNote "1-Yes, 2-No"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Computer/ICT Lab available in school”. Remarks: As per UDISE DCF"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"comp_ict_lab_yn\"}"@en ;
-    skos:note "ungated-ict-lab: The lab question has no gate tying it to the device counts. 9,596 schools (2025-26) report a Computer/ICT lab and zero desktops, zero laptops and zero tablets."@en .
+    skos:note "ungated-ict-lab: A yes here does not mean the school has computers. 9,596 schools (2025-26) answer yes to the lab and report zero desktops, laptops and tablets in the whole school. That is 2.9% of the 336,648 lab claims. The form asks for the lab and for the devices separately and enforces no consistency between the answers."@en .
 
 udise:facility_data.comp_lab_cond a skos:Concept ;
     skos:inScheme udise:scheme ;

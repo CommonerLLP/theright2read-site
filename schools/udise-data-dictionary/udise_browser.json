@@ -18038,10 +18038,10 @@
     "comp_ict_lab_yn"
    ],
    "kind": "definitional",
-   "what": "The lab question has no gate tying it to the device counts. 9,596 schools (2025-26) report a Computer/ICT lab and zero desktops, zero laptops and zero tablets.",
-   "cost": "A lab count and a device count answer different questions. Any ICT-access statistic must say which one it used.",
-   "check": "Count the contradiction directly before trusting either field.",
-   "fix": "-- a lab with no devices, by the release's own counts\nselect count(*) from raw_facility_data\nwhere year = '2025-26' and comp_ict_lab_yn = 1\n  and desktop = 0 and laptop = 0 and tablet = 0;\n-- 9,596 schools"
+   "what": "A yes here does not mean the school has computers. 9,596 schools (2025-26) answer yes to the lab and report zero desktops, laptops and tablets in the whole school. That is 2.9% of the 336,648 lab claims. The form asks for the lab and for the devices separately and enforces no consistency between the answers.",
+   "cost": "Counting labs overstates computer access. A statistic built on this column counts rooms called labs, including 9,596 with no reported device. Count the devices when the question is access.",
+   "check": "Count the contradiction before trusting either field.",
+   "fix": "-- labs with zero devices anywhere in the school\nselect count(*) from raw_facility_data\nwhere year = '2025-26' and comp_ict_lab_yn = 1\n  and desktop = 0 and laptop = 0 and tablet = 0;\n-- 9,596 schools, 2.9% of 336,648 lab claims"
   },
   {
    "id": "state-conventions",
