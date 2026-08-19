@@ -5971,7 +5971,7 @@ udise:asked-01 a skos:Concept ;
     skos:inScheme udise:scheme ;
     skos:prefLabel "Number of Non-teaching/Administrative and Support staff(s) in-Position — Library Assistant"@en ;
     dct:references "DCF item 3.1(e)" ;
-    dct:temporal "2018-19 to 2026-27" ;
+    dct:temporal "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)" ;
     skos:scopeNote "count"@en ;
     dct:provenance "Never shared. The Ministry asked this of every school and released no column for it."@en ;
     dct:subject "Library"@en .
@@ -5980,7 +5980,7 @@ udise:asked-02 a skos:Concept ;
     skos:inScheme udise:scheme ;
     skos:prefLabel "Number of Non-teaching/Administrative and Support staff(s) in-Position — Accountant, UDC/Head Clerk, Peon/MTS, Laboratory Assistant, Library Assistant, LDC, Night Watchman"@en ;
     dct:references "DCF item 3.1(a)-(g)" ;
-    dct:temporal "2018-19 to 2026-27" ;
+    dct:temporal "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)" ;
     skos:scopeNote "count per type"@en ;
     dct:provenance "Never shared. The Ministry asked this of every school and released no column for it."@en ;
     dct:subject "Staff"@en .
@@ -5989,7 +5989,7 @@ udise:asked-03 a skos:Concept ;
     skos:inScheme udise:scheme ;
     skos:prefLabel "Does the school subscribe to newspapers/magazines?"@en ;
     dct:references "DCF item 2.11(c)" ;
-    dct:temporal "2018-19 to 2026-27" ;
+    dct:temporal "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
     dct:provenance "Never shared. The Ministry asked this of every school and released no column for it."@en ;
     dct:subject "Library"@en .
@@ -5998,7 +5998,7 @@ udise:asked-04 a skos:Concept ;
     skos:inScheme udise:scheme ;
     skos:prefLabel "Number of times Library books have been borrowed /read by children"@en ;
     dct:references "DCF item 2.11(d)" ;
-    dct:temporal "2018-19 to 2026-27" ;
+    dct:temporal "2021-22 to 2026-27 (absent from the held 2018-19 and 2020-21 forms; 2023-24 form not held)" ;
     skos:scopeNote "count"@en ;
     dct:provenance "Never shared. The Ministry asked this of every school and released no column for it."@en ;
     dct:subject "Library"@en .

@@ -9681,7 +9681,7 @@
    "inScheme": "udise:scheme",
    "prefLabel": "Number of Non-teaching/Administrative and Support staff(s) in-Position \u2014 Library Assistant",
    "references": "DCF item 3.1(e)",
-   "temporal": "2018-19 to 2026-27",
+   "temporal": "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)",
    "scopeNote": "count",
    "skos:editorialNote": "Asked of every school. Never released.",
    "dct:subject": "Library"
@@ -9692,7 +9692,7 @@
    "inScheme": "udise:scheme",
    "prefLabel": "Number of Non-teaching/Administrative and Support staff(s) in-Position \u2014 Accountant, UDC/Head Clerk, Peon/MTS, Laboratory Assistant, Library Assistant, LDC, Night Watchman",
    "references": "DCF item 3.1(a)-(g)",
-   "temporal": "2018-19 to 2026-27",
+   "temporal": "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)",
    "scopeNote": "count per type",
    "skos:editorialNote": "Asked of every school. Never released.",
    "dct:subject": "Staff"
@@ -9703,7 +9703,7 @@
    "inScheme": "udise:scheme",
    "prefLabel": "Does the school subscribe to newspapers/magazines?",
    "references": "DCF item 2.11(c)",
-   "temporal": "2018-19 to 2026-27",
+   "temporal": "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)",
    "scopeNote": "1-Yes, 2-No",
    "skos:editorialNote": "Asked of every school. Never released.",
    "dct:subject": "Library"
@@ -9714,7 +9714,7 @@
    "inScheme": "udise:scheme",
    "prefLabel": "Number of times Library books have been borrowed /read by children",
    "references": "DCF item 2.11(d)",
-   "temporal": "2018-19 to 2026-27",
+   "temporal": "2021-22 to 2026-27 (absent from the held 2018-19 and 2020-21 forms; 2023-24 form not held)",
    "scopeNote": "count",
    "skos:editorialNote": "Asked of every school. Never released.",
    "dct:subject": "Library"

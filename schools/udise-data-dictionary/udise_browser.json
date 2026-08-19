@@ -17754,7 +17754,7 @@
    "dcf": "3.1(e)",
    "question": "Number of Non-teaching/Administrative and Support staff(s) in-Position \u2014 Library Assistant",
    "values": "count",
-   "asked": "2018-19 to 2026-27",
+   "asked": "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)",
    "released": "never",
    "group": "Library",
    "why_it_matters": "the only item in the instrument that counts a person employed to run a school library. The release carries librarian_yn, a yes/no, and only for 2025-26. The count has been collected every year since 2018-19 and published in no year"
@@ -17763,7 +17763,7 @@
    "dcf": "3.1(a)-(g)",
    "question": "Number of Non-teaching/Administrative and Support staff(s) in-Position \u2014 Accountant, UDC/Head Clerk, Peon/MTS, Laboratory Assistant, Library Assistant, LDC, Night Watchman",
    "values": "count per type",
-   "asked": "2018-19 to 2026-27",
+   "asked": "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)",
    "released": "never",
    "group": "Staff",
    "why_it_matters": "the entire non-teaching establishment of every school in India, counted by type each year and released as nothing. The teaching grid printed below it on the same page, item 3.2, is released in full"
@@ -17772,7 +17772,7 @@
    "dcf": "2.11(c)",
    "question": "Does the school subscribe to newspapers/magazines?",
    "values": "1-Yes, 2-No",
-   "asked": "2018-19 to 2026-27",
+   "asked": "every held form, 2018-19 to 2026-27 (2019-20 and 2023-24 forms not held)",
    "released": "never",
    "group": "Library"
   },
@@ -17780,7 +17780,7 @@
    "dcf": "2.11(d)",
    "question": "Number of times Library books have been borrowed /read by children",
    "values": "count",
-   "asked": "2018-19 to 2026-27",
+   "asked": "2021-22 to 2026-27 (absent from the held 2018-19 and 2020-21 forms; 2023-24 form not held)",
    "released": "never",
    "group": "Library",
    "why_it_matters": "the only item in UDISE+ that asks whether a library is USED rather than whether it exists"
