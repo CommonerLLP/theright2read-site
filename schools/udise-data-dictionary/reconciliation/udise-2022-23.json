@@ -1,0 +1,5517 @@
+{
+ "year": "2022-23",
+ "dsp_document": {
+  "era": "sdmis",
+  "years": [
+   "2022-23",
+   "2023-24",
+   "2024-25",
+   "2025-26"
+  ],
+  "note": "One schema document covers 2022-23 to 2025-26. The four per-year downloads are byte-identical."
+ },
+ "asked_evidence_note": null,
+ "n_fields": 221,
+ "flags": {
+  "asked_verified_this_form": 25,
+  "described_no_question": 43,
+  "code_disagreements": [
+   {
+    "id": "facility_data.availability_of_handrails",
+    "agreement": "partly corroborated: the column also holds 0"
+   },
+   {
+    "id": "facility_data.comp_ict_lab_yn",
+    "agreement": "partly corroborated: the column also holds 9"
+   },
+   {
+    "id": "facility_data.comp_lab_cond",
+    "agreement": "partly corroborated: the column also holds 0"
+   },
+   {
+    "id": "facility_data.hand_pump_fun_yn",
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   },
+   {
+    "id": "facility_data.hand_pump_yn",
+    "agreement": "partly corroborated: the column also holds 9"
+   },
+   {
+    "id": "facility_data.home_sc_lab_cond",
+    "agreement": "partly corroborated: the column also holds 0, 3, 4"
+   },
+   {
+    "id": "facility_data.math_lab_cond",
+    "agreement": "partly corroborated: the column also holds 0, 3, 4"
+   },
+   {
+    "id": "facility_data.othsrc_fun_yn",
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   },
+   {
+    "id": "facility_data.othsrc_yn",
+    "agreement": "partly corroborated: the column also holds 9"
+   },
+   {
+    "id": "facility_data.pack_water_fun_yn",
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   },
+   {
+    "id": "facility_data.pack_water_yn",
+    "agreement": "partly corroborated: the column also holds 9"
+   },
+   {
+    "id": "facility_data.playground_alt_yn",
+    "agreement": "partly corroborated: the column also holds 0"
+   },
+   {
+    "id": "facility_data.tap_fun_yn",
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   },
+   {
+    "id": "facility_data.tap_yn",
+    "agreement": "partly corroborated: the column also holds 9"
+   },
+   {
+    "id": "facility_data.well_prot_fun_yn",
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   },
+   {
+    "id": "facility_data.well_prot_yn",
+    "agreement": "partly corroborated: the column also holds 9"
+   },
+   {
+    "id": "facility_data.well_unprot_fun_yn",
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   },
+   {
+    "id": "facility_data.well_unprot_yn",
+    "agreement": "partly corroborated: the column also holds 9"
+   },
+   {
+    "id": "profile_data_1.minority_school",
+    "agreement": "partly corroborated: the column also holds 9"
+   },
+   {
+    "id": "profile_data_2.balavatika_located_yn",
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   }
+  ]
+ },
+ "fields": [
+  {
+   "id": "enrolment_data_1.c10_b",
+   "dataset": "enrolment_data_1",
+   "field": "c10_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 10",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-10 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c10_g",
+   "dataset": "enrolment_data_1",
+   "field": "c10_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 10",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-10 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c11_b",
+   "dataset": "enrolment_data_1",
+   "field": "c11_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 11",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-11 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c11_g",
+   "dataset": "enrolment_data_1",
+   "field": "c11_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 11",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-11 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c12_b",
+   "dataset": "enrolment_data_1",
+   "field": "c12_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 12",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-12 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c12_g",
+   "dataset": "enrolment_data_1",
+   "field": "c12_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 12",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-12 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c1_b",
+   "dataset": "enrolment_data_1",
+   "field": "c1_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 1",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-1 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c1_g",
+   "dataset": "enrolment_data_1",
+   "field": "c1_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 1",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-1 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c2_b",
+   "dataset": "enrolment_data_1",
+   "field": "c2_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 2",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-2 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c2_g",
+   "dataset": "enrolment_data_1",
+   "field": "c2_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 2",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-2 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c3_b",
+   "dataset": "enrolment_data_1",
+   "field": "c3_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 3",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-3 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c3_g",
+   "dataset": "enrolment_data_1",
+   "field": "c3_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 3",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-3 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c4_b",
+   "dataset": "enrolment_data_1",
+   "field": "c4_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 4",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-4 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c4_g",
+   "dataset": "enrolment_data_1",
+   "field": "c4_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 4",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-4 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c5_b",
+   "dataset": "enrolment_data_1",
+   "field": "c5_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 5",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-5 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c5_g",
+   "dataset": "enrolment_data_1",
+   "field": "c5_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 5",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-5 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c6_b",
+   "dataset": "enrolment_data_1",
+   "field": "c6_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 6",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-6 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c6_g",
+   "dataset": "enrolment_data_1",
+   "field": "c6_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 6",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-6 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c7_b",
+   "dataset": "enrolment_data_1",
+   "field": "c7_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 7",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-7 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c7_g",
+   "dataset": "enrolment_data_1",
+   "field": "c7_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 7",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-7 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c8_b",
+   "dataset": "enrolment_data_1",
+   "field": "c8_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 8",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-8 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c8_g",
+   "dataset": "enrolment_data_1",
+   "field": "c8_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 8",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-8 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c9_b",
+   "dataset": "enrolment_data_1",
+   "field": "c9_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 9",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-9 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.c9_g",
+   "dataset": "enrolment_data_1",
+   "field": "c9_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 9",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-9 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.cpp_b",
+   "dataset": "enrolment_data_1",
+   "field": "cpp_b",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Enrolment in Class Pre-Primary Boys",
+     "remarks": "(pp3_b+pp2_b+pp1_b)"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.cpp_g",
+   "dataset": "enrolment_data_1",
+   "field": "cpp_g",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Enrolment in Class Pre-Primary Girls",
+     "remarks": "(pp3_g+pp2_g+pp1_g)"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_1.item_group",
+   "dataset": "enrolment_data_1",
+   "field": "item_group",
+   "asked": {
+    "kind": "release_key",
+    "note": "Which category grid a row belongs to: 1 is social category, 8 is age, and so on. Created at the 2022-23 break, when the named item_desc became two numeric codes."
+   },
+   "described": null,
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 5,
+    "observed": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5"
+    ]
+   }
+  },
+  {
+   "id": "enrolment_data_1.item_id",
+   "dataset": "enrolment_data_1",
+   "field": "item_id",
+   "asked": {
+    "kind": "release_key",
+    "note": "The row's position inside its item_group grid. For the age grid (group 8) it is the age in years. For the social-category grid it is the category code. No released codebook names the ids; the mapping here is reconstructed and graded."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 22
+   }
+  },
+  {
+   "id": "enrolment_data_1.pseudocode",
+   "dataset": "enrolment_data_1",
+   "field": "pseudocode",
+   "asked": {
+    "kind": "release_key",
+    "note": "The pseudonymised school identifier. The release withholds the 11-digit UDISE code and the school's name, and creates this key in their place. Spelled psuedocode before 2022-23."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "pseudocode Code(Unique Identity No. of school)",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c10_b",
+   "dataset": "enrolment_data_2",
+   "field": "c10_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 10",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-10 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c10_g",
+   "dataset": "enrolment_data_2",
+   "field": "c10_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 10",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-10 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c11_b",
+   "dataset": "enrolment_data_2",
+   "field": "c11_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 11",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-11 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c11_g",
+   "dataset": "enrolment_data_2",
+   "field": "c11_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 11",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-11 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c12_b",
+   "dataset": "enrolment_data_2",
+   "field": "c12_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 12",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-12 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c12_g",
+   "dataset": "enrolment_data_2",
+   "field": "c12_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 12",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-12 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c1_b",
+   "dataset": "enrolment_data_2",
+   "field": "c1_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 1",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-1 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c1_g",
+   "dataset": "enrolment_data_2",
+   "field": "c1_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 1",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-1 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c2_b",
+   "dataset": "enrolment_data_2",
+   "field": "c2_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 2",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-2 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c2_g",
+   "dataset": "enrolment_data_2",
+   "field": "c2_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 2",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-2 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c3_b",
+   "dataset": "enrolment_data_2",
+   "field": "c3_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 3",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-3 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c3_g",
+   "dataset": "enrolment_data_2",
+   "field": "c3_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 3",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-3 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c4_b",
+   "dataset": "enrolment_data_2",
+   "field": "c4_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 4",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-4 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c4_g",
+   "dataset": "enrolment_data_2",
+   "field": "c4_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 4",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-4 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c5_b",
+   "dataset": "enrolment_data_2",
+   "field": "c5_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 5",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-5 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c5_g",
+   "dataset": "enrolment_data_2",
+   "field": "c5_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 5",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-5 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c6_b",
+   "dataset": "enrolment_data_2",
+   "field": "c6_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 6",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-6 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c6_g",
+   "dataset": "enrolment_data_2",
+   "field": "c6_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 6",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-6 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c7_b",
+   "dataset": "enrolment_data_2",
+   "field": "c7_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 7",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-7 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c7_g",
+   "dataset": "enrolment_data_2",
+   "field": "c7_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 7",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-7 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c8_b",
+   "dataset": "enrolment_data_2",
+   "field": "c8_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 8",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-8 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c8_g",
+   "dataset": "enrolment_data_2",
+   "field": "c8_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 8",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-8 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c9_b",
+   "dataset": "enrolment_data_2",
+   "field": "c9_b",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: boys enrolled in class 9",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-9 Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.c9_g",
+   "dataset": "enrolment_data_2",
+   "field": "c9_g",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment grid: girls enrolled in class 9",
+    "item": "enrolment grid",
+    "cited_form": "all",
+    "how": "structural",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Class-9 Girls",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.cpp_b",
+   "dataset": "enrolment_data_2",
+   "field": "cpp_b",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Age Wise Enrolment in Class Pre-Primary Boys",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.cpp_g",
+   "dataset": "enrolment_data_2",
+   "field": "cpp_g",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Age Wise Enrolment in Class Pre-Primary Girls",
+     "remarks": "(pp3_g+pp2_g+pp1_g)"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "enrolment_data_2.item_group",
+   "dataset": "enrolment_data_2",
+   "field": "item_group",
+   "asked": {
+    "kind": "release_key",
+    "note": "Which category grid a row belongs to: 1 is social category, 8 is age, and so on. Created at the 2022-23 break, when the named item_desc became two numeric codes."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "item_group=8",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 1,
+    "observed": [
+     "8"
+    ]
+   }
+  },
+  {
+   "id": "enrolment_data_2.item_id",
+   "dataset": "enrolment_data_2",
+   "field": "item_id",
+   "asked": {
+    "kind": "release_key",
+    "note": "The row's position inside its item_group grid. For the age grid (group 8) it is the age in years. For the social-category grid it is the category code. No released codebook names the ids; the mapping here is reconstructed and graded."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Age id (2 to 22)",
+     "remarks": "Age id (2 to 22)"
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 21
+   }
+  },
+  {
+   "id": "enrolment_data_2.pseudocode",
+   "dataset": "enrolment_data_2",
+   "field": "pseudocode",
+   "asked": {
+    "kind": "release_key",
+    "note": "The pseudonymised school identifier. The release withholds the 11-digit UDISE code and the school's name, and creates this key in their place. Spelled psuedocode before 2022-23."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "pseudocode Code(Unique Identity No. of school)",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.availability_of_handrails",
+   "dataset": "facility_data",
+   "field": "availability_of_handrails",
+   "asked": {
+    "kind": "traced",
+    "item": "2.15",
+    "line": "If 1-Yes, whether Hand-rails for ramp are available? (1-Yes, 2-No)",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Hand-rails for ramp is available in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 0"
+   }
+  },
+  {
+   "id": "facility_data.availability_ramps",
+   "dataset": "facility_data",
+   "field": "availability_ramps",
+   "asked": {
+    "kind": "traced",
+    "item": "2.14",
+    "line": "Whether ramp for disabled children to access school building exists? (1-Yes, 2-No)",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Available Ramp for disabled children to access school building in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.bio_lab_cond",
+   "dataset": "facility_data",
+   "field": "bio_lab_cond",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availability with Present Condition Biology Laboratory in school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 5,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4"
+    ]
+   }
+  },
+  {
+   "id": "facility_data.book_bank",
+   "dataset": "facility_data",
+   "field": "book_bank",
+   "asked": {
+    "kind": "traced",
+    "item": "2.10(a)",
+    "line": "Whether the school has Library facility/Book Bank/Reading Corner?",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Book bank available in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.boundary_wall",
+   "dataset": "facility_data",
+   "field": "boundary_wall",
+   "asked": {
+    "kind": "traced",
+    "item": "2.3",
+    "line": "Type of Boundary Wall:",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Type of boundary wall in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 8,
+    "observed": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2, 3, 4, 5, 6, 7, 8)"
+   }
+  },
+  {
+   "id": "facility_data.building_status",
+   "dataset": "facility_data",
+   "field": "building_status",
+   "asked": {
+    "kind": "traced",
+    "item": "2.1",
+    "line": "Status of Present School Building?",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Status of the school building",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 6,
+    "observed": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2, 3, 4, 5, 6)"
+   }
+  },
+  {
+   "id": "facility_data.chem_lab_cond",
+   "dataset": "facility_data",
+   "field": "chem_lab_cond",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availability with Present Condition Chemistry Laboratory in school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 5,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4"
+    ]
+   }
+  },
+  {
+   "id": "facility_data.classrooms_in_good_condition",
+   "dataset": "facility_data",
+   "field": "classrooms_in_good_condition",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Classrooms in good condition",
+    "item": "2.3(a)",
+    "cited_form": "2018-19",
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of classrooms in Good condition in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.classrooms_needs_major_repair",
+   "dataset": "facility_data",
+   "field": "classrooms_needs_major_repair",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Classrooms needing major repair",
+    "item": "2.3(a)",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of classrooms Need Major repair in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.classrooms_needs_minor_repair",
+   "dataset": "facility_data",
+   "field": "classrooms_needs_minor_repair",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Classrooms needing minor repair",
+    "item": "2.3(a)",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of classrooms Need Minor repair in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.comp_ict_lab_yn",
+   "dataset": "facility_data",
+   "field": "comp_ict_lab_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Is Computer/ICT Lab available in school?",
+    "item": "2.25",
+    "cited_form": "2025-26",
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Computer/ICT Lab available in school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 1,
+    "observed": [
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 9"
+   }
+  },
+  {
+   "id": "facility_data.comp_lab_cond",
+   "dataset": "facility_data",
+   "field": "comp_lab_cond",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Does the school have the following laboratories? (For Higher Secondary sections only) — Computer Science",
+    "item": "2.22(i)",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availability with Present Condition of Computer Science Laboratory in school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 1,
+    "observed": [
+     "0"
+    ],
+    "agreement": "partly corroborated: the column also holds 0"
+   }
+  },
+  {
+   "id": "facility_data.desktop",
+   "dataset": "facility_data",
+   "field": "desktop",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Number of desktops",
+    "item": "2.25(a)(ii)",
+    "cited_form": "2018-19",
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Desktops in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.digiboard",
+   "dataset": "facility_data",
+   "field": "digiboard",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Number of digital boards",
+    "item": "2.25",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Digital Boards with Content Management Systems in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.dth",
+   "dataset": "facility_data",
+   "field": "dth",
+   "asked": {
+    "kind": "traced",
+    "item": "2.27(d)",
+    "line": "(d) Access to DTH/TV channels",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Access to DTH/TV channels in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.electricity_availability",
+   "dataset": "facility_data",
+   "field": "electricity_availability",
+   "asked": {
+    "kind": "traced",
+    "item": "2.9(a)",
+    "line": "Whether electricity connection is available in the school?",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Electricity connection available in school",
+     "remarks": "1:Yes,2:No, 3:Yes, but not functional"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "3"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2, 3)"
+   }
+  },
+  {
+   "id": "facility_data.func_boys_cwsn_friendly",
+   "dataset": "facility_data",
+   "field": "func_boys_cwsn_friendly",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Functional CWSN friendly toilet seats for Boys in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.func_girls_cwsn_friendly",
+   "dataset": "facility_data",
+   "field": "func_girls_cwsn_friendly",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Functional CWSN friendly toilet seats for Girls in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.furniture_availability",
+   "dataset": "facility_data",
+   "field": "furniture_availability",
+   "asked": {
+    "kind": "traced",
+    "item": "2.18",
+    "line": "Does the school have furniture for students?",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of students for whom Furniture available in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "3"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2, 3)"
+   }
+  },
+  {
+   "id": "facility_data.geo_lab_cond",
+   "dataset": "facility_data",
+   "field": "geo_lab_cond",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availability with Present Condition of Geography Laboratory in school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 5,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4"
+    ]
+   }
+  },
+  {
+   "id": "facility_data.hand_pump_fun_yn",
+   "dataset": "facility_data",
+   "field": "hand_pump_fun_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Hand pump functional",
+    "item": "2.9",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Functional Hand Pump in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   }
+  },
+  {
+   "id": "facility_data.hand_pump_yn",
+   "dataset": "facility_data",
+   "field": "hand_pump_yn",
+   "asked": {
+    "kind": "traced",
+    "item": "2.9(a)",
+    "line": "(a) Main Source of Drinking Water:",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Hand Pump in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 9"
+   }
+  },
+  {
+   "id": "facility_data.handwash_facility_for_meal",
+   "dataset": "facility_data",
+   "field": "handwash_facility_for_meal",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Handwash facility for meal",
+    "item": "2.8",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.handwash_near_toilet",
+   "dataset": "facility_data",
+   "field": "handwash_near_toilet",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Handwash facility near the toilet",
+    "item": "2.7",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Hand washing facility with soap available near toilets in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.home_sc_lab_cond",
+   "dataset": "facility_data",
+   "field": "home_sc_lab_cond",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Does the school have the following laboratories? (For Higher Secondary sections only) — Home Science",
+    "item": "2.22(g)",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availability with Present Condition of Home Science Laboratory in school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 5,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "agreement": "partly corroborated: the column also holds 0, 3, 4"
+   }
+  },
+  {
+   "id": "facility_data.ict_lab_yn",
+   "dataset": "facility_data",
+   "field": "ict_lab_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Is the ICT Lab available in the school under Samagra Siksha?",
+    "item": "2.25(b)",
+    "cited_form": "2025-26",
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "ICT Lab available in school under Samagra Siksha",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2, 9)"
+   }
+  },
+  {
+   "id": "facility_data.internet",
+   "dataset": "facility_data",
+   "field": "internet",
+   "asked": {
+    "kind": "traced",
+    "item": "2.23",
+    "line": "Does the School have Internet Facility? (1-Yes, 2-No)",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Internet Availability in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.lang_lab_cond",
+   "dataset": "facility_data",
+   "field": "lang_lab_cond",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availability with Present Condition of Language Laboratory in school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 5,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4"
+    ]
+   }
+  },
+  {
+   "id": "facility_data.laptop",
+   "dataset": "facility_data",
+   "field": "laptop",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Number of laptops",
+    "item": "2.25(a)(ii)",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Laptops in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.library_availability",
+   "dataset": "facility_data",
+   "field": "library_availability",
+   "asked": {
+    "kind": "traced",
+    "item": "2.10(a)",
+    "line": "Whether the school has Library facility/Book Bank/Reading Corner?",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Library Available in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.math_lab_cond",
+   "dataset": "facility_data",
+   "field": "math_lab_cond",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Does the school have the following laboratories? (For Higher Secondary sections only) — Math’s Kit**",
+    "item": "2.22(c)",
+    "cited_form": "2025-26",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availability with Present Condition of Mathematics Laboratory in school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 5,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "agreement": "partly corroborated: the column also holds 0, 3, 4"
+   }
+  },
+  {
+   "id": "facility_data.medical_checkups",
+   "dataset": "facility_data",
+   "field": "medical_checkups",
+   "asked": {
+    "kind": "traced",
+    "item": "2.13(a)",
+    "line": "Whether Health check-up of students was conducted",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Medical check-up of students conducted in last academic year in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.no_building_blocks",
+   "dataset": "facility_data",
+   "field": "no_building_blocks",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Type of School Building: — Total Number of Active* building blocks of the school",
+    "item": "2.2(i)",
+    "cited_form": "2022-23",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of building blocks of the school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.other_rooms",
+   "dataset": "facility_data",
+   "field": "other_rooms",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Details of Rooms other than Classrooms (excluding toilets)",
+    "item": "2.6",
+    "cited_form": "2023-24",
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of rooms other than classrooms in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.othsrc_fun_yn",
+   "dataset": "facility_data",
+   "field": "othsrc_fun_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Other source functional",
+    "item": "2.9",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Functional Other sources of water in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   }
+  },
+  {
+   "id": "facility_data.othsrc_yn",
+   "dataset": "facility_data",
+   "field": "othsrc_yn",
+   "asked": {
+    "kind": "traced",
+    "item": "2.9(a)",
+    "line": "(a) Main Source of Drinking Water:",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Other sources water in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 9"
+   }
+  },
+  {
+   "id": "facility_data.pack_water_fun_yn",
+   "dataset": "facility_data",
+   "field": "pack_water_fun_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Packaged water functional",
+    "item": "2.9",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Functional Packaged/Bottled Water in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   }
+  },
+  {
+   "id": "facility_data.pack_water_yn",
+   "dataset": "facility_data",
+   "field": "pack_water_yn",
+   "asked": {
+    "kind": "traced",
+    "item": "2.9(a)",
+    "line": "(a) Main Source of Drinking Water:",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Packaged/Bottled Water in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 9"
+   }
+  },
+  {
+   "id": "facility_data.phy_lab_cond",
+   "dataset": "facility_data",
+   "field": "phy_lab_cond",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availability with Present Condition Physics Laboratory in school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 5,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4"
+    ]
+   }
+  },
+  {
+   "id": "facility_data.playground_alt_yn",
+   "dataset": "facility_data",
+   "field": "playground_alt_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "If no playground, whether adequate arrangements exist for outdoor games",
+    "item": "2.13",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 0"
+   }
+  },
+  {
+   "id": "facility_data.playground_available",
+   "dataset": "facility_data",
+   "field": "playground_available",
+   "asked": {
+    "kind": "traced",
+    "item": "2.12",
+    "line": "Whether Playground facility is available in the School? (1-Yes, 2-No)",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Playground facility available in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.printer",
+   "dataset": "facility_data",
+   "field": "printer",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Number of printers",
+    "item": "2.25",
+    "cited_form": "2018-19",
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Printer in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.projector",
+   "dataset": "facility_data",
+   "field": "projector",
+   "asked": {
+    "kind": "traced",
+    "item": "2.25",
+    "line": "(f) Projector",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Projector",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.pseudocode",
+   "dataset": "facility_data",
+   "field": "pseudocode",
+   "asked": {
+    "kind": "release_key",
+    "note": "The pseudonymised school identifier. The release withholds the 11-digit UDISE code and the school's name, and creates this key in their place. Spelled psuedocode before 2022-23."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "pseudocode Code(Unique Identity No. of school)",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.psycho_lab_cond",
+   "dataset": "facility_data",
+   "field": "psycho_lab_cond",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availability with Present Condition of Psychology Laboratory in school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 5,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4"
+    ]
+   }
+  },
+  {
+   "id": "facility_data.pucca_building_blocks",
+   "dataset": "facility_data",
+   "field": "pucca_building_blocks",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Type of School Building: — Total Number of Active* building blocks of the school",
+    "item": "2.2(i)",
+    "cited_form": "2022-23",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Pucca building blocks of the school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.rain_water_harvesting",
+   "dataset": "facility_data",
+   "field": "rain_water_harvesting",
+   "asked": {
+    "kind": "traced",
+    "item": "2.7",
+    "line": "Does the school have provision for rain water harvesting?",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "School have provision for rain water harvesting",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "3"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2, 3)"
+   }
+  },
+  {
+   "id": "facility_data.reading_corner",
+   "dataset": "facility_data",
+   "field": "reading_corner",
+   "asked": {
+    "kind": "traced",
+    "item": "2.10(a)",
+    "line": "Whether the school has Library facility/Book Bank/Reading Corner?",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Reading corner available in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.separate_room_for_hm",
+   "dataset": "facility_data",
+   "field": "separate_room_for_hm",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Separate room for the Head Master / Head Teacher",
+    "item": "2.6",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Separate room for Head teachers in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "facility_data.server_tot",
+   "dataset": "facility_data",
+   "field": "server_tot",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of servers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.smart_class_tv_tot",
+   "dataset": "facility_data",
+   "field": "smart_class_tv_tot",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.solar_panel",
+   "dataset": "facility_data",
+   "field": "solar_panel",
+   "asked": {
+    "kind": "traced",
+    "item": "2.5(b)",
+    "line": "(b) Whether solar panel is available in school?",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Solar panel available in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "3"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2, 3)"
+   }
+  },
+  {
+   "id": "facility_data.spl_educator_yn",
+   "dataset": "facility_data",
+   "field": "spl_educator_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether a special educator is available",
+    "item": "3.x",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Whether School has special educator",
+     "remarks": "1-Dedicated, 2-At cluster level, 3-No"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "3"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2, 3)"
+   }
+  },
+  {
+   "id": "facility_data.tablet",
+   "dataset": "facility_data",
+   "field": "tablet",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Number of tablets",
+    "item": "2.25",
+    "cited_form": "2018-19",
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Tablets in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.tap_fun_yn",
+   "dataset": "facility_data",
+   "field": "tap_fun_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Tap water functional",
+    "item": "2.9",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Functional Tap water in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   }
+  },
+  {
+   "id": "facility_data.tap_yn",
+   "dataset": "facility_data",
+   "field": "tap_yn",
+   "asked": {
+    "kind": "traced",
+    "item": "2.9(a)",
+    "line": "(a) Main Source of Drinking Water:",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Tap water in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 9"
+   }
+  },
+  {
+   "id": "facility_data.teachdev_tot",
+   "dataset": "facility_data",
+   "field": "teachdev_tot",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Computer or Digital Equipment Status: — PCs with Integrated Teaching Learning Devices",
+    "item": "2.24d",
+    "cited_form": "2025-26",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of PCs with Integrated Teaching Learning Devices in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.total_boys_cwsn_toilet",
+   "dataset": "facility_data",
+   "field": "total_boys_cwsn_toilet",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Does the School have Toilet(s)/Urinal(s)? — excluding CWSN friendly",
+    "item": "2.7i",
+    "cited_form": "2025-26",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of CWSN friendly toilet seats for Boys in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.total_boys_func_toilet",
+   "dataset": "facility_data",
+   "field": "total_boys_func_toilet",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Boys' toilets, functional",
+    "item": "2.7",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.total_boys_toilet",
+   "dataset": "facility_data",
+   "field": "total_boys_toilet",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Does the School have Toilet(s)/Urinal(s)? — boys, total",
+    "item": "2.7",
+    "cited_form": "2025-26",
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.total_class_rooms",
+   "dataset": "facility_data",
+   "field": "total_class_rooms",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Details of Classrooms available in the school (Laboratory rooms NOT to be included)",
+    "item": "2.3(a)",
+    "cited_form": "2025-26",
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Classrooms used for instructional purpose in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.total_girls_cwsn_toilet",
+   "dataset": "facility_data",
+   "field": "total_girls_cwsn_toilet",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Does the School have Toilet(s)/Urinal(s)? — excluding CWSN friendly",
+    "item": "2.7i",
+    "cited_form": "2025-26",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of CWSN friendly toilet seats for Girls in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.total_girls_func_toilet",
+   "dataset": "facility_data",
+   "field": "total_girls_func_toilet",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Girls' toilets, functional",
+    "item": "2.7",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.total_girls_toilet",
+   "dataset": "facility_data",
+   "field": "total_girls_toilet",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Does the School have Toilet(s)/Urinal(s)? — girls, total",
+    "item": "2.7",
+    "cited_form": "2025-26",
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.urinal_boys",
+   "dataset": "facility_data",
+   "field": "urinal_boys",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Urinals for boys",
+    "item": "2.7",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of urinals available for Boys in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.urinal_girls",
+   "dataset": "facility_data",
+   "field": "urinal_girls",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Does the School have Toilet(s)/Urinal(s)? — Whether incinerator is available in Girl’s toilet?",
+    "item": "2.7(e)",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of urinals available for Girls in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "facility_data.well_prot_fun_yn",
+   "dataset": "facility_data",
+   "field": "well_prot_fun_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Protected well functional",
+    "item": "2.9",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Functional Protected Well in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   }
+  },
+  {
+   "id": "facility_data.well_prot_yn",
+   "dataset": "facility_data",
+   "field": "well_prot_yn",
+   "asked": {
+    "kind": "traced",
+    "item": "2.9(a)",
+    "line": "(a) Main Source of Drinking Water:",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Protected Well in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 9"
+   }
+  },
+  {
+   "id": "facility_data.well_unprot_fun_yn",
+   "dataset": "facility_data",
+   "field": "well_unprot_fun_yn",
+   "asked": {
+    "kind": "traced",
+    "item": "2.9",
+    "line": "Unprotected Well",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Functional Unprotected Well in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   }
+  },
+  {
+   "id": "facility_data.well_unprot_yn",
+   "dataset": "facility_data",
+   "field": "well_unprot_yn",
+   "asked": {
+    "kind": "traced",
+    "item": "2.9(a)",
+    "line": "(a) Main Source of Drinking Water:",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Availablity of Unprotected Well in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 9"
+   }
+  },
+  {
+   "id": "profile_data_1.aff_board_hsec",
+   "dataset": "profile_data_1",
+   "field": "aff_board_hsec",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
+    "item": "1.19d",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "School affiliation Board of the school for Higher Secondary",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 8,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.aff_board_sec",
+   "dataset": "profile_data_1",
+   "field": "aff_board_sec",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Affiliation Board of the school for SECONDARY Sections:",
+    "item": "1.16",
+    "cited_form": "2024-25",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "School affiliation Board of the school for Secondary",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 8,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.anganwadi_ecce_b",
+   "dataset": "profile_data_1",
+   "field": "anganwadi_ecce_b",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.anganwadi_ecce_g",
+   "dataset": "profile_data_1",
+   "field": "anganwadi_ecce_g",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.anganwadi_yn",
+   "dataset": "profile_data_1",
+   "field": "anganwadi_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether Anganwadi Centre(s) is/are located inside the school premises?",
+    "item": "1.40",
+    "cited_form": "2025-26",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Anganwadi Centre is located inside school premises",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "9"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.approachable_road",
+   "dataset": "profile_data_1",
+   "field": "approachable_road",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether School is Approachable by All-Weather Roads?",
+    "item": "1.37",
+    "cited_form": "2025-26",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "School approachable by all-weather roads",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.avg_instr_days",
+   "dataset": "profile_data_1",
+   "field": "avg_instr_days",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Number of instructional days (in previous academic year):",
+    "item": "1.38",
+    "cited_form": "2025-26",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Avearge Instructional days in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.block",
+   "dataset": "profile_data_1",
+   "field": "block",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Block Name as per U-DISE +",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.cce_yn",
+   "dataset": "profile_data_1",
+   "field": "cce_yn",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "CCE being implemented in school",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.district",
+   "dataset": "profile_data_1",
+   "field": "district",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Name of the District :",
+    "item": "1.2",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "District Name as per U-DISE +",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.highclass",
+   "dataset": "profile_data_1",
+   "field": "highclass",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Lowest and Highest Classes in the School : — Lowest and Highest Class in School (e.g. 1 to 5) : to",
+    "item": "1.13a",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Highest Class in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 13
+   }
+  },
+  {
+   "id": "profile_data_1.lgd_block_name",
+   "dataset": "profile_data_1",
+   "field": "lgd_block_name",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Name of the UDISE+ Block:",
+    "item": "1.3",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Lgd Block Name as Per LGD",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.lgd_urban_local_body_name",
+   "dataset": "profile_data_1",
+   "field": "lgd_urban_local_body_name",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "School Location Type : — Urban Local bodies (As per LGD):",
+    "item": "1.4(d)",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Urban Local Body as Per LGD",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.lgd_vill_name",
+   "dataset": "profile_data_1",
+   "field": "lgd_vill_name",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Village Name as Per LGD",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.lgd_vill_panchayat_name",
+   "dataset": "profile_data_1",
+   "field": "lgd_vill_panchayat_name",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "School Location Type : — Name of Gram Panchayat (As Per LGD):",
+    "item": "1.4(c)",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Panchyet Name as Per LGD",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.lgd_ward_name",
+   "dataset": "profile_data_1",
+   "field": "lgd_ward_name",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "School Location Type : — Ward Name (As Per LGD):",
+    "item": "1.4(e)",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Ward Name as Per LGD",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.lowclass",
+   "dataset": "profile_data_1",
+   "field": "lowclass",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Lowest and Highest Classes in the School : — Lowest and Highest Class in School (e.g. 1 to 5) : to",
+    "item": "1.13a",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Lowest Class in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 13
+   }
+  },
+  {
+   "id": "profile_data_1.managment",
+   "dataset": "profile_data_1",
+   "field": "managment",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Management Code of School",
+    "item": "1.12(b)",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Management of the school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 20
+   }
+  },
+  {
+   "id": "profile_data_1.medium_instr1",
+   "dataset": "profile_data_1",
+   "field": "medium_instr1",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
+    "item": "1.29",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "School medium of instruction 1",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 29
+   }
+  },
+  {
+   "id": "profile_data_1.medium_of_instr2",
+   "dataset": "profile_data_1",
+   "field": "medium_of_instr2",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
+    "item": "1.29",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "School medium of instruction 2",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 29
+   }
+  },
+  {
+   "id": "profile_data_1.medium_of_instr3",
+   "dataset": "profile_data_1",
+   "field": "medium_of_instr3",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
+    "item": "1.29",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "School medium of instruction 3",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 31
+   }
+  },
+  {
+   "id": "profile_data_1.medium_of_instr4",
+   "dataset": "profile_data_1",
+   "field": "medium_of_instr4",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
+    "item": "1.29",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "School medium of instruction 4",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 31
+   }
+  },
+  {
+   "id": "profile_data_1.minority_school",
+   "dataset": "profile_data_1",
+   "field": "minority_school",
+   "asked": {
+    "kind": "traced",
+    "item": "1.26",
+    "line": "Is this a minority managed school? (1-Yes, 2-No)",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Is this a minority managed school?",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 9"
+   }
+  },
+  {
+   "id": "profile_data_1.other_sch_b",
+   "dataset": "profile_data_1",
+   "field": "other_sch_b",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.other_sch_g",
+   "dataset": "profile_data_1",
+   "field": "other_sch_g",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.pincode",
+   "dataset": "profile_data_1",
+   "field": "pincode",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Pin Code :",
+    "item": "1.6",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Pin Code",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.pre_primary",
+   "dataset": "profile_data_1",
+   "field": "pre_primary",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Lowest and Highest Classes in the School : — Whether Pre-Primary section (other than Anganwadis) attached to school?",
+    "item": "1.13b",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Whether Pre-Primary section (other than Anganwadi) attached to school?",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "9"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.pseudocode",
+   "dataset": "profile_data_1",
+   "field": "pseudocode",
+   "asked": {
+    "kind": "release_key",
+    "note": "The pseudonymised school identifier. The release withholds the 11-digit UDISE code and the school's name, and creates this key in their place. Spelled psuedocode before 2022-23."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "pseudocode Code (Unique Identity No. of school)",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.resi_school",
+   "dataset": "profile_data_1",
+   "field": "resi_school",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "3"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.resi_type",
+   "dataset": "profile_data_1",
+   "field": "resi_type",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Is this a Residential School? — Type of Residential school:",
+    "item": "1.33a",
+    "cited_form": "2025-26",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Type of residential school",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 10,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "6",
+     "7",
+     "8",
+     "10",
+     "11"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.rural_urban",
+   "dataset": "profile_data_1",
+   "field": "rural_urban",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Is the School located in Rural or Urban Area:                        (Rural = 1, Urban = 2)",
+    "item": "1.2",
+    "cited_form": "2018-19",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "School Location",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.same_sch_b",
+   "dataset": "profile_data_1",
+   "field": "same_sch_b",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.same_sch_g",
+   "dataset": "profile_data_1",
+   "field": "same_sch_g",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_1.school_category",
+   "dataset": "profile_data_1",
+   "field": "school_category",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "School Category of School",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 11,
+    "observed": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "10",
+     "11",
+     "12"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.school_type",
+   "dataset": "profile_data_1",
+   "field": "school_type",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Type of School",
+     "remarks": "As per UDISE DCF"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "3"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.shift_school",
+   "dataset": "profile_data_1",
+   "field": "shift_school",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether the school runs in shifts",
+    "item": "1.x",
+    "cited_form": null,
+    "how": "curated",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Is this a Shift School?",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ],
+    "agreement": "corroborated: the column holds only the codes the form offers (1, 2)"
+   }
+  },
+  {
+   "id": "profile_data_1.special_school_for_cwsn",
+   "dataset": "profile_data_1",
+   "field": "special_school_for_cwsn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment By Grade for children with special needs",
+    "item": "4.6",
+    "cited_form": "2020-21",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Is this a Special School for CWSN?",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_1.state",
+   "dataset": "profile_data_1",
+   "field": "state",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "State Name",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 36
+   }
+  },
+  {
+   "id": "profile_data_2.acad_inspections",
+   "dataset": "profile_data_2",
+   "field": "acad_inspections",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Details of visits to the school during the previous academic year : — No. of academic inspections :",
+    "item": "1.49(a)",
+    "cited_form": "2018-19",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of academic inspections in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_2.balavatika_located_yn",
+   "dataset": "profile_data_2",
+   "field": "balavatika_located_yn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether Balavatika is started in the Co- located Anganwadi/school?",
+    "item": "1.41",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Whether Balavatika is started in the Co- located Anganwadi/school?",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "0",
+     "1",
+     "2",
+     "9"
+    ],
+    "agreement": "partly corroborated: the column also holds 0, 9"
+   }
+  },
+  {
+   "id": "profile_data_2.block_level_officers",
+   "dataset": "profile_data_2",
+   "field": "block_level_officers",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Details of visits to the school during the previous academic year : — No. of visits by Block Level Officers (BRC/BEO):",
+    "item": "1.49(c)",
+    "cited_form": "2018-19",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of visits by Block Level officers (BRC/BEO) in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_2.crc_coordinator",
+   "dataset": "profile_data_2",
+   "field": "crc_coordinator",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Details of visits to the school during the previous academic year: — Number of visits by CRC Coordinator:",
+    "item": "1.44(b)",
+    "cited_form": "2022-23",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of visits by CRC Co- ordinator in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_2.district_officers",
+   "dataset": "profile_data_2",
+   "field": "district_officers",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Details of visits to the school during the previous academic year : — No of visits by District/State Level Officers:",
+    "item": "1.49(d)",
+    "cited_form": "2018-19",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of visits by District/State Level officers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_2.free_text_books_pr",
+   "dataset": "profile_data_2",
+   "field": "free_text_books_pr",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Availability of free text books, Teaching Learning Material (TLM), Play material (in current academic",
+    "item": "1.56",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Free Textbook Facility provided to school childrens in Primary Grade",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_2.free_text_books_up",
+   "dataset": "profile_data_2",
+   "field": "free_text_books_up",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Availability of free text books, Teaching Learning Material (TLM), Play material (in current academic",
+    "item": "1.56",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Free Textbook Facility provided to school childrens in Upper Primary Grade",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_2.free_uniform_pr",
+   "dataset": "profile_data_2",
+   "field": "free_uniform_pr",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
+    "item": "5.1",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Free Uniform Facility provided to school childrens in Primary Grade",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_2.free_uniform_up",
+   "dataset": "profile_data_2",
+   "field": "free_uniform_up",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Free Uniform Facility provided to school childrens in Upper Primary Grade",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_2.grants_expenditure",
+   "dataset": "profile_data_2",
+   "field": "grants_expenditure",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "DOUBLE",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_2.grants_receipt",
+   "dataset": "profile_data_2",
+   "field": "grants_receipt",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "DOUBLE",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_2.material_training",
+   "dataset": "profile_data_2",
+   "field": "material_training",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether any Out of School Children enrolled in the school are — Number of children ENROLLED for Special Training in PREVIOUS Academic year:",
+    "item": "1.43b",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Graded Supplementary Material in previous academic year",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "1",
+     "2"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_2.pseudocode",
+   "dataset": "profile_data_2",
+   "field": "pseudocode",
+   "asked": {
+    "kind": "release_key",
+    "note": "The pseudonymised school identifier. The release withholds the 11-digit UDISE code and the school's name, and creates this key in their place. Spelled psuedocode before 2022-23."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "pseudocode Code (Unique Identity No. of school)",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_2.smc_exists",
+   "dataset": "profile_data_2",
+   "field": "smc_exists",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 3,
+    "observed": [
+     "1",
+     "2",
+     "9"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_2.smc_smdc_meetings",
+   "dataset": "profile_data_2",
+   "field": "smc_smdc_meetings",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether School Management Committee (SMC) and School Management and Development — Number of SMDC meetings held during the last academic year",
+    "item": "1.51(b)",
+    "cited_form": "2018-19",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of SMC/SDMC Meetings Conducted in previous Academic year in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "profile_data_2.smc_smdc_same",
+   "dataset": "profile_data_2",
+   "field": "smc_smdc_same",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether School Management Committee (SMC) and School Management and Development — Whether SMDC has prepared School Improvement Plan?                                                    (Yes=1, No=2)",
+    "item": "1.51(c)",
+    "cited_form": "2018-19",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "",
+     "remarks": "1- Yes, 2-No, 3- Same as SMC"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 4,
+    "observed": [
+     "1",
+     "2",
+     "3",
+     "9"
+    ]
+   }
+  },
+  {
+   "id": "profile_data_2.special_training",
+   "dataset": "profile_data_2",
+   "field": "special_training",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Whether school providing Special Training to out of school children",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 1,
+    "observed": [
+     "9"
+    ]
+   }
+  },
+  {
+   "id": "teacher_data.bachelor_of_ee",
+   "dataset": "teacher_data",
+   "field": "bachelor_of_ee",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is Bachelor of",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.bed_equivalent",
+   "dataset": "teacher_data",
+   "field": "bed_equivalent",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is B.ED or",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.bed_nursery",
+   "dataset": "teacher_data",
+   "field": "bed_nursery",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 18
+   }
+  },
+  {
+   "id": "teacher_data.below_graduate",
+   "dataset": "teacher_data",
+   "field": "below_graduate",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
+    "item": "1.19d",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Academic Qualification is Below Graduate",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.class_taught_hsec_only",
+   "dataset": "teacher_data",
+   "field": "class_taught_hsec_only",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
+    "item": "1.19d",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Class Taught is Higher Secondary Only in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.class_taught_pr",
+   "dataset": "teacher_data",
+   "field": "class_taught_pr",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Class Taught is Primary in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.class_taught_pr_and_pre_pri",
+   "dataset": "teacher_data",
+   "field": "class_taught_pr_and_pre_pri",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Class Taught is Pre- Primary and Primary in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.class_taught_pr_upr",
+   "dataset": "teacher_data",
+   "field": "class_taught_pr_upr",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Upper primary:",
+    "item": "1.19b",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.class_taught_sec_hsec",
+   "dataset": "teacher_data",
+   "field": "class_taught_sec_hsec",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
+    "item": "1.19d",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Class Taught is Secondary and Higher Secondary in",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.class_taught_sec_only",
+   "dataset": "teacher_data",
+   "field": "class_taught_sec_only",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Class Taught is Secondary Only in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.class_taught_upr",
+   "dataset": "teacher_data",
+   "field": "class_taught_upr",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Subjects taught in school: — Curriculum followed by School in UPPER PRIMARY Section?",
+    "item": "1.26(b)",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Class Taught is Upper Primary in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.class_taught_upr_sec",
+   "dataset": "teacher_data",
+   "field": "class_taught_upr_sec",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Year of upgradation of the school (if applicable): — Upper Primary to Secondary:",
+    "item": "1.20b",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Class Taught is Upper Primary and Secondary in",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.class_taugt_pre_primary_only",
+   "dataset": "teacher_data",
+   "field": "class_taugt_pre_primary_only",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Class Taught is Pre- Primary Only in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.contract",
+   "dataset": "teacher_data",
+   "field": "contract",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Contract teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.diploma_certificate",
+   "dataset": "teacher_data",
+   "field": "diploma_certificate",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma or",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.diploma_ele_edu",
+   "dataset": "teacher_data",
+   "field": "diploma_ele_edu",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma in",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.diploma_special_edu",
+   "dataset": "teacher_data",
+   "field": "diploma_special_edu",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Details of the Special Educator — Diploma/Degree in Special Education in :",
+    "item": "3.5(b)",
+    "cited_form": "2026-27",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma /",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 34
+   }
+  },
+  {
+   "id": "teacher_data.early_childhood_tch",
+   "dataset": "teacher_data",
+   "field": "early_childhood_tch",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether Anganwadi Centre is located inside the school premises ? — Is the Anganwadi Worker trained in early childhood education :",
+    "item": "1.36(c)",
+    "cited_form": "2020-21",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma in",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 18
+   }
+  },
+  {
+   "id": "teacher_data.female",
+   "dataset": "teacher_data",
+   "field": "female",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Female teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.gen_tch",
+   "dataset": "teacher_data",
+   "field": "gen_tch",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. General teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.graduate",
+   "dataset": "teacher_data",
+   "field": "graduate",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.male",
+   "dataset": "teacher_data",
+   "field": "male",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Male teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.med_equivalent",
+   "dataset": "teacher_data",
+   "field": "med_equivalent",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is M.ED or",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.none",
+   "dataset": "teacher_data",
+   "field": "none",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.obc_tch",
+   "dataset": "teacher_data",
+   "field": "obc_tch",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. OBC teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.other",
+   "dataset": "teacher_data",
+   "field": "other",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.part_time",
+   "dataset": "teacher_data",
+   "field": "part_time",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Part Time teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.post_graduate_and_above",
+   "dataset": "teacher_data",
+   "field": "post_graduate_and_above",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.pseudocode",
+   "dataset": "teacher_data",
+   "field": "pseudocode",
+   "asked": {
+    "kind": "release_key",
+    "note": "The pseudonymised school identifier. The release withholds the 11-digit UDISE code and the school's name, and creates this key in their place. Spelled psuedocode before 2022-23."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "pseudocode Code(Unique Identity No. of school)",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "VARCHAR",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.pursuing_rpc",
+   "dataset": "teacher_data",
+   "field": "pursuing_rpc",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is Pursuing any",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 32
+   }
+  },
+  {
+   "id": "teacher_data.regular",
+   "dataset": "teacher_data",
+   "field": "regular",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Regular teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.sc_tch",
+   "dataset": "teacher_data",
+   "field": "sc_tch",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. SC teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.st_tch",
+   "dataset": "teacher_data",
+   "field": "st_tch",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. ST teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.teacher_involve_non_training_assignment",
+   "dataset": "teacher_data",
+   "field": "teacher_involve_non_training_assignment",
+   "asked": null,
+   "described": null,
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.total_tch",
+   "dataset": "teacher_data",
+   "field": "total_tch",
+   "asked": {
+    "kind": "traced",
+    "item": "3.2",
+    "line": "Number of Teaching Staff In-position:",
+    "form": "2022-23"
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.trained_comp",
+   "dataset": "teacher_data",
+   "field": "trained_comp",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Total teachers trained in use of computer in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.trained_cwsn",
+   "dataset": "teacher_data",
+   "field": "trained_cwsn",
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Enrolment By Grade for children with special needs",
+    "item": "4.6",
+    "cited_form": "2020-21",
+    "how": "auto",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers trained for teaching CWSN in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 40
+   }
+  },
+  {
+   "id": "teacher_data.transgender",
+   "dataset": "teacher_data",
+   "field": "transgender",
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of Transgenders teachers in school",
+     "remarks": ""
+    }
+   ],
+   "released": {
+    "dtype": "BIGINT",
+    "n_distinct_capped": 2,
+    "observed": [
+     "0",
+     "1"
+    ]
+   }
+  }
+ ],
+ "asked_never_released": [
+  {
+   "dcf": "3.1(e)",
+   "question": "Number of Non-teaching/Administrative and Support staff(s) in-Position — Library Assistant",
+   "values": "count",
+   "asked": "all nine rounds, 2018-19 to 2026-27 (2019-20 verified from Delhi's rendition of the round)",
+   "released": "never",
+   "group": "Library",
+   "why_it_matters": "the only item in the instrument that counts a person employed to run a school library. The release carries librarian_yn, a yes/no, and only for 2025-26. The count has been collected every year since 2018-19 and published in no year"
+  },
+  {
+   "dcf": "3.1(a)-(g)",
+   "question": "Number of Non-teaching/Administrative and Support staff(s) in-Position — Accountant, UDC/Head Clerk, Peon/MTS, Laboratory Assistant, Library Assistant, LDC, Night Watchman",
+   "values": "count per type",
+   "asked": "all nine rounds, 2018-19 to 2026-27 (2019-20 verified from Delhi's rendition of the round)",
+   "released": "never",
+   "group": "Staff",
+   "why_it_matters": "the entire non-teaching establishment of every school in India, counted by type each year and released as nothing. The teaching grid printed below it on the same page, item 3.2, is released in full"
+  },
+  {
+   "dcf": "2.11(c)",
+   "question": "Does the school subscribe to newspapers/magazines?",
+   "values": "1-Yes, 2-No",
+   "asked": "all nine rounds, 2018-19 to 2026-27 (2019-20 verified from Delhi's rendition of the round)",
+   "released": "never",
+   "group": "Library"
+  },
+  {
+   "dcf": "2.11(d)",
+   "question": "Number of times Library books have been borrowed /read by children",
+   "values": "count",
+   "asked": "2021-22 to 2026-27 (absent from the 2018-19, 2019-20 and 2020-21 forms)",
+   "released": "never",
+   "group": "Library",
+   "why_it_matters": "the only item in UDISE+ that asks whether a library is USED rather than whether it exists"
+  }
+ ],
+ "boundary_from_previous": {
+  "from": "2021-22",
+  "to": "2022-23",
+  "added": [
+   "enrolment_data_1.item_group",
+   "enrolment_data_1.item_id",
+   "enrolment_data_2.item_group",
+   "enrolment_data_2.item_id",
+   "facility_data.bio_lab_cond",
+   "facility_data.book_bank",
+   "facility_data.chem_lab_cond",
+   "facility_data.comp_ict_lab_yn",
+   "facility_data.comp_lab_cond",
+   "facility_data.geo_lab_cond",
+   "facility_data.hand_pump_fun_yn",
+   "facility_data.hand_pump_yn",
+   "facility_data.home_sc_lab_cond",
+   "facility_data.lang_lab_cond",
+   "facility_data.math_lab_cond",
+   "facility_data.othsrc_fun_yn",
+   "facility_data.othsrc_yn",
+   "facility_data.pack_water_fun_yn",
+   "facility_data.pack_water_yn",
+   "facility_data.phy_lab_cond",
+   "facility_data.playground_alt_yn",
+   "facility_data.psycho_lab_cond",
+   "facility_data.reading_corner",
+   "facility_data.server_tot",
+   "facility_data.smart_class_tv_tot",
+   "facility_data.spl_educator_yn",
+   "facility_data.tap_fun_yn",
+   "facility_data.tap_yn",
+   "facility_data.teachdev_tot",
+   "facility_data.total_boys_cwsn_toilet",
+   "facility_data.total_girls_cwsn_toilet",
+   "facility_data.well_prot_fun_yn",
+   "facility_data.well_prot_yn",
+   "facility_data.well_unprot_fun_yn",
+   "facility_data.well_unprot_yn",
+   "profile_data_1.avg_instr_days",
+   "profile_data_1.block",
+   "profile_data_1.cce_yn",
+   "profile_data_1.lgd_block_name",
+   "profile_data_1.other_sch_b",
+   "profile_data_1.other_sch_g",
+   "profile_data_1.same_sch_b",
+   "profile_data_1.same_sch_g",
+   "profile_data_2.balavatika_located_yn",
+   "profile_data_2.smc_smdc_meetings",
+   "teacher_data.bed_nursery",
+   "teacher_data.diploma_ele_edu",
+   "teacher_data.early_childhood_tch",
+   "teacher_data.gen_tch",
+   "teacher_data.obc_tch",
+   "teacher_data.sc_tch",
+   "teacher_data.st_tch",
+   "teacher_data.trained_comp",
+   "teacher_data.trained_cwsn"
+  ],
+  "dropped": [
+   "enrolment_data_1.item_desc",
+   "enrolment_data_2.item_desc",
+   "facility_data.drinking_water_available",
+   "facility_data.drinking_water_functional",
+   "profile_data_1.anganwadi_worker",
+   "profile_data_1.assembly",
+   "profile_data_1.avg_school_hrs_student_hsec",
+   "profile_data_1.avg_school_hrs_student_pr",
+   "profile_data_1.avg_school_hrs_student_sec",
+   "profile_data_1.avg_school_hrs_student_up",
+   "profile_data_1.avg_school_hrs_teacher_hsec",
+   "profile_data_1.avg_school_hrs_teacher_pr",
+   "profile_data_1.avg_school_hrs_teacher_sec",
+   "profile_data_1.avg_school_hrs_teacher_up",
+   "profile_data_1.cce_hsec",
+   "profile_data_1.cce_pr",
+   "profile_data_1.cce_sec",
+   "profile_data_1.cce_up",
+   "profile_data_1.instr_days_hsec",
+   "profile_data_1.instr_days_pr",
+   "profile_data_1.instr_days_sec",
+   "profile_data_1.instr_days_up",
+   "profile_data_1.parliamentary",
+   "profile_data_1.year_of_establishment",
+   "profile_data_1.year_of_recognition_hsec",
+   "profile_data_1.year_of_recognition_pr",
+   "profile_data_1.year_of_recognition_sec",
+   "profile_data_1.year_of_recognition_up",
+   "profile_data_2.rte_ews_c0_b",
+   "profile_data_2.rte_ews_c0_g",
+   "profile_data_2.rte_ews_c10_b",
+   "profile_data_2.rte_ews_c10_g",
+   "profile_data_2.rte_ews_c11_b",
+   "profile_data_2.rte_ews_c11_g",
+   "profile_data_2.rte_ews_c12_b",
+   "profile_data_2.rte_ews_c12_g",
+   "profile_data_2.rte_ews_c1_b",
+   "profile_data_2.rte_ews_c1_g",
+   "profile_data_2.rte_ews_c2_b",
+   "profile_data_2.rte_ews_c2_g",
+   "profile_data_2.rte_ews_c3_b",
+   "profile_data_2.rte_ews_c3_g",
+   "profile_data_2.rte_ews_c4_b",
+   "profile_data_2.rte_ews_c4_g",
+   "profile_data_2.rte_ews_c5_b",
+   "profile_data_2.rte_ews_c5_g",
+   "profile_data_2.rte_ews_c6_b",
+   "profile_data_2.rte_ews_c6_g",
+   "profile_data_2.rte_ews_c7_b",
+   "profile_data_2.rte_ews_c7_g",
+   "profile_data_2.rte_ews_c8_b",
+   "profile_data_2.rte_ews_c8_g",
+   "profile_data_2.rte_ews_c9_b",
+   "profile_data_2.rte_ews_c9_g",
+   "profile_data_2.rte_pvt_c0_b",
+   "profile_data_2.rte_pvt_c0_g",
+   "profile_data_2.rte_pvt_c1_b",
+   "profile_data_2.rte_pvt_c1_g",
+   "profile_data_2.rte_pvt_c2_b",
+   "profile_data_2.rte_pvt_c2_g",
+   "profile_data_2.rte_pvt_c3_b",
+   "profile_data_2.rte_pvt_c3_g",
+   "profile_data_2.rte_pvt_c4_b",
+   "profile_data_2.rte_pvt_c4_g",
+   "profile_data_2.rte_pvt_c5_b",
+   "profile_data_2.rte_pvt_c5_g",
+   "profile_data_2.rte_pvt_c6_b",
+   "profile_data_2.rte_pvt_c6_g",
+   "profile_data_2.rte_pvt_c7_b",
+   "profile_data_2.rte_pvt_c7_g",
+   "profile_data_2.rte_pvt_c8_b",
+   "profile_data_2.rte_pvt_c8_g",
+   "profile_data_2.smdc_constituted",
+   "profile_data_2.text_books_received",
+   "profile_data_2.transport_pr",
+   "profile_data_2.transport_up",
+   "teacher_data.teacher_received_service_training",
+   "teacher_data.teachers_aged_above_55",
+   "teacher_data.total_teacher_trained_computer"
+  ],
+  "renamed": [
+   {
+    "action": "RENAME",
+    "dataset": "profile_data_1",
+    "from": "anganwadi_premises",
+    "to": "anganwadi_yn",
+    "basis": "same question (DCF 1.41 in 2021-22, 1.39 in 2022-23, identical wording) and the same value distribution: 2 appears 656,872 then 658,521 times, 9 then 1 then 0 follow in the same order",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "form"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "profile_data_1",
+    "from": "anganwadi_boys",
+    "to": "anganwadi_ecce_b",
+    "basis": "the Boys cell of the unchanged anganwadi grid; populated to 2021-22 and null after, while anganwadi_ecce_b is null before and populated after",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "form"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "profile_data_1",
+    "from": "anganwadi_girls",
+    "to": "anganwadi_ecce_g",
+    "basis": "the Girls cell of the same grid, same complementary coverage",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "form"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "facility_data",
+    "from": "urinla_girls",
+    "to": "urinal_girls",
+    "basis": "the Girls cell of DCF item 2.5(a)(iii) 'Total number of urinals available'. The grid is identical in the 2021-22 and 2022-23 forms, headings and rows alike. The Boys cell settles the pair on its own: urinal_boys is spelled correctly in all eight releases and never changes, while only the Girls cell carries 'urinla' from 2018-19 to 2021-22. The 2022-23 release corrects it",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "grid"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "facility_data",
+    "from": "ict_lab",
+    "to": "ict_lab_yn",
+    "basis": "DCF item 2.27 'Is ICT Lab available in the school?' is word for word identical in 2021-22 and 2022-23. The question did not move. The Ministry's release description did: it narrows the shared column to 'ICT Lab available in school under Samagra Siksha', a restriction the form does not carry",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "form"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "teacher_data",
+    "from": "total_teacher",
+    "to": "total_tch",
+    "basis": "DCF item 3.2 'Number of Teaching Staff In-position' carries a grid whose right-hand column is headed 'Total Number of Teaching Staff'. The item and the heading are identical in the 2021-22 and 2022-23 forms. The Ministry's schema describes the pair as 'Total Number of Teacher' and then 'No. of teachers in school'. An earlier version of this entry said no form item stated the count. That was wrong, and Codex caught it: the search had used the phrasings 'total number of teachers' and 'teachers in position', and the form says 'Teaching Staff In-position'",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "grid"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "profile_data_1",
+    "from": "psuedocode",
+    "to": "pseudocode",
+    "basis": "the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "release"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "profile_data_2",
+    "from": "psuedocode",
+    "to": "pseudocode",
+    "basis": "the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "release"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "facility_data",
+    "from": "psuedocode",
+    "to": "pseudocode",
+    "basis": "the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "release"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "teacher_data",
+    "from": "psuedocode",
+    "to": "pseudocode",
+    "basis": "the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "release"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "enrolment_data_1",
+    "from": "psuedocode",
+    "to": "pseudocode",
+    "basis": "the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "release"
+   },
+   {
+    "action": "RENAME",
+    "dataset": "enrolment_data_2",
+    "from": "psuedocode",
+    "to": "pseudocode",
+    "basis": "the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school",
+    "similarity": null,
+    "confidence": "confirmed",
+    "how": "release"
+   }
+  ],
+  "wording_diff_measurable": true,
+  "reworded_questions": [
+   {
+    "id": "facility_data.building_status",
+    "from": "Status of School Building?",
+    "to": "Status of Present School Building?",
+    "item_from": "2.1",
+    "item_to": "2.1"
+   }
+  ]
+ }
+}
