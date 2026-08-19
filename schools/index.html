@@ -57,7 +57,11 @@
 
     <h2>The count</h2>
     <p>The Ministry of Education releases school-level data for every academic year from 2018-19 to 2025-26. From 2022-23 the release covers about 1.46 million schools. We read the header row of all 48 published archives and built a dictionary of every column in them.</p>
-    <p>The dictionary holds <strong>382 columns</strong>. An official Ministry description covers <strong>320</strong>. The wording of the question on the form covers <strong>183</strong>. Every entry says which of those three it rests on, because a description a person checked and a description a matcher guessed are different things.</p>
+    <p>The dictionary holds <strong>382 columns</strong>. An official Ministry description covers <strong>320</strong>. The wording of the question on the form covers <strong>224</strong>. Every entry says how it was established, because a wording a person read and a wording a program derived are different claims.</p>
+
+    <h2>Question and variable</h2>
+    <p>A question is what the form asks. A variable is what the release publishes. They are two objects, and the Ministry writes them in two documents that can disagree. The dictionary joins them by matching the release's own description against the form's own words, then checking the answer against the codes the column actually holds.</p>
+    <p>That check earns its place. Nine columns hold a code the form never defines. In <code>minority_school</code> it covers <strong>418,847 schools</strong> in 2022-23 and <strong>428,656</strong> in 2023-24, then disappears. In <code>ict_lab</code> it is the most common value in every year the column exists.</p>
 
     <p class="pub-crosslink"><a href="/schools/udise-data-dictionary/">Open the UDISE+ field dictionary &rarr;</a></p>
 
@@ -66,10 +70,11 @@
     <p>Of the 79 columns that stopped, <strong>44 are one apparatus</strong>. They are the class-by-class count of children admitted under Section 12(1)(c) of the Right to Education Act, the twenty-five per cent quota. That is the only individually justiciable entitlement in Indian school law. From 2025-26 the release carries a single school-level yes or no in its place.</p>
 
     <h2>What is asked and never released</h2>
-    <p><strong>Sixteen questions</strong> are put to every school in India, every year, and appear in no released column. They cannot be found by browsing the data, because they produced no data. The dictionary lists them.</p>
+    <p><strong>Eighteen questions</strong> are put to every school in India, every year, and appear in no released column. They cannot be found by browsing the data, because they produced no data. The dictionary lists them.</p>
+    <p>One of them counts the people who run a school library. Form item 3.1 asks for the number of non-teaching staff by type, and <em>Library Assistant</em> is one of the seven types. It has been asked in every form since 2018-19 and released in no column. The teaching-staff grid printed below it on the same page, item 3.2, is released in full.</p>
 
     <h2>How to use it</h2>
-    <p>The dictionary is a reference, not an argument. Look a column up before you use it across years. Each entry carries the years that released it, the wording that produced it, and the traps that will break a naive read.</p>
+    <p>The dictionary is a reference, not an argument. Look a column up before you use it across years. Each entry carries the years that released it, the wording that produced it, and the comparability notes that a naive read will miss.</p>
     <p>The same vocabulary is published as machine-readable linked data, so a paper, a codebook and a replication script can point at one identifier for a column instead of each inventing a private name.</p>
 
     <p class="pub-crosslink">Universities, colleges and other institutions follow. The right to read is delivered through all of them.</p>

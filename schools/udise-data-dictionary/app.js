@@ -33,7 +33,7 @@ function renderMasthead() {
   $("#counts").textContent =
     `${c.fields} released columns · ${state.data.meta.years.length} releases, ` +
     `${state.data.meta.years[0]} to ${state.data.meta.years.at(-1)} · ` +
-    `${c.traps} documented traps · ${c.never_released} questions asked but never released`;
+    `${c.traps} comparability notes · ${c.never_released} questions asked but never released`;
 }
 
 /* Fields live in a given year only if that year is in their span. This is the
@@ -117,7 +117,7 @@ function renderBrowse() {
   }
 
   const chips = [
-    ["trap", "has a trap", (f) => f.traps.length],
+    ["trap", "carries a comparability note", (f) => f.traps.length],
     ["chg", "changed", (f) => f.changes.length],
     ["full", "all 8 years", (f) => f.n_years === 8],
     ["gone", "not in every year", (f) => f.n_years < 8],
@@ -189,7 +189,7 @@ function renderBrowse() {
    needed. Once a column is open the user faces dozens of coloured dots with no way
    to recall what they mean. It belongs above the list, permanently. */
 function legendHTML() {
-  return `<div class="legend"><span class="pip trap"></span>trap
+  return `<div class="legend"><span class="pip trap"></span>note
     <span class="pip chg"></span>changed<span class="sp">·</span>
     <span class="life"><i class="on"></i><i class="on"></i><i class="off"></i>
       <i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i>
@@ -197,7 +197,7 @@ function legendHTML() {
 }
 
 function nodeHTML(f) {
-  const flags = (f.traps.length ? '<span class="pip trap" title="has a documented trap"></span>' : "")
+  const flags = (f.traps.length ? '<span class="pip trap" title="carries a comparability note"></span>' : "")
               + (f.changes.length ? '<span class="pip chg" title="renamed, split, merged or recoded"></span>' : "");
   return `<div class="node${state.field === f.id ? " active" : ""}" data-id="${esc(f.id)}">
     <span class="nm"><code>${esc(f.field)}</code> <span class="ds">${esc(f.dataset)}</span>
@@ -239,27 +239,29 @@ function showField(id) {
 
     ${officialHTML(f)}
 
-    <div class="k">What the form asked</div>
+    <div class="k">Question — as asked</div>
     ${f.question
       ? `<div class="q">${esc(f.question)}</div>
          <div class="ds-line" style="margin-top:6px">DCF item ${esc(f.dcf_item)}${
-           f.dcf_year ? ", " + esc(f.dcf_year) + " form" : ""}
+           f.dcf_year && f.dcf_year !== "all"
+             ? ", read from the " + esc(f.dcf_year) + " form"
+             : f.dcf_year === "all" ? ", present in every form"
+             : ' <span class="pill warn">form year not recorded</span>'}
            ${f.dcf_how === "auto"
-             ? '<span class="pill warn">matched by name, not yet checked against the form</span>'
+             ? '<span class="pill warn">matched on shared words</span>'
              : f.dcf_how === "structural"
                ? '<span class="pill ok">read off the enrolment grid</span>'
                : '<span class="pill ok">checked against the form</span>'}</div>`
-      : `<p class="detail-empty" style="margin:0">Nobody has matched this column to a question
-         on the form yet. The Data Capture Format side of this dictionary is filled in by hand,
-         one item at a time, and ${state.data.meta.counts.with_dcf_wording} of
-         ${state.data.meta.counts.fields} columns are done. Blank means unchecked. It does not
-         mean the form is silent about this column.</p>`}
+      : `<p class="detail-empty" style="margin:0">This column is not yet matched to a form item.
+         The Data Capture Format side of this dictionary is filled in by hand, one item at a time,
+         and ${state.data.meta.counts.with_dcf_wording} of ${state.data.meta.counts.fields} columns
+         are done. An unmatched column is unchecked. The form is not silent about it.</p>`}
 
     ${f.values ? `<div class="k">What the codes mean</div>${valuesHTML(f.values)}` : ""}
 
     ${f.changes.length ? `<div class="k">Change history</div>` + f.changes.map(chgHTML).join("") : ""}
 
-    ${traps.length ? `<div class="k">Traps</div>` + traps.map(trapHTML).join("") : ""}
+    ${traps.length ? `<div class="k">Comparability</div>` + traps.map(trapHTML).join("") : ""}
   `;
   bindCopy(d);
 }
@@ -286,11 +288,11 @@ function valuesHTML(raw) {
 function officialHTML(f) {
   const o = f.official || [];
   if (!o.length) {
-    return `<div class="k">What the release calls it</div>
+    return `<div class="k">Variable — as released</div>
       <p class="detail-empty" style="margin:0">The Ministry's schema document does not
       list this column. That is a gap in the published schema, not in this page.</p>`;
   }
-  return `<div class="k">What the release calls it</div>` + o.map((x) => `
+  return `<div class="k">Variable — as released</div>` + o.map((x) => `
     <div class="official">
       <div class="desc">${esc(x.description)}</div>
       <div class="meta"><code>${esc(x.dtype)}${x.length ? "(" + x.length + ")" : ""}</code>
@@ -358,7 +360,7 @@ function showSectionIntro(key) {
       <div><b>${fs.length}</b> columns</div>
       <div><b>${fs.length - partial}</b> in all eight releases</div>
       <div><b>${changed}</b> renamed, split, merged or recoded</div>
-      <div><b>${traps.size}</b> documented traps</div>
+      <div><b>${traps.size}</b> documented comparability notes</div>
     </div>
     <p class="lede">Select a column on the left to read what the release calls it, what the
       form asked, what its codes mean, and what breaks if you join two years.</p>`;
@@ -617,8 +619,8 @@ function renderRecipes() {
   }).join("");
   $("#traps-view").insertAdjacentHTML("beforeend", `<div class="wrap">
     <h2>Worked recipes</h2>
-    <p class="lede">Four analyses a researcher wants. Each one steps around the traps between
-      the question and the answer. Copy the query. Run it. Compare your number with the one
+    <p class="lede">Four analyses a researcher wants. Each one steps around a gap between the
+      question and the answer. Copy the query. Run it. Compare your number with the one
       quoted.</p>
     ${rs}</div>`);
   bindCopy($("#traps-view"));
@@ -643,12 +645,16 @@ function renderTraps() {
   const KIND = {
     spelling: "Spelling — the same thing under two names",
     coding: "Coding — the number does not mean what it looks like",
+    discrepancy: "Discrepancy — the release and the form do not agree",
     definitional: "Definitional — the question is not what you think it asks",
   };
   $("#traps-view").innerHTML = `<div class="wrap">
-    <h2>Traps</h2>
+    <h2>Comparability notes</h2>
     <p class="lede">Each of these has cost somebody a wrong number. Most fail silently. You get
       no error, no warning, and a plausible result. Each entry carries the fix.</p>
+    <p class="lede">These are properties of the data, not of anyone's intent. A code list that
+      moves between years, or a column the release describes differently from the form, breaks a
+      series whatever the reason behind it.</p>
     ${Object.entries(byKind).map(([k, ts]) => `<h3>${esc(KIND[k] || k)}</h3>` +
       ts.map((t) => trapHTML(t) + affectsHTML(t)).join("")).join("")}
   </div>`;
@@ -706,11 +712,13 @@ function renderMissing() {
   const body = ORDER.filter((g) => groups[g]).map((g) => `
     <h3>${esc(g)} <span class="pill">${groups[g].length}</span></h3>
     ${NOTE[g] ? `<p>${esc(NOTE[g])}</p>` : ""}
-    <table><thead><tr><th>DCF item</th><th>the question, verbatim</th><th>values</th><th>asked</th></tr></thead>
+    <table><thead><tr><th>DCF item</th><th>the question, verbatim</th><th>values</th>
+      <th>asked</th><th>variable</th></tr></thead>
     <tbody>${groups[g].map((m) => `<tr>
       <td><code>${esc(m.dcf)}</code></td>
       <td>${esc(m.question)}${m.why_it_matters ? `<div class="why-m">${esc(m.why_it_matters)}</div>` : ""}</td>
-      <td><code>${esc(m.values)}</code></td><td>${esc(m.asked)}</td></tr>`).join("")}</tbody></table>`).join("");
+      <td><code>${esc(m.values)}</code></td><td>${esc(m.asked)}</td>
+      <td><span class="pill warn">never shared</span></td></tr>`).join("")}</tbody></table>`).join("");
 
   $("#missing-view").innerHTML = `<div class="wrap">
     ${lede}
@@ -750,12 +758,12 @@ function renderAbout() {
         item. ${m.counts.checked_by_hand} columns.</li>
       <li><b>Read off the enrolment grid</b> — the form prints a grid whose rows are classes and
         whose columns are sex. The column name is the cell. Exact, but never typed as a question.</li>
-      <li><b>Matched by name, not yet checked</b> — a parser read all seven forms, and matched
-        items to columns on shared words. It is a lead, not a finding. Open the form before you
-        cite it.</li>
+      <li><b>Matched on shared words</b> — a parser read all seven forms and matched items to
+        columns on the words they share. Open the form for that year before you cite one.</li>
     </ul>
-    <p>Wording now reaches ${m.counts.with_dcf_wording} of ${m.counts.fields} columns. An empty
-      entry means <em>nobody has checked yet</em>. It never means the question was not asked.</p>
+    <p>Wording reaches ${m.counts.with_dcf_wording} of ${m.counts.fields} columns. An empty entry
+      means <em>this column is not yet matched to a form item</em>. It never means the question
+      was not asked.</p>
 
     <h3>How a change is typed</h3>
     <p>INSERT and DELETE come from a straight schema diff. A character similarity test above 0.70
@@ -778,7 +786,13 @@ function renderAbout() {
       <a href="udise.ttl">Turtle</a> and <a href="udise.jsonld">JSON-LD</a>, a flat
       <a href="udise_fields.csv">CSV</a>, and the <a href="udise_browser.json">JSON</a> this page
       runs on. Each column is one concept with a stable identifier, the years it was released, the
-      form wording with its grade, and every trap attached as a note. Reuse it under CC BY-NC 4.0.</p>
+      form wording with its source, and every comparability note attached. Reuse it under
+      CC BY-NC 4.0.</p>
+    <p>There is also a <a href="ddi/">DDI-Codebook</a>, one per release year, valid against the
+      DDI-Codebook 2.5 schema. That is the format archives and repositories ingest. It states each
+      question inside the variable it produced, and it uses DDI&rsquo;s own
+      <code>undocCod</code> element &mdash; &ldquo;values whose meaning is unknown&rdquo; &mdash;
+      for the nine columns holding a code no form defines.</p>
 
     <h3>Sources</h3>
     <p>UDISE+ release files 2018-19 to 2025-26 · Data Capture Formats 2018-19 to 2026-27 ·

@@ -92,7 +92,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c0_b",
     "udise:profile_data_2.rte_ews_c0_b"
@@ -115,7 +115,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c0_g",
     "udise:profile_data_2.rte_ews_c0_g"
@@ -138,7 +138,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c1_b",
     "udise:profile_data_2.rte_ews_c1_b"
@@ -161,7 +161,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c1_g",
     "udise:profile_data_2.rte_ews_c1_g"
@@ -184,7 +184,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c2_b",
     "udise:profile_data_2.rte_ews_c2_b"
@@ -207,7 +207,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c2_g",
     "udise:profile_data_2.rte_ews_c2_g"
@@ -230,7 +230,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c3_b",
     "udise:profile_data_2.rte_ews_c3_b"
@@ -253,7 +253,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c3_g",
     "udise:profile_data_2.rte_ews_c3_g"
@@ -276,7 +276,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c4_b",
     "udise:profile_data_2.rte_ews_c4_b"
@@ -299,7 +299,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c4_g",
     "udise:profile_data_2.rte_ews_c4_g"
@@ -322,7 +322,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c5_b",
     "udise:profile_data_2.rte_ews_c5_b"
@@ -345,7 +345,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c5_g",
     "udise:profile_data_2.rte_ews_c5_g"
@@ -368,7 +368,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c6_b",
     "udise:profile_data_2.rte_ews_c6_b"
@@ -391,7 +391,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c6_g",
     "udise:profile_data_2.rte_ews_c6_g"
@@ -414,7 +414,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c7_b",
     "udise:profile_data_2.rte_ews_c7_b"
@@ -437,7 +437,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c7_g",
     "udise:profile_data_2.rte_ews_c7_g"
@@ -460,7 +460,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c8_b",
     "udise:profile_data_2.rte_ews_c8_b"
@@ -483,7 +483,7 @@
     "2021-22"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_2.rte_bld_c8_g",
     "udise:profile_data_2.rte_ews_c8_g"
@@ -510,7 +510,7 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_1.city",
     "udise:profile_data_1.lgd_urban_local_body_name"
@@ -538,7 +538,7 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_1.lgd_ward_name",
     "udise:profile_data_1.municipality"
@@ -566,7 +566,7 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_1.lgd_vill_panchayat_name",
     "udise:profile_data_1.panchyat"
@@ -594,14 +594,15 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_1.anganwadi_premises",
     "udise:profile_data_1.anganwadi_yn"
    ],
    "historyNote": [
     "anganwadi_premises -> anganwadi_yn: same question (DCF 1.41 in 2021-22, 1.39 in 2022-23, identical wording) and the same value distribution: 2 appears 656,872 then 658,521 times, 9 then 1 then 0 follow in the same order"
-   ]
+   ],
+   "definition": "Whether Anganwadi Centre(s) is/are located inside the school premises?"
   },
   {
    "@id": "udise:series.profile_data_1.anganwadi_boys",
@@ -621,7 +622,7 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_1.anganwadi_boys",
     "udise:profile_data_1.anganwadi_ecce_b"
@@ -649,7 +650,7 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "Every rename in this series was read off the form.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
    "hasVersion": [
     "udise:profile_data_1.anganwadi_ecce_g",
     "udise:profile_data_1.anganwadi_girls"
@@ -658,115 +659,6 @@
     "anganwadi_girls -> anganwadi_ecce_g: the Girls cell of the same grid, same complementary coverage"
    ],
    "definition": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Total Children in Anganwadi Centre :        Boys :                                Girls :"
-  },
-  {
-   "@id": "udise:series.enrolment_data_1.psuedocode",
-   "@type": "skos:Concept",
-   "inScheme": "udise:scheme",
-   "prefLabel": "psuedocode (series)",
-   "isPartOf": "enrolment_data_1",
-   "temporal": "2018-19/2025-26",
-   "valid": [
-    "2018-19",
-    "2019-20",
-    "2020-21",
-    "2021-22",
-    "2022-23",
-    "2023-24",
-    "2024-25",
-    "2025-26"
-   ],
-   "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "At least one rename in this series rests on name similarity alone. Treat the join as a lead, not a finding.",
-   "hasVersion": [
-    "udise:enrolment_data_1.pseudocode",
-    "udise:enrolment_data_1.psuedocode"
-   ],
-   "historyNote": [
-    "psuedocode -> pseudocode: matched on the names alone: these two differ by a few characters and no other column in this file is closer. Not read off the form"
-   ]
-  },
-  {
-   "@id": "udise:series.enrolment_data_2.psuedocode",
-   "@type": "skos:Concept",
-   "inScheme": "udise:scheme",
-   "prefLabel": "psuedocode (series)",
-   "isPartOf": "enrolment_data_2",
-   "temporal": "2018-19/2025-26",
-   "valid": [
-    "2018-19",
-    "2019-20",
-    "2020-21",
-    "2021-22",
-    "2022-23",
-    "2023-24",
-    "2024-25",
-    "2025-26"
-   ],
-   "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "At least one rename in this series rests on name similarity alone. Treat the join as a lead, not a finding.",
-   "hasVersion": [
-    "udise:enrolment_data_2.pseudocode",
-    "udise:enrolment_data_2.psuedocode"
-   ],
-   "historyNote": [
-    "psuedocode -> pseudocode: matched on the names alone: these two differ by a few characters and no other column in this file is closer. Not read off the form"
-   ]
-  },
-  {
-   "@id": "udise:series.facility_data.ict_lab",
-   "@type": "skos:Concept",
-   "inScheme": "udise:scheme",
-   "prefLabel": "ict_lab (series)",
-   "isPartOf": "facility_data",
-   "temporal": "2018-19/2025-26",
-   "valid": [
-    "2018-19",
-    "2019-20",
-    "2020-21",
-    "2021-22",
-    "2022-23",
-    "2023-24",
-    "2024-25",
-    "2025-26"
-   ],
-   "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "At least one rename in this series rests on name similarity alone. Treat the join as a lead, not a finding.",
-   "hasVersion": [
-    "udise:facility_data.ict_lab",
-    "udise:facility_data.ict_lab_yn"
-   ],
-   "historyNote": [
-    "ict_lab -> ict_lab_yn: matched on the names alone: these two differ by a few characters and no other column in this file is closer. Not read off the form"
-   ],
-   "definition": "Is the ICT Lab available in the school under Samagra Siksha?"
-  },
-  {
-   "@id": "udise:series.facility_data.psuedocode",
-   "@type": "skos:Concept",
-   "inScheme": "udise:scheme",
-   "prefLabel": "psuedocode (series)",
-   "isPartOf": "facility_data",
-   "temporal": "2018-19/2025-26",
-   "valid": [
-    "2018-19",
-    "2019-20",
-    "2020-21",
-    "2021-22",
-    "2022-23",
-    "2023-24",
-    "2024-25",
-    "2025-26"
-   ],
-   "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "At least one rename in this series rests on name similarity alone. Treat the join as a lead, not a finding.",
-   "hasVersion": [
-    "udise:facility_data.pseudocode",
-    "udise:facility_data.psuedocode"
-   ],
-   "historyNote": [
-    "psuedocode -> pseudocode: matched on the names alone: these two differ by a few characters and no other column in this file is closer. Not read off the form"
-   ]
   },
   {
    "@id": "udise:series.facility_data.urinla_girls",
@@ -786,15 +678,71 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "At least one rename in this series rests on name similarity alone. Treat the join as a lead, not a finding.",
+   "editorialNote": "Both names are cells of one printed grid, unchanged across the break.",
    "hasVersion": [
     "udise:facility_data.urinal_girls",
     "udise:facility_data.urinla_girls"
    ],
    "historyNote": [
-    "urinla_girls -> urinal_girls: matched on the names alone: these two differ by a few characters and no other column in this file is closer. Not read off the form"
+    "urinla_girls -> urinal_girls: the Girls cell of DCF item 2.5(a)(iii) 'Total number of urinals available'. The grid is identical in the 2021-22 and 2022-23 forms, headings and rows alike. The Boys cell settles the pair on its own: urinal_boys is spelled correctly in all eight releases and never changes, while only the Girls cell carries 'urinla' from 2018-19 to 2021-22. The 2022-23 release corrects it"
    ],
    "definition": "Does the School have Toilet(s)/Urinal(s)? \u2014 Whether incinerator is available in Girl\u2019s toilet?"
+  },
+  {
+   "@id": "udise:series.facility_data.ict_lab",
+   "@type": "skos:Concept",
+   "inScheme": "udise:scheme",
+   "prefLabel": "ict_lab (series)",
+   "isPartOf": "facility_data",
+   "temporal": "2018-19/2025-26",
+   "valid": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+   ],
+   "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
+   "editorialNote": "The Data Capture Format asks the same question in both years.",
+   "hasVersion": [
+    "udise:facility_data.ict_lab",
+    "udise:facility_data.ict_lab_yn"
+   ],
+   "historyNote": [
+    "ict_lab -> ict_lab_yn: DCF item 2.27 'Is ICT Lab available in the school?' is word for word identical in 2021-22 and 2022-23. The question did not move. The Ministry's release description did: it narrows the shared column to 'ICT Lab available in school under Samagra Siksha', a restriction the form does not carry"
+   ],
+   "definition": "Is ICT Lab available in the school?"
+  },
+  {
+   "@id": "udise:series.teacher_data.total_teacher",
+   "@type": "skos:Concept",
+   "inScheme": "udise:scheme",
+   "prefLabel": "total_teacher (series)",
+   "isPartOf": "teacher_data",
+   "temporal": "2018-19/2025-26",
+   "valid": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+   ],
+   "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
+   "editorialNote": "Both names are cells of one printed grid, unchanged across the break.",
+   "hasVersion": [
+    "udise:teacher_data.total_tch",
+    "udise:teacher_data.total_teacher"
+   ],
+   "historyNote": [
+    "total_teacher -> total_tch: DCF item 3.2 'Number of Teaching Staff In-position' carries a grid whose right-hand column is headed 'Total Number of Teaching Staff'. The item and the heading are identical in the 2021-22 and 2022-23 forms. The Ministry's schema describes the pair as 'Total Number of Teacher' and then 'No. of teachers in school'. An earlier version of this entry said no form item stated the count. That was wrong, and Codex caught it: the search had used the phrasings 'total number of teachers' and 'teachers in position', and the form says 'Teaching Staff In-position'"
+   ],
+   "definition": "Number of teaching staff in position"
   },
   {
    "@id": "udise:series.profile_data_1.psuedocode",
@@ -814,13 +762,13 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "At least one rename in this series rests on name similarity alone. Treat the join as a lead, not a finding.",
+   "editorialNote": "No form asks for this column. The release creates it, and the Ministry's schema types and describes both names the same way.",
    "hasVersion": [
     "udise:profile_data_1.pseudocode",
     "udise:profile_data_1.psuedocode"
    ],
    "historyNote": [
-    "psuedocode -> pseudocode: matched on the names alone: these two differ by a few characters and no other column in this file is closer. Not read off the form"
+    "psuedocode -> pseudocode: the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school"
    ]
   },
   {
@@ -841,13 +789,40 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "At least one rename in this series rests on name similarity alone. Treat the join as a lead, not a finding.",
+   "editorialNote": "No form asks for this column. The release creates it, and the Ministry's schema types and describes both names the same way.",
    "hasVersion": [
     "udise:profile_data_2.pseudocode",
     "udise:profile_data_2.psuedocode"
    ],
    "historyNote": [
-    "psuedocode -> pseudocode: matched on the names alone: these two differ by a few characters and no other column in this file is closer. Not read off the form"
+    "psuedocode -> pseudocode: the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school"
+   ]
+  },
+  {
+   "@id": "udise:series.facility_data.psuedocode",
+   "@type": "skos:Concept",
+   "inScheme": "udise:scheme",
+   "prefLabel": "psuedocode (series)",
+   "isPartOf": "facility_data",
+   "temporal": "2018-19/2025-26",
+   "valid": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+   ],
+   "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
+   "editorialNote": "No form asks for this column. The release creates it, and the Ministry's schema types and describes both names the same way.",
+   "hasVersion": [
+    "udise:facility_data.pseudocode",
+    "udise:facility_data.psuedocode"
+   ],
+   "historyNote": [
+    "psuedocode -> pseudocode: the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school"
    ]
   },
   {
@@ -868,21 +843,21 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "At least one rename in this series rests on name similarity alone. Treat the join as a lead, not a finding.",
+   "editorialNote": "No form asks for this column. The release creates it, and the Ministry's schema types and describes both names the same way.",
    "hasVersion": [
     "udise:teacher_data.pseudocode",
     "udise:teacher_data.psuedocode"
    ],
    "historyNote": [
-    "psuedocode -> pseudocode: matched on the names alone: these two differ by a few characters and no other column in this file is closer. Not read off the form"
+    "psuedocode -> pseudocode: the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school"
    ]
   },
   {
-   "@id": "udise:series.teacher_data.total_teacher",
+   "@id": "udise:series.enrolment_data_1.psuedocode",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
-   "prefLabel": "total_teacher (series)",
-   "isPartOf": "teacher_data",
+   "prefLabel": "psuedocode (series)",
+   "isPartOf": "enrolment_data_1",
    "temporal": "2018-19/2025-26",
    "valid": [
     "2018-19",
@@ -895,15 +870,41 @@
     "2025-26"
    ],
    "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
-   "editorialNote": "At least one rename in this series rests on name similarity alone. Treat the join as a lead, not a finding.",
+   "editorialNote": "No form asks for this column. The release creates it, and the Ministry's schema types and describes both names the same way.",
    "hasVersion": [
-    "udise:teacher_data.total_tch",
-    "udise:teacher_data.total_teacher"
+    "udise:enrolment_data_1.pseudocode",
+    "udise:enrolment_data_1.psuedocode"
    ],
    "historyNote": [
-    "total_teacher -> total_tch: matched on the names alone: these two differ by a few characters and no other column in this file is closer. Not read off the form"
+    "psuedocode -> pseudocode: the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school"
+   ]
+  },
+  {
+   "@id": "udise:series.enrolment_data_2.psuedocode",
+   "@type": "skos:Concept",
+   "inScheme": "udise:scheme",
+   "prefLabel": "psuedocode (series)",
+   "isPartOf": "enrolment_data_2",
+   "temporal": "2018-19/2025-26",
+   "valid": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
    ],
-   "definition": "Number of teaching staff in position"
+   "scopeNote": "One measurement under more than one column name. Join the versions below to build a series across the rename.",
+   "editorialNote": "No form asks for this column. The release creates it, and the Ministry's schema types and describes both names the same way.",
+   "hasVersion": [
+    "udise:enrolment_data_2.pseudocode",
+    "udise:enrolment_data_2.psuedocode"
+   ],
+   "historyNote": [
+    "psuedocode -> pseudocode: the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school"
+   ]
   },
   {
    "@id": "udise:enrolment_data_1.c10_b",
@@ -925,7 +926,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 10",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-10 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-10 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -949,7 +954,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 10",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-10 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-10 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -966,7 +975,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 10",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-10 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -990,7 +1002,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 11",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-11 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-11 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1014,7 +1030,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 11",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-11 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-11 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1031,7 +1051,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 11",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-11 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1055,7 +1078,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 12",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-12 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-12 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1079,7 +1106,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 12",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-12 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-12 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1096,7 +1127,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 12",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-12 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1120,7 +1154,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 1",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-1 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-1 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1144,7 +1182,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 1",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-1 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-1 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1161,7 +1203,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 1",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-1 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1185,7 +1230,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 2",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-2 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-2 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1209,7 +1258,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 2",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-2 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-2 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1226,7 +1279,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 2",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-2 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1250,7 +1306,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 3",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-3 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-3 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1274,7 +1334,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 3",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-3 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-3 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1291,7 +1355,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 3",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-3 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1315,7 +1382,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 4",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-4 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-4 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1339,7 +1410,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 4",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-4 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-4 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1356,7 +1431,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 4",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-4 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1380,7 +1458,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 5",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-5 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-5 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1404,7 +1486,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 5",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-5 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-5 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1421,7 +1507,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 5",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-5 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1445,7 +1534,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 6",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-6 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-6 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1469,7 +1562,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 6",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-6 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-6 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1486,7 +1583,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 6",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-6 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1510,7 +1610,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 7",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-7 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-7 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1534,7 +1638,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 7",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-7 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-7 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1551,7 +1659,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 7",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-7 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1575,7 +1686,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 8",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-8 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-8 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1599,7 +1714,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 8",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-8 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-8 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1616,7 +1735,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 8",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-8 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1640,7 +1762,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 9",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-9 Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-9 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1664,7 +1790,11 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 9",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cClass-9 Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-9 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1681,7 +1811,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 9",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-9 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1703,6 +1836,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEnrolment in Class Pre-Primary Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cEnrolment in Class Pre-Primary Boys\u201d. Remarks: (pp3_b+pp2_b+pp1_b)"
    ]
   },
   {
@@ -1723,6 +1860,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEnrolment in Class Pre-Primary Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cEnrolment in Class Pre-Primary Girls\u201d. Remarks: (pp3_g+pp2_g+pp1_g)"
    ]
   },
   {
@@ -1736,6 +1877,9 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2025-26 as smallint, described as \u201cAge Wise Enrolment in Class Pre-Primary Transgender\u201d. Remarks: (pp3_t+pp2_t+pp1_t)"
    ]
   },
   {
@@ -1752,6 +1896,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as char, described as \u201cItem Description\u201d"
    ]
   },
   {
@@ -1805,7 +1952,11 @@
    "altLabel": [
     "psuedocode"
    ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as bigint, described as \u201cpseudocode Code(Unique Identity No. of school)\u201d"
+   ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -1829,6 +1980,7 @@
     "pseudocode"
    ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -1852,7 +2004,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 10",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-10 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1876,7 +2031,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 10",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-10 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1893,7 +2051,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 10",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-10 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1917,7 +2078,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 11",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-11 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1941,7 +2105,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 11",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-11 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1958,7 +2125,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 11",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-11 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -1982,7 +2152,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 12",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-12 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2006,7 +2179,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 12",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-12 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2023,7 +2199,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 12",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-12 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2047,7 +2226,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 1",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-1 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2071,7 +2253,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 1",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-1 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2088,7 +2273,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 1",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-1 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2112,7 +2300,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 2",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-2 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2136,7 +2327,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 2",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-2 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2153,7 +2347,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 2",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-2 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2177,7 +2374,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 3",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-3 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2201,7 +2401,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 3",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-3 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2218,7 +2421,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 3",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-3 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2242,7 +2448,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 4",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-4 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2266,7 +2475,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 4",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-4 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2283,7 +2495,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 4",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-4 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2307,7 +2522,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 5",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-5 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2331,7 +2549,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 5",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-5 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2348,7 +2569,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 5",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-5 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2372,7 +2596,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 6",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-6 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2396,7 +2623,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 6",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-6 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2413,7 +2643,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 6",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-6 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2437,7 +2670,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 7",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-7 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2461,7 +2697,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 7",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-7 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2478,7 +2717,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 7",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-7 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2502,7 +2744,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 8",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-8 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2526,7 +2771,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 8",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-8 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2543,7 +2791,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 8",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-8 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2567,7 +2818,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: boys enrolled in class 9",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-9 Boys\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2591,7 +2845,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: girls enrolled in class 9",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cClass-9 Girls\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2608,7 +2865,10 @@
     "2025-26"
    ],
    "definition": "Enrolment grid: transgender children enrolled in class 9",
-   "dct:provenance": "read off a printed grid whose axes are known, such as class by sex",
+   "dct:provenance": [
+    "read off a printed grid whose axes are known, such as class by sex",
+    "Shared 2025-26 as smallint, described as \u201cClass-9 Transgender\u201d"
+   ],
    "references": "DCF item enrolment grid",
    "scopeNote": "count of children"
   },
@@ -2630,6 +2890,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAge Wise Enrolment in Class Pre-Primary Boys\u201d"
    ]
   },
   {
@@ -2650,6 +2913,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAge Wise Enrolment in Class Pre-Primary Girls\u201d. Remarks: (pp3_g+pp2_g+pp1_g)"
    ]
   },
   {
@@ -2663,6 +2929,9 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2025-26 as smallint, described as \u201cAge Wise Enrolment in Class Pre-Primary Transgender\u201d. Remarks: (pp3_t+pp2_t+pp1_t)"
    ]
   },
   {
@@ -2695,6 +2964,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201citem_group=8\u201d"
    ]
   },
   {
@@ -2711,6 +2983,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAge id (2 to 22)\u201d. Remarks: Age id (2 to 22)"
    ]
   },
   {
@@ -2732,7 +3007,11 @@
    "altLabel": [
     "psuedocode"
    ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as bigint, described as \u201cpseudocode Code(Unique Identity No. of school)\u201d"
+   ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -2756,6 +3035,7 @@
     "pseudocode"
    ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -2779,7 +3059,11 @@
     "2025-26"
    ],
    "definition": "Whether Hand-rails for ramp are available?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHand-rails for ramp is available\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cHand-rails for ramp is available in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.15",
    "scopeNote": "0, 1-Yes, 2-No, 9-Not applicable"
   },
@@ -2803,7 +3087,11 @@
     "2025-26"
    ],
    "definition": "Whether Ramp for disabled children to access school building exists?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cschool building\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailable Ramp for disabled children to access school building in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.15",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -2821,6 +3109,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailability with Present Condition Biology Laboratory in school\u201d. Remarks: As per UDISE DCF"
    ]
   },
   {
@@ -2834,7 +3125,13 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
-   ]
+   ],
+   "definition": "Whether Boarding/Hostel facilities are available for the following Stage(s)/Level(s)?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2025-26 as smallint, described as \u201cWhether hostel/ boarding available at Higher Secondary\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.21"
   },
   {
    "@id": "udise:facility_data.boarding_pri_yn",
@@ -2847,7 +3144,13 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
-   ]
+   ],
+   "definition": "Whether Boarding/Hostel facilities are available for the following Stage(s)/Level(s)? \u2014 Primary",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2025-26 as smallint, described as \u201cWhether hostel/ boarding available at Primary\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.21i"
   },
   {
    "@id": "udise:facility_data.boarding_sec_yn",
@@ -2860,7 +3163,13 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
-   ]
+   ],
+   "definition": "Whether Boarding/Hostel facilities are available for the following Stage(s)/Level(s)?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2025-26 as smallint, described as \u201cWhether hostel/ boarding available at Secondary\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.21"
   },
   {
    "@id": "udise:facility_data.boarding_upr_yn",
@@ -2873,7 +3182,13 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
-   ]
+   ],
+   "definition": "Whether Boarding/Hostel facilities are available for the following Stage(s)/Level(s)? \u2014 Primary",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2025-26 as smallint, described as \u201cWhether hostel/ boarding available at Upper Primary\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.21i"
   },
   {
    "@id": "udise:facility_data.book_bank",
@@ -2891,8 +3206,11 @@
     "2025-26"
    ],
    "definition": "Whether the school has Library facility/Book Bank/Reading Corner? \u2014 Book Bank",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.11(a)",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cBook bank available in school\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.12 in the 2018-19 form (register says 2.11(a))",
    "scopeNote": "1-Yes, 2-No",
    "note": [
     "state-conventions: DCF 2.11(a) is one question with three rows. Karnataka government schools report 89.6% book bank. Rajasthan reports 17.6%."
@@ -2918,8 +3236,12 @@
     "2025-26"
    ],
    "definition": "Type of Boundary Wall",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.4",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cType of boundary wall\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cType of boundary wall in school\u201d"
+   ],
+   "references": "DCF item 2.3 in the 2018-19 form (register says 2.4)",
    "scopeNote": "1-Pucca, 2-Pucca but broken, 3-Barbed wire fencing, 4-Hedges, 5-No boundary walls, 6-Others, 7-Partial, 8-Under Construction",
    "note": [
     "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
@@ -2945,7 +3267,11 @@
     "2025-26"
    ],
    "definition": "Status of Present School Building?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStatus of the school building\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cStatus of the school building\u201d. Remarks: As per UDISE DCF"
+   ],
    "references": "DCF item 2.1",
    "scopeNote": "1-Government, 2-Rent free, 3-Rented, 4-Govt school running in Panchayat/Municipal Building, 5-Dilapidated, 6-Under Construction, 7-No Building"
   },
@@ -2963,6 +3289,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailability with Present Condition Chemistry Laboratory in school\u201d. Remarks: As per UDISE DCF"
    ]
   },
   {
@@ -2985,7 +3314,11 @@
     "2025-26"
    ],
    "definition": "Classrooms in good condition",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of classrooms in Good condition\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of classrooms in Good condition in school\u201d"
+   ],
    "references": "DCF item 2.3(a)",
    "scopeNote": "count"
   },
@@ -3009,7 +3342,11 @@
     "2025-26"
    ],
    "definition": "Classrooms needing major repair",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of classrooms Need Major repair\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of classrooms Need Major repair in school\u201d"
+   ],
    "references": "DCF item 2.3(a)",
    "scopeNote": "count"
   },
@@ -3033,7 +3370,11 @@
     "2025-26"
    ],
    "definition": "Classrooms needing minor repair",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of classrooms Need Minor repair\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of classrooms Need Minor repair in school\u201d"
+   ],
    "references": "DCF item 2.3(a)",
    "scopeNote": "count"
   },
@@ -3053,7 +3394,10 @@
     "2025-26"
    ],
    "definition": "Is Separate Room(s) Available for Computer/ICT lab?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cComputer/ICT Lab available in school\u201d. Remarks: As per UDISE DCF"
+   ],
    "references": "DCF item 2.25(a)(iii)",
    "scopeNote": "1-Yes, 2-No",
    "note": [
@@ -3076,7 +3420,10 @@
     "2025-26"
    ],
    "definition": "Does the school have the following laboratories? (For Higher Secondary sections only) \u2014 Computer Science",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailability with Present Condition of Computer Science Laboratory in school\u201d. Remarks: As per UDISE DCF"
+   ],
    "references": "DCF item 2.22(i)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3093,7 +3440,10 @@
     "2025-26"
    ],
    "definition": "Details of Teaching Staffs (Including Head Master/Mistress/Principal/HoS) \u2014 cyber safety:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2025-26 as smallint, described as \u201cNumber of students received orientation on cyber safety\u201d"
+   ],
    "references": "DCF item 3.2(a)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3117,7 +3467,11 @@
     "2025-26"
    ],
    "definition": "Number of desktops",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Desktop\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Desktops in school\u201d"
+   ],
    "references": "DCF item 2.25(a)(ii)",
    "scopeNote": "count"
   },
@@ -3141,7 +3495,11 @@
     "2025-26"
    ],
    "definition": "Number of digital boards",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cManagement Systems\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Digital Boards with Content Management Systems in school\u201d"
+   ],
    "references": "DCF item 2.25",
    "scopeNote": "count"
   },
@@ -3160,6 +3518,12 @@
     "2020-21",
     "2021-22"
    ],
+   "definition": "Whether drinking water is available in the school premises?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cDrinking Water available in the school\u201d"
+   ],
+   "references": "DCF item 2.6",
    "note": [
     "union-artefact: A union of eight yearly files keeps every column any year ever had. These four ended at 2021-22. UDISE dropped them at the SDMIS break. The columns remain and read NULL for every later row."
    ]
@@ -3180,7 +3544,10 @@
     "2021-22"
    ],
    "definition": "Whether drinking water is available in the school premises?                                     (Yes=1, No=2) \u2014 Whether water purifier/RO is available in the school                     (Yes=1, No=2, Yes, but not functional=3)",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cFunctional Drinking Water available in the school\u201d"
+   ],
    "references": "DCF item 2.8(b)",
    "note": [
     "union-artefact: A union of eight yearly files keeps every column any year ever had. These four ended at 2021-22. UDISE dropped them at the SDMIS break. The columns remain and read NULL for every later row."
@@ -3206,7 +3573,11 @@
     "2025-26"
    ],
    "definition": "Access to DTH/TV channels",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of DTH-TV Antenna\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAccess to DTH/TV channels in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.27(d)",
    "scopeNote": "1-Yes, 2-No, 4-Not applicable"
   },
@@ -3230,8 +3601,12 @@
     "2025-26"
    ],
    "definition": "Whether electricity connection is available in the school?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.5(a)",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201celectricity connection available in the School\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cElectricity connection available in school\u201d. Remarks: 1:Yes,2:No, 3:Yes, but not functional"
+   ],
+   "references": "DCF item 2.1 in the 2020-21 form (register says 2.5(a))",
    "scopeNote": "1-Yes, 2-No, 3-Yes but not Functional",
    "note": [
     "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
@@ -3250,7 +3625,10 @@
     "2025-26"
    ],
    "definition": "Whether enrichment activities are conducted",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2025-26 as smallint, described as \u201cWhether the school actively undertakes academic enrichment activities\u201d"
+   ],
    "references": "DCF item 2.x",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3272,6 +3650,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Functional CWSN friendly toilet seats for Boys in school\u201d"
    ]
   },
   {
@@ -3292,6 +3674,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of CWSN friendly toilet seats for Functional Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Functional CWSN friendly toilet seats for Girls in school\u201d"
    ]
   },
   {
@@ -3314,8 +3700,12 @@
     "2025-26"
    ],
    "definition": "Does the school have furniture for students?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.19",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of students for whom Furniture available\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of students for whom Furniture available in school\u201d"
+   ],
+   "references": "DCF item 2.18 in the 2021-22 form (register says 2.19)",
    "scopeNote": "1-Yes, 2-No, 3-Partial"
   },
   {
@@ -3332,6 +3722,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailability with Present Condition of Geography Laboratory in school\u201d. Remarks: As per UDISE DCF"
    ]
   },
   {
@@ -3350,7 +3743,10 @@
     "2025-26"
    ],
    "definition": "Hand pump functional",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Functional Hand Pump in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3370,7 +3766,10 @@
     "2025-26"
    ],
    "definition": "Main Source of Drinking Water \u2014 hand pump",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Hand Pump in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9(a)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3394,7 +3793,10 @@
     "2025-26"
    ],
    "definition": "Handwash facility for meal",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cwashing hands before and after meal\u201d"
+   ],
    "references": "DCF item 2.8",
    "scopeNote": "1-Yes, 2-No, 9-Not applicable"
   },
@@ -3418,7 +3820,11 @@
     "2025-26"
    ],
    "definition": "Handwash facility near the toilet",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201ctoilets\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cHand washing facility with soap available near toilets in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.7",
    "scopeNote": "1-Yes, 2-No, 9-Not applicable"
   },
@@ -3438,7 +3844,10 @@
     "2025-26"
    ],
    "definition": "Does the school have the following laboratories? (For Higher Secondary sections only) \u2014 Home Science",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailability with Present Condition of Home Science Laboratory in school\u201d. Remarks: As per UDISE DCF"
+   ],
    "references": "DCF item 2.22(g)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3461,7 +3870,14 @@
    "altLabel": [
     "ict_lab_yn"
    ],
+   "definition": "Is ICT Lab available in the school?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cICT Lab available in school\u201d"
+   ],
+   "references": "DCF item 2.27",
    "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means.",
     "union-artefact: A union of eight yearly files keeps every column any year ever had. These four ended at 2021-22. UDISE dropped them at the SDMIS break. The columns remain and read NULL for every later row."
    ]
   },
@@ -3485,7 +3901,10 @@
     "ict_lab"
    ],
    "definition": "Is the ICT Lab available in the school under Samagra Siksha?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cICT Lab available in school under Samagra Siksha\u201d. Remarks: As per UDISE DCF"
+   ],
    "references": "DCF item 2.25(b)",
    "scopeNote": "1-Yes, 2-No, 9-Not applicable"
   },
@@ -3509,8 +3928,12 @@
     "2025-26"
    ],
    "definition": "Does the School have Internet Facility?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.26",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Internet\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cInternet Availability in school\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.23 in the 2021-22 form (register says 2.26)",
    "scopeNote": "1-Yes, 2-No"
   },
   {
@@ -3526,8 +3949,11 @@
     "2025-26"
    ],
    "definition": "Whether Kitchen Garden is available in school?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.17(a)",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2025-26 as smallint, described as \u201cWhether Kitchen Garden is available in school\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.17 in the 2018-19 form (register says 2.17(a))",
    "scopeNote": "1-Yes, 2-No"
   },
   {
@@ -3543,8 +3969,11 @@
     "2025-26"
    ],
    "definition": "Whether Land is available for expansion of school facilities?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.12(b)",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2025-26 as smallint, described as \u201cWhether land is available for expansion of school facilities\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.5 in the 2018-19 form (register says 2.12(b))",
    "scopeNote": "1-Yes, 2-No"
   },
   {
@@ -3561,6 +3990,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailability with Present Condition of Language Laboratory in school\u201d. Remarks: As per UDISE DCF"
    ]
   },
   {
@@ -3583,7 +4015,11 @@
     "2025-26"
    ],
    "definition": "Number of laptops",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Laptop\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Laptops in school\u201d"
+   ],
    "references": "DCF item 2.25(a)(ii)",
    "scopeNote": "count"
   },
@@ -3600,7 +4036,10 @@
     "2025-26"
    ],
    "definition": "Does the school have a full-time librarian?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2025-26 as smallint, described as \u201cDoes the school have a full-time librarian?\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.11(b)",
    "scopeNote": "1-Yes, 2-No",
    "note": [
@@ -3627,8 +4066,12 @@
     "2025-26"
    ],
    "definition": "Whether the school has Library facility/Book Bank/Reading Corner? \u2014 Library",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.11(a)",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cLibrary Available in School\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cLibrary Available in school\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.12 in the 2018-19 form (register says 2.11(a))",
    "scopeNote": "1-Yes, 2-No"
   },
   {
@@ -3647,7 +4090,10 @@
     "2025-26"
    ],
    "definition": "Does the school have the following laboratories? (For Higher Secondary sections only) \u2014 Math\u2019s Kit**",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailability with Present Condition of Mathematics Laboratory in school\u201d. Remarks: As per UDISE DCF"
+   ],
    "references": "DCF item 2.22(c)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3671,8 +4117,12 @@
     "2025-26"
    ],
    "definition": "Whether medical check-ups of students were conducted",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.16",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cacademic year\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cMedical check-up of students conducted in last academic year in school\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.1 in the 2020-21 form (register says 2.16)",
    "scopeNote": "1-Yes, 2-No"
   },
   {
@@ -3695,7 +4145,11 @@
     "2025-26"
    ],
    "definition": "Type of School Building: \u2014 Total Number of Active* building blocks of the school",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of building blocks of the school\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of building blocks of the school\u201d"
+   ],
    "references": "DCF item 2.2(i)"
   },
   {
@@ -3718,7 +4172,11 @@
     "2025-26"
    ],
    "definition": "Details of Rooms other than Classrooms (excluding toilets)",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal number of rooms other than classrooms\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of rooms other than classrooms in school\u201d"
+   ],
    "references": "DCF item 2.6",
    "scopeNote": "count"
   },
@@ -3738,7 +4196,10 @@
     "2025-26"
    ],
    "definition": "Other source functional",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Functional Other sources of water in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3758,7 +4219,10 @@
     "2025-26"
    ],
    "definition": "Main Source of Drinking Water \u2014 other source",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Other sources water in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9(a)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3778,7 +4242,10 @@
     "2025-26"
    ],
    "definition": "Packaged water functional",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Functional Packaged/Bottled Water in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3798,7 +4265,10 @@
     "2025-26"
    ],
    "definition": "Main Source of Drinking Water \u2014 packaged water",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Packaged/Bottled Water in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9(a)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3816,6 +4286,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailability with Present Condition Physics Laboratory in school\u201d. Remarks: As per UDISE DCF"
    ]
   },
   {
@@ -3834,7 +4307,7 @@
     "2025-26"
    ],
    "definition": "If no playground, whether adequate arrangements exist for outdoor games",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": "a person opened the form and read the item",
    "references": "DCF item 2.13",
    "scopeNote": "0, 1-Yes, 2-No, 9-Not applicable"
   },
@@ -3858,7 +4331,11 @@
     "2025-26"
    ],
    "definition": "Whether Playground facility is available in the School?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPlayground facility available in School\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cPlayground facility available in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.13",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -3882,7 +4359,11 @@
     "2025-26"
    ],
    "definition": "Number of printers",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Printer\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Printer in school\u201d"
+   ],
    "references": "DCF item 2.25",
    "scopeNote": "count"
   },
@@ -3906,7 +4387,11 @@
     "2025-26"
    ],
    "definition": "Number of projectors",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Projector\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Projector\u201d"
+   ],
    "references": "DCF item 2.25",
    "scopeNote": "count"
   },
@@ -3929,7 +4414,11 @@
    "altLabel": [
     "psuedocode"
    ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as bigint, described as \u201cpseudocode Code(Unique Identity No. of school)\u201d"
+   ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -3952,7 +4441,11 @@
    "altLabel": [
     "pseudocode"
    ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as bigint, described as \u201cPsuedo Code(Unique Identity Number of school)\u201d"
+   ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -3970,6 +4463,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailability with Present Condition of Psychology Laboratory in school\u201d. Remarks: As per UDISE DCF"
    ]
   },
   {
@@ -3985,7 +4481,10 @@
     "2025-26"
    ],
    "definition": "Details of Teaching Staffs (Including Head Master/Mistress/Principal/HoS) \u2014 psycho-social aspects:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2025-26 as smallint, described as \u201cNumber of students received training on psycho-social aspects\u201d"
+   ],
    "references": "DCF item 3.2(b)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4009,7 +4508,11 @@
     "2025-26"
    ],
    "definition": "Type of School Building: \u2014 Total Number of Active* building blocks of the school",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPucca Building\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Pucca building blocks of the school\u201d"
+   ],
    "references": "DCF item 2.2(i)"
   },
   {
@@ -4032,8 +4535,12 @@
     "2025-26"
    ],
    "definition": "Does the school have provision for rain water harvesting?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.10",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have provision for rain water harvesting\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool have provision for rain water harvesting\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.7 in the 2021-22 form (register says 2.10)",
    "scopeNote": "1-Yes, 2-No, 3-Yes but not functional",
    "note": [
     "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
@@ -4055,8 +4562,11 @@
     "2025-26"
    ],
    "definition": "Whether the school has Library facility/Book Bank/Reading Corner? \u2014 Reading Corner",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.11(a)",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cReading corner available in school\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 2.12 in the 2018-19 form (register says 2.11(a))",
    "scopeNote": "1-Yes, 2-No",
    "note": [
     "state-conventions: DCF 2.11(a) is one question with three rows. Karnataka government schools report 89.6% book bank. Rajasthan reports 17.6%."
@@ -4082,7 +4592,11 @@
     "2025-26"
    ],
    "definition": "Separate room for the Head Master / Head Teacher",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSeparate room for Head Teacher\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSeparate room for Head teachers in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.6",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4100,6 +4614,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of servers in school\u201d"
    ]
   },
   {
@@ -4138,8 +4655,12 @@
     "2025-26"
    ],
    "definition": "Whether Solar Panel is available in school?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.5(b)",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSolar panel available in School\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSolar panel available in school\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 11.4 in the 2018-19 form (register says 2.5(b))",
    "scopeNote": "1-Yes, 2-No, 3-Yes but not Functional",
    "note": [
     "type-code-as-binary: A column that looks like a yes/no is a TYPE code. Read `= 1` as the affirmative and every other type becomes a negative."
@@ -4161,7 +4682,10 @@
     "2025-26"
    ],
    "definition": "Whether a special educator is available",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cWhether School has special educator\u201d. Remarks: 1-Dedicated, 2-At cluster level, 3-No"
+   ],
    "references": "DCF item 3.x",
    "scopeNote": "1-Yes, 2-No, 3-Shared"
   },
@@ -4178,7 +4702,10 @@
     "2025-26"
    ],
    "definition": "Whether staff quarters are available",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2025-26 as smallint, described as \u201cWhether schools have staff quarters\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.x",
    "scopeNote": "1-Yes, 2-No, 9-Not applicable"
   },
@@ -4202,7 +4729,11 @@
     "2025-26"
    ],
    "definition": "Number of tablets",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Tablet\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Tablets in school\u201d"
+   ],
    "references": "DCF item 2.25",
    "scopeNote": "count"
   },
@@ -4222,7 +4753,10 @@
     "2025-26"
    ],
    "definition": "Tap water functional",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Functional Tap water in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4242,7 +4776,10 @@
     "2025-26"
    ],
    "definition": "Main Source of Drinking Water \u2014 tap water",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Tap water in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9(a)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4260,7 +4797,13 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Computer or Digital Equipment Status: \u2014 PCs with Integrated Teaching Learning Devices",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of PCs with Integrated Teaching Learning Devices in school\u201d"
+   ],
+   "references": "DCF item 2.24d"
   },
   {
    "@id": "udise:facility_data.tinkering_lab_yn",
@@ -4275,7 +4818,10 @@
     "2025-26"
    ],
    "definition": "Whether an Atal Tinkering Lab is available",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2025-26 as smallint, described as \u201cWhether schools have Tinkering Labs\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.x",
    "scopeNote": "1-Yes, 2-No, 9-Not applicable"
   },
@@ -4293,7 +4839,13 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Does the School have Toilet(s)/Urinal(s)? \u2014 excluding CWSN friendly",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of CWSN friendly toilet seats for Boys in school\u201d"
+   ],
+   "references": "DCF item 2.7i"
   },
   {
    "@id": "udise:facility_data.total_boys_func_toilet",
@@ -4315,7 +4867,10 @@
     "2025-26"
    ],
    "definition": "Boys' toilets, functional",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cfriendly toilets for Functional Boys\u201d"
+   ],
    "references": "DCF item 2.7",
    "scopeNote": "count"
   },
@@ -4339,7 +4894,10 @@
     "2025-26"
    ],
    "definition": "Does the School have Toilet(s)/Urinal(s)? \u2014 boys, total",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cfriendly toilets for Total Boys\u201d"
+   ],
    "references": "DCF item 2.7",
    "scopeNote": "count"
   },
@@ -4363,8 +4921,12 @@
     "2025-26"
    ],
    "definition": "Details of Classrooms available in the school (Laboratory rooms NOT to be included)",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 2.3(a)",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Classrooms used for instructional purposes\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Classrooms used for instructional purpose in school\u201d"
+   ],
+   "references": "DCF item 2.4(a) in the 2024-25 form (register says 2.3(a))",
    "scopeNote": "count"
   },
   {
@@ -4381,7 +4943,13 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Does the School have Toilet(s)/Urinal(s)? \u2014 excluding CWSN friendly",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of CWSN friendly toilet seats for Girls in school\u201d"
+   ],
+   "references": "DCF item 2.7i"
   },
   {
    "@id": "udise:facility_data.total_girls_func_toilet",
@@ -4403,7 +4971,10 @@
     "2025-26"
    ],
    "definition": "Girls' toilets, functional",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cfriendly toilets for Functional Girls\u201d"
+   ],
    "references": "DCF item 2.7",
    "scopeNote": "count"
   },
@@ -4427,7 +4998,10 @@
     "2025-26"
    ],
    "definition": "Does the School have Toilet(s)/Urinal(s)? \u2014 girls, total",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cfriendly toilets for Total Girls\u201d"
+   ],
    "references": "DCF item 2.7",
    "scopeNote": "count"
   },
@@ -4451,7 +5025,11 @@
     "2025-26"
    ],
    "definition": "Urinals for boys",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal number of urinals available for Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of urinals available for Boys in school\u201d"
+   ],
    "references": "DCF item 2.7",
    "scopeNote": "count"
   },
@@ -4475,7 +5053,10 @@
     "urinla_girls"
    ],
    "definition": "Does the School have Toilet(s)/Urinal(s)? \u2014 Whether incinerator is available in Girl\u2019s toilet?",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of urinals available for Girls in school\u201d"
+   ],
    "references": "DCF item 2.7(e)",
    "scopeNote": "1-Yes, 2-No, 3-Yes, but Not Functional",
    "note": [
@@ -4501,6 +5082,9 @@
    "altLabel": [
     "urinal_girls"
    ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal number of urinals available for Girls\u201d"
+   ],
    "note": [
     "urinal-typo: `urinla_girls` is a transposition. It is corrected to `urinal_girls` at 2022-23.",
     "union-artefact: A union of eight yearly files keeps every column any year ever had. These four ended at 2021-22. UDISE dropped them at the SDMIS break. The columns remain and read NULL for every later row."
@@ -4522,7 +5106,10 @@
     "2025-26"
    ],
    "definition": "Protected well functional",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Functional Protected Well in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4542,7 +5129,10 @@
     "2025-26"
    ],
    "definition": "Main Source of Drinking Water \u2014 protected well",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Protected Well in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9(a)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4562,7 +5152,10 @@
     "2025-26"
    ],
    "definition": "Unprotected well functional",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Functional Unprotected Well in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4582,7 +5175,10 @@
     "2025-26"
    ],
    "definition": "Main Source of Drinking Water \u2014 unprotected well",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailablity of Unprotected Well in school\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.9(a)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4604,7 +5200,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHigher Secondary\u201d. Remarks: 3,5,10,11",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool affiliation Board of the school for Higher Secondary\u201d. Remarks: As per UDISE DCF"
+   ],
+   "references": "DCF item 1.19d"
   },
   {
    "@id": "udise:profile_data_1.aff_board_sec",
@@ -4626,7 +5229,11 @@
     "2025-26"
    ],
    "definition": "Affiliation Board of the school for SECONDARY Sections:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary\u201d. Remarks: 3,5,6,7,8,10",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool affiliation Board of the school for Secondary\u201d. Remarks: As per UDISE DCF"
+   ],
    "references": "DCF item 1.16"
   },
   {
@@ -4649,7 +5256,10 @@
     "anganwadi_ecce_b"
    ],
    "definition": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Total Children in Anganwadi Centre :        Boys :                                Girls :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys in Anganwadi Centre\u201d. Remarks: 1,2,3,4,6,90,91,92,93,94,95,96"
+   ],
    "references": "DCF item 1.36(b)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4713,7 +5323,10 @@
     "anganwadi_ecce_g"
    ],
    "definition": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Total Children in Anganwadi Centre :        Boys :                                Girls :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls in Anganwadi Centre\u201d. Remarks: 1,2,3,4,6,90,91,92,93,94,95,96"
+   ],
    "references": "DCF item 1.36(b)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4735,6 +5348,15 @@
    "isVersionOf": "udise:series.profile_data_1.anganwadi_premises",
    "altLabel": [
     "anganwadi_yn"
+   ],
+   "definition": "Whether Anganwadi Centre(s) is/are located inside the school premises?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cAnganwadi Centre is located inside Management Codes : school premises\u201d. Remarks: 1,2,3,4,6,90,91,92,93,94,95,96"
+   ],
+   "references": "DCF item 1.41",
+   "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
    ]
   },
   {
@@ -4753,7 +5375,7 @@
     "2021-22"
    ],
    "definition": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Is the Anganwadi Worker trained in early childhood education :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": "matched to a form item on the words the two share",
    "references": "DCF item 1.36(c)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -4775,6 +5397,15 @@
    "isVersionOf": "udise:series.profile_data_1.anganwadi_premises",
    "altLabel": [
     "anganwadi_premises"
+   ],
+   "definition": "Whether Anganwadi Centre(s) is/are located inside the school premises?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAnganwadi Centre is located inside school premises\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 1.40",
+   "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
    ]
   },
   {
@@ -4795,7 +5426,13 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Whether School is Approachable by All-Weather Roads?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool approachable by all-weather roads\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 1.37"
   },
   {
    "@id": "udise:profile_data_1.assembly",
@@ -4811,7 +5448,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "(a) Name of the Assembly Constituency :",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as varchar, described as \u201cAssembly Constituency\u201d"
+   ],
+   "references": "DCF item 1.8"
   },
   {
    "@id": "udise:profile_data_1.avg_instr_days",
@@ -4827,7 +5470,13 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Number of instructional days (in previous academic year):",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvearge Instructional days in school\u201d"
+   ],
+   "references": "DCF item 1.38"
   },
   {
    "@id": "udise:profile_data_1.avg_school_hrs_student_hsec",
@@ -4971,6 +5620,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as varchar, described as \u201cBlock Name as per U-DISE +\u201d"
    ]
   },
   {
@@ -4989,7 +5641,10 @@
     "2021-22"
    ],
    "definition": "Is CCE being implemented in school? : \u2014 Higher secondary :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHigher Secondary\u201d. Remarks: Codes : 3,5,10,11"
+   ],
    "references": "DCF item 1.40(d)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -5009,7 +5664,10 @@
     "2021-22"
    ],
    "definition": "Is Continuous and Comprehensive Evaluation (CCE) being implemented in School? \u2014 Primary",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary\u201d. Remarks: Codes : 1,2,3,6"
+   ],
    "references": "DCF item 1.36(i)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -5029,7 +5687,10 @@
     "2021-22"
    ],
    "definition": "Is CCE being implemented in school? : \u2014 Secondary :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary\u201d. Remarks: Codes : 3,5,6,7,8,10"
+   ],
    "references": "DCF item 1.40(c)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -5047,7 +5708,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cUpper Primary\u201d. Remarks: Codes: 2,3,4,5,6,7"
+   ],
+   "references": "DCF item 1.19b"
   },
   {
    "@id": "udise:profile_data_1.cce_yn",
@@ -5063,6 +5730,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cCCE being implemented in school\u201d. Remarks: Yes=1, No=2"
    ]
   },
   {
@@ -5078,9 +5748,15 @@
     "2025-26"
    ],
    "definition": "Is the School certified as Fit India School?",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2025-26 as smallint, described as \u201cSchool certified as Fit India School\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 1.53",
-   "scopeNote": "1-Yes, 2-No"
+   "scopeNote": "1-Yes, 2-No",
+   "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
+   ]
   },
   {
    "@id": "udise:profile_data_1.city",
@@ -5099,6 +5775,9 @@
    "isVersionOf": "udise:series.profile_data_1.city",
    "altLabel": [
     "lgd_urban_local_body_name"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2020-21 as varchar, described as \u201cCity Name\u201d"
    ]
   },
   {
@@ -5114,7 +5793,10 @@
     "2025-26"
    ],
    "definition": "Enrolment by Grade for Children with Special Needs (CWSN) By Type of Impairment:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2025-26 as smallint, described as \u201cType of Special School\u201d. Remarks: As per UDISE DCF"
+   ],
    "references": "DCF item 4.6"
   },
   {
@@ -5135,7 +5817,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Name of the District :",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as varchar, described as \u201cDistrict Name\u201d",
+    "Shared 2022-23 to 2025-26 as varchar, described as \u201cDistrict Name as per U-DISE +\u201d"
+   ],
+   "references": "DCF item 1.2"
   },
   {
    "@id": "udise:profile_data_1.estd_year",
@@ -5150,8 +5839,11 @@
     "2025-26"
    ],
    "definition": "Year of establishment of the school",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 1.x",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2025-26 as smallint, described as \u201cYear of Establishment of school\u201d"
+   ],
+   "references": "DCF item 1.20 in the 2018-19 form (register says 1.x)",
    "scopeNote": "year"
   },
   {
@@ -5172,7 +5864,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Lowest and Highest Classes in the School : \u2014 Lowest and Highest Class in School (e.g. 1 to 5) : to",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHighest Class in the School\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cHighest Class in school\u201d"
+   ],
+   "references": "DCF item 1.13a"
   },
   {
    "@id": "udise:profile_data_1.instr_days_hsec",
@@ -5190,7 +5889,10 @@
     "2021-22"
    ],
    "definition": "Number of instructional days (previous academic year) : \u2014 Higher Secondary",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHigher Secondary\u201d"
+   ],
    "references": "DCF item 1.33(d)"
   },
   {
@@ -5209,7 +5911,10 @@
     "2021-22"
    ],
    "definition": "Number of instructional days (previous academic year) : \u2014 Primary:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary\u201d"
+   ],
    "references": "DCF item 1.33(a)"
   },
   {
@@ -5228,7 +5933,10 @@
     "2021-22"
    ],
    "definition": "Number of instructional days (previous academic year) : \u2014 Secondary:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary\u201d"
+   ],
    "references": "DCF item 1.33(c)"
   },
   {
@@ -5247,7 +5955,10 @@
     "2021-22"
    ],
    "definition": "Number of instructional days (previous academic year) : \u2014 Upper Primary:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary\u201d"
+   ],
    "references": "DCF item 1.33(b)"
   },
   {
@@ -5261,6 +5972,15 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
+   ],
+   "definition": "Does the school provide any vocational courses under NSQF",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2025-26 as smallint, described as \u201cSchool provides any vocational training under NSQF\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 1.30",
+   "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
    ]
   },
   {
@@ -5292,7 +6012,10 @@
     "2025-26"
    ],
    "definition": "Name of the UDISE+ Block:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as varchar, described as \u201cLgd Block Name as Per LGD\u201d"
+   ],
    "references": "DCF item 1.3"
   },
   {
@@ -5316,7 +6039,10 @@
     "city"
    ],
    "definition": "School Location Type : \u2014 Urban Local bodies (As per LGD):",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as varchar, described as \u201cUrban Local Body as Per LGD\u201d"
+   ],
    "references": "DCF item 1.4(d)",
    "scopeNote": "1-RURAL, 2-URBAN"
   },
@@ -5335,6 +6061,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as varchar, described as \u201cVillage Name as Per LGD\u201d"
    ]
   },
   {
@@ -5358,7 +6087,10 @@
     "panchyat"
    ],
    "definition": "School Location Type : \u2014 Name of Gram Panchayat (As Per LGD):",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as varchar, described as \u201cPanchyet Name as Per LGD\u201d"
+   ],
    "references": "DCF item 1.4(c)",
    "scopeNote": "1-RURAL, 2-URBAN"
   },
@@ -5383,7 +6115,10 @@
     "municipality"
    ],
    "definition": "School Location Type : \u2014 Ward Name (As Per LGD):",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as varchar, described as \u201cWard Name as Per LGD\u201d"
+   ],
    "references": "DCF item 1.4(e)",
    "scopeNote": "1-RURAL, 2-URBAN"
   },
@@ -5405,7 +6140,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Lowest and Highest Classes in the School : \u2014 Lowest and Highest Class in School (e.g. 1 to 5) : to",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cLowest Class in the School\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cLowest Class in school\u201d"
+   ],
+   "references": "DCF item 1.13a"
   },
   {
    "@id": "udise:profile_data_1.managment",
@@ -5427,7 +6169,11 @@
     "2025-26"
    ],
    "definition": "Management Code of School",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cManagement of the school (Code)\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cManagement of the school\u201d. Remarks: As per UDISE DCF"
+   ],
    "references": "DCF item 1.12(b)",
    "scopeNote": "1-Dept of Education, 2-Tribal Welfare, 3-Local Body, 4-Govt Aided, 5-Private Unaided (Recognised), 6-Other State Govt, 7-Partially Govt Aided, 8-Unrecognized, 89-Minority Affairs, 90-Social Welfare, 91-Ministry of Labour, 92-KVS, 93-NVS, 94-Sainik, 95-Railway, 96-Central Tibetan, 97-Madrasa Pvt Unaided, 98-Madarsa Unrecognized, 99-Madrasa Aided, 101-Other Central Govt/PSU, 102-Veda School",
    "note": [
@@ -5453,7 +6199,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cMedium of instruction 1\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool medium of instruction 1\u201d. Remarks: As per UDISE DCF"
+   ],
+   "references": "DCF item 1.29"
   },
   {
    "@id": "udise:profile_data_1.medium_of_instr2",
@@ -5473,7 +6226,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cMedium of instruction 2\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool medium of instruction 2\u201d. Remarks: As per UDISE DCF"
+   ],
+   "references": "DCF item 1.29"
   },
   {
    "@id": "udise:profile_data_1.medium_of_instr3",
@@ -5493,7 +6253,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cMedium of instruction 3\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool medium of instruction 3\u201d. Remarks: As per UDISE DCF"
+   ],
+   "references": "DCF item 1.29"
   },
   {
    "@id": "udise:profile_data_1.medium_of_instr4",
@@ -5513,7 +6280,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Medium of instruction(s) in the School: [Mention Mediums (if more than one) according to Number of",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cMedium of instruction 4\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool medium of instruction 4\u201d. Remarks: As per UDISE DCF"
+   ],
+   "references": "DCF item 1.29"
   },
   {
    "@id": "udise:profile_data_1.minority_school",
@@ -5535,9 +6309,16 @@
     "2025-26"
    ],
    "definition": "Is this a minority managed school?",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 1.28",
-   "scopeNote": "1-Yes, 2-No; then 1-Muslim, 2-Sikh, 3-Jain, 4-Christian, 5-Parsi, 6-Buddhist, 8-Linguistic Minority"
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cMinority managed school\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cIs this a minority managed school?\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 1.26 in the 2018-19 form (register says 1.28)",
+   "scopeNote": "1-Yes, 2-No; then 1-Muslim, 2-Sikh, 3-Jain, 4-Christian, 5-Parsi, 6-Buddhist, 8-Linguistic Minority",
+   "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
+   ]
   },
   {
    "@id": "udise:profile_data_1.municipality",
@@ -5556,6 +6337,9 @@
    "isVersionOf": "udise:series.profile_data_1.municipality",
    "altLabel": [
     "lgd_ward_name"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2020-21 as varchar, described as \u201cMunicipality Name\u201d"
    ]
   },
   {
@@ -5608,6 +6392,12 @@
    "altLabel": [
     "lgd_vill_panchayat_name"
    ],
+   "definition": "School Location Type : \u2014 Name of Gram Panchayat (As Per LGD):",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2020-21 as varchar, described as \u201cGram Panchayat Name\u201d"
+   ],
+   "references": "DCF item 1.4c",
    "note": [
     "panchyat-typo: The source spells panchayat as `panchyat` up to 2020-21."
    ]
@@ -5626,7 +6416,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "(a) Name of the Assembly Constituency : \u2014 Name of the Parliamentary Constituency:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as varchar, described as \u201cParliamentary Constituency\u201d"
+   ],
+   "references": "DCF item 1.8b"
   },
   {
    "@id": "udise:profile_data_1.pincode",
@@ -5646,7 +6442,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Pin Code :",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as integer, described as \u201cPin Code\u201d",
+    "Shared 2022-23 to 2025-26 as integer, described as \u201cPin Code\u201d"
+   ],
+   "references": "DCF item 1.6"
   },
   {
    "@id": "udise:profile_data_1.pre_primary",
@@ -5666,7 +6469,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Lowest and Highest Classes in the School : \u2014 Whether Pre-Primary section (other than Anganwadis) attached to school?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPre-Primary section\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cWhether Pre-Primary section (other than Anganwadi) attached to school?\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 1.13b"
   },
   {
    "@id": "udise:profile_data_1.prevoc_yn",
@@ -5679,6 +6489,15 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
+   ],
+   "definition": "Does the school offer any pre-vocational exposure at Upper-Primary stage?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2025-26 as smallint, described as \u201cSchool offers any pre-vocational exposure at Upper-Primary stage\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 1.31",
+   "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
    ]
   },
   {
@@ -5700,7 +6519,11 @@
    "altLabel": [
     "psuedocode"
    ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as bigint, described as \u201cpseudocode Code (Unique Identity No. of school)\u201d"
+   ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -5723,7 +6546,11 @@
    "altLabel": [
     "pseudocode"
    ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as bigint, described as \u201cof school)\u201d"
+   ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -5738,7 +6565,13 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
-   ]
+   ],
+   "definition": "Number of students attending Remedial Teaching/Extra Classes in current year:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2025-26 as smallint, described as \u201cNumber of students attending Remedial Teaching/Extra Classes in current year\u201d"
+   ],
+   "references": "DCF item 1.43"
   },
   {
    "@id": "udise:profile_data_1.resi_school",
@@ -5758,6 +6591,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cResidential school\u201d"
    ]
   },
   {
@@ -5778,7 +6614,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Is this a Residential School? \u2014 Type of Residential school:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cType of residential school\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cType of residential school\u201d. Remarks: As per UDISE DCF"
+   ],
+   "references": "DCF item 1.33a"
   },
   {
    "@id": "udise:profile_data_1.rte_25p_admission_yn",
@@ -5793,7 +6636,7 @@
     "2025-26"
    ],
    "definition": "Does the School take admission under Section 12 of the RTE Act (25% Quota of entry-level seats)? \u2014 set at ADMIN level, private unaided only",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": "a person opened the form and read the item",
    "references": "DCF item 1.29",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -5817,7 +6660,11 @@
     "2025-26"
    ],
    "definition": "Is the School located in Rural or Urban Area:                        (Rural = 1, Urban = 2)",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool Location\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool Location\u201d"
+   ],
    "references": "DCF item 1.2"
   },
   {
@@ -5870,6 +6717,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool Category\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool Category of School\u201d. Remarks: As per UDISE DCF"
    ]
   },
   {
@@ -5890,6 +6741,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cType of School\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cType of School\u201d. Remarks: As per UDISE DCF"
    ]
   },
   {
@@ -5912,7 +6767,11 @@
     "2025-26"
    ],
    "definition": "Whether the school runs in shifts",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cShift school\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cIs this a Shift School?\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 1.x",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -5929,7 +6788,10 @@
     "2025-26"
    ],
    "definition": "Whether School Management Committee (SMC) and School Management and Development \u2014 Number of SMDC meetings held during the last academic year",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2025-26 as smallint, described as \u201cIf 1-Yes, Number of PTA meetings held during the last academic year\u201d"
+   ],
    "references": "DCF item 1.51(b)"
   },
   {
@@ -5943,7 +6805,13 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
-   ]
+   ],
+   "definition": "(a) Whether the School Building Committee (SBC) has been constituted? \u2014 Whether the School has constituted its Parent-Teacher Association (PTA)?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2025-26 as smallint, described as \u201cSchool has constituted its Parent-Teacher Association (PTA)\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 1.47c"
   },
   {
    "@id": "udise:profile_data_1.special_school_for_cwsn",
@@ -5965,7 +6833,11 @@
     "2025-26"
    ],
    "definition": "Enrolment By Grade for children with special needs",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSpecial school for CWSN\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cIs this a Special School for CWSN?\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 4.6"
   },
   {
@@ -5986,6 +6858,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as varchar, described as \u201cState Name\u201d",
+    "Shared 2022-23 to 2025-26 as varchar, described as \u201cState Name\u201d"
    ]
   },
   {
@@ -5999,6 +6875,15 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
+   ],
+   "definition": "Does the school run any skill training center after school hours?",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2025-26 as smallint, described as \u201cSchool run any skill training center after school hours\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 1.32",
+   "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
    ]
   },
   {
@@ -6017,7 +6902,10 @@
     "2021-22"
    ],
    "definition": "Year of Establishment of school:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as char, described as \u201cYear of Establishment of the School\u201d"
+   ],
    "references": "DCF item 1.23"
   },
   {
@@ -6036,7 +6924,10 @@
     "2021-22"
    ],
    "definition": "Year of Recognition of the school : \u2014 Higher secondary :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as char, described as \u201cYear of recognition of the School in Higher Secondary\u201d"
+   ],
    "references": "DCF item 1.21(d)"
   },
   {
@@ -6055,7 +6946,10 @@
     "2021-22"
    ],
    "definition": "Year of Recognition of the school : \u2014 Primary :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as char, described as \u201cYear of recognition of the School in Primary\u201d"
+   ],
    "references": "DCF item 1.21(a)"
   },
   {
@@ -6074,7 +6968,10 @@
     "2021-22"
    ],
    "definition": "Year of Recognition of the school : \u2014 Secondary :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as char, described as \u201cYear of recognition of the School in Secondary\u201d"
+   ],
    "references": "DCF item 1.21(c)"
   },
   {
@@ -6093,7 +6990,10 @@
     "2021-22"
    ],
    "definition": "Year of Recognition of the school : \u2014 Upper Primary :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as char, described as \u201cYear of recognition of the School in Upper Primary\u201d"
+   ],
    "references": "DCF item 1.21(b)"
   },
   {
@@ -6116,7 +7016,11 @@
     "2025-26"
    ],
    "definition": "Details of visits to the school during the previous academic year : \u2014 No. of academic inspections :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of academic inspections\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of academic inspections in school\u201d"
+   ],
    "references": "DCF item 1.49(a)"
   },
   {
@@ -6135,9 +7039,15 @@
     "2025-26"
    ],
    "definition": "Whether Balavatika is started in the Co- located Anganwadi/school?",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cWhether Balavatika is started in the Co- located Anganwadi/school?\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 1.41",
-   "scopeNote": "1-Yes, 2-No"
+   "scopeNote": "1-Yes, 2-No",
+   "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
+   ]
   },
   {
    "@id": "udise:profile_data_2.block_level_officers",
@@ -6159,7 +7069,11 @@
     "2025-26"
    ],
    "definition": "Details of visits to the school during the previous academic year : \u2014 No. of visits by Block Level Officers (BRC/BEO):",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNumber of visits by Block Level officers (BRC/BEO)\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of visits by Block Level officers (BRC/BEO) in school\u201d"
+   ],
    "references": "DCF item 1.49(c)"
   },
   {
@@ -6182,7 +7096,11 @@
     "2025-26"
    ],
    "definition": "Details of visits to the school during the previous academic year: \u2014 Number of visits by CRC Coordinator:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cordinator\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of visits by CRC Co- ordinator in school\u201d"
+   ],
    "references": "DCF item 1.44(b)"
   },
   {
@@ -6205,7 +7123,11 @@
     "2025-26"
    ],
    "definition": "Details of visits to the school during the previous academic year : \u2014 No of visits by District/State Level Officers:",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cLevel officers\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of visits by District/State Level officers in school\u201d"
+   ],
    "references": "DCF item 1.49(d)"
   },
   {
@@ -6228,7 +7150,11 @@
     "2025-26"
    ],
    "definition": "Availability of free text books, Teaching Learning Material (TLM), Play material (in current academic",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cFree Textbook Facility provided to children in Primary Grade\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cFree Textbook Facility provided to school childrens in Primary Grade\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 1.56"
   },
   {
@@ -6251,7 +7177,11 @@
     "2025-26"
    ],
    "definition": "Availability of free text books, Teaching Learning Material (TLM), Play material (in current academic",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cto children in Upper Primary Grade\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cFree Textbook Facility provided to school childrens in Upper Primary Grade\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 1.56"
   },
   {
@@ -6272,7 +7202,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cchildren in Primary Grade\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cFree Uniform Facility provided to school childrens in Primary Grade\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 5.1"
   },
   {
    "@id": "udise:profile_data_2.free_uniform_up",
@@ -6292,6 +7229,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cFree Uniform Facility provided to school childrens in Upper Primary Grade\u201d. Remarks: Yes=1, No=2"
    ]
   },
   {
@@ -6352,7 +7292,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Whether any Out of School Children enrolled in the school are \u2014 Number of children ENROLLED for Special Training in PREVIOUS Academic year:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cin previous academic year\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cGraded Supplementary Material in previous academic year\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 1.43b"
   },
   {
    "@id": "udise:profile_data_2.pseudocode",
@@ -6373,7 +7320,11 @@
    "altLabel": [
     "psuedocode"
    ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as bigint, described as \u201cpseudocode Code (Unique Identity No. of school)\u201d"
+   ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -6396,7 +7347,11 @@
    "altLabel": [
     "pseudocode"
    ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as bigint, described as \u201cNumber of school)\u201d"
+   ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -6619,6 +7574,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c6_b",
    "altLabel": [
     "rte_ews_c6_b"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cequipment for Class-6 Boys\u201d"
    ]
   },
   {
@@ -6704,6 +7662,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c8_g",
    "altLabel": [
     "rte_ews_c8_g"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cequipment for Class-8 Girls\u201d"
    ]
   },
   {
@@ -6758,6 +7719,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -6774,6 +7738,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -6790,6 +7757,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -6806,6 +7776,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -6822,6 +7795,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -6838,6 +7814,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -7190,6 +8169,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary Boys\u201d"
    ]
   },
   {
@@ -7206,6 +8188,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary Girls\u201d"
    ]
   },
   {
@@ -7222,6 +8207,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -7238,6 +8226,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -7254,6 +8245,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -7270,6 +8264,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -7286,6 +8283,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -7302,6 +8302,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -7318,6 +8321,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -7334,6 +8340,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -7350,6 +8359,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -7366,6 +8378,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -7382,6 +8397,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -7398,6 +8416,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -7414,6 +8435,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -7430,6 +8454,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -7446,6 +8473,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
    ]
   },
   {
@@ -7462,6 +8492,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
    ]
   },
   {
@@ -7482,6 +8515,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201c(SMC) has been constituted\u201d"
    ]
   },
   {
@@ -7500,7 +8536,10 @@
     "2025-26"
    ],
    "definition": "Whether School Management Committee (SMC) and School Management and Development \u2014 Number of SMDC meetings held during the last academic year",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of SMC/SDMC Meetings Conducted in previous Academic year in school\u201d"
+   ],
    "references": "DCF item 1.51(b)"
   },
   {
@@ -7523,7 +8562,7 @@
     "2025-26"
    ],
    "definition": "Whether School Management Committee (SMC) and School Management and Development \u2014 Whether SMDC has prepared School Improvement Plan?                                                    (Yes=1, No=2)",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": "matched to a form item on the words the two share",
    "references": "DCF item 1.51(c)"
   },
   {
@@ -7560,6 +8599,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTraining\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cWhether school providing Special Training to out of school children\u201d. Remarks: Yes=1, No=2"
    ]
   },
   {
@@ -7578,7 +8621,10 @@
     "2021-22"
    ],
    "definition": "Availability of free text books, Teaching Learning Material (TLM), Play material (in current academic",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTextbooks received in current academic year\u201d"
+   ],
    "references": "DCF item 1.56"
   },
   {
@@ -7595,7 +8641,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cto children in Primary Grade\u201d"
+   ],
+   "references": "DCF item 5.1"
   },
   {
    "@id": "udise:profile_data_2.transport_up",
@@ -7611,6 +8663,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGrade\u201d"
    ]
   },
   {
@@ -7631,6 +8686,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cof Elementary Education(B.EI.Ed)\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Bachelor of\u201d"
    ]
   },
   {
@@ -7651,6 +8710,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEquivalent\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is B.ED or\u201d"
    ]
   },
   {
@@ -7687,7 +8750,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary and Higher Secondary)\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Academic Qualification is Below Graduate\u201d"
+   ],
+   "references": "DCF item 1.19d"
   },
   {
    "@id": "udise:teacher_data.class_taught_hsec_only",
@@ -7707,7 +8777,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHigher Secondary Only\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Higher Secondary Only in school\u201d"
+   ],
+   "references": "DCF item 1.19d"
   },
   {
    "@id": "udise:teacher_data.class_taught_pr",
@@ -7727,6 +8804,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Primary in school\u201d"
    ]
   },
   {
@@ -7747,6 +8828,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Pre- Primary and Primary in school\u201d"
    ]
   },
   {
@@ -7767,7 +8851,13 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary and Upper Primary\u201d"
+   ],
+   "references": "DCF item 1.19b"
   },
   {
    "@id": "udise:teacher_data.class_taught_sec_hsec",
@@ -7787,7 +8877,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary and Higher Secondary\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Secondary and Higher Secondary in\u201d"
+   ],
+   "references": "DCF item 1.19d"
   },
   {
    "@id": "udise:teacher_data.class_taught_sec_only",
@@ -7807,6 +8904,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary Only\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Secondary Only in school\u201d"
    ]
   },
   {
@@ -7829,7 +8930,11 @@
     "2025-26"
    ],
    "definition": "Subjects taught in school: \u2014 Curriculum followed by School in UPPER PRIMARY Section?",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cUpper Primary\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Upper Primary in school\u201d"
+   ],
    "references": "DCF item 1.26(b)",
    "scopeNote": "1-NCERT / 2-State / 3-Others"
   },
@@ -7851,7 +8956,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Year of upgradation of the school (if applicable): \u2014 Upper Primary to Secondary:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cUpper Primary and Secondary\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Upper Primary and Secondary in\u201d"
+   ],
+   "references": "DCF item 1.20b"
   },
   {
    "@id": "udise:teacher_data.class_taugt_pre_primary_only",
@@ -7871,6 +8983,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Teachers whose Class Taught is Pre-Primary Only\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Pre- Primary Only in school\u201d"
    ]
   },
   {
@@ -7891,6 +9007,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of Contract Teacher\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Contract teachers in school\u201d"
    ]
   },
   {
@@ -7911,6 +9031,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cof a duration not less than two years\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma or\u201d"
    ]
   },
   {
@@ -7927,6 +9051,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma in\u201d"
    ]
   },
   {
@@ -7949,7 +9076,11 @@
     "2025-26"
    ],
    "definition": "Details of the Special Educator \u2014 Diploma/Degree in Special Education in :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cDegree in Special Education\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma /\u201d"
+   ],
    "references": "DCF item 3.5(b)",
    "scopeNote": "1-Dedicated, 2-At block/cluster level, 3-No"
   },
@@ -7969,7 +9100,10 @@
     "2025-26"
    ],
    "definition": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Is the Anganwadi Worker trained in early childhood education :",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma in\u201d"
+   ],
    "references": "DCF item 1.36(c)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -7991,6 +9125,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of Female Teacher\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Female teachers in school\u201d"
    ]
   },
   {
@@ -8007,6 +9145,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. General teachers in school\u201d"
    ]
   },
   {
@@ -8047,6 +9188,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of Male Teacher\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Male teachers in school\u201d"
    ]
   },
   {
@@ -8067,6 +9212,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEquivalent\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is M.ED or\u201d"
    ]
   },
   {
@@ -8087,6 +9236,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cProfessional Qualification is None\u201d"
    ]
   },
   {
@@ -8103,6 +9255,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. OBC teachers in school\u201d"
    ]
   },
   {
@@ -8123,6 +9278,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cProfessional Qualification is Others\u201d"
    ]
   },
   {
@@ -8143,6 +9301,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of Part Time Teacher\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Part Time teachers in school\u201d"
    ]
   },
   {
@@ -8163,6 +9325,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cDoctoral)\u201d"
    ]
   },
   {
@@ -8184,7 +9349,11 @@
    "altLabel": [
     "psuedocode"
    ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as bigint, described as \u201cpseudocode Code(Unique Identity No. of school)\u201d"
+   ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -8207,7 +9376,11 @@
    "altLabel": [
     "pseudocode"
    ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as bigint, described as \u201cof school)\u201d"
+   ],
    "note": [
+    "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
     "spelling-of-the-key: UDISE spells the school key `psuedocode` before 2022-23. It spells it `pseudocode` after. A unioned table holds both columns. Each column is null in the other era."
    ]
   },
@@ -8229,6 +9402,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cany Relevant Professional Course\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Pursuing any\u201d"
    ]
   },
   {
@@ -8249,6 +9426,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of Regular Teacher\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Regular teachers in school\u201d"
    ]
   },
   {
@@ -8265,6 +9446,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. SC teachers in school\u201d"
    ]
   },
   {
@@ -8281,6 +9465,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. ST teachers in school\u201d"
    ]
   },
   {
@@ -8301,6 +9488,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of Teacher who Involve in Non Training Assignment\u201d"
    ]
   },
   {
@@ -8319,7 +9509,10 @@
     "2021-22"
    ],
    "definition": "Teachers and Instructors Details by (Including Head Master/Mistress) \u2014 Whether received training in FLN-NISHTHA?",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of Teacher who Received Service Training\u201d"
+   ],
    "references": "DCF item 3.3(a)",
    "scopeNote": "1-General, 2-SC, 3-ST, 4-OBC"
   },
@@ -8337,6 +9530,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cabove 55\u201d"
    ]
   },
   {
@@ -8359,8 +9555,11 @@
     "total_teacher"
    ],
    "definition": "Number of teaching staff in position",
-   "dct:provenance": "read off the form \u2014 a person opened the Data Capture Format for this column and this year",
-   "references": "DCF item 3.1",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers in school\u201d"
+   ],
+   "references": "DCF item 3.2 in the 2018-19 form (register says 3.1)",
    "scopeNote": "count"
   },
   {
@@ -8381,6 +9580,9 @@
    "isVersionOf": "udise:series.teacher_data.total_teacher",
    "altLabel": [
     "total_tch"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of Teacher\u201d"
    ]
   },
   {
@@ -8397,6 +9599,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Teacher trained in use of computer\u201d"
    ]
   },
   {
@@ -8413,6 +9618,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cTotal teachers trained in use of computer in school\u201d"
    ]
   },
   {
@@ -8431,7 +9639,10 @@
     "2025-26"
    ],
    "definition": "Enrolment By Grade for children with special needs",
-   "dct:provenance": "matched on the column name alone \u2014 a lead, not a finding",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers trained for teaching CWSN in school\u201d"
+   ],
    "references": "DCF item 4.6"
   },
   {
@@ -8452,10 +9663,35 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Transgenders teachers in school\u201d"
    ]
   },
   {
    "@id": "udise:asked-01",
+   "@type": "skos:Concept",
+   "inScheme": "udise:scheme",
+   "prefLabel": "Number of Non-teaching/Administrative and Support staff(s) in-Position \u2014 Library Assistant",
+   "references": "DCF item 3.1(e)",
+   "temporal": "2018-19 to 2026-27",
+   "scopeNote": "count",
+   "skos:editorialNote": "Asked of every school. Never released.",
+   "dct:subject": "Library"
+  },
+  {
+   "@id": "udise:asked-02",
+   "@type": "skos:Concept",
+   "inScheme": "udise:scheme",
+   "prefLabel": "Number of Non-teaching/Administrative and Support staff(s) in-Position \u2014 Accountant, UDC/Head Clerk, Peon/MTS, Laboratory Assistant, Library Assistant, LDC, Night Watchman",
+   "references": "DCF item 3.1(a)-(g)",
+   "temporal": "2018-19 to 2026-27",
+   "scopeNote": "count per type",
+   "skos:editorialNote": "Asked of every school. Never released.",
+   "dct:subject": "Staff"
+  },
+  {
+   "@id": "udise:asked-03",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Does the school subscribe to newspapers/magazines?",
@@ -8466,7 +9702,7 @@
    "dct:subject": "Library"
   },
   {
-   "@id": "udise:asked-02",
+   "@id": "udise:asked-04",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Number of times Library books have been borrowed /read by children",
@@ -8477,7 +9713,7 @@
    "dct:subject": "Library"
   },
   {
-   "@id": "udise:asked-03",
+   "@id": "udise:asked-05",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Whether the school maintains an Inventory Register on Library Books",
@@ -8488,7 +9724,7 @@
    "dct:subject": "Library"
   },
   {
-   "@id": "udise:asked-04",
+   "@id": "udise:asked-06",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Whether any Out of School Children enrolled in the school?",
@@ -8499,7 +9735,7 @@
    "dct:subject": "Entitlement"
   },
   {
-   "@id": "udise:asked-05",
+   "@id": "udise:asked-07",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "How student attendance is taken",
@@ -8510,7 +9746,7 @@
    "dct:subject": "Attendance"
   },
   {
-   "@id": "udise:asked-06",
+   "@id": "udise:asked-08",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "How teacher attendance is taken",
@@ -8521,7 +9757,7 @@
    "dct:subject": "Attendance"
   },
   {
-   "@id": "udise:asked-07",
+   "@id": "udise:asked-09",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Is this a PM-SHRI School?",
@@ -8532,7 +9768,7 @@
    "dct:subject": "Scheme"
   },
   {
-   "@id": "udise:asked-08",
+   "@id": "udise:asked-10",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Is the school registered under Public Financial Management System (PFMS)?",
@@ -8543,7 +9779,7 @@
    "dct:subject": "Scheme"
   },
   {
-   "@id": "udise:asked-09",
+   "@id": "udise:asked-11",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Is the school a Hub School for the school complex?",
@@ -8554,7 +9790,7 @@
    "dct:subject": "Scheme"
   },
   {
-   "@id": "udise:asked-10",
+   "@id": "udise:asked-12",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Whether CCTV Cameras are available in school?",
@@ -8565,7 +9801,7 @@
    "dct:subject": "Safety"
   },
   {
-   "@id": "udise:asked-11",
+   "@id": "udise:asked-13",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Whether Fire Extinguishers are installed?",
@@ -8576,7 +9812,7 @@
    "dct:subject": "Safety"
   },
   {
-   "@id": "udise:asked-12",
+   "@id": "udise:asked-14",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Has the school adopted/initiated Vidya Pravesh Module?",
@@ -8587,7 +9823,7 @@
    "dct:subject": "Scheme"
   },
   {
-   "@id": "udise:asked-13",
+   "@id": "udise:asked-15",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Whether the school maintains an Inventory Register on ICT Items",
@@ -8598,7 +9834,7 @@
    "dct:subject": "Accountability"
   },
   {
-   "@id": "udise:asked-14",
+   "@id": "udise:asked-16",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Whether the school maintains an Inventory Register on Sports Equipment",
@@ -8609,7 +9845,7 @@
    "dct:subject": "Accountability"
   },
   {
-   "@id": "udise:asked-15",
+   "@id": "udise:asked-17",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Number of Guest Lectures conducted in the respective Job role",
@@ -8620,7 +9856,7 @@
    "dct:subject": "Accountability"
   },
   {
-   "@id": "udise:asked-16",
+   "@id": "udise:asked-18",
    "@type": "skos:Concept",
    "inScheme": "udise:scheme",
    "prefLabel": "Does the school have dustbins for collection of waste?",
