@@ -13,7 +13,7 @@
  "asked_evidence_note": null,
  "n_fields": 246,
  "flags": {
-  "asked_verified_this_form": 18,
+  "asked_verified_this_form": 28,
   "described_no_question": 56,
   "code_disagreements": [
    {
@@ -1313,12 +1313,10 @@
    "dataset": "facility_data",
    "field": "classrooms_in_good_condition",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Classrooms in good condition",
-    "item": "2.3(a)",
-    "cited_form": "2018-19",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.4(a)",
+    "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+    "form": "2021-22"
    },
    "described": [
     {
@@ -1337,12 +1335,10 @@
    "dataset": "facility_data",
    "field": "classrooms_needs_major_repair",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Classrooms needing major repair",
-    "item": "2.3(a)",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.4(a)",
+    "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+    "form": "2021-22"
    },
    "described": [
     {
@@ -1361,12 +1357,10 @@
    "dataset": "facility_data",
    "field": "classrooms_needs_minor_repair",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Classrooms needing minor repair",
-    "item": "2.3(a)",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.4(a)",
+    "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+    "form": "2021-22"
    },
    "described": [
     {
@@ -1386,8 +1380,8 @@
    "field": "desktop",
    "asked": {
     "kind": "traced",
-    "item": "2.25(a)(ii)",
-    "line": "Number of students",
+    "item": "2.22",
+    "line": "(a) Desktop/PCs",
     "form": "2021-22"
    },
    "described": [
@@ -1407,12 +1401,10 @@
    "dataset": "facility_data",
    "field": "digiboard",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Number of digital boards",
-    "item": "2.25",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.22",
+    "line": "Digital Boards with Content Management Systems and",
+    "form": "2021-22"
    },
    "described": [
     {
@@ -1488,7 +1480,7 @@
    "field": "dth",
    "asked": {
     "kind": "traced",
-    "item": "2.27(d)",
+    "item": "2.24",
     "line": "(d) Access to DTH/TV channels",
     "form": "2021-22"
    },
@@ -1713,12 +1705,10 @@
    "dataset": "facility_data",
    "field": "laptop",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Number of laptops",
-    "item": "2.25(a)(ii)",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.22",
+    "line": "(b) Laptop/Notebook",
+    "form": "2021-22"
    },
    "described": [
     {
@@ -1867,8 +1857,8 @@
    "field": "printer",
    "asked": {
     "kind": "traced",
-    "item": "2.25",
-    "line": "Number of students",
+    "item": "2.22",
+    "line": "(g) Printer",
     "form": "2021-22"
    },
    "described": [
@@ -1889,7 +1879,7 @@
    "field": "projector",
    "asked": {
     "kind": "traced",
-    "item": "2.25",
+    "item": "2.22",
     "line": "(f) Projector",
     "form": "2021-22"
    },
@@ -2040,8 +2030,8 @@
    "field": "tablet",
    "asked": {
     "kind": "traced",
-    "item": "2.25",
-    "line": "Number of students",
+    "item": "2.22",
+    "line": "(c) Tablets",
     "form": "2021-22"
    },
    "described": [
@@ -2061,12 +2051,10 @@
    "dataset": "facility_data",
    "field": "total_boys_func_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Boys' toilets, functional",
-    "item": "2.7",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.5",
+    "line": "Number of toilet seats available",
+    "form": "2021-22"
    },
    "described": [
     {
@@ -2085,12 +2073,10 @@
    "dataset": "facility_data",
    "field": "total_boys_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Does the School have Toilet(s)/Urinal(s)? — boys, total",
-    "item": "2.7",
-    "cited_form": "2025-26",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.5",
+    "line": "Number of toilet seats available",
+    "form": "2021-22"
    },
    "described": [
     {
@@ -2133,12 +2119,10 @@
    "dataset": "facility_data",
    "field": "total_girls_func_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Girls' toilets, functional",
-    "item": "2.7",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.5",
+    "line": "Number of toilet seats available",
+    "form": "2021-22"
    },
    "described": [
     {
@@ -2157,12 +2141,10 @@
    "dataset": "facility_data",
    "field": "total_girls_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Does the School have Toilet(s)/Urinal(s)? — girls, total",
-    "item": "2.7",
-    "cited_form": "2025-26",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.5",
+    "line": "Number of toilet seats available",
+    "form": "2021-22"
    },
    "described": [
     {
@@ -2181,12 +2163,10 @@
    "dataset": "facility_data",
    "field": "urinal_boys",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Urinals for boys",
-    "item": "2.7",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.5",
+    "line": "(iii) Total number of urinals available",
+    "form": "2021-22"
    },
    "described": [
     {
@@ -5214,6 +5194,41 @@
     "item_to": "2.1"
    },
    {
+    "id": "facility_data.classrooms_in_good_condition",
+    "from": "Type of classroom Good condition Need minor repair Need major repair",
+    "to": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+    "item_from": "2.1.4(a)",
+    "item_to": "2.4(a)"
+   },
+   {
+    "id": "facility_data.classrooms_needs_major_repair",
+    "from": "Type of classroom Good condition Need minor repair Need major repair",
+    "to": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+    "item_from": "2.1.4(a)",
+    "item_to": "2.4(a)"
+   },
+   {
+    "id": "facility_data.classrooms_needs_minor_repair",
+    "from": "Type of classroom Good condition Need minor repair Need major repair",
+    "to": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+    "item_from": "2.1.4(a)",
+    "item_to": "2.4(a)"
+   },
+   {
+    "id": "facility_data.desktop",
+    "from": "Desktop",
+    "to": "(a) Desktop/PCs",
+    "item_from": "2.3.3",
+    "item_to": "2.22"
+   },
+   {
+    "id": "facility_data.digiboard",
+    "from": "Digital Boards with Content Management Systems and solutions (CMS)/ Learning Management System",
+    "to": "Digital Boards with Content Management Systems and",
+    "item_from": "2.3.3",
+    "item_to": "2.22"
+   },
+   {
     "id": "facility_data.electricity_availability",
     "from": "Whether electricity connection is available in the school ?",
     "to": "Whether electricity connection is available in the school?",
@@ -5221,11 +5236,18 @@
     "item_to": "2.9(a)"
    },
    {
+    "id": "facility_data.hand_pump_fun_yn",
+    "from": "Hand pumps",
+    "to": "Hand pumps/Bore well",
+    "item_from": "2.1.8",
+    "item_to": "2.6"
+   },
+   {
     "id": "facility_data.hand_pump_yn",
-    "from": "If Yes, (a) Main Source of drinking water :",
-    "to": "(a) Main Source of Drinking Water:",
-    "item_from": "2.9(a)",
-    "item_to": "2.9(a)"
+    "from": "Hand pumps",
+    "to": "Hand pumps/Bore well",
+    "item_from": "2.1.8",
+    "item_to": "2.6"
    },
    {
     "id": "facility_data.kitchen_garden_yn",
@@ -5240,6 +5262,13 @@
     "to": "Whether land is available for expansion of school facilities? (1-Yes, 2-No)",
     "item_from": "2.1.5",
     "item_to": "2.11"
+   },
+   {
+    "id": "facility_data.laptop",
+    "from": "Laptop/Notebook",
+    "to": "(b) Laptop/Notebook",
+    "item_from": "2.3.3",
+    "item_to": "2.22"
    },
    {
     "id": "facility_data.librarian_yn",
@@ -5263,6 +5292,20 @@
     "item_to": "2.12"
    },
    {
+    "id": "facility_data.printer",
+    "from": "Printer",
+    "to": "(g) Printer",
+    "item_from": "2.3.3",
+    "item_to": "2.22"
+   },
+   {
+    "id": "facility_data.projector",
+    "from": "Projector",
+    "to": "(f) Projector",
+    "item_from": "2.3.3",
+    "item_to": "2.22"
+   },
+   {
     "id": "facility_data.reading_corner",
     "from": "Whether the school has Library facility/Book Bank/Reading Corner ?",
     "to": "Whether the school has Library facility/Book Bank/Reading Corner?",
@@ -5270,11 +5313,39 @@
     "item_to": "2.10(a)"
    },
    {
-    "id": "facility_data.tap_yn",
-    "from": "If Yes, (a) Main Source of drinking water :",
-    "to": "(a) Main Source of Drinking Water:",
-    "item_from": "2.9(a)",
-    "item_to": "2.9(a)"
+    "id": "facility_data.tablet",
+    "from": "Tablets",
+    "to": "(c) Tablets",
+    "item_from": "2.3.3",
+    "item_to": "2.22"
+   },
+   {
+    "id": "facility_data.total_boys_func_toilet",
+    "from": "(i) Number of toilets seats available excluding CWSN",
+    "to": "Number of toilet seats available",
+    "item_from": "2.1.7",
+    "item_to": "2.5"
+   },
+   {
+    "id": "facility_data.total_boys_toilet",
+    "from": "(i) Number of toilets seats available excluding CWSN",
+    "to": "Number of toilet seats available",
+    "item_from": "2.1.7",
+    "item_to": "2.5"
+   },
+   {
+    "id": "facility_data.total_girls_func_toilet",
+    "from": "(i) Number of toilets seats available excluding CWSN",
+    "to": "Number of toilet seats available",
+    "item_from": "2.1.7",
+    "item_to": "2.5"
+   },
+   {
+    "id": "facility_data.total_girls_toilet",
+    "from": "(i) Number of toilets seats available excluding CWSN",
+    "to": "Number of toilet seats available",
+    "item_from": "2.1.7",
+    "item_to": "2.5"
    },
    {
     "id": "profile_data_1.estd_year",

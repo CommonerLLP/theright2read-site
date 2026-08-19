@@ -1327,7 +1327,7 @@
     "kind": "cited_elsewhere",
     "question": "Classrooms in good condition",
     "item": "2.3(a)",
-    "cited_form": "2018-19",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -1351,7 +1351,7 @@
     "kind": "cited_elsewhere",
     "question": "Classrooms needing major repair",
     "item": "2.3(a)",
-    "cited_form": null,
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -1375,7 +1375,7 @@
     "kind": "cited_elsewhere",
     "question": "Classrooms needing minor repair",
     "item": "2.3(a)",
-    "cited_form": null,
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -1397,9 +1397,9 @@
    "field": "desktop",
    "asked": {
     "kind": "cited_elsewhere",
-    "question": "Number of desktops",
-    "item": "2.25(a)(ii)",
-    "cited_form": "2018-19",
+    "question": "Computer or Digital Equipment Status — Desktop/PCs",
+    "item": "2.24(a)",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -1421,9 +1421,9 @@
    "field": "digiboard",
    "asked": {
     "kind": "cited_elsewhere",
-    "question": "Number of digital boards",
-    "item": "2.25",
-    "cited_form": null,
+    "question": "Computer or Digital Equipment Status — Digital Boards with Content Management Systems and solutions (CMS)/ Learning Management System",
+    "item": "2.24(e)",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -1503,7 +1503,7 @@
     "kind": "cited_elsewhere",
     "question": "Access to DTH/TV channels",
     "item": "2.27(d)",
-    "cited_form": "2021-22",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -1738,9 +1738,9 @@
    "field": "laptop",
    "asked": {
     "kind": "cited_elsewhere",
-    "question": "Number of laptops",
-    "item": "2.25(a)(ii)",
-    "cited_form": null,
+    "question": "Computer or Digital Equipment Status — Laptop/Notebook",
+    "item": "2.24(b)",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -1897,9 +1897,9 @@
    "field": "printer",
    "asked": {
     "kind": "cited_elsewhere",
-    "question": "Number of printers",
-    "item": "2.25",
-    "cited_form": "2018-19",
+    "question": "Computer or Digital Equipment Status — Printer",
+    "item": "2.24(g)",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -1921,9 +1921,9 @@
    "field": "projector",
    "asked": {
     "kind": "cited_elsewhere",
-    "question": "Number of projectors",
-    "item": "2.25",
-    "cited_form": "2021-22",
+    "question": "Computer or Digital Equipment Status — Projector",
+    "item": "2.24(f)",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -2078,9 +2078,9 @@
    "field": "tablet",
    "asked": {
     "kind": "cited_elsewhere",
-    "question": "Number of tablets",
-    "item": "2.25",
-    "cited_form": "2018-19",
+    "question": "Computer or Digital Equipment Status — Tablets",
+    "item": "2.24(c)",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -2104,7 +2104,7 @@
     "kind": "cited_elsewhere",
     "question": "Boys' toilets, functional",
     "item": "2.7",
-    "cited_form": null,
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -2128,7 +2128,7 @@
     "kind": "cited_elsewhere",
     "question": "Does the School have Toilet(s)/Urinal(s)? — boys, total",
     "item": "2.7",
-    "cited_form": "2025-26",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -2176,7 +2176,7 @@
     "kind": "cited_elsewhere",
     "question": "Girls' toilets, functional",
     "item": "2.7",
-    "cited_form": null,
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -2200,7 +2200,7 @@
     "kind": "cited_elsewhere",
     "question": "Does the School have Toilet(s)/Urinal(s)? — girls, total",
     "item": "2.7",
-    "cited_form": "2025-26",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
@@ -2224,7 +2224,7 @@
     "kind": "cited_elsewhere",
     "question": "Urinals for boys",
     "item": "2.7",
-    "cited_form": null,
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },

@@ -3466,13 +3466,13 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Number of desktops",
+   "definition": "Computer or Digital Equipment Status \u2014 Desktop/PCs",
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Desktop\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Desktops in school\u201d"
    ],
-   "references": "DCF item 2.25(a)(ii)",
+   "references": "DCF item 2.24(a)",
    "scopeNote": "count"
   },
   {
@@ -3494,13 +3494,13 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Number of digital boards",
+   "definition": "Computer or Digital Equipment Status \u2014 Digital Boards with Content Management Systems and solutions (CMS)/ Learning Management System",
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cManagement Systems\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Digital Boards with Content Management Systems in school\u201d"
    ],
-   "references": "DCF item 2.25",
+   "references": "DCF item 2.24(e)",
    "scopeNote": "count"
   },
   {
@@ -4014,13 +4014,13 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Number of laptops",
+   "definition": "Computer or Digital Equipment Status \u2014 Laptop/Notebook",
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Laptop\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Laptops in school\u201d"
    ],
-   "references": "DCF item 2.25(a)(ii)",
+   "references": "DCF item 2.24(b)",
    "scopeNote": "count"
   },
   {
@@ -4362,13 +4362,13 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Number of printers",
+   "definition": "Computer or Digital Equipment Status \u2014 Printer",
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Printer\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Printer in school\u201d"
    ],
-   "references": "DCF item 2.25",
+   "references": "DCF item 2.24(g)",
    "scopeNote": "count"
   },
   {
@@ -4390,13 +4390,13 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Number of projectors",
+   "definition": "Computer or Digital Equipment Status \u2014 Projector",
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Projector\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Projector\u201d"
    ],
-   "references": "DCF item 2.25",
+   "references": "DCF item 2.24(f)",
    "scopeNote": "count"
   },
   {
@@ -4732,13 +4732,13 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Number of tablets",
+   "definition": "Computer or Digital Equipment Status \u2014 Tablets",
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Tablet\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Tablets in school\u201d"
    ],
-   "references": "DCF item 2.25",
+   "references": "DCF item 2.24(c)",
    "scopeNote": "count"
   },
   {

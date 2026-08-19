@@ -13,7 +13,7 @@
  "asked_evidence_note": null,
  "n_fields": 245,
  "flags": {
-  "asked_verified_this_form": 11,
+  "asked_verified_this_form": 21,
   "described_no_question": 60,
   "code_disagreements": [
    {
@@ -1305,8 +1305,8 @@
    "field": "classrooms_in_good_condition",
    "asked": {
     "kind": "traced",
-    "item": "2.3(a)",
-    "line": "(c) Classrooms by condition",
+    "item": "2.4",
+    "line": "Type of building block Good condition Need minor repair Need major repair",
     "form": "2018-19"
    },
    "described": [
@@ -1326,12 +1326,10 @@
    "dataset": "facility_data",
    "field": "classrooms_needs_major_repair",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Classrooms needing major repair",
-    "item": "2.3(a)",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.4",
+    "line": "Type of building block Good condition Need minor repair Need major repair",
+    "form": "2018-19"
    },
    "described": [
     {
@@ -1350,12 +1348,10 @@
    "dataset": "facility_data",
    "field": "classrooms_needs_minor_repair",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Classrooms needing minor repair",
-    "item": "2.3(a)",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.4",
+    "line": "Type of building block Good condition Need minor repair Need major repair",
+    "form": "2018-19"
    },
    "described": [
     {
@@ -1375,8 +1371,8 @@
    "field": "desktop",
    "asked": {
     "kind": "traced",
-    "item": "2.25(a)(ii)",
-    "line": "Number of Students",
+    "item": "2.32",
+    "line": "Desktop Computers",
     "form": "2018-19"
    },
    "described": [
@@ -1396,12 +1392,10 @@
    "dataset": "facility_data",
    "field": "digiboard",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Number of digital boards",
-    "item": "2.25",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.32",
+    "line": "Digital Boards with Content Management Systems",
+    "form": "2018-19"
    },
    "described": [
     {
@@ -1479,7 +1473,7 @@
     "kind": "cited_elsewhere",
     "question": "Access to DTH/TV channels",
     "item": "2.27(d)",
-    "cited_form": "2021-22",
+    "cited_form": "2026-27",
     "how": "curated",
     "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
    },
@@ -1711,12 +1705,10 @@
    "dataset": "facility_data",
    "field": "laptop",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Number of laptops",
-    "item": "2.25(a)(ii)",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.32",
+    "line": "Laptop/Notebook",
+    "form": "2018-19"
    },
    "described": [
     {
@@ -1867,8 +1859,8 @@
    "field": "printer",
    "asked": {
     "kind": "traced",
-    "item": "2.25",
-    "line": "Number of Students",
+    "item": "2.32",
+    "line": "Printer",
     "form": "2018-19"
    },
    "described": [
@@ -1888,12 +1880,10 @@
    "dataset": "facility_data",
    "field": "projector",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Number of projectors",
-    "item": "2.25",
-    "cited_form": "2021-22",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.32",
+    "line": "Projector",
+    "form": "2018-19"
    },
    "described": [
     {
@@ -2043,8 +2033,8 @@
    "field": "tablet",
    "asked": {
     "kind": "traced",
-    "item": "2.25",
-    "line": "Number of Students",
+    "item": "2.32",
+    "line": "Tablets",
     "form": "2018-19"
    },
    "described": [
@@ -2064,12 +2054,10 @@
    "dataset": "facility_data",
    "field": "total_boys_func_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Boys' toilets, functional",
+    "kind": "traced",
     "item": "2.7",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "(i) Number of toilet seats available",
+    "form": "2018-19"
    },
    "described": [
     {
@@ -2088,12 +2076,10 @@
    "dataset": "facility_data",
    "field": "total_boys_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Does the School have Toilet(s)/Urinal(s)? — boys, total",
+    "kind": "traced",
     "item": "2.7",
-    "cited_form": "2025-26",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "(i) Number of toilet seats available",
+    "form": "2018-19"
    },
    "described": [
     {
@@ -2136,12 +2122,10 @@
    "dataset": "facility_data",
    "field": "total_girls_func_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Girls' toilets, functional",
+    "kind": "traced",
     "item": "2.7",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "(i) Number of toilet seats available",
+    "form": "2018-19"
    },
    "described": [
     {
@@ -2160,12 +2144,10 @@
    "dataset": "facility_data",
    "field": "total_girls_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Does the School have Toilet(s)/Urinal(s)? — girls, total",
+    "kind": "traced",
     "item": "2.7",
-    "cited_form": "2025-26",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "(i) Number of toilet seats available",
+    "form": "2018-19"
    },
    "described": [
     {
@@ -2184,12 +2166,10 @@
    "dataset": "facility_data",
    "field": "urinal_boys",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Urinals for boys",
+    "kind": "traced",
     "item": "2.7",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "(iv) Total number of Urinals available",
+    "form": "2018-19"
    },
    "described": [
     {

@@ -51,6 +51,13 @@ a { color: var(--accent); }
 .meta-line { font-family: var(--mono); font-size: 11.5px; color: var(--ink-faint);
              margin-bottom: 8px; }
 .tabs { display: flex; gap: 2px; flex-wrap: wrap; }
+/* Three wrapped tab rows spent half a 360px screen before any content.
+   One scrollable row keeps every tab reachable with a thumb. */
+@media (max-width: 640px) {
+  .tabs { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;
+          scrollbar-width: thin; }
+  .tab { flex: 0 0 auto; white-space: nowrap; }
+}
 .tab { border: 1px solid var(--line); border-bottom: none; background: var(--paper);
        color: var(--ink-soft); padding: 7px 14px; font: inherit; font-size: 13px;
        cursor: pointer; border-radius: 3px 3px 0 0; }
@@ -112,11 +119,13 @@ a { color: var(--accent); }
 .crumbs a { cursor: pointer; text-decoration: none; }
 .crumbs a:hover { text-decoration: underline; }
 .crumbs .sep { color: var(--ink-faint); margin: 0 6px; }
-.detail-pane h2 { font-family: var(--mono); font-size: 19px; margin: 0 0 2px; word-break: break-all; }
+.detail-pane h2 { font-family: var(--mono); font-size: 17px; margin: 0 0 2px; word-break: break-all; }
 .detail-pane .ds-line { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); margin-bottom: 16px; }
 .k { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-faint);
      margin: 18px 0 5px; font-weight: 700; }
-.q { font-size: 15px; line-height: 1.5; border-left: 3px solid var(--accent); padding-left: 12px; }
+/* The question is what the page exists to show. It leads the card. */
+.q { font-size: 17px; line-height: 1.45; font-weight: 600;
+     border-left: 3px solid var(--accent); padding-left: 12px; max-width: 78ch; }
 .vals { font-family: var(--mono); font-size: 12.5px; background: var(--panel); padding: 9px 11px;
         border: 1px solid var(--line); border-radius: 3px; line-height: 1.65; }
 .detail-empty { color: var(--ink-faint); margin-top: 40px; max-width: 560px; }
@@ -420,12 +429,24 @@ code.dead { color: var(--ink-faint); text-decoration: line-through; }
 #appbar .btn:hover { color: var(--accent); border-color: var(--accent); }
 
 /* per-form trace ---------------------------------------------------------- */
-.trace { margin-top: 8px; font-size: 12.5px; color: var(--ink-soft); }
+.trace { margin-top: 8px; font-size: 12px; color: var(--ink-soft); }
+.trace-grid { display: inline-flex; flex-wrap: wrap; gap: 2px 14px; vertical-align: top; }
+.tg { white-space: nowrap; }
+.tg-y { display: block; font-family: var(--mono); font-size: 10px; color: var(--ink-faint); }
 .trace .k2 { font-family: var(--mono); font-size: 11px; letter-spacing: .06em;
              text-transform: uppercase; color: var(--ink-faint); margin-right: 4px; }
 .trace-drift { margin-top: 6px; border-left: 2px solid var(--chg); padding-left: 9px; }
 .trace-drift .tw { margin: 4px 0; }
 .trace-drift .yrs { font-family: var(--mono); font-size: 11px; color: var(--chg); display: block; }
+
+/* Prose reads at a measure, wherever it sits. The width fix let card and
+   note text run toward 1280px, and the notes read as walls. Tables are
+   exempt: they use the width; sentences do not. */
+.detail-pane p, .detail-pane .q-note, .evt-block p, .evt-why,
+.trapcard p, .trapcard .t, #missing-view p, .asked-span, .grades {
+  max-width: 78ch;
+}
+.asked-span { font-size: 13px; color: var(--ink-soft); }
 
 /* accessibility layer ------------------------------------------------------ */
 /* The audience is a budget Android at 360px and a first-time reader. Every

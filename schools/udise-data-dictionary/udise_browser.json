@@ -12,6 +12,16 @@
    "2024-25",
    "2025-26"
   ],
+  "forms_held": [
+   "2018-19",
+   "2020-21",
+   "2021-22",
+   "2022-23",
+   "2023-24",
+   "2024-25",
+   "2025-26",
+   "2026-27"
+  ],
   "counts": {
    "fields": 382,
    "with_dcf_wording": 224,
@@ -4548,18 +4558,50 @@
    "question": "Classrooms in good condition",
    "values": "count",
    "release_key": null,
-   "dcf_year": "2018-19",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2018-19": {
-     "item": "2.3(a)",
-     "line": "(c) Classrooms by condition"
+     "item": "2.4",
+     "line": "Type of building block Good condition Need minor repair Need major repair",
+     "header": "No. of classrooms by condition"
     },
     "2020-21": {
+     "item": "2.1.4(a)",
+     "line": "Type of classroom Good condition Need minor repair Need major repair",
+     "header": "No. of classrooms by condition"
+    },
+    "2021-22": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2022-23": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2023-24": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2024-25": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2025-26": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms In Good Condition Need Minor Repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2026-27": {
      "item": "2.3(a)",
-     "line": "(c) Class rooms by condition :"
+     "line": "Type of Classrooms In Good Condition Need Minor Repair Need Major Repair Dilapidated",
+     "header": "Number of Classrooms currently used for Instructional Purposes by Condition"
     }
    },
-   "dcf_line": "(c) Classrooms by condition",
+   "dcf_line": "Number of Classrooms currently used for Instructional Purposes by Condition \u2014 Type of Classrooms In Good Condition Need Minor Repair Need Major Repair Dilapidated",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -4612,9 +4654,50 @@
    "question": "Classrooms needing major repair",
    "values": "count",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.4",
+     "line": "Type of building block Good condition Need minor repair Need major repair",
+     "header": "No. of classrooms by condition"
+    },
+    "2020-21": {
+     "item": "2.1.4(a)",
+     "line": "Type of classroom Good condition Need minor repair Need major repair",
+     "header": "No. of classrooms by condition"
+    },
+    "2021-22": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2022-23": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2023-24": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2024-25": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2025-26": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms In Good Condition Need Minor Repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2026-27": {
+     "item": "2.3(a)",
+     "line": "Type of Classrooms In Good Condition Need Minor Repair Need Major Repair Dilapidated",
+     "header": "Number of Classrooms currently used for Instructional Purposes by Condition"
+    }
+   },
+   "dcf_line": "Number of Classrooms currently used for Instructional Purposes by Condition \u2014 Type of Classrooms In Good Condition Need Minor Repair Need Major Repair Dilapidated",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -4659,9 +4742,50 @@
    "question": "Classrooms needing minor repair",
    "values": "count",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.4",
+     "line": "Type of building block Good condition Need minor repair Need major repair",
+     "header": "No. of classrooms by condition"
+    },
+    "2020-21": {
+     "item": "2.1.4(a)",
+     "line": "Type of classroom Good condition Need minor repair Need major repair",
+     "header": "No. of classrooms by condition"
+    },
+    "2021-22": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2022-23": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2023-24": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2024-25": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2025-26": {
+     "item": "2.4(a)",
+     "line": "Type of Classrooms In Good Condition Need Minor Repair Need Major Repair",
+     "header": "Number of Classrooms by Condition"
+    },
+    "2026-27": {
+     "item": "2.3(a)",
+     "line": "Type of Classrooms In Good Condition Need Minor Repair Need Major Repair Dilapidated",
+     "header": "Number of Classrooms currently used for Instructional Purposes by Condition"
+    }
+   },
+   "dcf_line": "Number of Classrooms currently used for Instructional Purposes by Condition \u2014 Type of Classrooms In Good Condition Need Minor Repair Need Major Repair Dilapidated",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -4849,22 +4973,54 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "2.25(a)(ii)",
-   "question": "Number of desktops",
+   "dcf_item": "2.24(a)",
+   "question": "Computer or Digital Equipment Status \u2014 Desktop/PCs",
    "values": "count",
    "release_key": null,
-   "dcf_year": "2018-19",
+   "dcf_year": "2026-27",
    "dcf_trace": {
-    "2018-19": {
-     "item": "2.25(a)(ii)",
-     "line": "Number of Students"
-    },
     "2021-22": {
-     "item": "2.25(a)(ii)",
-     "line": "Number of students"
+     "item": "2.22",
+     "line": "(a) Desktop/PCs",
+     "header": "2.22 Computer or Digital Equipment Status:"
+    },
+    "2022-23": {
+     "item": "2.22",
+     "line": "(a) Desktop/PCs",
+     "header": "2.22 Computer or Digital Equipment Status:"
+    },
+    "2023-24": {
+     "item": "2.24",
+     "line": "(a) Desktop/PCs",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2024-25": {
+     "item": "2.24",
+     "line": "(a) Desktop/PCs",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2025-26": {
+     "item": "2.24",
+     "line": "(a) Desktop/PCs",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2026-27": {
+     "item": "2.24",
+     "line": "(a) Desktop/PCs",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2018-19": {
+     "item": "2.32",
+     "line": "Desktop Computers",
+     "header": "2.32 Does the school have the following"
+    },
+    "2020-21": {
+     "item": "2.3.3",
+     "line": "Desktop",
+     "header": "2.3.3 Does the school have the following :"
     }
    },
-   "dcf_line": "Number of Students",
+   "dcf_line": "2.24 Computer or Digital Equipment Status: \u2014 (a) Desktop/PCs",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -4905,13 +5061,54 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "2.25",
-   "question": "Number of digital boards",
+   "dcf_item": "2.24(e)",
+   "question": "Computer or Digital Equipment Status \u2014 Digital Boards with Content Management Systems and solutions (CMS)/ Learning Management System",
    "values": "count",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2020-21": {
+     "item": "2.3.3",
+     "line": "Digital Boards with Content Management Systems and solutions (CMS)/ Learning Management System",
+     "header": "2.3.3 Does the school have the following :"
+    },
+    "2018-19": {
+     "item": "2.32",
+     "line": "Digital Boards with Content Management Systems",
+     "header": "2.32 Does the school have the following"
+    },
+    "2021-22": {
+     "item": "2.22",
+     "line": "Digital Boards with Content Management Systems and",
+     "header": "2.22 Computer or Digital Equipment Status:"
+    },
+    "2022-23": {
+     "item": "2.22",
+     "line": "Digital Boards with Content Management Systems and",
+     "header": "2.22 Computer or Digital Equipment Status:"
+    },
+    "2023-24": {
+     "item": "2.24",
+     "line": "Digital Boards with Content Management Systems and",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2024-25": {
+     "item": "2.24",
+     "line": "Digital Boards with Content Management Systems and",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2025-26": {
+     "item": "2.24",
+     "line": "Digital Boards with Content Management Systems and",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2026-27": {
+     "item": "2.24",
+     "line": "Digital Boards with Content Management Systems and",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    }
+   },
+   "dcf_line": "2.24 Computer or Digital Equipment Status: \u2014 Digital Boards with Content Management Systems and",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -5058,34 +5255,40 @@
    "question": "Access to DTH/TV channels",
    "values": "1-Yes, 2-No, 4-Not applicable",
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2021-22": {
-     "item": "2.27(d)",
-     "line": "(d) Access to DTH/TV channels"
+     "item": "2.24",
+     "line": "(d) Access to DTH/TV channels",
+     "header": "2.24 Does the school have the following facilities?"
     },
     "2022-23": {
-     "item": "2.27(d)",
-     "line": "(d) Access to DTH/TV channels"
+     "item": "2.24",
+     "line": "(d) Access to DTH/TV channels",
+     "header": "2.24 Does the school have the following facilities?"
     },
     "2023-24": {
-     "item": "2.27(d)",
-     "line": "(d) Access to DTH/TV channels"
+     "item": "2.27",
+     "line": "(d) Access to DTH/TV channels",
+     "header": "2.27 Does the school have the following facilities?"
     },
     "2024-25": {
-     "item": "2.27(d)",
-     "line": "(d) Access to DTH/TV channels"
+     "item": "2.27",
+     "line": "(d) Access to DTH/TV channels",
+     "header": "2.27 Does the school have the following facilities?"
     },
     "2025-26": {
-     "item": "2.27(d)",
-     "line": "(d) Access to DTH/TV channels"
+     "item": "2.27",
+     "line": "(d) Access to DTH/TV channels",
+     "header": "2.27 Does the school have the following facilities?"
     },
     "2026-27": {
-     "item": "2.27(d)",
-     "line": "(d) Access to DTH/TV channels"
+     "item": "2.27",
+     "line": "(d) Access to DTH/TV channels",
+     "header": "2.27 Does the school have the following facilities?"
     }
    },
-   "dcf_line": "(d) Access to DTH/TV channels",
+   "dcf_line": "2.27 Does the school have the following facilities? \u2014 (d) Access to DTH/TV channels",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -5465,9 +5668,50 @@
    "question": "Hand pump functional",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.8",
+     "line": "Hand pumps",
+     "header": "If Yes, (a) Main Source of drinking water"
+    },
+    "2020-21": {
+     "item": "2.1.8",
+     "line": "Hand pumps",
+     "header": "If Yes, (a) Main Source of drinking water :"
+    },
+    "2021-22": {
+     "item": "2.6",
+     "line": "Hand pumps/Bore well",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.6",
+     "line": "Hand pumps/Bore well",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2023-24": {
+     "item": "2.9",
+     "line": "Hand pumps/Bore well",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2024-25": {
+     "item": "2.9(a)",
+     "line": "Hand pumps/Bore well",
+     "header": "2.9 (a) Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Hand pumps/Bore well",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "(i) Hand pumps/Bore well",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    }
+   },
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (i) Hand pumps/Bore well",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -5506,38 +5750,50 @@
    "question": "Main Source of Drinking Water \u2014 hand pump",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": "2020-21",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2020-21": {
-     "item": "2.9(a)",
-     "line": "If Yes, (a) Main Source of drinking water :"
+     "item": "2.1.8",
+     "line": "Hand pumps",
+     "header": "If Yes, (a) Main Source of drinking water :"
     },
     "2021-22": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Hand pumps/Bore well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Hand pumps/Bore well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2023-24": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.9",
+     "line": "Hand pumps/Bore well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2024-25": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "Hand pumps/Bore well",
+     "header": "2.9 (a) Main Source of Drinking Water:"
     },
     "2025-26": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "Hand pumps/Bore well",
+     "header": "2.9(a) Main Source of Drinking Water:"
     },
     "2026-27": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "(i) Hand pumps/Bore well",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2018-19": {
+     "item": "2.8",
+     "line": "Hand pumps",
+     "header": "If Yes, (a) Main Source of drinking water"
     }
    },
-   "dcf_line": "If Yes, (a) Main Source of drinking water :",
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (i) Hand pumps/Bore well",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -6118,13 +6374,54 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "2.25(a)(ii)",
-   "question": "Number of laptops",
+   "dcf_item": "2.24(b)",
+   "question": "Computer or Digital Equipment Status \u2014 Laptop/Notebook",
    "values": "count",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2021-22": {
+     "item": "2.22",
+     "line": "(b) Laptop/Notebook",
+     "header": "2.22 Computer or Digital Equipment Status:"
+    },
+    "2022-23": {
+     "item": "2.22",
+     "line": "(b) Laptop/Notebook",
+     "header": "2.22 Computer or Digital Equipment Status:"
+    },
+    "2023-24": {
+     "item": "2.24",
+     "line": "(b) Laptop/Notebook",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2024-25": {
+     "item": "2.24",
+     "line": "(b) Laptop/Notebook",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2025-26": {
+     "item": "2.24",
+     "line": "(b) Laptop/Notebook",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2026-27": {
+     "item": "2.24",
+     "line": "(b) Laptop/Notebook",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2018-19": {
+     "item": "2.32",
+     "line": "Laptop/Notebook",
+     "header": "2.32 Does the school have the following"
+    },
+    "2020-21": {
+     "item": "2.3.3",
+     "line": "Laptop/Notebook",
+     "header": "2.3.3 Does the school have the following :"
+    }
+   },
+   "dcf_line": "2.24 Computer or Digital Equipment Status: \u2014 (b) Laptop/Notebook",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -6577,9 +6874,50 @@
    "question": "Other source functional",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.8",
+     "line": "Others",
+     "header": "If Yes, (a) Main Source of drinking water"
+    },
+    "2020-21": {
+     "item": "2.1.8",
+     "line": "Others -",
+     "header": "If Yes, (a) Main Source of drinking water :"
+    },
+    "2021-22": {
+     "item": "2.6",
+     "line": "Others -",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.6",
+     "line": "Others -",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2023-24": {
+     "item": "2.9",
+     "line": "Others -",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2024-25": {
+     "item": "2.9(a)",
+     "line": "Others :",
+     "header": "2.9 (a) Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Others :",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "(vi) Others :",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    }
+   },
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (vi) Others :",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -6618,34 +6956,50 @@
    "question": "Main Source of Drinking Water \u2014 other source",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2021-22": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Others -",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Others -",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2023-24": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.9",
+     "line": "Others -",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2024-25": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "Others :",
+     "header": "2.9 (a) Main Source of Drinking Water:"
     },
     "2025-26": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "Others :",
+     "header": "2.9(a) Main Source of Drinking Water:"
     },
     "2026-27": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "(vi) Others :",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2018-19": {
+     "item": "2.8",
+     "line": "Others",
+     "header": "If Yes, (a) Main Source of drinking water"
+    },
+    "2020-21": {
+     "item": "2.1.8",
+     "line": "Others -",
+     "header": "If Yes, (a) Main Source of drinking water :"
     }
    },
-   "dcf_line": "(a) Main Source of Drinking Water:",
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (vi) Others :",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -6684,9 +7038,50 @@
    "question": "Packaged water functional",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.8",
+     "line": "Packaged/Bottled Water",
+     "header": "If Yes, (a) Main Source of drinking water"
+    },
+    "2020-21": {
+     "item": "2.1.8",
+     "line": "Packaged/Bottled Water",
+     "header": "If Yes, (a) Main Source of drinking water :"
+    },
+    "2021-22": {
+     "item": "2.6",
+     "line": "Packaged/Bottled Water",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.6",
+     "line": "Packaged/Bottled Water",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2023-24": {
+     "item": "2.9",
+     "line": "Packaged/Bottled Water",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2024-25": {
+     "item": "2.9(a)",
+     "line": "Packaged/Bottled Water",
+     "header": "2.9 (a) Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Packaged/Bottled Water",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "(v) Packaged/Bottled Water",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    }
+   },
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (v) Packaged/Bottled Water",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -6725,30 +7120,50 @@
    "question": "Main Source of Drinking Water \u2014 packaged water",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2021-22": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Packaged/Bottled Water",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Packaged/Bottled Water",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2023-24": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.9",
+     "line": "Packaged/Bottled Water",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2025-26": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "Packaged/Bottled Water",
+     "header": "2.9(a) Main Source of Drinking Water:"
     },
     "2026-27": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "(v) Packaged/Bottled Water",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2018-19": {
+     "item": "2.8",
+     "line": "Packaged/Bottled Water",
+     "header": "If Yes, (a) Main Source of drinking water"
+    },
+    "2020-21": {
+     "item": "2.1.8",
+     "line": "Packaged/Bottled Water",
+     "header": "If Yes, (a) Main Source of drinking water :"
+    },
+    "2024-25": {
+     "item": "2.9(a)",
+     "line": "Packaged/Bottled Water",
+     "header": "2.9 (a) Main Source of Drinking Water:"
     }
    },
-   "dcf_line": "(a) Main Source of Drinking Water:",
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (v) Packaged/Bottled Water",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -6947,22 +7362,54 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "2.25",
-   "question": "Number of printers",
+   "dcf_item": "2.24(g)",
+   "question": "Computer or Digital Equipment Status \u2014 Printer",
    "values": "count",
    "release_key": null,
-   "dcf_year": "2018-19",
+   "dcf_year": "2026-27",
    "dcf_trace": {
-    "2018-19": {
-     "item": "2.25",
-     "line": "Number of Students"
-    },
     "2021-22": {
-     "item": "2.25",
-     "line": "Number of students"
+     "item": "2.22",
+     "line": "(g) Printer",
+     "header": "2.22 Computer or Digital Equipment Status:"
+    },
+    "2022-23": {
+     "item": "2.22",
+     "line": "(g) Printer",
+     "header": "2.22 Computer or Digital Equipment Status:"
+    },
+    "2023-24": {
+     "item": "2.24",
+     "line": "(g) Printer",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2024-25": {
+     "item": "2.24",
+     "line": "(g) Printer",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2025-26": {
+     "item": "2.24",
+     "line": "(g) Printer",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2026-27": {
+     "item": "2.24",
+     "line": "(g) Printer",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2018-19": {
+     "item": "2.32",
+     "line": "Printer",
+     "header": "2.32 Does the school have the following"
+    },
+    "2020-21": {
+     "item": "2.3.3",
+     "line": "Printer",
+     "header": "2.3.3 Does the school have the following :"
     }
    },
-   "dcf_line": "Number of Students",
+   "dcf_line": "2.24 Computer or Digital Equipment Status: \u2014 (g) Printer",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -7003,38 +7450,54 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "2.25",
-   "question": "Number of projectors",
+   "dcf_item": "2.24(f)",
+   "question": "Computer or Digital Equipment Status \u2014 Projector",
    "values": "count",
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2021-22": {
-     "item": "2.25",
-     "line": "(f) Projector"
+     "item": "2.22",
+     "line": "(f) Projector",
+     "header": "2.22 Computer or Digital Equipment Status:"
     },
     "2022-23": {
-     "item": "2.25",
-     "line": "(f) Projector"
+     "item": "2.22",
+     "line": "(f) Projector",
+     "header": "2.22 Computer or Digital Equipment Status:"
     },
     "2023-24": {
-     "item": "2.25",
-     "line": "(f) Projector"
+     "item": "2.24",
+     "line": "(f) Projector",
+     "header": "2.24 Computer or Digital Equipment Status:"
     },
     "2024-25": {
-     "item": "2.25",
-     "line": "(f) Projector"
+     "item": "2.24",
+     "line": "(f) Projector",
+     "header": "2.24 Computer or Digital Equipment Status:"
     },
     "2025-26": {
-     "item": "2.25",
-     "line": "(f) Projector"
+     "item": "2.24",
+     "line": "(f) Projector",
+     "header": "2.24 Computer or Digital Equipment Status:"
     },
     "2026-27": {
-     "item": "2.25",
-     "line": "(f) Projector"
+     "item": "2.24",
+     "line": "(f) Projector",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2018-19": {
+     "item": "2.32",
+     "line": "Projector",
+     "header": "2.32 Does the school have the following"
+    },
+    "2020-21": {
+     "item": "2.3.3",
+     "line": "Projector",
+     "header": "2.3.3 Does the school have the following :"
     }
    },
-   "dcf_line": "(f) Projector",
+   "dcf_line": "2.24 Computer or Digital Equipment Status: \u2014 (f) Projector",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -7767,22 +8230,54 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "2.25",
-   "question": "Number of tablets",
+   "dcf_item": "2.24(c)",
+   "question": "Computer or Digital Equipment Status \u2014 Tablets",
    "values": "count",
    "release_key": null,
-   "dcf_year": "2018-19",
+   "dcf_year": "2026-27",
    "dcf_trace": {
-    "2018-19": {
-     "item": "2.25",
-     "line": "Number of Students"
-    },
     "2021-22": {
-     "item": "2.25",
-     "line": "Number of students"
+     "item": "2.22",
+     "line": "(c) Tablets",
+     "header": "2.22 Computer or Digital Equipment Status:"
+    },
+    "2022-23": {
+     "item": "2.22",
+     "line": "(c) Tablets",
+     "header": "2.22 Computer or Digital Equipment Status:"
+    },
+    "2023-24": {
+     "item": "2.24",
+     "line": "(c) Tablets",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2024-25": {
+     "item": "2.24",
+     "line": "(c) Tablets",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2025-26": {
+     "item": "2.24",
+     "line": "(c) Tablets",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2026-27": {
+     "item": "2.24",
+     "line": "(c) Tablets",
+     "header": "2.24 Computer or Digital Equipment Status:"
+    },
+    "2018-19": {
+     "item": "2.32",
+     "line": "Tablets",
+     "header": "2.32 Does the school have the following"
+    },
+    "2020-21": {
+     "item": "2.3.3",
+     "line": "Tablets",
+     "header": "2.3.3 Does the school have the following :"
     }
    },
-   "dcf_line": "Number of Students",
+   "dcf_line": "2.24 Computer or Digital Equipment Status: \u2014 (c) Tablets",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -7823,9 +8318,50 @@
    "question": "Tap water functional",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.8",
+     "line": "Tap water",
+     "header": "If Yes, (a) Main Source of drinking water"
+    },
+    "2020-21": {
+     "item": "2.1.8",
+     "line": "Tap water",
+     "header": "If Yes, (a) Main Source of drinking water :"
+    },
+    "2021-22": {
+     "item": "2.6",
+     "line": "Tap water",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.6",
+     "line": "Tap water",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2023-24": {
+     "item": "2.9",
+     "line": "Tap water",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2024-25": {
+     "item": "2.9(a)",
+     "line": "Tap water",
+     "header": "2.9 (a) Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Tap water",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "(iv) Tap water",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    }
+   },
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (iv) Tap water",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -7864,38 +8400,50 @@
    "question": "Main Source of Drinking Water \u2014 tap water",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": "2020-21",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2020-21": {
-     "item": "2.9(a)",
-     "line": "If Yes, (a) Main Source of drinking water :"
+     "item": "2.1.8",
+     "line": "Tap water",
+     "header": "If Yes, (a) Main Source of drinking water :"
     },
     "2021-22": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Tap water",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Tap water",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2023-24": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.9",
+     "line": "Tap water",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2024-25": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "Tap water",
+     "header": "2.9 (a) Main Source of Drinking Water:"
     },
     "2025-26": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "Tap water",
+     "header": "2.9(a) Main Source of Drinking Water:"
     },
     "2026-27": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "(iv) Tap water",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2018-19": {
+     "item": "2.8",
+     "line": "Tap water",
+     "header": "If Yes, (a) Main Source of drinking water"
     }
    },
-   "dcf_line": "If Yes, (a) Main Source of drinking water :",
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (iv) Tap water",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -8074,9 +8622,50 @@
    "question": "Boys' toilets, functional",
    "values": "count",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.7",
+     "line": "(i) Number of toilet seats available",
+     "header": "(a) Details of toilets"
+    },
+    "2020-21": {
+     "item": "2.1.7",
+     "line": "(i) Number of toilets seats available excluding CWSN",
+     "header": "(a) Details of toilets"
+    },
+    "2021-22": {
+     "item": "2.5",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2022-23": {
+     "item": "2.5",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2023-24": {
+     "item": "2.7",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2024-25": {
+     "item": "2.7",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2025-26": {
+     "item": "2.7",
+     "line": "Number of Toilet seats available",
+     "header": "(a) Details of Toilets/Urinals: (Func = Functional)"
+    },
+    "2026-27": {
+     "item": "2.7",
+     "line": "Number of Toilet seats available",
+     "header": "(a) Details of Toilets/Urinals: (Func = Functional)"
+    }
+   },
+   "dcf_line": "(a) Details of Toilets/Urinals: (Func = Functional) \u2014 Number of Toilet seats available",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -8121,18 +8710,50 @@
    "question": "Does the School have Toilet(s)/Urinal(s)? \u2014 boys, total",
    "values": "count",
    "release_key": null,
-   "dcf_year": "2025-26",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2025-26": {
      "item": "2.7",
-     "line": "Does the School have Toilet(s)/Urinal(s)?"
+     "line": "Number of Toilet seats available",
+     "header": "(a) Details of Toilets/Urinals: (Func = Functional)"
     },
     "2026-27": {
      "item": "2.7",
-     "line": "Does the School have Toilet(s)/Urinal(s)?"
+     "line": "Number of Toilet seats available",
+     "header": "(a) Details of Toilets/Urinals: (Func = Functional)"
+    },
+    "2018-19": {
+     "item": "2.7",
+     "line": "(i) Number of toilet seats available",
+     "header": "(a) Details of toilets"
+    },
+    "2020-21": {
+     "item": "2.1.7",
+     "line": "(i) Number of toilets seats available excluding CWSN",
+     "header": "(a) Details of toilets"
+    },
+    "2021-22": {
+     "item": "2.5",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2022-23": {
+     "item": "2.5",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2023-24": {
+     "item": "2.7",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2024-25": {
+     "item": "2.7",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
     }
    },
-   "dcf_line": "2.7 Does the School have Toilet(s)/Urinal(s)?",
+   "dcf_line": "(a) Details of Toilets/Urinals: (Func = Functional) \u2014 Number of Toilet seats available",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -8298,9 +8919,50 @@
    "question": "Girls' toilets, functional",
    "values": "count",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.7",
+     "line": "(i) Number of toilet seats available",
+     "header": "(a) Details of toilets"
+    },
+    "2020-21": {
+     "item": "2.1.7",
+     "line": "(i) Number of toilets seats available excluding CWSN",
+     "header": "(a) Details of toilets"
+    },
+    "2021-22": {
+     "item": "2.5",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2022-23": {
+     "item": "2.5",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2023-24": {
+     "item": "2.7",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2024-25": {
+     "item": "2.7",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2025-26": {
+     "item": "2.7",
+     "line": "Number of Toilet seats available",
+     "header": "(a) Details of Toilets/Urinals: (Func = Functional)"
+    },
+    "2026-27": {
+     "item": "2.7",
+     "line": "Number of Toilet seats available",
+     "header": "(a) Details of Toilets/Urinals: (Func = Functional)"
+    }
+   },
+   "dcf_line": "(a) Details of Toilets/Urinals: (Func = Functional) \u2014 Number of Toilet seats available",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -8345,18 +9007,50 @@
    "question": "Does the School have Toilet(s)/Urinal(s)? \u2014 girls, total",
    "values": "count",
    "release_key": null,
-   "dcf_year": "2025-26",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2025-26": {
      "item": "2.7",
-     "line": "Does the School have Toilet(s)/Urinal(s)?"
+     "line": "Number of Toilet seats available",
+     "header": "(a) Details of Toilets/Urinals: (Func = Functional)"
     },
     "2026-27": {
      "item": "2.7",
-     "line": "Does the School have Toilet(s)/Urinal(s)?"
+     "line": "Number of Toilet seats available",
+     "header": "(a) Details of Toilets/Urinals: (Func = Functional)"
+    },
+    "2018-19": {
+     "item": "2.7",
+     "line": "(i) Number of toilet seats available",
+     "header": "(a) Details of toilets"
+    },
+    "2020-21": {
+     "item": "2.1.7",
+     "line": "(i) Number of toilets seats available excluding CWSN",
+     "header": "(a) Details of toilets"
+    },
+    "2021-22": {
+     "item": "2.5",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2022-23": {
+     "item": "2.5",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2023-24": {
+     "item": "2.7",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
+    },
+    "2024-25": {
+     "item": "2.7",
+     "line": "Number of toilet seats available",
+     "header": "Details of Toilets"
     }
    },
-   "dcf_line": "2.7 Does the School have Toilet(s)/Urinal(s)?",
+   "dcf_line": "(a) Details of Toilets/Urinals: (Func = Functional) \u2014 Number of Toilet seats available",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -8401,9 +9095,50 @@
    "question": "Urinals for boys",
    "values": "count",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.7",
+     "line": "(iv) Total number of Urinals available",
+     "header": "CWSN friendly toilets"
+    },
+    "2020-21": {
+     "item": "2.1.7",
+     "line": "(iii) Total number of urinals available",
+     "header": "Total Number of toilet seats including CWSN friendly"
+    },
+    "2021-22": {
+     "item": "2.5",
+     "line": "(iii) Total number of urinals available",
+     "header": "CWSN friendly toilets"
+    },
+    "2022-23": {
+     "item": "2.5",
+     "line": "(iii) Total number of urinals available",
+     "header": "CWSN friendly toilets"
+    },
+    "2023-24": {
+     "item": "2.7",
+     "line": "(iii) Total number of urinals available",
+     "header": "CWSN friendly toilets"
+    },
+    "2024-25": {
+     "item": "2.7",
+     "line": "(iii) Total number of urinals available",
+     "header": "CWSN friendly toilets"
+    },
+    "2025-26": {
+     "item": "2.7",
+     "line": "(iii) Total Number of Urinals available",
+     "header": "including CWSN friendly Toilets"
+    },
+    "2026-27": {
+     "item": "2.7",
+     "line": "(iii) Total Number of Urinals available",
+     "header": "including CWSN friendly Toilets"
+    }
+   },
+   "dcf_line": "including CWSN friendly Toilets \u2014 (iii) Total Number of Urinals available",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
@@ -8453,7 +9188,48 @@
    "values": "1-Yes, 2-No, 3-Yes, but Not Functional",
    "release_key": null,
    "dcf_year": "2026-27",
-   "dcf_trace": {},
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.7",
+     "line": "(iv) Total number of Urinals available",
+     "header": "CWSN friendly toilets"
+    },
+    "2020-21": {
+     "item": "2.1.7",
+     "line": "(iii) Total number of urinals available",
+     "header": "Total Number of toilet seats including CWSN friendly"
+    },
+    "2021-22": {
+     "item": "2.5",
+     "line": "(iii) Total number of urinals available",
+     "header": "CWSN friendly toilets"
+    },
+    "2022-23": {
+     "item": "2.5",
+     "line": "(iii) Total number of urinals available",
+     "header": "CWSN friendly toilets"
+    },
+    "2023-24": {
+     "item": "2.7",
+     "line": "(iii) Total number of urinals available",
+     "header": "CWSN friendly toilets"
+    },
+    "2024-25": {
+     "item": "2.7",
+     "line": "(iii) Total number of urinals available",
+     "header": "CWSN friendly toilets"
+    },
+    "2025-26": {
+     "item": "2.7",
+     "line": "(iii) Total Number of Urinals available",
+     "header": "including CWSN friendly Toilets"
+    },
+    "2026-27": {
+     "item": "2.7",
+     "line": "(iii) Total Number of Urinals available",
+     "header": "including CWSN friendly Toilets"
+    }
+   },
    "dcf_line": null,
    "dcf_how": "auto",
    "dormant_2025_26": false,
@@ -8557,9 +9333,50 @@
    "question": "Protected well functional",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": null,
-   "dcf_trace": {},
-   "dcf_line": null,
+   "dcf_year": "2026-27",
+   "dcf_trace": {
+    "2018-19": {
+     "item": "2.8",
+     "line": "Protected Well",
+     "header": "If Yes, (a) Main Source of drinking water"
+    },
+    "2020-21": {
+     "item": "2.1.8",
+     "line": "Protected Well",
+     "header": "If Yes, (a) Main Source of drinking water :"
+    },
+    "2021-22": {
+     "item": "2.6",
+     "line": "Protected Well",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2022-23": {
+     "item": "2.6",
+     "line": "Protected Well",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2023-24": {
+     "item": "2.9",
+     "line": "Protected Well",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2024-25": {
+     "item": "2.9(a)",
+     "line": "Protected Well",
+     "header": "2.9 (a) Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Protected Well",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "(ii) Protected Well",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    }
+   },
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (ii) Protected Well",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -8598,30 +9415,50 @@
    "question": "Main Source of Drinking Water \u2014 protected well",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2021-22": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Protected Well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Protected Well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2023-24": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.9",
+     "line": "Protected Well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2025-26": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "Protected Well",
+     "header": "2.9(a) Main Source of Drinking Water:"
     },
     "2026-27": {
      "item": "2.9(a)",
-     "line": "Main Source of Drinking Water:"
+     "line": "(ii) Protected Well",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2018-19": {
+     "item": "2.8",
+     "line": "Protected Well",
+     "header": "If Yes, (a) Main Source of drinking water"
+    },
+    "2020-21": {
+     "item": "2.1.8",
+     "line": "Protected Well",
+     "header": "If Yes, (a) Main Source of drinking water :"
+    },
+    "2024-25": {
+     "item": "2.9(a)",
+     "line": "Protected Well",
+     "header": "2.9 (a) Main Source of Drinking Water:"
     }
    },
-   "dcf_line": "(a) Main Source of Drinking Water:",
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (ii) Protected Well",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -8660,38 +9497,50 @@
    "question": "Unprotected well functional",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": "2018-19",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2018-19": {
-     "item": "2.9",
-     "line": "Unprotected Well"
+     "item": "2.8",
+     "line": "Unprotected Well",
+     "header": "If Yes, (a) Main Source of drinking water"
     },
     "2020-21": {
-     "item": "2.9",
-     "line": "Unprotected Well"
+     "item": "2.1.8",
+     "line": "Unprotected Well",
+     "header": "If Yes, (a) Main Source of drinking water :"
     },
     "2021-22": {
-     "item": "2.9",
-     "line": "Unprotected Well"
+     "item": "2.6",
+     "line": "Unprotected Well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
-     "item": "2.9",
-     "line": "Unprotected Well"
+     "item": "2.6",
+     "line": "Unprotected Well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2023-24": {
      "item": "2.9",
-     "line": "Unprotected Well"
+     "line": "Unprotected Well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2024-25": {
-     "item": "2.9",
-     "line": "Unprotected Well"
+     "item": "2.9(a)",
+     "line": "Unprotected Well",
+     "header": "2.9 (a) Main Source of Drinking Water:"
     },
     "2025-26": {
-     "item": "2.9",
-     "line": "Unprotected Well"
+     "item": "2.9(a)",
+     "line": "Unprotected Well",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "(iii) Unprotected Well",
+     "header": "2.9(a) Main Source of Drinking Water:"
     }
    },
-   "dcf_line": "Unprotected Well",
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (iii) Unprotected Well",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [
@@ -8730,22 +9579,50 @@
    "question": "Main Source of Drinking Water \u2014 unprotected well",
    "values": "1-Yes, 2-No",
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": "2026-27",
    "dcf_trace": {
     "2021-22": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Unprotected Well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2022-23": {
-     "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "item": "2.6",
+     "line": "Unprotected Well",
+     "header": "(a) Main Source of Drinking Water:"
     },
     "2023-24": {
+     "item": "2.9",
+     "line": "Unprotected Well",
+     "header": "(a) Main Source of Drinking Water:"
+    },
+    "2018-19": {
+     "item": "2.8",
+     "line": "Unprotected Well",
+     "header": "If Yes, (a) Main Source of drinking water"
+    },
+    "2020-21": {
+     "item": "2.1.8",
+     "line": "Unprotected Well",
+     "header": "If Yes, (a) Main Source of drinking water :"
+    },
+    "2024-25": {
      "item": "2.9(a)",
-     "line": "(a) Main Source of Drinking Water:"
+     "line": "Unprotected Well",
+     "header": "2.9 (a) Main Source of Drinking Water:"
+    },
+    "2025-26": {
+     "item": "2.9(a)",
+     "line": "Unprotected Well",
+     "header": "2.9(a) Main Source of Drinking Water:"
+    },
+    "2026-27": {
+     "item": "2.9(a)",
+     "line": "(iii) Unprotected Well",
+     "header": "2.9(a) Main Source of Drinking Water:"
     }
    },
-   "dcf_line": "(a) Main Source of Drinking Water:",
+   "dcf_line": "2.9(a) Main Source of Drinking Water: \u2014 (iii) Unprotected Well",
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [

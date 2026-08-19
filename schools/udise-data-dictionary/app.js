@@ -323,7 +323,10 @@ function traceHTML(f) {
   const norm = (x) => x.toLowerCase().replace(/\(1-.*$/, "").replace(/[^a-z ]+/g, " ")
     .replace(/\s+/g, " ").trim();
   const wordings = [...new Set(years.map((y) => norm(t[y].line)))];
-  const items = years.map((y) => `${esc(y)} <code>${esc(t[y].item)}</code>`).join(" · ");
+  // A year-number pair is a cell, not a phrase. Eight pairs joined by
+  // dots wrapped into soup at 360px.
+  const items = `<span class="trace-grid">` + years.map((y) =>
+    `<span class="tg"><span class="tg-y">${esc(y)}</span><code>${esc(t[y].item)}</code></span>`).join("") + `</span>`;
   let drift = "";
   if (wordings.length > 1) {
     const byW = {};
@@ -333,8 +336,16 @@ function traceHTML(f) {
         `<div class="tw"><span class="yrs">${ys.map(esc).join(", ")}</span>
          ${esc(t[ys[0]].line)}</div>`).join("") + `</div>`;
   }
-  return `<div class="trace"><span class="k2">Item by form, traced by text:</span>
-    ${items}${drift}</div>`;
+  // The line carries its denominator. Two of eight rendered as a complete
+  // history, and "asked twice" was false: the question sat in a grid the
+  // text tracer could not read. A partial trace now says it is partial.
+  const held = (state.data.meta.forms_held || []).length || 8;
+  const cover = years.length >= held ? "" :
+    `<div class="trace-cover">Found in ${years.length} of the ${held} forms held.
+     A form missing from this line means the tracer found no matching printed
+     line there — not that the form is silent.</div>`;
+  return `<div class="trace"><span class="k2">Item by form:</span>
+    ${items}${cover}${drift}</div>`;
 }
 
 function officialHTML(f) {
@@ -783,16 +794,23 @@ function renderMissing() {
     public file carries the answer, so there is nothing to click and nothing to join.
     They are here because a dictionary that lists only what was released describes the
     release, not the instrument.</p>`;
-  const body = ORDER.filter((g) => groups[g]).map((g) => `
+  const body = ORDER.filter((g) => groups[g]).map((g) => {
+    // One span sentence repeated down a column is noise. When every row in
+    // the group shares it, it prints once above the table instead.
+    const spans = [...new Set(groups[g].map((m) => m.asked))];
+    const uniform = spans.length === 1;
+    return `
     <h3>${esc(g)} <span class="pill">${groups[g].length}</span></h3>
     ${NOTE[g] ? `<p>${esc(NOTE[g])}</p>` : ""}
+    ${uniform ? `<p class="asked-span">Asked: ${esc(spans[0])}. Released: never.</p>` : ""}
     <div class="tscroll"><table><thead><tr><th>DCF item</th><th>the question, verbatim</th><th>values</th>
-      <th>asked</th><th>variable</th></tr></thead>
+      ${uniform ? "" : "<th>asked</th>"}<th>variable</th></tr></thead>
     <tbody>${groups[g].map((m) => `<tr>
       <td><code>${esc(m.dcf)}</code></td>
       <td>${esc(m.question)}${m.why_it_matters ? `<div class="why-m">${esc(m.why_it_matters)}</div>` : ""}</td>
-      <td><code>${esc(m.values)}</code></td><td>${esc(m.asked)}</td>
-      <td><span class="pill warn">never shared</span></td></tr>`).join("")}</tbody></table></div>`).join("");
+      <td><code>${esc(m.values)}</code></td>${uniform ? "" : `<td>${esc(m.asked)}</td>`}
+      <td><span class="pill warn">never shared</span></td></tr>`).join("")}</tbody></table></div>`;
+  }).join("");
 
   $("#missing-view").innerHTML = `<div class="wrap">
     ${lede}

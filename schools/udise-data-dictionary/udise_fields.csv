@@ -104,8 +104,8 @@ facility_data.classrooms_needs_minor_repair,facility_data.classrooms_needs_minor
 facility_data.comp_ict_lab_yn,facility_data.comp_ict_lab_yn,facility_data,comp_ict_lab_yn,Physical Facilities,2022-23,2025-26,4,0,2.25,Is Computer/ICT Lab available in school?,"1-Yes, 2-No",ungated-ict-lab
 facility_data.comp_lab_cond,facility_data.comp_lab_cond,facility_data,comp_lab_cond,Physical Facilities,2022-23,2025-26,4,0,2.22(i),Does the school have the following laboratories? (For Higher Secondary sections only) — Computer Science,"1-Yes, 2-No",
 facility_data.cyber_safety,facility_data.cyber_safety,facility_data,cyber_safety,Physical Facilities,2025-26,2025-26,1,0,3.2(a),Details of Teaching Staffs (Including Head Master/Mistress/Principal/HoS) — cyber safety:,"1-Yes, 2-No",
-facility_data.desktop,facility_data.desktop,facility_data,desktop,Physical Facilities,2018-19,2025-26,8,0,2.25(a)(ii),Number of desktops,count,
-facility_data.digiboard,facility_data.digiboard,facility_data,digiboard,Physical Facilities,2018-19,2025-26,8,0,2.25,Number of digital boards,count,
+facility_data.desktop,facility_data.desktop,facility_data,desktop,Physical Facilities,2018-19,2025-26,8,0,2.24(a),Computer or Digital Equipment Status — Desktop/PCs,count,
+facility_data.digiboard,facility_data.digiboard,facility_data,digiboard,Physical Facilities,2018-19,2025-26,8,0,2.24(e),Computer or Digital Equipment Status — Digital Boards with Content Management Systems and solutions (CMS)/ Learning Management System,count,
 facility_data.drinking_water_available,facility_data.drinking_water_available,facility_data,drinking_water_available,Physical Facilities,2018-19,2021-22,4,0,2.6,Whether drinking water is available in the school premises?,,union-artefact
 facility_data.drinking_water_functional,facility_data.drinking_water_functional,facility_data,drinking_water_functional,Physical Facilities,2018-19,2021-22,4,0,2.8(b),"Whether drinking water is available in the school premises?                                     (Yes=1, No=2) — Whether water purifier/RO is available in the school                     (Yes=1, No=2, Yes, but not functional=3)",,union-artefact
 facility_data.dth,facility_data.dth,facility_data,dth,Physical Facilities,2018-19,2025-26,8,0,2.27(d),Access to DTH/TV channels,"1-Yes, 2-No, 4-Not applicable",
@@ -126,7 +126,7 @@ facility_data.internet,facility_data.internet,facility_data,internet,Physical Fa
 facility_data.kitchen_garden_yn,facility_data.kitchen_garden_yn,facility_data,kitchen_garden_yn,Physical Facilities,2025-26,2025-26,1,0,2.17(a),Whether Kitchen Garden is available in school?,"1-Yes, 2-No",
 facility_data.land_avl_yn,facility_data.land_avl_yn,facility_data,land_avl_yn,Physical Facilities,2025-26,2025-26,1,0,2.12(b),Whether Land is available for expansion of school facilities?,"1-Yes, 2-No",
 facility_data.lang_lab_cond,facility_data.lang_lab_cond,facility_data,lang_lab_cond,Physical Facilities,2022-23,2025-26,4,0,,,,
-facility_data.laptop,facility_data.laptop,facility_data,laptop,Physical Facilities,2018-19,2025-26,8,0,2.25(a)(ii),Number of laptops,count,
+facility_data.laptop,facility_data.laptop,facility_data,laptop,Physical Facilities,2018-19,2025-26,8,0,2.24(b),Computer or Digital Equipment Status — Laptop/Notebook,count,
 facility_data.librarian_yn,facility_data.librarian_yn,facility_data,librarian_yn,Physical Facilities,2025-26,2025-26,1,0,2.11(b),Does the school have a full-time librarian?,"1-Yes, 2-No",ungated-librarian
 facility_data.library_availability,facility_data.library_availability,facility_data,library_availability,Physical Facilities,2018-19,2025-26,8,0,2.11(a),Whether the school has Library facility/Book Bank/Reading Corner? — Library,"1-Yes, 2-No",ungated-librarian state-conventions
 facility_data.math_lab_cond,facility_data.math_lab_cond,facility_data,math_lab_cond,Physical Facilities,2022-23,2025-26,4,0,2.22(c),Does the school have the following laboratories? (For Higher Secondary sections only) — Math’s Kit**,"1-Yes, 2-No",
@@ -140,8 +140,8 @@ facility_data.pack_water_yn,facility_data.pack_water_yn,facility_data,pack_water
 facility_data.phy_lab_cond,facility_data.phy_lab_cond,facility_data,phy_lab_cond,Physical Facilities,2022-23,2025-26,4,0,,,,
 facility_data.playground_alt_yn,facility_data.playground_alt_yn,facility_data,playground_alt_yn,Physical Facilities,2022-23,2025-26,4,0,2.13,"If no playground, whether adequate arrangements exist for outdoor games","0, 1-Yes, 2-No, 9-Not applicable",
 facility_data.playground_available,facility_data.playground_available,facility_data,playground_available,Physical Facilities,2018-19,2025-26,8,0,2.13,Whether Playground facility is available in the School?,"1-Yes, 2-No",
-facility_data.printer,facility_data.printer,facility_data,printer,Physical Facilities,2018-19,2025-26,8,0,2.25,Number of printers,count,
-facility_data.projector,facility_data.projector,facility_data,projector,Physical Facilities,2018-19,2025-26,8,0,2.25,Number of projectors,count,
+facility_data.printer,facility_data.printer,facility_data,printer,Physical Facilities,2018-19,2025-26,8,0,2.24(g),Computer or Digital Equipment Status — Printer,count,
+facility_data.projector,facility_data.projector,facility_data,projector,Physical Facilities,2018-19,2025-26,8,0,2.24(f),Computer or Digital Equipment Status — Projector,count,
 facility_data.pseudocode,facility_data.psuedocode,facility_data,pseudocode,Physical Facilities,2022-23,2025-26,4,0,,,,pseudocode-stability spelling-of-the-key
 facility_data.psuedocode,facility_data.psuedocode,facility_data,psuedocode,Physical Facilities,2018-19,2021-22,4,0,,,,pseudocode-stability spelling-of-the-key
 facility_data.psycho_lab_cond,facility_data.psycho_lab_cond,facility_data,psycho_lab_cond,Physical Facilities,2022-23,2025-26,4,0,,,,
@@ -155,7 +155,7 @@ facility_data.smart_class_tv_tot,facility_data.smart_class_tv_tot,facility_data,
 facility_data.solar_panel,facility_data.solar_panel,facility_data,solar_panel,Physical Facilities,2018-19,2025-26,8,0,2.5(b),Whether Solar Panel is available in school?,"1-Yes, 2-No, 3-Yes but not Functional",type-code-as-binary
 facility_data.spl_educator_yn,facility_data.spl_educator_yn,facility_data,spl_educator_yn,Physical Facilities,2022-23,2025-26,4,0,3.x,Whether a special educator is available,"1-Yes, 2-No, 3-Shared",
 facility_data.staff_qtr_yn,facility_data.staff_qtr_yn,facility_data,staff_qtr_yn,Physical Facilities,2025-26,2025-26,1,0,2.x,Whether staff quarters are available,"1-Yes, 2-No, 9-Not applicable",
-facility_data.tablet,facility_data.tablet,facility_data,tablet,Physical Facilities,2018-19,2025-26,8,0,2.25,Number of tablets,count,
+facility_data.tablet,facility_data.tablet,facility_data,tablet,Physical Facilities,2018-19,2025-26,8,0,2.24(c),Computer or Digital Equipment Status — Tablets,count,
 facility_data.tap_fun_yn,facility_data.tap_fun_yn,facility_data,tap_fun_yn,Physical Facilities,2022-23,2025-26,4,0,2.9,Tap water functional,"1-Yes, 2-No",
 facility_data.tap_yn,facility_data.tap_yn,facility_data,tap_yn,Physical Facilities,2022-23,2025-26,4,0,2.9(a),Main Source of Drinking Water — tap water,"1-Yes, 2-No",
 facility_data.teachdev_tot,facility_data.teachdev_tot,facility_data,teachdev_tot,Physical Facilities,2022-23,2025-26,4,0,2.24d,Computer or Digital Equipment Status: — PCs with Integrated Teaching Learning Devices,,

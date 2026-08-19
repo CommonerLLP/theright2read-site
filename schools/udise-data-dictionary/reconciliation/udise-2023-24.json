@@ -13,7 +13,7 @@
  "asked_evidence_note": null,
  "n_fields": 221,
  "flags": {
-  "asked_verified_this_form": 29,
+  "asked_verified_this_form": 48,
   "described_no_question": 43,
   "code_disagreements": [
    {
@@ -1641,12 +1641,10 @@
    "dataset": "facility_data",
    "field": "classrooms_in_good_condition",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Classrooms in good condition",
-    "item": "2.3(a)",
-    "cited_form": "2018-19",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.4(a)",
+    "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -1665,12 +1663,10 @@
    "dataset": "facility_data",
    "field": "classrooms_needs_major_repair",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Classrooms needing major repair",
-    "item": "2.3(a)",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.4(a)",
+    "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -1689,12 +1685,10 @@
    "dataset": "facility_data",
    "field": "classrooms_needs_minor_repair",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Classrooms needing minor repair",
-    "item": "2.3(a)",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.4(a)",
+    "line": "Type of Classrooms Good Condition Need Minor repair Need Major Repair",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -1773,12 +1767,10 @@
    "dataset": "facility_data",
    "field": "desktop",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Number of desktops",
-    "item": "2.25(a)(ii)",
-    "cited_form": "2018-19",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.24",
+    "line": "(a) Desktop/PCs",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -1797,12 +1789,10 @@
    "dataset": "facility_data",
    "field": "digiboard",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Number of digital boards",
-    "item": "2.25",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.24",
+    "line": "Digital Boards with Content Management Systems and",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -1822,7 +1812,7 @@
    "field": "dth",
    "asked": {
     "kind": "traced",
-    "item": "2.27(d)",
+    "item": "2.27",
     "line": "(d) Access to DTH/TV channels",
     "form": "2023-24"
    },
@@ -1963,12 +1953,10 @@
    "dataset": "facility_data",
    "field": "hand_pump_fun_yn",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Hand pump functional",
+    "kind": "traced",
     "item": "2.9",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "Hand pumps/Bore well",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -1994,8 +1982,8 @@
    "field": "hand_pump_yn",
    "asked": {
     "kind": "traced",
-    "item": "2.9(a)",
-    "line": "(a) Main Source of Drinking Water:",
+    "item": "2.9",
+    "line": "Hand pumps/Bore well",
     "form": "2023-24"
    },
    "described": [
@@ -2192,12 +2180,10 @@
    "dataset": "facility_data",
    "field": "laptop",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Number of laptops",
-    "item": "2.25(a)(ii)",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.24",
+    "line": "(b) Laptop/Notebook",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -2349,12 +2335,10 @@
    "dataset": "facility_data",
    "field": "othsrc_fun_yn",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Other source functional",
+    "kind": "traced",
     "item": "2.9",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "Others -",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -2380,8 +2364,8 @@
    "field": "othsrc_yn",
    "asked": {
     "kind": "traced",
-    "item": "2.9(a)",
-    "line": "(a) Main Source of Drinking Water:",
+    "item": "2.9",
+    "line": "Others -",
     "form": "2023-24"
    },
    "described": [
@@ -2407,12 +2391,10 @@
    "dataset": "facility_data",
    "field": "pack_water_fun_yn",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Packaged water functional",
+    "kind": "traced",
     "item": "2.9",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "Packaged/Bottled Water",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -2438,8 +2420,8 @@
    "field": "pack_water_yn",
    "asked": {
     "kind": "traced",
-    "item": "2.9(a)",
-    "line": "(a) Main Source of Drinking Water:",
+    "item": "2.9",
+    "line": "Packaged/Bottled Water",
     "form": "2023-24"
    },
    "described": [
@@ -2542,12 +2524,10 @@
    "dataset": "facility_data",
    "field": "printer",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Number of printers",
-    "item": "2.25",
-    "cited_form": "2018-19",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.24",
+    "line": "(g) Printer",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -2567,7 +2547,7 @@
    "field": "projector",
    "asked": {
     "kind": "traced",
-    "item": "2.25",
+    "item": "2.24",
     "line": "(f) Projector",
     "form": "2023-24"
    },
@@ -2833,12 +2813,10 @@
    "dataset": "facility_data",
    "field": "tablet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Number of tablets",
-    "item": "2.25",
-    "cited_form": "2018-19",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.24",
+    "line": "(c) Tablets",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -2857,12 +2835,10 @@
    "dataset": "facility_data",
    "field": "tap_fun_yn",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Tap water functional",
+    "kind": "traced",
     "item": "2.9",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "Tap water",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -2888,8 +2864,8 @@
    "field": "tap_yn",
    "asked": {
     "kind": "traced",
-    "item": "2.9(a)",
-    "line": "(a) Main Source of Drinking Water:",
+    "item": "2.9",
+    "line": "Tap water",
     "form": "2023-24"
    },
    "described": [
@@ -2963,12 +2939,10 @@
    "dataset": "facility_data",
    "field": "total_boys_func_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Boys' toilets, functional",
+    "kind": "traced",
     "item": "2.7",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "Number of toilet seats available",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -2987,12 +2961,10 @@
    "dataset": "facility_data",
    "field": "total_boys_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Does the School have Toilet(s)/Urinal(s)? — boys, total",
+    "kind": "traced",
     "item": "2.7",
-    "cited_form": "2025-26",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "Number of toilet seats available",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -3057,12 +3029,10 @@
    "dataset": "facility_data",
    "field": "total_girls_func_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Girls' toilets, functional",
+    "kind": "traced",
     "item": "2.7",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "Number of toilet seats available",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -3081,12 +3051,10 @@
    "dataset": "facility_data",
    "field": "total_girls_toilet",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Does the School have Toilet(s)/Urinal(s)? — girls, total",
+    "kind": "traced",
     "item": "2.7",
-    "cited_form": "2025-26",
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "Number of toilet seats available",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -3105,12 +3073,10 @@
    "dataset": "facility_data",
    "field": "urinal_boys",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Urinals for boys",
+    "kind": "traced",
     "item": "2.7",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "(iii) Total number of urinals available",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -3129,12 +3095,10 @@
    "dataset": "facility_data",
    "field": "urinal_girls",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Does the School have Toilet(s)/Urinal(s)? — Whether incinerator is available in Girl’s toilet?",
-    "item": "2.7(e)",
-    "cited_form": "2026-27",
-    "how": "auto",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "kind": "traced",
+    "item": "2.7",
+    "line": "(iii) Total number of urinals available",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -3153,12 +3117,10 @@
    "dataset": "facility_data",
    "field": "well_prot_fun_yn",
    "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Protected well functional",
+    "kind": "traced",
     "item": "2.9",
-    "cited_form": null,
-    "how": "curated",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+    "line": "Protected Well",
+    "form": "2023-24"
    },
    "described": [
     {
@@ -3184,8 +3146,8 @@
    "field": "well_prot_yn",
    "asked": {
     "kind": "traced",
-    "item": "2.9(a)",
-    "line": "(a) Main Source of Drinking Water:",
+    "item": "2.9",
+    "line": "Protected Well",
     "form": "2023-24"
    },
    "described": [
@@ -3240,8 +3202,8 @@
    "field": "well_unprot_yn",
    "asked": {
     "kind": "traced",
-    "item": "2.9(a)",
-    "line": "(a) Main Source of Drinking Water:",
+    "item": "2.9",
+    "line": "Unprotected Well",
     "form": "2023-24"
    },
    "described": [
