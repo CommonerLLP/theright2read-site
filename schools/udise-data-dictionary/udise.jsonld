@@ -3401,7 +3401,7 @@
    "references": "DCF item 2.25",
    "scopeNote": "1-Yes, 2-No",
    "note": [
-    "ungated-dependency: DCF 2.11(b) asks about a librarian. No gate sits above it. A school can therefore report a librarian and no library. 5,845 schools do. 4,633 of them report no library, no book bank and no reading corner. A further 9,596 report an ICT lab with zero computers."
+    "ungated-ict-lab: The lab question has no gate tying it to the device counts. 9,596 schools (2025-26) report a Computer/ICT lab and zero desktops, zero laptops and zero tablets."
    ]
   },
   {
@@ -4043,7 +4043,7 @@
    "references": "DCF item 2.11(b)",
    "scopeNote": "1-Yes, 2-No",
    "note": [
-    "ungated-dependency: DCF 2.11(b) asks about a librarian. No gate sits above it. A school can therefore report a librarian and no library. 5,845 schools do. 4,633 of them report no library, no book bank and no reading corner. A further 9,596 report an ICT lab with zero computers."
+    "ungated-librarian: DCF 2.11(b) asks about a librarian. No gate sits above it, so a school can report a librarian and no library. 5,845 schools do (2025-26), 3.3% of the 177,723 librarian claims. 4,633 of them also report no book bank and no reading corner. In Bihar the contradiction covers 19.1% of librarian claims."
    ]
   },
   {
@@ -4072,7 +4072,11 @@
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cLibrary Available in school\u201d. Remarks: Yes=1, No=2"
    ],
    "references": "DCF item 2.11(a)",
-   "scopeNote": "1-Yes, 2-No"
+   "scopeNote": "1-Yes, 2-No",
+   "note": [
+    "ungated-librarian: DCF 2.11(b) asks about a librarian. No gate sits above it, so a school can report a librarian and no library. 5,845 schools do (2025-26), 3.3% of the 177,723 librarian claims. 4,633 of them also report no book bank and no reading corner. In Bihar the contradiction covers 19.1% of librarian claims.",
+    "state-conventions: DCF 2.11(a) is one question with three rows. Karnataka government schools report 89.6% book bank. Rajasthan reports 17.6%."
+   ]
   },
   {
    "@id": "udise:facility_data.math_lab_cond",
@@ -6092,7 +6096,10 @@
     "Shared 2022-23 to 2025-26 as varchar, described as \u201cPanchyet Name as Per LGD\u201d"
    ],
    "references": "DCF item 1.4(c)",
-   "scopeNote": "1-RURAL, 2-URBAN"
+   "scopeNote": "1-RURAL, 2-URBAN",
+   "note": [
+    "panchyat-typo: The source spells panchayat as `panchyat` up to 2020-21."
+   ]
   },
   {
    "@id": "udise:profile_data_1.lgd_ward_name",

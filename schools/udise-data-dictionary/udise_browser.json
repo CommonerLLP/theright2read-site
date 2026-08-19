@@ -19,7 +19,7 @@
    "with_official": 320,
    "checked_by_hand": 62,
    "dormant": 0,
-   "traps": 11,
+   "traps": 12,
    "never_released": 18
   },
   "not_here": "The DCF side is curated by hand. An empty dcf_item means NOT YET CHECKED, never that the question was not asked."
@@ -4708,7 +4708,7 @@
     }
    ],
    "traps": [
-    "ungated-dependency"
+    "ungated-ict-lab"
    ],
    "official": [
     {
@@ -6148,7 +6148,7 @@
     }
    ],
    "traps": [
-    "ungated-dependency"
+    "ungated-librarian"
    ],
    "official": [
     {
@@ -6225,7 +6225,10 @@
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
-   "traps": [],
+   "traps": [
+    "ungated-librarian",
+    "state-conventions"
+   ],
    "official": [
     {
      "era": "pre-sdmis",
@@ -10565,7 +10568,9 @@
      "how": "form"
     }
    ],
-   "traps": [],
+   "traps": [
+    "panchyat-typo"
+   ],
    "official": [
     {
      "era": "sdmis",
@@ -17970,7 +17975,8 @@
   {
    "id": "panchyat-typo",
    "fields": [
-    "panchyat"
+    "panchyat",
+    "lgd_vill_panchayat_name"
    ],
    "kind": "spelling",
    "what": "The source spells panchayat as `panchyat` up to 2020-21.",
@@ -18015,22 +18021,34 @@
    "fix": "-- ALWAYS check the span before the value\nselect field, years from udise_field_span where field = 'drinking_water_available';\n-- ['2018-19','2019-20','2020-21','2021-22']  -> it ENDED at the SDMIS break.\n-- Querying it for 2025-26 returns 0.0% in every state, which is not a finding."
   },
   {
-   "id": "ungated-dependency",
+   "id": "ungated-librarian",
    "fields": [
     "librarian_yn",
+    "library_availability"
+   ],
+   "kind": "definitional",
+   "what": "DCF 2.11(b) asks about a librarian. No gate sits above it, so a school can report a librarian and no library. 5,845 schools do (2025-26), 3.3% of the 177,723 librarian claims. 4,633 of them also report no book bank and no reading corner. In Bihar the contradiction covers 19.1% of librarian claims.",
+   "cost": "Any librarian statistic must state which of the two fields it trusts.",
+   "check": "Count the contradiction directly. A ZERO contradiction rate on a gated pair proves the form enforces the gate, not that the facility exists.",
+   "fix": "-- count the contradiction before trusting either field\nselect count(*) from school_library\nwhere year = '2025-26' and librarian_yn = 1 and library_availability = 2;\n-- 5,845 schools, 3.3% of all librarian claims. In Bihar it is 19.1%."
+  },
+  {
+   "id": "ungated-ict-lab",
+   "fields": [
     "comp_ict_lab_yn"
    ],
    "kind": "definitional",
-   "what": "DCF 2.11(b) asks about a librarian. No gate sits above it. A school can therefore report a librarian and no library. 5,845 schools do. 4,633 of them report no library, no book bank and no reading corner. A further 9,596 report an ICT lab with zero computers.",
-   "cost": "Any librarian statistic must state which of the two fields it trusts.",
-   "check": "Test the constraint directly. Note that a ZERO violation rate elsewhere proves the form gates the question, not that the facility exists.",
-   "fix": "-- count the contradiction before trusting either field\nselect count(*) from school_library\nwhere year = '2025-26' and librarian_yn = 1 and library_availability = 2;\n-- 5,845 schools, 3.3% of all librarian claims. In Bihar it is 19.1%."
+   "what": "The lab question has no gate tying it to the device counts. 9,596 schools (2025-26) report a Computer/ICT lab and zero desktops, zero laptops and zero tablets.",
+   "cost": "A lab count and a device count answer different questions. Any ICT-access statistic must say which one it used.",
+   "check": "Count the contradiction directly before trusting either field.",
+   "fix": "-- a lab with no devices, by the release's own counts\nselect count(*) from raw_facility_data\nwhere year = '2025-26' and comp_ict_lab_yn = 1\n  and desktop = 0 and laptop = 0 and tablet = 0;\n-- 9,596 schools"
   },
   {
    "id": "state-conventions",
    "fields": [
     "book_bank",
-    "reading_corner"
+    "reading_corner",
+    "library_availability"
    ],
    "kind": "definitional",
    "what": "DCF 2.11(a) is one question with three rows. Karnataka government schools report 89.6% book bank. Rajasthan reports 17.6%.",

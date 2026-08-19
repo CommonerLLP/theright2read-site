@@ -2013,7 +2013,7 @@ udise:facility_data.comp_ict_lab_yn a skos:Concept ;
     skos:scopeNote "1-Yes, 2-No"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Computer/ICT Lab available in school”. Remarks: As per UDISE DCF"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"comp_ict_lab_yn\"}"@en ;
-    skos:note "ungated-dependency: DCF 2.11(b) asks about a librarian. No gate sits above it. A school can therefore report a librarian and no library. 5,845 schools do. 4,633 of them report no library, no book bank and no reading corner. A further 9,596 report an ICT lab with zero computers."@en .
+    skos:note "ungated-ict-lab: The lab question has no gate tying it to the device counts. 9,596 schools (2025-26) report a Computer/ICT lab and zero desktops, zero laptops and zero tablets."@en .
 
 udise:facility_data.comp_lab_cond a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2419,7 +2419,7 @@ udise:facility_data.librarian_yn a skos:Concept ;
     skos:scopeNote "1-Yes, 2-No"@en ;
     dct:provenance "Shared 2025-26 as smallint, described as “Does the school have a full-time librarian?”. Remarks: Yes=1, No=2"@en ;
     skos:historyNote "{\"at\": \"2024-25 to 2025-26\", \"action\": \"INSERT\", \"field\": \"librarian_yn\"}"@en ;
-    skos:note "ungated-dependency: DCF 2.11(b) asks about a librarian. No gate sits above it. A school can therefore report a librarian and no library. 5,845 schools do. 4,633 of them report no library, no book bank and no reading corner. A further 9,596 report an ICT lab with zero computers."@en .
+    skos:note "ungated-librarian: DCF 2.11(b) asks about a librarian. No gate sits above it, so a school can report a librarian and no library. 5,845 schools do (2025-26), 3.3% of the 177,723 librarian claims. 4,633 of them also report no book bank and no reading corner. In Bihar the contradiction covers 19.1% of librarian claims."@en .
 
 udise:facility_data.library_availability a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2435,7 +2435,9 @@ udise:facility_data.library_availability a skos:Concept ;
     dct:references "DCF item 2.11(a)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Library Available in School”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Library Available in school”. Remarks: Yes=1, No=2"@en .
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Library Available in school”. Remarks: Yes=1, No=2"@en ;
+    skos:note "ungated-librarian: DCF 2.11(b) asks about a librarian. No gate sits above it, so a school can report a librarian and no library. 5,845 schools do (2025-26), 3.3% of the 177,723 librarian claims. 4,633 of them also report no book bank and no reading corner. In Bihar the contradiction covers 19.1% of librarian claims."@en ;
+    skos:note "state-conventions: DCF 2.11(a) is one question with three rows. Karnataka government schools report 89.6% book bank. Rajasthan reports 17.6%."@en .
 
 udise:facility_data.math_lab_cond a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -3747,7 +3749,8 @@ udise:profile_data_1.lgd_vill_panchayat_name a skos:Concept ;
     dct:provenance "Shared 2022-23 to 2025-26 as varchar, described as “Panchyet Name as Per LGD”"@en ;
     dct:isVersionOf udise:series.profile_data_1.panchyat ;
     skos:altLabel "panchyat"@en ;
-    skos:historyNote "{\"at\": \"2020-21 to 2021-22\", \"action\": \"RENAME\", \"from\": \"panchyat\", \"to\": \"lgd_vill_panchayat_name\", \"basis\": \"schema adopted Local Government Directory names; note the source spells it 'panchyat'\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
+    skos:historyNote "{\"at\": \"2020-21 to 2021-22\", \"action\": \"RENAME\", \"from\": \"panchyat\", \"to\": \"lgd_vill_panchayat_name\", \"basis\": \"schema adopted Local Government Directory names; note the source spells it 'panchyat'\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en ;
+    skos:note "panchyat-typo: The source spells panchayat as `panchyat` up to 2020-21."@en .
 
 udise:profile_data_1.lgd_ward_name a skos:Concept ;
     skos:inScheme udise:scheme ;
