@@ -31,9 +31,9 @@ async function init() {
 function renderMasthead() {
   const c = state.data.meta.counts;
   $("#counts").textContent =
-    `${c.fields} released columns · ${state.data.meta.years.length} releases, ` +
+    `${c.fields} columns · ${state.data.meta.years.length} years, ` +
     `${state.data.meta.years[0]} to ${state.data.meta.years.at(-1)} · ` +
-    `${c.traps} comparability notes · ${c.never_released} questions asked but never released`;
+    `${c.never_released} questions asked of every school and never released`;
 }
 
 /* Fields live in a given year only if that year is in their span. This is the
@@ -76,12 +76,35 @@ function eventInto(year) {
 }
 
 
+const prefersReduced = () =>
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 /* ------------------------------------------------------------------- tabs */
 function bindTabs() {
-  $$(".tab").forEach((t) => t.onclick = () => {
+  /* The W3C tab pattern: aria-selected tracks the active tab, tabindex roves
+     so Tab lands once on the tablist, and arrow keys move between tabs. A
+     screen reader hears "tab, 2 of 5, selected"; a keyboard never needs a
+     pointer. */
+  const tabs = $$(".tab");
+  const select = (t, focus) => {
     state.tab = t.dataset.tab;
-    $$(".tab").forEach((x) => x.classList.toggle("active", x === t));
+    tabs.forEach((x) => {
+      const on = x === t;
+      x.classList.toggle("active", on);
+      x.setAttribute("aria-selected", on ? "true" : "false");
+      x.tabIndex = on ? 0 : -1;
+    });
+    if (focus) t.focus();
     render();
+  };
+  tabs.forEach((t, i) => {
+    t.onclick = () => select(t, false);
+    t.onkeydown = (e) => {
+      const move = {ArrowRight: 1, ArrowLeft: -1, Home: -i, End: tabs.length - 1 - i}[e.key];
+      if (move === undefined) return;
+      e.preventDefault();
+      select(tabs[(i + move + tabs.length) % tabs.length], true);
+    };
   });
 }
 
@@ -199,15 +222,17 @@ function legendHTML() {
 function nodeHTML(f) {
   const flags = (f.traps.length ? '<span class="pip trap" title="carries a comparability note"></span>' : "")
               + (f.changes.length ? '<span class="pip chg" title="renamed, split, merged or recoded"></span>' : "");
-  return `<div class="node${state.field === f.id ? " active" : ""}" data-id="${esc(f.id)}">
+  /* A row is a link, not a div with a click handler. An anchor is focusable,
+     Enter works, a screen reader announces it as a link, and the hash route
+     is the href, so open-in-new-tab works too. */
+  return `<a class="node${state.field === f.id ? " active" : ""}" data-id="${esc(f.id)}"
+    href="#f/${esc(f.id)}"${state.field === f.id ? ' aria-current="true"' : ""}>
     <span class="nm"><code>${esc(f.field)}</code> <span class="ds">${esc(f.dataset)}</span>
       <span class="life-words">${esc(lifeWords(f))}</span></span>
-    <span class="flags">${lifeStrip(f)}${flags}</span></div>`;
+    <span class="flags">${lifeStrip(f)}${flags}</span></a>`;
 }
 
-function bindRows(scope) {
-  $$(".node", scope).forEach((el) => el.onclick = () => location.hash = "f/" + el.dataset.id);
-}
+function bindRows(scope) { /* anchors route themselves */ }
 
 /* -------------------------------------------------------------- detail pane */
 function showField(id) {
@@ -237,8 +262,9 @@ function showField(id) {
 
     <div class="k">Released in</div><div class="tl">${tl}</div>
 
-    ${officialHTML(f)}
-
+    ${/* The question a human answered comes before the machine's description
+          of the column. A first-time reader speaks the form's language, not
+          smallint's. */""}
     <div class="k">Question — as asked</div>
     ${f.question && f.dcf_how !== "auto"
       ? `<div class="q">${esc(f.question)}</div>
@@ -251,6 +277,8 @@ function showField(id) {
          The Data Capture Format side of this dictionary is filled in by hand, one item at a time,
          and ${state.data.meta.counts.with_dcf_wording} of ${state.data.meta.counts.fields} columns
          are done. An unmatched column is unchecked. The form is not silent about it.</p>`}
+
+    ${officialHTML(f)}
 
     ${f.values ? `<div class="k">What the codes mean</div>${valuesHTML(f.values)}` : ""}
 
@@ -394,7 +422,7 @@ function showDetailEmpty(msg) {
       <p>${esc(e.why)}</p>
       <div class="go"><code>${esc(e.field_id.split(".").pop())}</code> →</div>
     </div>`).join("");
-  const q = (t) => `<a class="exq" data-q="${esc(t)}">${esc(t)}</a>`;
+  const q = (t) => `<button type="button" class="exq" data-q="${esc(t)}">${esc(t)}</button>`;
   /* THE RELEASE COMES FIRST. A reader must learn what the portal hands them
      before any column detail means anything: six files per year, zipped CSVs,
      keyed on the pseudonymised school code. Column counts are computed from
@@ -457,6 +485,7 @@ function bindSearch() {
 
 function renderSearchResults(list, here) {
   const q = norm(state.q);
+  const announce = (msg) => { const el = $("#search-status"); if (el) el.textContent = msg; };
   const hit = (f) => norm(f.field + " " + f.dataset + " " + (f.question || "") + " " + (f.values || "")).includes(q);
   const inYearHits = here.filter(hit);
   const otherYears = state.data.fields.filter((f) => hit(f) && !inYear(f, state.year));
@@ -472,6 +501,8 @@ function renderSearchResults(list, here) {
       ? `<div class="k">Not released in ${state.year}</div>` +
         otherYears.map((f) => nodeHTML(f).replace('class="node', 'class="node gone')).join("")
       : "");
+  announce(`${inYearHits.length} columns ${state.year ? "in " + state.year : "across all releases"}` +
+    (otherYears.length ? `, ${otherYears.length} in other years only` : ""));
   bindRows(list);
 }
 
@@ -565,7 +596,7 @@ function showEvent(e, struct, recode, spanning) {
     ? `<div class="evt-block"><h4>${title} — ${arr.length}</h4>
        <p class="evt-why">${why}</p>
        <div class="colnames">${arr.map((c) =>
-         `<code class="cn" data-goto="${esc(c.dataset + "." + c.field)}">${esc(c.field)}</code>`).join("")}</div></div>`
+         `<button type="button" class="cn" data-goto="${esc(c.dataset + "." + c.field)}"><code>${esc(c.field)}</code></button>`).join("")}</div></div>`
     : "";
 
   const structBlock = struct.length && show("STRUCT") ? `<div class="evt-block">
@@ -661,7 +692,7 @@ function renderRecipes() {
   bindCopy($("#traps-view"));
   $$(".golink[data-trap]", $("#traps-view")).forEach((el) => el.onclick = () => {
     $('.tab[data-tab="traps"]').click();
-    setTimeout(() => document.getElementById("t-" + el.dataset.trap)?.scrollIntoView({ behavior: "smooth", block: "center" }), 60);
+    setTimeout(() => document.getElementById("t-" + el.dataset.trap)?.scrollIntoView({ behavior: prefersReduced() ? "auto" : "smooth", block: "center" }), 60);
   });
 }
 
@@ -839,7 +870,7 @@ function renderAbout() {
 function revealDetail() {
   if (window.innerWidth > 860) return;
   const d = $("#detail");
-  if (d && d.innerHTML.trim()) d.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (d && d.innerHTML.trim()) d.scrollIntoView({ behavior: prefersReduced() ? "auto" : "smooth", block: "start" });
 }
 
 function routeFromHash() {

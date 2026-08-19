@@ -13,9 +13,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=PT+Mono&family=Inter+Tight:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/tokens.css?v=125">
-<link rel="stylesheet" href="style.css?v=c9690917">
+<link rel="stylesheet" href="style.css?v=fc74a480">
 </head>
 <body>
+  <a class="skip-link" href="#main-views">Skip to content</a>
   <header id="appbar">
     <a class="brand brand-logo" href="/" aria-label="Right to Read — home">
       <img src="/assets/rtr-logo.svg?v=96" alt="Right to Read"><span class="lbl">Schools</span>
@@ -40,32 +41,39 @@
         about their own child&rsquo;s school. Every note here carries the fix, not only the warning.</p>
     </div>
     <div class="meta-line" id="counts"></div>
-    <nav class="tabs">
-      <button class="tab active" data-tab="browse">Browse the columns</button>
-      <button class="tab" data-tab="changes">Changes over time</button>
-        <button class="tab" data-tab="traps">Comparability &amp; recipes</button>
-      <button class="tab" data-tab="missing">Asked, never released</button>
-      <button class="tab" data-tab="about">About this data</button>
-    </nav>
+    <div class="tabs" role="tablist" aria-label="Dictionary sections">
+      <button class="tab active" data-tab="browse" role="tab" id="tab-browse"
+        aria-selected="true" aria-controls="browse-view">Browse the columns</button>
+      <button class="tab" data-tab="changes" role="tab" id="tab-changes"
+        aria-selected="false" aria-controls="changes-view" tabindex="-1">Changes over time</button>
+      <button class="tab" data-tab="traps" role="tab" id="tab-traps"
+        aria-selected="false" aria-controls="traps-view" tabindex="-1">Comparability &amp; recipes</button>
+      <button class="tab" data-tab="missing" role="tab" id="tab-missing"
+        aria-selected="false" aria-controls="missing-view" tabindex="-1">Asked, never released</button>
+      <button class="tab" data-tab="about" role="tab" id="tab-about"
+        aria-selected="false" aria-controls="about-view" tabindex="-1">About this data</button>
+    </div>
   </header>
 
 
-  <div class="searchbar" id="searchbar">
+  <div class="searchbar" id="searchbar" role="search">
+    <label class="visually-hidden" for="search">Search a column or a question</label>
     <input id="search" type="search" autocomplete="off"
            placeholder="Search a column or a question — try library, boundary, pseudocode, librarian">
+    <div id="search-status" class="visually-hidden" role="status" aria-live="polite"></div>
   </div>
 
-  <main>
-    <div id="browse-view">
+  <main id="main-views">
+    <div id="browse-view" role="tabpanel" aria-labelledby="tab-browse">
       <div class="layout">
         <section class="nav-pane" id="list"></section>
         <section class="detail-pane" id="detail"></section>
       </div>
     </div>
-    <div id="changes-view" hidden></div>
-    <div id="traps-view" hidden></div>
-    <div id="missing-view" hidden></div>
-    <div id="about-view" hidden></div>
+    <div id="changes-view" role="tabpanel" aria-labelledby="tab-changes" tabindex="-1" hidden></div>
+    <div id="traps-view" role="tabpanel" aria-labelledby="tab-traps" tabindex="-1" hidden></div>
+    <div id="missing-view" role="tabpanel" aria-labelledby="tab-missing" tabindex="-1" hidden></div>
+    <div id="about-view" role="tabpanel" aria-labelledby="tab-about" tabindex="-1" hidden></div>
   </main>
 
   <footer class="colophon">
@@ -92,6 +100,6 @@
     e.target.textContent = b.hidden ? "why this exists \u25be" : "why this exists \u25b4";
   };
 </script>
-<script src="app.js?v=c9690917"></script>
+<script src="app.js?v=fc74a480"></script>
 </body>
 </html>

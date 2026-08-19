@@ -420,3 +420,79 @@ code.dead { color: var(--ink-faint); text-decoration: line-through; }
 .trace-drift { margin-top: 6px; border-left: 2px solid var(--chg); padding-left: 9px; }
 .trace-drift .tw { margin: 4px 0; }
 .trace-drift .yrs { font-family: var(--mono); font-size: 11px; color: var(--chg); display: block; }
+
+/* accessibility layer ------------------------------------------------------ */
+/* The audience is a budget Android at 360px and a first-time reader. Every
+   rule here is measured, not aesthetic: 24 of the RTE Schedule's readers use
+   a thumb, not a cursor. */
+
+/* 1. Touch targets. WCAG 2.5.5 asks 44px; every control had 20-41px. Padding
+   carries the size so the visual weight barely moves. */
+.tab, .filter, .exq, .cn, #appbar .btn, .why, .yearsel select, #search,
+.totop, .golink, .copy {
+  min-height: 44px;
+}
+.tab { display: inline-flex; align-items: center; }
+.filter, .exq, .cn { display: inline-flex; align-items: center; }
+.why { display: inline-flex; align-items: center; padding: 8px 6px; }
+
+/* 2. A keyboard user must SEE where they are. tokens.css accent, 2px offset,
+   on the focused element only (focus-visible spares mouse users the ring). */
+:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* 3. The rows are anchors now. Keep them looking like rows, not links. */
+a.node { text-decoration: none; color: inherit; display: flex; }
+button.exq, button.cn { font: inherit; cursor: pointer; }
+button.exq { color: var(--accent); background: none; border: none;
+             text-decoration: underline; padding: 8px 4px; }
+button.cn { background: var(--panel); border: 1px solid var(--line);
+            border-radius: 3px; padding: 6px 10px; }
+
+/* 4. The released-in chips are FACTS, not buttons. They lose the button look
+   so nothing non-interactive dresses as interactive. */
+.tl span { border-radius: 2px; opacity: .92; }
+
+/* 5. Screen-reader-only text. */
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; margin: -1px;
+  clip-path: inset(50%); overflow: hidden; white-space: nowrap;
+}
+
+/* 6. The skip link appears on focus, above the app bar. */
+.skip-link {
+  position: absolute; left: -999px; top: 0; z-index: 99;
+  background: var(--accent-2); color: #fff; padding: 10px 16px;
+  font-family: var(--sans);
+}
+.skip-link:focus { left: 0; }
+
+/* 7. At one column, orientation before the section list. A first-time reader
+   meets "what the portal shares" before "School Profile 164". */
+@media (max-width: 900px) {
+  .layout { display: flex; flex-direction: column; }
+  .nav-pane { order: 2; }
+  .detail-pane { order: 1; }
+}
+
+/* 8. Dark-mode contrast. The raw brand tokens do not remap in dark and sat at
+   2.9-3.3:1 on dark surfaces (Codex, PR #134). The dark palette re-points the
+   section, warning and change hues at the readable variants tokens.css uses
+   for its own dark accents. */
+:root[data-theme="dark"] {
+  --s1: #7b95cf; --s2: #e2606c; --s3: #9db4e4; --s4: #d98a92;
+  --warn: #e2606c; --chg: #9db4e4;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --s1: #7b95cf; --s2: #e2606c; --s3: #9db4e4; --s4: #d98a92;
+    --warn: #e2606c; --chg: #9db4e4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
