@@ -24,9 +24,9 @@
   ],
   "counts": {
    "fields": 382,
-   "with_dcf_wording": 224,
-   "verified_wording": 175,
-   "with_official": 320,
+   "with_dcf_wording": 230,
+   "verified_wording": 181,
+   "with_official": 358,
    "checked_by_hand": 62,
    "dormant": 0,
    "traps": 12,
@@ -1901,7 +1901,7 @@
      "names_year": null,
      "description": "Item Description",
      "dtype": "char",
-     "length": 20,
+     "length": null,
      "remarks": ""
     }
    ]
@@ -1947,7 +1947,17 @@
      "detail": "a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "Item Group =1,Item Id = 1 Then General",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "enrolment_data_1.item_id",
@@ -1995,7 +2005,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "",
+     "description": "General, SC, ST, OBC, Muslims, Christians, Sikh, Buddhist,Parsi, Jain BPL, EWS and CWSN Enrolment with disability type,Repeater",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -2093,7 +2103,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "",
+     "description": "Psuedo Code(Unique Identity Number of school)",
      "dtype": "bigint",
      "length": null,
      "remarks": ""
@@ -3527,7 +3537,7 @@
      "description": "Age Wise Enrolment in Class Pre-Primary Boys",
      "dtype": "smallint",
      "length": null,
-     "remarks": ""
+     "remarks": "(pp3_b+pp2_b+pp1_b)"
     }
    ]
   },
@@ -3705,7 +3715,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "item_group=8",
+     "description": "Item Group =1,Item Id = 1 Then General",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -3994,7 +4004,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "school building",
+     "description": "Available Ramp for disabled children to access school building",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -5117,7 +5127,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Management Systems",
+     "description": "School have No. Of Digital Boards with Content Management Systems",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -5381,14 +5391,6 @@
    ],
    "official": [
     {
-     "era": "pre-sdmis",
-     "names_year": null,
-     "description": "electricity connection available in the School",
-     "dtype": "smallint",
-     "length": null,
-     "remarks": ""
-    },
-    {
      "era": "sdmis",
      "names_year": "2025-26",
      "description": "Electricity connection available in school",
@@ -5398,11 +5400,11 @@
     }
    ],
    "bridge": {
-    "item": "2.9",
-    "year": "2021-22",
+    "item": "2.5",
+    "year": "2025-26",
     "score": 1.0,
     "question": "(a) Whether electricity connection is available in the school?",
-    "via": "electricity connection available in the School",
+    "via": "Electricity connection available in school",
     "codes": "corroborated: the column holds only the codes the form offers (1, 2, 3)"
    }
   },
@@ -5476,7 +5478,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "No. of CWSN friendly toilet seats for Functional Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -5606,7 +5608,7 @@
      "description": "No. of students for whom Furniture available in school",
      "dtype": "smallint",
      "length": null,
-     "remarks": ""
+     "remarks": "1-Yes for all, 2-Partial, 3-No Furniture Available"
     }
    ]
   },
@@ -5847,7 +5849,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "washing hands before and after meal",
+     "description": "Handwashing facility with soap available for washing hands before and after meal",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -5855,7 +5857,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "",
+     "description": "Handwashing facility with soap available for washing hands before and after meal in school",
      "dtype": "smallint",
      "length": null,
      "remarks": "Yes=1, No=2"
@@ -5894,7 +5896,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "toilets",
+     "description": "Hand washing facility with soap available near toilets",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -5909,11 +5911,11 @@
     }
    ],
    "bridge": {
-    "item": "2.7c",
-    "year": "2025-26",
+    "item": "2.5c",
+    "year": "2021-22",
     "score": 1.0,
-    "question": "Does the School have Toilet(s)/Urinal(s)? \u2014 Is hand washing facility with soap available near toilets/urinals block?",
-    "via": "Hand washing facility with soap available near toilets in school",
+    "question": "Does the School have Toilet(s)? \u2014 Is hand washing facility with soap available near toilets/urinals block?",
+    "via": "Hand washing facility with soap available near toilets",
     "codes": "the form states no code list"
    }
   },
@@ -6707,7 +6709,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "academic year",
+     "description": "Medical check-up of students conducted in last academic year",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -6720,15 +6722,7 @@
      "length": null,
      "remarks": "Yes=1, No=2"
     }
-   ],
-   "bridge": {
-    "item": "1.43a",
-    "year": "2021-22",
-    "score": 1.0,
-    "question": "Whether any Out of School Children enrolled in the school are \u2014 Number of children ENROLLED for Special Training in CURRENT Academic year:",
-    "via": "academic year",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "facility_data.no_building_blocks",
@@ -8033,7 +8027,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "",
+     "description": "No. of Smart Class rooms used for teaching with Digital boards/ Smart boards/ Virtual classrooms/ Smart TV in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -8674,7 +8668,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "friendly toilets for Functional Boys",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Functional Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -8682,7 +8676,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "",
+     "description": "No. of Functional toilet seats available excluding CWSN friendly toilets for Boys in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -8762,7 +8756,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "friendly toilets for Total Boys",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Total Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -8770,7 +8764,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Total Boys in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -8971,7 +8965,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "friendly toilets for Functional Girls",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Functional Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -8979,7 +8973,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "",
+     "description": "No. of Functional toilet seats available excluding CWSN friendly toilets for Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -9059,7 +9053,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "friendly toilets for Total Girls",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Total Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -9067,7 +9061,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Total Girls in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -9661,11 +9655,11 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "1.19d",
-   "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
+   "dcf_item": "1.20",
+   "question": "(a) Affiliation Board type of school for HIGHER SECONDARY Section:",
    "values": null,
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": "2025-26",
    "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
@@ -9676,10 +9670,10 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Higher Secondary",
+     "description": "Affiliation Board of the school for Higher Secondary",
      "dtype": "smallint",
      "length": null,
-     "remarks": "3,5,10,11"
+     "remarks": "Applicable for School Category Codes : 3,5,10,11"
     },
     {
      "era": "sdmis",
@@ -9691,11 +9685,11 @@
     }
    ],
    "bridge": {
-    "item": "1.19d",
-    "year": "2021-22",
+    "item": "1.20",
+    "year": "2025-26",
     "score": 1.0,
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
-    "via": "Higher Secondary",
+    "question": "(a) Affiliation Board type of school for HIGHER SECONDARY Section:",
+    "via": "School affiliation Board of the school for Higher Secondary",
     "codes": "the form states no code list"
    }
   },
@@ -9731,10 +9725,10 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Secondary",
+     "description": "Affiliation Board of the school for Secondary",
      "dtype": "smallint",
      "length": null,
-     "remarks": "3,5,6,7,8,10"
+     "remarks": "Applicable for School Category Codes : 3,5,6,7,8,10"
     },
     {
      "era": "sdmis",
@@ -9746,11 +9740,11 @@
     }
    ],
    "bridge": {
-    "item": "1.19",
-    "year": "2025-26",
+    "item": "1.26",
+    "year": "2021-22",
     "score": 1.0,
-    "question": "(a) Affiliation Board type of school for SECONDARY Section:",
-    "via": "School affiliation Board of the school for Secondary",
+    "question": "Affiliation Board of the school for SECONDARY Sections:",
+    "via": "Affiliation Board of the school for Secondary",
     "codes": "the form states no code list"
    }
   },
@@ -9804,7 +9798,7 @@
      "description": "Boys in Anganwadi Centre",
      "dtype": "smallint",
      "length": null,
-     "remarks": "1,2,3,4,6,90,91,92,93,94,95,96"
+     "remarks": "Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
     }
    ],
    "bridge": {
@@ -9850,7 +9844,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "New admission of students in class 1 who have pre-school experience anganwadi ecce centres boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": "Boys +Transgenders"
+    }
+   ]
   },
   {
    "id": "profile_data_1.anganwadi_ecce_g",
@@ -9886,7 +9890,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "New admission of students in class 1 who have pre-school experience anganwadi ecce centres girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_1.anganwadi_girls",
@@ -9938,7 +9952,7 @@
      "description": "Girls in Anganwadi Centre",
      "dtype": "smallint",
      "length": null,
-     "remarks": "1,2,3,4,6,90,91,92,93,94,95,96"
+     "remarks": "Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
     }
    ],
    "bridge": {
@@ -9999,18 +10013,18 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Anganwadi Centre is located inside Management Codes : school premises",
+     "description": "Anganwadi Centre is located inside school premises",
      "dtype": "smallint",
      "length": null,
-     "remarks": "1,2,3,4,6,90,91,92,93,94,95,96"
+     "remarks": "Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
     }
    ],
    "bridge": {
     "item": "1.41",
     "year": "2021-22",
-    "score": 0.714,
+    "score": 1.0,
     "question": "Whether Anganwadi Centre(s) is/are located inside the school premises?",
-    "via": "Anganwadi Centre is located inside Management Codes : school premises",
+    "via": "Anganwadi Centre is located inside school premises",
     "codes": "partly corroborated: the column also holds 0, 9"
    }
   },
@@ -10043,7 +10057,17 @@
      "field": "anganwadi_worker"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Anganwadi Worker",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": "Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
+    }
+   ]
   },
   {
    "id": "profile_data_1.anganwadi_yn",
@@ -10118,11 +10142,11 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "1.37",
+   "dcf_item": "1.34",
    "question": "Whether School is Approachable by All-Weather Roads?",
    "values": null,
    "release_key": null,
-   "dcf_year": "2025-26",
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
    "dcf_how": "bridged",
@@ -10130,6 +10154,14 @@
    "changes": [],
    "traps": [],
    "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Approachable by all-weather roads",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    },
     {
      "era": "sdmis",
      "names_year": "2025-26",
@@ -10140,11 +10172,11 @@
     }
    ],
    "bridge": {
-    "item": "1.37",
-    "year": "2025-26",
+    "item": "1.34",
+    "year": "2021-22",
     "score": 1.0,
     "question": "Whether School is Approachable by All-Weather Roads?",
-    "via": "School approachable by all-weather roads",
+    "via": "Approachable by all-weather roads",
     "codes": "corroborated: the column holds only the codes the form offers (1, 2)"
    }
   },
@@ -10273,14 +10305,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.36d",
+   "question": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Higher Secondary",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [
     {
@@ -10289,7 +10321,25 @@
      "field": "avg_school_hrs_student_hsec"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Average School hours for children in Higher Secondary",
+     "dtype": "numeric(4,",
+     "length": null,
+     "remarks": ""
+    }
+   ],
+   "bridge": {
+    "item": "1.36d",
+    "year": "2021-22",
+    "score": 1.0,
+    "question": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Higher Secondary",
+    "via": "Average School hours for children in Higher Secondary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.avg_school_hrs_student_pr",
@@ -10304,14 +10354,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.36a",
+   "question": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Primary:",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [
     {
@@ -10320,7 +10370,25 @@
      "field": "avg_school_hrs_student_pr"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Average School hours for children in Primary",
+     "dtype": "numeric(4,",
+     "length": null,
+     "remarks": ""
+    }
+   ],
+   "bridge": {
+    "item": "1.36a",
+    "year": "2021-22",
+    "score": 1.0,
+    "question": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Primary:",
+    "via": "Average School hours for children in Primary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.avg_school_hrs_student_sec",
@@ -10335,14 +10403,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.36c",
+   "question": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Secondary:",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [
     {
@@ -10351,7 +10419,25 @@
      "field": "avg_school_hrs_student_sec"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Average School hours for children in Secondary",
+     "dtype": "numeric(4,",
+     "length": null,
+     "remarks": ""
+    }
+   ],
+   "bridge": {
+    "item": "1.36c",
+    "year": "2021-22",
+    "score": 1.0,
+    "question": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Secondary:",
+    "via": "Average School hours for children in Secondary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.avg_school_hrs_student_up",
@@ -10366,14 +10452,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.36b",
+   "question": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Upper Primary:",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [
     {
@@ -10382,7 +10468,25 @@
      "field": "avg_school_hrs_student_up"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Average School hours for children in Upper Primary",
+     "dtype": "numeric(4,",
+     "length": null,
+     "remarks": ""
+    }
+   ],
+   "bridge": {
+    "item": "1.36b",
+    "year": "2021-22",
+    "score": 1.0,
+    "question": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Upper Primary:",
+    "via": "Average School hours for children in Upper Primary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.avg_school_hrs_teacher_hsec",
@@ -10397,14 +10501,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.37d",
+   "question": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Higher Secondary",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [
     {
@@ -10413,7 +10517,25 @@
      "field": "avg_school_hrs_teacher_hsec"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Average working hours for Teachers in Higher Secondary",
+     "dtype": "numeric(4,",
+     "length": null,
+     "remarks": ""
+    }
+   ],
+   "bridge": {
+    "item": "1.37d",
+    "year": "2021-22",
+    "score": 0.833,
+    "question": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Higher Secondary",
+    "via": "Average working hours for Teachers in Higher Secondary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.avg_school_hrs_teacher_pr",
@@ -10428,14 +10550,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.37a",
+   "question": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Primary:",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [
     {
@@ -10444,7 +10566,25 @@
      "field": "avg_school_hrs_teacher_pr"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Average working hours for Teachers in Primary",
+     "dtype": "numeric(4,",
+     "length": null,
+     "remarks": ""
+    }
+   ],
+   "bridge": {
+    "item": "1.37a",
+    "year": "2021-22",
+    "score": 0.8,
+    "question": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Primary:",
+    "via": "Average working hours for Teachers in Primary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.avg_school_hrs_teacher_sec",
@@ -10459,14 +10599,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.37c",
+   "question": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Secondary:",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [
     {
@@ -10475,7 +10615,25 @@
      "field": "avg_school_hrs_teacher_sec"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Average working hours for Teachers in Secondary",
+     "dtype": "numeric(4,",
+     "length": null,
+     "remarks": ""
+    }
+   ],
+   "bridge": {
+    "item": "1.37c",
+    "year": "2021-22",
+    "score": 0.8,
+    "question": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Secondary:",
+    "via": "Average working hours for Teachers in Secondary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.avg_school_hrs_teacher_up",
@@ -10490,14 +10648,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.37b",
+   "question": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Upper Primary:",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [
     {
@@ -10506,7 +10664,25 @@
      "field": "avg_school_hrs_teacher_up"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Average working hours for Teachers in Upper Primary",
+     "dtype": "numeric(4,",
+     "length": null,
+     "remarks": ""
+    }
+   ],
+   "bridge": {
+    "item": "1.37b",
+    "year": "2021-22",
+    "score": 0.833,
+    "question": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Upper Primary:",
+    "via": "Average working hours for Teachers in Upper Primary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.block",
@@ -10583,20 +10759,12 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Higher Secondary",
+     "description": "CCE being implemented in school in Higher Secondary",
      "dtype": "smallint",
      "length": null,
-     "remarks": "Codes : 3,5,10,11"
+     "remarks": "Applicable for School Category Codes : 3,5,10,11"
     }
-   ],
-   "bridge": {
-    "item": "1.19d",
-    "year": "2021-22",
-    "score": 1.0,
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
-    "via": "Higher Secondary",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "profile_data_1.cce_pr",
@@ -10632,12 +10800,20 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Primary",
+     "description": "CCE being implemented in school in Primary",
      "dtype": "smallint",
      "length": null,
-     "remarks": "Codes : 1,2,3,6"
+     "remarks": "Applicable for School Category Codes : 1,2,3,6"
     }
-   ]
+   ],
+   "bridge": {
+    "item": "1.38i",
+    "year": "2021-22",
+    "score": 0.75,
+    "question": "Is Continuous and Comprehensive Evaluation (CCE) being implemented in School? \u2014 Primary",
+    "via": "CCE being implemented in school in Primary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.cce_sec",
@@ -10673,10 +10849,10 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Secondary",
+     "description": "CCE being implemented in school in Secondary",
      "dtype": "smallint",
      "length": null,
-     "remarks": "Codes : 3,5,6,7,8,10"
+     "remarks": "Applicable for School Category Codes : 3,5,6,7,8,10"
     }
    ]
   },
@@ -10693,8 +10869,8 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": "1.19b",
-   "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
+   "dcf_item": "1.38i",
+   "question": "Is Continuous and Comprehensive Evaluation (CCE) being implemented in School? \u2014 Primary",
    "values": null,
    "release_key": null,
    "dcf_year": "2021-22",
@@ -10714,18 +10890,18 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Upper Primary",
+     "description": "CCE being implemented in school in Upper Primary",
      "dtype": "smallint",
      "length": null,
-     "remarks": "Codes: 2,3,4,5,6,7"
+     "remarks": "Applicable for School Category Codes: 2,3,4,5,6,7"
     }
    ],
    "bridge": {
-    "item": "1.19b",
+    "item": "1.38i",
     "year": "2021-22",
-    "score": 1.0,
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
-    "via": "Upper Primary",
+    "score": 0.6,
+    "question": "Is Continuous and Comprehensive Evaluation (CCE) being implemented in School? \u2014 Primary",
+    "via": "CCE being implemented in school in Upper Primary",
     "codes": "the form states no code list"
    }
   },
@@ -11146,18 +11322,18 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Higher Secondary",
+     "description": "Number of Instructional days for Higher Secondary",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
     }
    ],
    "bridge": {
-    "item": "1.19d",
+    "item": "1.35d",
     "year": "2021-22",
     "score": 1.0,
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
-    "via": "Higher Secondary",
+    "question": "Number of instructional days (previous academic year) : \u2014 Higher Secondary",
+    "via": "Number of Instructional days for Higher Secondary",
     "codes": "the form states no code list"
    }
   },
@@ -11217,12 +11393,20 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Primary",
+     "description": "Number of Instructional days for Primary",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
     }
-   ]
+   ],
+   "bridge": {
+    "item": "1.35a",
+    "year": "2021-22",
+    "score": 1.0,
+    "question": "Number of instructional days (previous academic year) : \u2014 Primary:",
+    "via": "Number of Instructional days for Primary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.instr_days_sec",
@@ -11280,12 +11464,20 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Secondary",
+     "description": "Number of Instructional days for Secondary",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
     }
-   ]
+   ],
+   "bridge": {
+    "item": "1.35c",
+    "year": "2021-22",
+    "score": 1.0,
+    "question": "Number of instructional days (previous academic year) : \u2014 Secondary:",
+    "via": "Number of Instructional days for Secondary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.instr_days_up",
@@ -11321,12 +11513,20 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Primary",
+     "description": "Number of Instructional days for Upper Primary",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
     }
-   ]
+   ],
+   "bridge": {
+    "item": "1.35b",
+    "year": "2021-22",
+    "score": 1.0,
+    "question": "Number of instructional days (previous academic year) : \u2014 Upper Primary:",
+    "via": "Number of Instructional days for Upper Primary",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_1.is_nsqf",
@@ -11402,7 +11602,17 @@
      "field": "learner_holistic_rptcard_yn"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "School providing Holistic Report Card for every Learner based on peer/self/teacher assessment",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": "Yes=1, No=2"
+    }
+   ]
   },
   {
    "id": "profile_data_1.lgd_block_name",
@@ -12125,7 +12335,17 @@
      "field": "other_sch_b"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "New admission of students in class 1 who have pre-school experience Other school boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": "Boys +Transgenders"
+    }
+   ]
   },
   {
    "id": "profile_data_1.other_sch_g",
@@ -12156,7 +12376,17 @@
      "field": "other_sch_g"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "New admission of students in class 1 who have pre-school experience other school girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_1.panchyat",
@@ -12511,7 +12741,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "of school)",
+     "description": "Psuedo Code(Unique Identity Number of school)",
      "dtype": "bigint",
      "length": null,
      "remarks": ""
@@ -12600,6 +12830,14 @@
      "dtype": "smallint",
      "length": null,
      "remarks": ""
+    },
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "Is this a Residential School?",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": "1-Completely Residential, 2-Partially Residential, 3-Non-Residential"
     }
    ]
   },
@@ -12684,7 +12922,14 @@
      "field": "rte_25p_admission_yn"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [],
+   "official_unreadable": [
+    {
+     "era": "sdmis",
+     "why": "unbalanced brackets, so a line end was read as the whole"
+    }
+   ]
   },
   {
    "id": "profile_data_1.rural_urban",
@@ -12762,7 +13007,17 @@
      "field": "same_sch_b"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "New admission of students in class 1 who have pre-school experience same school boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": "Boys +Transgenders"
+    }
+   ]
   },
   {
    "id": "profile_data_1.same_sch_g",
@@ -12793,7 +13048,17 @@
      "field": "same_sch_g"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "New admission of students in class 1 who have pre-school experience same school girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_1.school_category",
@@ -13608,7 +13873,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "ordinator",
+     "description": "Number of visits by CRC Co- ordinator",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -13621,7 +13886,15 @@
      "length": null,
      "remarks": ""
     }
-   ]
+   ],
+   "bridge": {
+    "item": "1.46b",
+    "year": "2021-22",
+    "score": 0.667,
+    "question": "Details of visits to the school during the previous academic year: \u2014 Number of visits by CRC Coordinator:",
+    "via": "Number of visits by CRC Co- ordinator",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_2.district_officers",
@@ -13655,7 +13928,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Level officers",
+     "description": "Number of visits by District/State Level officers",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -13674,7 +13947,7 @@
     "year": "2021-22",
     "score": 1.0,
     "question": "Details of visits to the school during the previous academic year: \u2014 Number of visits by District/State level officers:",
-    "via": "Level officers",
+    "via": "Number of visits by District/State Level officers",
     "codes": "the form states no code list"
    }
   },
@@ -13757,7 +14030,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "to children in Upper Primary Grade",
+     "description": "Free Textbook Facility provided to children in Upper Primary Grade",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -13774,9 +14047,9 @@
    "bridge": {
     "item": "5.2",
     "year": "2021-22",
-    "score": 1.0,
+    "score": 0.625,
     "question": "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
-    "via": "to children in Upper Primary Grade",
+    "via": "Free Textbook Facility provided to children in Upper Primary Grade",
     "codes": "the form states no code list"
    }
   },
@@ -13797,14 +14070,14 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "5.1",
-   "question": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
+   "dcf_item": null,
+   "question": null,
    "values": null,
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": null,
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": "bridged",
+   "dcf_how": null,
    "dormant_2025_26": false,
    "changes": [],
    "traps": [],
@@ -13812,7 +14085,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "children in Primary Grade",
+     "description": "Free Uniform Facility provided to children in Primary Grade",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -13825,15 +14098,7 @@
      "length": null,
      "remarks": "Yes=1, No=2"
     }
-   ],
-   "bridge": {
-    "item": "5.1",
-    "year": "2021-22",
-    "score": 1.0,
-    "question": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
-    "via": "children in Primary Grade",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "profile_data_2.free_uniform_up",
@@ -13852,18 +14117,26 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "5.2",
+   "question": "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [],
    "traps": [],
    "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Free Uniform Facility provided to children in Upper Primary Grade",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    },
     {
      "era": "sdmis",
      "names_year": "2025-26",
@@ -13872,7 +14145,15 @@
      "length": null,
      "remarks": "Yes=1, No=2"
     }
-   ]
+   ],
+   "bridge": {
+    "item": "5.2",
+    "year": "2021-22",
+    "score": 0.625,
+    "question": "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
+    "via": "Free Uniform Facility provided to children in Upper Primary Grade",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_2.grants_expenditure",
@@ -13891,17 +14172,43 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "8.1",
+   "question": "Grants received by the school & expenditure made during the financial year 2020-21 (Govt. and Govt.",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "School Grants Expenditure(In Rs.)",
+     "dtype": "double precision",
+     "length": null,
+     "remarks": ""
+    },
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "Total Grants Expenditure (In Rs.) in school",
+     "dtype": "double precision",
+     "length": null,
+     "remarks": ""
+    }
+   ],
+   "bridge": {
+    "item": "8.1",
+    "year": "2021-22",
+    "score": 1.0,
+    "question": "Grants received by the school & expenditure made during the financial year 2020-21 (Govt. and Govt.",
+    "via": "School Grants Expenditure(In Rs.)",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_2.grants_receipt",
@@ -13930,7 +14237,25 @@
    "dcf_how": null,
    "dormant_2025_26": false,
    "changes": [],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "School Grants Receipt(In Rs.)",
+     "dtype": "double precision",
+     "length": null,
+     "remarks": ""
+    },
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "Total Grants Recieved(In Rs.) in school",
+     "dtype": "double precision",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.material_training",
@@ -13949,14 +14274,14 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "1.43b",
-   "question": "Whether any Out of School Children enrolled in the school are \u2014 Number of children ENROLLED for Special Training in PREVIOUS Academic year:",
+   "dcf_item": null,
+   "question": null,
    "values": null,
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": null,
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": "bridged",
+   "dcf_how": null,
    "dormant_2025_26": false,
    "changes": [],
    "traps": [],
@@ -13964,7 +14289,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "in previous academic year",
+     "description": "Graded Supplementary Material in previous academic year",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -13977,15 +14302,7 @@
      "length": null,
      "remarks": "Yes=1, No=2"
     }
-   ],
-   "bridge": {
-    "item": "1.43b",
-    "year": "2021-22",
-    "score": 1.0,
-    "question": "Whether any Out of School Children enrolled in the school are \u2014 Number of children ENROLLED for Special Training in PREVIOUS Academic year:",
-    "via": "in previous academic year",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "profile_data_2.pseudocode",
@@ -14078,7 +14395,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Number of school)",
+     "description": "Psuedo Code(Unique Identity Number of school)",
      "dtype": "bigint",
      "length": null,
      "remarks": ""
@@ -14116,7 +14433,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Pre-Primary Boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c0_g",
@@ -14149,7 +14476,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Pre-Primary Girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c1_b",
@@ -14182,7 +14519,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-1 Boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c1_g",
@@ -14215,7 +14562,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-1 Girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c2_b",
@@ -14248,7 +14605,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-2 Boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c2_g",
@@ -14281,7 +14648,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-2 Girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c3_b",
@@ -14314,7 +14691,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-3 Boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c3_g",
@@ -14347,7 +14734,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-3 Girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c4_b",
@@ -14380,7 +14777,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-4 Boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c4_g",
@@ -14413,7 +14820,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-4 Girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c5_b",
@@ -14446,7 +14863,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-5 Boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c5_g",
@@ -14479,7 +14906,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-5 Girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c6_b",
@@ -14513,14 +14950,11 @@
     }
    ],
    "traps": [],
-   "official": [
+   "official": [],
+   "official_unreadable": [
     {
      "era": "pre-sdmis",
-     "names_year": null,
-     "description": "equipment for Class-6 Boys",
-     "dtype": "smallint",
-     "length": null,
-     "remarks": ""
+     "why": "starts mid-sentence, so the head of the line is missing"
     }
    ]
   },
@@ -14555,7 +14989,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-6 Girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c7_b",
@@ -14588,7 +15032,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-7 Boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c7_g",
@@ -14621,7 +15075,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-7 Girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c8_b",
@@ -14654,7 +15118,17 @@
      "how": "form"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Student Enrolled under RTE Act have received building, equipment for Class-8 Boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_bld_c8_g",
@@ -14688,14 +15162,11 @@
     }
    ],
    "traps": [],
-   "official": [
+   "official": [],
+   "official_unreadable": [
     {
      "era": "pre-sdmis",
-     "names_year": null,
-     "description": "equipment for Class-8 Girls",
-     "dtype": "smallint",
-     "length": null,
-     "remarks": ""
+     "why": "starts mid-sentence, so the head of the line is missing"
     }
    ]
   },
@@ -14813,7 +15284,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Economically Weaker Section Student Enrolled for Class-10 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -14854,7 +15325,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Economically Weaker Section Student Enrolled for Class-10 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -14895,7 +15366,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Economically Weaker Section Student Enrolled for Class-11 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -14936,7 +15407,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Economically Weaker Section Student Enrolled for Class-11 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -14977,7 +15448,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Economically Weaker Section Student Enrolled for Class-12 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -15018,7 +15489,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Economically Weaker Section Student Enrolled for Class-12 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -15694,7 +16165,17 @@
      "field": "rte_ews_c9_b"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Economically Weaker Section Student Enrolled for Class-9 Boys",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_ews_c9_g",
@@ -15725,7 +16206,17 @@
      "field": "rte_ews_c9_g"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Economically Weaker Section Student Enrolled for Class-9 Girls",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "profile_data_2.rte_pvt_c0_b",
@@ -15761,7 +16252,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Primary Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Pre- Primary Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -15802,7 +16293,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Primary Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Pre- Primary Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -15843,7 +16334,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-1 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -15884,7 +16375,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-1 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -15925,7 +16416,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-2 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -15966,7 +16457,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-2 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16007,7 +16498,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-3 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16048,7 +16539,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-3 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16089,7 +16580,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-4 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16130,7 +16621,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-4 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16171,7 +16662,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-5 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16212,7 +16703,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-5 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16253,7 +16744,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-6 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16294,7 +16785,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-6 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16335,7 +16826,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-7 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16376,7 +16867,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-7 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16417,7 +16908,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-8 Boys",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16458,7 +16949,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-8 Girls",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16482,14 +16973,14 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.47",
+   "question": "(a) Whether School Management Committee (SMC) has",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [],
    "traps": [],
@@ -16497,12 +16988,28 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "(SMC) has been constituted",
+     "description": "School Management Committee (SMC) has been constituted",
      "dtype": "smallint",
      "length": null,
-     "remarks": ""
+     "remarks": "Applicable for School Category Codes : 1,2,3,4,5,6,7 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
+    },
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "Whether School Management Committee (SMC) has been constituted as per RTE norms?",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": "Yes=1, No=2"
     }
-   ]
+   ],
+   "bridge": {
+    "item": "1.47",
+    "year": "2021-22",
+    "score": 0.667,
+    "question": "(a) Whether School Management Committee (SMC) has",
+    "via": "School Management Committee (SMC) has been constituted",
+    "codes": "partly corroborated: the column also holds 9"
+   }
   },
   {
    "id": "profile_data_2.smc_smdc_meetings",
@@ -16583,14 +17090,30 @@
    "traps": [],
    "official": [
     {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "School Management Committee (SMC) and School Management and Development Committee (SMDC) are same in the school",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": "Applicable for School Category Codes : 3,5,6,7,8,10,11 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
+    },
+    {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "",
+     "description": "Whether School Development and Management Committee have been Constituted as per Samagra Shiksha guidelines?",
      "dtype": "smallint",
      "length": null,
      "remarks": "1- Yes, 2-No, 3- Same as SMC"
     }
-   ]
+   ],
+   "bridge": {
+    "item": "1.47b",
+    "year": "2021-22",
+    "score": 0.75,
+    "question": "(a) Whether School Management Committee (SMC) has \u2014 Whether School Development and Management Committee have been",
+    "via": "School Management Committee (SMC) and School Management and Development Committee (SMDC) are same in the school",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_2.smdc_constituted",
@@ -16605,14 +17128,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.47b",
+   "question": "(a) Whether School Management Committee (SMC) has \u2014 Whether School Development and Management Committee have been",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [
     {
@@ -16621,7 +17144,25 @@
      "field": "smdc_constituted"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "School Management and Development Committee has been constituted",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": "Applicable for School Category Codes : 3,5,6,7,8,10,11 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
+    }
+   ],
+   "bridge": {
+    "item": "1.47b",
+    "year": "2021-22",
+    "score": 0.75,
+    "question": "(a) Whether School Management Committee (SMC) has \u2014 Whether School Development and Management Committee have been",
+    "via": "School Management and Development Committee has been constituted",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_2.special_training",
@@ -16640,14 +17181,14 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "1.43a",
+   "question": "Whether any Out of School Children enrolled in the school are \u2014 Number of children ENROLLED for Special Training in CURRENT Academic year:",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [],
    "traps": [],
@@ -16655,7 +17196,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Training",
+     "description": "School are attending Special Training",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16668,7 +17209,15 @@
      "length": null,
      "remarks": "Yes=1, No=2"
     }
-   ]
+   ],
+   "bridge": {
+    "item": "1.43a",
+    "year": "2021-22",
+    "score": 0.667,
+    "question": "Whether any Out of School Children enrolled in the school are \u2014 Number of children ENROLLED for Special Training in CURRENT Academic year:",
+    "via": "School are attending Special Training",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "profile_data_2.text_books_received",
@@ -16732,14 +17281,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": "5.1",
-   "question": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
+   "dcf_item": null,
+   "question": null,
    "values": null,
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": null,
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": "bridged",
+   "dcf_how": null,
    "dormant_2025_26": false,
    "changes": [
     {
@@ -16753,20 +17302,12 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "to children in Primary Grade",
+     "description": "Free Transport Facility provided to children in Primary Grade",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
     }
-   ],
-   "bridge": {
-    "item": "5.1",
-    "year": "2021-22",
-    "score": 1.0,
-    "question": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
-    "via": "to children in Primary Grade",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "profile_data_2.transport_up",
@@ -16781,14 +17322,14 @@
    ],
    "n_years": 4,
    "gap": false,
-   "dcf_item": null,
-   "question": null,
+   "dcf_item": "5.2",
+   "question": "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
    "values": null,
    "release_key": null,
-   "dcf_year": null,
+   "dcf_year": "2021-22",
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": null,
+   "dcf_how": "bridged",
    "dormant_2025_26": false,
    "changes": [
     {
@@ -16802,12 +17343,20 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Grade",
+     "description": "Free Transport Facility provided to children in Upper Primary Grade",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
     }
-   ]
+   ],
+   "bridge": {
+    "item": "5.2",
+    "year": "2021-22",
+    "score": 0.625,
+    "question": "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
+    "via": "Free Transport Facility provided to children in Upper Primary Grade",
+    "codes": "the form states no code list"
+   }
   },
   {
    "id": "teacher_data.bachelor_of_ee",
@@ -16841,7 +17390,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "of Elementary Education(B.EI.Ed)",
+     "description": "No. Of Teacher whose Highest Professional Qualification is Bachelor of Elementary Education(B.EI.Ed)",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16849,7 +17398,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Highest Professional Qualification is Bachelor of",
+     "description": "No. of teachers whose Highest Professional Qualification is Bachelor of Elementary Education(B.EI.Ed) in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16888,7 +17437,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Equivalent",
+     "description": "No. Of Teacher whose Highest Professional Qualification is B.ED or Equivalent",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16896,7 +17445,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Highest Professional Qualification is B.ED or",
+     "description": "No. of teachers whose Highest Professional Qualification is B.ED or Equivalent in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16932,7 +17481,17 @@
      "field": "bed_nursery"
     }
    ],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "No. of teachers whose Highest Professional Qualification is B. Ed (Nursery) from NCTE recognized institution in school",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "teacher_data.below_graduate",
@@ -16951,14 +17510,14 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "1.19d",
-   "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
+   "dcf_item": null,
+   "question": null,
    "values": null,
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": null,
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": "bridged",
+   "dcf_how": null,
    "dormant_2025_26": false,
    "changes": [],
    "traps": [],
@@ -16966,7 +17525,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Secondary and Higher Secondary)",
+     "description": "No. Of Teacher whose Highest Academic Qualification is Below Graduate (Include Below Secondary, Secondary and Higher Secondary)",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -16974,20 +17533,12 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Highest Academic Qualification is Below Graduate",
+     "description": "No. of teachers whose Highest Academic Qualification is Below Graduate (Include Below Secondary, Secondary and Higher Secondary) in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
     }
-   ],
-   "bridge": {
-    "item": "1.19d",
-    "year": "2021-22",
-    "score": 1.0,
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
-    "via": "Secondary and Higher Secondary)",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "teacher_data.class_taught_hsec_only",
@@ -17006,14 +17557,14 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "1.19d",
-   "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
+   "dcf_item": null,
+   "question": null,
    "values": null,
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": null,
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": "bridged",
+   "dcf_how": null,
    "dormant_2025_26": false,
    "changes": [],
    "traps": [],
@@ -17021,7 +17572,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Higher Secondary Only",
+     "description": "No. of Teachers whose Class Taught is Higher Secondary Only",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17034,15 +17585,7 @@
      "length": null,
      "remarks": ""
     }
-   ],
-   "bridge": {
-    "item": "1.19d",
-    "year": "2021-22",
-    "score": 0.667,
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
-    "via": "Higher Secondary Only",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "teacher_data.class_taught_pr",
@@ -17076,7 +17619,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Primary",
+     "description": "No. of Teachers whose Class Taught is Primary",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17121,6 +17664,14 @@
    "traps": [],
    "official": [
     {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "No. of Teachers whose Class Taught is Pre-Primary and Primary",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    },
+    {
      "era": "sdmis",
      "names_year": "2025-26",
      "description": "No. of teachers whose Class Taught is Pre- Primary and Primary in school",
@@ -17147,14 +17698,14 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "1.19b",
-   "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
+   "dcf_item": null,
+   "question": null,
    "values": null,
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": null,
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": "bridged",
+   "dcf_how": null,
    "dormant_2025_26": false,
    "changes": [],
    "traps": [],
@@ -17162,20 +17713,20 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Primary and Upper Primary",
+     "description": "No. of Teachers whose Class Taught is Primary and Upper Primary",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    },
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "No. of teachers whose Class Taught is Primary and Upper Primary in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
     }
-   ],
-   "bridge": {
-    "item": "1.19b",
-    "year": "2021-22",
-    "score": 1.0,
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
-    "via": "Primary and Upper Primary",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "teacher_data.class_taught_sec_hsec",
@@ -17194,14 +17745,14 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "1.19d",
-   "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
+   "dcf_item": null,
+   "question": null,
    "values": null,
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": null,
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": "bridged",
+   "dcf_how": null,
    "dormant_2025_26": false,
    "changes": [],
    "traps": [],
@@ -17209,7 +17760,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Secondary and Higher Secondary",
+     "description": "No. of Teachers whose Class Taught is Secondary and Higher Secondary",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17217,20 +17768,12 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Class Taught is Secondary and Higher Secondary in",
+     "description": "No. of teachers whose Class Taught is Secondary and Higher Secondary in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
     }
-   ],
-   "bridge": {
-    "item": "1.19d",
-    "year": "2021-22",
-    "score": 1.0,
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
-    "via": "Secondary and Higher Secondary",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "teacher_data.class_taught_sec_only",
@@ -17264,7 +17807,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Secondary Only",
+     "description": "No. of Teachers whose Class Taught is Secondary Only",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17311,7 +17854,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Upper Primary",
+     "description": "No. of Teachers whose Class Taught is Upper Primary",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17324,15 +17867,7 @@
      "length": null,
      "remarks": ""
     }
-   ],
-   "bridge": {
-    "item": "1.19b",
-    "year": "2021-22",
-    "score": 1.0,
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
-    "via": "Upper Primary",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "teacher_data.class_taught_upr_sec",
@@ -17351,14 +17886,14 @@
    ],
    "n_years": 8,
    "gap": false,
-   "dcf_item": "1.20b",
-   "question": "Year of upgradation of the school (if applicable): \u2014 Upper Primary to Secondary:",
+   "dcf_item": null,
+   "question": null,
    "values": null,
    "release_key": null,
-   "dcf_year": "2021-22",
+   "dcf_year": null,
    "dcf_trace": {},
    "dcf_line": null,
-   "dcf_how": "bridged",
+   "dcf_how": null,
    "dormant_2025_26": false,
    "changes": [],
    "traps": [],
@@ -17366,7 +17901,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Upper Primary and Secondary",
+     "description": "No. of Teachers whose Class Taught is Upper Primary and Secondary",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17374,20 +17909,12 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Class Taught is Upper Primary and Secondary in",
+     "description": "No. of teachers whose Class Taught is Upper Primary and Secondary in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
     }
-   ],
-   "bridge": {
-    "item": "1.20b",
-    "year": "2021-22",
-    "score": 1.0,
-    "question": "Year of upgradation of the school (if applicable): \u2014 Upper Primary to Secondary:",
-    "via": "Upper Primary and Secondary",
-    "codes": "the form states no code list"
-   }
+   ]
   },
   {
    "id": "teacher_data.class_taugt_pre_primary_only",
@@ -17515,7 +18042,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "of a duration not less than two years",
+     "description": "No. Of Teacher whose Highest Professional Qualification is Diploma or certificate in basic teacher training of a duration not less than two years",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17523,7 +18050,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Highest Professional Qualification is Diploma or",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma or certificate in basic teachers training of a duration not less than two years in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17564,7 +18091,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Highest Professional Qualification is Diploma in",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma in Elementary Education (D.El.Ed.) in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17603,7 +18130,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Degree in Special Education",
+     "description": "No. Of Teacher whose Highest Professional Qualification is Diploma / Degree in Special Education",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17611,7 +18138,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Highest Professional Qualification is Diploma /",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma / Degree in Special Education in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17652,7 +18179,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Highest Professional Qualification is Diploma in",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma in Nursery teachers Education/ Pre-school education/ Early Childhood Education Program of a duration not less than two years from NCTE recognized institution in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17774,7 +18301,25 @@
    "dcf_how": null,
    "dormant_2025_26": false,
    "changes": [],
-   "traps": []
+   "traps": [],
+   "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "No. Of Teacher whose Highest Academic Qualification is Graduate",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    },
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "No. of teachers whose Highest Academic Qualification is Graduate in school",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    }
+   ]
   },
   {
    "id": "teacher_data.male",
@@ -17855,7 +18400,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Equivalent",
+     "description": "No. Of Teacher whose Highest Professional Qualification is M.ED or Equivalent",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17863,7 +18408,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Highest Professional Qualification is M.ED or",
+     "description": "No. of teachers whose Highest Professional Qualification is M.ED or Equivalent in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17902,7 +18447,15 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Professional Qualification is None",
+     "description": "No. Of Teacher whose Highest Professional Qualification is None",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    },
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "No. of teachers whose Highest Professional Qualification is None in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -17982,7 +18535,15 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Professional Qualification is Others",
+     "description": "No. Of Teacher whose Highest Professional Qualification is Others",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    },
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "No. of teachers whose Highest Professional Qualification is Others in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -18068,7 +18629,15 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "Doctoral)",
+     "description": "Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral)",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    },
+    {
+     "era": "sdmis",
+     "names_year": "2025-26",
+     "description": "Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral) in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -18166,7 +18735,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "of school)",
+     "description": "Psuedo Code(Unique Identity Number of school)",
      "dtype": "bigint",
      "length": null,
      "remarks": ""
@@ -18205,7 +18774,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "any Relevant Professional Course",
+     "description": "No. Of Teacher whose Highest Professional Qualification is Pursuing any Relevant Professional Course",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -18213,7 +18782,7 @@
     {
      "era": "sdmis",
      "names_year": "2025-26",
-     "description": "No. of teachers whose Highest Professional Qualification is Pursuing any",
+     "description": "No. of teachers whose Highest Professional Qualification is Pursuing any Relevant Professional Course in school",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -18463,7 +19032,7 @@
     {
      "era": "pre-sdmis",
      "names_year": null,
-     "description": "above 55",
+     "description": "Total Number of Teacher whose Aged above 55",
      "dtype": "smallint",
      "length": null,
      "remarks": ""
@@ -18747,6 +19316,14 @@
    "changes": [],
    "traps": [],
    "official": [
+    {
+     "era": "pre-sdmis",
+     "names_year": null,
+     "description": "Total Number of Transgender Teacher",
+     "dtype": "smallint",
+     "length": null,
+     "remarks": ""
+    },
     {
      "era": "sdmis",
      "names_year": "2025-26",

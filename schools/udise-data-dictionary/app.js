@@ -278,10 +278,13 @@ function showField(id) {
              : f.dcf_year === "all" ? ", every form" : ""}
 </div>
          ${traceHTML(f)}`
-      : `<div class="k">Question — as asked</div>
-         <p class="detail-empty" style="margin:0">Not yet verified against a form item.
-         ${state.data.meta.counts.verified_wording} of ${state.data.meta.counts.fields}
-         columns are. The unverified leads live in the machine-readable files.</p>`}
+      // A column with no verified question shows NO question section. What
+      // stood here was an apology carrying our own coverage rate, printed
+      // where the reader came for the Ministry's question. A reader wants
+      // the column. How much of the dictionary we have finished is a fact
+      // about this page, and the About tab states it once, which is where a
+      // statement about this page belongs.
+      : ""}
 
     ${officialHTML(f)}
 
@@ -351,9 +354,18 @@ function traceHTML(f) {
 function officialHTML(f) {
   const o = f.official || [];
   if (!o.length) {
+    // Two different facts, and only one of them is about the Ministry. A
+    // column the schema DESCRIBES but whose printed cell we could not read
+    // is our gap, not theirs. Saying otherwise put a false claim about a
+    // government document on a public page.
+    const u = f.official_unreadable;
     return `<div class="k">Variable — as released</div>
-      <p class="detail-empty" style="margin:0">The Ministry's schema document does not
-      list this column. That is a gap in the published schema, not in this page.</p>`;
+      <p class="detail-empty" style="margin:0">${u
+        ? `The schema document describes this column. Our reading of its printed
+           cell did not survive a check (${esc(u[0].why)}), so no description is
+           shown here rather than a wrong one.`
+        : `The Ministry's schema document does not list this column. That is a
+           gap in the published schema, not in this page.`}</p>`;
   }
   return `<div class="k">Variable — as released</div>` + o.map((x) => `
     <div class="official">

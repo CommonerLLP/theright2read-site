@@ -439,6 +439,14 @@ code.dead { color: var(--ink-faint); text-decoration: line-through; }
 .trace-drift .tw { margin: 4px 0; }
 .trace-drift .yrs { font-family: var(--mono); font-size: 11px; color: var(--chg); display: block; }
 
+/* A prose page must not be a column of text against a void. Capping the
+   paragraphs at 78ch inside a 1280px wrap left half the screen empty and the
+   text hugging the left edge. Where a view is prose, the WRAP carries the
+   measure and centres, so the column sits in the page instead of beside it.
+   Tables inside still scroll to their own width. */
+#about-view .wrap { max-width: 82ch; }
+#missing-view .wrap, #traps-view .wrap { max-width: 104ch; }
+
 /* Prose reads at a measure, wherever it sits. The width fix let card and
    note text run toward 1280px, and the notes read as walls. Tables are
    exempt: they use the width; sentences do not. */

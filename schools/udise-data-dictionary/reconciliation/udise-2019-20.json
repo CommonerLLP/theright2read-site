@@ -14,7 +14,7 @@
  "n_fields": 245,
  "flags": {
   "asked_verified_this_form": 0,
-  "described_no_question": 58,
+  "described_no_question": 69,
   "code_disagreements": [
    {
     "id": "facility_data.availability_of_handrails",
@@ -692,7 +692,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "",
+     "description": "Psuedo Code(Unique Identity Number of school)",
      "remarks": ""
     }
    ],
@@ -1235,7 +1235,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "school building",
+     "description": "Available Ramp for disabled children to access school building",
      "remarks": ""
     }
    ],
@@ -1430,7 +1430,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Management Systems",
+     "description": "School have No. Of Digital Boards with Content Management Systems",
      "remarks": ""
     }
    ],
@@ -1537,13 +1537,7 @@
     "how": "curated",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
-   "described": [
-    {
-     "era": "pre-sdmis",
-     "description": "electricity connection available in the School",
-     "remarks": ""
-    }
-   ],
+   "described": null,
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 3,
@@ -1563,7 +1557,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "No. of CWSN friendly toilet seats for Functional Boys",
      "remarks": ""
     }
    ],
@@ -1628,7 +1622,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "washing hands before and after meal",
+     "description": "Handwashing facility with soap available for washing hands before and after meal",
      "remarks": ""
     }
    ],
@@ -1657,7 +1651,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "toilets",
+     "description": "Hand washing facility with soap available near toilets",
      "remarks": ""
     }
    ],
@@ -1800,7 +1794,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "academic year",
+     "description": "Medical check-up of students conducted in last academic year",
      "remarks": ""
     }
    ],
@@ -2111,7 +2105,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "friendly toilets for Functional Boys",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Functional Boys",
      "remarks": ""
     }
    ],
@@ -2135,7 +2129,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "friendly toilets for Total Boys",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Total Boys",
      "remarks": ""
     }
    ],
@@ -2183,7 +2177,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "friendly toilets for Functional Girls",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Functional Girls",
      "remarks": ""
     }
    ],
@@ -2207,7 +2201,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "friendly toilets for Total Girls",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Total Girls",
      "remarks": ""
     }
    ],
@@ -2263,17 +2257,17 @@
    "field": "aff_board_hsec",
    "asked": {
     "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
-    "item": "1.19d",
-    "cited_form": "2021-22",
+    "question": "(a) Affiliation Board type of school for HIGHER SECONDARY Section:",
+    "item": "1.20",
+    "cited_form": "2025-26",
     "how": "bridged",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Higher Secondary",
-     "remarks": "3,5,10,11"
+     "description": "Affiliation Board of the school for Higher Secondary",
+     "remarks": "Applicable for School Category Codes : 3,5,10,11"
     }
    ],
    "released": {
@@ -2306,8 +2300,8 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Secondary",
-     "remarks": "3,5,6,7,8,10"
+     "description": "Affiliation Board of the school for Secondary",
+     "remarks": "Applicable for School Category Codes : 3,5,6,7,8,10"
     }
    ],
    "released": {
@@ -2341,7 +2335,7 @@
     {
      "era": "pre-sdmis",
      "description": "Boys in Anganwadi Centre",
-     "remarks": "1,2,3,4,6,90,91,92,93,94,95,96"
+     "remarks": "Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
     }
    ],
    "released": {
@@ -2365,7 +2359,7 @@
     {
      "era": "pre-sdmis",
      "description": "Girls in Anganwadi Centre",
-     "remarks": "1,2,3,4,6,90,91,92,93,94,95,96"
+     "remarks": "Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
     }
    ],
    "released": {
@@ -2388,8 +2382,8 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Anganwadi Centre is located inside Management Codes : school premises",
-     "remarks": "1,2,3,4,6,90,91,92,93,94,95,96"
+     "description": "Anganwadi Centre is located inside school premises",
+     "remarks": "Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
     }
    ],
    "released": {
@@ -2414,7 +2408,13 @@
     "how": "auto",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Anganwadi Worker",
+     "remarks": "Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 4,
@@ -2434,12 +2434,18 @@
    "asked": {
     "kind": "cited_elsewhere",
     "question": "Whether School is Approachable by All-Weather Roads?",
-    "item": "1.37",
-    "cited_form": "2025-26",
+    "item": "1.34",
+    "cited_form": "2021-22",
     "how": "bridged",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Approachable by all-weather roads",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 2,
@@ -2477,8 +2483,21 @@
    "id": "profile_data_1.avg_school_hrs_student_hsec",
    "dataset": "profile_data_1",
    "field": "avg_school_hrs_student_hsec",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Average School hours for children (per-day) – Number of hours children stay in School: — Higher Secondary",
+    "item": "1.36d",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Average School hours for children in Higher Secondary",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 40
@@ -2488,8 +2507,21 @@
    "id": "profile_data_1.avg_school_hrs_student_pr",
    "dataset": "profile_data_1",
    "field": "avg_school_hrs_student_pr",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Average School hours for children (per-day) – Number of hours children stay in School: — Primary:",
+    "item": "1.36a",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Average School hours for children in Primary",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 40
@@ -2499,8 +2531,21 @@
    "id": "profile_data_1.avg_school_hrs_student_sec",
    "dataset": "profile_data_1",
    "field": "avg_school_hrs_student_sec",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Average School hours for children (per-day) – Number of hours children stay in School: — Secondary:",
+    "item": "1.36c",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Average School hours for children in Secondary",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 40
@@ -2510,8 +2555,21 @@
    "id": "profile_data_1.avg_school_hrs_student_up",
    "dataset": "profile_data_1",
    "field": "avg_school_hrs_student_up",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Average School hours for children (per-day) – Number of hours children stay in School: — Upper Primary:",
+    "item": "1.36b",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Average School hours for children in Upper Primary",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 40
@@ -2521,8 +2579,21 @@
    "id": "profile_data_1.avg_school_hrs_teacher_hsec",
    "dataset": "profile_data_1",
    "field": "avg_school_hrs_teacher_hsec",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Average School hours for teachers (per-day) – Number of hours teachers stay in School: — Higher Secondary",
+    "item": "1.37d",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Average working hours for Teachers in Higher Secondary",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 40
@@ -2532,8 +2603,21 @@
    "id": "profile_data_1.avg_school_hrs_teacher_pr",
    "dataset": "profile_data_1",
    "field": "avg_school_hrs_teacher_pr",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Average School hours for teachers (per-day) – Number of hours teachers stay in School: — Primary:",
+    "item": "1.37a",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Average working hours for Teachers in Primary",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 40
@@ -2543,8 +2627,21 @@
    "id": "profile_data_1.avg_school_hrs_teacher_sec",
    "dataset": "profile_data_1",
    "field": "avg_school_hrs_teacher_sec",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Average School hours for teachers (per-day) – Number of hours teachers stay in School: — Secondary:",
+    "item": "1.37c",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Average working hours for Teachers in Secondary",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 40
@@ -2554,8 +2651,21 @@
    "id": "profile_data_1.avg_school_hrs_teacher_up",
    "dataset": "profile_data_1",
    "field": "avg_school_hrs_teacher_up",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Average School hours for teachers (per-day) – Number of hours teachers stay in School: — Upper Primary:",
+    "item": "1.37b",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Average working hours for Teachers in Upper Primary",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 40
@@ -2576,8 +2686,8 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Higher Secondary",
-     "remarks": "Codes : 3,5,10,11"
+     "description": "CCE being implemented in school in Higher Secondary",
+     "remarks": "Applicable for School Category Codes : 3,5,10,11"
     }
    ],
    "released": {
@@ -2607,8 +2717,8 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Primary",
-     "remarks": "Codes : 1,2,3,6"
+     "description": "CCE being implemented in school in Primary",
+     "remarks": "Applicable for School Category Codes : 1,2,3,6"
     }
    ],
    "released": {
@@ -2638,8 +2748,8 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Secondary",
-     "remarks": "Codes : 3,5,6,7,8,10"
+     "description": "CCE being implemented in school in Secondary",
+     "remarks": "Applicable for School Category Codes : 3,5,6,7,8,10"
     }
    ],
    "released": {
@@ -2660,8 +2770,8 @@
    "field": "cce_up",
    "asked": {
     "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Upper primary:",
-    "item": "1.19b",
+    "question": "Is Continuous and Comprehensive Evaluation (CCE) being implemented in School? — Primary",
+    "item": "1.38i",
     "cited_form": "2021-22",
     "how": "bridged",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
@@ -2669,8 +2779,8 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Upper Primary",
-     "remarks": "Codes: 2,3,4,5,6,7"
+     "description": "CCE being implemented in school in Upper Primary",
+     "remarks": "Applicable for School Category Codes: 2,3,4,5,6,7"
     }
    ],
    "released": {
@@ -2764,7 +2874,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Higher Secondary",
+     "description": "Number of Instructional days for Higher Secondary",
      "remarks": ""
     }
    ],
@@ -2788,7 +2898,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Primary",
+     "description": "Number of Instructional days for Primary",
      "remarks": ""
     }
    ],
@@ -2812,7 +2922,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Secondary",
+     "description": "Number of Instructional days for Secondary",
      "remarks": ""
     }
    ],
@@ -2836,7 +2946,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Primary",
+     "description": "Number of Instructional days for Upper Primary",
      "remarks": ""
     }
    ],
@@ -3147,7 +3257,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "of school)",
+     "description": "Psuedo Code(Unique Identity Number of school)",
      "remarks": ""
     }
    ],
@@ -3548,7 +3658,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "ordinator",
+     "description": "Number of visits by CRC Co- ordinator",
      "remarks": ""
     }
    ],
@@ -3572,7 +3682,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Level officers",
+     "description": "Number of visits by District/State Level officers",
      "remarks": ""
     }
    ],
@@ -3620,7 +3730,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "to children in Upper Primary Grade",
+     "description": "Free Textbook Facility provided to children in Upper Primary Grade",
      "remarks": ""
     }
    ],
@@ -3633,18 +3743,11 @@
    "id": "profile_data_2.free_uniform_pr",
    "dataset": "profile_data_2",
    "field": "free_uniform_pr",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
-    "item": "5.1",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
-   },
+   "asked": null,
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "children in Primary Grade",
+     "description": "Free Uniform Facility provided to children in Primary Grade",
      "remarks": ""
     }
    ],
@@ -3657,8 +3760,21 @@
    "id": "profile_data_2.free_uniform_up",
    "dataset": "profile_data_2",
    "field": "free_uniform_up",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
+    "item": "5.2",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Free Uniform Facility provided to children in Upper Primary Grade",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -3668,8 +3784,21 @@
    "id": "profile_data_2.grants_expenditure",
    "dataset": "profile_data_2",
    "field": "grants_expenditure",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Grants received by the school & expenditure made during the financial year 2020-21 (Govt. and Govt.",
+    "item": "8.1",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "School Grants Expenditure(In Rs.)",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 1,
@@ -3683,7 +3812,13 @@
    "dataset": "profile_data_2",
    "field": "grants_receipt",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "School Grants Receipt(In Rs.)",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 1,
@@ -3696,18 +3831,11 @@
    "id": "profile_data_2.material_training",
    "dataset": "profile_data_2",
    "field": "material_training",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Whether any Out of School Children enrolled in the school are — Number of children ENROLLED for Special Training in PREVIOUS Academic year:",
-    "item": "1.43b",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
-   },
+   "asked": null,
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "in previous academic year",
+     "description": "Graded Supplementary Material in previous academic year",
      "remarks": ""
     }
    ],
@@ -3733,7 +3861,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Number of school)",
+     "description": "Psuedo Code(Unique Identity Number of school)",
      "remarks": ""
     }
    ],
@@ -3772,7 +3900,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Economically Weaker Section Student Enrolled for Class-10 Boys",
      "remarks": ""
     }
    ],
@@ -3789,7 +3917,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Economically Weaker Section Student Enrolled for Class-10 Girls",
      "remarks": ""
     }
    ],
@@ -3806,7 +3934,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Economically Weaker Section Student Enrolled for Class-11 Boys",
      "remarks": ""
     }
    ],
@@ -3823,7 +3951,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Economically Weaker Section Student Enrolled for Class-11 Girls",
      "remarks": ""
     }
    ],
@@ -3840,7 +3968,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Economically Weaker Section Student Enrolled for Class-12 Boys",
      "remarks": ""
     }
    ],
@@ -3857,7 +3985,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Economically Weaker Section Student Enrolled for Class-12 Girls",
      "remarks": ""
     }
    ],
@@ -4047,7 +4175,13 @@
    "dataset": "profile_data_2",
    "field": "rte_ews_c9_b",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Economically Weaker Section Student Enrolled for Class-9 Boys",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -4058,7 +4192,13 @@
    "dataset": "profile_data_2",
    "field": "rte_ews_c9_g",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Economically Weaker Section Student Enrolled for Class-9 Girls",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -4072,7 +4212,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Primary Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Pre- Primary Boys",
      "remarks": ""
     }
    ],
@@ -4089,7 +4229,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Primary Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Pre- Primary Girls",
      "remarks": ""
     }
    ],
@@ -4106,7 +4246,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-1 Boys",
      "remarks": ""
     }
    ],
@@ -4123,7 +4263,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-1 Girls",
      "remarks": ""
     }
    ],
@@ -4140,7 +4280,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-2 Boys",
      "remarks": ""
     }
    ],
@@ -4157,7 +4297,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-2 Girls",
      "remarks": ""
     }
    ],
@@ -4174,7 +4314,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-3 Boys",
      "remarks": ""
     }
    ],
@@ -4191,7 +4331,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-3 Girls",
      "remarks": ""
     }
    ],
@@ -4208,7 +4348,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-4 Boys",
      "remarks": ""
     }
    ],
@@ -4225,7 +4365,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-4 Girls",
      "remarks": ""
     }
    ],
@@ -4242,7 +4382,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-5 Boys",
      "remarks": ""
     }
    ],
@@ -4259,7 +4399,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-5 Girls",
      "remarks": ""
     }
    ],
@@ -4276,7 +4416,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-6 Boys",
      "remarks": ""
     }
    ],
@@ -4293,7 +4433,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-6 Girls",
      "remarks": ""
     }
    ],
@@ -4310,7 +4450,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-7 Boys",
      "remarks": ""
     }
    ],
@@ -4327,7 +4467,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-7 Girls",
      "remarks": ""
     }
    ],
@@ -4344,7 +4484,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Boys",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-8 Boys",
      "remarks": ""
     }
    ],
@@ -4361,7 +4501,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Girls",
+     "description": "Student Enrolled under RTE Act in Private unaided for Class-8 Girls",
      "remarks": ""
     }
    ],
@@ -4374,12 +4514,19 @@
    "id": "profile_data_2.smc_exists",
    "dataset": "profile_data_2",
    "field": "smc_exists",
-   "asked": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "(a) Whether School Management Committee (SMC) has",
+    "item": "1.47",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "(SMC) has been constituted",
-     "remarks": ""
+     "description": "School Management Committee (SMC) has been constituted",
+     "remarks": "Applicable for School Category Codes : 1,2,3,4,5,6,7 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
     }
    ],
    "released": {
@@ -4405,7 +4552,13 @@
     "how": "auto",
     "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
    },
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "School Management Committee (SMC) and School Management and Development Committee (SMDC) are same in the school",
+     "remarks": "Applicable for School Category Codes : 3,5,6,7,8,10,11 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 4,
@@ -4421,8 +4574,21 @@
    "id": "profile_data_2.smdc_constituted",
    "dataset": "profile_data_2",
    "field": "smdc_constituted",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "(a) Whether School Management Committee (SMC) has — Whether School Development and Management Committee have been",
+    "item": "1.47b",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "School Management and Development Committee has been constituted",
+     "remarks": "Applicable for School Category Codes : 3,5,6,7,8,10,11 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 4,
@@ -4438,11 +4604,18 @@
    "id": "profile_data_2.special_training",
    "dataset": "profile_data_2",
    "field": "special_training",
-   "asked": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether any Out of School Children enrolled in the school are — Number of children ENROLLED for Special Training in CURRENT Academic year:",
+    "item": "1.43a",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Training",
+     "description": "School are attending Special Training",
      "remarks": ""
     }
    ],
@@ -4491,18 +4664,11 @@
    "id": "profile_data_2.transport_pr",
    "dataset": "profile_data_2",
    "field": "transport_pr",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
-    "item": "5.1",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
-   },
+   "asked": null,
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "to children in Primary Grade",
+     "description": "Free Transport Facility provided to children in Primary Grade",
      "remarks": ""
     }
    ],
@@ -4515,11 +4681,18 @@
    "id": "profile_data_2.transport_up",
    "dataset": "profile_data_2",
    "field": "transport_up",
-   "asked": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
+    "item": "5.2",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
+   },
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Grade",
+     "description": "Free Transport Facility provided to children in Upper Primary Grade",
      "remarks": ""
     }
    ],
@@ -4536,7 +4709,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "of Elementary Education(B.EI.Ed)",
+     "description": "No. Of Teacher whose Highest Professional Qualification is Bachelor of Elementary Education(B.EI.Ed)",
      "remarks": ""
     }
    ],
@@ -4553,7 +4726,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Equivalent",
+     "description": "No. Of Teacher whose Highest Professional Qualification is B.ED or Equivalent",
      "remarks": ""
     }
    ],
@@ -4566,18 +4739,11 @@
    "id": "teacher_data.below_graduate",
    "dataset": "teacher_data",
    "field": "below_graduate",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
-    "item": "1.19d",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
-   },
+   "asked": null,
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Secondary and Higher Secondary)",
+     "description": "No. Of Teacher whose Highest Academic Qualification is Below Graduate (Include Below Secondary, Secondary and Higher Secondary)",
      "remarks": ""
     }
    ],
@@ -4590,18 +4756,11 @@
    "id": "teacher_data.class_taught_hsec_only",
    "dataset": "teacher_data",
    "field": "class_taught_hsec_only",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
-    "item": "1.19d",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
-   },
+   "asked": null,
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Higher Secondary Only",
+     "description": "No. of Teachers whose Class Taught is Higher Secondary Only",
      "remarks": ""
     }
    ],
@@ -4618,7 +4777,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Primary",
+     "description": "No. of Teachers whose Class Taught is Primary",
      "remarks": ""
     }
    ],
@@ -4632,7 +4791,13 @@
    "dataset": "teacher_data",
    "field": "class_taught_pr_and_pre_pri",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "No. of Teachers whose Class Taught is Pre-Primary and Primary",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -4642,18 +4807,11 @@
    "id": "teacher_data.class_taught_pr_upr",
    "dataset": "teacher_data",
    "field": "class_taught_pr_upr",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Upper primary:",
-    "item": "1.19b",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
-   },
+   "asked": null,
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Primary and Upper Primary",
+     "description": "No. of Teachers whose Class Taught is Primary and Upper Primary",
      "remarks": ""
     }
    ],
@@ -4666,18 +4824,11 @@
    "id": "teacher_data.class_taught_sec_hsec",
    "dataset": "teacher_data",
    "field": "class_taught_sec_hsec",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
-    "item": "1.19d",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
-   },
+   "asked": null,
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Secondary and Higher Secondary",
+     "description": "No. of Teachers whose Class Taught is Secondary and Higher Secondary",
      "remarks": ""
     }
    ],
@@ -4694,7 +4845,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Secondary Only",
+     "description": "No. of Teachers whose Class Taught is Secondary Only",
      "remarks": ""
     }
    ],
@@ -4718,7 +4869,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Upper Primary",
+     "description": "No. of Teachers whose Class Taught is Upper Primary",
      "remarks": ""
     }
    ],
@@ -4731,18 +4882,11 @@
    "id": "teacher_data.class_taught_upr_sec",
    "dataset": "teacher_data",
    "field": "class_taught_upr_sec",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Year of upgradation of the school (if applicable): — Upper Primary to Secondary:",
-    "item": "1.20b",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "No national 2019-20 form is on disk, and the portal's own DCF list skips the year. Delhi's rendition of the round verifies the question was asked; its item numbers are Delhi's own and are not cited here."
-   },
+   "asked": null,
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Upper Primary and Secondary",
+     "description": "No. of Teachers whose Class Taught is Upper Primary and Secondary",
      "remarks": ""
     }
    ],
@@ -4793,7 +4937,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "of a duration not less than two years",
+     "description": "No. Of Teacher whose Highest Professional Qualification is Diploma or certificate in basic teacher training of a duration not less than two years",
      "remarks": ""
     }
    ],
@@ -4817,7 +4961,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Degree in Special Education",
+     "description": "No. Of Teacher whose Highest Professional Qualification is Diploma / Degree in Special Education",
      "remarks": ""
     }
    ],
@@ -4848,7 +4992,13 @@
    "dataset": "teacher_data",
    "field": "graduate",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "No. Of Teacher whose Highest Academic Qualification is Graduate",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -4879,7 +5029,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Equivalent",
+     "description": "No. Of Teacher whose Highest Professional Qualification is M.ED or Equivalent",
      "remarks": ""
     }
    ],
@@ -4896,7 +5046,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Professional Qualification is None",
+     "description": "No. Of Teacher whose Highest Professional Qualification is None",
      "remarks": ""
     }
    ],
@@ -4913,7 +5063,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Professional Qualification is Others",
+     "description": "No. Of Teacher whose Highest Professional Qualification is Others",
      "remarks": ""
     }
    ],
@@ -4947,7 +5097,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Doctoral)",
+     "description": "Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral)",
      "remarks": ""
     }
    ],
@@ -4967,7 +5117,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "of school)",
+     "description": "Psuedo Code(Unique Identity Number of school)",
      "remarks": ""
     }
    ],
@@ -4984,7 +5134,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "any Relevant Professional Course",
+     "description": "No. Of Teacher whose Highest Professional Qualification is Pursuing any Relevant Professional Course",
      "remarks": ""
     }
    ],
@@ -5063,7 +5213,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "above 55",
+     "description": "Total Number of Teacher whose Aged above 55",
      "remarks": ""
     }
    ],
@@ -5114,7 +5264,13 @@
    "dataset": "teacher_data",
    "field": "transgender",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Total Number of Transgender Teacher",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 9,

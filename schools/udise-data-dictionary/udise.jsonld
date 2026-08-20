@@ -1915,6 +1915,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cItem Group =1,Item Id = 1 Then General\u201d"
    ]
   },
   {
@@ -1931,6 +1934,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cGeneral, SC, ST, OBC, Muslims, Christians, Sikh, Buddhist,Parsi, Jain BPL, EWS and CWSN Enrolment with disability type,Repeater\u201d"
    ]
   },
   {
@@ -1978,6 +1984,9 @@
    "isVersionOf": "udise:series.enrolment_data_1.psuedocode",
    "altLabel": [
     "pseudocode"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as bigint, described as \u201cPsuedo Code(Unique Identity Number of school)\u201d"
    ],
    "note": [
     "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
@@ -2892,7 +2901,7 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAge Wise Enrolment in Class Pre-Primary Boys\u201d"
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAge Wise Enrolment in Class Pre-Primary Boys\u201d. Remarks: (pp3_b+pp2_b+pp1_b)"
    ]
   },
   {
@@ -2966,7 +2975,7 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201citem_group=8\u201d"
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cItem Group =1,Item Id = 1 Then General\u201d"
    ]
   },
   {
@@ -3089,7 +3098,7 @@
    "definition": "Whether Ramp for disabled children to access school building exists?",
    "dct:provenance": [
     "a person opened the form and read the item",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cschool building\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cAvailable Ramp for disabled children to access school building\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cAvailable Ramp for disabled children to access school building in school\u201d. Remarks: Yes=1, No=2"
    ],
    "references": "DCF item 2.15",
@@ -3497,7 +3506,7 @@
    "definition": "Computer or Digital Equipment Status \u2014 Digital Boards with Content Management Systems and solutions (CMS)/ Learning Management System",
    "dct:provenance": [
     "a person opened the form and read the item",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cManagement Systems\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool have No. Of Digital Boards with Content Management Systems\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Digital Boards with Content Management Systems in school\u201d"
    ],
    "references": "DCF item 2.24(e)",
@@ -3603,7 +3612,6 @@
    "definition": "Whether electricity connection is available in the school?",
    "dct:provenance": [
     "a person opened the form and read the item",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201celectricity connection available in the School\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cElectricity connection available in school\u201d. Remarks: 1:Yes,2:No, 3:Yes, but not functional"
    ],
    "references": "DCF item 2.5(a)",
@@ -3652,7 +3660,7 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of CWSN friendly toilet seats for Functional Boys\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Functional CWSN friendly toilet seats for Boys in school\u201d"
    ]
   },
@@ -3703,7 +3711,7 @@
    "dct:provenance": [
     "a person opened the form and read the item",
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of students for whom Furniture available\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of students for whom Furniture available in school\u201d"
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of students for whom Furniture available in school\u201d. Remarks: 1-Yes for all, 2-Partial, 3-No Furniture Available"
    ],
    "references": "DCF item 2.19",
    "scopeNote": "1-Yes, 2-No, 3-Partial"
@@ -3795,7 +3803,8 @@
    "definition": "Handwash facility for meal",
    "dct:provenance": [
     "a person opened the form and read the item",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cwashing hands before and after meal\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHandwashing facility with soap available for washing hands before and after meal\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cHandwashing facility with soap available for washing hands before and after meal in school\u201d. Remarks: Yes=1, No=2"
    ],
    "references": "DCF item 2.8",
    "scopeNote": "1-Yes, 2-No, 9-Not applicable"
@@ -3822,7 +3831,7 @@
    "definition": "Handwash facility near the toilet",
    "dct:provenance": [
     "a person opened the form and read the item",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201ctoilets\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHand washing facility with soap available near toilets\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cHand washing facility with soap available near toilets in school\u201d. Remarks: Yes=1, No=2"
    ],
    "references": "DCF item 2.7",
@@ -4123,7 +4132,7 @@
    "definition": "Whether Health check-up of students was conducted",
    "dct:provenance": [
     "a person opened the form and read the item",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cacademic year\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cMedical check-up of students conducted in last academic year\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cMedical check-up of students conducted in last academic year in school\u201d. Remarks: Yes=1, No=2"
    ],
    "references": "DCF item 2.14(a)",
@@ -4637,6 +4646,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Smart Class rooms used for teaching with Digital boards/ Smart boards/ Virtual classrooms/ Smart TV in school\u201d"
    ]
   },
   {
@@ -4873,7 +4885,8 @@
    "definition": "Boys' toilets, functional",
    "dct:provenance": [
     "a person opened the form and read the item",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cfriendly toilets for Functional Boys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of toilet seats available excluding CWSN friendly toilets for Functional Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Functional toilet seats available excluding CWSN friendly toilets for Boys in school\u201d"
    ],
    "references": "DCF item 2.7",
    "scopeNote": "count"
@@ -4900,7 +4913,8 @@
    "definition": "Does the School have Toilet(s)/Urinal(s)? \u2014 boys, total",
    "dct:provenance": [
     "a person opened the form and read the item",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cfriendly toilets for Total Boys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of toilet seats available excluding CWSN friendly toilets for Total Boys\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of toilet seats available excluding CWSN friendly toilets for Total Boys in school\u201d"
    ],
    "references": "DCF item 2.7",
    "scopeNote": "count"
@@ -4977,7 +4991,8 @@
    "definition": "Girls' toilets, functional",
    "dct:provenance": [
     "a person opened the form and read the item",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cfriendly toilets for Functional Girls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of toilet seats available excluding CWSN friendly toilets for Functional Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Functional toilet seats available excluding CWSN friendly toilets for Girls\u201d"
    ],
    "references": "DCF item 2.7",
    "scopeNote": "count"
@@ -5004,7 +5019,8 @@
    "definition": "Does the School have Toilet(s)/Urinal(s)? \u2014 girls, total",
    "dct:provenance": [
     "a person opened the form and read the item",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cfriendly toilets for Total Girls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of toilet seats available excluding CWSN friendly toilets for Total Girls\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of toilet seats available excluding CWSN friendly toilets for Total Girls in school\u201d"
    ],
    "references": "DCF item 2.7",
    "scopeNote": "count"
@@ -5205,13 +5221,13 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
+   "definition": "(a) Affiliation Board type of school for HIGHER SECONDARY Section:",
    "dct:provenance": [
     "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHigher Secondary\u201d. Remarks: 3,5,10,11",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cAffiliation Board of the school for Higher Secondary\u201d. Remarks: Applicable for School Category Codes : 3,5,10,11",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool affiliation Board of the school for Higher Secondary\u201d. Remarks: As per UDISE DCF"
    ],
-   "references": "DCF item 1.19d"
+   "references": "DCF item 1.20"
   },
   {
    "@id": "udise:profile_data_1.aff_board_sec",
@@ -5235,7 +5251,7 @@
    "definition": "Affiliation Board of the school for SECONDARY Sections:",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary\u201d. Remarks: 3,5,6,7,8,10",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cAffiliation Board of the school for Secondary\u201d. Remarks: Applicable for School Category Codes : 3,5,6,7,8,10",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool affiliation Board of the school for Secondary\u201d. Remarks: As per UDISE DCF"
    ],
    "references": "DCF item 1.16"
@@ -5262,7 +5278,7 @@
    "definition": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Total Children in Anganwadi Centre :        Boys :                                Girls :",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys in Anganwadi Centre\u201d. Remarks: 1,2,3,4,6,90,91,92,93,94,95,96"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys in Anganwadi Centre\u201d. Remarks: Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
    ],
    "references": "DCF item 1.36(b)",
    "scopeNote": "1-Yes, 2-No"
@@ -5285,6 +5301,9 @@
    "isVersionOf": "udise:series.profile_data_1.anganwadi_boys",
    "altLabel": [
     "anganwadi_boys"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNew admission of students in class 1 who have pre-school experience anganwadi ecce centres boys\u201d. Remarks: Boys +Transgenders"
    ]
   },
   {
@@ -5305,6 +5324,9 @@
    "isVersionOf": "udise:series.profile_data_1.anganwadi_girls",
    "altLabel": [
     "anganwadi_girls"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNew admission of students in class 1 who have pre-school experience anganwadi ecce centres girls\u201d"
    ]
   },
   {
@@ -5329,7 +5351,7 @@
    "definition": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Total Children in Anganwadi Centre :        Boys :                                Girls :",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls in Anganwadi Centre\u201d. Remarks: 1,2,3,4,6,90,91,92,93,94,95,96"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls in Anganwadi Centre\u201d. Remarks: Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
    ],
    "references": "DCF item 1.36(b)",
    "scopeNote": "1-Yes, 2-No"
@@ -5356,7 +5378,7 @@
    "definition": "Whether Anganwadi Centre(s) is/are located inside the school premises?",
    "dct:provenance": [
     "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cAnganwadi Centre is located inside Management Codes : school premises\u201d. Remarks: 1,2,3,4,6,90,91,92,93,94,95,96"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cAnganwadi Centre is located inside school premises\u201d. Remarks: Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
    ],
    "references": "DCF item 1.41",
    "note": [
@@ -5379,7 +5401,10 @@
     "2021-22"
    ],
    "definition": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Is the Anganwadi Worker trained in early childhood education :",
-   "dct:provenance": "matched to a form item on the words the two share",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cAnganwadi Worker\u201d. Remarks: Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
+   ],
    "references": "DCF item 1.36(c)",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -5434,9 +5459,10 @@
    "definition": "Whether School is Approachable by All-Weather Roads?",
    "dct:provenance": [
     "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cApproachable by all-weather roads\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cSchool approachable by all-weather roads\u201d. Remarks: Yes=1, No=2"
    ],
-   "references": "DCF item 1.37"
+   "references": "DCF item 1.34"
   },
   {
    "@id": "udise:profile_data_1.assembly",
@@ -5496,7 +5522,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Higher Secondary",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as numeric(4,, described as \u201cAverage School hours for children in Higher Secondary\u201d"
+   ],
+   "references": "DCF item 1.36d"
   },
   {
    "@id": "udise:profile_data_1.avg_school_hrs_student_pr",
@@ -5512,7 +5544,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Primary:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as numeric(4,, described as \u201cAverage School hours for children in Primary\u201d"
+   ],
+   "references": "DCF item 1.36a"
   },
   {
    "@id": "udise:profile_data_1.avg_school_hrs_student_sec",
@@ -5528,7 +5566,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Secondary:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as numeric(4,, described as \u201cAverage School hours for children in Secondary\u201d"
+   ],
+   "references": "DCF item 1.36c"
   },
   {
    "@id": "udise:profile_data_1.avg_school_hrs_student_up",
@@ -5544,7 +5588,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "Average School hours for children (per-day) \u2013 Number of hours children stay in School: \u2014 Upper Primary:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as numeric(4,, described as \u201cAverage School hours for children in Upper Primary\u201d"
+   ],
+   "references": "DCF item 1.36b"
   },
   {
    "@id": "udise:profile_data_1.avg_school_hrs_teacher_hsec",
@@ -5560,7 +5610,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Higher Secondary",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as numeric(4,, described as \u201cAverage working hours for Teachers in Higher Secondary\u201d"
+   ],
+   "references": "DCF item 1.37d"
   },
   {
    "@id": "udise:profile_data_1.avg_school_hrs_teacher_pr",
@@ -5576,7 +5632,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Primary:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as numeric(4,, described as \u201cAverage working hours for Teachers in Primary\u201d"
+   ],
+   "references": "DCF item 1.37a"
   },
   {
    "@id": "udise:profile_data_1.avg_school_hrs_teacher_sec",
@@ -5592,7 +5654,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Secondary:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as numeric(4,, described as \u201cAverage working hours for Teachers in Secondary\u201d"
+   ],
+   "references": "DCF item 1.37c"
   },
   {
    "@id": "udise:profile_data_1.avg_school_hrs_teacher_up",
@@ -5608,7 +5676,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "Average School hours for teachers (per-day) \u2013 Number of hours teachers stay in School: \u2014 Upper Primary:",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as numeric(4,, described as \u201cAverage working hours for Teachers in Upper Primary\u201d"
+   ],
+   "references": "DCF item 1.37b"
   },
   {
    "@id": "udise:profile_data_1.block",
@@ -5647,7 +5721,7 @@
    "definition": "Is CCE being implemented in school? : \u2014 Higher secondary :",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHigher Secondary\u201d. Remarks: Codes : 3,5,10,11"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cCCE being implemented in school in Higher Secondary\u201d. Remarks: Applicable for School Category Codes : 3,5,10,11"
    ],
    "references": "DCF item 1.40(d)",
    "scopeNote": "1-Yes, 2-No"
@@ -5670,7 +5744,7 @@
    "definition": "Is Continuous and Comprehensive Evaluation (CCE) being implemented in School? \u2014 Primary",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary\u201d. Remarks: Codes : 1,2,3,6"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cCCE being implemented in school in Primary\u201d. Remarks: Applicable for School Category Codes : 1,2,3,6"
    ],
    "references": "DCF item 1.36(i)",
    "scopeNote": "1-Yes, 2-No"
@@ -5693,7 +5767,7 @@
    "definition": "Is CCE being implemented in school? : \u2014 Secondary :",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary\u201d. Remarks: Codes : 3,5,6,7,8,10"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cCCE being implemented in school in Secondary\u201d. Remarks: Applicable for School Category Codes : 3,5,6,7,8,10"
    ],
    "references": "DCF item 1.40(c)",
    "scopeNote": "1-Yes, 2-No"
@@ -5713,12 +5787,12 @@
     "2020-21",
     "2021-22"
    ],
-   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
+   "definition": "Is Continuous and Comprehensive Evaluation (CCE) being implemented in School? \u2014 Primary",
    "dct:provenance": [
     "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cUpper Primary\u201d. Remarks: Codes: 2,3,4,5,6,7"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cCCE being implemented in school in Upper Primary\u201d. Remarks: Applicable for School Category Codes: 2,3,4,5,6,7"
    ],
-   "references": "DCF item 1.19b"
+   "references": "DCF item 1.38i"
   },
   {
    "@id": "udise:profile_data_1.cce_yn",
@@ -5895,7 +5969,7 @@
    "definition": "Number of instructional days (previous academic year) : \u2014 Higher Secondary",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHigher Secondary\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNumber of Instructional days for Higher Secondary\u201d"
    ],
    "references": "DCF item 1.33(d)"
   },
@@ -5917,7 +5991,7 @@
    "definition": "Number of instructional days (previous academic year) : \u2014 Primary:",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNumber of Instructional days for Primary\u201d"
    ],
    "references": "DCF item 1.33(a)"
   },
@@ -5939,7 +6013,7 @@
    "definition": "Number of instructional days (previous academic year) : \u2014 Secondary:",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNumber of Instructional days for Secondary\u201d"
    ],
    "references": "DCF item 1.33(c)"
   },
@@ -5961,7 +6035,7 @@
    "definition": "Number of instructional days (previous academic year) : \u2014 Upper Primary:",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNumber of Instructional days for Upper Primary\u201d"
    ],
    "references": "DCF item 1.33(b)"
   },
@@ -5998,6 +6072,9 @@
    "temporal": "2025-26/2025-26",
    "valid": [
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2025-26 as smallint, described as \u201cSchool providing Holistic Report Card for every Learner based on peer/self/teacher assessment\u201d. Remarks: Yes=1, No=2"
    ]
   },
   {
@@ -6363,6 +6440,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNew admission of students in class 1 who have pre-school experience Other school boys\u201d. Remarks: Boys +Transgenders"
    ]
   },
   {
@@ -6379,6 +6459,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNew admission of students in class 1 who have pre-school experience other school girls\u201d"
    ]
   },
   {
@@ -6554,7 +6637,7 @@
     "pseudocode"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as bigint, described as \u201cof school)\u201d"
+    "Shared 2018-19 to 2021-22 as bigint, described as \u201cPsuedo Code(Unique Identity Number of school)\u201d"
    ],
    "note": [
     "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
@@ -6600,7 +6683,8 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cResidential school\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cResidential school\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cIs this a Residential School?\u201d. Remarks: 1-Completely Residential, 2-Partially Residential, 3-Non-Residential"
    ]
   },
   {
@@ -6688,6 +6772,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNew admission of students in class 1 who have pre-school experience same school boys\u201d. Remarks: Boys +Transgenders"
    ]
   },
   {
@@ -6704,6 +6791,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNew admission of students in class 1 who have pre-school experience same school girls\u201d"
    ]
   },
   {
@@ -7105,7 +7195,7 @@
    "definition": "Details of visits to the school during the previous academic year: \u2014 Number of visits by CRC Coordinator:",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cordinator\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNumber of visits by CRC Co- ordinator\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of visits by CRC Co- ordinator in school\u201d"
    ],
    "references": "DCF item 1.44(b)"
@@ -7132,7 +7222,7 @@
    "definition": "Details of visits to the school during the previous academic year : \u2014 No of visits by District/State Level Officers:",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cLevel officers\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNumber of visits by District/State Level officers\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of visits by District/State Level officers in school\u201d"
    ],
    "references": "DCF item 1.49(d)"
@@ -7186,7 +7276,7 @@
    "definition": "Availability of free text books, Teaching Learning Material (TLM), Play material (in current academic",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cto children in Upper Primary Grade\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cFree Textbook Facility provided to children in Upper Primary Grade\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cFree Textbook Facility provided to school childrens in Upper Primary Grade\u201d. Remarks: Yes=1, No=2"
    ],
    "references": "DCF item 1.56"
@@ -7210,13 +7300,10 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
    "dct:provenance": [
-    "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cchildren in Primary Grade\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cFree Uniform Facility provided to children in Primary Grade\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cFree Uniform Facility provided to school childrens in Primary Grade\u201d. Remarks: Yes=1, No=2"
-   ],
-   "references": "DCF item 5.1"
+   ]
   },
   {
    "@id": "udise:profile_data_2.free_uniform_up",
@@ -7237,9 +7324,13 @@
     "2024-25",
     "2025-26"
    ],
+   "definition": "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
    "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cFree Uniform Facility provided to children in Upper Primary Grade\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cFree Uniform Facility provided to school childrens in Upper Primary Grade\u201d. Remarks: Yes=1, No=2"
-   ]
+   ],
+   "references": "DCF item 5.2"
   },
   {
    "@id": "udise:profile_data_2.grants_expenditure",
@@ -7259,7 +7350,14 @@
     "2023-24",
     "2024-25",
     "2025-26"
-   ]
+   ],
+   "definition": "Grants received by the school & expenditure made during the financial year 2020-21 (Govt. and Govt.",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as double precision, described as \u201cSchool Grants Expenditure(In Rs.)\u201d",
+    "Shared 2022-23 to 2025-26 as double precision, described as \u201cTotal Grants Expenditure (In Rs.) in school\u201d"
+   ],
+   "references": "DCF item 8.1"
   },
   {
    "@id": "udise:profile_data_2.grants_receipt",
@@ -7279,6 +7377,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as double precision, described as \u201cSchool Grants Receipt(In Rs.)\u201d",
+    "Shared 2022-23 to 2025-26 as double precision, described as \u201cTotal Grants Recieved(In Rs.) in school\u201d"
    ]
   },
   {
@@ -7300,13 +7402,10 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Whether any Out of School Children enrolled in the school are \u2014 Number of children ENROLLED for Special Training in PREVIOUS Academic year:",
    "dct:provenance": [
-    "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cin previous academic year\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGraded Supplementary Material in previous academic year\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cGraded Supplementary Material in previous academic year\u201d. Remarks: Yes=1, No=2"
-   ],
-   "references": "DCF item 1.43b"
+   ]
   },
   {
    "@id": "udise:profile_data_2.pseudocode",
@@ -7355,7 +7454,7 @@
     "pseudocode"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as bigint, described as \u201cNumber of school)\u201d"
+    "Shared 2018-19 to 2021-22 as bigint, described as \u201cPsuedo Code(Unique Identity Number of school)\u201d"
    ],
    "note": [
     "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
@@ -7377,6 +7476,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c0_b",
    "altLabel": [
     "rte_ews_c0_b"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Pre-Primary Boys\u201d"
    ]
   },
   {
@@ -7394,6 +7496,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c0_g",
    "altLabel": [
     "rte_ews_c0_g"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Pre-Primary Girls\u201d"
    ]
   },
   {
@@ -7411,6 +7516,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c1_b",
    "altLabel": [
     "rte_ews_c1_b"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-1 Boys\u201d"
    ]
   },
   {
@@ -7428,6 +7536,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c1_g",
    "altLabel": [
     "rte_ews_c1_g"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-1 Girls\u201d"
    ]
   },
   {
@@ -7445,6 +7556,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c2_b",
    "altLabel": [
     "rte_ews_c2_b"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-2 Boys\u201d"
    ]
   },
   {
@@ -7462,6 +7576,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c2_g",
    "altLabel": [
     "rte_ews_c2_g"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-2 Girls\u201d"
    ]
   },
   {
@@ -7479,6 +7596,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c3_b",
    "altLabel": [
     "rte_ews_c3_b"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-3 Boys\u201d"
    ]
   },
   {
@@ -7496,6 +7616,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c3_g",
    "altLabel": [
     "rte_ews_c3_g"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-3 Girls\u201d"
    ]
   },
   {
@@ -7513,6 +7636,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c4_b",
    "altLabel": [
     "rte_ews_c4_b"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-4 Boys\u201d"
    ]
   },
   {
@@ -7530,6 +7656,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c4_g",
    "altLabel": [
     "rte_ews_c4_g"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-4 Girls\u201d"
    ]
   },
   {
@@ -7547,6 +7676,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c5_b",
    "altLabel": [
     "rte_ews_c5_b"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-5 Boys\u201d"
    ]
   },
   {
@@ -7564,6 +7696,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c5_g",
    "altLabel": [
     "rte_ews_c5_g"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-5 Girls\u201d"
    ]
   },
   {
@@ -7581,9 +7716,6 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c6_b",
    "altLabel": [
     "rte_ews_c6_b"
-   ],
-   "dct:provenance": [
-    "Shared 2018-19 as smallint, described as \u201cequipment for Class-6 Boys\u201d"
    ]
   },
   {
@@ -7601,6 +7733,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c6_g",
    "altLabel": [
     "rte_ews_c6_g"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-6 Girls\u201d"
    ]
   },
   {
@@ -7618,6 +7753,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c7_b",
    "altLabel": [
     "rte_ews_c7_b"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-7 Boys\u201d"
    ]
   },
   {
@@ -7635,6 +7773,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c7_g",
    "altLabel": [
     "rte_ews_c7_g"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-7 Girls\u201d"
    ]
   },
   {
@@ -7652,6 +7793,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c8_b",
    "altLabel": [
     "rte_ews_c8_b"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-8 Boys\u201d"
    ]
   },
   {
@@ -7669,9 +7813,6 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c8_g",
    "altLabel": [
     "rte_ews_c8_g"
-   ],
-   "dct:provenance": [
-    "Shared 2018-19 as smallint, described as \u201cequipment for Class-8 Girls\u201d"
    ]
   },
   {
@@ -7728,7 +7869,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEconomically Weaker Section Student Enrolled for Class-10 Boys\u201d"
    ]
   },
   {
@@ -7747,7 +7888,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEconomically Weaker Section Student Enrolled for Class-10 Girls\u201d"
    ]
   },
   {
@@ -7766,7 +7907,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEconomically Weaker Section Student Enrolled for Class-11 Boys\u201d"
    ]
   },
   {
@@ -7785,7 +7926,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEconomically Weaker Section Student Enrolled for Class-11 Girls\u201d"
    ]
   },
   {
@@ -7804,7 +7945,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEconomically Weaker Section Student Enrolled for Class-12 Boys\u201d"
    ]
   },
   {
@@ -7823,7 +7964,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEconomically Weaker Section Student Enrolled for Class-12 Girls\u201d"
    ]
   },
   {
@@ -8144,6 +8285,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEconomically Weaker Section Student Enrolled for Class-9 Boys\u201d"
    ]
   },
   {
@@ -8160,6 +8304,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEconomically Weaker Section Student Enrolled for Class-9 Girls\u201d"
    ]
   },
   {
@@ -8178,7 +8325,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary Boys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Pre- Primary Boys\u201d"
    ]
   },
   {
@@ -8197,7 +8344,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary Girls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Pre- Primary Girls\u201d"
    ]
   },
   {
@@ -8216,7 +8363,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-1 Boys\u201d"
    ]
   },
   {
@@ -8235,7 +8382,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-1 Girls\u201d"
    ]
   },
   {
@@ -8254,7 +8401,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-2 Boys\u201d"
    ]
   },
   {
@@ -8273,7 +8420,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-2 Girls\u201d"
    ]
   },
   {
@@ -8292,7 +8439,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-3 Boys\u201d"
    ]
   },
   {
@@ -8311,7 +8458,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-3 Girls\u201d"
    ]
   },
   {
@@ -8330,7 +8477,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-4 Boys\u201d"
    ]
   },
   {
@@ -8349,7 +8496,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-4 Girls\u201d"
    ]
   },
   {
@@ -8368,7 +8515,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-5 Boys\u201d"
    ]
   },
   {
@@ -8387,7 +8534,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-5 Girls\u201d"
    ]
   },
   {
@@ -8406,7 +8553,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-6 Boys\u201d"
    ]
   },
   {
@@ -8425,7 +8572,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-6 Girls\u201d"
    ]
   },
   {
@@ -8444,7 +8591,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-7 Boys\u201d"
    ]
   },
   {
@@ -8463,7 +8610,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-7 Girls\u201d"
    ]
   },
   {
@@ -8482,7 +8629,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cBoys\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-8 Boys\u201d"
    ]
   },
   {
@@ -8501,7 +8648,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGirls\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cStudent Enrolled under RTE Act in Private unaided for Class-8 Girls\u201d"
    ]
   },
   {
@@ -8523,9 +8670,13 @@
     "2024-25",
     "2025-26"
    ],
+   "definition": "(a) Whether School Management Committee (SMC) has",
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201c(SMC) has been constituted\u201d"
-   ]
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool Management Committee (SMC) has been constituted\u201d. Remarks: Applicable for School Category Codes : 1,2,3,4,5,6,7 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cWhether School Management Committee (SMC) has been constituted as per RTE norms?\u201d. Remarks: Yes=1, No=2"
+   ],
+   "references": "DCF item 1.47"
   },
   {
    "@id": "udise:profile_data_2.smc_smdc_meetings",
@@ -8569,7 +8720,11 @@
     "2025-26"
    ],
    "definition": "Whether School Management Committee (SMC) and School Management and Development \u2014 Whether SMDC has prepared School Improvement Plan?                                                    (Yes=1, No=2)",
-   "dct:provenance": "matched to a form item on the words the two share",
+   "dct:provenance": [
+    "matched to a form item on the words the two share",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool Management Committee (SMC) and School Management and Development Committee (SMDC) are same in the school\u201d. Remarks: Applicable for School Category Codes : 3,5,6,7,8,10,11 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cWhether School Development and Management Committee have been Constituted as per Samagra Shiksha guidelines?\u201d. Remarks: 1- Yes, 2-No, 3- Same as SMC"
+   ],
    "references": "DCF item 1.51(c)"
   },
   {
@@ -8586,7 +8741,13 @@
     "2019-20",
     "2020-21",
     "2021-22"
-   ]
+   ],
+   "definition": "(a) Whether School Management Committee (SMC) has \u2014 Whether School Development and Management Committee have been",
+   "dct:provenance": [
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool Management and Development Committee has been constituted\u201d. Remarks: Applicable for School Category Codes : 3,5,6,7,8,10,11 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"
+   ],
+   "references": "DCF item 1.47b"
   },
   {
    "@id": "udise:profile_data_2.special_training",
@@ -8607,10 +8768,13 @@
     "2024-25",
     "2025-26"
    ],
+   "definition": "Whether any Out of School Children enrolled in the school are \u2014 Number of children ENROLLED for Special Training in CURRENT Academic year:",
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTraining\u201d",
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSchool are attending Special Training\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cWhether school providing Special Training to out of school children\u201d. Remarks: Yes=1, No=2"
-   ]
+   ],
+   "references": "DCF item 1.43a"
   },
   {
    "@id": "udise:profile_data_2.text_books_received",
@@ -8649,12 +8813,9 @@
     "2020-21",
     "2021-22"
    ],
-   "definition": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
    "dct:provenance": [
-    "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cto children in Primary Grade\u201d"
-   ],
-   "references": "DCF item 5.1"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cFree Transport Facility provided to children in Primary Grade\u201d"
+   ]
   },
   {
    "@id": "udise:profile_data_2.transport_up",
@@ -8671,9 +8832,12 @@
     "2020-21",
     "2021-22"
    ],
+   "definition": "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cGrade\u201d"
-   ]
+    "unknown",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cFree Transport Facility provided to children in Upper Primary Grade\u201d"
+   ],
+   "references": "DCF item 5.2"
   },
   {
    "@id": "udise:teacher_data.bachelor_of_ee",
@@ -8695,8 +8859,8 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cof Elementary Education(B.EI.Ed)\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Bachelor of\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Professional Qualification is Bachelor of Elementary Education(B.EI.Ed)\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Bachelor of Elementary Education(B.EI.Ed) in school\u201d"
    ]
   },
   {
@@ -8719,8 +8883,8 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEquivalent\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is B.ED or\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Professional Qualification is B.ED or Equivalent\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is B.ED or Equivalent in school\u201d"
    ]
   },
   {
@@ -8737,6 +8901,9 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is B. Ed (Nursery) from NCTE recognized institution in school\u201d"
    ]
   },
   {
@@ -8758,13 +8925,10 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
    "dct:provenance": [
-    "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary and Higher Secondary)\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Academic Qualification is Below Graduate\u201d"
-   ],
-   "references": "DCF item 1.19d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Academic Qualification is Below Graduate (Include Below Secondary, Secondary and Higher Secondary)\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Academic Qualification is Below Graduate (Include Below Secondary, Secondary and Higher Secondary) in school\u201d"
+   ]
   },
   {
    "@id": "udise:teacher_data.class_taught_hsec_only",
@@ -8785,13 +8949,10 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
    "dct:provenance": [
-    "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cHigher Secondary Only\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Teachers whose Class Taught is Higher Secondary Only\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Higher Secondary Only in school\u201d"
-   ],
-   "references": "DCF item 1.19d"
+   ]
   },
   {
    "@id": "udise:teacher_data.class_taught_pr",
@@ -8813,7 +8974,7 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Teachers whose Class Taught is Primary\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Primary in school\u201d"
    ]
   },
@@ -8837,6 +8998,7 @@
     "2025-26"
    ],
    "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Teachers whose Class Taught is Pre-Primary and Primary\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Pre- Primary and Primary in school\u201d"
    ]
   },
@@ -8859,12 +9021,10 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Upper primary:",
    "dct:provenance": [
-    "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cPrimary and Upper Primary\u201d"
-   ],
-   "references": "DCF item 1.19b"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Teachers whose Class Taught is Primary and Upper Primary\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Primary and Upper Primary in school\u201d"
+   ]
   },
   {
    "@id": "udise:teacher_data.class_taught_sec_hsec",
@@ -8885,13 +9045,10 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): \u2014 Higher Secondary",
    "dct:provenance": [
-    "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary and Higher Secondary\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Secondary and Higher Secondary in\u201d"
-   ],
-   "references": "DCF item 1.19d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Teachers whose Class Taught is Secondary and Higher Secondary\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Secondary and Higher Secondary in school\u201d"
+   ]
   },
   {
    "@id": "udise:teacher_data.class_taught_sec_only",
@@ -8913,7 +9070,7 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cSecondary Only\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Teachers whose Class Taught is Secondary Only\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Secondary Only in school\u201d"
    ]
   },
@@ -8939,7 +9096,7 @@
    "definition": "Subjects taught in school: \u2014 Curriculum followed by School in UPPER PRIMARY Section?",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cUpper Primary\u201d",
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Teachers whose Class Taught is Upper Primary\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Upper Primary in school\u201d"
    ],
    "references": "DCF item 1.26(b)",
@@ -8964,13 +9121,10 @@
     "2024-25",
     "2025-26"
    ],
-   "definition": "Year of upgradation of the school (if applicable): \u2014 Upper Primary to Secondary:",
    "dct:provenance": [
-    "unknown",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cUpper Primary and Secondary\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Upper Primary and Secondary in\u201d"
-   ],
-   "references": "DCF item 1.20b"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. of Teachers whose Class Taught is Upper Primary and Secondary\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Class Taught is Upper Primary and Secondary in school\u201d"
+   ]
   },
   {
    "@id": "udise:teacher_data.class_taugt_pre_primary_only",
@@ -9040,8 +9194,8 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cof a duration not less than two years\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma or\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Professional Qualification is Diploma or certificate in basic teacher training of a duration not less than two years\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma or certificate in basic teachers training of a duration not less than two years in school\u201d"
    ]
   },
   {
@@ -9060,7 +9214,7 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma in\u201d"
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma in Elementary Education (D.El.Ed.) in school\u201d"
    ]
   },
   {
@@ -9085,8 +9239,8 @@
    "definition": "Details of the Special Educator \u2014 Diploma/Degree in Special Education in :",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cDegree in Special Education\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma /\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Professional Qualification is Diploma / Degree in Special Education\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma / Degree in Special Education in school\u201d"
    ],
    "references": "DCF item 3.5(b)",
    "scopeNote": "1-Dedicated, 2-At block/cluster level, 3-No"
@@ -9109,7 +9263,7 @@
    "definition": "Whether Anganwadi Centre is located inside the school premises ? \u2014 Is the Anganwadi Worker trained in early childhood education :",
    "dct:provenance": [
     "matched to a form item on the words the two share",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma in\u201d"
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Diploma in Nursery teachers Education/ Pre-school education/ Early Childhood Education Program of a duration not less than two years from NCTE recognized institution in school\u201d"
    ],
    "references": "DCF item 1.36(c)",
    "scopeNote": "1-Yes, 2-No"
@@ -9175,6 +9329,10 @@
     "2023-24",
     "2024-25",
     "2025-26"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Academic Qualification is Graduate\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Academic Qualification is Graduate in school\u201d"
    ]
   },
   {
@@ -9221,8 +9379,8 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cEquivalent\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is M.ED or\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Professional Qualification is M.ED or Equivalent\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is M.ED or Equivalent in school\u201d"
    ]
   },
   {
@@ -9245,7 +9403,8 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cProfessional Qualification is None\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Professional Qualification is None\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is None in school\u201d"
    ]
   },
   {
@@ -9287,7 +9446,8 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cProfessional Qualification is Others\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Professional Qualification is Others\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Others in school\u201d"
    ]
   },
   {
@@ -9334,7 +9494,8 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cDoctoral)\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cAcademic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral)\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAcademic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral) in school\u201d"
    ]
   },
   {
@@ -9384,7 +9545,7 @@
     "pseudocode"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as bigint, described as \u201cof school)\u201d"
+    "Shared 2018-19 to 2021-22 as bigint, described as \u201cPsuedo Code(Unique Identity Number of school)\u201d"
    ],
    "note": [
     "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
@@ -9411,8 +9572,8 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cany Relevant Professional Course\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Pursuing any\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Professional Qualification is Pursuing any Relevant Professional Course\u201d",
+    "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of teachers whose Highest Professional Qualification is Pursuing any Relevant Professional Course in school\u201d"
    ]
   },
   {
@@ -9539,7 +9700,7 @@
     "2021-22"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cabove 55\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of Teacher whose Aged above 55\u201d"
    ]
   },
   {
@@ -9672,6 +9833,7 @@
     "2025-26"
    ],
    "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of Transgender Teacher\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Transgenders teachers in school\u201d"
    ]
   },

@@ -1082,6 +1082,7 @@ udise:enrolment_data_1.item_group a skos:Concept ;
     dct:isPartOf "enrolment_data_1" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Item Group =1,Item Id = 1 Then General”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_group\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
 
@@ -1094,6 +1095,7 @@ udise:enrolment_data_1.item_id a skos:Concept ;
     dct:isPartOf "enrolment_data_1" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “General, SC, ST, OBC, Muslims, Christians, Sikh, Buddhist,Parsi, Jain BPL, EWS and CWSN Enrolment with disability type,Repeater”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_id\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
 
@@ -1122,6 +1124,7 @@ udise:enrolment_data_1.psuedocode a skos:Concept ;
     dct:isPartOf "enrolment_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as bigint, described as “Psuedo Code(Unique Identity Number of school)”"@en ;
     dct:isVersionOf udise:series.enrolment_data_1.psuedocode ;
     skos:altLabel "pseudocode"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"psuedocode\", \"to\": \"pseudocode\", \"basis\": \"the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"release\"}"@en ;
@@ -1689,7 +1692,7 @@ udise:enrolment_data_2.cpp_b a skos:Concept ;
     dct:isPartOf "enrolment_data_2" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Age Wise Enrolment in Class Pre-Primary Boys”"@en .
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Age Wise Enrolment in Class Pre-Primary Boys”. Remarks: (pp3_b+pp2_b+pp1_b)"@en .
 
 udise:enrolment_data_2.cpp_g a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1736,7 +1739,7 @@ udise:enrolment_data_2.item_group a skos:Concept ;
     dct:isPartOf "enrolment_data_2" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “item_group=8”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Item Group =1,Item Id = 1 Then General”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_group\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en .
 
@@ -1813,7 +1816,7 @@ udise:facility_data.availability_ramps a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2018-19 Data Capture Format."@en ;
     dct:references "DCF item 2.15" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “school building”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Available Ramp for disabled children to access school building”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Available Ramp for disabled children to access school building in school”. Remarks: Yes=1, No=2"@en .
 
 udise:facility_data.bio_lab_cond a skos:Concept ;
@@ -2076,7 +2079,7 @@ udise:facility_data.digiboard a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2026-27 Data Capture Format."@en ;
     dct:references "DCF item 2.24(e)" ;
     skos:scopeNote "count"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Management Systems”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “School have No. Of Digital Boards with Content Management Systems”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of Digital Boards with Content Management Systems in school”"@en .
 
 udise:facility_data.drinking_water_available a skos:Concept ;
@@ -2140,7 +2143,6 @@ udise:facility_data.electricity_availability a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2025-26 Data Capture Format."@en ;
     dct:references "DCF item 2.5(a)" ;
     skos:scopeNote "1-Yes, 2-No, 3-Yes but not Functional"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “electricity connection available in the School”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Electricity connection available in school”. Remarks: 1:Yes,2:No, 3:Yes, but not functional"@en ;
     skos:note "type-code-as-binary: A column that looks like a yes/no carries more codes than yes and no. boundary_wall has eight types. electricity_availability, solar_panel and rain_water_harvesting each carry a third code, 'yes but not functional'. Read `= 1` as the affirmative and every other code silently becomes a negative. Read this column's own code list, shown above, before averaging anything."@en .
 
@@ -2169,7 +2171,7 @@ udise:facility_data.func_boys_cwsn_friendly a skos:Concept ;
     dct:isPartOf "facility_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of CWSN friendly toilet seats for Functional Boys”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of Functional CWSN friendly toilet seats for Boys in school”"@en .
 
 udise:facility_data.func_girls_cwsn_friendly a skos:Concept ;
@@ -2198,7 +2200,7 @@ udise:facility_data.furniture_availability a skos:Concept ;
     dct:references "DCF item 2.19" ;
     skos:scopeNote "1-Yes, 2-No, 3-Partial"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of students for whom Furniture available”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of students for whom Furniture available in school”"@en .
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of students for whom Furniture available in school”. Remarks: 1-Yes for all, 2-Partial, 3-No Furniture Available"@en .
 
 udise:facility_data.geo_lab_cond a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2257,7 +2259,8 @@ udise:facility_data.handwash_facility_for_meal a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item. The form year is not recorded, so the item number alone may point at a later form."@en ;
     dct:references "DCF item 2.8" ;
     skos:scopeNote "1-Yes, 2-No, 9-Not applicable"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “washing hands before and after meal”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Handwashing facility with soap available for washing hands before and after meal”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Handwashing facility with soap available for washing hands before and after meal in school”. Remarks: Yes=1, No=2"@en .
 
 udise:facility_data.handwash_near_toilet a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2272,7 +2275,7 @@ udise:facility_data.handwash_near_toilet a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item. The form year is not recorded, so the item number alone may point at a later form."@en ;
     dct:references "DCF item 2.7" ;
     skos:scopeNote "1-Yes, 2-No, 9-Not applicable"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “toilets”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Hand washing facility with soap available near toilets”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Hand washing facility with soap available near toilets in school”. Remarks: Yes=1, No=2"@en .
 
 udise:facility_data.home_sc_lab_cond a skos:Concept ;
@@ -2468,7 +2471,7 @@ udise:facility_data.medical_checkups a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2025-26 Data Capture Format."@en ;
     dct:references "DCF item 2.14(a)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “academic year”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Medical check-up of students conducted in last academic year”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Medical check-up of students conducted in last academic year in school”. Remarks: Yes=1, No=2"@en .
 
 udise:facility_data.no_building_blocks a skos:Concept ;
@@ -2787,6 +2790,7 @@ udise:facility_data.smart_class_tv_tot a skos:Concept ;
     dct:isPartOf "facility_data" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of Smart Class rooms used for teaching with Digital boards/ Smart boards/ Virtual classrooms/ Smart TV in school”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"smart_class_tv_tot\"}"@en .
 
 udise:facility_data.solar_panel a skos:Concept ;
@@ -2945,7 +2949,8 @@ udise:facility_data.total_boys_func_toilet a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2026-27 Data Capture Format."@en ;
     dct:references "DCF item 2.7" ;
     skos:scopeNote "count"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “friendly toilets for Functional Boys”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of toilet seats available excluding CWSN friendly toilets for Functional Boys”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of Functional toilet seats available excluding CWSN friendly toilets for Boys in school”"@en .
 
 udise:facility_data.total_boys_toilet a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2960,7 +2965,8 @@ udise:facility_data.total_boys_toilet a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2026-27 Data Capture Format."@en ;
     dct:references "DCF item 2.7" ;
     skos:scopeNote "count"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “friendly toilets for Total Boys”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of toilet seats available excluding CWSN friendly toilets for Total Boys”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of toilet seats available excluding CWSN friendly toilets for Total Boys in school”"@en .
 
 udise:facility_data.total_class_rooms a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -3006,7 +3012,8 @@ udise:facility_data.total_girls_func_toilet a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2026-27 Data Capture Format."@en ;
     dct:references "DCF item 2.7" ;
     skos:scopeNote "count"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “friendly toilets for Functional Girls”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of toilet seats available excluding CWSN friendly toilets for Functional Girls”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of Functional toilet seats available excluding CWSN friendly toilets for Girls”"@en .
 
 udise:facility_data.total_girls_toilet a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -3021,7 +3028,8 @@ udise:facility_data.total_girls_toilet a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2026-27 Data Capture Format."@en ;
     dct:references "DCF item 2.7" ;
     skos:scopeNote "count"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “friendly toilets for Total Girls”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of toilet seats available excluding CWSN friendly toilets for Total Girls”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of toilet seats available excluding CWSN friendly toilets for Total Girls in school”"@en .
 
 udise:facility_data.urinal_boys a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -3147,10 +3155,10 @@ udise:profile_data_1.aff_board_hsec a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    skos:definition "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary"@en ;
-    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
-    dct:references "DCF item 1.19d" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Higher Secondary”. Remarks: 3,5,10,11"@en ;
+    skos:definition "(a) Affiliation Board type of school for HIGHER SECONDARY Section:"@en ;
+    skos:editorialNote "Question: source not stated, from the 2025-26 Data Capture Format."@en ;
+    dct:references "DCF item 1.20" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Affiliation Board of the school for Higher Secondary”. Remarks: Applicable for School Category Codes : 3,5,10,11"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “School affiliation Board of the school for Higher Secondary”. Remarks: As per UDISE DCF"@en .
 
 udise:profile_data_1.aff_board_sec a skos:Concept ;
@@ -3165,7 +3173,7 @@ udise:profile_data_1.aff_board_sec a skos:Concept ;
     skos:definition "Affiliation Board of the school for SECONDARY Sections:"@en ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2024-25 Data Capture Format."@en ;
     dct:references "DCF item 1.16" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Secondary”. Remarks: 3,5,6,7,8,10"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Affiliation Board of the school for Secondary”. Remarks: Applicable for School Category Codes : 3,5,6,7,8,10"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “School affiliation Board of the school for Secondary”. Remarks: As per UDISE DCF"@en .
 
 udise:profile_data_1.anganwadi_boys a skos:Concept ;
@@ -3181,7 +3189,7 @@ udise:profile_data_1.anganwadi_boys a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2020-21 Data Capture Format."@en ;
     dct:references "DCF item 1.36(b)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys in Anganwadi Centre”. Remarks: 1,2,3,4,6,90,91,92,93,94,95,96"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys in Anganwadi Centre”. Remarks: Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"@en ;
     dct:isVersionOf udise:series.profile_data_1.anganwadi_boys ;
     skos:altLabel "anganwadi_ecce_b"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"anganwadi_boys\", \"to\": \"anganwadi_ecce_b\", \"basis\": \"the Boys cell of the unchanged anganwadi grid; populated to 2021-22 and null after, while anganwadi_ecce_b is null before and populated after\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en ;
@@ -3196,6 +3204,7 @@ udise:profile_data_1.anganwadi_ecce_b a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “New admission of students in class 1 who have pre-school experience anganwadi ecce centres boys”. Remarks: Boys +Transgenders"@en ;
     dct:isVersionOf udise:series.profile_data_1.anganwadi_boys ;
     skos:altLabel "anganwadi_boys"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"anganwadi_boys\", \"to\": \"anganwadi_ecce_b\", \"basis\": \"the Boys cell of the unchanged anganwadi grid; populated to 2021-22 and null after, while anganwadi_ecce_b is null before and populated after\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -3209,6 +3218,7 @@ udise:profile_data_1.anganwadi_ecce_g a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “New admission of students in class 1 who have pre-school experience anganwadi ecce centres girls”"@en ;
     dct:isVersionOf udise:series.profile_data_1.anganwadi_girls ;
     skos:altLabel "anganwadi_girls"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"anganwadi_girls\", \"to\": \"anganwadi_ecce_g\", \"basis\": \"the Girls cell of the same grid, same complementary coverage\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -3226,7 +3236,7 @@ udise:profile_data_1.anganwadi_girls a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2020-21 Data Capture Format."@en ;
     dct:references "DCF item 1.36(b)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls in Anganwadi Centre”. Remarks: 1,2,3,4,6,90,91,92,93,94,95,96"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls in Anganwadi Centre”. Remarks: Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"@en ;
     dct:isVersionOf udise:series.profile_data_1.anganwadi_girls ;
     skos:altLabel "anganwadi_ecce_g"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"anganwadi_girls\", \"to\": \"anganwadi_ecce_g\", \"basis\": \"the Girls cell of the same grid, same complementary coverage\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en ;
@@ -3244,7 +3254,7 @@ udise:profile_data_1.anganwadi_premises a skos:Concept ;
     skos:definition "Whether Anganwadi Centre(s) is/are located inside the school premises?"@en ;
     skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
     dct:references "DCF item 1.41" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Anganwadi Centre is located inside Management Codes : school premises”. Remarks: 1,2,3,4,6,90,91,92,93,94,95,96"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Anganwadi Centre is located inside school premises”. Remarks: Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"@en ;
     dct:isVersionOf udise:series.profile_data_1.anganwadi_premises ;
     skos:altLabel "anganwadi_yn"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"anganwadi_premises\", \"to\": \"anganwadi_yn\", \"basis\": \"same question (DCF 1.41 in 2021-22, 1.39 in 2022-23, identical wording) and the same value distribution: 2 appears 656,872 then 658,521 times, 9 then 1 then 0 follow in the same order\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en ;
@@ -3264,6 +3274,7 @@ udise:profile_data_1.anganwadi_worker a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2020-21 Data Capture Format."@en ;
     dct:references "DCF item 1.36(c)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Anganwadi Worker”. Remarks: Applicable for School Category Codes : 1,2,3,6 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"anganwadi_worker\"}"@en .
 
 udise:profile_data_1.anganwadi_yn a skos:Concept ;
@@ -3294,8 +3305,9 @@ udise:profile_data_1.approachable_road a skos:Concept ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
     skos:definition "Whether School is Approachable by All-Weather Roads?"@en ;
-    skos:editorialNote "Question: source not stated, from the 2025-26 Data Capture Format."@en ;
-    dct:references "DCF item 1.37" ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.34" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Approachable by all-weather roads”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “School approachable by all-weather roads”. Remarks: Yes=1, No=2"@en .
 
 udise:profile_data_1.assembly a skos:Concept ;
@@ -3338,6 +3350,10 @@ udise:profile_data_1.avg_school_hrs_student_hsec a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    skos:definition "Average School hours for children (per-day) – Number of hours children stay in School: — Higher Secondary"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.36d" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as numeric(4,, described as “Average School hours for children in Higher Secondary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"avg_school_hrs_student_hsec\"}"@en .
 
 udise:profile_data_1.avg_school_hrs_student_pr a skos:Concept ;
@@ -3349,6 +3365,10 @@ udise:profile_data_1.avg_school_hrs_student_pr a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    skos:definition "Average School hours for children (per-day) – Number of hours children stay in School: — Primary:"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.36a" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as numeric(4,, described as “Average School hours for children in Primary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"avg_school_hrs_student_pr\"}"@en .
 
 udise:profile_data_1.avg_school_hrs_student_sec a skos:Concept ;
@@ -3360,6 +3380,10 @@ udise:profile_data_1.avg_school_hrs_student_sec a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    skos:definition "Average School hours for children (per-day) – Number of hours children stay in School: — Secondary:"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.36c" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as numeric(4,, described as “Average School hours for children in Secondary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"avg_school_hrs_student_sec\"}"@en .
 
 udise:profile_data_1.avg_school_hrs_student_up a skos:Concept ;
@@ -3371,6 +3395,10 @@ udise:profile_data_1.avg_school_hrs_student_up a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    skos:definition "Average School hours for children (per-day) – Number of hours children stay in School: — Upper Primary:"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.36b" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as numeric(4,, described as “Average School hours for children in Upper Primary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"avg_school_hrs_student_up\"}"@en .
 
 udise:profile_data_1.avg_school_hrs_teacher_hsec a skos:Concept ;
@@ -3382,6 +3410,10 @@ udise:profile_data_1.avg_school_hrs_teacher_hsec a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    skos:definition "Average School hours for teachers (per-day) – Number of hours teachers stay in School: — Higher Secondary"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.37d" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as numeric(4,, described as “Average working hours for Teachers in Higher Secondary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"avg_school_hrs_teacher_hsec\"}"@en .
 
 udise:profile_data_1.avg_school_hrs_teacher_pr a skos:Concept ;
@@ -3393,6 +3425,10 @@ udise:profile_data_1.avg_school_hrs_teacher_pr a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    skos:definition "Average School hours for teachers (per-day) – Number of hours teachers stay in School: — Primary:"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.37a" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as numeric(4,, described as “Average working hours for Teachers in Primary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"avg_school_hrs_teacher_pr\"}"@en .
 
 udise:profile_data_1.avg_school_hrs_teacher_sec a skos:Concept ;
@@ -3404,6 +3440,10 @@ udise:profile_data_1.avg_school_hrs_teacher_sec a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    skos:definition "Average School hours for teachers (per-day) – Number of hours teachers stay in School: — Secondary:"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.37c" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as numeric(4,, described as “Average working hours for Teachers in Secondary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"avg_school_hrs_teacher_sec\"}"@en .
 
 udise:profile_data_1.avg_school_hrs_teacher_up a skos:Concept ;
@@ -3415,6 +3455,10 @@ udise:profile_data_1.avg_school_hrs_teacher_up a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    skos:definition "Average School hours for teachers (per-day) – Number of hours teachers stay in School: — Upper Primary:"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.37b" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as numeric(4,, described as “Average working hours for Teachers in Upper Primary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"avg_school_hrs_teacher_up\"}"@en .
 
 udise:profile_data_1.block a skos:Concept ;
@@ -3442,7 +3486,7 @@ udise:profile_data_1.cce_hsec a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2020-21 Data Capture Format."@en ;
     dct:references "DCF item 1.40(d)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Higher Secondary”. Remarks: Codes : 3,5,10,11"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “CCE being implemented in school in Higher Secondary”. Remarks: Applicable for School Category Codes : 3,5,10,11"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"cce_hsec\"}"@en .
 
 udise:profile_data_1.cce_pr a skos:Concept ;
@@ -3458,7 +3502,7 @@ udise:profile_data_1.cce_pr a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2022-23 Data Capture Format."@en ;
     dct:references "DCF item 1.36(i)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Primary”. Remarks: Codes : 1,2,3,6"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “CCE being implemented in school in Primary”. Remarks: Applicable for School Category Codes : 1,2,3,6"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"cce_pr\"}"@en .
 
 udise:profile_data_1.cce_sec a skos:Concept ;
@@ -3474,7 +3518,7 @@ udise:profile_data_1.cce_sec a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2020-21 Data Capture Format."@en ;
     dct:references "DCF item 1.40(c)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Secondary”. Remarks: Codes : 3,5,6,7,8,10"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “CCE being implemented in school in Secondary”. Remarks: Applicable for School Category Codes : 3,5,6,7,8,10"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"cce_sec\"}"@en .
 
 udise:profile_data_1.cce_up a skos:Concept ;
@@ -3486,10 +3530,10 @@ udise:profile_data_1.cce_up a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    skos:definition "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Upper primary:"@en ;
+    skos:definition "Is Continuous and Comprehensive Evaluation (CCE) being implemented in School? — Primary"@en ;
     skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
-    dct:references "DCF item 1.19b" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Upper Primary”. Remarks: Codes: 2,3,4,5,6,7"@en ;
+    dct:references "DCF item 1.38i" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “CCE being implemented in school in Upper Primary”. Remarks: Applicable for School Category Codes: 2,3,4,5,6,7"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"cce_up\"}"@en .
 
 udise:profile_data_1.cce_yn a skos:Concept ;
@@ -3608,7 +3652,7 @@ udise:profile_data_1.instr_days_hsec a skos:Concept ;
     skos:definition "Number of instructional days (previous academic year) : — Higher Secondary"@en ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2022-23 Data Capture Format."@en ;
     dct:references "DCF item 1.33(d)" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Higher Secondary”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Number of Instructional days for Higher Secondary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"instr_days_hsec\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"from\": [\"instr_days_pr\", \"instr_days_upr\", \"instr_days_sec\", \"instr_days_hsec\"], \"to\": [\"avg_instr_days\"], \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
 
@@ -3624,7 +3668,7 @@ udise:profile_data_1.instr_days_pr a skos:Concept ;
     skos:definition "Number of instructional days (previous academic year) : — Primary:"@en ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2022-23 Data Capture Format."@en ;
     dct:references "DCF item 1.33(a)" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Primary”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Number of Instructional days for Primary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"NOT_A_RENAME\", \"from\": \"instr_days_pr\", \"candidate\": \"avg_instr_days\", \"similarity\": null, \"why\": \"part of a MERGE, not a rename; see STRUCTURAL\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"instr_days_pr\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"from\": [\"instr_days_pr\", \"instr_days_upr\", \"instr_days_sec\", \"instr_days_hsec\"], \"to\": [\"avg_instr_days\"], \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
@@ -3641,7 +3685,7 @@ udise:profile_data_1.instr_days_sec a skos:Concept ;
     skos:definition "Number of instructional days (previous academic year) : — Secondary:"@en ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2022-23 Data Capture Format."@en ;
     dct:references "DCF item 1.33(c)" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Secondary”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Number of Instructional days for Secondary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"NOT_A_RENAME\", \"from\": \"instr_days_sec\", \"candidate\": \"avg_instr_days\", \"similarity\": null, \"why\": \"part of a MERGE, not a rename; see STRUCTURAL\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"instr_days_sec\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"MERGE\", \"from\": [\"instr_days_pr\", \"instr_days_upr\", \"instr_days_sec\", \"instr_days_hsec\"], \"to\": [\"avg_instr_days\"], \"detail\": \"four stage-wise instructional-day counts collapse into one average; the stage detail is gone, and an average is not any of the four\"}"@en .
@@ -3658,7 +3702,7 @@ udise:profile_data_1.instr_days_up a skos:Concept ;
     skos:definition "Number of instructional days (previous academic year) : — Upper Primary:"@en ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2022-23 Data Capture Format."@en ;
     dct:references "DCF item 1.33(b)" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Primary”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Number of Instructional days for Upper Primary”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"instr_days_up\"}"@en .
 
 udise:profile_data_1.is_nsqf a skos:Concept ;
@@ -3686,6 +3730,7 @@ udise:profile_data_1.learner_holistic_rptcard_yn a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2025-26/2025-26" ;
     dct:valid "2025-26" ;
+    dct:provenance "Shared 2025-26 as smallint, described as “School providing Holistic Report Card for every Learner based on peer/self/teacher assessment”. Remarks: Yes=1, No=2"@en ;
     skos:historyNote "{\"at\": \"2024-25 to 2025-26\", \"action\": \"INSERT\", \"field\": \"learner_holistic_rptcard_yn\"}"@en .
 
 udise:profile_data_1.lgd_block_name a skos:Concept ;
@@ -3904,6 +3949,7 @@ udise:profile_data_1.other_sch_b a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “New admission of students in class 1 who have pre-school experience Other school boys”. Remarks: Boys +Transgenders"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"other_sch_b\"}"@en .
 
 udise:profile_data_1.other_sch_g a skos:Concept ;
@@ -3915,6 +3961,7 @@ udise:profile_data_1.other_sch_g a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “New admission of students in class 1 who have pre-school experience other school girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"other_sch_g\"}"@en .
 
 udise:profile_data_1.panchyat a skos:Concept ;
@@ -4021,7 +4068,7 @@ udise:profile_data_1.psuedocode a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as bigint, described as “of school)”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as bigint, described as “Psuedo Code(Unique Identity Number of school)”"@en ;
     dct:isVersionOf udise:series.profile_data_1.psuedocode ;
     skos:altLabel "pseudocode"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"psuedocode\", \"to\": \"pseudocode\", \"basis\": \"the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"release\"}"@en ;
@@ -4052,7 +4099,8 @@ udise:profile_data_1.resi_school a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Residential school”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Residential school”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Is this a Residential School?”. Remarks: 1-Completely Residential, 2-Partially Residential, 3-Non-Residential"@en .
 
 udise:profile_data_1.resi_type a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -4108,6 +4156,7 @@ udise:profile_data_1.same_sch_b a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “New admission of students in class 1 who have pre-school experience same school boys”. Remarks: Boys +Transgenders"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"same_sch_b\"}"@en .
 
 udise:profile_data_1.same_sch_g a skos:Concept ;
@@ -4119,6 +4168,7 @@ udise:profile_data_1.same_sch_g a skos:Concept ;
     dct:isPartOf "profile_data_1" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “New admission of students in class 1 who have pre-school experience same school girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"same_sch_g\"}"@en .
 
 udise:profile_data_1.school_category a skos:Concept ;
@@ -4368,7 +4418,7 @@ udise:profile_data_2.crc_coordinator a skos:Concept ;
     skos:definition "Details of visits to the school during the previous academic year: — Number of visits by CRC Coordinator:"@en ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2022-23 Data Capture Format."@en ;
     dct:references "DCF item 1.44(b)" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “ordinator”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Number of visits by CRC Co- ordinator”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of visits by CRC Co- ordinator in school”"@en .
 
 udise:profile_data_2.district_officers a skos:Concept ;
@@ -4383,7 +4433,7 @@ udise:profile_data_2.district_officers a skos:Concept ;
     skos:definition "Details of visits to the school during the previous academic year : — No of visits by District/State Level Officers:"@en ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2018-19 Data Capture Format."@en ;
     dct:references "DCF item 1.49(d)" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Level officers”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Number of visits by District/State Level officers”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of visits by District/State Level officers in school”"@en .
 
 udise:profile_data_2.free_text_books_pr a skos:Concept ;
@@ -4413,7 +4463,7 @@ udise:profile_data_2.free_text_books_up a skos:Concept ;
     skos:definition "Availability of free text books, Teaching Learning Material (TLM), Play material (in current academic"@en ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2026-27 Data Capture Format."@en ;
     dct:references "DCF item 1.56" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “to children in Upper Primary Grade”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Free Textbook Facility provided to children in Upper Primary Grade”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Free Textbook Facility provided to school childrens in Upper Primary Grade”. Remarks: Yes=1, No=2"@en .
 
 udise:profile_data_2.free_uniform_pr a skos:Concept ;
@@ -4425,10 +4475,7 @@ udise:profile_data_2.free_uniform_pr a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    skos:definition "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)"@en ;
-    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
-    dct:references "DCF item 5.1" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “children in Primary Grade”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Free Uniform Facility provided to children in Primary Grade”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Free Uniform Facility provided to school childrens in Primary Grade”. Remarks: Yes=1, No=2"@en .
 
 udise:profile_data_2.free_uniform_up a skos:Concept ;
@@ -4440,6 +4487,10 @@ udise:profile_data_2.free_uniform_up a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
+    skos:definition "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 5.2" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Free Uniform Facility provided to children in Upper Primary Grade”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Free Uniform Facility provided to school childrens in Upper Primary Grade”. Remarks: Yes=1, No=2"@en .
 
 udise:profile_data_2.grants_expenditure a skos:Concept ;
@@ -4450,7 +4501,12 @@ udise:profile_data_2.grants_expenditure a skos:Concept ;
     skos:notation "grants_expenditure" ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2025-26" ;
-    dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" .
+    dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
+    skos:definition "Grants received by the school & expenditure made during the financial year 2020-21 (Govt. and Govt."@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 8.1" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as double precision, described as “School Grants Expenditure(In Rs.)”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as double precision, described as “Total Grants Expenditure (In Rs.) in school”"@en .
 
 udise:profile_data_2.grants_receipt a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -4460,7 +4516,9 @@ udise:profile_data_2.grants_receipt a skos:Concept ;
     skos:notation "grants_receipt" ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2025-26" ;
-    dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" .
+    dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as double precision, described as “School Grants Receipt(In Rs.)”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as double precision, described as “Total Grants Recieved(In Rs.) in school”"@en .
 
 udise:profile_data_2.material_training a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -4471,10 +4529,7 @@ udise:profile_data_2.material_training a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    skos:definition "Whether any Out of School Children enrolled in the school are — Number of children ENROLLED for Special Training in PREVIOUS Academic year:"@en ;
-    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
-    dct:references "DCF item 1.43b" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “in previous academic year”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Graded Supplementary Material in previous academic year”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Graded Supplementary Material in previous academic year”. Remarks: Yes=1, No=2"@en .
 
 udise:profile_data_2.pseudocode a skos:Concept ;
@@ -4502,7 +4557,7 @@ udise:profile_data_2.psuedocode a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as bigint, described as “Number of school)”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as bigint, described as “Psuedo Code(Unique Identity Number of school)”"@en ;
     dct:isVersionOf udise:series.profile_data_2.psuedocode ;
     skos:altLabel "pseudocode"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"psuedocode\", \"to\": \"pseudocode\", \"basis\": \"the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"release\"}"@en ;
@@ -4518,6 +4573,7 @@ udise:profile_data_2.rte_bld_c0_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Pre-Primary Boys”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c0_b ;
     skos:altLabel "rte_ews_c0_b"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c0_b\", \"to\": \"rte_ews_c0_b\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4531,6 +4587,7 @@ udise:profile_data_2.rte_bld_c0_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Pre-Primary Girls”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c0_g ;
     skos:altLabel "rte_ews_c0_g"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c0_g\", \"to\": \"rte_ews_c0_g\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4544,6 +4601,7 @@ udise:profile_data_2.rte_bld_c1_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-1 Boys”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c1_b ;
     skos:altLabel "rte_ews_c1_b"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c1_b\", \"to\": \"rte_ews_c1_b\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4557,6 +4615,7 @@ udise:profile_data_2.rte_bld_c1_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-1 Girls”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c1_g ;
     skos:altLabel "rte_ews_c1_g"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c1_g\", \"to\": \"rte_ews_c1_g\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4570,6 +4629,7 @@ udise:profile_data_2.rte_bld_c2_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-2 Boys”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c2_b ;
     skos:altLabel "rte_ews_c2_b"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c2_b\", \"to\": \"rte_ews_c2_b\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4583,6 +4643,7 @@ udise:profile_data_2.rte_bld_c2_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-2 Girls”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c2_g ;
     skos:altLabel "rte_ews_c2_g"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c2_g\", \"to\": \"rte_ews_c2_g\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4596,6 +4657,7 @@ udise:profile_data_2.rte_bld_c3_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-3 Boys”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c3_b ;
     skos:altLabel "rte_ews_c3_b"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c3_b\", \"to\": \"rte_ews_c3_b\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4609,6 +4671,7 @@ udise:profile_data_2.rte_bld_c3_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-3 Girls”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c3_g ;
     skos:altLabel "rte_ews_c3_g"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c3_g\", \"to\": \"rte_ews_c3_g\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4622,6 +4685,7 @@ udise:profile_data_2.rte_bld_c4_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-4 Boys”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c4_b ;
     skos:altLabel "rte_ews_c4_b"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c4_b\", \"to\": \"rte_ews_c4_b\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4635,6 +4699,7 @@ udise:profile_data_2.rte_bld_c4_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-4 Girls”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c4_g ;
     skos:altLabel "rte_ews_c4_g"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c4_g\", \"to\": \"rte_ews_c4_g\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4648,6 +4713,7 @@ udise:profile_data_2.rte_bld_c5_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-5 Boys”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c5_b ;
     skos:altLabel "rte_ews_c5_b"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c5_b\", \"to\": \"rte_ews_c5_b\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4661,6 +4727,7 @@ udise:profile_data_2.rte_bld_c5_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-5 Girls”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c5_g ;
     skos:altLabel "rte_ews_c5_g"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c5_g\", \"to\": \"rte_ews_c5_g\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4674,7 +4741,6 @@ udise:profile_data_2.rte_bld_c6_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
-    dct:provenance "Shared 2018-19 as smallint, described as “equipment for Class-6 Boys”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c6_b ;
     skos:altLabel "rte_ews_c6_b"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c6_b\", \"to\": \"rte_ews_c6_b\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4688,6 +4754,7 @@ udise:profile_data_2.rte_bld_c6_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-6 Girls”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c6_g ;
     skos:altLabel "rte_ews_c6_g"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c6_g\", \"to\": \"rte_ews_c6_g\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4701,6 +4768,7 @@ udise:profile_data_2.rte_bld_c7_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-7 Boys”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c7_b ;
     skos:altLabel "rte_ews_c7_b"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c7_b\", \"to\": \"rte_ews_c7_b\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4714,6 +4782,7 @@ udise:profile_data_2.rte_bld_c7_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-7 Girls”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c7_g ;
     skos:altLabel "rte_ews_c7_g"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c7_g\", \"to\": \"rte_ews_c7_g\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4727,6 +4796,7 @@ udise:profile_data_2.rte_bld_c8_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-8 Boys”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c8_b ;
     skos:altLabel "rte_ews_c8_b"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c8_b\", \"to\": \"rte_ews_c8_b\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4740,7 +4810,6 @@ udise:profile_data_2.rte_bld_c8_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
-    dct:provenance "Shared 2018-19 as smallint, described as “equipment for Class-8 Girls”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c8_g ;
     skos:altLabel "rte_ews_c8_g"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c8_g\", \"to\": \"rte_ews_c8_g\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4782,7 +4851,7 @@ udise:profile_data_2.rte_ews_c10_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Economically Weaker Section Student Enrolled for Class-10 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_ews_c10_b\"}"@en .
 
 udise:profile_data_2.rte_ews_c10_g a skos:Concept ;
@@ -4794,7 +4863,7 @@ udise:profile_data_2.rte_ews_c10_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Economically Weaker Section Student Enrolled for Class-10 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_ews_c10_g\"}"@en .
 
 udise:profile_data_2.rte_ews_c11_b a skos:Concept ;
@@ -4806,7 +4875,7 @@ udise:profile_data_2.rte_ews_c11_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Economically Weaker Section Student Enrolled for Class-11 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_ews_c11_b\"}"@en .
 
 udise:profile_data_2.rte_ews_c11_g a skos:Concept ;
@@ -4818,7 +4887,7 @@ udise:profile_data_2.rte_ews_c11_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Economically Weaker Section Student Enrolled for Class-11 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_ews_c11_g\"}"@en .
 
 udise:profile_data_2.rte_ews_c12_b a skos:Concept ;
@@ -4830,7 +4899,7 @@ udise:profile_data_2.rte_ews_c12_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Economically Weaker Section Student Enrolled for Class-12 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_ews_c12_b\"}"@en .
 
 udise:profile_data_2.rte_ews_c12_g a skos:Concept ;
@@ -4842,7 +4911,7 @@ udise:profile_data_2.rte_ews_c12_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Economically Weaker Section Student Enrolled for Class-12 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_ews_c12_g\"}"@en .
 
 udise:profile_data_2.rte_ews_c1_b a skos:Concept ;
@@ -5078,6 +5147,7 @@ udise:profile_data_2.rte_ews_c9_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Economically Weaker Section Student Enrolled for Class-9 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_ews_c9_b\"}"@en .
 
 udise:profile_data_2.rte_ews_c9_g a skos:Concept ;
@@ -5089,6 +5159,7 @@ udise:profile_data_2.rte_ews_c9_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Economically Weaker Section Student Enrolled for Class-9 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_ews_c9_g\"}"@en .
 
 udise:profile_data_2.rte_pvt_c0_b a skos:Concept ;
@@ -5100,7 +5171,7 @@ udise:profile_data_2.rte_pvt_c0_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Primary Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Pre- Primary Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c0_b\"}"@en .
 
 udise:profile_data_2.rte_pvt_c0_g a skos:Concept ;
@@ -5112,7 +5183,7 @@ udise:profile_data_2.rte_pvt_c0_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Primary Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Pre- Primary Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c0_g\"}"@en .
 
 udise:profile_data_2.rte_pvt_c1_b a skos:Concept ;
@@ -5124,7 +5195,7 @@ udise:profile_data_2.rte_pvt_c1_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-1 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c1_b\"}"@en .
 
 udise:profile_data_2.rte_pvt_c1_g a skos:Concept ;
@@ -5136,7 +5207,7 @@ udise:profile_data_2.rte_pvt_c1_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-1 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c1_g\"}"@en .
 
 udise:profile_data_2.rte_pvt_c2_b a skos:Concept ;
@@ -5148,7 +5219,7 @@ udise:profile_data_2.rte_pvt_c2_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-2 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c2_b\"}"@en .
 
 udise:profile_data_2.rte_pvt_c2_g a skos:Concept ;
@@ -5160,7 +5231,7 @@ udise:profile_data_2.rte_pvt_c2_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-2 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c2_g\"}"@en .
 
 udise:profile_data_2.rte_pvt_c3_b a skos:Concept ;
@@ -5172,7 +5243,7 @@ udise:profile_data_2.rte_pvt_c3_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-3 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c3_b\"}"@en .
 
 udise:profile_data_2.rte_pvt_c3_g a skos:Concept ;
@@ -5184,7 +5255,7 @@ udise:profile_data_2.rte_pvt_c3_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-3 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c3_g\"}"@en .
 
 udise:profile_data_2.rte_pvt_c4_b a skos:Concept ;
@@ -5196,7 +5267,7 @@ udise:profile_data_2.rte_pvt_c4_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-4 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c4_b\"}"@en .
 
 udise:profile_data_2.rte_pvt_c4_g a skos:Concept ;
@@ -5208,7 +5279,7 @@ udise:profile_data_2.rte_pvt_c4_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-4 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c4_g\"}"@en .
 
 udise:profile_data_2.rte_pvt_c5_b a skos:Concept ;
@@ -5220,7 +5291,7 @@ udise:profile_data_2.rte_pvt_c5_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-5 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c5_b\"}"@en .
 
 udise:profile_data_2.rte_pvt_c5_g a skos:Concept ;
@@ -5232,7 +5303,7 @@ udise:profile_data_2.rte_pvt_c5_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-5 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c5_g\"}"@en .
 
 udise:profile_data_2.rte_pvt_c6_b a skos:Concept ;
@@ -5244,7 +5315,7 @@ udise:profile_data_2.rte_pvt_c6_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-6 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c6_b\"}"@en .
 
 udise:profile_data_2.rte_pvt_c6_g a skos:Concept ;
@@ -5256,7 +5327,7 @@ udise:profile_data_2.rte_pvt_c6_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-6 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c6_g\"}"@en .
 
 udise:profile_data_2.rte_pvt_c7_b a skos:Concept ;
@@ -5268,7 +5339,7 @@ udise:profile_data_2.rte_pvt_c7_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-7 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c7_b\"}"@en .
 
 udise:profile_data_2.rte_pvt_c7_g a skos:Concept ;
@@ -5280,7 +5351,7 @@ udise:profile_data_2.rte_pvt_c7_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-7 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c7_g\"}"@en .
 
 udise:profile_data_2.rte_pvt_c8_b a skos:Concept ;
@@ -5292,7 +5363,7 @@ udise:profile_data_2.rte_pvt_c8_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Boys”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-8 Boys”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c8_b\"}"@en .
 
 udise:profile_data_2.rte_pvt_c8_g a skos:Concept ;
@@ -5304,7 +5375,7 @@ udise:profile_data_2.rte_pvt_c8_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Girls”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Student Enrolled under RTE Act in Private unaided for Class-8 Girls”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"rte_pvt_c8_g\"}"@en .
 
 udise:profile_data_2.smc_exists a skos:Concept ;
@@ -5316,7 +5387,11 @@ udise:profile_data_2.smc_exists a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “(SMC) has been constituted”"@en .
+    skos:definition "(a) Whether School Management Committee (SMC) has"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.47" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “School Management Committee (SMC) has been constituted”. Remarks: Applicable for School Category Codes : 1,2,3,4,5,6,7 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Whether School Management Committee (SMC) has been constituted as per RTE norms?”. Remarks: Yes=1, No=2"@en .
 
 udise:profile_data_2.smc_smdc_meetings a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5344,7 +5419,9 @@ udise:profile_data_2.smc_smdc_same a skos:Concept ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
     skos:definition "Whether School Management Committee (SMC) and School Management and Development — Whether SMDC has prepared School Improvement Plan?                                                    (Yes=1, No=2)"@en ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2018-19 Data Capture Format."@en ;
-    dct:references "DCF item 1.51(c)" .
+    dct:references "DCF item 1.51(c)" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “School Management Committee (SMC) and School Management and Development Committee (SMDC) are same in the school”. Remarks: Applicable for School Category Codes : 3,5,6,7,8,10,11 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Whether School Development and Management Committee have been Constituted as per Samagra Shiksha guidelines?”. Remarks: 1- Yes, 2-No, 3- Same as SMC"@en .
 
 udise:profile_data_2.smdc_constituted a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5355,6 +5432,10 @@ udise:profile_data_2.smdc_constituted a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    skos:definition "(a) Whether School Management Committee (SMC) has — Whether School Development and Management Committee have been"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.47b" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “School Management and Development Committee has been constituted”. Remarks: Applicable for School Category Codes : 3,5,6,7,8,10,11 Applicable for School Management Codes : 1,2,3,4,6,90,91,92,93,94,95,96"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"smdc_constituted\"}"@en .
 
 udise:profile_data_2.special_training a skos:Concept ;
@@ -5366,7 +5447,10 @@ udise:profile_data_2.special_training a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Training”"@en ;
+    skos:definition "Whether any Out of School Children enrolled in the school are — Number of children ENROLLED for Special Training in CURRENT Academic year:"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 1.43a" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “School are attending Special Training”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Whether school providing Special Training to out of school children”. Remarks: Yes=1, No=2"@en .
 
 udise:profile_data_2.text_books_received a skos:Concept ;
@@ -5393,10 +5477,7 @@ udise:profile_data_2.transport_pr a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    skos:definition "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)"@en ;
-    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
-    dct:references "DCF item 5.1" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “to children in Primary Grade”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Free Transport Facility provided to children in Primary Grade”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"transport_pr\"}"@en .
 
 udise:profile_data_2.transport_up a skos:Concept ;
@@ -5408,7 +5489,10 @@ udise:profile_data_2.transport_up a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Grade”"@en ;
+    skos:definition "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)"@en ;
+    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
+    dct:references "DCF item 5.2" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Free Transport Facility provided to children in Upper Primary Grade”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"transport_up\"}"@en .
 
 udise:teacher_data.bachelor_of_ee a skos:Concept ;
@@ -5420,8 +5504,8 @@ udise:teacher_data.bachelor_of_ee a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “of Elementary Education(B.EI.Ed)”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Bachelor of”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Professional Qualification is Bachelor of Elementary Education(B.EI.Ed)”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Bachelor of Elementary Education(B.EI.Ed) in school”"@en .
 
 udise:teacher_data.bed_equivalent a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5432,8 +5516,8 @@ udise:teacher_data.bed_equivalent a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Equivalent”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is B.ED or”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Professional Qualification is B.ED or Equivalent”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is B.ED or Equivalent in school”"@en .
 
 udise:teacher_data.bed_nursery a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5444,6 +5528,7 @@ udise:teacher_data.bed_nursery a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is B. Ed (Nursery) from NCTE recognized institution in school”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"bed_nursery\"}"@en .
 
 udise:teacher_data.below_graduate a skos:Concept ;
@@ -5455,11 +5540,8 @@ udise:teacher_data.below_graduate a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    skos:definition "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary"@en ;
-    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
-    dct:references "DCF item 1.19d" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Secondary and Higher Secondary)”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Academic Qualification is Below Graduate”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Academic Qualification is Below Graduate (Include Below Secondary, Secondary and Higher Secondary)”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Academic Qualification is Below Graduate (Include Below Secondary, Secondary and Higher Secondary) in school”"@en .
 
 udise:teacher_data.class_taught_hsec_only a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5470,10 +5552,7 @@ udise:teacher_data.class_taught_hsec_only a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    skos:definition "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary"@en ;
-    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
-    dct:references "DCF item 1.19d" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Higher Secondary Only”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of Teachers whose Class Taught is Higher Secondary Only”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Class Taught is Higher Secondary Only in school”"@en .
 
 udise:teacher_data.class_taught_pr a skos:Concept ;
@@ -5485,7 +5564,7 @@ udise:teacher_data.class_taught_pr a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Primary”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of Teachers whose Class Taught is Primary”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Class Taught is Primary in school”"@en .
 
 udise:teacher_data.class_taught_pr_and_pre_pri a skos:Concept ;
@@ -5497,6 +5576,7 @@ udise:teacher_data.class_taught_pr_and_pre_pri a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of Teachers whose Class Taught is Pre-Primary and Primary”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Class Taught is Pre- Primary and Primary in school”"@en .
 
 udise:teacher_data.class_taught_pr_upr a skos:Concept ;
@@ -5508,10 +5588,8 @@ udise:teacher_data.class_taught_pr_upr a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    skos:definition "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Upper primary:"@en ;
-    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
-    dct:references "DCF item 1.19b" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Primary and Upper Primary”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of Teachers whose Class Taught is Primary and Upper Primary”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Class Taught is Primary and Upper Primary in school”"@en .
 
 udise:teacher_data.class_taught_sec_hsec a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5522,11 +5600,8 @@ udise:teacher_data.class_taught_sec_hsec a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    skos:definition "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary"@en ;
-    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
-    dct:references "DCF item 1.19d" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Secondary and Higher Secondary”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Class Taught is Secondary and Higher Secondary in”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of Teachers whose Class Taught is Secondary and Higher Secondary”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Class Taught is Secondary and Higher Secondary in school”"@en .
 
 udise:teacher_data.class_taught_sec_only a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5537,7 +5612,7 @@ udise:teacher_data.class_taught_sec_only a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Secondary Only”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of Teachers whose Class Taught is Secondary Only”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Class Taught is Secondary Only in school”"@en .
 
 udise:teacher_data.class_taught_upr a skos:Concept ;
@@ -5553,7 +5628,7 @@ udise:teacher_data.class_taught_upr a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2026-27 Data Capture Format."@en ;
     dct:references "DCF item 1.26(b)" ;
     skos:scopeNote "1-NCERT / 2-State / 3-Others"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Upper Primary”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of Teachers whose Class Taught is Upper Primary”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Class Taught is Upper Primary in school”"@en .
 
 udise:teacher_data.class_taught_upr_sec a skos:Concept ;
@@ -5565,11 +5640,8 @@ udise:teacher_data.class_taught_upr_sec a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    skos:definition "Year of upgradation of the school (if applicable): — Upper Primary to Secondary:"@en ;
-    skos:editorialNote "Question: source not stated, from the 2021-22 Data Capture Format."@en ;
-    dct:references "DCF item 1.20b" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Upper Primary and Secondary”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Class Taught is Upper Primary and Secondary in”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of Teachers whose Class Taught is Upper Primary and Secondary”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Class Taught is Upper Primary and Secondary in school”"@en .
 
 udise:teacher_data.class_taugt_pre_primary_only a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5604,8 +5676,8 @@ udise:teacher_data.diploma_certificate a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “of a duration not less than two years”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Diploma or”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Professional Qualification is Diploma or certificate in basic teacher training of a duration not less than two years”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Diploma or certificate in basic teachers training of a duration not less than two years in school”"@en .
 
 udise:teacher_data.diploma_ele_edu a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5616,7 +5688,7 @@ udise:teacher_data.diploma_ele_edu a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Diploma in”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Diploma in Elementary Education (D.El.Ed.) in school”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"diploma_ele_edu\"}"@en .
 
 udise:teacher_data.diploma_special_edu a skos:Concept ;
@@ -5632,8 +5704,8 @@ udise:teacher_data.diploma_special_edu a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2026-27 Data Capture Format."@en ;
     dct:references "DCF item 3.5(b)" ;
     skos:scopeNote "1-Dedicated, 2-At block/cluster level, 3-No"@en ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Degree in Special Education”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Diploma /”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Professional Qualification is Diploma / Degree in Special Education”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Diploma / Degree in Special Education in school”"@en .
 
 udise:teacher_data.early_childhood_tch a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5648,7 +5720,7 @@ udise:teacher_data.early_childhood_tch a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2020-21 Data Capture Format."@en ;
     dct:references "DCF item 1.36(c)" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Diploma in”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Diploma in Nursery teachers Education/ Pre-school education/ Early Childhood Education Program of a duration not less than two years from NCTE recognized institution in school”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"early_childhood_tch\"}"@en .
 
 udise:teacher_data.female a skos:Concept ;
@@ -5683,7 +5755,9 @@ udise:teacher_data.graduate a skos:Concept ;
     skos:notation "graduate" ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
-    dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" .
+    dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Academic Qualification is Graduate”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Academic Qualification is Graduate in school”"@en .
 
 udise:teacher_data.male a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5706,8 +5780,8 @@ udise:teacher_data.med_equivalent a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Equivalent”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is M.ED or”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Professional Qualification is M.ED or Equivalent”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is M.ED or Equivalent in school”"@en .
 
 udise:teacher_data.none a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5718,7 +5792,8 @@ udise:teacher_data.none a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Professional Qualification is None”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Professional Qualification is None”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is None in school”"@en .
 
 udise:teacher_data.obc_tch a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5741,7 +5816,8 @@ udise:teacher_data.other a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Professional Qualification is Others”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Professional Qualification is Others”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Others in school”"@en .
 
 udise:teacher_data.part_time a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5764,7 +5840,8 @@ udise:teacher_data.post_graduate_and_above a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Doctoral)”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral)”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral) in school”"@en .
 
 udise:teacher_data.pseudocode a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5791,7 +5868,7 @@ udise:teacher_data.psuedocode a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as bigint, described as “of school)”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as bigint, described as “Psuedo Code(Unique Identity Number of school)”"@en ;
     dct:isVersionOf udise:series.teacher_data.psuedocode ;
     skos:altLabel "pseudocode"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"psuedocode\", \"to\": \"pseudocode\", \"basis\": \"the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"release\"}"@en ;
@@ -5807,8 +5884,8 @@ udise:teacher_data.pursuing_rpc a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “any Relevant Professional Course”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Pursuing any”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Professional Qualification is Pursuing any Relevant Professional Course”"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of teachers whose Highest Professional Qualification is Pursuing any Relevant Professional Course in school”"@en .
 
 udise:teacher_data.regular a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -5882,7 +5959,7 @@ udise:teacher_data.teachers_aged_above_55 a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “above 55”"@en ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Total Number of Teacher whose Aged above 55”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"teachers_aged_above_55\"}"@en .
 
 udise:teacher_data.total_tch a skos:Concept ;
@@ -5965,6 +6042,7 @@ udise:teacher_data.transgender a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Total Number of Transgender Teacher”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of Transgenders teachers in school”"@en .
 
 udise:asked-01 a skos:Concept ;

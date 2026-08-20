@@ -14,7 +14,7 @@
  "n_fields": 221,
  "flags": {
   "asked_verified_this_form": 44,
-  "described_no_question": 43,
+  "described_no_question": 61,
   "code_disagreements": [
    {
     "id": "facility_data.availability_of_handrails",
@@ -717,7 +717,13 @@
     "kind": "release_key",
     "note": "Which category grid a row belongs to: 1 is social category, 8 is age, and so on. Created at the 2022-23 break, when the named item_desc became two numeric codes."
    },
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Item Group =1,Item Id = 1 Then General",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "VARCHAR",
     "n_distinct_capped": 5,
@@ -741,7 +747,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "",
+     "description": "General, SC, ST, OBC, Muslims, Christians, Sikh, Buddhist,Parsi, Jain BPL, EWS and CWSN Enrolment with disability type,Repeater",
      "remarks": ""
     }
    ],
@@ -1355,7 +1361,7 @@
     {
      "era": "sdmis",
      "description": "Age Wise Enrolment in Class Pre-Primary Boys",
-     "remarks": ""
+     "remarks": "(pp3_b+pp2_b+pp1_b)"
     }
    ],
    "released": {
@@ -1391,7 +1397,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "item_group=8",
+     "description": "Item Group =1,Item Id = 1 Then General",
      "remarks": ""
     }
    ],
@@ -1907,7 +1913,7 @@
     {
      "era": "sdmis",
      "description": "No. of students for whom Furniture available in school",
-     "remarks": ""
+     "remarks": "1-Yes for all, 2-Partial, 3-No Furniture Available"
     }
    ],
    "released": {
@@ -2017,7 +2023,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "",
+     "description": "Handwashing facility with soap available for washing hands before and after meal in school",
      "remarks": "Yes=1, No=2"
     }
    ],
@@ -2740,7 +2746,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "",
+     "description": "No. of Smart Class rooms used for teaching with Digital boards/ Smart boards/ Virtual classrooms/ Smart TV in school",
      "remarks": ""
     }
    ],
@@ -2947,7 +2953,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "",
+     "description": "No. of Functional toilet seats available excluding CWSN friendly toilets for Boys in school",
      "remarks": ""
     }
    ],
@@ -2969,7 +2975,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Total Boys in school",
      "remarks": ""
     }
    ],
@@ -3039,7 +3045,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "",
+     "description": "No. of Functional toilet seats available excluding CWSN friendly toilets for Girls",
      "remarks": ""
     }
    ],
@@ -3061,7 +3067,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "",
+     "description": "No. of toilet seats available excluding CWSN friendly toilets for Total Girls in school",
      "remarks": ""
     }
    ],
@@ -3234,9 +3240,9 @@
    "field": "aff_board_hsec",
    "asked": {
     "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
-    "item": "1.19d",
-    "cited_form": "2021-22",
+    "question": "(a) Affiliation Board type of school for HIGHER SECONDARY Section:",
+    "item": "1.20",
+    "cited_form": "2025-26",
     "how": "bridged",
     "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
    },
@@ -3301,7 +3307,13 @@
    "dataset": "profile_data_1",
    "field": "anganwadi_ecce_b",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "New admission of students in class 1 who have pre-school experience anganwadi ecce centres boys",
+     "remarks": "Boys +Transgenders"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -3312,7 +3324,13 @@
    "dataset": "profile_data_1",
    "field": "anganwadi_ecce_g",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "New admission of students in class 1 who have pre-school experience anganwadi ecce centres girls",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -3355,8 +3373,8 @@
    "asked": {
     "kind": "cited_elsewhere",
     "question": "Whether School is Approachable by All-Weather Roads?",
-    "item": "1.37",
-    "cited_form": "2025-26",
+    "item": "1.34",
+    "cited_form": "2021-22",
     "how": "bridged",
     "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
    },
@@ -3776,7 +3794,13 @@
    "dataset": "profile_data_1",
    "field": "other_sch_b",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "New admission of students in class 1 who have pre-school experience Other school boys",
+     "remarks": "Boys +Transgenders"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -3787,7 +3811,13 @@
    "dataset": "profile_data_1",
    "field": "other_sch_g",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "New admission of students in class 1 who have pre-school experience other school girls",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -3871,7 +3901,13 @@
    "dataset": "profile_data_1",
    "field": "resi_school",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Is this a Residential School?",
+     "remarks": "1-Completely Residential, 2-Partially Residential, 3-Non-Residential"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 3,
@@ -3951,7 +3987,13 @@
    "dataset": "profile_data_1",
    "field": "same_sch_b",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "New admission of students in class 1 who have pre-school experience same school boys",
+     "remarks": "Boys +Transgenders"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -3962,7 +4004,13 @@
    "dataset": "profile_data_1",
    "field": "same_sch_g",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "New admission of students in class 1 who have pre-school experience same school girls",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -4281,14 +4329,7 @@
    "id": "profile_data_2.free_uniform_pr",
    "dataset": "profile_data_2",
    "field": "free_uniform_pr",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Facilities provided to children in Previous Academic Year for PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
-    "item": "5.1",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
-   },
+   "asked": null,
    "described": [
     {
      "era": "sdmis",
@@ -4309,7 +4350,14 @@
    "id": "profile_data_2.free_uniform_up",
    "dataset": "profile_data_2",
    "field": "free_uniform_up",
-   "asked": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Facilities provided to children in Previous Academic Year for UPPER PRIMARY Grade: ** (B- Boys, G- Girls, T- Transgender)",
+    "item": "5.2",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
    "described": [
     {
      "era": "sdmis",
@@ -4330,8 +4378,21 @@
    "id": "profile_data_2.grants_expenditure",
    "dataset": "profile_data_2",
    "field": "grants_expenditure",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Grants received by the school & expenditure made during the financial year 2020-21 (Govt. and Govt.",
+    "item": "8.1",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Total Grants Expenditure (In Rs.) in school",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 40
@@ -4342,7 +4403,13 @@
    "dataset": "profile_data_2",
    "field": "grants_receipt",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Total Grants Recieved(In Rs.) in school",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "DOUBLE",
     "n_distinct_capped": 40
@@ -4352,14 +4419,7 @@
    "id": "profile_data_2.material_training",
    "dataset": "profile_data_2",
    "field": "material_training",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Whether any Out of School Children enrolled in the school are — Number of children ENROLLED for Special Training in PREVIOUS Academic year:",
-    "item": "1.43b",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
-   },
+   "asked": null,
    "described": [
     {
      "era": "sdmis",
@@ -4400,8 +4460,21 @@
    "id": "profile_data_2.smc_exists",
    "dataset": "profile_data_2",
    "field": "smc_exists",
-   "asked": null,
-   "described": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "(a) Whether School Management Committee (SMC) has",
+    "item": "1.47",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Whether School Management Committee (SMC) has been constituted as per RTE norms?",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 3,
@@ -4451,7 +4524,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "",
+     "description": "Whether School Development and Management Committee have been Constituted as per Samagra Shiksha guidelines?",
      "remarks": "1- Yes, 2-No, 3- Same as SMC"
     }
    ],
@@ -4470,7 +4543,14 @@
    "id": "profile_data_2.special_training",
    "dataset": "profile_data_2",
    "field": "special_training",
-   "asked": null,
+   "asked": {
+    "kind": "cited_elsewhere",
+    "question": "Whether any Out of School Children enrolled in the school are — Number of children ENROLLED for Special Training in CURRENT Academic year:",
+    "item": "1.43a",
+    "cited_form": "2021-22",
+    "how": "bridged",
+    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
+   },
    "described": [
     {
      "era": "sdmis",
@@ -4494,7 +4574,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Highest Professional Qualification is Bachelor of",
+     "description": "No. of teachers whose Highest Professional Qualification is Bachelor of Elementary Education(B.EI.Ed) in school",
      "remarks": ""
     }
    ],
@@ -4511,7 +4591,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Highest Professional Qualification is B.ED or",
+     "description": "No. of teachers whose Highest Professional Qualification is B.ED or Equivalent in school",
      "remarks": ""
     }
    ],
@@ -4525,7 +4605,13 @@
    "dataset": "teacher_data",
    "field": "bed_nursery",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is B. Ed (Nursery) from NCTE recognized institution in school",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 18
@@ -4535,18 +4621,11 @@
    "id": "teacher_data.below_graduate",
    "dataset": "teacher_data",
    "field": "below_graduate",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
-    "item": "1.19d",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
-   },
+   "asked": null,
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Highest Academic Qualification is Below Graduate",
+     "description": "No. of teachers whose Highest Academic Qualification is Below Graduate (Include Below Secondary, Secondary and Higher Secondary) in school",
      "remarks": ""
     }
    ],
@@ -4559,14 +4638,7 @@
    "id": "teacher_data.class_taught_hsec_only",
    "dataset": "teacher_data",
    "field": "class_taught_hsec_only",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
-    "item": "1.19d",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
-   },
+   "asked": null,
    "described": [
     {
      "era": "sdmis",
@@ -4617,15 +4689,14 @@
    "id": "teacher_data.class_taught_pr_upr",
    "dataset": "teacher_data",
    "field": "class_taught_pr_upr",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Upper primary:",
-    "item": "1.19b",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
-   },
-   "described": null,
+   "asked": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Class Taught is Primary and Upper Primary in school",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -4635,18 +4706,11 @@
    "id": "teacher_data.class_taught_sec_hsec",
    "dataset": "teacher_data",
    "field": "class_taught_sec_hsec",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Year of Recognition of the school (Mandatory for Govt. Aided and Pvt. Unaided Schools): — Higher Secondary",
-    "item": "1.19d",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
-   },
+   "asked": null,
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Class Taught is Secondary and Higher Secondary in",
+     "description": "No. of teachers whose Class Taught is Secondary and Higher Secondary in school",
      "remarks": ""
     }
    ],
@@ -4700,18 +4764,11 @@
    "id": "teacher_data.class_taught_upr_sec",
    "dataset": "teacher_data",
    "field": "class_taught_upr_sec",
-   "asked": {
-    "kind": "cited_elsewhere",
-    "question": "Year of upgradation of the school (if applicable): — Upper Primary to Secondary:",
-    "item": "1.20b",
-    "cited_form": "2021-22",
-    "how": "bridged",
-    "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
-   },
+   "asked": null,
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Class Taught is Upper Primary and Secondary in",
+     "description": "No. of teachers whose Class Taught is Upper Primary and Secondary in school",
      "remarks": ""
     }
    ],
@@ -4762,7 +4819,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Highest Professional Qualification is Diploma or",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma or certificate in basic teachers training of a duration not less than two years in school",
      "remarks": ""
     }
    ],
@@ -4779,7 +4836,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Highest Professional Qualification is Diploma in",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma in Elementary Education (D.El.Ed.) in school",
      "remarks": ""
     }
    ],
@@ -4803,7 +4860,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Highest Professional Qualification is Diploma /",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma / Degree in Special Education in school",
      "remarks": ""
     }
    ],
@@ -4827,7 +4884,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Highest Professional Qualification is Diploma in",
+     "description": "No. of teachers whose Highest Professional Qualification is Diploma in Nursery teachers Education/ Pre-school education/ Early Childhood Education Program of a duration not less than two years from NCTE recognized institution in school",
      "remarks": ""
     }
    ],
@@ -4875,7 +4932,13 @@
    "dataset": "teacher_data",
    "field": "graduate",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Academic Qualification is Graduate in school",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -4906,7 +4969,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Highest Professional Qualification is M.ED or",
+     "description": "No. of teachers whose Highest Professional Qualification is M.ED or Equivalent in school",
      "remarks": ""
     }
    ],
@@ -4920,7 +4983,13 @@
    "dataset": "teacher_data",
    "field": "none",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is None in school",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -4948,7 +5017,13 @@
    "dataset": "teacher_data",
    "field": "other",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "No. of teachers whose Highest Professional Qualification is Others in school",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -4976,7 +5051,13 @@
    "dataset": "teacher_data",
    "field": "post_graduate_and_above",
    "asked": null,
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral) in school",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
@@ -5010,7 +5091,7 @@
    "described": [
     {
      "era": "sdmis",
-     "description": "No. of teachers whose Highest Professional Qualification is Pursuing any",
+     "description": "No. of teachers whose Highest Professional Qualification is Pursuing any Relevant Professional Course in school",
      "remarks": ""
     }
    ],
