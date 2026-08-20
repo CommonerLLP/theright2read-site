@@ -7,6 +7,15 @@
    tokens, so the theme toggle and dark mode follow tokens.css automatically. */
 
 :root {
+  /* One column for the whole app. Every band's background still runs
+     edge to edge; its content stops here, so the masthead, the tabs, the
+     search bar and the browse grid share one left and right edge. */
+  /* 1280px is the site's own cap, used by every other page here. The
+     browse grid fills it: a 360px index beside a 768px reading measure and
+     its padding. At 1600px the pane stretched and the text did not, which
+     left a wide empty band down the right. */
+  --app: 1280px;
+  --gutter: max(clamp(16px, 4vw, 32px), calc((100% - var(--app)) / 2));
   --ink: var(--text);
   --ink-soft: var(--text-soft);
   --ink-faint: var(--text-muted);
@@ -44,7 +53,7 @@ a { color: var(--accent); }
 /* masthead ---------------------------------------------------------------- */
 .masthead h1, .wrap h1 { font-family: var(--font-display); letter-spacing: .01em; }
 .masthead { background: var(--panel); border-bottom: 1px solid var(--line);
-            padding: 14px clamp(16px, 4vw, 32px) 0; }
+            padding: 14px var(--gutter) 0; }
 .masthead h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: -.01em; }
 .masthead .sub { margin: 0 0 8px; max-width: 110ch; font-size: 13.5px;
                  color: var(--ink-soft); line-height: 1.5; }
@@ -67,7 +76,7 @@ a { color: var(--accent); }
 /* year selector ----------------------------------------------------------- */
 .yearbar { display: flex; gap: 6px; align-items: center; flex-wrap: wrap;
            background: var(--panel); border-bottom: 1px solid var(--line);
-           padding: 10px clamp(16px, 4vw, 32px); }
+           padding: 10px var(--gutter); }
 .yearbar .lbl { font-size: 12.5px; color: var(--ink-faint); margin-right: 4px; }
 .yr { border: 1px solid var(--line); background: var(--paper); padding: 4px 10px;
       border-radius: 3px; font-family: var(--mono); font-size: 12px; cursor: pointer;
@@ -77,7 +86,7 @@ a { color: var(--accent); }
 .yr .n { opacity: .7; margin-left: 5px; font-size: 11px; }
 
 /* search ------------------------------------------------------------------ */
-.searchbar { padding: 12px clamp(16px, 4vw, 32px); background: var(--panel);
+.searchbar { padding: 12px var(--gutter); background: var(--panel);
              border-bottom: 1px solid var(--line); display: flex; gap: 12px;
              align-items: center; flex-wrap: wrap; }
 #search { flex: 1 1 380px; max-width: 640px; padding: 8px 12px; border: 1px solid var(--line);
@@ -89,7 +98,7 @@ a { color: var(--accent); }
    monitor the detail pane reached 1480px and its cards ran the whole way,
    because only paragraphs carried the measure. */
 .layout { display: grid; grid-template-columns: minmax(300px, 420px) 1fr;
-          min-height: 60vh; max-width: 1600px; margin: 0 auto; width: 100%; }
+          min-height: 60vh; padding-inline: var(--gutter); }
 
 /* ONE measure for everything the detail pane renders, and it is in rem, not
    ch. A ch is the width of a zero in that element's own font, so a 17px
@@ -210,7 +219,7 @@ main { }
 .whybox { max-width: 74ch; margin: 0 0 12px; }
 .whybox p { font-size: 13px; color: var(--ink-soft); margin: 0 0 7px; line-height: 1.5; }
 
-.yearnote { padding: 8px clamp(16px, 4vw, 32px); background: var(--chg-soft);
+.yearnote { padding: 8px var(--gutter); background: var(--chg-soft);
             border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft); }
 .yearnote.break { background: var(--warn-soft); }
 .yearnote.quiet { background: var(--panel); color: var(--ink-faint); }
@@ -343,7 +352,7 @@ code.dead { color: var(--ink-faint); text-decoration: line-through; }
 
 /* ---------- colophon ---------- */
 .colophon { border-top: 1px solid var(--line); background: var(--paper);
-  padding: 20px clamp(16px, 4vw, 32px) 40px; color: var(--ink-faint); font-size: 12.5px;
+  padding: 20px var(--gutter) 40px; color: var(--ink-faint); font-size: 12.5px;
   line-height: 1.55; }
 .colophon strong { color: var(--ink-soft); }
 .colophon a { color: var(--accent); }
@@ -423,7 +432,7 @@ code.dead { color: var(--ink-faint); text-decoration: line-through; }
    theme.js needs the brand-logo class to swap the mark between themes. */
 #appbar {
   display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-  padding: .55rem 1.15rem;
+  padding: .55rem var(--gutter);
   background: var(--panel); border-bottom: 1px solid var(--line);
 }
 #appbar a.brand { display: flex; align-items: center; gap: .5rem; text-decoration: none; }
