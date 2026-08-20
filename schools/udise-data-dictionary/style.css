@@ -486,6 +486,20 @@ code.dead { color: var(--ink-faint); text-decoration: line-through; }
 }
 .asked-span { font-size: 13px; color: var(--ink-soft); }
 
+/* the comparability verdict ------------------------------------------- */
+.cmp-head { font-size: 13.5px; color: var(--ink); margin: 0 0 8px; font-weight: 600; }
+table.cmp { width: 100%; font-size: 12.5px; }
+table.cmp td { padding: 5px 9px; border-bottom: 1px solid var(--line-soft);
+               vertical-align: top; }
+.cmp-yrs { white-space: nowrap; font-size: 11.5px; }
+.cmp-yrs code { font-size: 11.5px; }
+.cmp-v { white-space: nowrap; font-weight: 600; }
+.cmp-w { color: var(--ink-soft); }
+.cmp-ok .cmp-v { color: var(--ink-faint); font-weight: 400; }
+.cmp-note .cmp-v { color: var(--chg); }
+.cmp-warn .cmp-v { color: var(--warn); }
+.cmp-warn { background: var(--warn-soft); }
+
 /* band headings ------------------------------------------------------- */
 .band { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap;
         margin: 16px 0 6px; padding-bottom: 4px;

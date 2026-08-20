@@ -298,6 +298,7 @@ function showField(id) {
       ${f.years[0]} to ${f.years.at(-1)}.</div></div>` : ""}
 
     <div class="k">Released in</div><div class="tl">${tl}</div>
+    ${compareHTML(f)}
 
     ${/* Three honest states, and the header matches the one that holds. A
           verified question renders as the question. A key the release creates
@@ -356,6 +357,43 @@ function valuesHTML(raw) {
 /* The item number is a per-year address, and the wording itself can move.
    The trace quotes the matched line from every form on disk, so a rewording
    shows instead of being flattened. It is a text match and the label says so. */
+/* THE QUESTION THE READER CAME WITH. A card used to show the parts — the
+   question, the codes, the change history, the note — and leave the reader to
+   decide whether two years hold the same thing. That decision is the reason
+   they opened the column. Every verdict below is derived in the build from
+   evidence already on this page, and each one states what it rests on. */
+const VERDICT = {
+  same:         ["ok",   "same column"],
+  reworded:     ["note", "question reworded"],
+  renamed:      ["note", "renamed"],
+  restructured: ["warn", "restructured"],
+  absent:       ["warn", "not released"],
+  broken:       ["warn", "do not compare"],
+};
+
+function compareHTML(f) {
+  const bs = f.boundaries || [];
+  if (!bs.length) return "";
+  const sum = f.compare_summary || {clean: 0, total: bs.length};
+  const head = sum.clean === sum.total
+    ? `Safe to compare across all ${sum.total} year boundaries.`
+    : `Safe across ${sum.clean} of ${sum.total} year boundaries. ` +
+      `${sum.total - sum.clean} ${sum.total - sum.clean === 1 ? "needs" : "need"}` +
+      ` a decision.`;
+  return `<div class="k">Comparing one year with the next</div>
+    <p class="cmp-head">${head}</p>
+    <div class="tscroll"><table class="cmp">
+      <tbody>${bs.map((b) => {
+        const [kind, label] = VERDICT[b.verdict] || ["note", b.verdict];
+        return `<tr class="cmp-${kind}">
+          <td class="cmp-yrs"><code>${esc(b.from)}</code> &rarr;
+              <code>${esc(b.to)}</code></td>
+          <td class="cmp-v">${esc(label)}</td>
+          <td class="cmp-w">${esc(b.why)}</td></tr>`;
+      }).join("")}</tbody>
+    </table></div>`;
+}
+
 function traceHTML(f) {
   const t = f.dcf_trace || {};
   const years = Object.keys(t).sort();
