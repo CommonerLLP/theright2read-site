@@ -33,7 +33,16 @@ function renderMasthead() {
   $("#counts").textContent =
     `${c.fields} columns · ${state.data.meta.years.length} years, ` +
     `${state.data.meta.years[0]} to ${state.data.meta.years.at(-1)} · ` +
-    `${c.never_released} questions asked of every school and never released`;
+    `${c.never_released} questions asked of every school and never released`
+    // The evidence for every entry sits on the last tab, which is the least
+    // read position on the page. One line beside the counts points at it.
+    + ` \u00b7 `;
+  const how = document.createElement("button");
+  how.type = "button"; how.className = "exq"; how.dataset.tab = "about";
+  how.textContent = "how each entry is verified";
+  how.onclick = () => { const t = $$(".tab").find((x) => x.dataset.tab === "about");
+                        if (t) t.click(); };
+  $("#counts").appendChild(how);
 }
 
 /* Fields live in a given year only if that year is in their span. This is the
@@ -172,12 +181,25 @@ function renderBrowse() {
     if (state.section) fs = fs.filter((f) => f.section === state.section);
     if (state.filter) fs = fs.filter(FILTERS[state.filter]);
     /* Alphabetical order carries the least information of any arrangement. A column
-       with a trap or a change is the one worth reading first, so it sorts first. */
-    fs = fs.slice().sort((a, b) =>
-      (b.traps.length ? 2 : 0) + (b.changes.length ? 1 : 0)
-      - ((a.traps.length ? 2 : 0) + (a.changes.length ? 1 : 0))
-      || a.id.localeCompare(b.id));
-    rows = fs.map(nodeHTML).join("")
+       with a trap or a change is the one worth reading first, so it sorts first.
+       THE ORDER NOW SAYS SO. A section opens 87 rows in one run, and a silent
+       sort leaves the reader scanning monospace names one by one. The same
+       rule that orders them also groups them, so the list answers "why is
+       this one at the top" before it is asked. */
+    const band = (f) => f.traps.length ? 0 : f.changes.length ? 1 : 2;
+    const BANDS = [
+      ["Carries a comparability note", "read this before using the column across years"],
+      ["Changed across the releases", "the name or the meaning moved"],
+      ["Steady", "no note and no recorded change"],
+    ];
+    fs = fs.slice().sort((a, b) => band(a) - band(b) || a.id.localeCompare(b.id));
+    rows = BANDS.map(([title, why], i) => {
+      const group = fs.filter((f) => band(f) === i);
+      if (!group.length) return "";
+      return `<div class="band"><span class="band-t">${title}</span>
+        <span class="pill">${group.length}</span>
+        <span class="band-w">${why}</span></div>` + group.map(nodeHTML).join("");
+    }).join("")
         || `<p class="detail-empty">Nothing matches in ${state.year}.</p>`;
   }
   const yearSel = `<label class="yearsel">released in
@@ -185,6 +207,7 @@ function renderBrowse() {
       `<option value="${y}"${y === (state.year || "") ? " selected" : ""}>${
         y || "any year"}</option>`).join("")}</select></label>`;
   list.innerHTML = `${crumb}${cards ? `<div class="class-grid">${cards}</div>` : ""}
+    <div class="k narrow-k">Narrow the list</div>
     <div class="filters">${chips}${yearSel}</div>${legendHTML()}${rows}`;
   const back = $("#allsec", list);
   if (back) back.onclick = () => {
@@ -232,7 +255,21 @@ function nodeHTML(f) {
     <span class="flags">${lifeStrip(f)}${flags}</span></a>`;
 }
 
-function bindRows(scope) { /* anchors route themselves */ }
+function bindRows(scope) {
+  /* Rows are anchors and route themselves. The dead-end block is the one
+     place in this pane with buttons: a suggested search, and a jump to the
+     questions this census publishes in no column. */
+  $$(".exq", scope).forEach((el) => el.onclick = () => {
+    if (el.dataset.tab) {
+      const t = $$(".tab").find((x) => x.dataset.tab === el.dataset.tab);
+      if (t) t.click();
+      return;
+    }
+    $("#search").value = el.dataset.q;
+    state.q = el.dataset.q; state.section = null; state.field = null;
+    renderBrowse();
+  });
+}
 
 /* -------------------------------------------------------------- detail pane */
 function showField(id) {
@@ -537,16 +574,43 @@ function renderSearchResults(list, here) {
      it in the label printed "N in null". The other-years clause cannot fire in
      that state either, because every field is already in scope. */
   const scope = state.year ? `in ${state.year}` : "across all releases";
+  // One string for the eye and the screen reader. Two builds of the same
+  // sentence printed "0 across all releases" in the pane and "0 columns
+  // across all releases" in the live region.
+  const count = `${inYearHits.length} ${inYearHits.length === 1 ? "column" : "columns"} ${scope}`
+    + (otherYears.length ? `, ${otherYears.length} in other years only` : "");
+
+  // NOTHING FOUND IS NOT NOTHING TO SAY. An empty pane left the reader with
+  // no way to tell a typo from a column named differently, and from a
+  // question this census asks and never publishes. In this dictionary the
+  // third case is a finding, so the dead end names it and links to it.
+  if (!inYearHits.length && !otherYears.length) {
+    list.innerHTML = `<p class="lede" style="margin:0 0 10px">${count}</p>
+      <div class="noresult">
+        <p><b>No column matches “${esc(state.q)}”.</b></p>
+        <p>A column may carry a different name here. Try
+          <button type="button" class="exq" data-q="library">library</button>,
+          <button type="button" class="exq" data-q="librarian">librarian</button>,
+          <button type="button" class="exq" data-q="toilet">toilet</button> or
+          <button type="button" class="exq" data-q="rte">rte</button>.</p>
+        <p>The census also asks questions it publishes in no column at all.
+          Eighteen of them are listed under
+          <button type="button" class="exq" data-tab="missing">Asked, never
+          released</button>.</p>
+      </div>`;
+    announce(count);
+    bindRows(list);
+    return;
+  }
+
   list.innerHTML =
-    `<p class="lede" style="margin:0 0 10px">${inYearHits.length} ${scope}` +
-    (otherYears.length ? `, ${otherYears.length} in other years only` : "") + `</p>` +
+    `<p class="lede" style="margin:0 0 10px">${count}</p>` +
     inYearHits.map(nodeHTML).join("") +
     (otherYears.length
       ? `<div class="k">Not released in ${state.year}</div>` +
         otherYears.map((f) => nodeHTML(f).replace('class="node', 'class="node gone')).join("")
       : "");
-  announce(`${inYearHits.length} columns ${state.year ? "in " + state.year : "across all releases"}` +
-    (otherYears.length ? `, ${otherYears.length} in other years only` : ""));
+  announce(count);
   bindRows(list);
 }
 

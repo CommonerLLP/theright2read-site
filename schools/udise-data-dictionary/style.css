@@ -477,6 +477,23 @@ code.dead { color: var(--ink-faint); text-decoration: line-through; }
 }
 .asked-span { font-size: 13px; color: var(--ink-soft); }
 
+/* band headings ------------------------------------------------------- */
+.band { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap;
+        margin: 16px 0 6px; padding-bottom: 4px;
+        border-bottom: 1px solid var(--line-soft); }
+.band:first-child { margin-top: 6px; }
+.band-t { font-size: 12px; font-weight: 600; letter-spacing: .04em;
+          text-transform: uppercase; color: var(--ink-soft); }
+.band-w { font-size: 12px; color: var(--ink-faint); }
+.narrow-k { margin: 14px 0 6px; }
+
+/* the dead end -------------------------------------------------------- */
+.noresult { border-left: 3px solid var(--line); padding-left: 12px;
+            margin-top: 4px; }
+.noresult p { font-size: 13.5px; color: var(--ink-soft); margin: 0 0 8px;
+              line-height: 1.55; }
+.noresult b { color: var(--ink); }
+
 /* accessibility layer ------------------------------------------------------ */
 /* The audience is a budget Android at 360px and a first-time reader. Every
    rule here is measured, not aesthetic: 24 of the RTE Schedule's readers use
