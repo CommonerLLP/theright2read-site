@@ -50,6 +50,15 @@ body {
 }
 a { color: var(--accent); }
 
+/* FORM CONTROLS DO NOT INHERIT COLOUR, and in dark mode that means black.
+   An input, a button, a select and a textarea take their colour from the
+   browser, not from the page, so any control here that set `font: inherit`
+   and no colour rendered black text on a dark ground. The search box measured
+   1.13:1 and the top button 1.24:1. Both were unreadable, and both had been
+   shipped. Inheriting fixes every control at once, including the ones nobody
+   has added yet. */
+input, button, select, textarea, optgroup { color: inherit; }
+
 /* masthead ---------------------------------------------------------------- */
 .masthead h1, .wrap h1 { font-family: var(--font-display); letter-spacing: .01em; }
 .masthead { background: var(--panel); border-bottom: 1px solid var(--line);
@@ -547,7 +556,11 @@ button.cn { background: var(--panel); border: 1px solid var(--line);
 /* 6. The skip link appears on focus, above the app bar. */
 .skip-link {
   position: absolute; left: -999px; top: 0; z-index: 99;
-  background: var(--accent-2); color: #fff; padding: 10px 16px;
+  /* The page ground, not #fff. In dark mode the accent is a light blue, and
+     white on it measured 2.98:1 — below the 4.5:1 floor, on the first
+     control a keyboard user ever reaches. The ground inverts with the theme,
+     so this pair holds in both. */
+  background: var(--accent-2); color: var(--bg); padding: 10px 16px;
   font-family: var(--sans);
 }
 .skip-link:focus { left: 0; }
