@@ -358,14 +358,28 @@ function officialHTML(f) {
     // column the schema DESCRIBES but whose printed cell we could not read
     // is our gap, not theirs. Saying otherwise put a false claim about a
     // government document on a public page.
+    // The schema can still describe a column under the name it had before
+    // the release renamed it. Show that description under the old name, and
+    // never as this column's own. The two are not interchangeable: the form
+    // relabelled the same grid row, and the change history below says so.
+    const e = f.official_under_earlier_name;
+    if (e) {
+      return `<div class="k">Variable — as released</div>
+        <div class="official">
+          <div class="desc">${esc(e.description)}</div>
+          <div class="meta">the schema document describes this column under
+            its earlier name, <code>${esc(e.name)}</code></div>
+        </div>
+        <p class="q-note">The release renamed the column. The schema document
+          was not updated. The change history below records the rename and
+          what the form did at the same time.</p>`;
+    }
     const u = f.official_unreadable;
     return `<div class="k">Variable — as released</div>
       <p class="detail-empty" style="margin:0">${u
-        ? `The schema document describes this column. Our reading of its printed
-           cell did not survive a check (${esc(u[0].why)}), so no description is
-           shown here rather than a wrong one.`
-        : `The Ministry's schema document does not list this column. That is a
-           gap in the published schema, not in this page.`}</p>`;
+        ? `The schema document describes this column. Its printed cell did
+           not read cleanly: ${esc(u[0].why)}. No description is shown.`
+        : `The Ministry's schema document does not list this column.`}</p>`;
   }
   return `<div class="k">Variable — as released</div>` + o.map((x) => `
     <div class="official">
@@ -609,14 +623,14 @@ function showEvent(e, struct, recode, spanning) {
 
   const renTable = ren.length && show("RENAME") ? `<div class="evt-block">
     <h4>Renamed — ${ren.length}</h4>
-    <p class="evt-why">The column survived. Only its name changed. A panel keyed on the old
+    <p class="evt-why">The column continued under a new name. A panel keyed on the old
       name silently returns nothing for every year after this boundary. Two kinds of evidence
       appear below, and they are not equal. <b>Read off the form</b> means somebody opened the
       Data Capture Format for both years and saw the same question. <b>Name similarity only</b>
       means the two names look alike and nothing else in the file looks closer — a lead, not a
       finding. At the 2022-23 break this test proposed 15 renames and 5 were wrong.</p>
     <div class="tscroll"><table><thead><tr><th>was</th><th>became</th><th>file</th>
-      <th>how we know it is the same column</th></tr></thead>
+      <th>the evidence for the pairing</th></tr></thead>
     <tbody>${ren.map((c) => `<tr><td><code>${esc(c.from)}</code></td>
       <td><code>${esc(c.to)}</code></td><td>${esc(c.dataset)}</td>
       <td>${esc(c.basis || "")}</td></tr>`).join("")}

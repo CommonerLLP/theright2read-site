@@ -1169,7 +1169,13 @@
     "kind": "release_key",
     "note": "The category a row counts, as a word: 'SC', 'Muslim', an age. Replaced at 2022-23 by the numeric item_group and item_id pair."
    },
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Item Description",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "VARCHAR",
     "n_distinct_capped": 20
@@ -1183,7 +1189,13 @@
     "kind": "release_key",
     "note": "The pseudonymised school identifier, as spelled before 2022-23. One series with pseudocode."
    },
-   "described": null,
+   "described": [
+    {
+     "era": "pre-sdmis",
+     "description": "Psuedo Code(Unique Identity Number of school)",
+     "remarks": ""
+    }
+   ],
    "released": {
     "dtype": "VARCHAR",
     "n_distinct_capped": 40
@@ -5097,7 +5109,7 @@
    "described": [
     {
      "era": "pre-sdmis",
-     "description": "Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral)",
+     "description": "No. Of Teacher whose Highest Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral)",
      "remarks": ""
     }
    ],

@@ -2957,6 +2957,9 @@
     "2019-20",
     "2020-21",
     "2021-22"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as char, described as \u201cItem Description\u201d"
    ]
   },
   {
@@ -3042,6 +3045,9 @@
    "isVersionOf": "udise:series.enrolment_data_2.psuedocode",
    "altLabel": [
     "pseudocode"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 to 2021-22 as bigint, described as \u201cPsuedo Code(Unique Identity Number of school)\u201d"
    ],
    "note": [
     "pseudocode-stability: The release withholds the 11-digit UDISE code and substitutes a pseudocode. Arun C. Mehta warns that the pseudocode is not stable: 'even the pseudo ID is not unique as during the next year's UDISE+ data collection, the school may be allotted another pseudo-Id'.",
@@ -4320,7 +4326,10 @@
     "2025-26"
    ],
    "definition": "If no playground, whether adequate arrangements exist for outdoor games",
-   "dct:provenance": "a person opened the form and read the item",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2022-23 to 2025-26 as type not stated, described as \u201cWhether school has made adequate arrangements for children to Play outdoor games and other physical activities in an adjoining playground /municipal park etc\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 2.13",
    "scopeNote": "0, 1-Yes, 2-No, 9-Not applicable"
   },
@@ -6727,7 +6736,10 @@
     "2025-26"
    ],
    "definition": "Does the School take admission under Section 12 of the RTE Act (25% Quota of entry-level seats)? \u2014 set at ADMIN level, private unaided only",
-   "dct:provenance": "a person opened the form and read the item",
+   "dct:provenance": [
+    "a person opened the form and read the item",
+    "Shared 2025-26 as smallint, described as \u201cDoes the School take admission under Section 12 of the RTE Act (applicable for private unaided schools\u201d. Remarks: Yes=1, No=2"
+   ],
    "references": "DCF item 1.29",
    "scopeNote": "1-Yes, 2-No"
   },
@@ -7716,6 +7728,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c6_b",
    "altLabel": [
     "rte_ews_c6_b"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-6 Boys\u201d"
    ]
   },
   {
@@ -7813,6 +7828,9 @@
    "isVersionOf": "udise:series.profile_data_2.rte_bld_c8_g",
    "altLabel": [
     "rte_ews_c8_g"
+   ],
+   "dct:provenance": [
+    "Shared 2018-19 as smallint, described as \u201cStudent Enrolled under RTE Act have received building, equipment for Class-8 Girls\u201d"
    ]
   },
   {
@@ -9494,8 +9512,7 @@
     "2025-26"
    ],
    "dct:provenance": [
-    "Shared 2018-19 to 2021-22 as smallint, described as \u201cAcademic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral)\u201d",
-    "Shared 2022-23 to 2025-26 as smallint, described as \u201cAcademic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral) in school\u201d"
+    "Shared 2018-19 to 2021-22 as smallint, described as \u201cNo. Of Teacher whose Highest Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral)\u201d"
    ]
   },
   {

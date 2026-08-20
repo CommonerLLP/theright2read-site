@@ -1726,6 +1726,7 @@ udise:enrolment_data_2.item_desc a skos:Concept ;
     dct:isPartOf "enrolment_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as char, described as “Item Description”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"NOT_A_RENAME\", \"from\": \"item_desc\", \"candidate\": \"item_id\", \"similarity\": null, \"why\": \"a SPLIT, not a rename: item_desc became item_group AND item_id, two columns\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"item_desc\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en .
@@ -1781,6 +1782,7 @@ udise:enrolment_data_2.psuedocode a skos:Concept ;
     dct:isPartOf "enrolment_data_2" ;
     dct:temporal "2018-19/2021-22" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22" ;
+    dct:provenance "Shared 2018-19 to 2021-22 as bigint, described as “Psuedo Code(Unique Identity Number of school)”"@en ;
     dct:isVersionOf udise:series.enrolment_data_2.psuedocode ;
     skos:altLabel "pseudocode"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"psuedocode\", \"to\": \"pseudocode\", \"basis\": \"the pseudonymised school identifier, spelled 'psuedocode' to 2021-22 and 'pseudocode' from 2022-23. The Ministry's schema types both as bigint and describes them as the unique identity number of the school\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"release\"}"@en ;
@@ -2594,6 +2596,7 @@ udise:facility_data.playground_alt_yn a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item. The form year is not recorded, so the item number alone may point at a later form."@en ;
     dct:references "DCF item 2.13" ;
     skos:scopeNote "0, 1-Yes, 2-No, 9-Not applicable"@en ;
+    dct:provenance "Shared 2022-23 to 2025-26 as type not stated, described as “Whether school has made adequate arrangements for children to Play outdoor games and other physical activities in an adjoining playground /municipal park etc”. Remarks: Yes=1, No=2"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"playground_alt_yn\"}"@en .
 
 udise:facility_data.playground_available a skos:Concept ;
@@ -4130,6 +4133,7 @@ udise:profile_data_1.rte_25p_admission_yn a skos:Concept ;
     skos:editorialNote "Question: a person opened the form and read the item. The form year is not recorded, so the item number alone may point at a later form."@en ;
     dct:references "DCF item 1.29" ;
     skos:scopeNote "1-Yes, 2-No"@en ;
+    dct:provenance "Shared 2025-26 as smallint, described as “Does the School take admission under Section 12 of the RTE Act (applicable for private unaided schools”. Remarks: Yes=1, No=2"@en ;
     skos:historyNote "{\"at\": \"2024-25 to 2025-26\", \"action\": \"INSERT\", \"field\": \"rte_25p_admission_yn\"}"@en .
 
 udise:profile_data_1.rural_urban a skos:Concept ;
@@ -4741,6 +4745,7 @@ udise:profile_data_2.rte_bld_c6_b a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-6 Boys”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c6_b ;
     skos:altLabel "rte_ews_c6_b"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c6_b\", \"to\": \"rte_ews_c6_b\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -4810,6 +4815,7 @@ udise:profile_data_2.rte_bld_c8_g a skos:Concept ;
     dct:isPartOf "profile_data_2" ;
     dct:temporal "2018-19/2018-19" ;
     dct:valid "2018-19" ;
+    dct:provenance "Shared 2018-19 as smallint, described as “Student Enrolled under RTE Act have received building, equipment for Class-8 Girls”"@en ;
     dct:isVersionOf udise:series.profile_data_2.rte_bld_c8_g ;
     skos:altLabel "rte_ews_c8_g"@en ;
     skos:historyNote "{\"at\": \"2018-19 to 2019-20\", \"action\": \"RENAME\", \"from\": \"rte_bld_c8_g\", \"to\": \"rte_ews_c8_g\", \"basis\": \"the form relabelled one row of the RTE Section 12 quota grid: 2018-19 head 'schools that have received land, building, equipment or other facilities at concessional rate' became 'Economically Weaker Section (EWS)' by 2020-21. Same grid, same children, new heading (DCF 1.42(b))\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
@@ -5840,8 +5846,7 @@ udise:teacher_data.post_graduate_and_above a skos:Concept ;
     dct:isPartOf "teacher_data" ;
     dct:temporal "2018-19/2025-26" ;
     dct:valid "2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26" ;
-    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral)”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral) in school”"@en .
+    dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. Of Teacher whose Highest Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral)”"@en .
 
 udise:teacher_data.pseudocode a skos:Concept ;
     skos:inScheme udise:scheme ;

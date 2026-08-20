@@ -14,7 +14,7 @@
  "n_fields": 221,
  "flags": {
   "asked_verified_this_form": 48,
-  "described_no_question": 61,
+  "described_no_question": 60,
   "code_disagreements": [
    {
     "id": "facility_data.comp_lab_cond",
@@ -2419,7 +2419,13 @@
     "how": "curated",
     "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
    },
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Whether school has made adequate arrangements for children to Play outdoor games and other physical activities in an adjoining playground /municipal park etc",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 3,
@@ -4982,13 +4988,7 @@
    "dataset": "teacher_data",
    "field": "post_graduate_and_above",
    "asked": null,
-   "described": [
-    {
-     "era": "sdmis",
-     "description": "Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral) in school",
-     "remarks": ""
-    }
-   ],
+   "described": null,
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40

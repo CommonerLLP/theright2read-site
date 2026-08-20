@@ -14,7 +14,7 @@
  "n_fields": 270,
  "flags": {
   "asked_verified_this_form": 52,
-  "described_no_question": 64,
+  "described_no_question": 63,
   "code_disagreements": [
    {
     "id": "facility_data.availability_of_handrails",
@@ -3442,7 +3442,13 @@
     "how": "curated",
     "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
    },
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Whether school has made adequate arrangements for children to Play outdoor games and other physical activities in an adjoining playground /municipal park etc",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 4,
@@ -5204,7 +5210,13 @@
     "how": "curated",
     "note": "The question is verified in another year's form. This year's form does not carry a matching line, or the form is not on disk."
    },
-   "described": null,
+   "described": [
+    {
+     "era": "sdmis",
+     "description": "Does the School take admission under Section 12 of the RTE Act (applicable for private unaided schools",
+     "remarks": "Yes=1, No=2"
+    }
+   ],
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 4,
@@ -6399,13 +6411,7 @@
    "dataset": "teacher_data",
    "field": "post_graduate_and_above",
    "asked": null,
-   "described": [
-    {
-     "era": "sdmis",
-     "description": "Academic Qualification is Post Graduate and Above (Include Post Graduate, M.Phil., Ph.D. and Post Doctoral) in school",
-     "remarks": ""
-    }
-   ],
+   "described": null,
    "released": {
     "dtype": "BIGINT",
     "n_distinct_capped": 40
