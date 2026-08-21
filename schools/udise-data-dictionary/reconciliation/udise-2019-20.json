@@ -22,7 +22,7 @@
    },
    {
     "id": "facility_data.building_status",
-    "agreement": "partly corroborated: the column also holds 10"
+    "agreement": "partly corroborated: the column also holds 10, 7"
    },
    {
     "id": "facility_data.internet",
@@ -1328,7 +1328,7 @@
      "7",
      "10"
     ],
-    "agreement": "partly corroborated: the column also holds 10"
+    "agreement": "partly corroborated: the column also holds 10, 7"
    }
   },
   {

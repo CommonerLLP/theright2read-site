@@ -1899,6 +1899,9 @@
    ],
    "dct:provenance": [
     "Shared 2018-19 to 2021-22 as char, described as \u201cItem Description\u201d"
+   ],
+   "note": [
+    "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."
    ]
   },
   {
@@ -1918,6 +1921,10 @@
    ],
    "dct:provenance": [
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cItem Group =1,Item Id = 1 Then General\u201d"
+   ],
+   "scopeNote": "1-Social category, 2-Religious minority, 3-not established, 4-CWSN by disability type, 5-not established",
+   "note": [
+    "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."
    ]
   },
   {
@@ -1937,6 +1944,10 @@
    ],
    "dct:provenance": [
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cGeneral, SC, ST, OBC, Muslims, Christians, Sikh, Buddhist,Parsi, Jain BPL, EWS and CWSN Enrolment with disability type,Repeater\u201d"
+   ],
+   "scopeNote": "1-General (group 1), 2-SC (group 1), 3-ST (group 1), 4-OBC (group 1), 5-Muslim (group 2), 6-Christian (group 2), 7-Sikh (group 2), 8-Buddhist (group 2), 9-Parsi (group 2), 10-Jain (group 2)",
+   "note": [
+    "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."
    ]
   },
   {
@@ -2960,6 +2971,9 @@
    ],
    "dct:provenance": [
     "Shared 2018-19 to 2021-22 as char, described as \u201cItem Description\u201d"
+   ],
+   "note": [
+    "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."
    ]
   },
   {
@@ -2979,6 +2993,9 @@
    ],
    "dct:provenance": [
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cItem Group =1,Item Id = 1 Then General\u201d"
+   ],
+   "note": [
+    "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."
    ]
   },
   {
@@ -2998,6 +3015,9 @@
    ],
    "dct:provenance": [
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cAge id (2 to 22)\u201d. Remarks: Age id (2 to 22)"
+   ],
+   "note": [
+    "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."
    ]
   },
   {
@@ -3080,7 +3100,10 @@
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cHand-rails for ramp is available in school\u201d. Remarks: Yes=1, No=2"
    ],
    "references": "DCF item 2.15",
-   "scopeNote": "0, 1-Yes, 2-No, 9-Not applicable"
+   "scopeNote": "0, 1-Yes, 2-No, 9-undocumented",
+   "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
+   ]
   },
   {
    "@id": "udise:facility_data.availability_ramps",
@@ -3288,7 +3311,11 @@
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cStatus of the school building\u201d. Remarks: As per UDISE DCF"
    ],
    "references": "DCF item 2.1",
-   "scopeNote": "1-Government, 2-Rent free, 3-Rented, 4-Govt school running in Panchayat/Municipal Building, 5-Dilapidated, 6-Under Construction, 7-No Building"
+   "scopeNote": "1-Private Owned, 2-Rented, 3-Government Owned, 4-Government School in a Rent free building, 5-NO Building (Running in Open Place), 6-School Running in other Department Building, 8-undocumented",
+   "note": [
+    "number-of-not-no: `no_building_blocks` is a COUNT of building blocks, item 2.2(i). The release describes it as 'Total Number of building blocks of the school'. It is not a flag for having no building. 692,513 schools carry the value 1, meaning one block. The status of the building is a different column, `building_status` at item 2.1, where code 5 is 'NO Building (Running in Open Place)'.",
+    "building-codes-moved: The code list for DCF 2.1 is not stable across the eight releases. 'School running in other Department Building' is code 10 through 2021-22 and code 6 from 2022-23. 'Building under construction' is code 7 through 2021-22 and is dropped afterwards. Code 5 has meant no building throughout, but the 2021-22 form words it 'NO/Dilapidated Building' and the 2023-24 form 'NO Building (Running in Open Place)'. Code 8 appears in 875 schools in 2025-26 and in no other year, and no form in any year prints it."
+   ]
   },
   {
    "@id": "udise:facility_data.chem_lab_cond",
@@ -3594,7 +3621,7 @@
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cAccess to DTH/TV channels in school\u201d. Remarks: Yes=1, No=2"
    ],
    "references": "DCF item 2.27(d)",
-   "scopeNote": "1-Yes, 2-No, 4-Not applicable"
+   "scopeNote": "1-Yes, 2-No, 4-undocumented"
   },
   {
    "@id": "udise:facility_data.electricity_availability",
@@ -3720,7 +3747,7 @@
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of students for whom Furniture available in school\u201d. Remarks: 1-Yes for all, 2-Partial, 3-No Furniture Available"
    ],
    "references": "DCF item 2.19",
-   "scopeNote": "1-Yes, 2-No, 3-Partial"
+   "scopeNote": "1-Yes for all, 2-Partial, 3-No Furniture Available"
   },
   {
    "@id": "udise:facility_data.geo_lab_cond",
@@ -3921,7 +3948,10 @@
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cICT Lab available in school under Samagra Siksha\u201d. Remarks: As per UDISE DCF"
    ],
    "references": "DCF item 2.25(b)",
-   "scopeNote": "1-Yes, 2-No, 9-Not applicable"
+   "scopeNote": "1-Yes, 2-No, 9-undocumented",
+   "note": [
+    "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."
+   ]
   },
   {
    "@id": "udise:facility_data.internet",
@@ -4169,7 +4199,10 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cTotal Number of building blocks of the school\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of building blocks of the school\u201d"
    ],
-   "references": "DCF item 2.2(i)"
+   "references": "DCF item 2.2(i)",
+   "note": [
+    "number-of-not-no: `no_building_blocks` is a COUNT of building blocks, item 2.2(i). The release describes it as 'Total Number of building blocks of the school'. It is not a flag for having no building. 692,513 schools carry the value 1, meaning one block. The status of the building is a different column, `building_status` at item 2.1, where code 5 is 'NO Building (Running in Open Place)'."
+   ]
   },
   {
    "@id": "udise:facility_data.other_rooms",
@@ -4535,7 +4568,10 @@
     "Shared 2018-19 to 2021-22 as smallint, described as \u201cPucca Building\u201d",
     "Shared 2022-23 to 2025-26 as smallint, described as \u201cNo. of Pucca building blocks of the school\u201d"
    ],
-   "references": "DCF item 2.2(i)"
+   "references": "DCF item 2.2(i)",
+   "note": [
+    "number-of-not-no: `no_building_blocks` is a COUNT of building blocks, item 2.2(i). The release describes it as 'Total Number of building blocks of the school'. It is not a flag for having no building. 692,513 schools carry the value 1, meaning one block. The status of the building is a different column, `building_status` at item 2.1, where code 5 is 'NO Building (Running in Open Place)'."
+   ]
   },
   {
    "@id": "udise:facility_data.rain_water_harvesting",

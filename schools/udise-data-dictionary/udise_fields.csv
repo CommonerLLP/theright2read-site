@@ -38,9 +38,9 @@ enrolment_data_1.c9_t,enrolment_data_1.c9_t,enrolment_data_1,c9_t,Students,2025-
 enrolment_data_1.cpp_b,enrolment_data_1.cpp_b,enrolment_data_1,cpp_b,Students,2018-19,2025-26,8,0,,,,
 enrolment_data_1.cpp_g,enrolment_data_1.cpp_g,enrolment_data_1,cpp_g,Students,2018-19,2025-26,8,0,,,,
 enrolment_data_1.cpp_t,enrolment_data_1.cpp_t,enrolment_data_1,cpp_t,Students,2025-26,2025-26,1,0,,,,
-enrolment_data_1.item_desc,enrolment_data_1.item_desc,enrolment_data_1,item_desc,Students,2018-19,2021-22,4,0,,,,
-enrolment_data_1.item_group,enrolment_data_1.item_group,enrolment_data_1,item_group,Students,2022-23,2025-26,4,0,,,,
-enrolment_data_1.item_id,enrolment_data_1.item_id,enrolment_data_1,item_id,Students,2022-23,2025-26,4,0,,,,
+enrolment_data_1.item_desc,enrolment_data_1.item_desc,enrolment_data_1,item_desc,Students,2018-19,2021-22,4,0,,,,enrolment-item-codes
+enrolment_data_1.item_group,enrolment_data_1.item_group,enrolment_data_1,item_group,Students,2022-23,2025-26,4,0,,,"1-Social category, 2-Religious minority, 3-not established, 4-CWSN by disability type, 5-not established",enrolment-item-codes
+enrolment_data_1.item_id,enrolment_data_1.item_id,enrolment_data_1,item_id,Students,2022-23,2025-26,4,0,,,"1-General (group 1), 2-SC (group 1), 3-ST (group 1), 4-OBC (group 1), 5-Muslim (group 2), 6-Christian (group 2), 7-Sikh (group 2), 8-Buddhist (group 2), 9-Parsi (group 2), 10-Jain (group 2)",enrolment-item-codes
 enrolment_data_1.pseudocode,enrolment_data_1.psuedocode,enrolment_data_1,pseudocode,Students,2022-23,2025-26,4,0,,,,pseudocode-stability spelling-of-the-key
 enrolment_data_1.psuedocode,enrolment_data_1.psuedocode,enrolment_data_1,psuedocode,Students,2018-19,2021-22,4,0,,,,pseudocode-stability spelling-of-the-key
 enrolment_data_2.c10_b,enrolment_data_2.c10_b,enrolment_data_2,c10_b,Students,2018-19,2025-26,8,0,enrolment grid,Enrolment grid: boys enrolled in class 10,count of children,
@@ -82,12 +82,12 @@ enrolment_data_2.c9_t,enrolment_data_2.c9_t,enrolment_data_2,c9_t,Students,2025-
 enrolment_data_2.cpp_b,enrolment_data_2.cpp_b,enrolment_data_2,cpp_b,Students,2018-19,2025-26,8,0,,,,
 enrolment_data_2.cpp_g,enrolment_data_2.cpp_g,enrolment_data_2,cpp_g,Students,2018-19,2025-26,8,0,,,,
 enrolment_data_2.cpp_t,enrolment_data_2.cpp_t,enrolment_data_2,cpp_t,Students,2025-26,2025-26,1,0,,,,
-enrolment_data_2.item_desc,enrolment_data_2.item_desc,enrolment_data_2,item_desc,Students,2018-19,2021-22,4,0,,,,
-enrolment_data_2.item_group,enrolment_data_2.item_group,enrolment_data_2,item_group,Students,2022-23,2025-26,4,0,,,,
-enrolment_data_2.item_id,enrolment_data_2.item_id,enrolment_data_2,item_id,Students,2022-23,2025-26,4,0,,,,
+enrolment_data_2.item_desc,enrolment_data_2.item_desc,enrolment_data_2,item_desc,Students,2018-19,2021-22,4,0,,,,enrolment-item-codes
+enrolment_data_2.item_group,enrolment_data_2.item_group,enrolment_data_2,item_group,Students,2022-23,2025-26,4,0,,,,enrolment-item-codes
+enrolment_data_2.item_id,enrolment_data_2.item_id,enrolment_data_2,item_id,Students,2022-23,2025-26,4,0,,,,enrolment-item-codes
 enrolment_data_2.pseudocode,enrolment_data_2.psuedocode,enrolment_data_2,pseudocode,Students,2022-23,2025-26,4,0,,,,pseudocode-stability spelling-of-the-key
 enrolment_data_2.psuedocode,enrolment_data_2.psuedocode,enrolment_data_2,psuedocode,Students,2018-19,2021-22,4,0,,,,pseudocode-stability spelling-of-the-key
-facility_data.availability_of_handrails,facility_data.availability_of_handrails,facility_data,availability_of_handrails,Physical Facilities,2018-19,2025-26,8,0,2.15,Whether Hand-rails for ramp are available?,"0, 1-Yes, 2-No, 9-Not applicable",
+facility_data.availability_of_handrails,facility_data.availability_of_handrails,facility_data,availability_of_handrails,Physical Facilities,2018-19,2025-26,8,0,2.15,Whether Hand-rails for ramp are available?,"0, 1-Yes, 2-No, 9-undocumented",undocumented-code-9
 facility_data.availability_ramps,facility_data.availability_ramps,facility_data,availability_ramps,Physical Facilities,2018-19,2025-26,8,0,2.15,Whether Ramp for disabled children to access school building exists?,"1-Yes, 2-No",
 facility_data.bio_lab_cond,facility_data.bio_lab_cond,facility_data,bio_lab_cond,Physical Facilities,2022-23,2025-26,4,0,,,,
 facility_data.boarding_hsec_yn,facility_data.boarding_hsec_yn,facility_data,boarding_hsec_yn,Physical Facilities,2025-26,2025-26,1,0,2.21,Whether Boarding/Hostel facilities are available for the following Stage(s)/Level(s)?,,
@@ -96,7 +96,7 @@ facility_data.boarding_sec_yn,facility_data.boarding_sec_yn,facility_data,boardi
 facility_data.boarding_upr_yn,facility_data.boarding_upr_yn,facility_data,boarding_upr_yn,Physical Facilities,2025-26,2025-26,1,0,2.21i,Whether Boarding/Hostel facilities are available for the following Stage(s)/Level(s)? — Primary,,
 facility_data.book_bank,facility_data.book_bank,facility_data,book_bank,Physical Facilities,2022-23,2025-26,4,0,2.11(a),Whether the school has Library facility/Book Bank/Reading Corner? — Book Bank,"1-Yes, 2-No",state-conventions
 facility_data.boundary_wall,facility_data.boundary_wall,facility_data,boundary_wall,Physical Facilities,2018-19,2025-26,8,0,2.4,Type of Boundary Wall,"1-Pucca, 2-Pucca but broken, 3-Barbed wire fencing, 4-Hedges, 5-No boundary walls, 6-Others, 7-Partial, 8-Under Construction",type-code-as-binary
-facility_data.building_status,facility_data.building_status,facility_data,building_status,Physical Facilities,2018-19,2025-26,8,0,2.1,Status of Present School Building?,"1-Government, 2-Rent free, 3-Rented, 4-Govt school running in Panchayat/Municipal Building, 5-Dilapidated, 6-Under Construction, 7-No Building",
+facility_data.building_status,facility_data.building_status,facility_data,building_status,Physical Facilities,2018-19,2025-26,8,0,2.1,Status of Present School Building?,"1-Private Owned, 2-Rented, 3-Government Owned, 4-Government School in a Rent free building, 5-NO Building (Running in Open Place), 6-School Running in other Department Building, 8-undocumented",number-of-not-no building-codes-moved
 facility_data.chem_lab_cond,facility_data.chem_lab_cond,facility_data,chem_lab_cond,Physical Facilities,2022-23,2025-26,4,0,,,,
 facility_data.classrooms_in_good_condition,facility_data.classrooms_in_good_condition,facility_data,classrooms_in_good_condition,Physical Facilities,2018-19,2025-26,8,0,2.3(a),Classrooms in good condition,count,
 facility_data.classrooms_needs_major_repair,facility_data.classrooms_needs_major_repair,facility_data,classrooms_needs_major_repair,Physical Facilities,2018-19,2025-26,8,0,2.3(a),Classrooms needing major repair,count,
@@ -108,12 +108,12 @@ facility_data.desktop,facility_data.desktop,facility_data,desktop,Physical Facil
 facility_data.digiboard,facility_data.digiboard,facility_data,digiboard,Physical Facilities,2018-19,2025-26,8,0,2.24(e),Computer or Digital Equipment Status — Digital Boards with Content Management Systems and solutions (CMS)/ Learning Management System,count,
 facility_data.drinking_water_available,facility_data.drinking_water_available,facility_data,drinking_water_available,Physical Facilities,2018-19,2021-22,4,0,2.6,Whether drinking water is available in the school premises?,,union-artefact
 facility_data.drinking_water_functional,facility_data.drinking_water_functional,facility_data,drinking_water_functional,Physical Facilities,2018-19,2021-22,4,0,2.8(b),"Whether drinking water is available in the school premises?                                     (Yes=1, No=2) — Whether water purifier/RO is available in the school                     (Yes=1, No=2, Yes, but not functional=3)",,union-artefact
-facility_data.dth,facility_data.dth,facility_data,dth,Physical Facilities,2018-19,2025-26,8,0,2.27(d),Access to DTH/TV channels,"1-Yes, 2-No, 4-Not applicable",
+facility_data.dth,facility_data.dth,facility_data,dth,Physical Facilities,2018-19,2025-26,8,0,2.27(d),Access to DTH/TV channels,"1-Yes, 2-No, 4-undocumented",
 facility_data.electricity_availability,facility_data.electricity_availability,facility_data,electricity_availability,Physical Facilities,2018-19,2025-26,8,0,2.5(a),Whether electricity connection is available in the school?,"1-Yes, 2-No, 3-Yes but not Functional",type-code-as-binary
 facility_data.enrichment_activities,facility_data.enrichment_activities,facility_data,enrichment_activities,Physical Facilities,2025-26,2025-26,1,0,2.x,Whether enrichment activities are conducted,"1-Yes, 2-No",
 facility_data.func_boys_cwsn_friendly,facility_data.func_boys_cwsn_friendly,facility_data,func_boys_cwsn_friendly,Physical Facilities,2018-19,2025-26,8,0,,,,
 facility_data.func_girls_cwsn_friendly,facility_data.func_girls_cwsn_friendly,facility_data,func_girls_cwsn_friendly,Physical Facilities,2018-19,2025-26,8,0,,,,
-facility_data.furniture_availability,facility_data.furniture_availability,facility_data,furniture_availability,Physical Facilities,2018-19,2025-26,8,0,2.19,Does the school have furniture for students?,"1-Yes, 2-No, 3-Partial",
+facility_data.furniture_availability,facility_data.furniture_availability,facility_data,furniture_availability,Physical Facilities,2018-19,2025-26,8,0,2.19,Does the school have furniture for students?,"1-Yes for all, 2-Partial, 3-No Furniture Available",
 facility_data.geo_lab_cond,facility_data.geo_lab_cond,facility_data,geo_lab_cond,Physical Facilities,2022-23,2025-26,4,0,,,,
 facility_data.hand_pump_fun_yn,facility_data.hand_pump_fun_yn,facility_data,hand_pump_fun_yn,Physical Facilities,2022-23,2025-26,4,0,2.9,Hand pump functional,"1-Yes, 2-No",
 facility_data.hand_pump_yn,facility_data.hand_pump_yn,facility_data,hand_pump_yn,Physical Facilities,2022-23,2025-26,4,0,2.9(a),Main Source of Drinking Water — hand pump,"1-Yes, 2-No",
@@ -121,7 +121,7 @@ facility_data.handwash_facility_for_meal,facility_data.handwash_facility_for_mea
 facility_data.handwash_near_toilet,facility_data.handwash_near_toilet,facility_data,handwash_near_toilet,Physical Facilities,2018-19,2025-26,8,0,2.7,Handwash facility near the toilet,"1-Yes, 2-No, 9-Not applicable",
 facility_data.home_sc_lab_cond,facility_data.home_sc_lab_cond,facility_data,home_sc_lab_cond,Physical Facilities,2022-23,2025-26,4,0,2.22(g),Does the school have the following laboratories? (For Higher Secondary sections only) — Home Science,"1-Yes, 2-No",
 facility_data.ict_lab,facility_data.ict_lab,facility_data,ict_lab,Physical Facilities,2018-19,2021-22,4,0,2.27,Is ICT Lab available in the school?,,undocumented-code-9 union-artefact
-facility_data.ict_lab_yn,facility_data.ict_lab,facility_data,ict_lab_yn,Physical Facilities,2022-23,2025-26,4,0,2.25(b),Is the ICT Lab available in the school under Samagra Siksha?,"1-Yes, 2-No, 9-Not applicable",
+facility_data.ict_lab_yn,facility_data.ict_lab,facility_data,ict_lab_yn,Physical Facilities,2022-23,2025-26,4,0,2.25(b),Is the ICT Lab available in the school under Samagra Siksha?,"1-Yes, 2-No, 9-undocumented",undocumented-code-9
 facility_data.internet,facility_data.internet,facility_data,internet,Physical Facilities,2018-19,2025-26,8,0,2.26,Does the School have Internet Facility?,"1-Yes, 2-No",
 facility_data.kitchen_garden_yn,facility_data.kitchen_garden_yn,facility_data,kitchen_garden_yn,Physical Facilities,2025-26,2025-26,1,0,2.17(a),Whether Kitchen Garden is available in school?,"1-Yes, 2-No",
 facility_data.land_avl_yn,facility_data.land_avl_yn,facility_data,land_avl_yn,Physical Facilities,2025-26,2025-26,1,0,2.12(b),Whether Land is available for expansion of school facilities?,"1-Yes, 2-No",
@@ -131,7 +131,7 @@ facility_data.librarian_yn,facility_data.librarian_yn,facility_data,librarian_yn
 facility_data.library_availability,facility_data.library_availability,facility_data,library_availability,Physical Facilities,2018-19,2025-26,8,0,2.11(a),Whether the school has Library facility/Book Bank/Reading Corner? — Library,"1-Yes, 2-No",ungated-librarian state-conventions
 facility_data.math_lab_cond,facility_data.math_lab_cond,facility_data,math_lab_cond,Physical Facilities,2022-23,2025-26,4,0,2.22(c),Does the school have the following laboratories? (For Higher Secondary sections only) — Math’s Kit**,"1-Yes, 2-No",
 facility_data.medical_checkups,facility_data.medical_checkups,facility_data,medical_checkups,Physical Facilities,2018-19,2025-26,8,0,2.14(a),Whether Health check-up of students was conducted,"1-Yes, 2-No",
-facility_data.no_building_blocks,facility_data.no_building_blocks,facility_data,no_building_blocks,Physical Facilities,2018-19,2025-26,8,0,2.2(i),Type of School Building: — Total Number of Active* building blocks of the school,,
+facility_data.no_building_blocks,facility_data.no_building_blocks,facility_data,no_building_blocks,Physical Facilities,2018-19,2025-26,8,0,2.2(i),Type of School Building: — Total Number of Active* building blocks of the school,,number-of-not-no
 facility_data.other_rooms,facility_data.other_rooms,facility_data,other_rooms,Physical Facilities,2018-19,2025-26,8,0,2.6,Details of Rooms other than Classrooms (excluding toilets),count,
 facility_data.othsrc_fun_yn,facility_data.othsrc_fun_yn,facility_data,othsrc_fun_yn,Physical Facilities,2022-23,2025-26,4,0,2.9,Other source functional,"1-Yes, 2-No",
 facility_data.othsrc_yn,facility_data.othsrc_yn,facility_data,othsrc_yn,Physical Facilities,2022-23,2025-26,4,0,2.9(a),Main Source of Drinking Water — other source,"1-Yes, 2-No",
@@ -146,7 +146,7 @@ facility_data.pseudocode,facility_data.psuedocode,facility_data,pseudocode,Physi
 facility_data.psuedocode,facility_data.psuedocode,facility_data,psuedocode,Physical Facilities,2018-19,2021-22,4,0,,,,pseudocode-stability spelling-of-the-key
 facility_data.psycho_lab_cond,facility_data.psycho_lab_cond,facility_data,psycho_lab_cond,Physical Facilities,2022-23,2025-26,4,0,,,,
 facility_data.psycho_social,facility_data.psycho_social,facility_data,psycho_social,Physical Facilities,2025-26,2025-26,1,0,3.2(b),Details of Teaching Staffs (Including Head Master/Mistress/Principal/HoS) — psycho-social aspects:,"1-Yes, 2-No",
-facility_data.pucca_building_blocks,facility_data.pucca_building_blocks,facility_data,pucca_building_blocks,Physical Facilities,2018-19,2025-26,8,0,2.2(i),Type of School Building: — Total Number of Active* building blocks of the school,,
+facility_data.pucca_building_blocks,facility_data.pucca_building_blocks,facility_data,pucca_building_blocks,Physical Facilities,2018-19,2025-26,8,0,2.2(i),Type of School Building: — Total Number of Active* building blocks of the school,,number-of-not-no
 facility_data.rain_water_harvesting,facility_data.rain_water_harvesting,facility_data,rain_water_harvesting,Physical Facilities,2018-19,2025-26,8,0,2.10,Does the school have provision for rain water harvesting?,"1-Yes, 2-No, 3-Yes but not functional",type-code-as-binary
 facility_data.reading_corner,facility_data.reading_corner,facility_data,reading_corner,Physical Facilities,2022-23,2025-26,4,0,2.11(a),Whether the school has Library facility/Book Bank/Reading Corner? — Reading Corner,"1-Yes, 2-No",state-conventions
 facility_data.separate_room_for_hm,facility_data.separate_room_for_hm,facility_data,separate_room_for_hm,Physical Facilities,2018-19,2025-26,8,0,2.6,Separate room for the Head Master / Head Teacher,"1-Yes, 2-No",

@@ -1071,7 +1071,8 @@ udise:enrolment_data_1.item_desc a skos:Concept ;
     dct:provenance "Shared 2018-19 to 2021-22 as char, described as “Item Description”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"NOT_A_RENAME\", \"from\": \"item_desc\", \"candidate\": \"item_id\", \"similarity\": null, \"why\": \"a SPLIT, not a rename: item_desc became item_group AND item_id, two columns\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"item_desc\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en ;
+    skos:note "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."@en .
 
 udise:enrolment_data_1.item_group a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1082,9 +1083,11 @@ udise:enrolment_data_1.item_group a skos:Concept ;
     dct:isPartOf "enrolment_data_1" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    skos:scopeNote "1-Social category, 2-Religious minority, 3-not established, 4-CWSN by disability type, 5-not established"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Item Group =1,Item Id = 1 Then General”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_group\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en ;
+    skos:note "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."@en .
 
 udise:enrolment_data_1.item_id a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1095,9 +1098,11 @@ udise:enrolment_data_1.item_id a skos:Concept ;
     dct:isPartOf "enrolment_data_1" ;
     dct:temporal "2022-23/2025-26" ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
+    skos:scopeNote "1-General (group 1), 2-SC (group 1), 3-ST (group 1), 4-OBC (group 1), 5-Muslim (group 2), 6-Christian (group 2), 7-Sikh (group 2), 8-Buddhist (group 2), 9-Parsi (group 2), 10-Jain (group 2)"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “General, SC, ST, OBC, Muslims, Christians, Sikh, Buddhist,Parsi, Jain BPL, EWS and CWSN Enrolment with disability type,Repeater”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_id\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break\"}"@en ;
+    skos:note "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."@en .
 
 udise:enrolment_data_1.pseudocode a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1729,7 +1734,8 @@ udise:enrolment_data_2.item_desc a skos:Concept ;
     dct:provenance "Shared 2018-19 to 2021-22 as char, described as “Item Description”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"NOT_A_RENAME\", \"from\": \"item_desc\", \"candidate\": \"item_id\", \"similarity\": null, \"why\": \"a SPLIT, not a rename: item_desc became item_group AND item_id, two columns\"}"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"DELETE\", \"field\": \"item_desc\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en ;
+    skos:note "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."@en .
 
 udise:enrolment_data_2.item_group a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1742,7 +1748,8 @@ udise:enrolment_data_2.item_group a skos:Concept ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Item Group =1,Item Id = 1 Then General”"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_group\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en ;
+    skos:note "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."@en .
 
 udise:enrolment_data_2.item_id a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1755,7 +1762,8 @@ udise:enrolment_data_2.item_id a skos:Concept ;
     dct:valid "2022-23, 2023-24, 2024-25, 2025-26" ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Age id (2 to 22)”. Remarks: Age id (2 to 22)"@en ;
     skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"INSERT\", \"field\": \"item_id\"}"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"SPLIT\", \"from\": [\"item_desc\"], \"to\": [\"item_group\", \"item_id\"], \"detail\": \"a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break\"}"@en ;
+    skos:note "enrolment-item-codes: Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does."@en .
 
 udise:enrolment_data_2.pseudocode a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1801,9 +1809,10 @@ udise:facility_data.availability_of_handrails a skos:Concept ;
     skos:definition "Whether Hand-rails for ramp are available?"@en ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2020-21 Data Capture Format."@en ;
     dct:references "DCF item 2.15" ;
-    skos:scopeNote "0, 1-Yes, 2-No, 9-Not applicable"@en ;
+    skos:scopeNote "0, 1-Yes, 2-No, 9-undocumented"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Hand-rails for ramp is available”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Hand-rails for ramp is available in school”. Remarks: Yes=1, No=2"@en .
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Hand-rails for ramp is available in school”. Remarks: Yes=1, No=2"@en ;
+    skos:note "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."@en .
 
 udise:facility_data.availability_ramps a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -1939,9 +1948,11 @@ udise:facility_data.building_status a skos:Concept ;
     skos:definition "Status of Present School Building?"@en ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2018-19 Data Capture Format."@en ;
     dct:references "DCF item 2.1" ;
-    skos:scopeNote "1-Government, 2-Rent free, 3-Rented, 4-Govt school running in Panchayat/Municipal Building, 5-Dilapidated, 6-Under Construction, 7-No Building"@en ;
+    skos:scopeNote "1-Private Owned, 2-Rented, 3-Government Owned, 4-Government School in a Rent free building, 5-NO Building (Running in Open Place), 6-School Running in other Department Building, 8-undocumented"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Status of the school building”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Status of the school building”. Remarks: As per UDISE DCF"@en .
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Status of the school building”. Remarks: As per UDISE DCF"@en ;
+    skos:note "number-of-not-no: `no_building_blocks` is a COUNT of building blocks, item 2.2(i). The release describes it as 'Total Number of building blocks of the school'. It is not a flag for having no building. 692,513 schools carry the value 1, meaning one block. The status of the building is a different column, `building_status` at item 2.1, where code 5 is 'NO Building (Running in Open Place)'."@en ;
+    skos:note "building-codes-moved: The code list for DCF 2.1 is not stable across the eight releases. 'School running in other Department Building' is code 10 through 2021-22 and code 6 from 2022-23. 'Building under construction' is code 7 through 2021-22 and is dropped afterwards. Code 5 has meant no building throughout, but the 2021-22 form words it 'NO/Dilapidated Building' and the 2023-24 form 'NO Building (Running in Open Place)'. Code 8 appears in 875 schools in 2025-26 and in no other year, and no form in any year prints it."@en .
 
 udise:facility_data.chem_lab_cond a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2128,7 +2139,7 @@ udise:facility_data.dth a skos:Concept ;
     skos:definition "Access to DTH/TV channels"@en ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2026-27 Data Capture Format."@en ;
     dct:references "DCF item 2.27(d)" ;
-    skos:scopeNote "1-Yes, 2-No, 4-Not applicable"@en ;
+    skos:scopeNote "1-Yes, 2-No, 4-undocumented"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “School have No. Of DTH-TV Antenna”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “Access to DTH/TV channels in school”. Remarks: Yes=1, No=2"@en .
 
@@ -2200,7 +2211,7 @@ udise:facility_data.furniture_availability a skos:Concept ;
     skos:definition "Does the school have furniture for students?"@en ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2025-26 Data Capture Format."@en ;
     dct:references "DCF item 2.19" ;
-    skos:scopeNote "1-Yes, 2-No, 3-Partial"@en ;
+    skos:scopeNote "1-Yes for all, 2-Partial, 3-No Furniture Available"@en ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “No. of students for whom Furniture available”"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of students for whom Furniture available in school”. Remarks: 1-Yes for all, 2-Partial, 3-No Furniture Available"@en .
 
@@ -2327,11 +2338,12 @@ udise:facility_data.ict_lab_yn a skos:Concept ;
     skos:definition "Is the ICT Lab available in the school under Samagra Siksha?"@en ;
     skos:editorialNote "Question: a person opened the form and read the item, from the 2025-26 Data Capture Format."@en ;
     dct:references "DCF item 2.25(b)" ;
-    skos:scopeNote "1-Yes, 2-No, 9-Not applicable"@en ;
+    skos:scopeNote "1-Yes, 2-No, 9-undocumented"@en ;
     dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “ICT Lab available in school under Samagra Siksha”. Remarks: As per UDISE DCF"@en ;
     dct:isVersionOf udise:series.facility_data.ict_lab ;
     skos:altLabel "ict_lab"@en ;
-    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"ict_lab\", \"to\": \"ict_lab_yn\", \"basis\": \"DCF item 2.27 'Is ICT Lab available in the school?' is word for word identical in 2021-22 and 2022-23. The question did not move. The Ministry's release description did: it narrows the shared column to 'ICT Lab available in school under Samagra Siksha', a restriction the form does not carry\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en .
+    skos:historyNote "{\"at\": \"2021-22 to 2022-23\", \"action\": \"RENAME\", \"from\": \"ict_lab\", \"to\": \"ict_lab_yn\", \"basis\": \"DCF item 2.27 'Is ICT Lab available in the school?' is word for word identical in 2021-22 and 2022-23. The question did not move. The Ministry's release description did: it narrows the shared column to 'ICT Lab available in school under Samagra Siksha', a restriction the form does not carry\", \"similarity\": null, \"confidence\": \"confirmed\", \"how\": \"form\"}"@en ;
+    skos:note "undocumented-code-9: Nine released columns hold a code 9 that the Data Capture Format never defines. The form offers 1-Yes and 2-No. The file carries a third value, and for two columns a 0 as well. No published document says what either means."@en .
 
 udise:facility_data.internet a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2489,7 +2501,8 @@ udise:facility_data.no_building_blocks a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2022-23 Data Capture Format."@en ;
     dct:references "DCF item 2.2(i)" ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Total Number of building blocks of the school”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of building blocks of the school”"@en .
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of building blocks of the school”"@en ;
+    skos:note "number-of-not-no: `no_building_blocks` is a COUNT of building blocks, item 2.2(i). The release describes it as 'Total Number of building blocks of the school'. It is not a flag for having no building. 692,513 schools carry the value 1, meaning one block. The status of the building is a different column, `building_status` at item 2.1, where code 5 is 'NO Building (Running in Open Place)'."@en .
 
 udise:facility_data.other_rooms a skos:Concept ;
     skos:inScheme udise:scheme ;
@@ -2720,7 +2733,8 @@ udise:facility_data.pucca_building_blocks a skos:Concept ;
     skos:editorialNote "Question: matched to a form item on the words the two share, from the 2022-23 Data Capture Format."@en ;
     dct:references "DCF item 2.2(i)" ;
     dct:provenance "Shared 2018-19 to 2021-22 as smallint, described as “Pucca Building”"@en ;
-    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of Pucca building blocks of the school”"@en .
+    dct:provenance "Shared 2022-23 to 2025-26 as smallint, described as “No. of Pucca building blocks of the school”"@en ;
+    skos:note "number-of-not-no: `no_building_blocks` is a COUNT of building blocks, item 2.2(i). The release describes it as 'Total Number of building blocks of the school'. It is not a flag for having no building. 692,513 schools carry the value 1, meaning one block. The status of the building is a different column, `building_status` at item 2.1, where code 5 is 'NO Building (Running in Open Place)'."@en .
 
 udise:facility_data.rain_water_harvesting a skos:Concept ;
     skos:inScheme udise:scheme ;

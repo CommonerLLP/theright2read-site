@@ -29,7 +29,7 @@
    "with_official": 364,
    "checked_by_hand": 62,
    "dormant": 0,
-   "traps": 12,
+   "traps": 15,
    "never_released": 18
   },
   "not_here": "The DCF side is curated by hand. An empty dcf_item means NOT YET CHECKED, never that the question was not asked."
@@ -3337,7 +3337,9 @@
      "detail": "a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break"
     }
    ],
-   "traps": [],
+   "traps": [
+    "enrolment-item-codes"
+   ],
    "official": [
     {
      "era": "pre-sdmis",
@@ -3402,7 +3404,7 @@
    "gap": false,
    "dcf_item": null,
    "question": null,
-   "values": null,
+   "values": "1-Social category, 2-Religious minority, 3-not established, 4-CWSN by disability type, 5-not established",
    "release_key": "Which category grid a row belongs to: 1 is social category, 8 is age, and so on. Created at the 2022-23 break, when the named item_desc became two numeric codes.",
    "dcf_year": null,
    "dcf_trace": {},
@@ -3428,7 +3430,9 @@
      "detail": "a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break"
     }
    ],
-   "traps": [],
+   "traps": [
+    "enrolment-item-codes"
+   ],
    "official": [
     {
      "era": "sdmis",
@@ -3476,7 +3480,8 @@
       "why": "the column splits or merges here"
      }
     ]
-   }
+   },
+   "values_from": "release schema"
   },
   {
    "id": "enrolment_data_1.item_id",
@@ -3493,7 +3498,7 @@
    "gap": false,
    "dcf_item": null,
    "question": null,
-   "values": null,
+   "values": "1-General (group 1), 2-SC (group 1), 3-ST (group 1), 4-OBC (group 1), 5-Muslim (group 2), 6-Christian (group 2), 7-Sikh (group 2), 8-Buddhist (group 2), 9-Parsi (group 2), 10-Jain (group 2)",
    "release_key": "The row's position inside its item_group grid. For the age grid (group 8) it is the age in years. For the social-category grid it is the category code. No released codebook names the ids; the mapping here is reconstructed and graded.",
    "dcf_year": null,
    "dcf_trace": {},
@@ -3519,7 +3524,9 @@
      "detail": "a named category ('Muslim', 'SC') becomes two numeric codes; no join by name survives the break"
     }
    ],
-   "traps": [],
+   "traps": [
+    "enrolment-item-codes"
+   ],
    "official": [
     {
      "era": "sdmis",
@@ -3567,7 +3574,8 @@
       "why": "the column splits or merges here"
      }
     ]
-   }
+   },
+   "values_from": "release schema"
   },
   {
    "id": "enrolment_data_1.pseudocode",
@@ -6729,7 +6737,9 @@
      "detail": "a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break"
     }
    ],
-   "traps": [],
+   "traps": [
+    "enrolment-item-codes"
+   ],
    "boundaries": [
     {
      "from": "2018-19",
@@ -6821,7 +6831,9 @@
      "detail": "a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break"
     }
    ],
-   "traps": [],
+   "traps": [
+    "enrolment-item-codes"
+   ],
    "official": [
     {
      "era": "sdmis",
@@ -6912,7 +6924,9 @@
      "detail": "a named category ('Muslim', 'SC', an age) becomes two numeric codes; no join by name survives the break"
     }
    ],
-   "traps": [],
+   "traps": [
+    "enrolment-item-codes"
+   ],
    "official": [
     {
      "era": "sdmis",
@@ -7142,7 +7156,7 @@
    "gap": false,
    "dcf_item": "2.15",
    "question": "Whether Hand-rails for ramp are available?",
-   "values": "0, 1-Yes, 2-No, 9-Not applicable",
+   "values": "0, 1-Yes, 2-No, 9-undocumented",
    "release_key": null,
    "dcf_year": "2020-21",
    "dcf_trace": {
@@ -7179,7 +7193,9 @@
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
-   "traps": [],
+   "traps": [
+    "undocumented-code-9"
+   ],
    "official": [
     {
      "era": "pre-sdmis",
@@ -7958,7 +7974,7 @@
    "gap": false,
    "dcf_item": "2.1",
    "question": "Status of Present School Building?",
-   "values": "1-Government, 2-Rent free, 3-Rented, 4-Govt school running in Panchayat/Municipal Building, 5-Dilapidated, 6-Under Construction, 7-No Building",
+   "values": "1-Private Owned, 2-Rented, 3-Government Owned, 4-Government School in a Rent free building, 5-NO Building (Running in Open Place), 6-School Running in other Department Building, 8-undocumented",
    "release_key": null,
    "dcf_year": "2018-19",
    "dcf_trace": {
@@ -7999,7 +8015,10 @@
    "dcf_how": "curated",
    "dormant_2025_26": false,
    "changes": [],
-   "traps": [],
+   "traps": [
+    "number-of-not-no",
+    "building-codes-moved"
+   ],
    "official": [
     {
      "era": "pre-sdmis",
@@ -9246,7 +9265,7 @@
    "gap": false,
    "dcf_item": "2.27(d)",
    "question": "Access to DTH/TV channels",
-   "values": "1-Yes, 2-No, 4-Not applicable",
+   "values": "1-Yes, 2-No, 4-undocumented",
    "release_key": null,
    "dcf_year": "2026-27",
    "dcf_trace": {
@@ -9751,7 +9770,7 @@
    "gap": false,
    "dcf_item": "2.19",
    "question": "Does the school have furniture for students?",
-   "values": "1-Yes, 2-No, 3-Partial",
+   "values": "1-Yes for all, 2-Partial, 3-No Furniture Available",
    "release_key": null,
    "dcf_year": "2025-26",
    "dcf_trace": {
@@ -10526,7 +10545,7 @@
    "gap": false,
    "dcf_item": "2.25(b)",
    "question": "Is the ICT Lab available in the school under Samagra Siksha?",
-   "values": "1-Yes, 2-No, 9-Not applicable",
+   "values": "1-Yes, 2-No, 9-undocumented",
    "release_key": null,
    "dcf_year": "2025-26",
    "dcf_trace": {
@@ -10562,7 +10581,9 @@
      "how": "form"
     }
    ],
-   "traps": [],
+   "traps": [
+    "undocumented-code-9"
+   ],
    "official": [
     {
      "era": "sdmis",
@@ -11573,7 +11594,9 @@
    "dcf_how": "auto",
    "dormant_2025_26": false,
    "changes": [],
-   "traps": [],
+   "traps": [
+    "number-of-not-no"
+   ],
    "official": [
     {
      "era": "pre-sdmis",
@@ -13088,7 +13111,9 @@
    "dcf_how": "auto",
    "dormant_2025_26": false,
    "changes": [],
-   "traps": [],
+   "traps": [
+    "number-of-not-no"
+   ],
    "official": [
     {
      "era": "pre-sdmis",
@@ -33069,6 +33094,43 @@
  ],
  "traps": [
   {
+   "id": "number-of-not-no",
+   "kind": "spelling",
+   "fields": [
+    "no_building_blocks",
+    "pucca_building_blocks",
+    "building_status"
+   ],
+   "what": "`no_building_blocks` is a COUNT of building blocks, item 2.2(i). The release describes it as 'Total Number of building blocks of the school'. It is not a flag for having no building. 692,513 schools carry the value 1, meaning one block. The status of the building is a different column, `building_status` at item 2.1, where code 5 is 'NO Building (Running in Open Place)'.",
+   "cost": "Read as English, the name inverts the field. And the two columns disagree: in 2025-26, 838 schools report code 5 for no building AND at least one block, 525 of them a PUCCA block; 5,760 schools report zero blocks while carrying a status that implies a building. 'How many schools have no building' has two answers, 2,844 by status and 7,766 by block count, agreeing on 2,006.",
+   "check": "Cross the two before trusting either. One internal check does hold: pucca blocks never exceed total blocks, zero violations in 2025-26.",
+   "fix": "-- WRONG: reads the name as English\ncount(*) filter (where no_building_blocks > 0)  -- schools WITH blocks\n\n-- RIGHT: say which field answers the question, and cross them\nselect building_status, count(*),\n       count(*) filter (where no_building_blocks = 0) as zero_blocks\nfrom facility_data where year = '2025-26' group by 1 order by 1;"
+  },
+  {
+   "id": "building-codes-moved",
+   "kind": "definitional",
+   "fields": [
+    "building_status"
+   ],
+   "what": "The code list for DCF 2.1 is not stable across the eight releases. 'School running in other Department Building' is code 10 through 2021-22 and code 6 from 2022-23. 'Building under construction' is code 7 through 2021-22 and is dropped afterwards. Code 5 has meant no building throughout, but the 2021-22 form words it 'NO/Dilapidated Building' and the 2023-24 form 'NO Building (Running in Open Place)'. Code 8 appears in 875 schools in 2025-26 and in no other year, and no form in any year prints it.",
+   "cost": "A fixed lookup across years silently loses two categories. Code 10 ends at 2,531 schools in 2021-22 and code 6 begins at 2,619 in 2022-23 \u2014 the same schools under a new number, and a series keyed on either code shows a cliff and a birth that did not happen. Separately, the code does not respect the categories the form declares. The 2025-26 note restricts government schools to options 2 to 6, government-aided schools to 1, 2, 3 and 5, and every other school to 1, 2 and 5. In 2025-26, 1,792 schools (0.12 per cent) answer outside their own list: 865 government schools on code 8, 456 government schools on 1-Private Owned, and 371 private schools on 3-Government Owned. Whether those are misclassified schools or an unenforced rule is not decidable from the release. A join that assumes management and building agree will inherit it either way.",
+   "check": "Count each code by year. A code that stops at a release boundary while another starts at a similar size is a renumbering, not a change on the ground. Then cross the code against management, because the form restricts which options each kind of school may give and the release does not enforce it.",
+   "fix": "-- WRONG: one lookup for all eight years\ncount(*) filter (where building_status = 10)  -- zero after 2021-22\n\n-- RIGHT: read the code list for the year in question\nselect year, building_status, count(*) from facility_data\ngroup by 1, 2 order by 1, 2;\n-- no building is code 5 in every year: 9,410 in 2018-19, 2,844 in 2025-26\n\n-- the form's own applicability rule, tested against the data\nselect sector, building_status, count(*) from facility_data\njoin school_year using (school_id, year)\nwhere year = '2025-26' group by 1, 2 order by 1, 2;\n-- govt may use 2,3,4,5,6 | aided 1,2,3,5 | everything else 1,2,5"
+  },
+  {
+   "id": "enrolment-item-codes",
+   "kind": "coding",
+   "fields": [
+    "item_group",
+    "item_id",
+    "item_desc"
+   ],
+   "what": "Before 2022-23 an enrolment row named its category in item_desc ('SC', 'Muslim'). From 2022-23 the name is gone and the row is keyed by two integers instead. item_id is NOT numbered within its group: it runs as one sequence across groups 1 and 2, so 1 to 4 are the social categories and 5 to 10 are the religious minorities. In group 4 the same column numbers 21 disability types from 1 again, and in enrolment_data_2 it is an age. The integer alone does not identify the category; the pair does.",
+   "cost": "A reader who assumes item_id restarts at 1 in each group reads Muslim as General. Nothing in the release contradicts them: the only published statement of the rule is a schema description reading 'Item Group =1,Item Id = 1 Then General', and no released file carries a lookup table.",
+   "check": "Group 1 is established per school, not by national shares: caste_spread.py joins the last labelled year to the first numeric one on pseudocode over 1,445,875 schools present in both and correlates per-school totals. The diagonal reads 0.936 to 0.955 and no off-diagonal exceeds 0.445. Two standing controls re-run every build: a social-category block is exhaustive, so it must equal every enrolled child, and a minority block must not. In 2025-26 group 1 sums to 247,219,116 children and the age block in enrolment_data_2 sums to 247,219,116 \u2014 two partitions sharing no codes, agreeing exactly. Group 2 sums to 50,332,395, a fifth of them.",
+   "fix": "-- WRONG: the integer alone, as if item_id were unique\nsum(children) filter (where item_id = 2)   -- SC, or a disability type\n\n-- RIGHT: the pair identifies the category\nsum(children) filter (where item_group = 1 and item_id = 2)  -- SC\nsum(children) filter (where item_group = 2 and item_id = 5)  -- Muslim\n\n-- the control that establishes the decode, re-runnable on any release\n-- group 1 partitions by category; enrolment_data_2 partitions the same\n-- children by age. They must agree, and they share no codes.\nselect (select sum(children) from enrolment_data_1 where item_group = 1)\n     - (select sum(children) from enrolment_data_2) as must_be_zero;"
+  },
+  {
    "id": "type-code-as-binary",
    "fields": [
     "boundary_wall",
@@ -33088,8 +33150,10 @@
    "fields": [
     "minority_school",
     "ict_lab",
+    "ict_lab_yn",
     "anganwadi_premises",
     "anganwadi_yn",
+    "availability_of_handrails",
     "certified_fit_india_yn",
     "is_nsqf",
     "prevoc_yn",

@@ -17,6 +17,10 @@
   "described_no_question": 60,
   "code_disagreements": [
    {
+    "id": "enrolment_data_1.item_group",
+    "agreement": "partly corroborated: the column also holds 10"
+   },
+   {
     "id": "facility_data.comp_ict_lab_yn",
     "agreement": "partly corroborated: the column also holds 9"
    },
@@ -730,7 +734,8 @@
      "4",
      "5",
      "10"
-    ]
+    ],
+    "agreement": "partly corroborated: the column also holds 10"
    }
   },
   {
