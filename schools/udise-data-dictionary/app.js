@@ -331,6 +331,8 @@ function showField(id) {
     ${f.changes.length ? `<div class="k">Change history</div>` + f.changes.map(chgHTML).join("") : ""}
 
     ${traps.length ? `<div class="k">Comparability</div>` + traps.map(trapHTML).join("") : ""}
+
+    ${citeHTML(f)}
   `;
   bindCopy(d);
 }
@@ -370,6 +372,30 @@ const VERDICT = {
   absent:       ["warn", "not released"],
   broken:       ["warn", "do not compare"],
 };
+
+/* CITING A COLUMN. The vocabulary already gives every column a stable
+   identifier, and the card never offered it. A reader who uses this in a
+   paper, a script or an article had to dig it out of the Turtle file. The
+   accessed date is the reader's own, read in the browser: a build date would
+   claim they read it on a day they did not. */
+const ONTOLOGY = "https://theright2read.org/schools/udise-data-dictionary/ontology/";
+const PAGE = "https://theright2read.org/schools/udise-data-dictionary/";
+
+function citeHTML(f) {
+  const today = new Date().toISOString().slice(0, 10);
+  const span = f.years.length
+    ? `${f.years[0]} to ${f.years[f.years.length - 1]}` : "";
+  const text = `The Right to Read. “${f.id}.” UDISE+ field dictionary, `
+    + `covering ${span}. Accessed ${today}. ${PAGE}#f/${f.id}`;
+  return `<div class="k">Cite this column</div>
+    <div class="citeblock" data-raw="${esc(text)}">
+      <p class="cite-line">${esc(text)}</p>
+      <p class="cite-id">Stable identifier:
+        <code>${esc(ONTOLOGY + f.id)}</code></p>
+      <p class="cite-lic">The vocabulary is CC BY-NC 4.0, The Right to Read.
+        The underlying data is the Ministry of Education's.</p>
+    </div>`;
+}
 
 function compareHTML(f) {
   const bs = f.boundaries || [];
@@ -1039,7 +1065,7 @@ function routeFromHash() {
 /* The SQL is the payload. Selecting four lines by hand is friction on the highest-value
    action on the page. */
 function bindCopy(scope) {
-  $$(".vals", scope || document).forEach((el) => {
+  $$(".vals, .citeblock", scope || document).forEach((el) => {
     if (el.dataset.copy) return;
     el.dataset.copy = "1";
     const b = document.createElement("button");
